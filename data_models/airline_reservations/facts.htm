@@ -1,0 +1,161 @@
+<HTML><HEAD><TITLE>Data Model for Airline Reservations</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Logo" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right HEIGHT=95 ROWSPAN=2 VALIGN=middle>
+<IMG ALT="Sunset at Dulles Airport, Washington" HEIGHT=94 WIDTH=255 SRC="../../images/dulles_airport_washington.jpg">
+</TD>
+</TR>
+<TR>
+<TD ALIGN=left VALIGN=top>&nbsp;</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=90%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Airline Reservations&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<IMG ALIGN=left ALT="Snowbirds Air Display Team" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/snowbirds_display.jpg">
+</TD>
+
+<TD VALIGN=top>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF="index.htm"><FONT COLOR=blue FACE=Verdana SIZE=2>Back to the Data Model</A>
+<BR><BR>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE BUSINESS RULES :-</B>
+<BR>These Business Rules define the functional requirements which the Database must meet.
+<BR><br>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Business Rules</A> have been defined and are detailed here ...
+
+<PRE><B><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-</B>
+<LI>An Airline Reservations System.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Aircraft
+B.2 Aircraft Types
+B.3 Destinations
+B.4 Flights
+B.5 Itineraries
+B.6 Legs in a Flight
+B.7 Passengers
+B.8 Reservationss
+B.9 Seats
+B.10 Tickets
+B.11 Ticket Types
+B.12 Travel Class
+
+<B>C. How are these THINGS_OF_INTEREST related ?</B>
+C.1 A PASSENGER can have zero or many RESERVATIONS.
+c.2 A BOOKING can be for one and only one PASSENGER.
+c.3 A GROUP_RESERVATION can be for one or many PASSENGERS.
+C.4 Etc.
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 Do we have two Seats together for Australia ?
+F.2 Show status report of all flights for one day and the avaibility of each seat, on each flight.
+F.3 Show a flight report that can be printed out for a single flight that shows passenger name, 
+type of fares and totals for each class of travel.
+
+Barry Williams
+Principal Consultant
+Database Answers
+November 20th. 2008
+</PRE>
+
+</TD></TR>
+
+<TR><TD COLSPAN=2>
+<!---
+Additional information
+seats allocated on plane
+Economy 70%
+Disount 10%
+Super Discount 10%
+Business Class 5%
+First Class 5%
+--->
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../pi_ask_a_question/index.asp">Ask Me a Question</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1><I> &#169 DatabaseAnswers.org 2008</I></FONT></CENTER>
+</TD></TR>
+
+</BODY>
+
+</HTML>

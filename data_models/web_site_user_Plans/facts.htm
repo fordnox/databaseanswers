@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>Requirements for the Web Site User Plans Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.episerver.com/About-Us/Our-blogs/Online-Marketing/The-importance-of-analysing-your-user-journey/" TARGET=_NEW>
+<IMG ALIGN=right ALT="A Typical User Journey (Click for EPI Server Web Site)" BORDER=0 hspace="0" vspace="4" SRC="images/Web_Site_User_episerver_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Web Site User Plans</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>Subject: Web Site User Plans
+
+Email to dba_requests from Patrick Huber
+
+Hi Barry
+
+I just found your very informative website while looking for hints on how to 
+model some specifics of a paid website I'm trying to build. 
+
+It seems my thing is something you haven't done already and I'd be glad for a little bit of input. 
+I think most online services today work more or less after this principle (no physical deliveries, just services). 
+
+<B>Here's a description:-</B>
+So it's a website that has Users, these can have a free or paid account. 
+There are several plans available and depending on the plan there's a different set of features enabled or different 
+volume restrictions like min/max 10 items, 20 items. 
+
+I want plans to become active/inactive based on datetime. 
+Each feature has a description and may in itself be enabled/disabled (to disable features at runtime if they cause problems for example)
+
+A user would pay upfront for a month or year where the yearly payment would benefit from a small discount. 
+Users could enter a coupon code to get a discount once, for the next x payments or a certain time, or a neverending discount.
+
+When the user downgrades to a lower plan when renewing his subscription, the existing plan would stay active until the paid period ends 
+and then the lower plan would become active (alternatively the lower plan's runtime could be extended by the excess amount left but that's 
+probably something to solve in code, not in the model). 
+
+Likewise, when upgrading, the new plan would become active after the old one expired or immediately (accounting for what the user has 
+already paid for the existing plan). Considering users who test at a free account, then upgrade and see the quotas aren't enough, we'd want 
+an immediate activation of the new plan.
+
+So the user probably has some form of an account with a balance, and has transactions going on that each involve a plan and optionally some 
+money being transferred from the user to the website. 
+
+Most of that could probably be solved using the customer-order and line-item and <I>the product from your models would be the new plan</I>.
+
+<B>The part I haven't figured out yet</B> is how i would handle the plans and when they'd become active. 
+
+If a user decided to up/downgrade in the middle of a billing cycle I'd have to update his plan's activation to end 'now', calculate his 
+remaining balance (say for 10$ a year and changing plans after 6 months he'd have 5$ left) and take that into account when calculating the 
+price for his new plan (however, one could also offer to only change the plan and use up the remaining balance without extending the contract), 
+bill him, end the activation of his current plan 'now' and make a new activation for the new plan with a given end-date calculated from the 
+amount of money in his account.
+
+Ok so typing all this out clarified a few things in itself that I couldn't get in order when drawing a bunch of rectangles on paper. 
+So that helped already. 
+
+Nevertheless, I'd love to hear your input on this.
+
+Cheers and a happy new Year!
+
+Patrick
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2013</I></FONT></CENTER></PRE>
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

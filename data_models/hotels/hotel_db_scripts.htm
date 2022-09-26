@@ -1,0 +1,151 @@
+<HTML><HEAD><TITLE>Hotel Database SQL Scripts</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn_400.jpg">
+<BR><BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>Hotel Database SQL Scripts (for Oracle)</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Chateau Laurier,Ottawa,Canada" BORDER=1 SRC="../../images/chateau_laurier_1912_sml.jpg"></A>
+</TD>
+</TR>
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE>
+<TR>
+<TR>
+<TD BGCOLOR=white VALIGN=top>
+<LI><A HREF="../../index.htm"><FONT SIZE=1>Home</FONT></A>
+<LI><A HREF="../../ask_a_question.htm"><FONT SIZE=1>Ask a Question</FONT></A>
+<LI><A HREF="../../data_models/index.htm"><FONT SIZE=1>Data Models</FONT></A>
+<LI><A HREF="../../faqs.htm"><FONT SIZE=1>FAQs</FONT></A>
+<LI><A HREF="../../sql_scripts/index.htm"><FONT SIZE=1>SQL Scripts</FONT></A>
+<LI><A HREF="../../state_of_the_art.htm"><FONT SIZE=1>StateOfTheArt</FONT></A>
+<LI><A HREF="../../site_map.htm"><FONT SIZE=1>Search</FONT></A>
+<LI><A HREF="../../site_map.htm"><FONT SIZE=1>Site Map</FONT></A>
+<BR><BR>
+<IMG ALIGN=left ALT="Underwater in Fiji" BORDER=1 HEIGHT=122 WIDTH=95 SRC="../../images/fiji_underwater_1.jpg"></A>
+</TD>
+
+
+<TD ALIGN=left VALIGN=top>
+<FONT COLOR=blue FACE="Verdana" SIZE=1>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=1>CREATE TABLE hotels ...
+-- ============================================================
+--   Project name :  HOTEL_INFORMATION_WEB_SITE                
+--   DBMS name    :  ORACLE Version 8                          
+--   Created on   :  21 Jan 2001  10:10 am                           
+-- ============================================================
+
+-- ============================================================
+--   Table: HOTEL_CHAIN                                        
+-- ============================================================
+create table HOTEL_CHAINS
+(
+    HOTEL_CHAIN_ID              INTEGER                not null,
+    HOTEL_CHAIN_CODE            CHAR(10)               null    ,
+    HOTEL_CHAIN_NAME            VARCHAR2(50)           null    ,
+    constraint PK_HOTEL_CHAIN primary key (HOTEL_CHAIN_ID)
+)
+/
+
+-- ============================================================
+--   Table: REF_HOTEL_CHARACTERISTICS                          
+-- ============================================================
+create table REF_HOTEL_CHARACTERISTICS
+(
+    CHARACTERISTIC_ID           INTEGER                not null,
+    CHARACTERISTIC_CODE         CHAR(10)               null    ,
+    CHARACTERISTIC_DESCRIPTION  VARCHAR2(50)           null    ,
+    constraint PK_REF_HOTEL_CHARACTERISTICS primary key (CHARACTERISTIC_ID)
+)
+/
+
+-- ============================================================
+--   Table: REF_COUNTRY                                        
+-- ============================================================
+create table REF_COUNTRYS
+(
+    COUNTRY_CODE                CHAR(3)                not null,
+    COUNTRY_CURRENCY            CHAR(10)               null    ,
+    COUNTRY_NAME                VARCHAR2(50)           null    ,
+    constraint PK_REF_COUNTRY primary key (COUNTRY_CODE)
+)
+/
+
+-- ============================================================
+--   Table: REF_STAR_RATING                                    
+-- ============================================================
+create table REF_STAR_RATINGS
+(
+    STAR_RATING_ID              INTEGER                not null,
+    STAR_RATING_CODE            CHAR(8)                null    ,
+    STAR_RATING_IMAGE           CHAR(20)               null    ,
+    constraint PK_REF_STAR_RATING primary key (STAR_RATING_ID)
+)
+/
+
+-- ============================================================
+--   Table: HOTEL                                              
+-- ============================================================
+create table HOTELS
+(
+    HOTEL_ID                    INTEGER                not null,
+    COUNTRY_CODE                CHAR(3)                not null,
+    STAR_RATING_ID              INTEGER                not null,
+    HOTEL_CHAIN_ID              INTEGER                null    ,
+    HOTEL_CODE                  CHAR(10)               null    ,
+    HOTEL_NAME                  VARCHAR2(50)           null    ,
+    constraint PK_HOTEL primary key (HOTEL_ID)
+)
+/
+
+-- ============================================================
+--   Table: HOTEL_CHARACTERISTICS                              
+-- ============================================================
+create table HOTEL_CHARACTERISTICS
+(
+    CHARACTERISTIC_ID           INTEGER                not null,
+    HOTEL_ID                    INTEGER                not null,
+    constraint PK_HOTEL_CHARACTERISTICS primary key (CHARACTERISTIC_ID, HOTEL_ID)
+)
+/
+</PRE>
+
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+<BR>London, England
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers Ltd. 2001</I></FONT></CENTER>
+
+</HTML>

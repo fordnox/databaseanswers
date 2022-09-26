@@ -1,0 +1,248 @@
+<html>
+<head>
+<title>Vehicle Imports Tournaments Dezign Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<IMG ALIGN=right ALT="An Imported Vehicle driving off a ship" HEIiGHT=88 WIiDTH=206 hspace="0" vspace="4" SRC="images/vehicle_imports_sml.jpg"> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="vehicle_imports_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+<img alt="Vehicle Imports" src="images/lft_vehicle_imports.bmp"> 
+<!--- <img alt="Tournaments"    src="images/rt_tournaments.bmp">  --->
+ 
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+<B><BR>The Draft Business Rules have been defined and are listed below.</B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+Vehicle Imports.
+
+<B>A. This is a Statement of the User Specifications.</B>
+A company imports different types of items from local and international suppliers. 
+The items are categorized as Vehicles, Hardware, Spare parts and Accessories. 
+Each category of items is kept in a separate store. 
+The classification of vehicles includes but is not limited to cars, lorries, buses and tractors. 
+Hardware items are classified as domestic hardware, industrial, medical and agricultural hardware. 
+Hardware such as electrical components may be for domestic or industrial use. 
+All spare parts and accessories that are stocked are for vehicles and, they are classified based on the 
+classification of vehicles i.e. spare parts for cars, for lorries, for buses etc. 
+
+Each item is given a unique identification code of 13 characters in the format CC-YR-BB-NNNN. 
+CC identifies the category, YR identifies the year in which the item was socked, BB is the batch number 
+in the respective year and NNNN is the number attached to that item in that specific batch. 
+Other data captured about an item is the country of manufacture/ origin. 
+The General Manager of the company at any time may want to know the number of months the item has spent 
+as company stock, the quantity in stock and the total weekly sales of any item over a desired period range 
+(weeks, months, years). 
+
+The same job role might require to know the stock value selectively e.g. by product range(s), by batch range(s), 
+by year range(s). 
+
+The sales department requires to know the following details (based on desired filters/ ranges/ selections):-
+<B>Buses</B> - make, seat capacity, cc capacity, number of axles, rate of fuel consumption, quantity in stock.
+<B>Cars</B> - make, color, cc capacity, seat capacity, model, price, quantity in stock. 
+<B>Loaders</B> - make, cc capacity, weight, tonnage, quantity in stock.
+<B>Lorries</B> - make, cc capacity, model, price, quantity in stock.
+<B>Tractors</B> - make, cc capacity, weight, quantity in stock.
+
+The accounts department need to know for any item sold - item code, item name, purchase price, sale price, 
+profit or loss, cumulative profit or loss over a desired period. 
+
+Data is captured about local and international suppliers. 
+However supplier number, name, address and contact person is captured for every supplier. 
+For local suppliers PIN and VAT registration numbers, Bankers, Bank Account number(s), telephone number(s) are 
+also captured. 
+
+For foreign suppliers the properties country, city/town/location, email address are required. 
+All items are received in batches. 
+A batch has a unique identification number (Numeric ¡V Size 6), quantity in the batch, date of receipt, mode of 
+shipping (road, air, rail, sea), staff confirming the receipt. 
+
+Each item must be attached (belongs) to a specific batch. 
+The purchase department requires know the following details about all the items - supplier, country of manufacture, 
+cost price, mode of shipment. 
+
+The stores department may at any moment require details of any item in a any storage area. 
+Such details may include but not limited to quantities in stock, balance on a specific batch etc. 
+The purchase department is responsible for placing orders of goods when the quantity falls below re-order levels. 
+Each item has its own re-order level. 
+An order includes the item code, name, quantity required, supplier, mode of shipment, date of delivery.. 
+When the items are received the Stores department prepares a receipt note. 
+The receipt note includes batch number, item code, name, quantity received, supplier, mode of shipment, date of 
+delivery, staff receiving the items. 
+
+A member of staff works for only one department. 
+Data kept about a staff is the staff number (uniquely identifies the staff and identifies the department in which 
+the staff works), name, sex, date of birth, marital status, next of keen, salary scale. 
+
+There are four departments namely Administration, Purchase, Sales and Stores. 
+Extra data is kept about staff in the administration department. 
+This includes highest education level, number of children (the number of children determine the family allowance given), 
+residential address, mobile telephone numbers (maximum 3 numbers). 
+
+Any staff in the sales department may be employed on only one pf the following terms - contract, permanent employment, 
+probation or part-time employment. 
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Batches
+B.2 Items
+B.3 Vehicles
+B.4 Others to be determined.
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 To be determined.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 To be determined.
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined.
+
+<B>F. Typical Enquiries include :-</B>
+F.1 </PRE>
+</TD></TR>
+
+<TR>
+<TD>&nbsp</TD>
+<TD COLSPAN=1><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Barry Williams
+November 28th. 2009
+Principal Consultant
+Database Answers</PRE>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

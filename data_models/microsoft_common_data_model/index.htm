@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>Data Model for the Microsoft Common Data Model
+
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="https://community.dynamics.com/enterprise/b/dynamics365bysandeepchaudhury/archive/2016/08/14/making-sense-of-the-common-data-model-and-microsoft-powerapps-in-dynamics-365" TARGET=_NEW>
+<IMG ALIGN=right ALT="CDM Architecture" space="0" vspace="4" BORDER=0 
+SRC="images/cdm_architecture_sml.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="7%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Data Model for the Microsoft Common Data Model&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF='mailto:dba_requests&#64;barryw.org?subject=Request for a Database for the Microsoft Common Data Model'>An Access Database</A> is available on demand. 
+
+<BR><BR>If you have any comments or suggestions 
+<A HREF='mailto:dba_requests&#64;barryw.org?subject=Comments on the Microsoft Common Data Model'> we would be glad to hear them</A>.
+
+<BR>If you are new to Data Models, this page of my new Tutorial will help you <A HREF="../../tutorial4_db_schema/tutorial_slide_5.htm"><B>understand the Data Model</B></A>.
+
+<!---
+<BR>This is an 'Easy to understand' version showing only the Entity names with key fields.
+<BR><BR>There is also a Data Model showing <A HREF="multi_resource_scheduling_showing_attributes.htm">all Attributes</A>. 
+--->
+
+<BR><BR>Here are Microsoft links to 
+<A HREF="https://powerapps.microsoft.com/en-us/blog/announcing-powerapps-common-data-model/" TARGET=_NEW>PowerApps and CDM</A>,
+
+
+
+<A HREF="https://docs.microsoft.com/en-us/common-data-service/entity-reference/entities-foundation" TARGET=_NEW>Common Data Model</A>  
+and the <A HREF="https://docs.microsoft.com/en-us/common-data-service/entity-reference/standard-entities" TARGET=_NEW>Standard Entities</A>.
+
+<BR><BR>
+
+<!------------
+<BR><BR>There might also be a <A HREeeeF="dimensional_model.htm">Dimensional Model</A>, which would be very useful for providing data for Analysis, Enquiries, Reports and Business Intelligence.
+----------------------->
+
+<TABLE BORDER=1>
+<TR>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+I was pleased to see substantial overlap with my
+<A HREF="../canonical_data_models/index.htm">Canonical Data Model</A>
+<BR>
+<IMG HEIGHT=370 SRC="../canonical_data_models/images/conceptual_data_model.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Here is the Common Data Model</B>
+<BR>
+<IMG ALIGN=left ALT="Data Model for the microsoft Common Data Model" WIiiiDTH=500 BORDER=0 SRC="images/microsoft-dynamics-365-8-638.jpg"> 
+</TD>
+
+</TR>
+<!--------
+</TABLE>
+<BR><BR>
+<TABLE BORDER=1>
+-------------->
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>List of Entities in the Common Data Model</B>
+<BR>
+<OL>
+<LI>Calendar			(Both)
+<LI>Documents			(Both)
+<LI>Digital Marketing 		(N/A)
+<LI>Equipment Maintenance	(N/A)
+<LI>Forecast			(N/A)
+<LI>Meetings			('Meeting_Events')
+<LI>Message (Singular !) 	('Message_Information')
+<LI>Orders		 	(Information)
+<LI>People		  	('People_Participants')
+<LI>Projects			(Events ?)
+<LI>Service Requests 		(Service_Requests_Events)
+<LI>Shipments	     		(Events?)
+<LI>Storage	     		(N/A)
+<LI>Support Case     		(N/A)
+<LI>Tasks            		('Tasks_Events')
+</OL>
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Microsoft Common Data Model</B>
+<BR><BR>
+<IMG ALIGN=left ALT="Microsoft Common Data Model" WIiiiDTH=500 BORDER=0 SRC="images/microsoft_common_data_model.gif"> 
+</TD>
+<TR>
+
+
+</TABLE>
+
+<BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>June 12th. 2017
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2017</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

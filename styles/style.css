@@ -1,0 +1,95 @@
+a {
+        color: Blue;
+        font-weight : normal;
+}
+
+p {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: Blue;
+        margin: 2px 0px 5px;
+        line-height: 15px;
+        text-align : justify;
+}
+
+.small {
+        font-size: 11px;
+}
+
+.cell {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: Blue;
+        font-weight: normal;
+}
+
+ul {
+        list-style-position: outside;
+        list-style-type: square;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+		margin-left : 15px;
+		margin-top : 5px;
+		margin-bottom : 10px;
+		margin-right : -5px;
+}
+
+ol {
+        list-style-position: outside;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+		margin-left : 25px;
+		margin-right : 15px;
+}
+
+.header1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+		line-height: 17px;
+        color: Blue;
+        margin: 0px
+}
+
+.header2 {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+		line-height: 11px;
+        color: Blue;
+        margin: 0px
+}
+
+.header3 {
+        font-weight: bold;
+        color: Blue;
+		text-align : left;
+}
+
+.time {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        color: Blue;
+        margin: 0px 0px 0px 5px;
+        line-height: 10px;
+        font: bold;
+}
+
+.menu {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: Blue;
+        margin: 0px 0px;
+        line-height: 14px;
+}
+        
+li {
+        margin: 5px 5px 5px 5px;
+}
+
+.usual { 
+font-family: Verdana, Arial, Helvetica, sans-serif;       
+        font-size: 12px;
+		color: Blue;
+			line-height: 17px;
+         }

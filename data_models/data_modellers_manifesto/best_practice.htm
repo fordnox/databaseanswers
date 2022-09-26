@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Best Practice  for Data Modeller's Manifesto</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=100 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="../canonical_data_models/index.htm" TARGET=_NEW>
+<IMG ALIGN=right ALT="Aron Neville (Click for Page)" BORDER=0 hspace="0" vspace="4" SRC="../../images/aaron_neville_sml.jpg">
+</td>
+
+</td>
+</tr>
+
+<!---
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</script>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+--->
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Best Practice in Data Modelling</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<!--- <A HREF='mailto:dba_requests&#64;barryw.org?subject=Request for a Database for the Data Modellers Manifesto'>An Access Database</A> is available. 
+<BR><BR><A HREeeeF="facts.htm">The Specifications</A> for the Model have been derived from a review of our experience over many years as a professional Data Modeller.
+--->
+
+
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=0>
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Best Practice</B>.
+
+<BR><BR>Here is our current Steps involved :-
+<OL>
+<LI>Create an online <A HREF="../../glossary_of_terms.htm">Glossary of Terms</A>
+<LI>Bottom-up Approach - Identify the 'Things of Interest' involved.
+<LI>Determine the Relationships between the 'Things of Interest'.
+
+<LI>Follow Naming Standards - 
+<OL>
+<LI>Primary Keys with Code fields for Reference Data
+<LI>Names beginning wih REF_ for Reference Data Entities
+<LI>Primary Keys with Auto-Increment ID fields. 
+</OL>
+
+<LI>Look for suitable <A HREF="../design_patterns_and_generic_models.htm">Generic Models</A>
+
+<LI>Look for suitable <A HREF="../subject_area_data_models.htm">Subject Area Models</A>
+
+<LI>Review appropriate <A HREF="../../tutorials.htm">Tutorials</A>
+
+<LI>Look for suitable <A HREF="../enterprise_data_models.htm">Enterprise Data Models</A>
+
+<LI>Look for suitable <A HREF="../index.htm">Industry Sector Models</A>
+</OL>
+
+</TD>
+
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;
+<!----
+<IMG ALT="Data Model for Data Modeller's Manifesto" SRC="images/data_model_med.gif" usemap="#data_model_med" style="border-style:none">
+</TD>
+----->
+
+
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Best Data Model</B>
+<BR>We would also like to maintain a list of the '<B>Best Data Models</B>',
+<BR>Of course, that is subjective so we would like you to specify your criteria when you nominate your 'Best Model'.
+<BR>To get the ball rolling, here is our Choice:-
+<BR>1. From Barry, this <A HREF="../canonical_data_models/index.htm">Canonical Data Model</A> and the reasons are that it is economical, very powerful and good to look at.
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left HEIGHT=50% WIiiiiDTH=25% SRC="../canonical_data_models/images/data_model.gif">
+</TD>
+
+
+</TR>
+
+
+
+
+
+</TABLE>
+
+<BR>
+<p>Barry Williams
+<BR>March 14th. 2014
+<BR>Database Answers Ltd.
+<BR>London, England
+
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR>
+<A HREeeeF="data_model_with_attributes.htm"><I> &#169 DataBase Answers Ltd. 2014</I></A></FONT>
+</CENTER>
+
+<BR>
+
+<!------
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+----->
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+<div>
+<map id="data_model_med" name="data_model_med">
+<area shape="rect" alt="Click for details" coords="17,20,116,64" href="conceptual_models.htm" title="Click for details" />
+<area shape="rect" alt="Click for SMEs details" coords="132,23,201,52" href="smes.htm" title="Click for SMES details" />
+<area shape="rect" alt="Click for EDM details" coords="215,23,284,52" href="../enterprise_data_models.htm" title="Click for EDM details" />
+<area shape="rect" alt="Click for details" coords="92,275,248,305" href="best_practice.htm" title="Click for details" />
+<area shape="rect" alt="Click for details" coords="94,304,171,366" href="../index.htm" title="Click for details" />
+<area shape="rect" alt="Click for details" coords="174,306,245,367" href="../subject_area_data_models.htm" title="Click for details" />
+<area shape="circle" alt="Click for details" coords="167,171,56" href="data_modeller.htm" title="Click for details" />
+<area shape="default" nohref="nohref" alt="" />
+</map>
+</div>
+</body>
+
+</html>
+
+C:\Internet\dba_org\data_models\enterprise_data_models.htm

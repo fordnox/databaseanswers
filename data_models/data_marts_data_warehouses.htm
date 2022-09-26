@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>Data Marts and Data Warehouses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img ALT="Lightning Bolt" src="../images/lightning_bolt.jpg" hspace="0" vspace="4" wiIIIdth=251 heiIIIght=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF DEC 5th. Menu  Bar --->
+<!---
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+--->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<img src="../images/spacer.gif" width="90"></td>
+<!--- BARRY changed width to 0 from 10 in the next line --->
+	<td valign="top"><img src="../images/spacer.gif" width="0" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">Data Marts and Data Warehouses<img src="../images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2> 
+<!-------               I have created a range of Data Marts and Data Warehouses.
+			<BR>These would be of interest to developers or software houses targetting specific Industries.
+------>
+
+
+<A HREF="https://en.wikipedia.org/wiki/Data_mart" TARGET=NEW>Wikipedia</A><FONT COLOR=blue FACE=Verdana SIZE=2>
+ defines a Data Mart as 
+ "an access layer to a data warehouse.
+  The data mart is a subset of the data warehouse that is usually oriented to a specific business line or team."
+
+<BR><BR>
+We use the links in <FONT COLOR=red>red</FONT> below to help us with our Semantic Enquiries work.
+<HR>
+<!------
+The only <B>free</B> Data Models I am aware of the ones currently on this Web Site ;-2222222222222220)
+<BR>This page has links to other pages where we have grouped a number of Data Models under specific industry headings.
+
+We also have a range of <A HREF="enterprise_data_models.htm">Enterprise Data Models</A> that offer a top-Level Model 
+supported by Subject Area Models.
+------>
+
+			</p>  
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">Here is our current list 
+<img src="../images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="../images/spacer.gif" height=1 width="1"> 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<OL>
+<FONT SIZE=1><OL>
+<LI><A HREF="basic_data_mart/index.htm"><FONT COLOR=red>Basic Data Mart</FONT></A> 
+<LI><A HREF="customers_and_purchases_data_warehouse/index.htm">Customers and Purchases</A> 
+
+<LI><A HREF="data_warehouse/index.htm">Popkin Data Warehouse</A>
+
+
+<LI><A HREF="data_warehouse_ecommerce/index.htm">eCommerce Data Warehouse</A>
+<LI><A HREF="data_warehouse_loading/index.htm">Loading a Data Warehouse</A> 
+<LI><A HREF="data_warehouse_loading_alt/index.htm">Data Warehouse Loading (Alt)</A>  
+<LI><A HREF="federated_data_marts/index.htm">Federated Data Marts</A> 
+
+<LI><A HREF="pharmaceuticals_dw/index.htm">Pharmaceuticals</A> 
+
+<LI><A HREF="../data_models/retail_sales/index.htm"><FONT COLOR=red>Retail Sales</FONT></A> 
+
+<LI><A HREF="snowflake_schema/index.htm">Snowflake Schema for Financial Transaction</A>
+<LI><A HREF="star_classes/index.htm">Star Design for Teaching Schedule</A>
+<LI><A HREF="star_conceptual.htm">Star Design for Transaction (Conceptual)</A>
+<LI><A HREF="star_physical.htm">Star Design for Transaction (Physical)</A> 
+ 
+<LI><A HREF="star_schema/index.htm">Star Schema</A> 
+</OL></FONT>
+
+
+
+
+
+
+
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+        </TD>
+      </TR></TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+    	<td width="9%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!---
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="../ask_a_question.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+---->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

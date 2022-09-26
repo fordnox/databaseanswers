@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>A CRUD Matrix</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="../images/dba_banner_and_btn.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="Cows in Costa Rica" BORDER=1 HEIGHT=98 WIDTH=216 SRC="../images/philg/cows-in-costa-rica_sml.jpg">
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>A CRUD Matrix</FONT></TD>
+</TR>
+</TABLE>
+
+<HR>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+SQL is consists of only 4 statements, sometimes referred to as CRUD :-
+<LI> Create - INSERT - to store new data
+<LI> Read   - SELECT - to retrieve data 
+<LI> Update - UPDATE - to change or modify data.
+<LI> Delete - DELETE - delete or remove data
+
+<P>A CRUD matrix is a table showing the Functions in an application containing
+SQL statement affecting parts of a database.
+
+<P>
+The CRUD Matrix is an excellent technique to identify the Tables in a Database 
+which are used in any User interaction with a Web Site.
+
+<BR>CRUD means ‘Create, Read, Update or Delete’, and the CRUD Matrix identifies 
+the Tables involved in any CRUD operation.
+
+<BR>It is very valuable to combine a CRUD Matrix with the analysis of possible 
+User Scenarios for the Web Site.  
+
+<BR>The analysis helps to identify any Tables which are not used, and any Tables 
+which are used heavily, and may therefore be a performance bottleneck.
+
+<BR>The application of  this technique to a Portal Web Site is shown below.
+<BR>It identifies the different kinds of Users who can access the Web Site. 
+<BR>For each kind of User, the User Scenario is defined as a series of User Actions, and 
+the corresponding Tables are identified.
+This Table shows the User Scenarios for a Casual User.
+
+<P>
+Here is a typical CRUD Matrix for a Portal Web Site :-
+<P>
+<CENTER>
+<TABLE BORDER CELLSPACING=1 BORDERCOLOR="#000000" CELLPADDING=7 WIDTH=631>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<P><B><FONT SIZE=2>Nr.</B></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<B><FONT SIZE=2><P>USER ACTION</B></FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Create</B></FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Read </B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Update</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Delete</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>1</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Enter the Web Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>2</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Complete User Survey</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>UserSurvey</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>SurveyMaster</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>3</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Search the Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Site Directory</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>4</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Go Shopping</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>Orders, ProductOrders, ProductOrderOptions</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Products, ProductOptions, Merchants</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>ID Table</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>5</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Post to the Message Board</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>Comm_messages</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Comm_messages</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>ID Table</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>6</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Check the News Items</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>News</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>7</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Leave the Web Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

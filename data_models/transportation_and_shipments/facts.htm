@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>Transportation and Shipments Dezign Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+	<IMG ALIGN=right ALT="Pebble Beach" HEIiGHT=88 WIiDTH=206 hspace="0" vspace="4" SRC="../../images/pebble_beach_18th_sml.jpg"> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+<!--- <img src="../../images/data_model_names/blank_data_model.gif" height=24 width="449" alt="Blank Data Model"> --->
+ 
+<img alt="Transportation" src="../../images/buttons/button_studio/transportation.gif"> 
+<img alt="and Shipments"  src="../../images/buttons/button_studio/rt_and_shipments.gif"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B><BR>The Requirements have been defined by the User and are listed below.</B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+Transportation and Shipments.
+<HR>
+Comments from Mengmeng on Sunday, 24th. April 2004 :-
+
+ERD
+Question: 
+
+Dear Barry Williams, 
+I try to send the following email to your two accouts of "dba_question" and "contact us", 
+but I get a reject message. 
+So I come this site again. 
+
+But I could not find a place to attach my ERD which I made with using Microsoft Access. 
+Do you have any other email address I can send email with an attachment to you? 
+And also I found the web page that you asked about comment of your website only can stay 
+2 seconds then disappear. 
+
+It is hard to finish reading that whole page in 2 seconds. 
+
+The following is my reply:- 
+
+Dear Barry Williams, 
+Thanks for the ERD you designed for me. 
+It is the best design among around 10 ERDs I designed recently. 
+I really appreciate your help. 
+
+There is one thing that I did not correctly describe the business rules last time. 
+The original one is “if customer does not pay after Wilson Company send the “Charge Invoice” to 
+them three times, Wilson Company will send the penalty charge to the Customers.” 
+
+I misunderstood the rules. 
+The correct one should be as the follows: Wilson Company sends the “Charge Invoice” to a customer 
+one time after the shipment leave port of loading. 
+Then Wilson uses the date that the shipment expects to arrive destination minus 
+“the particular amount of days” in order to get the “Check_Date”. 
+
+Wilson Company will check if the customer has paid or not on the “Check_Date”. 
+If the customer has paid before or on the “Check_Date”, Wilson Company will inform the shipping 
+service company to release the shipment when it arrives the destination. 
+If customer has not paid, Wilson Company will inform the shipping service company to hold the shipment 
+when the shipment arrive the destination. 
+This holding will be kept until the customer pays the charge. 
+So in the table of Business Rule, some customers may have 7 days, and others may have 3days :-
+RuleID RuleDes  
+R001   7 
+R002   3 
+
+For example, for the shipment order 001, the arrive date is 07-Feb-2004, the RuleID is R002, so the 
+check date should be 04-Feb-2004. 
+I added this rule in the ERD based on your design. 
+I am not sure what I did is correct or not. 
+Could you help me with this? 
+
+I changed a little bit to fit the Wilson Company’s requirement; such as I changed “Address” into “Port”. 
+I hope you do not mind about it. 
+By the way, what kind of software you are using to draw so beautiful ERD. 
+I just drew my ERD with using Microsoft Access. 
+Please click the tool then relationships, you will see the ERD. 
+Once again I appreciate all you help. 
+And I am waiting for your relply. 
+Regards, 
+Mengmeng 
+
+<HR>
+The requirement is to design a database system for the Wilson international transportation agency. 
+After Wilson Company gets a shipment order from a customer, it gives this shipment to the three different 
+service companies at the same time. 
+
+The three companies are shipping Company for international shipping service, Truck Company for local 
+truck service, and Broker Company for document clearance service. 
+
+Each month, the Service Company will send to the Wilson Company one invoice that shows how many services 
+they completed in one month, and how much they charged for each shipment. 
+
+Since the transportation agency gives around 10 shipments to the three service companies, the 10 shipments 
+will be shown on the invoice, and the fee for each shipment will also be indicated. 
+
+The Wilson Company will calculate the cost of each shipment by summing the charge of shipment from three 
+service companies. 
+
+The Wilson Company will send “Charge Invoices” to customer to charge the shipment from the customer. 
+
+If the customer does not pay after Wilson Company send the “Charge Invoice” to them three times, the 
+Wilson Company will send a penalty charge to the Customer. 
+
+If the customer then pays the fee, the Wilson Company will calculate the profit by using the received fee 
+minus the cost fee for each shipment. 
+
+<B>A. DESIGN NOTES :</B>
+A.1 <B>The Detail</B> reflects the Requirements.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 
+B.2 
+B.3
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1
+C.2 
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 To be Determined</PRE>
+</TD></TR>
+
+<TR>
+<TD>&nbsp</TD>
+<TD COLSPAN=1><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>A GLOSSARY OF TERMS WOULD GO HERE AS A TABLE ...
+Barry Williams
+21st. April 2004
+Principal Consultant
+Database Answers</PRE>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

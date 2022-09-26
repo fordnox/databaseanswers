@@ -1,0 +1,503 @@
+<html>
+<head>
+<title>Data Model for Asset Management Self-Service</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A ALT="AssetFInda" HREF="http://www.assetfinda.com/asset-classes" TARGET=_NEW>
+<IMG ALIGN=right ALT="Asset Lifecycle" BORDER=0 hspace="0" vspace="4" SRC="images/asset_lifecycle_sml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Asset Management Self-Service&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for Database for Asset Management Self-Service'>An Access Database</A> is available. 
+
+<BR><BR>We might also design <A HREeeeF="data_mart.htm">a Data Mart</A> which is very useful for providing data for Reports and Business Intelligence.
+
+<BR><BR>We would be glad to have <A HREF='mailto:dba_requests@barryw.org?subject=Comments on Database for Asset Management Self-Service'>your comments</A>.
+<HR>If you are new to Data Models, this page of my new Tutorial will help you <A HREF="../../tutorial4_db_schema/tutorial_slide_5.htm"><B>understand the Data Model</B></A>.
+<BR>Our Asset Management Self-Service can be used for a wide range of things (ie Assets), including  IT Equipment, Household Items and Utilities EQuipment including Electricity, Gas, Water and Transport, such as Airport, and Rail.
+<HR><A HREF="facts.htm">Click here</A> to see the Requirements that have been derived from a review of the Wikipedia entry for 
+<A HREF="http://en.wikipedia.org/wiki/Asset_management" TARGET=_NEW>Asset Management</A>.
+<HR>Here is a summary of What Wikipedia says :-
+<BR>"Asset Management Self-Service, broadly defined, refers to any system that monitors and maintains things of value to an entity or group. 
+<BR>It may apply to both tangible assets [that you can see and touch] (such as buildings) and to intangible assets such as human capital, intellectual property, goodwill and/or financial assets). Asset Management Self-Service is the process of maintaining assets."
+<BR>For our purposes, we define Asset Management Self-Service as "Storing physical items, such as furniture, for customers for a fee and recording details of what it in store and for how long and producing an appropriate invoice for payment by the customer".
+  
+<HR>
+Click here for the <A HREF="Asset_Mgt_Platform_POC.htm"><B>Proof-of-Concept</B></A>
+and <A HREF="end2end.htm">here for the <B>End-2-End</B></A> Data Models
+and <A HREF="tutorial.htm">here for the <B>Tutorial</B></A>.
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1a - Define Conceptual Data Model</B>
+<BR><BR><IMG SRC="images/conceptual_data_model.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1b - Appsheet Conceptual Data Model</B>
+This is in an Appsheet paper called <A HREF="https://www.appsheet.com/how_to_make_an_app" TARGET=_NEW>How to make an app</A>
+<BR><IMG SRC="images/appsheet_conceptual_data_model.jpg"> 
+</TD>
+
+</TR>
+</TABLE>
+
+<BR><BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1c - Define Logical Data Model</B>
+<BR><IMG SRC="images/logical_data_model.gif">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER=1>
+<!-------------
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1a - Define POC Conceptual Data Model</B>
+<BR><IMG SRC="images/poc_conceptual_data_model.jpg">
+</TD>
+------------>
+
+
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1b Define MVC Conceptual Data Model</B>
+
+<IMG SRC="images/MVC_components.jpg">
+Step 2 - Here we show the MVC Component (Model) with 
+the associated Web Service.   
+Model - Add a new Asset (Create a Record)
+Model - Add Payment (Update a Record)
+Model - Move an ASset (Update a Record)
+Model - Pay a Bill (Update a Record)
+Model - Remove an Asset (Update a Record)</PRE>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1c - Define POC Logical Data Model Aug28th.</B>
+<BR><IMG SRC="images/poc_tables_aug28th.gif">
+</TD>
+
+</TR>
+
+
+<TR>
+<TD ALIGN=middle><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 2 - Define POC Logical Data Model
+</B>
+<BR><BR>
+<IMG SRC="images/POC_Logical_Data_Model.gif">
+</TD>
+</TR>
+
+<!-----------
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 3 - Define POC Apex Tables</B>33333333333333
+<BR><IMG SRC="images/poc_asset_events.gif">
+</TD>
+</TR>
+---------------->
+
+
+<TR>
+<TD ALIGN=middle><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 3 - Define POC Physical Data Model</B>
+<BR>Maybe Primarily Domestic Items
+<BR><BR>
+<IMG SRC="images/POC_Physical_Data_Model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 4 - Asset Register Logical Data Model</B>
+<BR>Corresponding Tables
+<BR><BR><IMG ALIGN=left ALT="Getting Started Conceptual Data Model for Asset Management Self-Service" BORDER=0 SRC="images/logical_data_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 5 - Asset Register Physical Data Model</B>
+<BR><BR><IMG ALIGN=left ALT="Physical Data Model for Asset Management Self-Service" BORDER=0 SRC="images/physical_data_model.gif">
+</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 6 - Asset Register Conceptual Data Model</B>
+<BR><IMG ALIGN=left ALT="Getting Started Conceptual Data Model for Asset Management Self-Service" BORDER=0 SRC="images/conceptual_model_getting_started.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 2 - Define Sample Data</B>
+<B>A. Asset Hierarchy :-</B>
+1. Category, eg Domestic
+2. Supertype, eg Cutlery
+3. Type, eg Spoon
+
+<B>B. Lifecycle Phases :-</B> 
+These can be common to all types of Assets and typically include :-
+1. Acquire
+2. Use
+3. Maintain
+4. Dispose
+
+<B>C. Status :-</B>
+1. Needs Maintenance 
+2. OK
+3. Ready for Disposal</PRE>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle><PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 10 - Start with our Canonical Data Model
+<BR><BR><IMG ALIGN=left ALT="Canonical Data Model" BORDER=0 SRC="../canonical_data_models/images/conceptual_data_model.jpg">
+</TD>
+</TR>
+
+
+
+
+</TABLE>
+
+<!--------------
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1a - Define POC Tables</B>
+
+<IMG SRC="images/poc_conceptual_data_model.jpg">
+</TD>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>
+<B>Step 1b Define MVC Conceptual Data Model</B>
+
+<IMG SRC="images/MVC_components.jpg">
+Step 2 - Here we show the MVC Component (Model) with 
+the associated Web Service.   
+Model - Add a new Asset (Create a Record)
+Model - Add Payment (Update a Record)
+Model - Move an ASset (Update a Record)
+Model - Pay a Bill (Update a Record)
+Model - Remove an Asset (Update a Record)</PRE>
+<HR>
+</TD>
+</TR>
+
+
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 2 - Define Reference Data</B>
+Our Assset Management Service is primarily planned for Utilities including 
+Electricity, Gas, Water and Transport, such as Airport, and Rail.
+<HR>
+<IMG SRC="images/poc_assets.gif">
+</TD></TR>
+
+<TR>
+<TD ALIGN=middle><PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 1 - Start with our Canonical Data Model
+<IMG ALIGN=left ALT="Canonical Data Model" BORDER=0 SRC="../canonical_data_models/images/conceptual_data_model.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 3 - Asset Register Conceptual Data Model</B>
+<BR><IMG ALIGN=left ALT="Getting Started Conceptual Data Model for Asset Management Self-Service" BORDER=0 SRC="images/conceptual_model_getting_started.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 4 - Asset Register Logical Data Model</B>
+<BR><BR><IMG ALIGN=left ALT="Getting Started Conceptual Data Model for Asset Management Self-Service" BORDER=0 SRC="images/logical_data_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 5 - Asset Register Physical Data Model</B>
+<BR><BR><IMG ALIGN=middle ALT="Physical Data Model for Asset Management Self-Service" BORDER=0 SRC="images/physical_data_model.gif">
+<BR><BR>
+
+<PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>Step 6 - Define Sample Data</B>
+<B>A. Asset Hierarchy :-</B>
+1. Category, eg Domestic
+2. Supertype, eg Cutlery
+3. Type, eg Spoon
+
+<B>B. Lifecycle Phases :-</B> 
+These can be common to all types of Assets and typically include :-
+1. Acquire
+2. Use
+3. Maintain
+4. Dispose
+
+<B>C. Status :-</B>
+1. Needs Maintenance 
+2. OK
+3. Ready for Disposal</PRE>
+</TD>
+
+</TR>
+</TABLE>
+
+
+
+<BR><BR>
+
+
+<TABLE BORDER=1>
+<TR>
+<TD VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>Step 2B - Create the 'Business-friendly' Semantic Model
+This is specifically designed to be the 'Business-friendly' and to provide a vehicle for 
+communication with business users and Subject Matter Experts.
+
+We have not shown the 'Rabbits-Ears' to keep the diagram simple and easier to understand.
+
+<BR>
+<IMG ALIGN=left ALT="Final Semantic Data Model for Asset Management Self-Service" BORDER=0 SRC="images/semantic_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>Step 3 - Create the Top-Level Model
+
+When we think about our final draft, we realise that all the Entities are Hierarchies.
+For example, the Services are grouped on Categories, Staff are in Organisation Hierarchies 
+(where people usually report one-level up), and so on.
+
+We show this in our Model as self-referencing Relationships for each Entity, which we call
+Recursive or Reflexive Relationships, or 'Rabbits-Ears'.
+
+In this Model, the <B>Life Cycle of an Asset</B> is shown as Services that cover the 
+typical Phases of :-
+<LI>Acquisition
+<LI>Usage 
+<LI>Maintenance
+<LI>Finally the Disposal of an Asset.
+
+We have also created separate <FONT COLOR=red>Subject Area Models</FONT> :-
+<LI><A HREF="index.htm">Assets</A>
+<LI><A HREF="clients_subject_area.htm">Clients</A>
+<LI><A HREF="equipment_subject_area.htm">Equipment</A>
+<LI><A HREF="events_index.htm">Events</A>
+<LI><A HREF="maintenance_subject_area.htm">Maintenance</A>
+<LI><A HREF="overhaul_subject_area.htm">Overhaul</A>
+<LI><A HREF="../parties_roles_and_customers/index.htm">Parties, Roles and Customers</A>
+<LI><A HREF="repair_subject_area.htm">Repair</A>
+<LI><A HREF="services_subject_area.htm">Services</A>
+<BR>
+
+<BR>
+<IMG ALIGN=left ALT="Data Model for Asset Management Self-Service" BORDER=0 SRC="images/data_model.gif">
+</TD>
+</TR>
+
+
+
+
+
+
+
+
+</TABLE>
+
+<BR><BR><B>Review the material below here</B><BR><BR>
+
+
+<TABLE BORDER=1>
+
+<TR>
+<TD VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+Step 11 - 
+From a review of Wikipedia and the Lloyd's Register Web sIte, 
+<BR>we identify that the 'Things of Interest' include :-
+<LI>Clients
+<LI>Documents
+<LI>Locations
+<LI>Services</B>
+<LI>Ships
+<LI>Staff  
+<BR>
+<IMG ALIGN=left ALT="Data Model for Asset Management Self-Service" BORDER=0 SRC="images/data_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>Step 12 - Adding Many-to-Many
+<B>Services</B> are offered to <B>Clients</B>
+<BR>Many <B>Services</B> can be offered to the 
+<BR>same <B>Client</B> and the same <B>Service</B> can be 
+<BR>offered to many <B>Clients.</B>
+<BR>Therefore we need a Many-to-Many Relationship.
+<BR>
+<IMG ALIGN=left ALT="Step 1 Data Model" BORDER=0 SRC="images/data_model_phase_2.gif">
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>Step 13 - Adding Vessels 
+<BR> 
+The <B>Services</B> apply to <B>Vessels</B> that belong to Vessels
+<BR>Therefore we need a Many-to-Many Relationship, 
+<BR>which will look like this - 
+
+<IMG ALIGN=left ALT="Step 3 Data Model" BORDER=0 SRC="images/data_model_phase_3.gif">
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>Step 14 - Adding Documents, Locations and Staff 
+<BR> 
+The <B>Documents</B> will include Reports and results 
+<BR>of Assessments and ISO Certifications
+<BR>and generalise Vessels to Assets.
+<BR>
+<IMG ALIGN=left ALT="Step 4 Data Model" BORDER=0 SRC="images/data_model_phase_4.gif">
+</TD>
+</TD>
+</TR>
+
+</TABLE>
+------------------------>
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>August 22nd. 2017
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2017</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

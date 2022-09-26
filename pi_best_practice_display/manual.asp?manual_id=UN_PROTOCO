@@ -1,0 +1,327 @@
+
+<html>
+<head>
+	<title>Best Practice Manual Viewer</title>
+	
+<script type="text/javascript">
+
+/**********************************************
+* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
+* Visit http://www.dynamicdrive.com/ for full source code
+**********************************************/
+
+var enablepersist="on" //Enable saving state of content structure using session cookies? (on/off)
+var collapseprevious="no" //Collapse previously open content when opening present? (yes/no)
+
+var contractsymbol='<img BORDER=1 src="/images/icon_folder_open.gif" width=15 height=12>' //HTML for contract symbol. For image, use: <img src="whatever.gif">
+var expandsymbol='<img BORDER=1 src="/images/icon_folder.gif" width=14 height=12>' //HTML for expand symbol.
+
+
+if (document.getElementById){
+document.write('<style type="text/css">')
+document.write('.switchcontent{display:none;}')
+document.write('</style>')
+}
+
+function getElementbyClass(rootobj, classname){
+var temparray=new Array()
+var inc=0
+for (i=0; i<rootobj.length; i++){
+if (rootobj[i].className==classname)
+temparray[inc++]=rootobj[i]
+}
+return temparray
+}
+
+
+function contractcontent(omit){
+var inc=0
+while (ccollect[inc]){
+if (ccollect[inc].id!=omit)
+ccollect[inc].style.display="none"
+inc++
+}
+}
+
+function expandcontent(curobj, cid){
+var spantags=curobj.getElementsByTagName("SPAN")
+var showstateobj=getElementbyClass(spantags, "showstate")
+if (ccollect.length>0){
+if (collapseprevious=="yes")
+contractcontent(cid)
+document.getElementById(cid).style.display=(document.getElementById(cid).style.display!="block")? "block" : "none"
+if (showstateobj.length>0){ //if "showstate" span exists in header
+if (collapseprevious=="no")
+showstateobj[0].innerHTML=(document.getElementById(cid).style.display=="block")? contractsymbol : expandsymbol
+else
+revivestatus()
+}
+}
+}
+
+function revivecontent(){
+contractcontent("omitnothing")
+selectedItem=getselectedItem()
+selectedComponents=selectedItem.split("|")
+for (i=0; i<selectedComponents.length-1; i++)
+document.getElementById(selectedComponents[i]).style.display="block"
+}
+
+function revivestatus(){
+var inc=0
+while (statecollect[inc]){
+if (ccollect[inc].style.display=="block")
+statecollect[inc].innerHTML=contractsymbol
+else
+statecollect[inc].innerHTML=expandsymbol
+inc++
+}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function getselectedItem(){
+if (get_cookie(window.location.pathname) != ""){
+selectedItem=get_cookie(window.location.pathname)
+return selectedItem
+}
+else
+return ""
+}
+
+function saveswitchstate(){
+var inc=0, selectedItem=""
+while (ccollect[inc]){
+if (ccollect[inc].style.display=="block")
+selectedItem+=ccollect[inc].id+"|"
+inc++
+}
+
+document.cookie=window.location.pathname+"="+selectedItem
+}
+
+function do_onload(){
+uniqueidn=window.location.pathname+"firsttimeload"
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+ccollect=getElementbyClass(alltags, "switchcontent")
+statecollect=getElementbyClass(alltags, "showstate")
+if (enablepersist=="on" && ccollect.length>0){
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
+if (!firsttimeload)
+revivecontent()
+}
+if (ccollect.length>0 && statecollect.length>0)
+revivestatus()
+}
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+if (enablepersist=="on" && document.getElementById)
+window.onunload=saveswitchstate
+
+</script>
+
+
+	
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="/index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+<TR>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+</TR>
+
+</table>
+
+
+
+
+
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg">
+			<BR><A HREF="bp_feedback.asp"><FONT COLOR=blue FACE=Verdana SIZE=1>Feedback</A>
+			</td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+	
+	<!-- Sample Section Starts -->
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td align=right><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2><b>Best Practice Manuals</b>&nbsp;&nbsp;</font></td>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		</tr>
+		<tr>
+		<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=20 height=2></td>
+		</tr>
+	</table>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		<td width=2><img src="../images/shim.gif" width=2 height=4></td>
+		<td><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2>Below is the Best Practice Manual you selected.</font></td>
+		</tr>
+	</table>
+	<!-- Sample Section Ends -->
+	
+	<p>
+
+<font face="Verdana" size=2 color="blue">
+<b><font COLOR=blue size=+1>UN Diplomatic <B>Protocol</B> Guidelines in Geneva</font></b><br>Material in this Best Practices Manual is on the UN Web Site at
+http://www.unog.ch/protocol/guide.htm
+<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.&nbsp;Opening of a new Permanent Mission</b></font><p><div id="chap0" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.1       &nbsp;A Government informs the Secretary-General of the United Nations</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is current practice for a Government to inform the Secretary-General of the United Nations, in writing, through the intermediary of its Permanent Mission in New York, of its intention to establish a Permanent Mission in Geneva. The Secretary-General then informs the Director-General of the United Nations Office at Geneva. The Director-General brings this to the attention of the Head of the Permanent Mission of the Host Country. The current practice is that a Government informs also the Swiss Government of its intention to establish a Mission in Geneva. 
+</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.&nbsp;Credentials</b></font><p><div id="chap1" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>2.1       &nbsp;Credentials of Permanent Representatives</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Credentials of Permanent Representatives are issued either by the Head of State or Government, or by the Minister for Foreign Affairs, and they are addressed to the Secretary-General of the United Nations and handed to the Director-General of the United Nations Office at Geneva during the presentation of credentials ceremony. The Director-General then notifies the Directors and/or Secretaries-General of the Specialized Agencies concerned.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.&nbsp;Protocol upon assumption of office of Permanent Representatives</b></font><p><div id="chap2" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.1       &nbsp;Upon assumption of office by a Permanent Representative</b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Upon assumption of office by a Permanent Representative, the Permanent Mission should ask the United Nations Protocol Office in Geneva to make arrangements for the presentation of credentials. For the brief ceremony of presentation, the Chief of Protocol will accompany the Permanent Representative.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.2       &nbsp;new Permanent Representative informing other Permanent Representatives</b></font><p><div id="sec3" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is customary for a new Permanent Representative to send individual letters to other Permanent Representatives informing them that he has presented his credentials.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.3       &nbsp;New Permanent Representative calling on Specialized Agencies</b></font><p><div id="sec4" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is the practice for a new Permanent Representative to call on the Directors and/or Secretaries-General of Specialized Agencies and other international organizations to which he is accredited.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.4       &nbsp;Permanent Representative calling on colleagues</b></font><p><div id="sec5" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Given the large number of Permanent Missions in Geneva, it is left to the discretion of the Permanent Representative as to which colleagues he might wish to call upon. Return calls are optional. It is advisable to pay a visit to the Chairman of the Geneva Diplomatic Committee and to the Head of the Permanent Mission of the Host Country.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.5       &nbsp;Courtesy calls by newly-arrived Permanent Representatives.</b></font><p><div id="sec6" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">The Authorities of the Republic and Canton as well as of the City of Geneva appreciate courtesy calls by newly-arrived Permanent Representatives. However, given the large number of diplomatic and consular missions in Geneva, such courtesy calls are left entirely to the discretion of the newly-arrived Permanent Representative.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.&nbsp;Precedence</b></font><p><div id="chap3" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec7')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.1       &nbsp;Between Permanent Representatives accredited to the Geneva Office:</b></font><p><div id="sec7" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Precedence among Permanent Representatives who hold the rank of ambassador is determined by the date of presentation of credentials. 
+<BR>Under the next category fall Permanent Representatives who do not hold the rank of ambassador; acting Permanent Representatives take precedence after Permanent Representatives, irrespective of their title, in accordance with their last nomination as such.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec8')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.2       &nbsp;Between Permanent Representatives accredited to Geneva and of the Host Country:</b></font><p><div id="sec8" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Between Permanent Representatives accredited to the Geneva Office and the Permanent Representative of the Host Country: 
+
+Precedence can, by courtesy, be given to the latter. 
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec9')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.3       &nbsp;Between other members of Permanent Missions:</b></font><p><div id="sec9" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Precedence is determined by rank, and within each group (ambassadors, ministers and ministers-counsellors, counsellors, etc.) according to date of arrival.
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec10')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.4       &nbsp;Between Permanent Representatives and International Organizations</b></font><p><div id="sec10" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Between Permanent Representatives and Heads of Secretariats of international organizations: 
+
+<LI>the Director-General of the United Nations Office at Geneva takes precedence over Permanent Representatives; 
+
+
+<LI>Directors-General or Secretaries-General of the Specialized Agencies should be given precedence over Permanent Representatives when invited by a Permanent Representative;
+
+<LI>Precedence between Directors-General and Secretaries-General of Specialized Agencies is determined according to the date of the agreement between the Specialized Agency in question and the United Nations. 
+<BR>Among the Specialized Agencies, the precedence is as follows: ILO, FAO, UNESCO, ICAO, WHO, World Bank, IMF, UPU, ITU, WMO, IMO, WIPO, IFAD, UNIDO, IAEA, WTO. 
+<BR>In social gatherings hosted by the Director-General of the United Nations Office at Geneva or by the Directors-General or Secretaries-General of the Specialized Agencies, it is the practice that the Permanent Representatives take precedence.
+
+
+<LI>As to other intergovernmental organizations their Heads should be given precedence over Permanent Representatives when this is in the nature of the social gathering in question. 
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec11')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.5       &nbsp;Between Permanent Representatives and high officials of the Red Cross</b></font><p><div id="sec11" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Between Permanent Representatives and high officials of the International Committee of the Red Cross: 
+
+<BR>The President of the ICRC takes precedence over Permanent Representatives; the latter take precedence over other officials of the ICRC; 
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec12')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.6       &nbsp;Between Permanent Missions and International Secretariats:</b></font><p><div id="sec12" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Ambassadors who are not Permanent Representatives will rank above Deputy Directors-General or Deputy Secretaries-General of the Specialized Agencies and other intergovernmental organizations. 
+
+<BR>Ministers who are not Permanent Representatives will rank above Directors of Division. 
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec13')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.7       &nbsp;Between Permanent Representatives and other delegates at conferences:</b></font><p><div id="sec13" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In social gatherings related to a conference, precedence among Heads of Delegation is determined either according to the alphabetical order of the countries represented, or in conformity with the established practice of the conference in question. 
+
+<BR>Presiding officers may take precedence over other Heads of Delegation. 
+
+In gatherings which are not related to a conference, precedence is given to Permanent Representatives.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec14')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.8       &nbsp;Between Permanent Missions and Geneva Authorities:</b></font><p><div id="sec14" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">Attention is drawn to the precedence recommended in the "Règlement concernant le Protocole", by the Republic and Canton of Geneva.
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec15')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>4.9       &nbsp;Additional remarks:</b></font><p><div id="sec15" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In social gatherings in honour of a given personality, the latter takes precedence over all other guests; in such cases, the fact should be mentioned while issuing invitations. 
+
+<BR>In social gatherings organized by, or in connexion with, special bodies, their established practice prevails. 
+</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.&nbsp;Presence of Permanent Representatives at ceremonies, etc.</b></font><p><div id="chap4" class="switchcontent">Presence of Permanent Representatives at ceremonies, etc.
+organized by International Organizations
+</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec16')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.1       &nbsp;When Permanent Representatives are collectively invited to ceremonies</b></font><p><div id="sec16" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">When Permanent Representatives are collectively invited to ceremonies, etc., rather than as members of national delegations, they should be collectively seated in an exclusively reserved area in the right forefront of the room, immediately after cabinet ministers and the like. Should this not prove to be possible for practical reasons, a similar arrangement might be made in another prominent part of the room. The Chief of Protocol or another high official of the inviting Organization might greet the Permanent Representatives at the entrance and see that they are ushered to their seats.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec17')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.2       &nbsp;In a ceremony to which Permanent Representatives are invited collectively</b></font><p><div id="sec17" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">In a ceremony to which Permanent Representatives are invited collectively rather than as members of national delegations, and during which representatives of International Organizations, local Authorities, and the like, are seated on a podium, the possibility should be considered of inviting the Chairman of the Geneva Diplomatic Committee or, in his absence, one of the Vice-Chairmen, to the podium.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec18')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>5.3       &nbsp;Permanent Representatives be given access to all meetings</b></font><p><div id="sec18" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is desirable that Permanent Representatives be given access to all meetings at which their country is represented, irrespective of whether they have been formally notified as members of delegations to such meetings.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.&nbsp;End of tenure of office of Permanent Representatives</b></font><p><div id="chap5" class="switchcontent">End of tenure of office of Permanent Representatives and members of Permanent Missions</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec19')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.1       &nbsp;When a Permanent Representative relinquishes his post</b></font><p><div id="sec19" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">When a Permanent Representative relinquishes his post, the current practice is that he pay a farewell visit to the Director-General of the United Nations Office at Geneva and to the Directors and/or Secretaries-General of the Specialized Agencies and other International Organizations to which he is accredited and that he inform other Permanent Representatives, in writing, of his departure. The United Nations Office at Geneva correspondingly informs the Permanent Mission of the Host Country. Attention is also, mutatis mutandis, drawn to paragraph 7 above.</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec20')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>6.2       &nbsp;Farewell Gifts</b></font><p><div id="sec20" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">There is no institutionalized practice of farewell gifts from Permanent Representatives to a departing Permanent Representative.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.&nbsp;Temporary absences of Permanent Representatives</b></font><p><div id="chap6" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec21')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>7.1       &nbsp;Recommendations</b></font><p><div id="sec21" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is recommended that the Permanent Missions advise, in writing, the United Nations Office at Geneva and other Permanent Missions about temporary absences of Permanent Representatives, naming the member of the Permanent Mission in question who will be in charge.</font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap7')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>8.&nbsp;Changes in the diplomatic personnel</b></font><p><div id="chap7" class="switchcontent">Changes in the diplomatic personnel
+of the Permanent Missions</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec22')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>8.1       &nbsp;Changes in the diplomatic personnel of the Permanent Missions</b></font><p><div id="sec22" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue">It is desirable that Permanent Missions advise the United Nations Protocol Office in Geneva of changes in the diplomatic personnel (arrivals, departures, official titles, promotions, etc.). 
+</font></div></td></tr></table>
+</font>
+	
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+
+
+
+
+
+</body>
+</html>

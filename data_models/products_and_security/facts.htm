@@ -1,0 +1,108 @@
+<HTML><HEAD><TITLE>Database for Design Consultants</TITLE></HEAD>
+<!-- Start of Standard Header - Version 3-->
+
+<BODY BACKGROUND="../images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<A NAME="TOP">
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="../../images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Data Models for a Product Catalogue</FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+The Draft FACTS</A> have been defined and are listed below ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>
+A. The Area being Modelled is :-
+An Online Product Catalogue for a Corporate Intranet.
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Products
+B.2 Product Accessories
+B.3 Product Categories
+B.4 Product Sub-Categories
+B.5 Security Issues
+B.6 Suppliers
+
+C. These THINGS are Related as follows :-
+C.1 A PRODUCT can have zero or many PRODUCT_ACCESSORIES.
+C.2 A PRODUCT can be supplied by one or more SUPPLIERS.
+C.3 A SUPPLIER can supply one or more PRODUCTS.
+C.4 A PRODUCT_ACCESSORY can also, but not necessarily, be a PRODUCT.
+C.5 A PRODUCT_ACCESSORY has exactly the same characteristics as a PRODUCT.
+C.6 A PRODUCT can be in one and only one PRODUCT_CATEGORY.
+C.7 A PRODUCT_CATEGORY can have zero or many PRODUCT_SUB_CATEGORIES.
+C.8 A PRODUCT_SUB_CATEGORY can belong to one and only one PRODUCT_CATEGORY.
+
+D. Other Characteristics of these THINGS include
+D.1 A PRODUCT has a PRICE 
+D.2 A PRODUCT can have zero or one PRODUCT_PICTURE.
+
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 What ACCESSORIES are associated with a Telephone ?
+F.2 What Sub-Categories exist for a Telephone ?
+
+G. DESIGN OPTIONS :
+G.1 Handling Sub-Categories
+       A general approach is to link the Table to itself. This allows flexible structures within the Products.
+       A fixed approach is to have separate Tables for Categories and Sub-Categories.
+	In this case, the general approach is recommended because change is likely to occur in the future.
+
+G.1 Handling other Stuff associated with a PRODUCT :-
+       A general approach like "Other Stuff" and "Other Stuff Type" or list them individually, 
+       such as SECURITY_ISSUES, etc..
+
+       It's better to spell out the other Stuff because it makes the Database easier to understand.
+       Usually the maintenance involved is not an issue.
+
+       Different kinds of other Stuff which may occur in the future should be handled by adding specific Tables,
+       reflecting the structure of the other Stuff.
+
+Barry Williams
+Principal Consultant
+Database Answers
+8th. October 2000
+
+
+Not all Categories have sub categories, for example PalmPilot.
+Some Category, (e.g. phones and accessories), have many sub categories 
+(desk phones, cell phones, voice mail, calling cards and so on).
+</PRE>
+<HR>
+
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+
+
+
+</BODY>
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../history.htm">History of Databases</A> 
+        | <A HREF="../../links.htm">Useful Links</A> ]
+<!--    | <A HREF="../../scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+</HTML>

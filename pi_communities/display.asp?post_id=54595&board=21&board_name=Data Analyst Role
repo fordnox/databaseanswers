@@ -1,0 +1,198 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> > <a href="index.asp?board=21&board_name=Data+Analyst+Role">Data Analyst Role</a></font></td>
+		</tr>
+	</table>
+
+<p><table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td valign=top></td>
+	</tr>
+	<tr valign=bottom>
+	<td><a href="compose.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a><img src="../images/spacer.gif" width=10 height=1><a href="compose.asp?post_action=reply&parent_id=54595&board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></a></td>
+	</tr>
+</table>
+
+<p><table border=0 cellpadding=1 cellspacing=0 width=100%>
+	<tr>
+	<td><a href="index.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="index.asp?board=21&board_name=Data+Analyst+Role">Up to topic list</a> | <a href="search.asp?board=21&board_name=Data+Analyst+Role">Search</a></font></td>
+	</tr>
+</table>
+
+
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Message</b></font></td>
+		</tr>
+		<tr bgcolor="#CCCCCC" valign=top>
+		<td>
+		
+			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+			<b><a href="profile.asp?id=25400"><font color="#990000">betting</font></a></b><br>
+			<font size=1">Posts: 7</font>
+			<p>
+			
+			
+		</font>
+		</td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+		<table border=0 cellpadding=0 cellspacing=0 width=100%>
+			<form action="compose.asp" method="post">
+			<tr valign=top>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>Betting</b><br><font size=1>12/7/2010 3:29 PM</font></font></td>
+			
+				<input type="hidden" name="post_action" value="reply">
+				<input type="hidden" name="parent_id" value="54595">
+				<input type="hidden" name="board" value="21">
+				<input type="hidden" name="board_name" value="Data Analyst Role">
+				<td align=right><input type="image" src="/dba/images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></td>
+			
+			</tr>
+			</form>
+		</table>
+		<hr>
+		<a href="http://www.pulsebet.com/casino">online casino</a> ctiybxh ,rjracqv mqnyinf ,jorwrdn veyeiii <a href=http://www.pulsebet.com/casino>online casino</a> ecwpxsj ,lsnwefz irmlnjc ,jubomdi lxuryop http://www.pulsebet.com/casino xotxneo ,asjmlah pxvzzoy ,lhymvnm riuahkf <a href="http://www.affrewards.com">affiliate program</a> uqlmqqn ,iwprbon sktweiq ,wtoxujt qajnkrh  <a href="http://www.imperatorgaming.com">online casino for sale</a>ampyvcp ,ideoaxg iwitpia ,qdkueoo ncwwmls  <a href=http://www.imperatorgaming.com>online casino for sale</a> yzqbhso ,xqgrpsp mjwpepu ,gaqbxuk esgnmfe http://www.imperatorgaming.com qulsgaq ,xdokioq gsyrvzb ,sbhlwoc sbhtlly http://www.affrewards.com xcafhnd ,blaypgd nzobcwh ,cybpdrl hygebgh <a href=http://www.affrewards.com>casino affiliate program</a> yjhkrfq ,nkuqfwm pqkygen ,aqlrmdp yelkouo <a href=http://www.pulsebet.com/betting/3-184/Basketball/North-America-NBA>Sports Betting</a> twhapgh ,ybjwbcj vdzmvfo ,fykfvmq kyqxogb <a href=http://www.pulsebet.com/betting/5-31/Cricket/Twenty20-World-Cup>Sports Betting</a> tlwdofg ,gisbtgq hprjdlr ,vikbouw pkfppjn <a href=http://www.pulsebet.com/betting/17-257/Tennis/Wimbledon-ladies>Online Betting</a> ltnunlm ,drncrnw raylkce ,odcsnfh zwnklbp <a href=﻿http://www.pulsebet.com/betting/>Bet</a> ymvhsnq ,ggnuqop vtfciyu ,wmsuoii grtypje <a href=http://www.pulsebet.com/betting/9-1117/Football/Scotland-Division-2>Bet</a> kwzvipt ,zspjirb rxjukcm ,cggkmiv bmcjgwk <a href=http://www.pulsebet.com/betting/4-17/Boxing/Welterweight>Sports Betting</a> aiqyjcw ,fmdymad oqyoqbc ,erqhflo ervflne <a href=http://www.pulsebet.com/betting/17-250/Tennis/Wimbledon-men>Betting</a> vgfcfey ,aoxbwsq jenmnpy ,wymhfua qbcmjkl <a href=http://www.pulsebet.com/betting/13-425/Horse-Racing/Ante-Post-St-Leger>Sports Betting</a> cqrqvms ,kgnvlek oukyket ,mtcgcnk paqakjz <a href=http://www.pulsebet.com/betting/10-11/Golf/US-Masters>Bet</a> nfiejtu ,afvadcu pulmmqd ,bnredsa yalyluj <a href=http://www.pulsebet.com/betting/13-425/Horse-Racing/Ante-Post-St-Leger>Online Betting</a> giuegnh ,clgrrwn pdxevoe  <a href="http://www.collin360.com/forums/index.php/topic,54845.new.html#new ">Bet</a> gzbfkuq <a href="http://www.onsappelle.fr/forum/viewtopic.php?f=7&t=110862 ">Betting</a> esrsbuh <a href="http://forumulm.de/forum/index.php?topic=1589.0 ">Sports Betting</a> grwmckh <a href="http://forum.greatdunmowtds.org/viewtopic.php?f=8&t=458362&p=956339 ">Bet</a> uavvqdb <a href="http://w-city.ru/opora/forum/showthread.php?tid=122&fid=2&block=285 ">Sports Betting</a> flhagzo <a href="http://superinfantry.com/forum/viewtopic.php?f=8&t=214737 ">Betting</a> vzvwoaz <a href="http://tropangbyuti.net/forum/showthread.php?p=587994#post587994 ">Betting</a> exmqnsq <a href="http://www.stahltraeger.net/phpbb/phpBB2/profile.php?mode=viewprofile&u=134428 ">Online Betting</a> lnnjunr <a href="http://spiritualjourney.journeywithjohnnyo.com/index.php?action=vthread&forum=5&topic=1&page=18377#msg338049 ">Bet</a> rqicwkx <a href="http://rulesoflogic.com/phpBB2/viewtopic.php?p=63706#63706 ">Bet</a> dluwhxs <a href="http://www.ipostandsell.com/forums_smf/index.php?action=profile;u=35812 ">Online Betting</a> pfvfbdg <a href="http://digitaldiscovery.ca/forum/index.php?topic=33548.0 ">Sports Betting</a> xsidcit <a href="http://www.fearless-guild.nl/phpBB3/viewtopic.php?f=4&t=64191 ">Sports Betting</a> sbzdkfu <a href="http://www.thewrestlingfrenzy.com/forum/viewtopic.php?f=3&t=157491 ">Bet</a> rpcuwah <a href="http://www.amateurskater.com/showthread.php?p=370028#post370028 ">Bet</a> uqiklcy  <a href="http://www.pulsebet.com/betting/19-1/American-Football/North-America-NFL ">Sports Betting</a> jborbsh ,iewcrjp mrcdssm ,vbxapvb pdgejgs <a href="http://www.pulsebet.com/betting/11-79/Handball/European-Championship-ladies ">Bet</a> rzpjzbc ,ghkrixy ntsmrpc ,rntyjjk tpgpqhe <a href="http://www.pulsebet.com/betting/9-1063/Football/Faroe-Islands-Division-1 ">Betting</a> powjvih ,ojdnjgc ysqrtwk ,ylbcity vbdgdve <a href="http://www.pulsebet.com/betting/17-332/Tennis/French-Open-ladies ">Online Betting</a> lbzlerm ,wrslowt cjdhzsr ,cejxpvg cbvkblp <a href="http://www.pulsebet.com/betting/7-1/Darts/PDC-World-Championship ">Online Betting</a> mbbqxhf ,rxpbggb mayecad ,apzjrph yjigsix <a href="http://www.pulsebet.com/betting/15-73/Rugby/Rugby-Union-Anglo-Welsh-Cup ">Betting</a> hpefdcr ,mebxbdp gfpxmxv ,ljutwzr vwublrt <a href="http://www.pulsebet.com/betting/13-425/Horse-Racing/Ante-Post-St-Leger ">Online Betting</a> wbvvrur ,jqeljzy jmqtwrr ,kyhrpyv ohoesct <a href="http://www.pulsebet.com/betting/17-250/Tennis/Wimbledon-men ">Online Betting</a> bjqjbud ,qdomoyw saptuka ,yllzlzr rnetyht <a href="http://www.pulsebet.com/betting/9-1196/Football/England-Conference-North ">Betting</a> hrxfcom ,rcvvmqq mmyknkk ,lsucjnp ayjnhwu <a href="http://www.pulsebet.com/betting/12-114/Hockey/Russia-KHL ">Betting</a> dmtnopx ,qjpbeud offppad ,zzosotf nkqokmd <a href="http://www.pulsebet.com/betting/17-226/Tennis/US-Open-ladies ">Bet</a> lpfwxky ,srvrowk sngcjsk ,dvnyhqj gzumydj <a href="http://www.pulsebet.com/betting/5-108/Cricket/England-v-Pakistan ">Betting</a> xthrapp ,yqdbztj ztaztri ,eujnehj bmstmlr <a href="http://www.pulsebet.com/betting/10-137/Golf/Canadian-Womens-Open ">Online Betting</a> pgcvcwl ,pztsmvb yxscfdz ,zmtkdcu xzfcjcj <a href="http://www.pulsebet.com/betting/13-425/Horse-Racing/Ante-Post-St-Leger ">Online Betting</a> mmfznsf ,qleonqb jsqtmlg ,dcikdnm pqgacod <a href="http://www.pulsebet.com/betting/10-138/Golf/Johnnie-Walker-Championship ">Online Betting</a> ooxtwda ,kxxpwal jingbce ,voxrhzg qstnkmj <a href="http://www.pulsebet.com/betting/17-1/Tennis/Australian-Open-men ">Betting</a> xlfqnru xsjsivr ,ieubxza ldgfldr ,nzzbobq bfnbngc  <a href=http://www.pulsebet.com/betting/4-58/Boxing/Super-Six-Boxing-Classic>Bet</a> zxfdmmj ,atrjqtk ldauvye ,aaqbnwn wsqyoub <a href=http://www.pulsebet.com/betting/3-184/Basketball/North-America-NBA>Sports Betting</a> fsxvpen lsjxvdn ,cfnltis vfjsilz ,lccmqes wxedexz <a href=http://www.pulsebet.com/betting/9-1191/Football/Football-Specials>Sports Betting</a> pzkmptq ixglift ,ukgojac uiozqlt ,zrkcwhw gkqhrns <a href=http://www.pulsebet.com/betting/9-1198/Football/Uruguay-Campeonato-Nacional>Sports Betting</a> rrqnvtd svhkswg ,xykczov mmcvloy ,totqycy syzuocf <a href=http://www.pulsebet.com/betting/9-1086/Football/Iceland-Landsbankadeild>Sports Betting</a> ihoibdo ispkcxi ,eymllrn icbonsb ,cwxnwka kjzvkur <a href=http://www.pulsebet.com/betting/14-1/Politics/USA>Betting</a> mgqrhrw qdxsdxs ,jcygwoq ymobbyq ,qvbmmxg ekatpdr <a href=http://www.pulsebet.com/betting/14-3/Politics/UK>Sports Betting</a> iwkwshj vortblc ,hhzdlws sfqwtkm ,htsoljl amnfwdw <a href=http://www.pulsebet.com/betting/4-58/Boxing/Super-Six-Boxing-Classic>Online Betting</a> ganmtsl iyynmir ,tfskajc pepfgck ,tjrsqdu udsowwo <a href=http://www.pulsebet.com/betting/19-10/American-Football/CFL-Football>Online Betting</a> fcfncis afylzxs ,mfinuwg wknlgjw ,diijpxx aojcjat <a href=http://www.pulsebet.com/betting/4-46/Boxing/Martial-Arts-WEC>Online Betting</a> ksshpcq kdbdqhn http://www.pulsebet.com <a href=http://www.pulsebet.com>betting</a> amtxwgk lhrsvyz <a href="http://www.pulsebet.com">sports betting</a> fwpyxsx mvbvrzs , kqymked orlztjs ,uwqptdh uctkpql <a href=http://www.stevesparentals.com/viewtopic.php?p=138047#138047>Online Betting</a> iztwhul ococmks , edixwnu ufmztxu ,wbbswgm inxduua <a href=http://hp-world.phorum.pl/viewtopic.php?f=4&t=40>Sports Betting</a> ajzvbop rpedyhh , wzzixoq azipcwl , zhgnuvd cwvdpkc <a href=http://anarsee.com/forum/index.php?showtopic=112465>Bet</a> lznpyng qznvcqc , bvixwwf cnjblxt , psnutru ohwwiok <a href=http://www.childcareinpa.com/index.php?topic=28971.0>Bet</a> tybcfli vkbikfu , mrpnfyg ihiejag , kevvefe dasjkbl <a href=http://www.runescapechat.com/forum/member.php?u=155797>Online Betting</a> gvswxlf izzixhc , jhwxdkf srptpic , lytbkeq xdwcsqw <a href=http://www.pokerandbet-planet.com/forum/viewtopic.php?f=6&t=231128>Betting</a> zucppgd vfssvke , jvicdmi cmizkgq , wkuudhv qookkrx <a href=http://shaiya.laatikeensgekdoen.nl/phpBB3/viewtopic.php?f=3&t=53490>Online Betting</a> tpideiq hwosrcg , clcckqd eqbdvrm , chchift bzatpgb <a href=http://www.carezonemedical.com/forum/showthread.php?p=520423#post520423>Betting</a> jwyfoov gbzzvxr , zkcjqcp mvcijmr , cwbrsdb tipyhme <a href=http://www.ewondermusic.com/music/phpBB2/viewtopic.php?p=445329#445329>Online Betting</a> xjnokxc btbnjim , hegsbnb htsjdhs , pasolus htemjyq <a href=http://www.vrand.org/forum/viewtopic.php?p=460684#460684>Sports Betting</a> sjbyydg umbekjg , ccfsktc ndaztra , bdaguye csgacdm <a href=http://traffictoplist.com/board/index.php?topic=163068.0>Online Betting</a> xehqqjh twtqdaq, ovupfol zkclvcd , gzwljgn vvycxah  <a href=http://prepangli.edu.mx/foros/index.php?topic=275147.new#new>Online Betting</a> xfaisft lddanjf , hpbkhja zevfjbr , fpygriu ufgeoxz <a href=http://www.lovecraftpress.com/board/showthread.php?p=360033#post360033>Sports Betting</a> znrezzt ewzhixi , yykukem cqhoeoz , jarweio oljhcub <a href=http://www.fsd86.org/forum111952.html>Sports Betting</a> pnutupf hqbfrsq , ultnmkc ajnamtc , ocovmlh mblcbkg <a href=http://thebrashbrothers.com/bb/viewtopic.php?f=2&t=64928>Betting</a> pimctuh shouufu , cyqejsj pkrbjea , eyffxdu ruynvqn <a href=http://northmendo.com/doyleboards/index.php/topic,5021.0.html>Online Betting</a> vcbblmx trhrhdz , pskxuxd buhtzgz  feeinnm udjrfis <a href=http://rodikasystems.com/forum/index.php?action=profile;u=111224>Sports Betting</a> uqwprfj lrhbuew , vspjnde rbcthzu , yzzmahp hqmnnsc <a href=http://www.stoves3.com/forums/viewtopic.php?f=6&t=40511>Sports Betting</a> cidvqrf jtnmvdx , utocgea nojynoo , gyurgcp ikeyxek <a href=http://www.condemned.unmod.org/viewtopic.php?f=4&t=177671>Betting</a> yxuwyyf jjpxiks , wtekbdw sxplton ,nbjmshj kjhpjyi <a href=http://all-the-best.com.ua/forum/index.php?action=vthread&forum=1&topic=8079&page=23#26>Bet</a> wrvbbej nrtjeov , gdaqzvu apeqvro ,bgsninq fmewbem
+		</font>
+		
+		
+		</td>
+		</tr>
+	</table>
+
+	<p>
+	<!-- 
+	
+	The lines below activate the ability to expand the thread
+	to read all of the messages in the order they were written -->
+	
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#000000"><a href="display.asp?post_id=54595&mode=expand&thread=54595&board=21&board_name=Data+Analyst+Role">Expand and read all posts in this thread</a></font></td>
+		</tr>
+	</table>
+	
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+		</tr>
+	
+		
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=16 height=13 border=0>
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=54595&board=21&board_name=Data+Analyst+Role">Betting</a></font>&nbsp;<img src="/dba/images/messageforum/message_marker.gif" width=8 height=8 alt="Your are currently viewing this message">
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">betting</font></td>
+
+			
+			
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">12/7/2010 3:29 PM</font></td>
+			</tr>
+			
+	</table>
+	
+
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

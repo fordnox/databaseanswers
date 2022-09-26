@@ -1,0 +1,353 @@
+<HTML><HEAD><TITLE>Object Integration</TITLE></HEAD> 
+
+<BODY TEXT="#202020">
+
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="images/dba_400_home.jpg">
+</TD> 
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALT="Maldive Islands is a great break from job-Hunting" HEIGHT=94 WIDTH=251 SRC="images/maldives_sml.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Integrating Objects and Relations</B></FONT> 
+</TD> 
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR=blue WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=middle WIDTH=60>
+<A HREF="careers.htm"><IMG ALT="Careers" BORDER=0 SRC="images/buttons/careers_alt.jpg"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="site_map.htm"><IMG ALT="Search" BORDER=0 SRC="images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="images/buttons/site_map_alt.gif"></A></TD>
+<TD ALIGN=right VALIGN=top><FONT COLOR=white face="Verdana" size="1">&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="98CEDF" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=90%>
+
+<TR>
+<!---
+<TD ROWSPAN=3 VALIGN=top WIDTH=80>
+<A HREF="images/boschendal_pool.jpg">
+<IMG ALIGN=left ALT="Boschendal Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="images/boschendal_vertical_sml.jpg"></A>
+</TD>
+--->
+
+<TD>
+<CENTER>
+
+<TABLE BGCOLOR="003088" CELLPADDING=5 CELLSPACING=5 WIDTH=90%>
+
+<TR><TD ALIGN=middle BGCOLOR="#6699FF" BGCOLOR="#004098" COLSPAN=2><FONT COLOR=white SIZE=2>
+<B>Background</B>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="#004098"><FONT COLOR=white SIZE=2>
+
+<P>There are a number of alternatives for mapping Objects onto Tables :-
+<BR>
+<OL>
+<LI>Store everything in one table
+<LI>Create one table per class and one SQL view per superclass/subclass relationship
+<LI> Create one table per subclass (in the case of inheritance that includes superclass attributes as well)
+</OL>
+
+<BR>Each alternative has different <B>Performance implications</B> which need to be evaluated for any specific situation. 
+<!--- <BR>The aspect of <A HREF="mapping_and_toplink.htm">Mapping</A> is discussed in more detail elsewhere. --->
+
+</TD></TR>
+
+<TR><TD ALIGN=middle BGCOLOR="#6699FF" BGCOLOR="#004098" COLSPAN=2><FONT COLOR=white SIZE=2>
+<B>Here are some Useful Links ...</B>
+</TD>
+</TR>
+
+<TR><TD>
+
+<TABLE BGCOLOR="98CEDF" BORDER=3><FONT COLOR=blue SIZE=2>
+<TR>
+<TD><FONT COLOR=blue SIZE=2><B>CATEGORY</TD>
+<TD><FONT COLOR=blue SIZE=2><B>LINK</TD>
+<TD><FONT COLOR=blue SIZE=2><B>ORIGIN</TD>
+<TD><FONT COLOR=blue SIZE=2><B>DESCRIPTION</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=1>Michael Stonebreaker</TD>
+<TD><FONT COLOR=blue SIZE=1>Object-Relational DBMSs,(ISBN 1-55860-397-2)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0201615770/qid%3D971542296/104-9495826-7144747">
+Building Web Applications with UML</A>(4.5 Stars)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0471295515/ref=sim_books/104-9495826-7144747">
+Business Modelling with UML</A> (4 Stars)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1><A HREF="http://www.amazon.com">
+Design using UML Object Modelling</A> (ISBN 0-07-882474-5)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Paul Reed</TD>
+<TD><FONT COLOR=blue SIZE=1><A HREF="http://www.amazon.com">
+Developing Applications with Visual Basic and UML</A></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0201433133/ref=sim_books/104-9495826-7144747">
+Enterprise Modelling with UML</A> (4 Stars)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/020165783X/o/qid=971543220/sr=2-1/104-9495826-7144747">
+UML Distilled - a Brief Guide to the Standard Object Modelling Language</A> (4 Stars)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Books</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.amazon.com">Amazon.com</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0201699613/ref=sim_books/104-9495826-7144747">
+Visual Modelling with Rational Rose 2000  and UML</A> (4 Stars)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Consultants</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www.objectarchitects.de/">
+Object Architects</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Germany</TD>
+<TD><FONT COLOR=blue SIZE=1>Worth checking out</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Consultants</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.objectarchitects.de/ObjectArchitects/orpatterns/">
+Object Architects</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Germany</TD>
+<TD><FONT COLOR=blue SIZE=1>Patterns for Object/Relational Layers</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Developers</TD>
+<TD VALIGN=TOP>
+<FONT COLOR=blue SIZE=2><A HREF="http://www.objectarchitects.de/Wolfgang/">Wolfgang Keller</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Germany</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www.objectarchitects.de/ObjectArchitects/orpatterns/Architecture/architecture.htm">Paper on Architecture</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Objects in Use</TD>
+<TD VALIGN=TOP>
+<FONT COLOR=blue SIZE=2><A HREF="objects_in_use.htm">including Jim O'Connell's Answer</A></TD>
+<TD><FONT COLOR=blue SIZE=2>&nbsp</TD>
+<TD BGCOLOuuR="lightyellow"><FONT COLOR=blue SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Publication</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.ambysoft.com/mappingObjects.html" TARGET=_NEW>
+Scott Ambler</A></TD>
+<TD><FONT COLOR=blue SIZE=2>USA</TD>
+<TD><FONT COLOR=blue SIZE=1>
+<A HREF="http://www.AmbySoft.com/mappingObjects.pdf" TARGET=_NEW>
+Paper on Mapping Objects Relational Databases(pdf file)</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Publication</TD>
+<TD><FONT COLOR=blue SIZE=2>
+
+Scott Ambler</A></TD>
+<TD><FONT COLOR=blue SIZE=2>USA</TD>
+<TD><A HREF="http://www.ambysoft.com/onlineWritings.html" TARGET=_NEW>
+<FONT COLOR=blue SIZE=1>List of Scott Ambler's Online Writings</FONT></A></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.enhydra.org/software/documentation/enhydra/DODS.html" TARGET=_NEW>
+Data Objects Design Studio</A></TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.enhydra.org/index.html">Enhydra</TD>
+<TD><FONT COLOR=blue SIZE=1>Open Source Java/XML Application Server</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor <IMG ALT="New"SRC="images/new.gif"></TD>
+<TD><FONT COLOR=blue SIZE=2>
+<A HREF="http://www.hibernate.org/" TARGET=_NEW>Hibernate</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Open Source</TD>
+<TD><FONT COLOR=blue SIZE=1>Tool for Object-Relational Mapping - controversial to use.
+<BR>Offers its own portable SQL extension (HQL), and native SQL, or an object-oriented API.
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www-sop.inria.fr/cermics/dbteam/ObjectDriver/" TARGET=_NEW>
+Object Driver</A></TD>
+<TD><FONT COLOR=blue SIZE=2>France</TD>
+<TD><FONT COLOR=blue SIZE=1>An Open Object Wrapper for Relational Databases</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www.persistence.com" TARGET=_NEW>Persistence</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=1>&nbsp</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www.polyhedra.com" TARGET=_NEW>Polyhedra</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=1>&nbsp</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://www.roguewave.com" TARGET=_NEW>RogueWave</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=1>Very popular</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://otn.oracle.com/products/ias/toplink/quicktour/ovr01_05.htm" TARGET=_NEW>TopLink</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=2>Tool that Maps Java Classes onto Relational Tables.</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://otn.oracle.com/products/ias/toplink/quicktour/ovr01_05.htm" TARGET=_NEW>TopLink</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="toplink_discussion_1.htm">Discussion 1</A>.</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://otn.oracle.com/products/ias/toplink/quicktour/ovr01_05.htm" TARGET=_NEW>TopLink</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="toplink_discussion_2.htm">Discussion 2</A>.</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue SIZE=2>Vendor</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="http://otn.oracle.com/products/ias/toplink/quicktour/ovr01_05.htm" TARGET=_NEW>TopLink</A></TD>
+<TD><FONT COLOR=blue SIZE=2>Oracle</TD>
+<TD><FONT COLOR=blue SIZE=2><A HREF="toplink_discussion_3.htm">Discussion 3</A>.</TD>
+</TR>
+
+</TABLE> 
+
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top WIiDTH=50%>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask a Question</A> 
+        | <A HREF="contact_us.htm">Contact Us</A> 
+	| <A HREF="mailto:info@databaseanswers.org">Email Us</A> 
+        | <A HREF="search.htm">Search</A> 
+        | <A HREF="site_map.htm">Site Map</A> ]
+</CENTER>
+
+<!-- End of  Standard Footer -->
+<P>
+
+<CENTER><FONT SIZE=1><I> &#169 DatabaseAnswers.com 2006</I></A></FONT></CENTER>
+
+</HTML>
+

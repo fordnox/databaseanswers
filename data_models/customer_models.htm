@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Customer Data Models</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+	<td height="68" valign="middle"><img src="../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+	<td HEIGHT=95 ROWSPAN=2 width="100%" align="right" VALIGN=middle><img ALT="The Pier at Cannes" src="../images/cannespier_xsml.jpg" hspace="0" vspace="4" wiIIdth=188 height=88></td>
+</tr>
+
+<tr> 
+	<td valign="middle">
+	<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td>
+</tr>
+
+</table>
+
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/buttons/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/spacer.gif" width=5 height=24></td>
+	<td><a href="../illya_index.htm"> <img name="menu_home" src="../images/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/curve-top-blue.gif" width=28 height=24></td>
+	<td><a hreEEf="../illya_ask_a_question.htm"><img name="menu_question" src="../images/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../illya_careers.htm"> <img name="menu_careers" src="../images/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a hreEEf="#"><img name="menu_contact" src="../images/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/illya_index.htm"><img name="menu_models" src="../images/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a hreEEf="#"><img name="menu_timers" src="../images/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a hreEEf="#"><img name="menu_search" src="../images/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../illya_site_map.htm"><img name="menu_map" src="../images/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<!--- END OF TOP MENU BAR --->
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"> <p><img src="../images/spacer.gif" WIDTH=3 wiIIIdth="90"></p></td>
+<td valign="top"><img src="../images/spacer.gif" width="3" height="239"></td> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+	<table border=0 width="100%" cellspacing="0" cellpadding="2">
+	<tbody> 
+              <tr> 
+
+                <td align=center colspan=3 valign=middle bgcolor="#3399CC" background="images/px-left.gif"><img src="images/spacer.gif" width="1" height="10"><br>
+
+                  <span class="header2">
+Here are some Customer-related Data Models that I have created over the past two years.</span><br>
+                  <span class="usual"><font color=white>If you would like an Access 
+                  Database for any of these Models,</font> <a 
+      href="mailto:barryw@databaseanswers.com"><font color=white>let me know</font></a><font color=white>.</font> 
+</font></span>
+<img src="images/spacer.gif" width="1" height="5"> 
+
+</td>
+</tr>
+
+<tr> 
+<td valign=top class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2> 
+<ol>
+<li><a href="crm_top_level/index.htm">CRM Top-Level</a> 
+<li><a href="b2c.htm">Customers with multi-lingual B2C</a> 
+<li><a href="bank_and_branches/index.htm">Customers at a Bank</a> 
+<li><a href="bookstore/index.htm">Customers at a Bookstore</a> 
+<li><a href="call_centers/index.htm">Customers at a Call Center</a> 
+<li><a href="car_hire/index.htm">Customers and Car Hire</a> 
+<li><a href="car_sales/index.htm">Customers and Car Sales</a> 
+<li><a href="car_svc_center/index.htm">Customers and Car Servicing</a> 
+<li><a href="department_store/index.htm">Customers and a Department Store</a> 
+<li><a href="game_shop/index.htm">Customers and a Games Shop</a> 
+</ol>
+</td>
+
+<td valign=top class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2> 
+<ol>
+<li><a href="insurance.htm">Customers and Personal Insurance</a> 
+<li><a href="hairdressers/index.htm">Customers/Clients at the Hairdressers</a> 
+<li><a href="health_centre/index.htm">Customers/Patients at a Health Center</a> 
+<li><a href="hardware_sales/index.htm">Customers/Clients and Hardware Sales</a> 
+<li><a href="loan_management/index.htm">Customers and Loans</a> 
+<li><a href="customers_commercial_and_personal/index.htm">Customers - Commercial and Personal</a> 
+<li><a href="customer_data/index.htm">Customer Data</a> 
+<li><a href="customer_data_catalog/index.htm">Customer Data Catalog</a> 
+<li><a href="customer_metadata/index.htm">Customer MetaData Repository</a> 
+<li><a href="customer_metrics/index.htm">Customer Metrics</a> 
+<li><a href="tracking_orders/index.htm">Customer Order Tracking</a> </li>             
+</ol>
+</td>
+
+</tr>
+</tbody> 
+</table>
+</TD>
+</TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF BOTTOM MENU BAR --->
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/spacer.gif" width=5 height=24></td>
+	<td><a href="../illya_index.htm"> <img name="menu_home" src="../images/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a hreEEf="../illya_ask_a_question.htm"><img name="menu_question" src="../images/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../illya_careers.htm"> <img name="menu_careers" src="../images/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a hreEEf="#"><img name="menu_contact" src="../images/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/illya_index.htm"><img name="menu_models" src="../images/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a hreEEf="#"><img name="menu_timers" src="../images/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a hreEEf="#"><img name="menu_search" src="../images/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../illya_site_map.htm"><img name="menu_map" src="../images/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>User-Extendable Data Dictionaries Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="../../images/cars/1936cord_lge.jpg""> 
+<IMG ALT="Cord Car, Auburn, Indiana, 1936 - click for large picture." BORDER=3 SRC="../../images/cars/1936cord_sml.jpg"></A> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<!--- <img alt="Health Insurance Claims" src="../../images/data_model_names/health_insurance_claims.gif" height=24 width="449"> --->
+<img alt="User-Extendable" src="images/lft_user_extendable.gif"> 
+<img alt="Data Dictionary" src="images/rt_data_dictionary.gif"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements have been defined by the User as follows :-</B>
+A Data Dictionary that can be extended by the non-IT User to define new Entry Types and new Entries.
+
+<B>A. The Tables to implement this User-Extendable Facility include :-</B>
+A.1 XTC Entry Types
+A.2 XTC Entry Definitions
+A.3 XTC Data
+
+Typical XTC Entry Types include :-
+<LI>Addresses, Data Items, etc.
+
+<B>C. How are these Things of Interest related ?</B>
+C.1 An XTC Entry Types can have one or many Entry Defintions.
+C.2 An Entry Definition can have zero, one or many XTC Data values.
+
+Entries in these table for an Address Type would be :-
+<B>1) In the XTC_Entry_Types Table :-</B>
+user_login_name	xtc_entry_type_name	parent_xtc_entry_type_name	xtc_entry_type_description	date_created
+dba_admin	Address			<NULL>				A 3-line UK Address	07/10/2004
+
+<B>2) In the XTC_Entry_Type_Definitions Table :-</B>
+user_login_name	xtc_entry_type_name		fld_seq	fld_name
+dba_admin	Address				1	Building
+dba_admin	Address				2	Street
+dba_admin	Address				3	Locality
+dba_admin	Address				4	City
+dba_admin	Address				5	State/County
+dba_admin	Address				6	Country
+
+<B>3) In the XTC_Entry_Data Table :-</B>
+user_login_name	xtc_entry_type_name	rcd_seq	fld_seq	fld_value
+dba_admin	Address			1	1	Mansion House
+dba_admin	Address			1	2	17,Thames Side
+dba_admin	Address			1	3	Laleham
+dba_admin	Address			1	4	Windsor
+dba_admin	Address			1	5	Berkshire
+dba_admin	Address			1	6	England
+
+<B>SQL to create sample data ...</B>
+
+
+<HR>
+<B>PL/SQL Code to display User-Defined Data Dictionary Entry Types ...</B>
+<BR>The output from this Code is shown lower down the page.
+-- Code starts here ...
+Prompt Displaying XTC Definitions and Details (and Data)
+set long 30000
+set serveroutput on size 3000
+--
+Declare 
+v_parent_user_login_name                  XTC_Entry_Types.user_login_name%TYPE;
+v_parent_xtc_entry_type_name           XTC_Entry_Types.xtc_entry_type_name%TYPE;
+v_xtc_entry_type_description              XTC_Entry_Types.xtc_entry_type_description%TYPE;
+--
+v_child_user_login_name                      XTC_Entry_Type_Definitions.user_login_name%TYPE;
+v_child_xtc_entry_type_name               XTC_Entry_Type_Definitions.xtc_entry_type_name%TYPE;
+v_child_fld_seq                                      XTC_Entry_Type_Definitions.fld_seq%TYPE;
+v_child_fld_name                                  XTC_Entry_Type_Definitions.fld_name%TYPE;
+--
+v_data_user_login_name                        XTC_Entry_Data.user_login_name%TYPE;
+v_data_xtc_entry_type_name                 XTC_Entry_Data.xtc_entry_type_name%TYPE;
+v_data_rcd_seq                                       XTC_Entry_Data.rcd_seq%TYPE;
+v_data_fld_seq                                        XTC_Entry_Data.fld_seq%TYPE;
+v_data_fld_value                                    XTC_Entry_Data.fld_value%TYPE;
+--
+count_parents     number;
+count_children   number;
+count_data_rcds number;
+loop_counter number;
+x_txt_No_Children varchar2(32000);
+x_txt_Heading        varchar2(32000);
+x_txt_DataRow       varchar2(32000);
+-- Declare First Cursor (Parents) ...
+Cursor c_Parents is
+SELECT user_login_name,xtc_entry_type_name,xtc_entry_type_description,date_created
+FROM    scott.XTC_Entry_Types
+ORDER  BY user_login_name,xtc_entry_type_name;
+--
+-- Declare Second Cursor (Children) ...
+Cursor c_Children is
+SELECT user_login_name,xtc_entry_type_name,fld_seq,fld_name
+FROM   scott. XTC_Entry_Type_Definitions
+WHERE  user_login_name        = v_parent_user_login_name
+AND       xtc_entry_type_name = v_parent_xtc_entry_type_name
+ORDER  BY user_login_name,xtc_entry_type_name,fld_seq;
+--
+-- Declare Third Cursor (Data Rcds) ...
+Cursor c_Data is
+SELECT  user_login_name,xtc_entry_type_name rcd_seq,fld_seq,fld_value
+FROM     scott. XTC_Entry_Data
+WHERE  user_login_name        = v_parent_user_login_name
+AND       xtc_entry_type_name = v_parent_xtc_entry_type_name
+ORDER  BY user_login_name,xtc_entry_type_name,rcd_seq,fld_seq;
+--
+-- Outer Loop for Parents begins here ...
+BEGIN
+count_children := 0;
+count_parents := 0;
+count_data_rcds := 0;
+loop_counter := 0;
+--
+For cParents in c_parents LOOP
+count_parents := count_parents + 1;
+v_parent_user_login_name := cParents.user_login_name;
+v_parent_xtc_entry_type_name := cParents.xtc_entry_type_name;
+--
+dbms_output.put_line('Entry Type Name = ' || v_parent_xtc_entry_type_name);
+x_txt_Heading :=’|  ’;
+--
+For cChildren in c_children LOOP
+count_children := count_children + 1;
+v_child_fld_seq := cChildren.fld_seq;
+v_child_fld_name := cChildren.fld_name;
+--
+x_txt_Heading := x_txt_Heading || v_child_fld_name || ‘  |  ’; 
+-- end of Child Row and Heading
+end LOOP;
+dbms_output.put_line( x_txt_Heading);
+x_txt_DataRow := ‘  |  ’; 
+For cData in c_data LOOP
+count_data_rcds := count_data_rcds + 1;
+v_data_fld_seq := cData.fld_seq;
+v_data_fld_value := cData.fld_value;
+x_txt_DataRow := x_txt_DataRow || v_data_fld_value || ‘  |  ’; 
+end LOOP;
+dbms_output.put_line(x_txt_DataRow);
+-- end of Parent Loop -
+end LOOP;
+dbms_output.put_line('Total Entry Type Count = ' || to_char(count_parents));
+dbms_output.put_line('Total Entry Definition Field Count = ' || to_char(count_children));
+dbms_output.put_line('Total Data record Count = ' || to_char(count_data_rcds));
+end;
+/
+
+<HR><B>and here's the output ...</B>
+
+SQL> /
+Entry Type Name = Address
+|  Building  |  Street  |  Locality  |  City  |  State/County  |  Country  |
+|  Mansion House  |  17, Thames Side  |  Laleham  |  Windsor  |  Berkshire  | England  |
+Total Entry Type Count = 1
+Total Entry Definition Field Count = 6
+Total Data record Count = 6
+
+PL/SQL procedure successfully completed.
+</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>7th. October 2004
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

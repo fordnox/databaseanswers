@@ -1,0 +1,137 @@
+<HTML><HEAD><TITLE>Print Version of the Basic BOM Data Model</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<B>BOM Platform Data Model</B>
+<BR>Back to the <A HREF="index.htm">Home Page</A>
+
+<BR><BR>
+
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>My Approach</B>
+<BR>My purpose is to design a simple Datababase for a Toilet which will be used 
+<BR>to obtain lists of Components, Sub-Assemblies and Assemblies  and total costs of Assemblies and Finished Products.
+
+<BR>I start by identifying the Requirements. 
+<BR>Then design the Conceptual Data Model,
+<BR>which is very useful for discussion with business users.
+<BR>Then I design the Logical Data Model 
+<BR>Finally I create the Physical Model which I use to create the Database.
+<BR>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 1 - I start with a Photograph of the Toilet
+<BR><BR>
+<IMG ALT="Toilet Simple" BORDER=1 SRC="images/img_1_toilet_simple.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 2 - Then I find a Drawing of a Standard Toilet</B>
+<BR>This is based on the American Standard Toilets Parts Diagram
+<BR>and helps me to identify the separate parts that I use in my Data Model. 
+<BR><BR>
+<IMG ALT="Img 2 - Parts Diagram"  BORDER=1  SRC="images/img_2_american-standard-toilets-parts-diagram_med.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 3 - This helps to identify parts in my simple Toilet</B>
+<BR>that correspond to parts in the American Standard Toilets Parts Diagram.
+<BR><BR>
+<IMG ALT="Img 3 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-toilets-parts-diagram_med.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 4 - Then I design a Conceptual Data Model</B> 
+<BR>for the Diagram in Step 3.
+<BR>I have added the Toilet Lid and Seat because 
+<br>they don't appear in the American Standards Diagram.
+ 
+<BR><BR>
+<IMG ALT="Img 4 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-diagram.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 5 - Simplify the Conceptual Data Model</B> 
+<BR>I generalise the Model by replacing specific Components by generic Components.
+<BR>In this case, it means replacing Lid and Seat, Tank and Bowl by 'Assemblies',
+<BR> and Trip Lever by 'Components'. 
+<BR><BR>
+<IMG ALT="Simple Conceptual Data Model"  BORDER=1 HEIGHT=250 SRC="images/abc.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 6 - Create a Realistic Logical Model
+<BR><BR>
+<IMG ALT="Img 2 - Parts Diagram"  BORDER=1  SRC="images/logical_model_option_1.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Step 7 - Finally, I create the Physical Model to generate the Database.</B>
+<BR>
+<BR>
+<IMG ALT="Physical Data Model"  BORDER=1 SRC="images/physical_data_model.gif"> 
+</TD>
+</TR>
+
+</TABLE>
+
+<BR><BR><B>Test Data ...</B>
+<BR><BR>
+<TABLE BORDER=1>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Advanced</B><BR><BR> </TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Product 1</B><BR><BR></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Products 2</B><BR><BR></TD></TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Intermediate</B>
+<BR>
+<BR> 
+</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Assembly 1</B>
+<BR>
+<BR> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Assemblies 2,3 </B><BR><BR></TD></TR>
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Basic</B><BR><BR></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Component 1,2</B><BR><BR> </TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2></B>Component 3,4,5,6</B><BR><BR> </TD>
+</TR>
+
+</TABLE>
+
+
+
+<FONT SIZE=1>
+<BR><I> &#169 Database Answers Ltd. 2018</I></FONT>
+</FONT>
+</BODY>
+
+</HTML>

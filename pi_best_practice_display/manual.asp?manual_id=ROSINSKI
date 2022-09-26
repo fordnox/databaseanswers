@@ -1,0 +1,346 @@
+
+<html>
+<head>
+	<title>Best Practice Manual Viewer</title>
+	
+<script type="text/javascript">
+
+/**********************************************
+* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
+* Visit http://www.dynamicdrive.com/ for full source code
+**********************************************/
+
+var enablepersist="on" //Enable saving state of content structure using session cookies? (on/off)
+var collapseprevious="no" //Collapse previously open content when opening present? (yes/no)
+
+var contractsymbol='<img BORDER=1 src="/images/icon_folder_open.gif" width=15 height=12>' //HTML for contract symbol. For image, use: <img src="whatever.gif">
+var expandsymbol='<img BORDER=1 src="/images/icon_folder.gif" width=14 height=12>' //HTML for expand symbol.
+
+
+if (document.getElementById){
+document.write('<style type="text/css">')
+document.write('.switchcontent{display:none;}')
+document.write('</style>')
+}
+
+function getElementbyClass(rootobj, classname){
+var temparray=new Array()
+var inc=0
+for (i=0; i<rootobj.length; i++){
+if (rootobj[i].className==classname)
+temparray[inc++]=rootobj[i]
+}
+return temparray
+}
+
+
+function contractcontent(omit){
+var inc=0
+while (ccollect[inc]){
+if (ccollect[inc].id!=omit)
+ccollect[inc].style.display="none"
+inc++
+}
+}
+
+function expandcontent(curobj, cid){
+var spantags=curobj.getElementsByTagName("SPAN")
+var showstateobj=getElementbyClass(spantags, "showstate")
+if (ccollect.length>0){
+if (collapseprevious=="yes")
+contractcontent(cid)
+document.getElementById(cid).style.display=(document.getElementById(cid).style.display!="block")? "block" : "none"
+if (showstateobj.length>0){ //if "showstate" span exists in header
+if (collapseprevious=="no")
+showstateobj[0].innerHTML=(document.getElementById(cid).style.display=="block")? contractsymbol : expandsymbol
+else
+revivestatus()
+}
+}
+}
+
+function revivecontent(){
+contractcontent("omitnothing")
+selectedItem=getselectedItem()
+selectedComponents=selectedItem.split("|")
+for (i=0; i<selectedComponents.length-1; i++)
+document.getElementById(selectedComponents[i]).style.display="block"
+}
+
+function revivestatus(){
+var inc=0
+while (statecollect[inc]){
+if (ccollect[inc].style.display=="block")
+statecollect[inc].innerHTML=contractsymbol
+else
+statecollect[inc].innerHTML=expandsymbol
+inc++
+}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function getselectedItem(){
+if (get_cookie(window.location.pathname) != ""){
+selectedItem=get_cookie(window.location.pathname)
+return selectedItem
+}
+else
+return ""
+}
+
+function saveswitchstate(){
+var inc=0, selectedItem=""
+while (ccollect[inc]){
+if (ccollect[inc].style.display=="block")
+selectedItem+=ccollect[inc].id+"|"
+inc++
+}
+
+document.cookie=window.location.pathname+"="+selectedItem
+}
+
+function do_onload(){
+uniqueidn=window.location.pathname+"firsttimeload"
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+ccollect=getElementbyClass(alltags, "switchcontent")
+statecollect=getElementbyClass(alltags, "showstate")
+if (enablepersist=="on" && ccollect.length>0){
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
+if (!firsttimeload)
+revivecontent()
+}
+if (ccollect.length>0 && statecollect.length>0)
+revivestatus()
+}
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+if (enablepersist=="on" && document.getElementById)
+window.onunload=saveswitchstate
+
+</script>
+
+
+	
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="/index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+<TR>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+</TR>
+
+</table>
+
+
+
+
+
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg">
+			<BR><A HREF="bp_feedback.asp"><FONT COLOR=blue FACE=Verdana SIZE=1>Feedback</A>
+			</td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+	
+	<!-- Sample Section Starts -->
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td align=right><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2><b>Best Practice Manuals</b>&nbsp;&nbsp;</font></td>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		</tr>
+		<tr>
+		<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=20 height=2></td>
+		</tr>
+	</table>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		<td width=2><img src="../images/shim.gif" width=2 height=4></td>
+		<td><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2>Below is the Best Practice Manual you selected.</font></td>
+		</tr>
+	</table>
+	<!-- Sample Section Ends -->
+	
+	<p>
+
+<font face="Verdana" size=2 color="blue">
+<b><font COLOR=blue size=+1>Coaching Across Cultures</font></b><br>This supports the excellent book called <A HREF="http://www.coachingacrosscultures.com" TARGET=_NEW>Coaching Across Cultures</A> by Philippe Rosinski.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b> &nbsp;Dealing with Cultural Differences (page 30)</b></font><p><div id="chap0" class="switchcontent">This 7-Stage Model is adapted from the work of Milton Bennett.</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;Ethnocentric Pitfalls - Culture as a Given</b></font><p><div id="sec3" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>1.  Ignore differences</I></b></font><p><div id="para0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> be physically or mentally isolated/separated
+<LI> deny
+</FONT></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>2. Recognize differences but evaluate them negatively</I></b></font><p><div id="para1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> denigrate others
+<LI> feel superior
+<LI> place others on a pedestal
+</FONT></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>3. Recognise differences but minimise their importance</I></b></font><p><div id="para2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> trivialize
+<LI> fail to notice uniqueness - "we are all the same"
+</FONT></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;Ethnorelative Approaches (Culture as a process)</b></font><p><div id="sec4" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"> </font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>4. Recognise and accept differences</I></b></font><p><div id="para3" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> acknowledge, appreciate, understand
+<LI> acceptance is no agreement, surrender
+<LI> acceptance needs to be instinctual and emotional as much as intellectual
+</FONT>
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>5. Adapt to differences</I></b></font><p><div id="para4" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> move outside one's comfort zone
+<LI> empathy (temporary shift in perspective)
+<LI> adaptation is not adoption, assimilation</FONT></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para5')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>6. Integrate differences</I></b></font><p><div id="para5" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> hold different frames of reference in mind
+<LI> analyze and evaluate situations from various cultural perspectives
+<LI> remain grounded in reality:essential to avoid becoming dazzled by too many possibilities</FONT></font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=40></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'para6')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;<I>7. Leverage differences</I></b></font><p><div id="para6" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><FONT SIZE=1><LI> make the most of differences, strive for synergy
+<LI> proactively look for gems in different cultures
+<LI> achieve unity through diversity
+</FONT></font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Step 1:Conduct your Assessment (see Global Coaching Process on page 209)</b></font><p><div id="chap1" class="switchcontent"><B><I>Coachee's Self-Assessment</I></B>
+<LI>Desires
+<UL>
+<LI><FONT SIZE=1>Source of Motivation
+<LI>Values</FONT>
+</UL>
+
+<LI>Strengths
+<LI>Weaknesses
+<LI>Present Situation
+<UL><LI><FONT SIZE=1>Successes, Satisfactions
+<LI>Challenges, Frustrations</FONT>
+</UL>
+
+<LI>Preferences
+<UL>
+<LI><FONT SIZE=1>Psychological Preferences
+<LI>Cultural orientations</FONT>
+</UL></div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step &nbsp;2 : Articulate Target Objectives</b></font><p><div id="chap2" class="switchcontent"><B><I>You set up your 
+<A HREF="../coaching_global_scorecard.htm">Global Scorecard</A> :-</I></B>
+<BR><FONT SIZE=1><B>G</B>enuine
+<BR><B>L</B>everage
+<BR><B>O</B>utcomes
+<BR><B>B</B>alance
+<BR><B>A</B>ssessment
+<BR><B>L</B>imited</FONT>
+</div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>          &nbsp;What will my measures of success be? <FONT SIZE=1>(page 210)</FONT></b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"></font></div></td></tr></table><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step&nbsp;3 : Progress toward Target Objectives</b></font><p><div id="chap3" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.1       &nbsp;<B><I>Coaching sessions</I></B></b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><LI><FONT SIZE=1>Tapping into desires
+<LI>Leveraging strengths
+<LI>Overcoming weaknesses
+<LI>Building on successes
+<LI>Addressing challenges
+<LI>Achieving real-time learning</FONT>
+<BR>   <BR>
+</font></div></td></tr></table><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="blue" onClick="expandcontent(this, 'sec2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.2       &nbsp;<B><I>Coachee's Actions</I></B></b></font><p><div id="sec2" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="blue"><LI><FONT SIZE=1>Taking focussed actions
+<LI>Applying tools and insights
+<LI>Reflecting and journaling
+<LI>Exchanging <A HREF="http://www.databaseanswers.org/pi_best_practice_display/bp_feedback.asp" TARGET=_NEW>feedback</A>
+<LI>Acquring global awareness
+<LI>Leveraging cultural differences</FONT>
+<BR>   <BR>
+</font></div></td></tr></table>
+</font>
+	
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+
+
+
+
+
+</body>
+</html>

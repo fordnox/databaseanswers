@@ -1,0 +1,949 @@
+<html>
+<head>
+<title>Databases in Demand by Country</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=middle><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">Access Databases are available on this Web Site
+		<img src="images/spacer.gif" width="5" height="1"></td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+
+
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"> 
+                        <p class="small">This page shows <B>over 90 Countries</B> where I have sent my Databases.
+			<B>That's about half the Countries in the world !!!</B>
+			<BR>Back to <A HREF="databases_in_demand.htm">Databases in Demand</A>.
+			</p>
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>&nbsp</tr>
+        <tr>&nbsp</tr>
+      </table>
+
+      <br>
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">Countries that have requested the Databases<img src="images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1">&nbsp</td>
+                      <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">&nbsp</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+
+                              <table width="100%" border=0 cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell"><B>Nr.</B></td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8"><B>Country</B></td>
+                            	<td class="cell" ALIGN=middle><B>Count</B></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">1</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Algeria</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">2</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Argentina</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">3</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Armenia </td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">4</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Australia</td>
+				<td class="cell">9</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">5</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Azerbaijan  </td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">6</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Bahrain</td>
+				<td class="cell">1</td>
+                                </tr>
+	
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">7</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Barbados</td>
+				<td class="cell">3</td>
+                                </tr>
+	
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">8</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Belgium</td>
+				<td class="cell">1</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+				<td class="cell">9</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Belize</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">10</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Bermuda</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">11</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Bosnia-Herzegovina</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">10</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Brazil</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">11</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Bulgaria</td>
+				<td class="cell">4</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">12</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Cambodia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">13</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Canada</td>
+				<td class="cell">9</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">14</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Chile</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">15</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8"><FONT COLOR=red>China</FONT></td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">16</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Colombia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">17</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Costa Rica</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">18</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Croatia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">19</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Czechoslovakia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">20</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Denmark</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">21</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Dominican Republic</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">22</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Ecuador</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">23</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Egypt</td>
+				<td class="cell">5</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">24</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">El Salvador</td>
+				<td class="cell">5</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">25</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Ethiopia</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">26</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Fiji </td>
+				<td class="cell">5</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">27</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">France</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">28</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Germany</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">29</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Gibraltar</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">30</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Holland</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">30</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Honduras</td>
+				<td class="cell">2</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">31</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Hungary</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">32</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Iceland</td>
+				<td class="cell">34</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">33</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">India</td>
+				<td class="cell">34</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">34</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Indonesia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">35</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Iran</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">36</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8"><FONT COLOR=red>Iraq</FONT> </td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">37</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Ireland</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">38</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Italy</td>
+				<td class="cell">4</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">39</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Ivory Coast (Cote d'Ivoire), West Africa </td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">40</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Japan</td>
+				<td class="cell">4</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">40</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Kenya</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">41</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Korea</td>
+				<td class="cell">4</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">41</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Kosovo</td>
+				<td class="cell">4</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">42</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Kuwait</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">43</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Lebanon</td>
+				<td class="cell">5</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">44</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Macedonia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">45</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Malawi</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">46</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Malaysia</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">47</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Maldive Islands</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">48</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Mauritius</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">49</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Mexico</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">50</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Morocco</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">51</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Myanmar </td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">52</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Netherlands Antilles</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">53</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">New Zealand</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">54</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Nigeria</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">55</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Norway</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">56</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Oman</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">57</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Pakistan</td>
+				<td class="cell">10</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">58</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Papua New guinea </td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">59</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Peru</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">60</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Philippines</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">61</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Poland</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">62</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Portugal</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">63</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Puerto Rico</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">64</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Romania</td>
+				<td class="cell">5</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">65</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Russia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">66</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Saudi Arabia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">67</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Serbia</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">68</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Sierra Leone </td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">69</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Singapore</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">70</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Slovakia</td>
+				<td class="cell">9</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">70</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Slovenia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">71</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">South Africa</td>
+				<td class="cell">9</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">72</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Spain</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">73</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Sri Lanka</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">74</td>
+                            	<td class="cell" wiIIIdth="25%"><img src="images/white-point.gif" wiIIIdth="17" width="10" height="8"><A HREF="http://www.sainthelena.gov.sh" TARGET=_NEW><FONT COLOR=red>St.Helena, Atlantic Ocean</FONT></A> (The most isolated)</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">75</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Sudan </td>
+				<td class="cell">3</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">76</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Surinam</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">77</td>
+                            	<td class="cell" wIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Sweden</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">78</td>
+                            	<td class="cell" wIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Switzerland</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">79</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Syria</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">80</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Tanzania</td>
+				<td class="cell">3</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">81</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Thailand</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">82</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Trinidad and Tobago</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">83</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Tunisia</td>
+				<td class="cell">2</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">84</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Turkey</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">85</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Uganda</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">86</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Venezuela</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">87</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">UK</td>
+				<td class="cell">47</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">88</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">United Arab Emirates</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">89</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">USA</td>
+				<td class="cell">77</td>
+				</tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">90</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Vietnam</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">91</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Yemen</td>
+				<td class="cell">1</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">92</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Yugoslavia</td>
+				<td class="cell">3</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">93</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Zambia</td>
+				<td class="cell">1</td>
+                                </tr>
+
+    				<tr bgcolor="#B0D8FF"> 
+				<td class="cell">94</td>
+                            	<td class="cell" wiIIIdth="25%">
+				<img src="images/white-point.gif" wiIIIdth="17" width="10" height="8">Zimbabwe</td>
+				<td class="cell">2</td>
+                                </tr>
+                               				
+                               </table>
+
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

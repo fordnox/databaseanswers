@@ -1,0 +1,210 @@
+<HTML><HEAD><TITLE>Mapping and TopLink</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+
+<TR>
+<TD ALIGN=left VALIGN=bottom><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+Background on the TopLink Product</B></FONT> 
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+<IMG ALIGN=right ALT="Oberhofen, Switzerland" BORDER=1 HEIGHT=191 WIDTH=275 SRC="images/switzerland/oberhofen.jpg">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Here's a copy of deja.com mailing ...
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+    
+>> Forum: comp.databases
+>> Thread: Object-Relational Mapping Tools for Java 
+>> Message 1 of 13
+  Save this thread
+
+back to search results  
+ 
+Subject: Re: Object-Relational Mapping Tools for Java 
+Date: 07/16/2000 
+Author: Bruno Conductier <bruno.conductier@wanadoo.fr> 
+
+ << previous  ·  next in search >>  
+
+http://www.object-relational.com/object-relational.html#CONTENTS 
+ 
+But TopLink seems to be the natural way for you, even more since the recent agreement between BEA and The Object People.
+ 
+http://www.webgain.com/Products/toplink/toplink_weblogic.htm
+ 
+We are still waiting for a similar integration for IBM
+WebSphere Application Server ...
+ 
+By the way are you looking only for an object-relational
+mapping tool or for an integrated mapping tool for 
+CMP EJB container ?
+ 
+To keep in touch with the last announce on the application server tools check 
+ 
+http://www.mgm-edv.de/ejbsig/ejbservers.html
+ 
+and
+ 
+http://theserverside.com/home/index.jsp
+ 
+Bruno
+ 
+akmal b chaudhri wrote:
+> On Fri, 7 Jul 2000, Ramki Hariharan wrote:
+> > I am in the team of developing an B2B enterprise application.
+> > I have to decide and tell the management a product for the Data Access
+> > Layer. That should be easily interacting with WebLogic Server and support
+> > very efficient Object Caching.
+> >
+> > I know there are some fancy tools available in the market like TopLink,
+> > CocoBase, Extreme, etc.
+>
+> I guess if money is no object, you could try the Doug Barry Reports:
+> 
+> http://www.object-relational.com/factbook.html
+> 
+> Another good source of info on O<->R Mapping is the site maintained by
+> Wolfgang Keller:
+> 
+> http://www.objectarchitects.de/
+</PRE>
+<HR>and another one ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>
+ObjectDRIVER also fits your needs. 
+The greatest interest of objectDRIVER is to provide to each user a personnalized access to 
+data that fits his/her needs for his/her application without being constrained by the real 
+data organization in the databases. 
+The applications do not know how are really the data in the databases. 
+More, the queried data sources can change without needing the applications to be even recompiled.
+ 
+The second interest is that it is ODMG-compliant. 
+In particular, it provides OQL to query data as objects. 
+You can get objects from the database with an OQL request, update them, and 
+ObjectDRIVER will update for you the real data in the databases when you commit your transaction.
+ 
+You can download ObjectDRIVER for evaluation:
+http://www.objectdriver.net
+http://www.inria.fr/cermics/dbteam/ObjectDriver/
+ 
+Regards,
+Franck
+--
+Dr Franck Lebastard, Infobjects, +33 (0)4 92 38 77 42,
+http://www.infobjects.net
+</PRE>
+
+
+<HR><FONT COLOR=blue FACE="Verdana" SIZE=2>
+TopLink is described as being the Product of Choice for Object to Relational Mapping, particularly
+<BR>mapping Java Clases to Relational Databases.
+<HR><PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>From Andrew McVeigh ...
+Basically, TOPLink gives you an object database view of the world, but 
+allowing you to store your data into an RDBMS.  
+In many ways, I found its programming model to be similar to Versant's.  
+The documentation on the programming model is, however, quite woeful.  
+To a great extent, you can treat TOPLink as an ODBMS.
+ 
+The idea is that you don't have to constrain your object model very much. 
+In fact, when designing persistent classes, I tend to design them as I would 
+for transient java classes, and then right at the end, I usually add the extra 
+bits of code / artefacts needed for TOPLink.  
+
+In particular, TOPLink requires:
+1) a default constructor for all classes
+2) a public key attribute
+3) extra classes for mapping aggregations 1 -> 0..n where the aggregated thing is an interface
+4) back pointers for 1 -> 0..n aggregation, if a relationship table is not used
+5) some extra stuff which I forget just now :-)
+ 
+Using this approach, I have modelled a moderately large schema (about 50-100 classes) which turned into a 
+very nice looking relational schema.  
+The DBA was quite surprised, and I was pleased to get a nice result.
+ 
+A trap that a lot of my team fall into is to focus on the relational layer, and 
+try to build up object models from an idea of what the tables look like. 
+This is problematic, as I have found that it is far better to model as per a normal OO design and 
+then add the persistent artifacts in later. 
+</PRE>
+<HR>
+
+
+
+<BR>However, <A HREF="toplink_verbatim.htm">a verbatim report</A> from someone with hands-on experience indicates that 
+<BR>caution may be advised, and an alternative Plan would be sensible.
+<BR><BR>The best approach therefore, would be to do a small Pilot project to establish Proof-of-Concept.
+
+<HR>Checking with the Deja.com Discussion Group <A HREF="http://www.deja.com/group/comp.databases.object">comp.databases.object</A> 
+is an excellent way to check the state-of-the-art.
+
+<HR>Here's an example of a <A HREF="toplink_discussion_1.htm">Contribution in a Thread</A>
+
+<BR><BR><BR>
+<!---
+And here are some useful Links ...
+<CENTER>
+<TABLE BORDER=3 CELLPADDING=5 WIiiDTH=80%>
+<TR>
+<TD ALIGN=middle BGCOLOR="blue"><B><FONT COLOR=white>CATEGORY</TD>
+<TD ALIGN=middle BGCOLOR="blue"><B><FONT COLOR=white>SOURCE</TD>
+<TD ALIGN=middle BGCOLOR="blue"><B><FONT COLOR=white>COMMENT</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="lightyellow"><FONT SIZE=2>Books</TD>
+<TD BGCOLOR="lightyellow" VALIGN=TOP>
+<FONT SIZE=2>Chris Date</TD>
+<TD BGCOLOR="lightyellow"><FONT SIZE=2>Highly respected author - recommended for academic rigor</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="lightyellow"><FONT SIZE=2>Vendor</TD>
+<TD BGCOLOR="lightyellow" VALIGN=TOP>
+<FONT SIZE=2><A HREF="http://www.toplink.com/">TopLink</A></TD>
+<TD BGCOLOR="lightyellow"><FONT SIZE=2>&nbsp</TD>
+</TR>
+
+</TABLE>
+</CENTER>
+--->
+
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask me a Question</A>  
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

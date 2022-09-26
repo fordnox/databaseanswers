@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>Conceptual Data Model for our Banking Platform 2020 Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=100 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.visionwealthmgmt.com/products.html" TARGET=_NEW>
+<IMG ALIGN=right ALT="Financial Products (Click for Web Site)" BORDER=0 hspace="0" vspace="4" SRC="../../images/financial_products_sml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Data Model for our Banking Platform 2020</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF='mailto:dba_requests&#64;barryw.org?subject=Request for a Database for our Banking Platform 2020'>An Access Database</A> is available.
+  
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+There was a very thought-provoking article by <B>Martin Wolf</B> in the 
+<A HREF=http://www.ft.com/home/uk" TARGET=_NEW>Financial Times newspaper</A> for March 11th. 2016 entitled 
+"Good news – fintech could disrupt finance”.
+
+It states “Banking is currently inefficient, costly and riddled with conflicts of interest”.
+<HR>It identifies three possible sources of disruption :
+1.<B>Payments</B> Transformation, with one possibility being real-time settlements via 
+   distributed ledgers.
+
+2.<B>Peer-to-peer Lending</B>, in which new platforms disintermediate the traditional 
+  businesses in matching savers with investments.
+
+3.<B>Big Data</B> – “this might transform the quality of lending, which would be a good 
+  thing. But the most striking effects are likely to be felt in insurance. With new 
+  monitoring devices, insurers might gain direct knowledge of the quality of driving or 
+  of the state of the clients’ health”.   
+Our new Banking Data Platform reflects this article.</PRE>
+<HR><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The Specifications</A> for this Platform have been derived from an excellent and very thought-provoking article by <B>Martin Wolf</B> 
+in the <A HREF="http://www.ft.com/home/uk" TARGET=_NEW>Financial Times newspaper</A> for March 11th. 2016 entitled "Good news – fintech could disrupt finance”.
+
+It states “Banking is currently inefficient, costly and riddled with conflicts of interest”.</PRE>
+
+<BR>
+
+<TABLE BORDER=1 CELLPADDING=0>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>The Conceptual Banking Platform Data Model</B>
+<BR><BR>
+<BR><IMG ALT="Conceptual Data Model" SRC="..//POC_banking_platform_2020/images/conceptual_data_model.jpg">
+</TD>
+</TR>
+
+
+<!--------------
+<TR>
+<TD ALIGN=middle COLSPAN=2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG SRC="images/POC_BANKING_TABLES.gif">
+<BR>
+<B>Conceptual KPI Channel Count.
+<IMG SRC="images/kpi_channel_count_conceptual.jpg">
+</TD>
+</TR>
+-------->
+
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Conceptual KPI Channel Count.
+<BR>
+<IMG SRC="images/kpi_channel_count_conceptual.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Logical KPI Channel Count. 
+<BR><BR>
+<IMG SRC="images/kpi_channel_count_logical.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Basic Conceptual Dimension Model showing 5 Dimensions</B> of Channel, Customer, Date, Geography and Product 
+<BR>
+<IMG SRC="images/conceptual_data_mart.jpg">
+</TD>
+
+
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Logical Dimension Model showing the same 5 Dimensions</B> of Channel, Customer, Date, Geography and Product
+<BR>
+
+<BR>
+<IMG SRC="images/dimensional_model_facts.gif">
+</TD>
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>The Conceptual Banking Data Warehouse Model</B>
+<BR><BR>
+<BR><IMG ALT="Conceptual Data Model" SRC="images/conceptual_data_model.jpg">
+</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>The Logical Banking Data Warehouse Model
+</B>
+<BR><BR>
+<BR><IMG ALT="Logical Data Model" SRC="images/logical_data_warehouse.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Conceptual version of Our Canonical Data Model</B>
+<BR><BR>
+<BR><IMG ALT="Canonical Data Model" SRC="../canonical_data_models/images/conceptual_data_model.jpg">
+</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Our Participants ERwin Canonical Data Model</B>
+<BR>This is a little different from the Conceptual version
+<BR>
+<BR><IMG ALT="ERwin Canonical Data Model" SRC="../canonical_data_models/images/ERwin_participants_data_model.gif">
+</TD>	
+</TR>
+</TABLE>
+
+
+<BR><Barry Williams
+<BR>May 21st. 2017
+<BR>Database Answers Ltd.
+<BR>London, England
+
+</TR>
+</TABLE>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1><BR><BR><I> &#169 Database Answers Ltd. 2017</I></A></FONT></CENTER>
+<BR>
+
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

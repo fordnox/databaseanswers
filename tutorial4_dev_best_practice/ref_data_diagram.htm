@@ -1,0 +1,75 @@
+<HTML><HEAD><TITLE>Tutorial on Dev Best Practice - Reference Data</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Tutorial on Best Practice in Application Development</B> -  Reference Data
+
+<!--- <BR><BR><A HREF="tutorial_slide_6.htm">Back</A>&nbsp;&nbsp;&nbsp;<A HREF="tutorial_slide_8.htm">Next Slide</A> --->
+
+
+<BR><BR>
+<!--- <IMG ALT="Customers and Products Data Model" SRC="images/customers_and_products_dezign.gif"> --->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<IMG ALT="Amazon Customers" SRC="images/amazon_customers.gif">
+
+<BR>
+
+
+<!---
+<HR>
+<B>Addresses, Payments and Many-To-Many Relationships</B>
+<LI><B>Customers and Addresses</B>
+<LI>At Starbucks, we give very little information about ourselves as Customers.
+<LI>If we pay by cash, we give no details at all.
+<LI>Amazon.com, on the other hand, needs to know a good deal more about us.
+<LI>For example, they need to store details about our addresses, and we can have many of these.
+<LI>In our Database Schema,we could have a Billing Address, a Residence Address and more than one Delivery Address.
+<LI>In passing, let me say that the existence of a separate Addresses Table is often a distinguishing characteristic between a Database Schema with 
+<BR>limited scope,and one intended for use in a mission-critical capacity.
+<LI>Therefore we store Addresses in a separate Table, instead of repeating Address details many times in Customer Tables.
+<LI>This has many benefits. It allows us to validate the Address against files of recognised Addresses.
+<LI>This has become a standard approach so that many commercial products are available to help in this validation.
+<LI>In addition, maintaining a separate Address Table helps in tracking changes of Customer Addresses.
+<LI>The Primary Key in the Customer_Addresses table is the combination of the Customer ID, the Address ID, 
+<BR>and the Date when the Customer moved in. 
+<BR>This works because the Customer cannot move in to the same Address more than once on the same Date.
+<BR>Of course, they could move out and back in on another date, and our design covers that situation.
+
+<BR><BR>
+<LI><B>Many-To-Many Relationships</B>
+<LI>And, of course, as we saw before, this is an example where a Many-to-Many relationship is found.
+<LI>A Customer can have many Addresses, and many Customers can live at the same Address.
+<LI>We resolve this many-to-many by an intermediate table, shown in the diagram as 'Customer_Addresses'. 
+<BR>
+<LI>In a similar way, there is a many-to-many relationship between Customers and Payment Methods.
+<LI>A Customer can have many Payment Methods, such as different Credit Cards, as well as Cash and Check.
+<LI>And, of course, the same Payment Method can be used by many Customers.
+<LI>We resolve the many-to-many Customer Payment Relationship with an intermediate table, 
+<BR>which is called 'Customer_Payment_Methods' in the diagram. 
+ 
+<BR><BR><B>Customer Payment Methods</B>
+<LI>There is a number of Payment Methods, which are stored as Reference Data,
+<LI>These will usually be Cash (at Starbucks) or Credit Card (at Amazon.com).
+<LI>The Customers_Payment_Methods Table can store Credit Card details.
+--->
+
+<BR><BR>
+<LI><B>Standards for Reference Data</B>
+<LI>Where we use Reference Data, it is good practice to comply with relevant national or international Standards.
+<LI>For example, in the Addresses Table, we can see a field called 'iso_country_code'.
+<LI>The <B>ISO</B> prefix emphasises the fact that we have adopted conventions endorsed by the International Standards Organisation,('ISO').
+<LI>Then, if we want to use our Database Schema on an international scale, our approach will be 'future proof'.
+<HR>
+
+<BR><BR><BR><I> &#169 DataBaseAnswers.org 2006</I></FONT>
+
+</BODY>
+
+</HTML>
+

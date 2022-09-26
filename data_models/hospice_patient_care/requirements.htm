@@ -1,0 +1,105 @@
+<HTML>
+
+<HEAD><TITLE>Requirements for Hospice Patient Care</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2> 
+
+<A NAME="TOP">
+
+<TABLE WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><IMG ALT="Database Answers Logo" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400_home.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="The Health Center is just out of sight (in Fiji)" BORDER=1 HEIGHT=131 WIDTH=197 SRC="../../images/vendors_vsml.jpg">
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>Hospice Patient Care Data Model Requirements</FONT> 
+</TR>
+</TABLE>
+
+<HR>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+<B>Requirements ...</B><PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>The Database will contain records for each individual patient. 
+As well as personal details such as name, address and next of kin, 
+the patient record contains a brief summary of their condition, and 
+personal notes, e.g. about diet and cultural preferences. 
+Because patients may be admitted many times, a separate admissions file is 
+required with records for each patient admission, with attributes such as 
+admission date, discharge date, admission reason and discharge reason. 
+
+Once patients are admitted to the hospice, they will be assessed regularly. 
+The date and time of the assessment are recorded, along with a description 
+of the patient’s symptoms. 
+
+Each assessment may have one or more treatments associated with it. 
+A treatment has a number of attributes, including a description, reason, and status.
+
+Each assessment and each treatment is carried out by one health professional. 
+Because holistic, multi-disciplinary care is provided, a speciality for each 
+health professional is recorded (e.g. doctor, physiotherapist)."
+</PRE>
+<HR>
+
+This Section shows four topics to define the Business rules for a Database for Patient Care ...
+<BR>It contains four Sections :
+<BR>1. Things of Interest
+<BR>2. How these Things are related
+<BR>3. Characteristics of these Things
+<BR>4. User Scenarios
+
+<OL>
+<LI><B>The Things of Interest include :-</B>
+<UL>
+<LI>Patients 
+<LI>Appointments
+<LI>Staff
+<LI>Medications 
+</UL>
+<LI><B>How are these Things related :-</B>
+<UL>
+<LI>A Patient can make and cancel zero or many Appointments
+<LI>An Appointment is made for a Staff Member by a Patient.
+<LI>An Appointment is for a specified Date, Time and Duration.
+<LI>A Patient can be prescribed a specified Medication.
+<LI>Over a period of time, a Patient can be prescribed a number of different Medications.
+</UL>
+<LI><B>Characteristics of these Things :-</B>
+<UL><LI>A Client has :-
+<LI>First Name, Last Name, Address, Home Phone Number, Email Address, Height, Weight,
+Date of Birth.
+</UL>
+
+<LI><B>User Scenarios :-</B>
+<OL>
+<LI>The Staff Member can select a Patient Name from a List and see the Appointments for the Patient.
+<LI>Then the User can click on a Patient Name to seee the current situation.
+</OL>
+</UL>
+</OL>
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+</HTML>

@@ -1,0 +1,84 @@
+<HTML><HEAD><TITLE>The Method</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>Method for Database Design</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Cruising Underwater in Hawaii" BORDER=0 SRC="../../images/philg/hawaii_underwater_sml.jpg"></A>
+</TD>
+</TR>
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue SIZE=2>
+The first cut for <B>the Data Model</B> is shown below, and becomes the Database design.
+<P>This Structured <B>Method</B> is a general approach</B> to <B>establish the FACTS</B> :-
+<FONT SIZE=2>
+<BR>1) Define the Area of Interest,(e.g. Car Sales).
+<BR>2) Define the "Things of Interest",(e.g. Cars), in the Area of Interest.
+<BR>3) Analyze the Things of Interest and identify the corresponding Tables. 
+<BR>4) Establish the relationships between the Tables. 
+<BR>5) Determine the characteristics of each Table,(e.g. a Car has a Manufacturer). 
+<BR>6) Obtain a small set of Sample Data.
+<BR>7) Confirm the first draft of the Database design against the Sample Data.
+<BR>8) Obtain from the users some representative enquiries for the Database.
+<BR>9) Review the Results of Steps 1) to 8) with appropriate people, such as Users, Managers, 
+<BR>Development staff, etc. and repeat until the final Database design is reached.
+
+<HR>
+
+<B>Things of Interest in this Area are shown as Entities in the diagram :-</B>
+<LI>Cars, Car Manufacturers, Customers, etc..
+
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Here is user's proposed design :
+We are a car dealership with a few branch car lots in different part of the state(or city).
+
+We have a few dozen cars of variety(new, used, all brands) in stock.
+
+We are doing a online inventory database to attract and inform customers. 
+It will allow users to access all our vehicles that are for sell, and view related information like detail, location, contact person.
+
+I have 4 proposed entities right now:
+-VEHICLE     : physical descriptions about a vehicle
+-INVENTORY   : vehicle available for sale, its branch location, and the salesperson to contact.
+-SALESPERSON : contact info, and the branch the person belong.
+-BRANCH      : location, contact info.
+
+Please give me your comments. I'd really like to go on to the next step some time.
+</PRE>
+
+
+<P><B>Barry Williams</B>
+<BR>February 5th. 2001
+<BR>Principal Consultant
+<BR>Database Answers
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 DatabaseAnswers.org 2001</I></FONT></CENTER>
+
+</BODY>
+
+</HTML>

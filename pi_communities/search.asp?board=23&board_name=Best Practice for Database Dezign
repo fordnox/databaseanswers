@@ -1,0 +1,186 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+<script>
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="/community/boards.asp">Community</a> > <a href="/community/index.asp?board=23&board_name=Best+Practice+for+Database+Dezign">Best Practice for Database Dezign</a></font></td>
+
+		</tr>
+	</table>
+
+
+	<p><table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td colspan=2><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Search Messages</b></font></td>
+		</tr>
+	
+		<form action="search.asp" method="post">
+	
+		<tr bgcolor="#CCCCCC" valign=top>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>Keywords:</b></font></td>
+		<td>
+		<input type="text" name="keywords" size=35><br>
+		<font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#000000">
+		Separate keywords by spaces<br>
+		<input type="radio" name="match" value="all" CHECKED> Match all search terms above<br>
+		<input type="radio" name="match" value="any"> Match any search terms above
+		</font>
+		</td>
+		</tr>
+	
+		<tr bgcolor="#CCCCCC">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>Search In:</b></font></td>
+		<td>
+		<select name="searchin">
+			<option value="entire" SELECTED> Entire Message
+			<option value="subject"> Subject Only
+			<option value="author"> Author Only
+		</select>
+		</td>
+		</tr>
+		
+		<tr bgcolor="#CCCCCC">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>Boards:</b></font></td>
+		<td>
+		<select name="boards">
+			<option value="0" SELECTED> All Boards
+			
+			<option value="8"> Reference Data Management
+			<option value="9"> Development Work
+			<option value="12"> Data Modelling Tools
+			<option value="14"> UN Global Compact (UK)
+			<option value="16"> Data Model Discussion
+			<option value="17"> Careers
+			<option value="18"> Data Dictionary
+			<option value="19"> Oracle Performance
+			<option value="21"> Data Analyst Role
+			<option value="23"> Best Practice for Database Dezign
+			<option value="24"> Desperado
+			<option value="28">  Orang Asli Indigenous Knowledge
+			<option value="29"> Come and Join and Learn
+			<option value="31">  SQL Server 2005 Express Edition
+			<option value="33"> MySQL
+			<option value="35"> Agency Experiences
+			<option value="36"> simple access database
+			<option value="37"> Point of Sales Database
+			<option value="38"> My DataBase ERD
+		</select>
+		</td>
+		</tr>
+
+	</table>
+	
+	
+		<input type="hidden" name="ref_link" value="http://databaseanswers.org/pi_communities/index.asp?board=23&board_name=Best+Practice+for+Database+Dezign">
+	
+	
+	<input type="hidden" name="user_action" value="search">
+	<input type="hidden" name="board" value="23">
+	<input type="hidden" name="board_name" value="Best Practice for Database Dezign">
+	
+	
+	<p><center><input type="image" src="/dba/images/messageforum/btn_search.gif" width=76 height=15 border=0 alt="Search">&nbsp;&nbsp;
+	
+		<a href="http://databaseanswers.org/pi_communities/index.asp?board=23&board_name=Best+Practice+for+Database+Dezign">
+	
+		<img src="../images/messageforum/btn_cancel.gif" width=76 height=15 border=0 alt="Cancel"></a></center>
+
+	</form>
+	
+		</td>
+		</tr>
+	</table>
+
+
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

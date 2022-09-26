@@ -1,0 +1,558 @@
+<html>
+<head>
+<title>User-Extendable Database Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="../../images/cars/1936cord_lge.jpg""> 
+<IMG ALT="Cord Car, Auburn, Indiana, 1936 - click for large picture." BORDER=3 SRC="../../images/cars/1936cord_sml.jpg"></A> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<!--- <img alt="Health Insurance Claims" src="../../images/data_model_names/health_insurance_claims.gif" height=24 width="449"> --->
+<img alt="User-Extendable" src="images/lft_user_extendable.gif"> 
+<img alt="Database"        src="images/rt_database.gif"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements have been defined as follows :-</B>
+A Database that can be extended by the non-IT User to define new Tables, Columns and Data.
+
+<B>A. The Tables to implement this User-Extendable Facility include :-</B>
+A.1 XTC_All_Columns
+A.2 XTC_All_Tables
+A.3 XTC_All_Tab_Columns
+A.4 XTC_All_Table_Data
+
+Typical XTC Tables include :-
+<LI>Addresses etc.
+
+<B>C. How are these Things of Interest related ?</B>
+C.1 An XTC Entry Types can have one or many Columns.
+C.2 A Column can appear in zero, one or many Tables.
+
+<B>SQL to create XTC Tables ...</B>
+-- A.1) START OF SQL TO CREATE TABLES FOR XTC DATABASE …
+DROP TABLE XTC_All_Table_Data CASCADE CONSTRAINTS;
+
+CREATE TABLE XTC_All_Table_Data (
+       user_login_name      VARCHAR2(80) NOT NULL,
+       xtc_table_name        VARCHAR2(30) NOT NULL,
+       rcd_seq                     NUMBER            NOT NULL,
+       col_seq                     NUMBER            NOT NULL,
+       col_char_value        VARCHAR2(255)         NULL,
+       col_datetime_value DATE                             NULL,
+       col_number_value   NUMBER                      NULL,
+       datetime_created     DATE                             NULL);
+
+
+ALTER TABLE XTC_All_Table_Data
+       ADD  ( PRIMARY KEY (user_login_name, xtc_table_name, rcd_seq, col_seq) ) ;
+
+DROP TABLE XTC_All_Tab_Columns CASCADE CONSTRAINTS;
+
+CREATE TABLE XTC_All_Tab_Columns (
+       user_login_name      VARCHAR2(80) NOT NULL,
+       xtc_table_name        VARCHAR2(30) NOT NULL,
+       col_seq                    NUMBER NOT NULL,
+       key_seq                   NUMBER NULL,
+       col_name                VARCHAR2(30) NULL);
+
+
+ALTER TABLE XTC_All_Tab_Columns
+       ADD  ( PRIMARY KEY (user_login_name, xtc_table_name, col_seq) ) ;
+
+
+DROP TABLE XTC_All_Tables CASCADE CONSTRAINTS;
+
+CREATE TABLE XTC_All_Tables (
+       user_login_name        VARCHAR2(80) NOT NULL,
+       xtc_table_name          VARCHAR2(30) NOT NULL,
+       xtc_table_description VARCHAR2(255) NULL,
+       date_created                DATE NULL);
+
+
+ALTER TABLE XTC_All_Tables
+       ADD  ( PRIMARY KEY (xtc_table_name, user_login_name) ) ;
+
+
+DROP TABLE XTC_All_Columns CASCADE CONSTRAINTS;
+
+CREATE TABLE XTC_All_Columns (
+       col_name                VARCHAR2(30) NOT NULL,
+       data_type_code      CHAR(15) NOT NULL,
+       col_description      VARCHAR2(80) NULL,
+       col_length              NUMBER NULL,
+       col_typ_values       VARCHAR2(255) NULL,
+       col_validation        VARCHAR2(255) NULL,
+       col_comments       VARCHAR2(255) NULL);
+
+
+ALTER TABLE XTC_All_Columns
+       ADD  ( PRIMARY KEY (col_name) ) ;
+
+
+DROP TABLE Ref_Data_Types CASCADE CONSTRAINTS;
+
+CREATE TABLE Ref_Data_Types (
+       data_type_code            CHAR(15)           NOT NULL,
+       data_type_description VARCHAR2(80)          NULL);
+
+ALTER TABLE Ref_Data_Types
+       ADD  ( PRIMARY KEY (data_type_code) ) ;
+
+DROP TABLE Users CASCADE CONSTRAINTS;
+
+CREATE TABLE Users (
+       user_id              NUMBER NOT NULL,
+       user_login_name      VARCHAR2(80) NOT NULL);
+
+ALTER TABLE Users
+       ADD  ( PRIMARY KEY (user_login_name) ) ;
+
+-- Referential Integrity Constraints …
+ALTER TABLE XTC_All_Table_Data
+       ADD  ( FOREIGN KEY (user_login_name, xtc_table_name, col_seq)
+                             REFERENCES XTC_All_Tab_Columns ) ;
+
+ALTER TABLE XTC_All_Tab_Columns
+       ADD  ( FOREIGN KEY (col_name)
+                             REFERENCES XTC_Columns ) ;
+
+ALTER TABLE XTC_All_Tab_Columns
+       ADD  ( FOREIGN KEY (xtc_table_name, user_login_name)
+                             REFERENCES XTC_All_Tables ) ;
+
+ALTER TABLE XTC_All_Tables
+       ADD  ( FOREIGN KEY (user_login_name)
+                             REFERENCES Users ) ;
+
+<HR>
+<B>Set up dba_admin User just in case ...</B>
+INSERT INTO users (user_id,user_login_name)
+VALUES            (    1  ,’dba_admin’);
+
+SELECT * FROM users;
+
+
+
+
+<B>Entries in these table for an Address Type would be :-</B>
+<B>0) In the XTC_All_Columns Table :-</B>
+<B>col_name	data_type_code	col_description	col_length col_typ_values col_validation col_comments</B>
+address_id	Autonumber	ID				
+country		Varchar		Country				
+line_1_building	Varchar		Building				
+line_2_street	Varchar		Street				
+line_3_locality	Varchar		Locality				
+state_county	Varchar		State/County				
+town_city	Varchar		City				
+
+
+<B>1) In the XTC_All_Tables Table :-</B>
+user_login_name	xtc_table_name	xtc_table_description	date_created
+dba_admin	Addresses	List of all Addresses	09/10/2004
+
+
+<B>2) In the XTC_All_Tab_Columns Table :-</B>
+user_login_name	xtc_table_name	col_seq	key_seq	col_name
+dba_admin	Addresses	1	1	address_id
+dba_admin	Addresses	2	0	line_1_building
+dba_admin	Addresses	3	0	line_2_street
+dba_admin	Addresses	4	0	line_3_locality
+dba_admin	Addresses	5	0	town_city
+dba_admin	Addresses	6	0	state_county
+dba_admin	Addresses	7	0	country
+
+
+<B>3) In the XTC_Entry_Data Table :-</B>
+user_login_name	xtc_table_name	rcd_seq	col_seq	col_char_value	col_datetime_value	col_number_value	datetime_created
+dba_admin	Addresses	1	1	1		1	09/10/2004
+dba_admin	Addresses	1	2	The Mansion		09/10/2004
+dba_admin	Addresses	1	3	17, Thames Side		09/10/2004
+dba_admin	Addresses	1	4	Laleham			09/10/2004
+dba_admin	Addresses	1	5	Windsor			09/10/2004
+dba_admin	Addresses	1	6	Berkshire		09/10/2004
+dba_admin	Addresses	1	7	England			09/10/2004
+
+<B>SQL to create sample data ...</B>
+To be done.
+
+-- A.2)START OF  SQL TO LOAD DATA FOR XTC DATABASE …
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘address_id’,’Autonumber’,’Unique Address Identifier’,,,,);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘country’,’varchar2(80)’,’Country’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘line_1_building’,’varchar2(80)’,’ ’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘line_2_street’,’varchar2(80)’,’ ’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘line_3_locality’,’varchar2(80)’,’ ’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘state_county’,’varchar2(80)’,’ ’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+INSERT INTO xtc_all_columns 
+(col_name,data_type_code,col_description,col_length,col_typ_values
+,col_validation, col_comments)
+VALUES (‘town_city’,’varchar2(80)’,’ ’,’ 80‘,’ ‘,’ ‘,’ ‘);
+
+
+In the XTC_All_Columns Table :-
+col_name	data_type_code	col_description	col_length col_typ_values col_validation col_comments
+address_id	Autonumber	ID				
+country		Varchar		Country				
+line_1_building	Varchar		Building				
+line_2_street	Varchar		Street				
+line_3_locality	Varchar		Locality				
+state_county	Varchar		State/County				
+town_city	Varchar		City
+
+
+1) In the XTC_All_Tables Table :-
+user_login_name	xtc_table_name	xtc_table_description	date_created
+dba_admin	Addresses	List of all Addresses	09/10/2004
+
+INSERT INTO xtc_all_tables 
+       (user_login_name,xtc_table_name,xtc_table_description,date_created)
+VALUES (‘dba_admin’,’Addresses’,’ Standard 3-line UK Address’,’ 10-Oct-2004‘);
+
+
+2) In the XTC_All_Tab_Columns Table :-
+user_login_name	xtc_table_name	col_seq	key_seq	col_name
+dba_admin	Addresses	1	1	address_id
+dba_admin	Addresses	2	0	line_1_building
+dba_admin	Addresses	3	0	line_2_street
+dba_admin	Addresses	4	0	line_3_locality
+dba_admin	Addresses	5	0	town_city
+dba_admin	Addresses	6	0	state_county
+dba_admin	     Addresses		 7	   0	      country
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,1,1,’address_id’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,2,0,’line_1_building’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,3,0,’line_2_street’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,4,0,’line_3_locality’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,5,0,’town_city’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,6,0,’state_county’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,7,0,’country’);
+
+
+3) In the XTC_All_Table_Data Table :-
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES
+(‘dba_admin’,’Addresses’,1,1,’1’,’09-OCT-2004’)
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,2,’The Mansion’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,3,’17, Thames Side’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,4,’Laleham’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,5,’Windsor’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,6,’Berkshire’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_table_data 
+(user_login_name,xtc_table_name,rcd_seq,col_seq,col_char_value,datetime_created)
+VALUES(‘dba_admin’,’Addresses’,1,7,’England’,’09-OCT-2004’);
+
+INSERT INTO xtc_all_tab_columns
+       (user_login_name,xtc_table_name,col_seq,key_seq,col_name)
+VALUES (‘dba_admin’,’Addresses’,7,0,’country’);
+
+<HR>
+<BR>The output from this Code is shown lower down the page.
+
+-- From XTC_ALL_TABLES, XTC_ALL_TAB_COLUMNS and XTC_ALL_TABLE_DATA
+
+-- Code starts here ...
+Prompt Displaying XTC Tables in Extended Database Answers
+set long 30000
+set serveroutput on size 3000
+Declare 
+v_parent_user_login_name                  XTC_All_Tables.user_login_name%TYPE;
+v_parent_xtc_table_name           	   XTC_All_Tables.xtc_table_name%TYPE;
+v_xtc_table_description                      XTC_All_Tables.xtc_table_description%TYPE;
+--
+v_child_user_login_name                      XTC_All_Tab_Columns.user_login_name%TYPE;
+v_child_xtc_table_name                         XTC_All_Tab_Columns.xtc_table_name%TYPE;
+v_child_col_seq                                      XTC_All_Tab_Columns.col_seq%TYPE;
+v_child_col_name                                  XTC_All_Tab_Columns.col_name%TYPE;
+v_child_col_description                         XTC_All_Columns.col_description%TYPE;
+--
+v_data_user_login_name                        XTC_All_Table_Data.user_login_name%TYPE;
+v_data_xtc_table_name                          XTC_All_Table_Data.xtc_table_name%TYPE;
+v_data_rcd_seq                                       XTC_All_Table_Data.rcd_seq%TYPE;
+v_data_col_seq                                       XTC_All_Table_Data.col_seq%TYPE;
+v_data_col_char_value                           XTC_All_Table_Data.col_char_value%TYPE;
+--
+count_parents     number;
+count_children   number;
+count_data_rcds number;
+loop_counter number;
+x_txt_No_Children varchar2(32000);
+x_txt_Heading        varchar2(32000);
+x_txt_DataRow       varchar2(32000);
+-- Declare First Cursor (Parents) ...
+Cursor c_Parents is
+SELECT user_login_name,xtc_table_name,xtc_table_description,date_created
+FROM    scott.XTC_All_Tables
+ORDER  BY user_login_name,xtc_table_name;
+--
+-- Declare Second Cursor (Children) ...
+Cursor c_Children is
+SELECT user_login_name,xtc_table_name,col_seq,all_tab_cols.col_name,col_description
+FROM     scott.XTC_All_Columns          all_cols
+               ,scott. XTC_All_Tab_Columns all_tab_cols
+WHERE  all_cols.col_name = all_tab_cols.col_name 
+AND       user_login_name = v_parent_user_login_name
+AND       xtc_table_name    = v_parent_xtc_table_name
+ORDER  BY user_login_name,xtc_table_name,col_seq;
+--
+-- Declare Third Cursor (Data Rcds) ...
+Cursor c_Data is
+SELECT  user_login_name,xtc_table_name rcd_seq,col_seq,col_char_value
+FROM     scott. XTC_All_Table_Data
+WHERE  user_login_name        = v_parent_user_login_name
+AND       xtc_table_name = v_parent_xtc_table_name
+ORDER  BY user_login_name,xtc_table_name,rcd_seq,col_seq;
+-- Outer Loop for Parents begins here ...
+BEGIN
+count_children := 0;
+count_parents := 0;
+count_data_rcds := 0;
+loop_counter := 0;
+--
+For cParents in c_parents LOOP
+count_parents := count_parents + 1;
+v_parent_user_login_name := cParents.user_login_name;
+v_parent_xtc_table_name := cParents.xtc_table_name;
+dbms_output.put_line('Table Name = ' || v_parent_xtc_table_name);
+x_txt_Heading :=’|  ’;
+--
+For cChildren in c_children LOOP
+count_children := count_children + 1;
+v_child_col_seq := cChildren.col_seq;
+v_child_col_name := cChildren.col_name;
+v_child_col_description := cChildren.col_description;
+--
+x_txt_Heading := x_txt_Heading || v_child_col_description || ‘  |  ’; 
+-- end of Child Row and Heading
+end LOOP;
+dbms_output.put_line( x_txt_Heading);
+x_txt_DataRow := ‘  |  ’; 
+For cData in c_data LOOP
+count_data_rcds := count_data_rcds + 1;
+v_data_col_seq := cData.col_seq;
+v_data_col_char_value := cData.col_char_value;
+x_txt_DataRow := x_txt_DataRow || v_data_col_char_value || ‘  |  ’; 
+end LOOP;
+dbms_output.put_line(x_txt_DataRow);
+-- end of Parent Loop -
+end LOOP;
+dbms_output.put_line('Total Entry Type Count = ' || to_char(count_parents));
+dbms_output.put_line('Total Entry Definition Field Count = ' || to_char(count_children));
+end;
+/
+
+<HR><B>and here's the output ...</B>
+Table Name = Addresses
+|  ID  |  Building  |  Street  |  Locality  |  City  |  State/county  |  Country |
+|  1  |  The Mansion  |  17, Thames Side  |  Laleham  |  Windsor  |  Berkshire |  England  |
+Total Entry Type Count = 1
+Total Entry Definition Field Count = 7
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>10th. October 2004
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

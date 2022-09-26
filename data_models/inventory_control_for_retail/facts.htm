@@ -1,0 +1,157 @@
+<HTML><HEAD><TITLE>FACTS for a Data Model for Inventory Control for Retail</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Logo" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2><A HREF="../../images/hotels/kasbah_du_toubkal.jpg">
+<IMG ALIiiGN=right ALT="Kasbah du Toubkal Hotel, Morocco" BORDER=0 SRC="../../images/hotels/kasbah_du_toubkal_sml_home.jpg"></A>
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD> 
+</TR>
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Inventory"     SRC="images/lft_inventory.gif">
+<IMG ALT="Control for"   SRC="images/rt_control_for.gif">
+<IMG ALT="Retail Stores" SRC="images/rt_retail_stores.gif">
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOuuuR=white VALIGN=top>
+<A HREF="../../images/boschendal_pool.jpg"><IMG ALIGN=left ALT="Boschendahl Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/boschendal_vertical_sml.jpg"></A>
+</TD>
+
+<TD VALIGN=top>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<A HREF="index.htm">Back to the Data Model.</A>
+
+<!-- end Standard Header - Version 3-->
+
+<B><BR>The Draft Business Rules have been defined and are listed below.</B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. The Area being Modelled is :-</B>
+Inventory Control for a Retail outlet, such as a Health Food Store.
+
+Here is the <B>Statement of User Requirements</B>, provided by John.
+
+I looked at your 200 Data Models, and I thought that the <B>Department Store</B> database 
+would be a good start but then the <B>Cosmetics Home Sales</B> looked good as well, also 
+the <B>Inventory Control</B> looks relevant, but then I got very mixed up and I would like 
+to see if you can help me.
+I would like to put my inventory (I own a small health food store) in
+a database, that I will be able to search by <B>Brand</B>, <B>Category</B> or <B>Vendor</B> etc..
+
+Also I would like to be able to select an item and see from which <B>Vendors</B>
+is available and at what cost.
+
+I buy the same items from several <B>Vendors</B> and I would like to maintain
+that information in an easy manner, also I get monthly special pricing
+from my vendors that Iwould like to be able to see the cost.
+
+All of the above I consider my <B>Vendor Catalogs</B> data.
+
+At the same time I would like to have an area that I keep my store inventory 
+and at the same time to be able to see the <B>Monthly Specials</B> and if I 
+select an Items from my vendor a catalog to bring it into the store side of 
+the inventory part.
+
+Currently, I keep my vendor catalog in an Excel Spreadsheet and I have a 
+drop down list, but it is very slow and not easy for every one in the store to use.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Items
+B.2 Suppliers
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 An ITEM can be supplied by one or more SUPPLIER.
+C.2 A SUPPLIER can supply zeor, one or many ITEMS.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 An ITEM has an Inventory Re-Order Quantity.
+
+<B>E. Sample Data includes :-</B>
+To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 How much Camomile Tea is in stock ?
+F.2 How much Soya Milk do I order ?
+
+<!---
+G. DESIGN OPTIONS :
+G.1 Handling Sub-Categories
+       A general approach is to link the Table to itself. This allows flexible structures within the Products.
+       A fixed approach is to have separate Tables for Categories and Sub-Categories.
+	In this case, the general approach is recommended because change is likely to occur in the future.
+
+G.1 Handling other Stuff associated with a PRODUCT :-
+       A general approach like "Other Stuff" and "Other Stuff Type" or list them individually, 
+       such as SECURITY_ISSUES, etc..
+
+       It's better to spell out the other Stuff because it makes the Database easier to understand.
+       Usually the maintenance involved is not an issue.
+
+       Different kinds of other Stuff which may occur in the future should be handled by adding specific Tables,
+       reflecting the structure of the other Stuff.
+--->
+Barry Williams
+Principal Consultant
+Database Answers
+20th. September 2002
+</PRE>
+
+</TD></TR>
+</TABLE>
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question_rbw.php3">Ask Us a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE2=1><I> &#169 IceBreaker WebDesigns 2002</I></FONT></CENTER>
+
+</HTML>

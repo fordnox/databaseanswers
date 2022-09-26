@@ -1,0 +1,286 @@
+<html>
+<head>
+<title>Sperm Bank Dezign Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+	<IMG ALIGN=right ALT="Pebble Beach" HEIiGHT=88 WIiDTH=206 hspace="0" vspace="4" SRC="../../images/pebble_beach_18th_sml.jpg"> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<!---
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="customer_deliveries_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version.</FONT></A>
+<nobr>
+--->
+</p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<img alt="Sperm Bank" src="images/lft_sperm_banks.bmp"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B><BR>The Draft Business Rules have been defined and are listed below.</B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+A Sperm Bank.
+
+<B>A. THE USER REQUIREMENTS :</B>
+The application is a sperm bank.
+
+It’s a combination of a CRM system, a logistics system, and a billing system.
+There the logistics are unit identified (i.e. not that there are widgets in location X, 
+but that some of  the widgets of Mr Smith are inlocation X.
+
+ 
+There are a couple of major areas, firstly the patient details, and secondly the “sample” details… 
+<LI>Patient details – obvious things – title,name, address, phone numbers, email. 
+There is also a need for a flag that indicates whether the mailings are to go to the patient or 
+their Next of Kin (In cases of freezes pre chemo, the patient may be “terminally ill” and it’s 
+politically incorrect to send them bills etc..) 
+
+<LI>Each patient will have a unique customer number, as will each Next of Kin (as these are usually spouses). 
+There is also a “nature of relationship” field between patient and NOK, and each “Couple have an ART Number 
+(Assisted Reproductive Therapy) for the “pair”  (arguably still patient plus partner, although NOK may not 
+necessarily be Procreation partner.
+
+<LI>Firstly, each patient has two “related”tables. Their next of kin, and their referring doctor.  
+For each of those,usual details, name address phone number etc. 
+
+<LI>Elsewhere a transaction log, that reflects the historical changes of any fields in these tables -
+ i.e. address changed from blah to mumble for next of kin XYZ….
+ 
+<LI>Both of these are effectively a one to many, in theory (each patient can only have one Next of Kin, and one doctor) 
+but arguably each NOK can be NOK for multiple patients, and the same for doctors, but in practicality that may not be 
+worth worrying about, and just live with duplicate records in the nok and doctor tables. 
+
+ 
+<LI>OK, now for the fun part...
+<LI>For each patient, there are multiple “freezes”  a freeze is when they come in and donate sperm. 
+<LI>The Sperm is sampled, tested for motility and count (how active, and how many wrigglers there are), 
+    and then broken down into a number of “ampoules”or “straws”. 
+<LI>Each of these will relate back to the date patient,count, and motility data for that patient. 
+<LI>At that point a decision is made say, that it is possible to create 10 ampoules out of that “freeze”.
+<LI>There can be multiple freezes – Someone can come back a week, or a month,or a year later and donate some more.
+<LI>There isn’t really any FIFO on this aspect, the geneticist looks to things like recorded motility as the best 
+indicators of what samples they may wish to use down the track… 
+
+<LI>While once an ampoule has been used, there is still a need to track it’s details (i.e. don’t just remove it, 
+    flag it as having been consumed, when where, why and by who etc (and adjust total stock on hand for that client).
+
+<LI>Each of those ampoules are then assigned to locations. Locations are a) Laboratories, b) Tanks and c) and Buckets, 
+    (of Liquid Nitrogen).
+ 
+<LI>A lab can have anywhere from 1 to 30 “tanks”.  
+<LI>Tanks are simply numbered, but there is no guarantee that the number range is contiguous as say tank 14 may be 
+   “decommissioned” and replaced with tank22.  
+<LI>Tank Numbers are not unique, either. There can be a tank #3 in Lab ABC, and a tank#3 in Lab XYZ. 
+<LI>Each Tank there can be up to 10 “buckets” Again, buckets aren’t unique or guaranteed continguous, and 
+    are again just identified by a number. I think 20 straws/ampoules per bucket (they are individually labeled 
+    as well). 
+<LI>There is, of course, the need to select and consume said “ampoules” at varying points in time, and track 
+    that they have been “used”, when, and for what purpose (ivf, vs icsi, and other “procedures”), and of course 
+    “adjust” the total stock on hand for that client, as it will be the ultimate billing system indicator. 
+    The need exists to be able to move “ampoules from Tank to tank, and Lab to Lab (Different destinations)”
+ 
+<LI>There is also the billing perspective of this.
+    There is a charge for initial capture and  storage (12 months). 
+    There is then a billing need to bill from the (nominal 12 month) anniversary of thatinitial “freeze”. 
+    Although it would be good to have the ability to have 3/6/9/12 month anniversaries.
+
+<LI>Multiple freezes come under the same bill - i.e. store as much as you like for the same fixed price.
+
+<LI>The first bill include 12 months forward i.e. say Jan 05 to Jan 06, but then the need exists to bill 
+    in arrears. i.e. at Jan 07, if there has been “stock on hand” forany part of Jan06 through Jan07, 
+    create a single storage bill. 
+<LI>The bill decision is purely non-zero stock on hand (aggregated for that client throughall buckets, tanks, and buildings) 
+
+<LI>Down the track there are issues around different types of donors, and different purposes for donors. 
+<LI>There are, for example, known donors (family friends) etc, saving donors (people undergoing chemo etc, or inhigh risk 
+situations who may wish to “protect” their ability to procreate (by proxy), and then of course anonymous donors, 
+where access to any patient (and NOK) details other than their “ART” number and customer number need to be hidden…
+
+<LI> In the situation of known donors, and anonymous donors there is also a gating factor which is that samples are 
+flagged as being in quarantine, until a number of blood tests are complete, to ensure no disease transmittal. 
+
+<LI>In the situation of anonymous donors, it’s also necessary to track (eye color, hair colour, height, ethnicity etc) 
+    of donor (as this is effectively a “shopping list”). 
+ 
+
+Best regards
+Peter 
+Brisbane,Australia.</PRE>
+
+
+<!---
+A.1 <B>The Detail</B> reflects the Requirements.
+For example, Drivers have been included, but if this level of detail is not in the Requirmenet,
+then Drivers can be removed, which will simplify the Model.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 <B>Customers</B>, which are Distributors.
+B.2 Delivery Routes.
+B.3 Locations on Routes.
+B.4 Employees, which are Drivers in this Model.
+B.5 Orders - which can be either Regular Orders and Actual Orders.
+B.6 Products.
+B.7 Trucks
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 A DELIVERY_ROUTES visits a number of DELIVERY_ROUTE_LOCATIONS.
+C.2 A DELIVERY contains a number of ORDERS.
+C.3 An ORDER contains a number of PRODUCTS.
+C.4 A REGULAR_ORDER allows the Customer, (Distributor), to say "Send me my Regular Order".
+C.5 An ACTUAL_ORDER allows for changes to the REGULAR_ORDER.
+C.4 A TRUCK can be associated with zero, one or many ORDER_DELIVERIES.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 A CUSTOMER can have one or zero PHONE_NUMBER.
+
+<B>A. Sample Data includes :-</B>
+A.1 To be determined
+
+<B>B. Typical Enquiries include :-</B>
+B.1 To be Determined
+--->
+</TD></TR>
+
+<!--- <TR>
+<TD>&nbsp</TD>
+<TD COLSPAN=1><PRE><FONT COLOR=blue FACE=Verdana SIZE=2> A GLOSSARY OF TERMS WOULD GO HERE AS A TABLE 
+Barry Williams
+7th. December 2006
+Principal Consultant
+Database Answers  
+</td>
+</tr> --->
+
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

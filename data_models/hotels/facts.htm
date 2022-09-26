@@ -1,0 +1,138 @@
+<HTML><HEAD><TITLE>FACTS for a Data Model for a Hotel Web Site</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2>
+<IMG ALIGN=right ALT="Chateau Laurier,Ottawa,Canada" BORDER=0 SRC="../../images/hotels/chateau_laurier_xsml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Hotel" SRC="../../images/buttons/button_studio/hotel.gif">
+<IMG ALT="Reservations" SRC="../../images/buttons/button_studio/rt_reservations.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" BORDER=0 WIDTH=100%>
+<TR>
+<TR>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../images/boschendal_pool.jpg"><IMG ALIGN=left ALT="Boschendahl Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/boschendal_vertical_sml.jpg"></A>
+</TD>
+
+<TD>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<A HREF="index.htm">A Conceptual Data Model</A> is available.
+
+<!-- end Standard Header - Version 3-->
+
+<P>The Draft Business Rules have been defined and are listed below ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+A Web Site providing Hotel Information.
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Countries
+B.2 Hotels
+B.3 Hotel Chains
+B.4 Star Ratings
+
+C. These THINGS are Related as follows :-
+C.1 A HOTEL must have one and only one STAR_RATING.
+C.2 A HOTEL must be associated with one and only one COUNTRY.
+
+D. Other Characteristics of these THINGS include
+D.1 A HOTEL has a ROOM CAPACITY 
+D.2 A HOTEL can have one and only one ADDRESS.
+</PRE>
+</TD></TR>
+
+<TR><TD COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2> 
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2> 
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 Find me a 5-Star Hotel in London, England.
+
+G. DESIGN OPTIONS :
+G.1 Handling Sub-Categories
+       A general approach is to link the Table to itself. This allows flexible structures within the Products.
+       A fixed approach is to have separate Tables for Categories and Sub-Categories.
+	In this case, the general approach is recommended because change is likely to occur in the future.
+
+G.1 Handling other Stuff associated with a PRODUCT :-
+       A general approach like "Other Stuff" and "Other Stuff Type" or list them individually, 
+       such as SECURITY_ISSUES, etc..
+
+       It's better to spell out the other Stuff because it makes the Database easier to understand.
+       Usually the maintenance involved is not an issue.
+
+       Different kinds of other Stuff which may occur in the future should be handled by adding specific Tables,
+       reflecting the structure of the other Stuff.
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+20th. January 2001
+</PRE>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers Ltd. 2001</I></FONT></CENTER>
+
+</TD></TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,57 @@
+<HTML>
+<HEAD><TITLE>WARM</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jpg" BGCOLOR="#FFFFCC" TEXT="#202020">
+
+<TABLE BGCOLOR="FFFF66" BORDER="1" COLS="1" WIDTH="100%" CLASS="navbar">
+<TR>
+ <TD><font FACE="Verdana, Lucida Sans, Arial, Helvetica, Geneva, sans-serif" SIZE=2>
+    <B><small><a Title="Home" href="../index.htm">Home</a> </small>
+    <img src="../images/rt_arrow.gif" alt="Rt_Arrow.gif" WIDTH="13" HEIGHT="9">
+   </strong>
+    <small><A HREF="index.htm">sql</A>
+           <img src="../images/rt_arrow.gif" alt="Rt_Arrow.gif" WIDTH="13" HEIGHT="9">
+            table_spaces</small></font>
+ </TD>
+</TR>
+</TABLE>
+
+<! Start of Standard Header -->
+<BR><CENTER><B><I>Step 1. SQL Script to Check Table Spaces</I>
+</B>
+</CENTER>
+<HR>
+<! End of Standard Header -->
+
+<OL>
+<LI>Check Table Owners ...
+<BR>SELECT owner,COUNT(*) FROM all_tables GROUP  BY owner ;
+<LI>Check Table Names by Owner ... 
+<BR>(HINT : Select only those for the Application)
+<BR>SELECT owner,Table_name FROM all_tables 
+ORDER BY owner,Table_name ;
+<LI>Generate SQL to check Row Counts for all Tables ...
+<BR>SELECT owner,Table_name FROM all_tables WHERE
+owner='identified above' ORDER BY owner,Table_name ;
+</OL>
+
+<UL>
+<LI>Optionally check Table names & Table Spaces...
+<BR>SELECT table_name, tablespace_name FROM user_tables 
+ORDER  BY table_name,tablespace_name ;
+<LI>Check Table Spaces & Table Names...
+<BR>SELECT tablespace_name, table_name  FROM   user_tables 
+ORDER  BY tablespace_name, table_name ;
+
+</BODY>
+<Start of Standard Footer>
+<HR SIZE="5">
+<CENTER>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="site_map.htm">Search & Site Map</A>
+        | <A HREF="whatsnew.htm">What's New</A> ]
+</CENTER>
+<HR SIZE="5">
+<!-- End of Standard Footer>
+
+</HTML>

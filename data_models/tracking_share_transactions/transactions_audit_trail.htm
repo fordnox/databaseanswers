@@ -1,0 +1,50 @@
+<HTML><HEAD><TITLE>Transactions Audit Trail Data Model</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>DATA  MODEL   FOR   TRANSACTIONS AUDIT TRAIL</B>
+
+<HR>Here is Jim's Question :-
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+Hi Barry,
+ 
+I just stumbled upon your site.  
+
+I am a fellow data modeler and am truly impressed with what you have posted there.
+ 
+I have a question for you.  
+
+I searched your site for "bitemporal", "temporal", etc. and didn't see anything.  
+
+Your transaction model within Investment Banking is similar to what is often implemented, 
+but for auditing purposes, many firms need the model to account for "As Of" or "Post-dated" 
+corrections, such that one could answer both the questions that are posed on May 15:
+"What were the transactions for account xyz in April, including what's been corrected from May 1 through today" 
+and 
+"What would you have told me the transactions for account xyz were in April, if you queried the database on May 1?".  
+
+Have you had any experiences in this area (using dimensional data models) and discovered best practices that please 
+data modelers, developers, business users, and auditors?
+ 
+Best regards from across the pond,
+
+Jim Lipner</PRE>
+
+
+<HR>
+I have added an Audit Trail Entity to keep track of all Transactions.
+<HR>
+
+<IMG ALT="A Data Model for Transactions Audit Trail" SRC="images/audit_data_model.gif"> 
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+
+<BR><I> &#169 DataBaseAnswers.org 2014</I></FONT>
+
+</BODY>
+
+</HTML>

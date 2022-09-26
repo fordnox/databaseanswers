@@ -1,0 +1,65 @@
+<HTML><HEAD><TITLE>Business Rules - Tutorial on Database Schema</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Tutorial on Database Schema - Slide 11</B> - Business Rules
+<BR><BR><A HREF="tutorial_slide_10.htm">Back</A>&nbsp;&nbsp;&nbsp;<A HREF="index.htm">Return to Introduction</A>
+
+<BR><BR>
+<!--- <IMG ALT="Customers and Products Data Model" SRC="images/customers_and_products_dezign.gif"> --->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!--- <IMG ALIGN=left ALT="Amazon Customers" SRC="images/amazon_and starbucks.gif"> --->
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>Business Rules</B>
+Let me close by discussing the important topic of Business Rules which must underly any Schema you look at.
+These are often implemented as 'Constraints' in the Database.
+
+<BR>These Business Rules are important because they define the conditions that the Database must meet.
+<LI>For example, every Order must be associated with a valid Product.
+<LI>This prevents invalid Orders being entered into the Database.
+ 
+<LI>These Rules can be understood by both the Users and the Database designer. 
+<LI>When you extend a Database Schema, it is always valuable to keep these Rules up-to-date.
+<li>This is not always done meticulously but is necessary where Users will 'sign-off' on their requirements.
+
+<BR><BR>
+<B>A. SCOPE OF THE DATABASE SCHEMA :</B>
+A.1 The Scope is buying products from Amazon.com and Starbucks.
+
+<B>B. THE THINGS OF INTEREST include :-</B>
+B.1 Addresses.
+B.2 Customers.
+B.3 Deliveries
+B.4 Orders.
+B.5 Payments
+B.6 Products.
+B.7 Suppliers.
+
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 A Customer can have zero,one or many ORDERS.
+C.2 A CUSTOMER_ADDRESS can be associated with only one ADDRESS.
+C.3 A CUSTOMER_ADDRESS can be associated with only one CUSTOMER.
+C.4 A DELIVERY is associated with just one ORDER.
+C.5 An ORDER must be associated with one and only one CUSTOMER.
+In different applications in the real world, it is possble that an ORDER can
+be associated with more than one CUSTOMER,but in our example, it's only one.
+C.6 An ORDER can be associated with one or many PRODUCTS.
+C.7 A PAYMENT must be associated with one and only one ORDER.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 A BOOK can have one and only one ISBN.
+D.2 A FRAPPUCCINO can have a Flavor.
+D.3 A PANINI can have Ingredients.
+
+<BR><BR><BR><I> &#169 DataBaseAnswers.org 2006</I></FONT>
+
+</BODY>
+
+</HTML>
+

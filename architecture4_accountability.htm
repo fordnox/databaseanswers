@@ -1,0 +1,273 @@
+<html>
+<head>
+<title>Architecture for Accountability</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border="0" cellspacing="0" cellpadding="0"><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<TD ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" VALIGN=middle>
+<A HREF="images/switzerland/villars/valley_1.jpg""> 
+<IMG ALT="Our favourite European Ski Resort is Villars, Switzerland." BORDER=0 HEIiiGHT=108 SRC="images/switzerland/villars/valley_1_sml.jpg"></A> 
+
+<!--- <A HREF="images/north_wales/penygarreg_reservoir_north_wales.jpg""> 
+<IMG ALT="Penygarreg Lake, North Wales." BORDER=0 HEIGHT=108 SRC="images/north_wales/penygarreg_reservoir_north_wales_sml.jpg"></A> --->
+<!--- <IMG ALT="Zannos Hotel, Santorini, Greece." BORDER=0 SRC="images/santorini_zannos_hotel_sml.jpg" hspace="0" vspace="4"> --->
+<!--- <IMG ALT="Eel Pie Island, London, England." BORDER=0 SRC="images/eel_pie_island_london_sml.jpg" hspace="0" vspace="4">  --->
+<!--- <IMG ALT="Bluebell Wood, Prestayn, North Wales" SRC="images/bluebell_wood_sml.jpg" hspace="0" vspace="4">               --->
+<!--- <IMG ALT="Lighthouse and Sea" SRC="images/lighthouse_and_sea_sml.jpg" hspace="0" vspace="4">                            --->
+<!--- <IMG ALT="Petanqe at Mangapapa Resort, new Zealand." BORDER=0 SRC="images/petanque_at_mangapapa_nz_sml.jpg" hspace="0" vspace="4"> --->
+
+</td></tr>
+<TR><TD ALIGN=left COLSPAN=2 VALIGN=middle><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></TD></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>	
+<!---	<td bgcolor="#FF9900"><img src="images/v3/px-orange.gif" width=6 height=24></td>
+	<td bgcolor="#FF9900"><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+	<td><img src="images/curve-top.gif" width=28 height=24></td>
+--->
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>	
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+<!---
+<IMG ALT="Underwater in Fiji" SRC="images/fiji_100.jpg" width="81" height="122" vspace="5">
+<p><img src="images/spacer.gif" width="90"></p>
+--->
+
+</td>
+
+<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<table width="100%" border=0 cellspacing="0" cellpadding="3">
+
+<TR>
+<TD ALIGN=right>
+&nbsp
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<!-- begin body Text -->
+<!---
+<form method="get" action="http://search.atomz.com/search/">
+<input SIZE=45 name="sp-q">
+<input type=submit value="Search">
+
+<input type=hidden name="sp-a" value="000a2cd3-sp00000000"></form>
+--->
+</TD>
+</TR>
+
+</table>
+
+<!--- Welcome statement begins here --->
+<!--- <table BORDER=3 width="570" border="0" cellspacing="0" cellpadding="0"></table> --->
+
+<!--- WHAT'S NEW --->
+
+      <table width="570" border=0 cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1"><FONT COLOR=red>
+		A Framework for Global Accountability<img src="images/spacer.gif" width="5" height="1"> 
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+          <td rowspan="3" valign="top" width="61">
+		<img ALT="Complex Systems" BORDER=0 src="images/content1.gif" width="61" height="61">
+<!---
+<A HREF="ask_a_question.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Advice</FONT></A>
+<BR><A HREF="new_look_bmews.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>BMEWS</FONT></A>
+<BR><A HREF="products/index.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Products</FONT></A>
+<BR><A HREF="new_look_csr.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>CSR</FONT></A>
+<BR><A HREF="new_look_ungc.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>UNGC</FONT></A>
+--->
+
+<A HREF="architecture4_accountability.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Accountability</FONT></A>
+
+<A HREF="ask_a_question.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Advice</FONT></A>
+<BR><A HREF="architecture4_basel.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Basel II</FONT></A>
+<BR><A HREF="architecture4_bbc.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>BBC</FONT></A>
+<BR><A HREF="new_look_bmews.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>BMEWS</FONT></A>
+<BR><A HREF="architecture4_CoachingAcrossCultures.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Coaching</FONT></A>
+
+<BR><A HREF="architecture4_compliance.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Compliance</FONT></A>
+<A HREF="new_look_csr.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>CSR</FONT></A>
+<BR><A HREF="architecture4_nhs.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>NHS (UK)</FONT></A> 
+<BR><A HREF="products/index.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Products</FONT></A>
+<BR><A HREF="bmews_templates.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Templates</FONT></A>
+<A HREF="new_look_ungc.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>UNGC</FONT></A>
+<BR><A HREF="new_look_xref.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>X-Ref</FONT></A>
+
+</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+ 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+	<tr bgcolor="#FF9900"><td><img src="images/px-orange.gif" width="1" height="3"></td></tr>
+	</table>
+	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+	<tr> 
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
+		This diagram shows a Framework for Global Accountability, which is 
+		<A HREF="global_accountability_description.htm">an approach</A> that we have developed as part of the work 
+		that we are doing for the UN Global Compact.
+		This work is supplemented by a <A HREF="data_models/global_accountability/index.htm">Data Model</A>. 
+
+<BR><BR><CENTER>
+
+<IMG ALT="New Look Global Accountability" SRC="images/new_look_global_accountability.gif">
+
+</CENTER>
+
+
+		</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+<BR>
+
+<BR>
+
+<!--- welcome statement ends here --->
+
+<!--- barry end here ... --->
+<BR>
+    </td>
+  </tr>
+</table>
+
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="2"><img src="images/spacer.gif" width="663" height="2"></td>
+  </tr>
+  <tr>
+    <td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td>
+  </tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>	
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" sOUrcE="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>		
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+    <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE="Verdana" SIZE=1>
+
+
+</body>
+
+</html>

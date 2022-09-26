@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>Steps in Data Migration</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Logo" BORDER=0 HEIGHT=58 WIDTH=400 SRC="../images/dba_400_home.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="Steps to Peacock Pond, Florida, Courtesy of Robert Smith, Australia" BORDER=1 HEIiGHT=129 WIiDTH=129 SRC="../images/steps_xsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../index.htm"><IMG ALT="Home" BORDER=0 SRC="../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../images/buttons/ask_a_question_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../search.htm"><IMG ALT="Search" BORDER=0 SRC="../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD ALIGN=right VALIGN=top><FONT COLOR=white face="Verdana" size="1">&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>Steps in a General Approach to Data Migration</B></FONT>
+
+
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+
+<FONT COLOR=green FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+<P>This Page describes a series of Steps in a General Approach to Data Migration 
+between Source Systems and Target Systems.
+<BR>It covers Extract, Transformation and Load.
+<P>There are no technical risks in Data Migration because it is a well-established
+procedure.
+<BR>However, it is important to get User involvement right from the start, and 
+<BR>to get User sign-off at the end when all the Data has been successfully migrated.
+
+<P>
+<UL>
+<LI><B><FONT COLOR=blue>Setting-up the Data Migration Process ...</FONT></B>
+<OL>
+<FONT COLOR=green>
+
+<LI>Choose a <A HREF="../modelling_tools.htm">Data Modelling Tool</A> 
+with Reverse Engineering Capability,(such as ERWin).</FONT>
+
+<LI>Define and create the <A HREF="../data_dictionary.htm">Data Dictionary</A>.
+
+<FONT COLOR=green><LI>Identify all the required <A HREF="data_islands.htm"><B>Data Sources</B></A>, and an 'owner' for each Source.
+<UL>
+<LI><A HREeF="data_islands.htm">Data Feeds</A>
+<LI><A HREeF="data_islands.htm">Legacy Systems</A>
+<LI><A HREeF="data_islands.htm">Operational Data Stores</A>
+</UL>
+</FONT>
+
+<A HREeeF="staging_area.htm"><FONT COLOR=green><LI>Define the Data Items</A> required, in consultation with the Users.</FONT>
+<A HREeeF="staging_area.htm"><FONT COLOR=green><LI>Create the Data Models for the Source Data.</A></FONT>
+
+<LI>Define <A HREF="data_validation_checks.htm">Data Validation Checks</A> (bottom-up) and Clean-Up Business Rules for Source Data.</A>
+
+<!--- <A HREeeF="staging_area.htm"><FONT COLOR=green><LI>Define the Validation and Conversion</A> for each Data Item.</FONT> --->
+
+<LI>Carry out  <A HREF="db_quality_audit.htm">an Audit of the Data Quality</A> in major Databases, (bottom-up and top-down).
+
+<A HREeeF="staging_area.htm"><FONT COLOR=green><LI>Define the Staging Area</A>, with MIRror Tables to store Extract Files.</FONT>
+<A HREeF="http://www.metagon.com/">
+<FONT COLOR=green><LI>Create the <B>Business Data Model</B> for the Consolidated Database</FONT></A>
+
+<FONT COLOR=green><LI>If the final target is an ERP, such as SAP, then create the <B>Data Model</B> for the Target ERP Database</FONT></A>
+<BR>For SAP, J.D.Edwards, Peoplesoft and Siebel, a Modelling Tool called 
+<A HREF="http://www.silwoodtechnology.com/products.htm" TARGET=_NEW><B>Saphir</B></A>, from Silwood Technology 
+<br>can be very useful here.
+
+<FONT COLOR=green><LI>Define the <A HREF="migration_mapping.htm"><FONT COLOR=green><B>Data Mapping</B></A> between Source and Target Data Items.
+
+<!---
+<BR><A HREeF="chk_sys_cat.htm">If possible, use SQL Script to check System Catalogues</A>
+--->
+
+<FONT COLOR=green> 
+<LI>Optionally, <A HREF="crud_matrix.htm">create a CRUD Matrix</B></A> to identify the interactions between Data and Functions.</FONT>
+<!--- <LI>Carry out  <A HREF="db_quality_audit.htm">an Audit of the Data Quality</A> in major Databases. --->
+<!--- <LI>Define <A HREF="data_validation_checks.htm">Data Validation Checks</A> and Clean-Up Business Rules for Source Data.</A> --->
+<LI><A HREeF="../modelling_tools.htm">Define Acceptance Tests for data in the Integrated Database.</A>
+</OL>
+
+<FONT COLOR=blue> 
+
+<P>
+<LI><B>Executing the Data Migration Process.</B></FONT>
+<OL><FONT COLOR=green> 
+<LI>Optionally, choose a <A HREF="../vendors_migration_tools.htm">Data Migration Tool.</A>
+<LI><A HREeF="../modelling_tools.htm">Create Extract Files for each Data Source in turn</A>.
+<LI><A HREeF="../modelling_tools.htm">Resolve any Errors with the Users.</A>
+<LI><A HREeF="../modelling_tools.htm">Create Extract and perform Data Clean-Up.
+<LI><A HREeF="../modelling_tools.htm">Complete the Migration, (Extract, Transform and Load) for each Data Source.</A>
+<LI><A HREeF="../modelling_tools.htm">Run Acceptance Tests on the Integrated Target Database,(esp. Referential Integrity).</A>
+</FONT>
+
+</OL>
+
+</UL>
+
+<P>
+There are not many <FONT COLOR=blue><B>books on Database Migration</B></FONT>, but here are two :-
+<OL><LI>Migrating Legacy Systems, by Brodie and Stonebraker
+<BR>Stonebraker is well-respected as the Architect of Ingres, but I didn't like this book very much.
+<BR>
+At <A HREF="http://www.amazon.com/exec/obidos/ASIN/1558603301/qid=980637443/sr=2-3/ref=sc_b_3/102-6273647-8032908" TARGET=_NEW>
+Amazon.com</A>, but the only reviewer gave it 4 stars.
+<LI>90 Days to the Data Mart, by Alan Simon. 
+<BR>This,of course,is devoted to Data Marts, but covers some common ground.
+<BR>At <A HREF="http://www.amazon.com/exec/obidos/ASIN/0471251941/qid=980637607/sr=2-1/ref=sc_b_1/102-6273647-8032908" TARGET=_NEW>
+Amazon.com</A>, but the only reviewer gave this one 5 Stars.
+</OL>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../index.htm">Home Page</A>
+        | <A HREF="../ask_a_question.htm">Ask Me a Question</A>  
+        | <A HREF="mailto:info@databaseanswers.com">Email Me</A> 
+        | <A HREF="../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 DatabaseAnswers.com 2003</I></FONT></CENTER>
+
+</HTML>
+

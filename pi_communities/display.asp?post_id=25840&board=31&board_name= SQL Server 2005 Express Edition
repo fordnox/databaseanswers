@@ -1,0 +1,198 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> > <a href="index.asp?board=31&board_name=+SQL+Server+2005+Express+Edition"> SQL Server 2005 Express Edition</a></font></td>
+		</tr>
+	</table>
+
+<p><table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td valign=top></td>
+	</tr>
+	<tr valign=bottom>
+	<td><a href="compose.asp?board=31&board_name=+SQL+Server+2005+Express+Edition"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a><img src="../images/spacer.gif" width=10 height=1><a href="compose.asp?post_action=reply&parent_id=25840&board=31&board_name=+SQL+Server+2005+Express+Edition"><img src="../images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></a></td>
+	</tr>
+</table>
+
+<p><table border=0 cellpadding=1 cellspacing=0 width=100%>
+	<tr>
+	<td><a href="index.asp?board=31&board_name=+SQL+Server+2005+Express+Edition"><img src="../images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="index.asp?board=31&board_name=+SQL+Server+2005+Express+Edition">Up to topic list</a> | <a href="search.asp?board=31&board_name=+SQL+Server+2005+Express+Edition">Search</a></font></td>
+	</tr>
+</table>
+
+
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Message</b></font></td>
+		</tr>
+		<tr bgcolor="#CCCCCC" valign=top>
+		<td>
+		
+			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+			<b><a href="profile.asp?id=17785"><font color="#990000">Duakettesiups</font></a></b><br>
+			<font size=1">Posts: 9</font>
+			<p>
+			
+			
+		</font>
+		</td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+		<table border=0 cellpadding=0 cellspacing=0 width=100%>
+			<form action="compose.asp" method="post">
+			<tr valign=top>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>strony jak wikipedia</b><br><font size=1>6/6/2010 10:33 AM</font></font></td>
+			
+				<input type="hidden" name="post_action" value="reply">
+				<input type="hidden" name="parent_id" value="25840">
+				<input type="hidden" name="board" value="31">
+				<input type="hidden" name="board_name" value=" SQL Server 2005 Express Edition">
+				<td align=right><input type="image" src="/dba/images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></td>
+			
+			</tr>
+			</form>
+		</table>
+		<hr>
+		<a href=http://pobierz-to.com/karen-elson-the-ghost-who-walks-2010-t708.html>The Ghost Who Walks</a> <a href=http://pobierz-to.com/christina-aguilera-ft-nicki-minaj-woohoo-2010-t709.html>Christina Aguilera Woohoo</a><br><a href=http://pobierz-to.com/til-death-s04e32-t650.html>til death s04e32</a><br><a href=http://pobierz-to.com/treme-s01e07-t651.html>treme s01e07</a><br><a href=http://pobierz-to.com/the-tudors-s04e07-t652.html>the tudors s04e07</a><br><a href=http://pobierz-to.com/lost-s06e00-the-final-journey-t653.html>lost s06e00 the final journey</a><br><a href=http://pobierz-to.com/murr-sunday-morning-ep-remixes-nk20-web-2010-t654.html>murr sunday morning</a><br><a href=http://pobierz-to.com/rampage-2009-dvdrip-t706.html>rampage 2009 download</a><br><a href=http://pobierz-to.com/strayed-2009-dvdrip-t707.html>strayed 2009 download</a><br><a href=http://pobierz-to.com/removewat-2-2-5-2-windows-7-activator-kb971033-fix-t55.html>removewat</a><br><a href=http://pobierz-to.com/bitdefender-total-security-2010-13-0-19-347-t45.html>bitdefender pobierz</a><br><a href=pobierz-to.com/viewtopic.php?f=13&t=71>emule pobierz-to.com</a><br>http://download.cnet.com/<br><a href=http://pobierz-to.com/alcohol-120-retail-v2-0-0-1331-t625.html>alcohol 120% download</a><br><a href=http://pobierz-to.com/kingconvert-video-convertor-avi-mkv-mov-mp4-psp-ipod-hd-t200.html>kingconvert download</a><br><a href=http://pobierz-to.com/profesjonalne-sample-trance-techno-hardstyle-t225.html>sample trance</a><br>http://www.shareware.com/<br><a href=http://pobierz-to.com/szablony-i-skrypty-do-allegro-t224.html>szablony allegro</a><br><a href=http://pobierz-to.com/encyklopedia-drinkow-t222.html>drinki encyklopedia</a><br>http://www.simtel.net/<br><a href=http://pobierz-to.com/trening-mi-ni-brzucha-8-minut-abs-fiasco-t220.html>trening brzuch</a><br><a href=http://pobierz-to.com/splinter-cell-chaos-theory-poradnik-z-gry-online-t211.html>splinter cell poradnik</a><br>http://majorgeeks.com/<br><a href=http://pobierz-to.com/przyk-adowe-cv-i-listy-motywacyjne-rowniez-w-jezykach-obcych-t210.html>cv pobierz</a><br><a href=http://pobierz-to.com/terrorist-takedown-3-2010-t702.html>terrorist takedown 3 pobierz</a><br><a href=http://pobierz-to.com/delta-force-black-hawk-down-pl-t682.html>delta force black hawk down</a><br><a href=http://pobierz-to.com/blur-2010-pc-vitaliti-t680.html>blur pobierz</a><br>http://www.freewarefiles.com/<br><a href=http://pobierz-to.com/gun-pc-iso-full-and-crack-t674.html>gun iso pobierz</a><br><a href=http://pobierz-to.com/the-settlers-7-2010-razor1911-crack-only-update-t659.html>the settlers 7 crack</a><br><a href=http://pobierz-to.com/2010-fifa-world-cup-south-africa-usa-psn-t438.html>fifa 2010</a><br><a href=http://pobierz-to.com/nowa-2010-sezon-1-odcinek-1-t123.html>nowa odcinki</a><br><a href=http://pobierz-to.com/the-butterfly-effect-efekt-motyla-2004-t399.html>efekt motyla hotfile</a><br><a href=http://pobierz-to.com/fruity-loops-9-0-0-xxl-producer-edition-crack-t44.html>fl 9 crack</a><br>http://downloads.zdnet.com/
+		</font>
+		
+		
+		</td>
+		</tr>
+	</table>
+
+	<p>
+	<!-- 
+	
+	The lines below activate the ability to expand the thread
+	to read all of the messages in the order they were written -->
+	
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#000000"><a href="display.asp?post_id=25840&mode=expand&thread=25840&board=31&board_name=+SQL+Server+2005+Express+Edition">Expand and read all posts in this thread</a></font></td>
+		</tr>
+	</table>
+	
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+		</tr>
+	
+		
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=16 height=13 border=0>
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=25840&board=31&board_name=+SQL+Server+2005+Express+Edition">strony jak wikipedia</a></font>&nbsp;<img src="/dba/images/messageforum/message_marker.gif" width=8 height=8 alt="Your are currently viewing this message">
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">Duakettesiups</font></td>
+
+			
+			
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">6/6/2010 10:33 AM</font></td>
+			</tr>
+			
+	</table>
+	
+
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

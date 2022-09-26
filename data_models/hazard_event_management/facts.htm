@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>Data Model for Hazard Management</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height=100 valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.certainslaimentchaud.com/" TARGET=_NEW>
+<A HREF="http://www.speedysigns.com/signs/WARNING_Tripping_Hazard.asp" TARGET=_NEW>
+<IMG ALIGN=right ALT="Tripping Hazard (Click for Website)" SRC="images/tripping_hazard_med.gif" BORDER=0 hspace="0" vspace="4">
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Hazard Management </font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Back to the <A HREF="index.htm">Data Model</A>.
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+A Database for Hazard Management
+
+<B>The Requirements</B> have been defined by Jim Schnedar.  <!--- Desplat <!--- email kiki_online at live.se ---> 
+
+<BR>
+Subject: Data Model Design
+Question: Barry, We have several investigation mediums that produce recommendations. 
+
+We have a hazard report, inspection, or accident report. 
+<BR>Note that Barry has called these <B>Events</B> in the Data Model.
+
+Any of these work products (that is <B>Events</B>)may generate one or more recommendations. 
+
+The following rules apply: 
+1. For the most part the <B>recommendations</B> are similar across the work products (fifteen fields in common), 
+but there are some minor differences. 
+For example, an accident report, a finding event is recorded as to the reason for the recommendation. 
+
+2. A <B>recommendation</B> may be due to an identified hazard (gravel on a sidewalk) or deficiency (exit sign not posted). 
+
+3. A <B>hazard</B> garners a <B>risk assignment</B> (probability/severity/quantified result) and <B>interim control measures</B> 
+(single free-form field) whereas a <B>deficiency</B> does not have either. 
+
+4. <B>Recommendations</B> from the originating report must be "preserved". 
+   That is, after completion of the <B>work product</B>, then the <B>recommendations</B> are worked. 
+When worked, there is a <B>status</B> (open/awaiting closure/closed), 
+<B>resolution path</B> (re-design, safety device, warning, device, procedure changes, etc.), progress monitor 
+(how far along are you on fixing the issue), and record of closure approval. 
+
+5. An <B>accident report</B> has a special QC that occurs. 
+Therefore, the original accident report recommendations are "preserved", 
+they are QC'd and may change, in which the nature of the <B>result</B> (no change, changed, admin change, deleted), 
+<B>reason for change</B>, and <B>person</B> responsible for approving change. Our team has spent many hours flopping back and forth across designs. 
+
+Do we: 
+1. Have a recommendation supertype table with subtypes for accident report, 
+hazard report, inspection, accident report QC, and In Work recommendations? 
+2. Have one common recommendation table with map tables from each work product 
+to the common recommendation table? Do the map tables contain unique work product 
+data (i.e. accident report QC unique data items)? 
+3. Have one common recommendation table with all attributes for all work products? 
+If so, map tables or individual foreign keys from common recommendation to each work product. 
+4. Have a recommendation table for each work product? 
+
+I would be happy to send any more information or proposed ER Diagrams. 
+
+Any input you have is greatly appreciated. 
+
+Thanks, 
+
+Jim Schnedar 
+<HR>
+<B>Barry</B> has defined the 'Things of Interest' as follows :-
+A.1 Hazards
+A.2 Recommendations
+A.3 Reports
+A.4 Others To Be Determined 
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2010</I></FONT></CENTER></PRE>
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

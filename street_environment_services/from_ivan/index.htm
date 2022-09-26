@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta name="generator" content="Adobe GoLive"/>
+		<title>Image of Street Environment Management</title>
+		<csscriptdict>
+			<script type="text/javascript"><!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+
+function changeImagesArray(array) {
+	if (preloadFlag == true) {
+		var d = document; var img;
+		for (var i=0; i<array.length; i+=2) {
+			img = null; var n = array[i];
+			if (d.images) {img = d.images[n];}
+			if (!img && d.getElementById) {img = d.getElementById(n);}
+			if (img) {img.src = array[i+1];}
+		}
+	}
+}
+
+
+function changeImages() {
+	changeImagesArray(changeImages.arguments);
+}
+
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script type="text/javascript"><!--
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		pre_mo3_ov = newImage('mo3_ov.jpg');
+		preloadFlag = true;
+	}
+}
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body onload="preloadImages();" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><script>#</script>
+		<table width="122" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><img src="mo1.jpg" alt="" height="210" width="260" border="0"/></td>
+				<td><a onmouseover="changeImages('mo3','mo3_ov.jpg');return true" onmouseout="changeImages('mo3','mo3.jpg');return true" href="#"><img id="mo3" src="mo3.jpg" alt="" name="mo3" height="210" width="198" border="0"/></a></td>
+			</tr>
+			<tr>
+				<td><img src="mo2.jpg" alt="" height="113" width="260" border="0"/></td>
+				<td><img src="mo4.jpg" alt="" height="113" width="198" border="0"/></td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>

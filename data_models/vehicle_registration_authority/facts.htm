@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>Vehicle Registration Authority Data Model Pages</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.monroetaxcollector.com/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Monroe County Tax Collector, Key West, Florida." hspace="0" vspace="4" SRC="images/monroe_county_tax_collector_key_west.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<img alt="Vehicle"      src="images/lft_vehicle.bmp"> 
+<img alt="Registration" src="images/rt_registration.bmp">
+<img alt="Authority"    src="images/rt_authority.bmp"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>This is the Start of the User specification of the Requirements :-</B>
+
+A Database is required to support an e-Portal for a Vehicle and Motoring Registration  authority which is based on Web Services. 
+
+The Business Rules that establish the design of the Database are shown as BR.1,BR.2 and so on.
+The Business Rules clarify how the Data Model and corresponding Database meet the requirements.
+ 
+It is very important to think through the theory behind the Data Model because the it is very powerful although it is not very large or complex.
+
+Defining the <B>steps in the licensing cycle</B> is a good 'exercise for the student'and it will depend on local procedures in any particular country.
+Here in England, you apply for a Test, turn up on the data arranged, take the test and then either pass or fail.
+If you fail, you can try again after 6 months, and if you pass you are issued with a Driving Licence.
+At the procedure level, these are simply Services which are linked, and for any person (ie Customer) they become  
+records in the Customer_Service_Requests table, which are also linked so that it's possible to track the series of Events.
+
+<HR>
+The organizational structure reflects the services that the Customer Portal has to perform.
+
+The Organisation has four <B>Departments</B> :-
+1) Licence Managment Department - services include new licence, issue, block . organize test, etc.
+2) Finance Department - services include pay fee against licence application, pay fee against cars etc.
+3) Car Registration Department - services include register cars, change registration, etc.
+4) Customer Support Department.  
+
+
+<B>BR.1 In the Database, Departments will be stored in the Departments Table.</B>
+
+These 4 departments offer different <B>Services</B> for online customers :-
+1) Driving Licences where the Customer goes to the Portal and makes an application for a Driving Licence.
+   This involves :- 
+         *  Theory test date reservation
+         *  Practical test date reservation etc. 
+           
+<B>BR.2 In the Database, a Reservation is stored as a Customer Servce Request.
+<BR>The date when a Reservation is requested will be stored as the 'date_request_made' field in the Services Table.
+<BR>The date for a Reservation will be stored as the 'date_request_granted' field in the Services Table.</B>
+
+Every Service has an associated Cost.
+
+<B>BR.3 In the Database, the cost of each Service will be stored as a field in the Services Table.</B>
+
+<B>BR.4 In the Database, the total cost accumulated for a Customer will be stored as a field in the Customer_Service_Requests Table.</B>
+
+
+3) Car Registration is supported by a Web-based application :-        
+         * Car registration etc....
+
+4) customer suport is also supported by a web-based application :-
+          * the person who will be on the seat responds to the cutomer by viewing his profile.              
+       
+<B>BR.5 In the Database, the available Services will be stored in the Services Table.</B>
+
+<B>BR.6 When a Customer requests a Service, records are created in the Customer_Service_Requests Table.</B>
+
+2) The Customer can pay Application Fee using the online payment system.         
+         *  Pay a fee against license application 
+         *  Pay a fee for car Registration
+
+<B>BR.7 When a Customer makes a Payment, records are created in the Customer_Payments Table.</B>
+
+
+<B>This is the end of the User specification of the Requirements.</B>
+</PRE>
+
+<!---
+Students - This table holds information about the students attending a college. 
+           Each student is given a unique identifier.
+
+Staff - Holds information about the staff, 
+        contains a unique identifier for each staff member
+
+Assignments - Holds information about assignments, 
+              has unique identifier for each assignment.
+
+Courses - Holds information about courses, 
+          has unique identifier for each course.
+
+Progress - This holds information about each student's progress of each assignment. 
+           This is also used by the staff to mark assignments, and used by the college intranet to 
+           display to students which assignments are currently unfinished.
+
+Many students can study on many courses. 
+Many staff can teach on many courses. 
+Each course contains many assignments.
+
+Course=---=Students 
+Course=---=Staff 
+Course----=Assignments
+
+So from the database we need to:
+<LI>display new assignments for students (if any) that staff submit 
+<LI>find out which course the student is studying, so we can direct the student to appropriate information 
+<LI>display student names for a staff member for individual courses that that they study on, as well as all courses 
+<LI>and also some other minor queries.
+
+
+<B>A. The Things of Interest include :-</B>
+A.1 Courses Offered 
+A.2 Courses Scheduled
+A.3 Semesters
+A.4 Staff
+
+<B>B. How are they related ?</B>
+B.1 An Assignment is associated with one, and only one, Scheduled Course.
+B.2 A Scheduled Course has a defined start and end date.
+</PRE>
+--->
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>29th. December 2007
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

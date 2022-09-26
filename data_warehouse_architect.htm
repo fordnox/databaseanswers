@@ -1,0 +1,484 @@
+<html>
+<head>
+<title>Data Warehouse Architect Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+                CV Skills for a DataWarehouse Architect<img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"> 
+                        <FONT COLOR=blue FACE=Verdana SIZE=2>This material was contributed by <a href="http://www.linkedin.com/in/bvwatson" TARGET=_NEW><B>Bryan Watson</B></a>,
+			an IT Consultant in Detroit, to an IT Toolbox Discussion on how to get invited for an interview as a DataWarehouse Architect.
+			I think it is a great summary and therefore I have included it, (with his permission - thank you, Bryan) on my Web Site.
+			<BR>Here's <A HREF="http://database.ittoolbox.com/groups/career/database-career/architect-tecnical-skills-391515" TARGET=_NEW><B>the original</B></A>.
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+
+      <br>
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">
+		Here is the text of Bryan's contribution<img src="images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="images/spacer.gif" height=1 width="1"> 
+<PRE>Bryan Watson via database-career <database-career@OpenITx.com> 
+# View Group Archive: http://ITtoolbox.com/hrd.asp?i=939
+<B>The Question was :-</B>
+'I got turned down for an interview and was told my skills
+were too 'light' for a DW Architect - what does this mean ?
+
+<B>Bryan's Answer was :-</B>
+
+You have experienced the gap between the "classic" definition of architect 
+and the "marketing" definition of architect.
+
+Classic architecture (in system definition) describes the principles which 
+govern the creation of a solution. These principles are rooted in the 
+business drivers and needs, the anticipated business ROI, the functional 
+impact (positive and negative) on the business operation, the technical 
+models which support the business functions, the technology options which 
+support the models and the implementation plan for creating the solution. 
+This architect produces a description of the complete solution, linking 
+technical implementation to business needs.
+
+This architectural description becomes the rules that govern tool, 
+platform, and technology selections for constructing the solution.
+
+Marketing architecture usually ignores all or most of the business 
+relationship and focuses on technical skills. Typically, the skillset is in 
+a single product or technology area (Oracle architect, ETL architect, Java 
+architect) rather than in the total solution (data warehouse, or better, 
+Customer Relationship and Marketing).
+
+What makes these narrowly focused skills "architectural"? Actually, 
+nothing. These are implementation or management skillsets. But, services 
+companies can charge much more for architects than they can for DBAs, 
+programmers or sysadmins. And people feel better if you call them 
+architects. So, this is a marketing title only.
+
+The essential skills of an architect, whether dw or any other environment:
+(1) ability to understand (or get the customer to articulate) the 
+business needs in terms of business value
+(2) ability to combine differing "visions" of the company into an 
+integrated whole that conforms to the company's stated mission
+(3) ability to assert "best practices" among the company's competitive 
+peers and lead a discussion of which practices are appropriate to the company
+(4) ability to identify opportunities to support that mission, those 
+needs and those practices through technology
+(5) understanding of the viable current and future technologies and how 
+they impact on that support
+(6) ability to articulate a coherent integration of technologies in a 
+technical/business process model
+(7) ability to guide the evaluation and selection of tools which fit that 
+model and which are appropriate to the company's "readiness" to adopt this 
+solution
+(8) ability to articulate the rationale for that tool selection and the 
+circumstances under which an alternate tool should be adopted (and the 
+impact of that adoption)
+(9) ability to establish the architectural model of the total solution 
+(near and far-term) and the rules that govern adherence to that model
+(10) ability to monitor the implementation of that model, identify 
+variances from the architectural model and direct re-alignment between the 
+architecture, the design and the implementation
+(11) ability to assess the completed solution and establish the degree to 
+which the implementation conformed to the anticipated business benefit
+
+Of these, only (7), (8) and (10) demand specific product skills -- and, 
+even there, the skill required is knowledge ABOUT the product, rather than 
+hands-on skill with the product.
+
+imho, of course....
+
+Bryan Watson
+</PRE> 
+
+
+<!---
+                        <table width="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">Follow these Links in turn to 
+                                plan your Career path</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="8"><a class="cell" href="what_is_a_dba.htm">What 
+                                    is a DBA ? </a></td>
+                                  <td class="cell" width="50%">Start with this 
+                                    one.</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="dba_as_a_career.htm">Career 
+                                    prospects as a DBA </a></td>
+                                  <td class="cell" width="50%">"A Job for Life".</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="careers_in_data_migration.htm">Careers 
+                                    as a Data Migration Specialist</a></td>
+                                  <td class="cell" width="50%" bgcolor="#B0D8FF">&nbsp;</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="careers_in_data_warehousing.htm">Careers 
+                                    as a Data Warehousing Specialist</a></td>
+                                  <td class="cell" width="50%">&nbsp;</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="ora_careers.htm">Careers 
+                                    with Oracle Skills</a></td>
+                                  <td class="cell" width="50%">The DBMS which is most in demand</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7">
+<a class="cell" href="http://www.cramsession.com/certifications/list-certifications.asp?vendor_id=18&view_type=active&vendor_name=Oracle" TARGET=_NEW>Certification</a> 
+				<IMG ALT="New" SRC="images/new.gif"></td>
+                                <td class="cell" wiIIIdth="70%"><B>CramSession</B> offers Study Guides and Self-Test.</td>
+                                </tr>
+
+  				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.techrepublic.com/article.jhtml?id=r00320030204jed01.htm&fromtm=e014" TARGET=_NEW>CV</a></td>
+                                <td class="cell" width="50%">Does your CV stand out from the pile ?</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="dba_interview_questions.htm">DBA 
+                                    Interview Questions</a></td>
+                                  <td class="cell" width="50%">&nbsp;</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="db_backed_web_sites.htm">Developing 
+                                    Database-backed Web Sites</a></td>
+                                  <td class="cell" width="50%">The Skill which 
+                                    is most in demand</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.orapeople.com/">Oracle 
+                                    People</a></td>
+                                  <td class="cell" width="50%">You can register 
+                                    with this Oracle People Web Agency.</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="careers_future.htm">Planning 
+                                    your Future Career</a></td>
+                                  <td class="cell" width="50%">You should ALWAYS 
+                                    have a Plan, and keep it up-to-date.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" COLSPAN=2 wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" hreef="careers_future.htm"><B><I>Organizations</B> - join a Professional Organization ...</I></a></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.databaseassociation.com/" TARGET=_NEW>Association of Database Developers</a></td>
+                                  <td class="cell" width="50%">A great name, and affordable at $40, but it might fail the Groucho Marx test, 
+					because it may be too easy to join.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" COLSPAN=2 wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" hreef="careers_future.htm"><B><I>Publications</B> - Keep up your reading ...</I></a></td>
+
+                             <td class="cell" width="50%">Keep up your reading.</td> 
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.databasejournal.com" TARGET=_NEW>Database Journal</a></td>
+                                  <td class="cell" width="50%">"The Knowledge Center for Database Professionals"</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.databasetrends.com" TARGET=_NEW>Database Trends</a></td>
+                                  <td class="cell" width="50%">"provides corporates with timely coverage of ... enterprise information issues."</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.intelligententerprise.com/" TARGET=_NEW>Intelligent Enterprise</a></td>
+                                  <td class="cell" width="50%">"The only magazine dedicated to strategic business applications that turn information into intelligence."</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.intelligentasia.com/" TARGET=_NEW>Intelligent Enterprise - Asia</a></td>
+                                  <td class="cell" width="50%">"Information Strategies for the Business Leader"</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="careers_future.htm">Planning 
+                                    your Future Career</a></td>
+                                  <td class="cell" width="50%">You should ALWAYS have a Plan, and keep it up-to-date.</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="role_of_data_architect.htm">The 
+                                    Role of a Data Architect</a></td>
+                                  <td class="cell" width="50%">&nbsp;</td>
+                                </tr>
+
+  				<tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.dbajobs.com/" TARGET=_NEW>Recruitment 
+                                    Agencies</a></td>
+                                  <td class="cell" WIDTH=300 wiIIIdth="50%"><B>DBAJobs.com</B> - great name for a Web Site !!!</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.guru.com/talent/incomplete.jhtml?loginId=1858397&amp;cookieId=a2b6210778&amp;whereFrom=sm&amp;session_tag=sm_1a">Recruitment 
+                                    Agencies</a></td>
+                                  <td class="cell" width="50%">GurU.com</td>
+                                </tr>
+
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.jobfizz.com/">Recruitment 
+                                    Agencies</a></td>
+                                  <td class="cell" width="50%">JobFizz (especially 
+                                    recommended for the UK)</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.jobserve.co.uk/">Recruitment 
+                                    Agencies</a></td>
+                                  <td class="cell" width="50%">JobServe (also 
+                                    recommended for the UK)</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://www.monster.com/">Recruitment 
+                                    Agencies</a></td>
+                                  <td class="cell" width="50%">Monster.com (the 
+                                    biggest)</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="http://swz.salary.com/salarywizard/layoutscripts/swzl_titleselect.asp?">Salary.com</a></td>
+                                  <td class="cell" width="50%">Salaries and Job 
+                                    Descriptions for a wide range of IT jobs.</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="skills_in_demand.htm">Skills 
+                                    in Demand</a></td>
+                                  <td class="cell" width="50%">&nbsp;</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="tutorials.htm">Tutorials 
+                                    to get started</a></td>
+                                  <td class="cell" width="50%">These can be very 
+                                    useful.</td>
+                                </tr>
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><img src="images/white-point.gif" width="17" height="7"><a class="cell" href="a_day_in_the_life.htm">Typical 
+                                    Day in the Life of a DBA</a></td>
+                                  <td class="cell" width="50%">Make sure you like 
+                                    the sound of the job.</td>
+                                </tr>
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+
+barry 222
+--->
+
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

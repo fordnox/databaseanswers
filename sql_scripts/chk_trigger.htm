@@ -1,0 +1,73 @@
+<HEAD><TITLE>SQL to check a Trigger Definition</TITLE></HEAD>
+<BODY BACKGROUND="images/gmi_bk.jpg" BGCOLOR="#FFFFFF">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="5" WIDTH=80%>
+
+<TR>
+<TD><IMG ALT="Moon and Dish" HEIGHT=67 WIDTH=100 SRC="images/moon_and_dish.jpg" BORDER=0>
+</TD>
+<TD><H1><FONT COLOR=blue><B>Database Answers ...</B></H1></TD> 
+</TR>
+</TABLE>
+
+<!-- end Standard Header - Version 3-->
+
+<CENTER><B><I><FONT COLOR=blue>SQL to Check a Trigger Definition</FONT></I></B></CENTER>
+<HR>
+<IMG ALIGN=right ALT="Nubes Salt Flats, Bolivia" BORDER=1 HEIGHT=210 WIDTH=310 SRC="images/bolivia_colorado_nubes.jpg">
+
+
+<FONT FACE=Verdana SIZE=2>
+<BR>SET ECHO off
+<FONT FACE=Verdana SIZE=2>
+<BR>SET MAXDATA 50000
+<BR>SET LONG 50000
+<BR>SET LONGCHUNKSIZE 1000
+<BR>SET PAGESIZE 0
+<BR>SET HEADING off
+<BR>SET VERIFY off
+<BR>ACCEPT trigger_name CHAR PROMPT 'What trigger do you want to see? '
+<BR>ACCEPT file_name CHAR PROMPT 'Enter the output filename: '
+<BR>SET TERMOUT off
+<BR>SET FEEDBACK off
+<BR>COLUMN when_clause FORMAT a60 WORD_WRAPPED
+<BR>SPOOL &file_name
+<BR>SELECT 'CREATE OR REPLACE TRIGGER ' || description
+<BR>  FROM USER_TRIGGERS
+<BR> WHERE trigger_name = UPPER('&Trigger_Name');
+<BR>SELECT 'WHEN (' || when_clause || ')'  when_clause
+<BR>  FROM USER_TRIGGERS
+<BR> WHERE trigger_name = UPPER('&Trigger_Name')
+<BR>   AND when_clause IS NOT NULL;
+<BR>SELECT trigger_body
+<BR>  FROM USER_TRIGGERS
+<BR> WHERE trigger_name = UPPER('&Trigger_Name');
+<BR>SELECT '/' FROM dual;
+<BR>SPOOL off
+<BR>SET TERMOUT on
+<BR>SET FEEDBACK on
+<BR>SET VERIFY on
+<BR>SET HEADING on
+<BR>SET PAGESIZE 24
+</FONT>
+
+</BODY>
+
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask me a Question</A> 
+        | <A HREF="scripts.htm">SQL Scripts</A>
+        | <A HREF="mailto:dba@kpisystems.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+</HTML>

@@ -1,0 +1,102 @@
+<HTML><HEAD><TITLE>Normal Forms - 3 or 5</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Codd's Normal Forms</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+
+<TABLE BORDER=0 WIDTH=80%>
+<TR><TD>
+<FONT COLOR=blue SIZE=4><B>THE MAN :</B></FONT>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>Dr.Edgar (Ted) Codd was employed by IBM at their Almaden Research Laboratories
+<BR>in the San Jose area, when he published his definitive paper in 1970, entitled :-
+<BR>
+<CENTER><A HREF="http://www.acm.org/classics/nov95/" TARGET=_NEW>"A Relational Model of Data for Large Shared Data Banks".</A></CENTER>
+<HR>
+
+
+<FONT COLOR=blue SIZE=4><B>HIS NORMAL FORMS :</B></FONT>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The beauty of the Normalized approach is that it provides a clear theoretical foundation 
+   for the design of a database.
+This is a distinct advantage over the design of object-Oriented Data Models. There is
+   no agreed standard for modelling the real world with its behaviour and therefore 
+O-O modelling is subjective and often reduces to squabbling and argument.   
+However, thanks to <A HREF="codds_rules.htm">Ted Codd</A>, there is a prescribed 
+   approach which can be guaranteed to produce well-designed databases.
+
+The process of producing a Normalized design results in the definition of a number of Tables
+and relationships between the Tables.
+Normalization can be summarised as one where the Word of Codd, is :-
+"The data in a record depends on the Key to the record, the Whole Key, and 
+ nothing but the Key, so help me Codd."
+For example, total figures would not appear in a normalized database because they
+can be derived from the individual figures. 
+
+(1) In relational database design, the process of organizing data to minimize duplication. 
+    Normalization usually involves dividing a database into two or more tables and defining
+    relationships between the tables. 
+    The objective is to isolate data so that additions, deletions, and modifications of a 
+    field can be made in just one table and then propagated through the rest of the database
+    using the defined relationships. 
+
+2) There are three main normal forms, each with increasing levels of normalization: 
+   2.1 First Normal Form (1NF): Each field in a table contains different information. 
+       For example, in an employee list, each table would contain only one birthdate field. 
+   2.2 Second Normal Form (2NF): No field values can be derived from another field. 
+       For example, if a table already included a birthdate field, it could not also include a 
+       birth year field, since this information would be redundant. 
+   2.3 Third Normal Form (3FN): No duplicate information is permitted. 
+       So, for example, if two tables both require a birthdate field, the birthdate information 
+       would be separated into a separate table, and the two other tables would then access the 
+       birthdate information via an index field in the birthdate table. Any change to a birthdate 
+       would automatically be reflect in all tables that link to the birthdate table. 
+
+   There are additional normalization levels, such as Boyce Codd Normal Form (BCNF), 
+   Fourth Normal Form (4NF) and Fifth Normal Form (5NF). 
+   While normalization makes databases more efficient to maintain, they can also 
+   make them more complex because data is separated into so many different tables. 
+</FONT>
+</PRE>
+</TD>
+
+<TD VALIGN=top>
+<IMG ALIGN=right ALT="Interlaken, Switzerland" BORDER=1 HEIGHT=420 WIDTH=280 SRC="images/interlaken.jpg">
+</TD></TR>
+</TABLE>
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

@@ -1,0 +1,131 @@
+<HTML><HEAD><TITLE>Data Warehousing Page</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="lake_tahoe_med_lge.htm">
+<IMG ALIGN=right ALT="Lake Tahoe, Nevada - Click for Medium Large (128K !!) Picture" BORDER=0 SRC="../images/philg/lake_tahoe_sml.jpg">
+</A>
+
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>The Data Warehousing Page</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=TOP WIDTH=40>
+<A HREF="../index.htm"><IMG ALT="Home" BORDER=0 SRC="../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=middle WIDTH=60>
+<A HREF="../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="./sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../search.htm"><IMG ALT="Search" BORDER=0 SRC="../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<P>
+This Pages describes some basic DW terms.
+<BR>We have defined <A HREF="data_warehousing_method.htm">the Steps in a Method</A> to planning a Data Warehousing Project.
+<BR><B>Be sure to check out our <A HREF="data_warehousing_references.htm">Data Warehouse Reference Page</A>.</B>
+
+
+<PRE>
+<FONT COLOR=blue SIZE=2><B>Data Warehousing</B> is concerned with the activities involved with creating a 
+Data Repository where you store all the facts you know about some large enterprise or 
+activity, and then analyse the data in different ways,to look for patterns on the data. 
+
+Typically this is done by large retail organisations, trying to identify patterns in 
+buying behaviour so they can sell more stuff to the poor unsuspecting customer.
+
+The most commonly quoted example is that somewhere in the States they
+discovered that on Friday nights the sales of beer and diapers/nappies went up.
+
+The explanation seemed to be that men would call in to buy beer for the
+weekend and the wives would say "While you are in the supermarket,please 
+pick up some diapers/nappies for the baby".
+
+As a result of this analysis they started putting diapers/nappies next to the beer
+and increased the sales of both items.
+
+<B>TERMS IN COMMON USE</B> in DW are :-
+1) <B><I>Facts</I></B> - for example, sales in a shop for the beer and nappies example.
+
+2) <B><I>Dimensions</I></B> - for example, date and time of purchase, product and product category.
+  Then DW involves analysing Facts by different combinations of Diumensions.
+  For example, "When do we sell most beer ?"
+  and "When do we sell most nappies" - then they find the answer to both of these
+  is Friday evening -and hey presto they can make mnore money by making
+  it easier for the beer-buyers to buy nappies(and please the wife), and vice versa.
+  From this example, you can see that most DW examples and work are pretty boring.
+
+  A major growth area for DW at present is the storage and analysis of 'clickstream 
+  data' of traffic on Internet Web Sites. 
+  This is typically used to identify hits and page impressions to determine how many
+  people will see a particular banner advertisement on the Web Site. 
+  An excellent book covering this very new area is <A HREF="http:www/amazon.com">"The Data Webhouse"</A> by Ralph Kimball.
+
+3) <B><I>OLAP :-</I></B>
+   OLAP stands for 'On-Line Analytical Processing, and the term was first used by
+   Dr.Ted Codd, of IBM Research, who was the father of the relational database and SQL.
+   The beer and nappies example is a case of OLAP in practice.
+   What it means is that you are online  analysing masses of data. 
+   Whereas the common use of databases is to store details of 'transactions' such as Bank account details.
+   OLAP requirements are not very well met by SQL so extensions have been developed by the
+   vendors of OLAP products, like <A HREF="http://www.brio.com">Brio</A> or <A HREF="http://www.cognos.com">Cognos</A>.
+</PRE>
+</OL>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../index.htm">Home Page</A>
+        | <A HREF="../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="../mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../faqs.htm">FAQs</A> 
+        | <A HREF="../search.htm">Search</A> 
+        | <A HREF="../site_map.htm">Site Map</A> ]
+</CENTER>
+<P>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT COLOR=blue SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

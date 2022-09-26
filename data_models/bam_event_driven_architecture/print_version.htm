@@ -1,0 +1,80 @@
+<HTML><HEAD><TITLE>Print Version of the Data Model for BAM (Business Activity Monitoring) and Event-Driven Architecture
+</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Data Architecture and Model for BAM (Business Activity Monitoring) and Event-Driven Architecture</B>
+
+<BR>Back to the <A HREF="index.htm">Home Page</A>
+
+<BR><BR>
+<TABLE BORDER=1 CELLSPACING=10>
+<TR>
+<TD ALIGN=middle ROWSPAN=2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR>
+<B>BAM Data Architecture</B>
+<BR>(Top-down)
+
+<BR><BR>
+
+<IMG ALIGN=left ALT="Data Architecture" BORDER=0 SRC="images/data_architecture.gif">
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>The BAM Approach</B> builds on our original Event-oriented 
+<A HREF="../canonical_data_models/index.htm"><B>Canonical Data Model</B></A>
+
+<HR><B>ERD Data Model</B> 
+<BR>(Top-down)
+<BR><BR>
+<IMG ALIGN=left ALT="ERD Data Model" BORDER=0 SRC="images/data_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.systar.com/solutions/bam_for_telecom.php" TARGET=_NEW><FONT COLOR=blue FACE=Verdana SIZE=2>Click here</FONT></A> to download a paper on
+<FONT COLOR=red><B>BAM for Telecomms</B></FONT> from Systar, whose 
+<BR>Telecomms customers include Alcatel-Lucent, Deutsche Telekom, France Telecom 
+<BR>and Saudi Telecom.
+
+<HR>
+A powerful application of BAM is to establish a tailored and efficient approach to 
+<BR><FONT COLOR=red>loading data into a Data Warehouse</FONT>.
+
+<BR>
+<BR>A common techique of Using a 
+<A HREF="http://inmoncif.com/inmoncif-old/www/library/whiteprs/ttsnap.pdf" TARGET=_NEW>'Snapshot'</A> technique can result in the wasteful and 
+<BR>expensive loading of duplicate data.
+
+<BR><BR>This can be replaced by a tailored BAM approach that will load only the data specific 
+<BR>to a particular Event.
+<BR>For example, an Event for a <B>Telecomms</B> 'New Subscription' could trigger the load of 
+<BR>only the relevant Subscription  data. 
+
+<HR>
+When we start to design the ERD Model, the starting point is our Models that are on 
+<BR>this Database Answers Web Site:-
+<LI><A HREF="../business_activity_monitoring/index.htm">BAM</A> 
+<LI><A HREF="../data_analysis/index.htm">Data Sources</A>
+<LI><A HREF="../complex_event_processing/index.htm">Events (Complex)</A>
+<LI><A HREF="../kpis_and_sops/kpis_and_sops.htm">KPIs and SOPS </A>
+<LI><A HREF="../publish_and_subscribe_and_event_alerts/index.htm">Publish and Subscribe (and Event Alerts)</A>
+<LI><A HREF="../financial_portals/index.htm">Publish and Subscribe with KPIs</A>
+<BR><BR>
+
+
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2014</I></FONT>
+
+</BODY>
+
+</HTML>

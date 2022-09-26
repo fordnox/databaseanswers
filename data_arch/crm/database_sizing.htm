@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>Database Sizing Background</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="An Icy Field in Massachussetts" BORDER=0 HEIiiGHT=58 WIiiDTH=282 SRC="images/philg/ice_field_vsml.jpg"> 
+
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>Background to Database Sizing</FONT></TD>
+</TR>
+</TABLE>
+
+<HR>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>1. Introduction</B>
+The discussion below suggests a quick, general approach as well as a
+detailed approach based on calculating the space required for individual Tables.
+For these calculations, it is <B>recommended</B> that a tool should be used 
+for calculating disk space requirements at the detailed Table level.
+This could either be an Excel spreadsheet with the appropriate formulae
+built-in, or it could be a series of SQL Scripts.
+Both of these approaches would be driven by a Data Dictionary holding
+details of the major Tables in the Database.
+
+<B>2. Background</B>
+Disks are relatively cheap, and each additional disk provides significant increases in capacity.
+
+The activity of Database sizing should be carried out against a background of possible disk configurations.
+Sizing estimates should produce an indication of a point on a disk 'shopping-list'.
+
+This sort of analysis can become terribly sophisticated, but it is important to bear in 
+mind that the objective is to obtain an approximate figure which can be used to identify 
+a point in a clear range of options.
+
+With variable data types, the exact nature of the data will determine the requirement, 
+and it is necessary to make some assumptions about the characteristics of the data in 
+order to arrive at any meaningful figures.
+
+<B>3. A Quick Approach for Oracle</B>
+A quick approach to estimating Oracle space requirements that can sometimes help is to 
+ask how much space the data requires (or would require) if it were stored in character 
+format in a sequential file, then add 20% for overhead (block headers, free space, etc., 
+and then multiply that number by 4.
+ 
+It is possible to get really involved in estimating space, but if performance and reliability are issues, 
+(which they usually are), then the estimating needs to be in terms of the number of drives, not megabytes.
+ 
+<B>4. An Oracle Environment</B>
+In a typical Oracle environment, production databases have a minimum of five dedicated disk drives, (in 
+addition to the drives used for the Operating System and Swap space), even if the database has only 10,000 records 
+in a single table.  
+ 
+Here are some working assumptions :-
+ 1) all of the data will go onto a dedicated drive.
+ 2) another drive will be used for indexes.
+ 3) another drive will be used for sorting (temporary data) and concurrency (rollback). 
+ 4) another drive will be used for the online redo logs.
+ 5) another drive for the executables, the system tablespace, the admin directory, and 
+      archive logs.
+ 6) perhaps another drive for the export files and possibly backup data files.  
+ 7)  if you can't afford any downtime due to a failure of a disk drive, then double the number of drives for "mirroring".
+ 
+This gives a minimum of five drives (1 for data, 1 for indexes, 1 for temp and rollback, 1 for online redo logs, 1 for archived logs, the executables, admin directory), etc.
+
+It is technically possible to run a small Oracle database on a single drive, but it is not a recommended approach.
+
+<B>5. Sizing specific Tables in the Database</B> 
+5.1 If your table definition was, say:
+       field_1 char(5)
+       field_2 varchar2(10)
+       field_3 number
+ 
+5.2 A reasonable estimate would be that an entire record might possibly take up around 52 bytes, 
+    (assuming a byte per digit, and a byte for each character, although using Unicode character sets, 
+    or whatever, and all calculations would change).  
+    10,000 records therefore take 520,000 bytes - or half a Megabyte 
+ 
+5.3 Indexes, of course, willa dd substantially to the disk space requirement.
+    Assuming there is an <B>index</B> on field_1 -that will be 5 bytes long, plus the row id (possibly 7 bytes), so allow another 120,000 bytes. 
+    Add up the total, double it just in case, and add extra for housekeeping. 
+
+    That gives a estimate of around 1 to 1.5 Megabytes, which may not be accurate, but is probably a good estimate.  
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

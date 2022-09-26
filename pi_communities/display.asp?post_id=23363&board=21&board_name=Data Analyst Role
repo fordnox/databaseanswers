@@ -1,0 +1,198 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> > <a href="index.asp?board=21&board_name=Data+Analyst+Role">Data Analyst Role</a></font></td>
+		</tr>
+	</table>
+
+<p><table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td valign=top></td>
+	</tr>
+	<tr valign=bottom>
+	<td><a href="compose.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a><img src="../images/spacer.gif" width=10 height=1><a href="compose.asp?post_action=reply&parent_id=23363&board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></a></td>
+	</tr>
+</table>
+
+<p><table border=0 cellpadding=1 cellspacing=0 width=100%>
+	<tr>
+	<td><a href="index.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="index.asp?board=21&board_name=Data+Analyst+Role">Up to topic list</a> | <a href="search.asp?board=21&board_name=Data+Analyst+Role">Search</a></font></td>
+	</tr>
+</table>
+
+
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Message</b></font></td>
+		</tr>
+		<tr bgcolor="#CCCCCC" valign=top>
+		<td>
+		
+			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+			<b><a href="profile.asp?id=16522"><font color="#990000">Rarooblibly</font></a></b><br>
+			<font size=1">Posts: 1</font>
+			<p>
+			
+			
+		</font>
+		</td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+		<table border=0 cellpadding=0 cellspacing=0 width=100%>
+			<form action="compose.asp" method="post">
+			<tr valign=top>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>Free Sports Picks</b><br><font size=1>4/21/2010 5:02 AM</font></font></td>
+			
+				<input type="hidden" name="post_action" value="reply">
+				<input type="hidden" name="parent_id" value="23363">
+				<input type="hidden" name="board" value="21">
+				<input type="hidden" name="board_name" value="Data Analyst Role">
+				<td align=right><input type="image" src="/dba/images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></td>
+			
+			</tr>
+			</form>
+		</table>
+		<hr>
+		The Arizona Diamondbacks will be fighting to capture a losing band on Tuesday when they devour on the St. Louis Cardinals at Follow Field.<br><br>The Cardinals on staple their hopes on the pitching of righthander Kyle Lohse in this game. Lohse has a 0-1 recording and a 4.15 ERA this season.<br><br>Starting this strategy in the service of the Diamondbacks determination be ace Dan Haren. The righthander has a 3.60 PERIOD to go along with a 1-1 phonograph record this season.<br><br>Oddsmakers currently be dressed the Diamondbacks listed as 145-moneyline favorites versus the Cardinals, while the game’s unalloyed is sitting at 8?.<br><br>Matt Holliday went 3-for-5 with a three-run jack to experience the Cardinals to the ground the Diamondbacks 4-2 on Monday night.<br><br>St. Louis cashed as -145 access favorites, while the teams played UNDER the 10-run total number listed by oddsmakers.<br><br>Colby Rasmus was 2-for-5 with a deal batted in recompense the Cardinals, as winning pitcher Brad Penny allowed two runs on seven innings in search St. Louis.<br><br>Chip Reynolds went 2-for-4 with two RBIs allowing for regarding Arizona, while Blaine Boyer was handed the shrinkage in deliverance of Rodrigo Lopez for the Diamondbacks.<br><br>Contemporaneous seam:<br>St. Louis has won 2 perpendicular games.<br>Arizona has lost 5 straight games.<br><br>Cooperate records:<br>St. Louis: 9-4 SU<br>Arizona: 5-8 SU<br><br>St. Louis most recently:<br>When playing on Tuesday are 6-4<br>Before playing Arizona are 7-3<br>After playing Arizona are 7-3<br>After a convince are 4-6<br><br>Arizona most recently:<br>When playing on Tuesday are 4-6<br>Anterior to playing St. Louis are 3-7<br>After playing St. Louis are 3-7<br>After a dying are 5-5<br><br>A hardly trends to consider:<br>The amount to has gone UNDER in 6 of St. Louis’s pattern 7 games<br>The sum total has gone UNDER in 4 of St. Louis’s last 5 games on the access<br>St. Louis is 4-1 SU in its matrix 5 games when playing Arizona<br>The comprehensive has gone ANSWERABLE TO in 4 of St. Louis’s pattern 5 games when playing Arizona<br>The total has gone CALL OF in 4 of Arizona’s form 5 games when playing St. Louis<br>Arizona is 9-4 SU in its mould 13 games when playing at retreat against St. Louis<br>The overall has gone OVER in 6 of Arizona’s pattern 9 games<br>Arizona is 6-3 SU in its model 9 games at on<br><br>Next up:<br>Arizona home base to St. Louis, Wednesday, April 21<br><br>EASY PICK : Arizona  -137
+		</font>
+		
+		
+		</td>
+		</tr>
+	</table>
+
+	<p>
+	<!-- 
+	
+	The lines below activate the ability to expand the thread
+	to read all of the messages in the order they were written -->
+	
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#000000"><a href="display.asp?post_id=23363&mode=expand&thread=23363&board=21&board_name=Data+Analyst+Role">Expand and read all posts in this thread</a></font></td>
+		</tr>
+	</table>
+	
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+		</tr>
+	
+		
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=16 height=13 border=0>
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=23363&board=21&board_name=Data+Analyst+Role">Free Sports Picks</a></font>&nbsp;<img src="/dba/images/messageforum/message_marker.gif" width=8 height=8 alt="Your are currently viewing this message">
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">Rarooblibly</font></td>
+
+			
+			
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">4/21/2010 5:02 AM</font></td>
+			</tr>
+			
+	</table>
+	
+
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<HTML><HEAD><TITLE>Business Rules for Car Hire</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400_home.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2>
+<!--- <IMG ALT="Icy Field" SRC="../../images/philg/ice_field_vsml.jpg"> --->
+<A HREF="../../images/cars/1936cord_lge.jpg">
+<IMG ALT="1936 Cord (Click for Large Picture - 133K !!!)" SRC="../../images/cars/1936cord_sml.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Car Hire" SRC="../../images/buttons/button_studio/car_hire.gif">
+</TD>
+</TR>
+
+
+</TABLE>
+
+<TABLE BGCOLOR=blue WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><FONT COLOR=white FACE=Verdana SIZE=1>Home</A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100><A HREF="../../ask_a_question.htm"><FONT COLOR=white FACE=Verdana SIZE=1>Ask a Question</A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><FONT COLOR=white FACE=Verdana SIZE=1>Data Models</A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><FONT COLOR=white FACE=Verdana SIZE=1>FAQs</A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><FONT COLOR=white FACE=Verdana SIZE=1>SQL Scripts</A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><FONT COLOR=white FACE=Verdana SIZE=1>Search</A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><FONT COLOR=white FACE=Verdana SIZE=1>Site Map</A>
+</TD>
+<TD ALIGN=right VALIGN=top>&nbsp
+<FONT COLOR=white face="Verdana" size="1"><SCRIPT</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<P>
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<A HREF="index.htm">Back to the Conceptual Data Model.</A>
+
+<BR>The design of this Database has been created by following 
+<A HREF="../../approach2db_design.htm"><B>our General Approach</B>.</A>
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Details: The main focus of the business is renting cars and vans, and the database is to manage the booking system.  
+1) Vehicles are categorized into small cars (suitable for carrying up to 4 people), family cars (suitable for carrying up to 7 adults), and vans. 
+2) Information stored for each booking includes customer, car, date of hire and date on which the vehicle is to be returned. 
+3) A customer cannot hire a car for longer than a week. 
+4) If a vehicle is available, the customer's details are recorded (if not stored already) and a new booking is made.  
+5) Potential or existing customers can book a vehicle up to 7 days in advance depending on availability. 
+6) Customers must pay for the vehicle at the time of hire. 
+7) On receiving an enquiry, employees are required to check availability of cars and vans. 
+8) An invoice is written at the time of booking for the customer.  
+9) If the booking has been made in advance, a confirmation letter will be sent to the customer. 
+10) A report is printed at the start of each day showing the bookings for that particular day.  
+
+<HR>
+<B>A. What are the Things of Interest ?</B>
+A.1 Bookings
+A.2 Cars
+A.3 Confirmation Letters
+A.4 Customers
+A.5 Invoices
+A.6 Payments
+A.7 Vans
+A.8 Vehicles
+
+<B>B. How are the Things of Interest related ?</B>
+B.1 A Booking is for one Vehicle and one Customer.
+B.2 A Customer can be associated with one or many Vehicles.
+B.3 A customer cannot hire a car for longer than a week. 
+B.4 A Customer can receive one or many Invoices.
+B.5 A Vehicle can be a Car or a Van.
+B.6 An Invoice is for one and only one Customer.
+
+<B>C. What are the characteristics of the Things of Interest ?</B>
+C.1 Customer details include name,address, gender telephone number.
+C.2 Each booking includes customer, car, date of hire and 
+    date on which the vehicle is to be returned. 
+</PRE>
+ 
+
+Barry Williams
+Principal Consultant
+Database Answers
+15th. April 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

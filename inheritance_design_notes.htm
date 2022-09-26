@@ -1,0 +1,116 @@
+<HTML><HEAD><TITLE>Inheritance Design Notes</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="images/philg/fishing_boat_in_fog_lge.jpg">
+<IMG ALT="Fishing Boat in Fog, Alaska" BORDEeeR=1 SRC="images/philg/fishing_boat_in_fog_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Ineritance Design Notes for Physical Databases</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="careers.htm"><IMG ALT="Careers" BORDER=0 SRC="images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="site_map.htm"><IMG ALT="Search" BORDER=0 SRC="images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<BR><B>Discussion Nr.1</B>
+<BR>The first discussion relates to the <A HREF="data_models/city_tourist_guide/index.htm"><B>City Tourist Guide</A> Data Model</B> :-
+<BR>1) A Super-Type called 'Things of Interest'.
+<BR>2) Two Sub-Types of Hotels and Restaurants. 
+
+<BR><BR>Each of these Sub-Types inherits all the attributes of the parent Super-Type of 'Things of Interest'. 
+<BR>In addition, they have attributes of their own.
+
+<BR><BR>The design of the corresponding Physical Database for Inheritance offers three choices :-
+<BR>1. Create separate Tables for the Sub-Type and each Super-Type.
+<BR>2. Combine all attributes of the Sub-Types upwards into the Super-Type, which results, of course, in one physical Table.
+<BR>This is shown in the <A HREF="data_models/city_tourist_guide/city_guide_denormalized_dezign.htm">Denormalized Design</A>.
+<BR>3. Combine all attributes of the Super-Type downwards into Tables for each the Super-Type
+which results, of course, in two physical Tables in this example of a City Guide.
+<BR>This is left as an exercise for the student.
+
+<BR><BR><B>Discussion Nr.2</B>
+<BR>The second discussion relates to the 
+<A HREF="data_models/customers_commercial_and_personal/index.htm">Customers Data Model</A></B>
+<P>1. A CUSTOMER can be either a COMMERCIAL CUSTOMER or a PERSONAL CUSTOMER, which both inherit characteristics from CUSTOMER.
+<BR>2. A PERSONAL CUSTOMER is also a PERSON, and inherits characteristics from PERSON.
+<BR>3. A COMMERCIAL CUSTOMER has a CONTACT, who is also a PERSON, and therefore inherits characteristics from both CUSTOMER and  PERSON.
+<P>NOTE that the Physical Data Model can have be generated in different ways to reflect the
+ways in which these logical relationships can be implemented in a Database.
+
+<PRE><FONT FACE=Verdana COLOR=blue SIZE=2>There are four alternatives :-
+1. One Consolidated Table.
+2. One SubType Product Table
+3. One SuperType Table, Many SubTypes each in its own Table, each containing all the shared Attributes. 
+4. One SuperType Table with an 'extensible' table defined to identify the Attributes 
+   specific to each Product Type.
+5.  A "products" table, an "attributes" table, and a "specs" table. 
+  The products table is like in 3.  
+  The attributes table simply lists all available attributes and
+  the Product_Atttributes table maps an attribute to a product, and
+  provides an attribute value.
+</FONT></PRE>
+</TD>
+</TR>
+</TABLE>
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

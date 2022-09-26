@@ -1,0 +1,90 @@
+<HTML><HEAD><TITLE>Nursing Home</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+<BR><BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Database for a Nursing Home</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Red Thread River House Book Cover" SRC="../../images/red_thread_river_house_sml.jpg"></A>
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+The design of this Database has been created by following 
+<A HREF="../../approach2db_design.htm"><B>our General Approach</B>.</A>
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The purpose of the Web Site is to support administration 
+and track Patients in a Nursing Home.
+
+The Home will provide 4 levels of Patient Care :-
+   1) minumum care
+   2) intermediate care
+   3) full care
+   4) special care units. 
+
+Authorized personel should be able to access information from all units. 
+
+The components of this project are as follows :
+   1000+ patients, Name, unit name, room/apt #, phone #, SSn, Age, DOB, 
+   Doctors, DName, Dspecialty, Family Contact, FName, Faddress, Fphone #, Medical Insurance(s), 
+   company name, address, policy #, Medicare # (SSN + 1letter), Diagnosis, 
+   symptoms description, symptom date, Lab test name, lab test date, 
+   Radiological test, Radiological test date, Admission date, and Monthly charges. 
+
+Possible Entities :-
+ Patients, Care Units, Family Contact, Medicare, Doctors, Insurance, Tests, Billing, Medical History, and 
+ Misc. Floor expenses. 
+
+Clarification is required of the appropriate Keys (primary, foreign, composite etc.) 
+A good approach for Primary Keys is to make them 'surrogate' keys, which are simply unique integers,
+which are constantly increasing. These are implemented as Sequences in Oracle and Identity Fields in Microsoft
+SQL Server.
+This is especially appropriate for Patients, where it is useful to have use a number which can be automatically
+generated in a straightforward manner.
+
+For Tables of Reference or Static Data, such as Levels of Patient Care, there is usually an obvious Primary
+Key,such as the Level Number, which can be used as the Primary Key.
+
+There are other situations, frequently referring to fixed assets or situations, where there may be an obvious 
+Primary Key.
+
+A good example is the Rooms in the Nursing Home, where it might be sensible to use the Room Number as the Primary Key
+of the Rooms Entity or Table.
+
+It is necessary to be sure that Rooms will always be referred to in the same way in the future.
+If they are not integers, such as Room 213, then the field can be defined as a character string.
+By choosing a length, such as 10 characters, provides a substantial amount of flexibility for the future.
+A length of 5 might also be adequate for the present, and migrating in the future is a straightfoward DBA task.
+
+Barry Williams
+Principal Consultant
+Database Answers
+14th. April 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

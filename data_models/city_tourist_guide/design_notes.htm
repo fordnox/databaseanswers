@@ -1,0 +1,177 @@
+<HTML><HEAD><TITLE>Design Notes for a City Guide Database</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2><A HREF="../../images/hotels/kasbah_du_toubkal.jpg">
+<IMG ALIiiGN=right ALT="Kasbah du Toubkal Hotel, Morocco" BORDER=0 SRC="../../images/hotels/kasbah_du_toubkal_sml_home.jpg"></A>
+</TD>
+</TR>
+
+<!---
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="City Guide" SRC="../../images/buttons/button_studio/city_guide.gif">
+</TD>
+</TR>
+--->
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="City Tourist" SRC="../../images/buttons/button_studio/city_tourist.gif">
+<IMG ALT="Guide" SRC="../../images/buttons/button_studio/rt_guides.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD> 
+</TR>
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR>
+<TR>
+<TD BGCOLOuuuR=white VALIGN=top>
+<A HREF="../../images/boschendal_pool.jpg"><IMG ALIGN=left ALT="Boschendahl Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/boschendal_vertical_sml.jpg"></A>
+</TD>
+
+<TD VALIGN=top>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<A HREF="index.htm">Back to the Data Model.</A>
+
+<!-- end Standard Header - Version 3-->
+
+<B><BR>The Draft Business Rules have been defined and are listed below.</B>
+<FONT SIZE=2>
+<BR>The Data Model shows :-
+<BR>1) A Super-Type called 'Things of Interest'.
+<BR>2) Two Sub-Types of Hotels and Restaurants. 
+<BR>Each of these Sub-Types inherits all the attributes of the parent Super-Type of 'Things of Interest'. 
+<BR>In addition, they have attributes of their own.
+<BR>The design of the corresponding Physical Database for Inheritance offers three choices :-
+<BR>1. Create separate Tables for the Sub-Type and each Super-Type.
+<BR>2. Combine all attributes of the Sub-Types upwards into the Super-Type.
+<BR>This results, of course, in one physical Table.
+<BR>This is shown in the <A HREF="city_guide_denormalized_dezign.htm">Denormalized Design</A>.
+<BR>3. Combine all attributes of the Super-Type downwards into Tables for each the Super-Type.
+<BR>This results in two physical Tables in this example of a City Guide.
+<BR>This is left as an exercise for the student.
+</FONT>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. The Area being Modelled is :-</B>
+A Web Site providing a City Guide for Tourists.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Addresses
+B.2 Cinemas 
+B.3 Events of Interest
+B.4 Individuals
+B.5 Movies
+B.6 Museums
+B.7 Restaurants
+B.8 Star Ratings for Hotels.
+B.9 Things of Interest
+B.10 Types of Food for Restaurants
+B.11 Visitors Comments.
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 An ADDRESS can be associated with zero, one OR or many EVENTS_OF_INTEREST.
+C.2 An ADDRESS can be associated with zero, one or many INDIVIDUALS.
+C.3 An ADDRESS can be associated with zero, one OR or many THINGS_OF_INTEREST.
+C.4 An HOTEL_STAR_RATING can be associated with zero, one OR or many HOTELS.
+C.5 An INDIVIDUAL can be associated with zero or one ADDRESS.
+C.6 An INDIVIDUAL can be associated with zero, one OR or many THINGS_OF_INTEREST.
+C.7 An TYPE_OF_FOOD can be associated with zero, one OR or many RESTAURANTS.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 A THING_OF_INTEREST can have zero or one Contact INDIVIDUAL.
+
+
+<B>E. Sample Data includes :-</B>
+To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 Where can we find a Chinese Restaurant ?
+</PRE>
+
+
+<!---
+G. DESIGN OPTIONS :
+G.1 Handling Sub-Categories
+       A general approach is to link the Table to itself. This allows flexible structures within the Products.
+       A fixed approach is to have separate Tables for Categories and Sub-Categories.
+	In this case, the general approach is recommended because change is likely to occur in the future.
+
+G.1 Handling other Stuff associated with a PRODUCT :-
+       A general approach like "Other Stuff" and "Other Stuff Type" or list them individually, 
+       such as SECURITY_ISSUES, etc..
+
+       It's better to spell out the other Stuff because it makes the Database easier to understand.
+       Usually the maintenance involved is not an issue.
+
+       Different kinds of other Stuff which may occur in the future should be handled by adding specific Tables,
+       reflecting the structure of the other Stuff.
+--->
+
+
+<FONT SIZE=2>
+<BR>Barry Williams
+<BR>15th. December 2002
+<BR>Principal Consultant
+<BR>Database Answers
+
+
+</TD></TR>
+
+<TR><TD COLSPAN=2>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question_rbw.php3">Ask Us a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE2=1><I> &#169 DataBase Answers 2002</I></FONT></CENTER>
+</TD></TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>

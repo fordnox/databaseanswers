@@ -1,0 +1,282 @@
+<html>
+<head>
+<title>Facts about the Data Model for Community Groups and Workers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeF="http://binthecity.com/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Communities and Workers" BORDER=0 hspace="0" vspace="4" SRC="images/bayou_header.jpg"> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+<img alt="Community"  src="images/lft_community.bmp"> 
+<img alt="Groups and" src="images/rt_groups_and.bmp">
+<img alt="Workers"    src="images/rt_workers.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+
+<BR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Specifications</B>
+The Specifications were defined by Andy in an email received on May 17th. 2009 
+(Andrew Coulter rac373 (at) yahoo.com)
+
+
+Dear Sir/Madam, 
+
+I am a mature student and community worker who is currently studying relational 
+database systems and I am trying to develop a relatively complex conceptual data model 
+and logical schema from the requirements given below. At present I am having problems 
+in finding academic papers and CDM models that relate to the requirememt's domain of discourse. 
+I am also having difficulty in developing a entity-relationship model with what I believe are 
+rather complex supertype and subtype entities. 
+
+The relational database is for a locally based community initiative which forms an umbrella 
+organisation made up of five local <B>community groups</B> and resident associations. 
+It aims to provide those <B>Groups</B> and the people they represent with free access to educational 
+and <B>skills-based resources and training</B> covering a wide range of topics involving all age groups 
+and genders 
+
+<B>Requirements:</B> 
+
+The initiative requires a database to record the details, performance and progress of its <B>staff</B>, 
+<B>volunteers</B>, local <B>Residents</B> and <B>Group Members</B>, along with all of the <B>Projects</B> and <B>Programmes</B> 
+that it provides and caters for. 
+
+Information about each <B>Staff</B> member is initially recorded on the day they accept the terms of 
+their employment. This includes their national insurance number, name, address, telephone number, 
+gender, date-of-birth, job title, weekly hours and location. Since, a staff member’s <B>Position</B> is 
+funded by one of the initiative’s <B>Funding Organisations</B> (for a limited period of time only), details 
+including the Funder, start date and contract duration need to be recorded. 
+
+Also, each staff member may or may not enrol on, participate in, facilitate or be the administrator 
+of one or more projects or programmes at any given time. 
+
+Details on residents and volunteers including their name, address, telephone number, gender, date-of-birth, 
+attendance and allocated placements which need to be recorded on the day they enrol and/or volunteer. 
+There is also a need to record information on their previous experience and any qualifications (such as 
+first aid or child protection certificates) that they may have. 
+
+A participant and/or volunteer may or may not enrol on or participate in one or more projects or programmes 
+at any given time. In order to volunteer for a placement where the work may involve children or young people, 
+a volunteer must hold a valid first aid and child protection certificate. 
+These certificates must be renewed every three years. 
+
+Records need to be kept about the five member groups including the group name, address, telephone number and 
+office bearers, as well as the details of each of its members including their name, address, date-of-birth, 
+telephone number and gender. 
+Members of each group may or may not be office bearers in their own group. Group members may or may not enrol 
+on or participate in one or more of the projects or programmes at any given time. 
+
+Details need to be recorded about the initiative's executive committee which is made up of the five member groups. 
+This includes each committee member’s name, address, associated group name, date-of-birth, gender, telephone number 
+and position held. 
+
+No more than two members - who must be office bearers in their own group - from each of the five groups may or 
+may not sit on the executive committee. These executive committee members may or may not be office bearers. 
+
+Information needs to be recorded about funders including their unique identification number, name, address, 
+telephone number and the names of those people who are in contact with the initiative. Also, details on the areas, 
+staff, projects and programmes that they fund need to be recorded along with the funding amount, budget, duration, 
+title and start date. 
+
+The initiative also needs to keep details of all the projects and programmes that it provides or caters for including 
+their code, title, quotas, location, start date, duration, funder, budget, facilitator, start time, end time, 
+qualification, days held and participant details. Records on qualifications achieved by all of the participants on 
+projects and courses need to be kept. 
+
+The name, address, telephone number, contact names and details of the initiative's main contacts (partnerships) 
+need to be kept. 
+
+Also, the details of all meetings attended by staff members including the title, frequency, agenda, date, start time, 
+duration, location, funder, minutes and the names of those participating need to be recorded. 
+
+Each project or programme must be funded by one or more funders, managed by one or more administrators and presented 
+by one or more facilitators. 
+
+Staff, group members and volunteers may or may not be project or programme facilitators. 
+
+Projects and programmes may or may not include a qualification. 
+
+--- 
+
+I would really appreciate any help, such as, related examples, links to academic papers or help with the E-R diagram 
+that you may be able to give. 
+
+Thank you very much for taking the time to read this e-mail and I hope that you can help me in some way, no matter 
+how small. 
+
+Yours sincerely 
+
+Andy 
+ 
+ 
+
+
+
+
+
+<B>The Things of Interest</B> are :-
+<UL>
+<LI> Communities
+<LI> Funding Organisations
+<LI> Groups
+<LI> Programmes and Projects
+<LI> Skills
+<LI> Staff
+<LI> Training Resources
+<LI> Volunteers
+<LI> Workers
+</UL>
+
+How are these Things related ? :-
+<UL>
+<LI> Workers can be involved with zero, one or many Communities.
+</UL>
+
+The Business Rules state :-
+<UL>
+<LI> TBD
+<LI> TBD
+<LI> TBD
+</UL>
+
+Barry Williams
+Principal Consultant
+Database Answers Ltd.
+London, England
+</PRE>
+
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<HTML><HEAD><TITLE>Glossary of Terms</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/switzerland/train_on_viaduct.jpg">
+<IMG ALT="Train on Viaduct in Switzerland" BORDEeeR=1 SRC="../../images/switzerland/train_on_viaduct_vsml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>FACTS for the Data Model for a Glossary of Terms</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+A diagram showing a <A HREF="index.htm">Conceptual Data Model</A> is available.
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Business Rules for a Glossary of Terms :-
+A : What are the Things of Interest ?
+A.1 Entries in the Glossary.
+A.2 Sources for Entries in the Glossary
+A.3 Status Codes
+
+B : How are they Related ?
+B.1 Each Entry has one Status Code.
+B.2 Each Entry has a specified Data Type
+
+C. What do we know about the Entries ?
+C.1 Each Entry contains a Table name.
+C.2 Each Column has a Data Type.
+C.3 Each Source of Entries has an Owner.
+</PRE>
+
+<!---
+<UL>
+<LI><B>Things of Interest in the Scope of the Data Mode :-</B>
+<OL>
+<LI>Articles.
+<LI>Authors.
+<LI>Correspondence.
+<LI>Correspondence Elements.
+<LI>Correspondence Personalization Options.
+<LI>Departments
+<LI>Employees.
+<LI>Organizations.
+<LI>Positions.
+</OL>
+</UL>
+
+<UL>
+<LI><B>What are the relationships between these Things of Interest :-</B>
+<OL>
+<LI>A piece of CORRESPONDENCE can contain one or many Correspondence Elements.
+<LI>Each CORRESPONDENCE ELEMENT can have zero or many Personalization Options.
+<LI>An EMPLOYEE can participate and have EMPLOYEE_MEMBERSHIP in zero or many ORGANIZATIONS.
+<LI>The EMPLOYEE_MEMBERSHIP will be associated with one particular INVOLVEMENT_TYPE.
+<LI>The EMPLOYEE_MEMBERSHIP will be associated with one particular MEMBERSHIP_ROLE.
+<LI>The EMPLOYEE_MEMBERSHIP will be associated with one particular MEMBERSHIP_LEVEL.
+<LI>Each ORGANIZATIONS can have zero or many EMPLOYEES as MEMBERS.
+</OL>
+</UL>
+
+<UL>
+<LI><B>What are the characteristics of these Things of Interest :-</B>
+<BR>At present, the Model shows only the ID field, but in practice, each Entity will have many attributes,
+for example ...
+<OL>
+<LI>A DEPARTMENT has a NAME.
+<LI>An EMPLOYEE has a NAME.
+<LI>An ORGANIZATION has a NAME.
+<l>Etc..
+</OL>
+</UL>
+---->
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

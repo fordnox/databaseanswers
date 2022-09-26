@@ -1,0 +1,123 @@
+<HTML><HEAD><TITLE>VLDB - Very Large Databases</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Facts about Very Large Databases (VLDB)</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREeeF="images/philg/elephant-seal-colony-lge.jpg">
+<IMG ALIGN=right ALT="Kings Canyon Sunset" BORDER=2 WIDTH=196 HEIGHT=134 SRC="images/philg/kings-canyon-sunset-32.1.jpg">
+</A>
+<FONT COLOR=blue SIZE=4><B>QUESTIONS :</B></FONT>
+<OL>
+<LI>How can I get good performance out of a <B>Very Large Database</B> for a Library ?
+</OL>
+
+<HR>
+<FONT COLOR=blue SIZE=2><B>ANSWERS :</B>
+<BR>This Section was produced in reponse to a Question posed on 
+<A HREF="http://www.AskMe.com">AskMe.com</A>
+<BR>
+and discusses the situation where a central library database of books.
+<BR>The original Question was :-
+
+<PRE><FONT COLOR=blue>
+The Database holds details of 10,000 different community libraries, 
+each with 10,000 books (more or less). 
+The central DB is updated daily.
+
+Should I:
+
+Have 10,000 tables, one for each library..
+or have one table with 
+10,000 (libraries) * 10,000 (books) = 100,000,000 rows?
+
+Anytime a search is performed the DB would 
+either:
+a) Have to perform 10,000 queries (one on each table) or,
+b) just one query, run on 100,000,000 rows.
+</PRE>
+<HR>
+My answer was ...
+<PRE>
+
+Your problem is how to implement a Very Large Database,("VLDB"), or Data Warehouse.
+
+I have a page on my Web Site devoted to FAQs on Data Warehousing, called <A HREF="dw_facts.htm"> dw_facts.htm.</A>
+
+The specific question you have to answer is :-
+"How do I split up the data to optimise its distribution and retrieval".
+This is a lengthy answer, so for the moment, I'll ignore the aspect of updating.
+
+The problem and approach is general but the solution will be vendor-specific.
+
+The vendor that I would recommend is Oracle, (http://www.oracle.com) because they 
+have done a lot of work in this area. There are also specialist vendors,such as 
+Redbrick,(http://www.redbrick.com/), but they tend to be more expensive,and there is 
+Microsoft, with their OLEDB inititiave, but your first stop should be to check out Oracle.
+
+Specifically, techniques you are looking for include :-
+a) distributed databases
+b) parallel servers, so that a retrieval can be done in parallel streams
+and accomplished faster.
+c) indexing, particularly bitmap indexing. 
+If you are dealing with text, look at Oracle Context text retrieval product.
+d) clustering, which is co-locating groups of data that are often retrieved together.
+e) vertical and horizontal segmentation. 
+These are techniques for splitting up the data according to values.
+For example, into regional groups,(horizontal rows), or different data items,(vertical).
+
+An excellent book, which describes all of these techniques, is :
+"Oracle Data Warehousing Unleashed', by Bonnie O'Neill et al,published by SAMS, and ISBN is 0-672-31077-5.
+available at Amazon for $49.99 :-
+http://www.amazon.com/exec/obidos/ASIN/0672310775/qid=959836632/sr=1-8/104-1388156-5011952
+
+These are the Steps you should follow :-
+Step 1) Identify patterns in retrieval of the data.
+Step 2) Look for patterns that you can exploit in distributing the data. Start by 
+thinking in terms of about 20 Databases with 500,000 records in each one.
+Step 3) Evaluate the relevance of techniques a) to e) above.
+
+If you have an appropriate budget, you can call in Oracle to give you recommendations.
+If not, it will be difficult for you to make progress unless you have technical expertise available.
+
+If you are able to complete these Steps, then you will have a definition of the problem, and one 
+vendor-specific solution, which you can use as a benchmark for to compare against other vendor solutions.
+</PRE>
+
+</OL>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

@@ -1,0 +1,270 @@
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<title>Orang Asli Project Rpt</title>
+
+<script type="text/javascript">
+
+/***********************************************
+* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var enablepersist="on" //Enable saving state of content structure using session cookies? (on/off)
+var collapseprevious="no" //Collapse previously open content when opening present? (yes/no)
+
+var contractsymbol='<img src="/images/icon_folder_open.gif" width=15 height=12>' //HTML for contract symbol. For image, use: <img src="whatever.gif">
+var expandsymbol='<img src="/images/icon_folder.gif" width=14 height=12>' //HTML for expand symbol.
+
+
+if (document.getElementById){
+document.write('<style type="text/css">')
+document.write('.switchcontent{display:none;}')
+document.write('</style>')
+}
+
+function getElementbyClass(rootobj, classname){
+var temparray=new Array()
+var inc=0
+for (i=0; i<rootobj.length; i++){
+if (rootobj[i].className==classname)
+temparray[inc++]=rootobj[i]
+}
+return temparray
+}
+
+
+function contractcontent(omit){
+var inc=0
+while (ccollect[inc]){
+if (ccollect[inc].id!=omit)
+ccollect[inc].style.display="none"
+inc++
+}
+}
+
+function expandcontent(curobj, cid){
+var spantags=curobj.getElementsByTagName("SPAN")
+var showstateobj=getElementbyClass(spantags, "showstate")
+if (ccollect.length>0){
+if (collapseprevious=="yes")
+contractcontent(cid)
+document.getElementById(cid).style.display=(document.getElementById(cid).style.display!="block")? "block" : "none"
+if (showstateobj.length>0){ //if "showstate" span exists in header
+if (collapseprevious=="no")
+showstateobj[0].innerHTML=(document.getElementById(cid).style.display=="block")? contractsymbol : expandsymbol
+else
+revivestatus()
+}
+}
+}
+
+function revivecontent(){
+contractcontent("omitnothing")
+selectedItem=getselectedItem()
+selectedComponents=selectedItem.split("|")
+for (i=0; i<selectedComponents.length-1; i++)
+document.getElementById(selectedComponents[i]).style.display="block"
+}
+
+function revivestatus(){
+var inc=0
+while (statecollect[inc]){
+if (ccollect[inc].style.display=="block")
+statecollect[inc].innerHTML=contractsymbol
+else
+statecollect[inc].innerHTML=expandsymbol
+inc++
+}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function getselectedItem(){
+if (get_cookie(window.location.pathname) != ""){
+selectedItem=get_cookie(window.location.pathname)
+return selectedItem
+}
+else
+return ""
+}
+
+function saveswitchstate(){
+var inc=0, selectedItem=""
+while (ccollect[inc]){
+if (ccollect[inc].style.display=="block")
+selectedItem+=ccollect[inc].id+"|"
+inc++
+}
+
+document.cookie=window.location.pathname+"="+selectedItem
+}
+
+function do_onload(){
+uniqueidn=window.location.pathname+"firsttimeload"
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+ccollect=getElementbyClass(alltags, "switchcontent")
+statecollect=getElementbyClass(alltags, "showstate")
+if (enablepersist=="on" && ccollect.length>0){
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
+if (!firsttimeload)
+revivecontent()
+}
+if (ccollect.length>0 && statecollect.length>0)
+revivestatus()
+}
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+if (enablepersist=="on" && document.getElementById)
+window.onunload=saveswitchstate
+
+</script>
+
+</head>
+
+<body bgcolor="white" link="#7a5529">
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="75">
+<tr>
+	<td><img height="78" width="622" src="images/header1.gif"></td>
+</tr>
+				
+<tr>
+	<td><img height="54" width="620" src="images/photo_line.gif"></td>
+</tr>
+</table>
+
+<img height="7" width="3" src="images/spacer2.gif">
+<br>
+
+<table border=0 cellpadding="0" cellspacing="0" width="620" height="300">
+
+<tr>
+<!---	<td bgcoloUr="#afa58c" bgcolor="#afa58c" width="124">
+	<center>
+	<img height="15" width="107" src="images/useful_links.gif"></center>
+	</td>
+--->
+
+	<td bgcoloUr="#c5bea5" bgcolor="#afa58c" COLSPAN=1>
+	<A HREF="ikm_norlia_1_in_malay.htm"><IMG ALIGN=left BORDER=0 SRC="images/flags/flag_malaysia.jpg"></A>
+	<center>
+	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
+	<B>Small example of Indigenous Knowledge for</B> <FONT COLOR=yellow>Norlia Shidan</FONT> 
+	</center> 
+	</td>
+
+<!---
+	<td bgcolor="#afa58c" bgcoloUr="#c5bea5" wiIIIdth="124">
+	<center>
+	<font color="#7a5529" size="2" face="Verdana,Arial,Helvetica,Genevan">
+	<B>Map</B> 
+	</center> 
+	</td>
+--->
+
+</tr>
+
+<tr>
+<!---	<td ALIGN=middle rowspan="3" bgcolor="#c5bea5" width="124" VALIGN=top><br>
+	<img height="10" width="123" src="images/Norlias_links_tl.gif"><br>
+
+	<a href="index.htm"><img height="9" width="123" src="images/-home.gif" border="0" alt="index page"></a><br>
+	<a hreEEEf="mailto:info_aatt_norlia.com"><img height="10" width="123" src="images/-email_me.gif" border="0" alt="e-Mail"></a><br>
+	<a href="background.htm"><img height="10" width="123" src="images/-my_background.gif" border="0" alt="my background"></a><br>
+	<a href="recipes.htm"><img height="10" width="123" src="images/-recipes.gif" border="0" alt="recipes"></a><br>
+
+	<br>
+
+	<img height="10" width="123" src="images/Links_to_Malaysia_tl.gif"><br>
+	<a href="http://www.jaring.com.my/"><img height="10" width="123" src="images/-national.gif" border="0" alt="national network"></a><br>
+	<a href="http://malaysia.cnet.com/"><img height="10" width="123" src="images/-technology.gif" border="0" alt="technology news"></a><br>
+	<a href="http://www.keluarga.net.my/"><img height="10" width="123" src="images/-womens.gif" border="0" alt="women's web site"></a><br>
+
+	</td>
+--->
+
+	<td bgcolor="#e4dec9" rowspan="3" VALIGN=top>
+
+<table border=0 cellpadding="10" cellspacing="0" wiIIIdth="372">
+<tr>
+	<td VALIGN=top>
+<p>
+
+<font face="Verdana" size=2 color="#7a5529">
+<b><font COLOR="#7a5529" size=+1> Orang Asli Temiar Remedy for Blood Pressure</font></b><br><p><p><font color="#7a5529" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Title : A Cure for high Blood Pressure</b></font><p><div id="chap0" class="switchcontent"><IMG ALIGN=right ALT="Norlia and Teh Rahiman a/p Pandak"  SRC="http://www.databaseanswers.org/images/orang_asli/OA_Temiar_near_Bota_Kanang.jpg">  
+This entry was described to <A HREF="http://www.norlia.com" TARGET=_NEW>Norlia Shidan</A> (on the right) by Teh Rahimah a/p Pandak , wife of the Headman in the Temiar Group, near Bota Kanang, Perak, Malaysia.</div><p><font color="#7a5529" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step 1 :&nbsp;Obtain the Ingredients</b></font><p><div id="chap1" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>1.1       &nbsp;Main Ingredient is Akar Tongkat Ali</b></font><p><div id="sec0" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529"><IMG ALIiiiGN=left alt="Tonkat Ali (Wood Chips)" SRC="http://www.databaseanswers.org/images/orang_asli/tonkat_ali.jpg">
+<BR>Akar ('the Root of') Tongkat Ali has
+found its way into mainstream Malaysian society and is widely available in combination with Ginseng Coffee.</font></div></td></tr></table><p><font color="#7a5529" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step 2 :&nbsp;Prepare the Drink</b></font><p><div id="chap2" class="switchcontent"></div><p><font color="#7a5529" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step 3 :&nbsp;Take the Drink</b></font><p><div id="chap3" class="switchcontent"></div><table border=0 width=100% cellpadding=2 cellspacing=0><tr valign=top><td width=20></td><td><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529" onClick="expandcontent(this, 'sec1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>3.1       &nbsp;It leaves a very bitter taste !</b></font><p><div id="sec1" class="switchcontent"><font face="Verdana, Arial, sans-serif" size=2 color="#7a5529">So maybe have ready honey or something sweet to take the taste away.</font></div></td></tr></table><p><font color="#7a5529" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>Step 4 :&nbsp;Check the Results</b></font><p><div id="chap4" class="switchcontent"></div>
+</font>
+	</TD>
+</TR>
+
+
+</table>
+
+	</td>
+
+<!---
+	<td width="124" bgcolor="#c5bea5" VALIGN=top>
+	<center>
+	<A HREF="images/orang_asli_map_med_jpg.jpg">
+	<img ALT="Map showing Orang Asli Groups, Courtesy of Keene State College, NH (Click for large Map)" BORDER=0 heiIIght="11" wiIIdth="74" src="images/orang_asli_map_sml_155_jpg.jpg"></A>
+ 	</center><FONT COLOR="#7a5529" FACE="Verdana,Arial,Helvetica,Geneva" SIZE=1>
+	<B>Population Figures -</B>
+	<BR>Jakun&nbsp;&nbsp;&nbsp;&nbsp;: 16,637
+	<BR>Semai&nbsp;&nbsp;&nbsp;&nbsp;: 26,049
+	<BR>Temiar&nbsp;&nbsp;&nbsp;: 15,122
+	<BR>Temuan : 16,020
+	</td>
+--->
+
+	</tr>
+
+	
+	</table>
+
+	<br>	
+	<font color="#cc0000" face="verdana,Verdana,Arial,helvetica" size="2">
+	
+	<br>
+	<table border="0" cellpadding="0" cellspacing="0" width="635">
+	<tr>
+		<td>
+		<font size="1" face="Verdana,Arial,Helvetica,Geneva,Swiss,SunSans-Regular" color="#7a5529">
+		<center>
+		[ <a href="index.htm">Home Page</a> | 
+		<a hreEEEf="mailto:info_aatt_norlia.com">Email Me</a> | 
+		<a href="research_project.htm">Research Project</a> | 
+		<a href="site_map.htm">Site Map</a> ] 
+		</center>
+		</td>
+	</tr>
+	</table>
+</font></center>
+</body>
+
+</html>

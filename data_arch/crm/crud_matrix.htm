@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>A CRUD Matrix</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="Monument Fish, Hawaii" HEIiGHT=98 WIiDTH=216 SRC="images/monument_fish.jpg">
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>Background to a CRUD Matrix</FONT></TD>
+</TR>
+</TABLE>
+
+<HR>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+CRUD stands for :-
+<BR>Create, Read, Update and Delete.
+
+<P>A CRUD Matrix is very useful for identifying the 
+<BR>Data Items which are involved in the Data Access for each Application. 
+<BR>In the early stages it is not necessary to produce a complete CRUD Matrix, and
+<BR>this example is included to provide guidance and act as a Template for the future.
+
+<P>
+SQL consists of only 4 statements, sometimes referred to as CRUD :-
+<LI> Create - INSERT - to store new data
+<LI> Read   - SELECT - to retrieve data 
+<LI> Update - UPDATE - to change or modify data.
+<LI> Delete - DELETE - delete or remove data
+
+<P>A CRUD matrix is a table showing the Functions in an application containing
+SQL statement affecting parts of a database.
+
+<P>
+The CRUD Matrix is an excellent technique to identify the Tables in a Database 
+which are used in any User interaction with a Web Site.
+
+<BR>CRUD means ‘Create, Read, Update or Delete’, and the CRUD Matrix identifies 
+the Tables involved in any CRUD operation.
+
+<BR>It is very valuable to combine a CRUD Matrix with the analysis of possible 
+User Scenarios for the Web Site.  
+
+<BR>The analysis helps to identify any Tables which are not used, and any Tables 
+which are used heavily, and may therefore be a performance bottleneck.
+
+<BR>The application of  this technique to a Portal Web Site is shown below.
+<BR>It identifies the different kinds of Users who can access the Web Site. 
+<BR>For each kind of User, the User Scenario is defined as a series of User Actions, and 
+the corresponding Tables are identified.
+This Table shows the User Scenarios for a Casual User.
+
+<P><B>Here is a simple CRUD Matrix for a CRM Data Architecture :-</B>
+
+<CENTER>
+<P>
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid black .75pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=109 valign=top style='width:81.9pt;border:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><b
+  style='mso-bidi-font-weight:normal'><o:p></o:p></b></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border:solid black .75pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Contact History<o:p></o:p></b></p>
+  </td>
+  <td width=54 valign=top style='width:40.5pt;border:solid black .75pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Maps<o:p></o:p></b></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border:solid black .75pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Points Of Interest<o:p></o:p></b></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border:solid black .75pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Preferences<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=109 valign=top style='width:81.9pt;border:solid black .75pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Plan Route<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read &amp; Create<o:p></o:p></p>
+  </td>
+  <td width=54 valign=top style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .75pt;border-right:solid black .75pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read<o:p></o:p></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=109 valign=top style='width:81.9pt;border:solid black .75pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Request Hotel<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=54 valign=top style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .75pt;border-right:solid black .75pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read<o:p></o:p></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=109 valign=top style='width:81.9pt;border:solid black .75pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Visit Web Site<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=54 valign=top style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .75pt;border-right:solid black .75pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read &amp; Update<o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal>Read &amp; Update<o:p></o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=109 valign=top style='width:81.9pt;border:solid black .75pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=54 valign=top style='width:40.5pt;border-top:none;border-left:none;
+  border-bottom:solid black .75pt;border-right:solid black .75pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=150 valign=top style='width:112.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+  <td width=114 valign=top style='width:85.5pt;border-top:none;border-left:
+  none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+</CENTER>
+
+
+<P><B>Here is a typical CRUD Matrix for a Business Intellignece Data Architecture :-</B>
+<P>
+
+<CENTER>
+<TABLE BORDER CELLSPACING=1 BORDERCOLOR="#000000" CELLPADDING=7 WIDTH=631>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<P><B><FONT SIZE=2>Nr.</B></FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<B><FONT SIZE=2><P>USER ACTION</B></FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Create</B></FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Read </B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Update</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<B><FONT SIZE=2><P>Delete</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>1</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Enter the Web Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>2</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Complete User Survey</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>UserSurvey</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>SurveyMaster</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>3</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Search the Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Site Directory</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>4</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Go Shopping</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>Orders, ProductOrders, ProductOrderOptions</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Products, ProductOptions, Merchants</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>ID Table</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>5</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Post to the Message Board</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>Comm_messages</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>Comm_messages</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>ID Table</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>6</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Check the News Items</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>News</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+<TR><TD WIDTH="6%" VALIGN="TOP">
+<FONT SIZE=1><P>7</FONT></TD>
+<TD WIDTH="21%" VALIGN="TOP">
+<FONT SIZE=1><P>Leave the Web Site</FONT></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+<TD WIDTH="9%" VALIGN="TOP">
+<FONT SIZE=1><P>---</FONT></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

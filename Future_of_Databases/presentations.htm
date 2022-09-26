@@ -1,0 +1,652 @@
+<html>
+<head>
+<title>Presentations on the Future of Databases</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing=0 cellpadding=0 bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=middle><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%>
+<A HREF="the_winner.htm" HREeeeF="images/info_in_the_future.jpg">
+<img ALIGN=right ALTernate ="Information in the Future" ALT="Click for vision of Databases everywhere"  SRC="images/info_in_the_future_sml.jpg" hspace="0" vspace="4"></A>
+</td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<!--- <img src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> BARRY COMMENTED THIS OUT ON MAY 24th 2007
+     	<p><img src="../images/spacer.gif" width="90"></p> --->
+	</td>
+	<td valign="top"><img src="../images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1"><FONT COLOR=red>Presentations on the Future of Databases</FONT>
+		<img src="../images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+<!---           <td><img src="../images/spacer.gif" width="8" height="1">BBB</td> --->
+        	<td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<IMG ALIGN=left ALT="Universal Information Architecture" SRC="images/universal_information_Architecture.jpg">
+<A HREF="../data_models/future_of_databases/index.htm">The underlying Data Model</A> is shown on another page.
+
+<BR><BR>Here is a Vision of <A HREF="the_vision.htm"><B>the Future of Databases</B></A>, and you can check out our <A HREF="index.htm">Vision</A>.
+
+
+<BR><BR>
+This Vision brings up some very interesting challenges, such as how to design and build a Transformation Framework to go from Concept to Specifications.
+
+<!---
+<BR>Here is an example for <A HREF="../from_concept_to_specs_ibm.htm">IBM</A>, and 
+one for <A HREF="../from_concept_to_specs_microsoft.htm">Microsoft</A>.
+--->
+
+<BR><BR>The diagram on the left shows planning for my Vision of the Future of Databases, as seen from four different perspectives :-
+
+<B><LI>Suppliers</B> 
+<BR>&nbsp;&nbsp;&nbsp;<FONT SIZE=2>Suppliers will add features to meet the Requirements of Users and Organisations.
+<BR><UL><LI>&nbsp;&nbsp;&nbsp;<A HREF="../images/data_services_architecture.jpg">Data Services Architecture</A>
+<BR><UL><LI>&nbsp;&nbsp;&nbsp;<A HREF="../images/enterprise_data_mgt_3d_diagram.jpg">Enterprise Data Management</A>
+<BR><UL><LI>&nbsp;&nbsp;&nbsp;<A HREF="../from_concept_to_specs_ibm.htm">From Concepts to Specs for <B>IBM</B></A>
+<BR><UL><LI>&nbsp;&nbsp;&nbsp;<A HREF="../from_concept_to_specs_microsoft.htm">From Concepts to Specs for <B>Microsoft</B></A>
+<BR><UL><LI>&nbsp;&nbsp;&nbsp;<A HREF="../data_models/industry_specific.htm">Industry-Specific Data Models</A>
+</UL>
+
+</FONT></UL> 
+<BR><B><LI>Users and Organisations</B>
+<BR>&nbsp;&nbsp;&nbsp;<FONT SIZE=2>Users and Organisations will be establishing their Requirements to guide Suppliers.
+<BR>&nbsp;&nbsp;&nbsp;<A HREF="../what_why_and_how.htm">What, Why and How of Best Practice</A>
+
+
+</FONT></UL> 
+<BR><B><LI>Universities</B>
+<BR>&nbsp;&nbsp;&nbsp;<FONT SIZE=2>Universities will be addressing significant areas of Research, such as 
+<BR>&nbsp;&nbsp;&nbsp; <A HREF="../data_models/future_of_databases/index.htm">Future Data  Model</A>
+<BR>&nbsp;&nbsp;&nbsp; <A HREF="../from_concept_to_specs_generic.htm">Generic Transformation Framework</A> from Concept to Specifications.</FONT></UL> 
+
+
+
+
+<BR><B><LI>Students</B>
+<BR>&nbsp;&nbsp;&nbsp;<FONT SIZE=2>Students will need guidance in planning successful Careers as Database professionals. 
+<UL>
+&nbsp;&nbsp;&nbsp;<A HREF="../careers.htm">Careers</A>
+<LI>&nbsp;&nbsp;&nbsp;<A HREF="../personal_qualities_for_success.htm">Personal Qualities for Success</A>
+</UL>
+</OL>
+
+<!--- COMMENTED OUT ON JAN 17th
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Background</B>
+I have been a Database specialist for over 15 years.
+
+<B>The diagram on the left</B> shows things that we might be involved in if we 
+live in a typical Community.
+Each of these things will usually be supported by a Database, which is always 
+invisible and so we are never aware of it or its importance.
+
+From time to time I read comments like :-
+   '... of course, Databases are very dry and boring.'.
+I don't find them dry and boring (of course) and I am looking for a way to show this in a 
+way that anybody could understand. 
+
+I think the best way to do this is to ask creative and artistic people to come up with 
+a picture or image of the future in 10 or 20 years time showing how databases (and the 
+technology that uses them) will be everywhere, and what shape the technology could take.
+
+Maybe these people have a well-developed right-hand side to their brains and I have only the left-hand side ?
+
+Right now, we are familiar with a variety of portable devices and distribution media - Cell/Mobile Phones, iPods, PDAs, DVD players, and so on.
+
+My personal prediction is that in less than 10 years everybody will have a portable device which will have free Internet access 
+with universal wireless acess, which they will carry everywhere - just like everybody else - giving new meaning to -
+'Don't leave home without it'.
+
+
+Or maybe we will have chips embedded in our brains to listen to our choice of free music from '<B>GoogleMusicAnywhere</B>', with adverts that 
+reflect our personal interests.
+
+Then the challenge is to create an image that shows this kind of future with some people in their daily lives.
+
+<HR>
+<B>Here's a summary of my thinking ...</B>
+A. <B>In 2008</B>, the current Situation offers the following facilities ...
+A.1 Voice-activated PDAs ('Personal Digital Assistants')
+<LI>These allow you to say things like 'Phone the Doctor' and the PDA will place the call
+A.2 Touch-sensitive PDAs, eg the Apple iPhone
+A.3 PDAs with Internet access, GPS, camera, with audio and video recording
+A.4 <A HREF="http://twittervision.com/" TARGET=_NEW>Twitter</a> and <A HREF="http://twittervision.com/" TARGET=_NEW>Twittervision</A> can display our minute-by-minute movements
+A.5 <A HREF="http://www.pandora.com" TARGET=_NEW>The Pandora Web Site</A> will create a personalised Music Station just for you.
+A.6 Yesterday I saw an ad for a package of Samsung (Cellphone manufacturer),  Oyster (combined ticket for Bus, Train and Subway in London) 
+and Orange (Network Provider). 
+It won't be long before the Cell/Mobile phone has the functionality of Tickets and can be scanned by a barrier machine.
+A.7 Today it was announced that Parking violations were being monitored by officials with head-mounted Video cameras.
+ 
+
+B. <B>In 2017</B>, the medium-term Future might look like this ...
+B.1 Wi-Fi will be available to everyone everywhere.
+B.2 We will be able to say 'Make an Appointment with my Doctor', or 'Pay this Bill' and it will happen.
+B.3 We will have portable around-the-clock devices.
+<LI>These will be extended PDAs with will transmit GPS of our locationa and movements
+B.4 Something like 'GoogleMusicEverywhere' will play music 24x7 according to how we feel.
+<LI>We can say 'I feel romantic' or 'I want to party' and it will play music to suit our mood.
+
+
+C. <B>In 2027</B>, the long-term Future might look like this ...
+C.1 We will be able to visualise one of our Bills and think or say 'Pay that Bill'.
+and the payment will automatically be made.
+C.2 We will be able to have chips implanted in our brains to make telepathy possible to 
+fetch data from databases.
+
+I think I should stop here because I don't want to give you my views - <B>I am keen to hear your views</B>.</PRE>
+
+We are looking for a futuristic version of the diagram at the top of the page which illustrates aspects of living in a community.
+
+<HR>
+<B>My current work</B> for local government in London involves a Project with a team of people who patrol the streets, checking on overall cleanliness and specifically, aspects of 'envirocrime', such as Graffiti, Ltter and Abandoned Vehicles.
+They use PDAs to send details of specific observations to a central Database and are then displayed on a Map of the area, and 
+Hot spots are identified.
+<HR>
+You can <B>download</B> a 
+<A HREF="digital_arts_grand_award.zip" TARGET=_NEW>Zipped version (240k)</A> or a 
+<A HREF="digital_arts_grand_award.doc" TARGET=_NEW>Microsoft Word version(290k)</A> of an earlier description of this Grand Award.
+<BR>I have updated this page more recently than the downloads.
+
+
+<BR>Right now, we take for granted the Databases and Technology that are all around us. 
+
+<BR><BR>For example, a Playlist on an iPod is a Database and the iPod is always with us.
+<BR><BR>Books at Amazon, eBay Bids and Menus at Starbucks are other examples of Databases that we use in our daily lives, usually without giving it a second thought.
+<BR>It's interesting to consider the future evolution of Microblogging Sites, like Jaiku, Moodgeist, Mozes, Radar.net, Tumblr and <B>Twitter</B>. 
+<BR>An entertaining variation is <A HREF="http://www.twittervision.com" TARGET=_NEW><B>TwitterVision</B></A> which display in realtime where people are around the world and what they are doing.
+
+<BR>And what about Social Networking web sites, like MySpace and YouTube ?
+
+<HR><A HREF="http://www.wired.com/science/discoveries/news/2002/12/56734" TARGET=_NEW>Wired magazine</a> reports that a well-respected scientist called Gordon Bell is involved in a 'Lifestyle' experiment called <A HREF="http://research.microsoft.com/barc/MediaPresence/MyLifeBits.aspx" TARGET=_NEW>MyLifeBits</A> on behalf of <B>Microsoft</B>.
+<BR>This involves recording everything he does and says throughout the day as a permanent Life History.
+<BR>This is a <B>'Database for Everything Personal'</B>.
+
+<BR>Although the project is still in the preliminary stages, Bell envisions MyLifeBits evolving into a <B>database</B> that would form part of the MS operating system. 
+<BR>The program would have both a practical and personal side: users could employ the system to record every bit of data relating to a business venture, for example, or to document every stage of their child's development. 
+
+<BR>"I like to think of it as an accurate surrogate brain," Bell said. 
+
+<BR>Someday in the future, a compulsive recorder could call up a single day in her life and get an hour-by-hour breakdown of what she did, said and saw. 
+
+<HR>
+
+<A HREF="../data_models/index.htm">This page on my Web Site</A> lists over 600 Databases that I have created and gives an indication of the range of current applications of Databases.
+  
+<BR><BR>The winning design will bring to life a combination of Technology for fun and entertainment.
+<BR><BR>We'd also like to see the aspects of express evolution explored.
+<BR>In other words, how quickly will things change and will some changes generate more changes more quickly and so on ?
+
+<BR><BR><B>The key question is 'How will Technology and Databases affect daily life for the young people in this diagram in 10 to 20 years time ?'</B>
+
+
+<IMG ALIGN=LEFT SRC="../images/digital_arts_award/time_data_addiction_sml.jpg">
+
+<BR><BR>The image on the left is from an interesting article in <B>Time Magazine</B> on <A HREF="http://www.time.com/time/magazine/article/0,9171,1607260,00.html" TARGET=_NEW>
+'Data Addiction and the Hyperconnected'</A>. 
+
+<BR><BR>The article discusses the impact of Blackberries and the new Apple iPhones as examples of Personal Digital Assistants,(PDAs).
+<BR><BR>It defines the new term of <B>'Data Addiction'</B> as 'the ceaseless craving for digital stimulation that contemporary technology is creating in us'.
+<BR><BR>It mentions <A HREF="http://twitter.com/" TARGET=_NEW><B>Twitter</B></A> which lets you broadcast, (on phone, IM or Internet), minute-by-minute 
+<BR>details of where you are and what you are doing.
+
+<!---
+<BR><BR>Invitations are being sent to the Colleges and Universities listed in the table below, some of which are identified by <A HREF="http://www.imaginefx.com/" TARGET=_NEW>Imageine<FONT COLOR=brown>FX</FONT>  Magazine</A> as the Top Ten in the world.
+
+<BR><BR>If you'd like to enter, please 
+<A HREF='mailto:info&#64;barryw.org?subject=Interested in the Inaugural DatabaseAnswers Digital Arts Grand Award'>email Barry Williams</A>.
+
+
+<BR><BR><B>Invitations</B> to participate have been sent to the Institutions and Individuals who are listed on 
+<A HREF="digital_arts_award_competitors.htm">a separate page</A>.
+
+<BR><BR><BR>
+
+<BR><BR><BR>
+--->
+
+		</td>
+              	</tr>
+            </table>
+          </td>
+        </tr>
+   <tr> </tr> 
+   <tr> </tr> 
+      </table>
+
+      <br> 
+
+<!---
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                
+              	<td colspan="3" width="100%" align="right" class="header1"><BR><BR>Here are ten of the Top Digital Arts Schools around the World compiled by 
+		<A HREF="http://www.imaginefx.com" TARGET=_NEW>ImagineFX Magazine</B></A>&nbsp;&nbsp;&nbsp<img src="../images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="../images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="../images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="../images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">&nbsp;</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="../images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td wiIIIdth="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+				<TR bgcolor="#B0D8FF"> 
+                         	<TD ALIGN=middle class="cell" wiIIIdth=25%><B>Nr.</B></TD>
+				<TD ALIGN=middle class="cell" wiIIIdth=25%><B>SCHOOL NAME</B></TD>
+				<TD ALIGN=middle class="cell" wiIIIdth=25%><B>LOCATION</B></TD>
+                           	<TD ALIGN=middle class="cell" wiIIIdth="50%"><B>COMMENTS</B></TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">1</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.conceptart.org/school/main.shtml" TARGET=_NEW>ConceptArt Atelier</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">San Francisco</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Focusses solely on training for concept art work.
+				Contact : <A HREF="mailto:info@conceptart.org">by email</A>
+				</TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">2</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.ringling.edu/" TARGET=_NEW><PRE><FONT COLOR=blue FACE=Verdana>Ringling School of Art and Design</PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Sarasota, Florida </TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">This Not-for-Profit School is <B>one of America's finest arts institutions</B>. Contact <A HREF="mailto:mcraig@rsad.edu">M.Craig</A> 
+				</TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">3</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.lisaaenglish.com/" TARGET=_NEW>Lisaa College of Applied Arts</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Paris, France</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Accredited by the French Ministry of Culture.
+				</TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">4</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.aib.ac.uk/" TARGET=_NEW>The Arts Institute</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Bournemouth, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Established in 1883 - Contact : <A HREF="mailto:sedwards@aib.ac.uk">Suzie Edwards, Press and PR Officer</A> </TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">5</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.truemax.com/" TARGET=_NEW>Truemax Academy</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Copenhagen, Denmark</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Focusses on 3D CG - Phone : 00-45-70-27-77-87
+				</TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">6</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.artcenter.edu/" TARGET=_NEW>Art Center College of Design</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Pasadena, California</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Renowned for preparing students for the realities of working in the commercial arts fields - Contact Email : infogpk@artcenter.edu.
+<BR>Phone 00-1-626.396.2200 and try emailing swing.reception@artcenter.edu to ask why email keeps bouncing.</TD>
+                                </TR>
+
+	                       	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">7</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.schoolofvisualarts.edu/" TARGET=_NEW>School of Visual Arts</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">New York</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Orignally known as the Cartoonists and Illustrators School.
+				</TD>
+                                </TR>
+
+                          	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">8</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.risd.edu/" TARGET=_NEW>Rhode Island School of Design</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Providence, Rhode Island</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Founded in 1877</TD>
+                                </TR>
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">9</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.academyart.edu/" TARGET=_NEW>Academy of Art University</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">San Francisco</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">The largest private school of art and design in the USA.</TD>
+                                </TR>
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">10</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.uwe.ac.uk/amd/" hrefERENCE="http://amd.uwe.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>School of Art, Media and Design</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Bristol, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				Phone number : 0117 32 84716. The curriculum is focussed on concept art skills</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" COLSPAN=4><img src="../images/white-point.gif" width="17" height="8">
+				<B><I>Additional Invitations were sent to the following Academic Institutions ...</I></B></TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">11</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREeeF="http://www.trurocollege.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>Middlesex University</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">London, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREeeF="mailto:francesm@trurocollege.ac.uk">Email Helen Bendon and Stephen Boyd-Davis </A> 				sent 12th.April</TD>
+                                </TR>
+
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">12</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.nftsfilm-tv.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>National Film and TV School</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Beaconsfield, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREF="mailto:info@nfts.co.uk">Email</A> sent 9th.April</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">13</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.rhul.ac.uk/Media-Arts/Studying/bsc.html" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>Royal Holloway, University of London</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Egham, Surrey</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREF="mailto:a.scott@gl.rhbnc.ac.uk">Email</A> sent 12th.April</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">14</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.sae.edu/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>SAE Institute</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">London and Global</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREF="mailto:saelondon@sae.edu">Email</A> sent 9th.April</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">15</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREeF="http://www.trurocollege.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>Thames Valley University</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Ealing,London, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREeeeF="mailto:francesm@trurocollege.ac.uk">Email</A> 				sent 12th.April</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">16</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.trurocollege.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>Truro College</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Truro, Cornwall, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREF="mailto:francesm@trurocollege.ac.uk">Email Fran Mullins</A> 				sent 9th.April</TD>
+                                </TR>
+
+
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">17</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.falmouth.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>University College, Falmouth</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Falmouth, Cornwall, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><A HREF="mailto:business@falmouth.ac.uk">Email</A> 				sent 9th.April</TD>
+                                </TR>
+
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">18</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.ucreative.ac.uk/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>University of the Creative Arts</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">Epsom, England</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A HREF="mailto:bstopher@ucreative.ac.uk">Emails to Ben Stopher</A> 
+				and <A HREF="mailto:lyule@ucreative.ac.uk">and Laurie Yule</A> 
+			 	sent 9th.April</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">19</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://www.yale.edu/dmca/" TARGET=_NEW>
+				<PRE><FONT COLOR=blue FACE=Verdana>Yale University</FONT></PRE></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">New Haven,Connecticut</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A HREF="mailto:laraine.sammler@yale.edu">Emailed Laraine Sammler</A> at the 
+				Digital Media Center for the Arts - sent 12th.April</TD>
+                                </TR>
+
+
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">20</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell"  HREF="http://community.imaginefx.com/fxpose/memods_portfolio/picture30019.aspx" TARGET=_NEW>
+				<FONT COLOR=blue FACE=Verdana>Memod</FONT></A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="../images/white-point.gif" width="17" height="8">On Imagine FX Site</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beautiful landscapes</TD>
+                                </TR>
+
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="../images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="../images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr><td>&nbsp</td> </tr>
+              <tr><TD>&nbsp</TD> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+     
+<HR>
+
+Here are some examples, (and here's <A HREF="digital_arts_award_graphics.htm"><B>some more</B></A>) ...
+<BR><BR>
+ 
+<IMG ALIGN=LEFT ALT="Derkku's Ballet Dancers - this conveys the idea of Communities linked by the device on the table" SRC="../images/digital_arts_award/derkkus_ballet_dancers.jpg">
+
+
+<IMG ALIGN=LEFT ALT="A City in the Future" SRC="../images/digital_arts_award/city_in_the_future_sml.jpg">
+--->
+
+
+
+
+
+ </TD>
+      	</TR>
+
+ 	</TD></TR> 
+	</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

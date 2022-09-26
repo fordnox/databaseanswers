@@ -1,0 +1,148 @@
+<HTML><HEAD><TITLE>FACTS for Offshore Drilling Equipment Rental</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALT="Pier at Cannes" BORDER=1 HEIGHT=99 WIDTH=211 SRC="../../images/philg/cannespier_xsml.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Inventory of" SRC="images/lft_inventory_of.bmp">
+<IMG ALT="Rental"       SRC="images/rt_rental.bmp">
+<IMG ALT="Equipment"    SRC="images/rt_equipment.bmp">
+</TD>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=middle WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=100%>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. The Area being Modelled is :-</B>
+Inventory of (Offshore Drilling) Rental Equipment.
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Bills
+B.2 Customers
+B.3 Employees
+B.4 Inventory
+B.5 Orders for Maintenance/Repair
+B.6 Payrolls
+B.7 Transportation Order
+
+<B>C. These THINGS_OF_INTEREST are Related as follows :-</B>
+C.1 An EMPLOYEE can have zero,one or many MAINTENANCE_SKILLS.
+C.2 An INVENTORY_ITEM has a MAINTENANCE_SCHEDULE that depends on its ITEM_TYPE.
+C.3 A Maintenance Task on a MAINTENANCE_SCHEDULE has associated required MAINTENANCE_SKILLS.
+
+<B>D. Other Characteristics of these THINGS_OF_INTEREST include</B>
+D.1 An EMPLOYEE has a Date of Birth and Gender.
+
+<!---
+D.1 A VIDEO_RENTAL has a PRICE for the rent of a Video for a specified period. 
+--->
+
+<B>E. Sample Data includes :-</B>
+To be determined
+
+<B>F. Typical Enquiries include :-</B>
+<!---
+F.1 How many VIDEO_RENTALS are overdue ?
+F.2 Do we have any VIDEOS featuring Cher in a Movie ?
+--->
+
+<B>G. Design Notes :-</B>
+<!---
+G.1 The proposed design can easily be implemented with either one Rental Item Table
+or separate Tables for Videos, Games, etc.. 
+
+However, a VIDEOS Table will be preferred if there are many data items are specific
+to VIDEOS, and it's often better to avoid an approach which is designed to provide 
+generality at the expense of ease of understanding.
+--->
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+31st. January 2001
+</PRE>
+
+<!---
+C.4 An EMPLOYEE can  
+    The 'zero' option provides flexibility where a CUSTOMER calls 
+    to place an ORDER for a RENTAL_ITEM, which is subsequently cancelled.
+C.2 A CUSTOMER can place zero or many ORDERS for RENTAL_ITEMS.
+C.3 A CUSTOMER_ORDER must always be associated with one and only one CUSTOMER.
+C.4 A CUSTOMER_RENTAL must always be associated with one and only one CUSTOMER.
+C.5 All RENTAL_ITEMS have many attributes in common, and (maybe) some which are not common.
+    This is shown in the Conceptual Model by an Inheritance relationship between Rental Items 
+    and Videos,Games and 'Other Rental Items'.
+--->
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers Ltd. 2002</I></FONT></CENTER>
+
+</TD></TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>

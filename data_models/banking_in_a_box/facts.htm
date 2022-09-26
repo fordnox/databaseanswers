@@ -1,0 +1,237 @@
+<html>
+<head>
+<title>Specs for our Banking Generic Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.visionwealthmgmt.com/products.html" TARGET=_NEW>
+<IMG ALIGN=right ALT="Financial Products (Click for Web Site)" BORDER=0 hspace="0" vspace="4" SRC="../../images/financial_products_sml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Our Banking Generic Data Model</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>Wikipedia has useful introductions to  <A HREF="http://en.wikipedia.org/wiki/Trader_(finance)" TARGET=_NEW>the activities of a Trader</A> and <A HREF="http://en.wikipedia.org/wiki/Financial_transaction" TARGET=_NEDW>Financial Transactions</A>.
+
+<HR>
+This description is from the <A HREF="http://www.coolavenues.com/mba-journal/finance/trade-life-cycle-events" TARGET=_NEW>Cool Avenues Web Site</A>
+
+
+The Life Cycle of a Trade can be broken down into pre-Trade and post-Trade events.
+
+Before going into the details of the trading events, let's explain how a trading deal is struck between two entities.
+
+We know that one of the primary usages of derivative contract is to hedge the risk. 
+Let us consider that a company has got a floating rate liability in LIBOR (London Inter Bank Offered Rate) and it wants to convert its liability into a fixed rate. 
+
+A feasible option would be to enter into an Interest Rate Swap. 
+
+The company would strike a deal with a bank and enter into a swap where it would pay fixed rate to the bank and receive floating rate. 
+
+The company and the bank would enter into a Trade and the Trade passes through various stages. 
+The various events associated with the Trade can be categorized into Front Office, Middle Office and Back Office activities which are explained below: -
+Front Office: The FO forms the stage where the Trade gets initiated. Here, the order gets placed and the entity will price the instrument and give the quote to the counterparty. 
+
+If the counterparty agrees to the details of the Trade and is willing to enter into the deal, the Trade gets executed. 
+The Trade is then captured in the trading desk usually using a deal capture system. 
+The deal capture system validates all the necessary Trade economics before assigning a Trade reference number. 
+Subsequent Trade events like amendment, cancellation would refer to the Trade with the help of the identifier. 
+An acknowledgement is sent to the counterparty with the Trade details who confirms it in response.
+
+Middle Office: The important function that MO performs is to do the Limits and Risk Management. 
+The Limits are calculated at a business hierarchy level. 
+The usual hierarchy would be at a Portfolio level and subsequently aggregated to a Trader Level, a Desk Level, an Entity Level, and finally to a Group Level. 
+
+Validations are done on the Trade captured, and in case of any discrepancy, an exception is being raised.
+The Middle Office plays a vital role in the exception management. 
+The Trade gets enriched by static data like the standard settlement instructions of the counterparty, Custodian details, City holidays, etc.
+
+Such static data details are important for the completion and settlement of the Trade. 
+The allocation of the Trade is done in the MO and finally the Trade is being pushed to the BO and the Trade goes live.
+
+Back Office: The BO is the backbone of the entire life cycle of the Trade. 
+The BO mostly deals with the operational activities like record keeping, confirmation, settlement and regulatory reporting. 
+In most cases, BO activities are outsourced to cut down on costs for the company.
+<HR>
+The Life Cycle of such a trade can be categorized into pre-trade events and post-trade events which are discussed below: -
+
+Pre-Trade Events
+
+Setting up a Master Agreement: It is a standardized contract between the counterparties and should be there in place before the two parties enter into a deal. For derivative contracts, the Master Agreement is drafted according to ISDA protocols.
+
+ 
+
+Define Product Characteristics: Every Deal has to be defined by some primary characteristics called the primary economics of the trade. In case of a Plain Vanilla Interest Rate Swap, the economics of trade would be as follows: -
+
+
+Pre-Trade Negotiation: In this stage the client tries to reach a preliminary agreement with the bank. This stage may include documentation, indication of the interest rate and defines the criteria for executing a trade which may include the credit support and the bank policies which the counterparty has to abide by.
+
+
+Request for Quote: The client will ask for a quote to the bank, say the fixed rate against LIBOR.
+
+Provide Quote: The bank will provide the quote which may be through their traditional channels like phone, fax and email, or through standardized channel as provided by Swaps wire.
+
+Request Trade Pricing Inputs: The Client will ask inputs which will help to price the product. It may relate to volatility of the underlying in some cases. The trade is priced after matching every detail of the trade. For an IRS, both the parties will agree to the rates when the Net Present Value of the swap is zero.
+<HR>
+Comments 
+
+Trade Execution & Immediate Post-Trade Events
+
+Execution of Trade: When both the parties agree to the details of the trade and are willing to enter into the deal, the trade gets executed.
+
+Confirmation: The bank would draft an inception document capturing all the trade details and send it to the counterparty for confirmation.
+
+The counterparty will check the details of the trade and sign it back confirming the trade on its behalf. The communication of confirmation can be through SWIFT, Telex, Fax, or through other similar medium of financial information exchange.
+
+Notional
+Maturity
+Fixed Rate
+Floating Rate
+Trading Book
+
+Allocation of Trade: Some trades have to be allocated to various sub entities. This is called allocation of trade and is done for flexibility of Profit & Loss Booking.
+
+Creation of Standard Identifier: Every trade will be stored with the help of a unique Trade ID which is used to identify the trade.
+
+<B>Post-Trade Changes</B>
+Amendment: The trade can be amended by the consent of both the parties. The amendment can be done in terms of the economics of the trade. If a trade is being booked incorrectly, then the amendments can be done to the booked trade with the agreed changes and it can be re-booked.
+
+Counterparty Changes:
+
+Assignment / Novation: Novation can be explained by an example. Suppose A and B has entered into a trade, and then C wants to enter and take A's position, or A wants to exit and let C take its position, then whoever is at an advantageous position will receive some novation fee. The most important thing is there should be consent from B for C to come in, through a Consent Letter, and B is called the remaining party. The assignment of the new counterparty can be done by the bank or the new counterparty can be assigned by the counterparty himself.
+
+Give Ups: In a Give up Trade, the client will execute a transaction at a price supplied by an executing broker but then faces the prime broker as the counterparty. The prime broker mirrors the transaction with the executing broker as the counterparty and effectively intermediates between the two.
+
+Partial Termination: A trade is partially terminated when there is a change in the notional of the trade and it is not pre-fixed according to the agreement.
+Full Termination: This indicates the full termination of the deal before the maturity of the trade. This may or may not entail a termination fee.
+Normal Termination: A trade is normally terminated when it gets matured.
+
+<B>Servicing Events</B>
+Rate Fixing: The Floating Rate has to be fixed every period for the cash flow settlement of the floating rate leg. The fixing rule can be defined and it may differ on a trade to trade basis. The Floating Rate may be fixed in advance or at the end of the period according to the fixing rule set for the trade.
+
+<B>Payment :</B>
+Cash Flow Settlement: Every settlement term, there will be cash flow that the entity will pay and receive. The cash flow will happen according to the standard settlement instructions. In case of the Interest Rate Swap, it will be the Pay Flow and Receive Flow.
+
+Fee: A trade may have scheduled and non-scheduled fee event. A payment of brokerage or option premium might be booked as a fee for the records.
+
+<B>Revaluation :</B> The trade can be revalued at intermediate stage according to the market interest rates at that point of time. That is, the future cash flows are discounted to find out the present value and then the NPV is calculated to find out the position of the entity on that particular trade. This is done for accounting purpose.
+
+<B>Conclusion</B>
+The entire Trade Life Cycle is a labyrinth of complex functions where the trade passes through a stream of different events. There is a lot of manual intervention in all these events and this increases the time bucket for processing and settlement of the various functions. The answer to this is STP (Straight through Processing), where the transactions can be conducted electronically without the need of re-keying or manual intervention. The market today is definitely moving towards such a solution.
+
+<CENTER><FONT SIZE=1><BR><I> &#169 DataBase Answers Ltd. 2014</I></FONT></CENTER></PRE>
+
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

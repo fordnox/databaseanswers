@@ -1,0 +1,453 @@
+<html>
+<head>
+<title>Data Quality and Profiling Tools Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		Data Quality and Profiling Tools<img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"> 
+                        <p class="small">
+			There is a shortage of low-cost Tools available at present.
+			<BR>Some of the Products listed below were identified by using Google.com and searching for "data quality tool".
+			<BR>If you have any comments, experiences or suggestions, 
+<A HREF="mailto@data_quality_comments@databaseanswers.com">please let me know</A>.</p>
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">
+		Here is a list of some Products<img src="images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">Use these Links to choose the Product that's right for you.</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+                                
+				<tr bgcolor="#B0D8FF"> 
+                           	<td ALIGN=middle width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<FONT COLOR=blue FACE=Verdana SIZE=2><B>PRODUCT</B></td>
+				<td width="10%"><FONT COLOR=blue FACE=Verdana SIZE=2><B>PRICE</td>
+				<td ALIGN=middle width="60%"><FONT COLOR=blue FACE=Verdana SIZE=2><B>DESCRIPTION</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.ascential.com/" TARGET=_NEW>
+				Ascential</a></td>
+				<td class="cell" width="10%">Expensive</td>
+				<td class="cell" width="60%">
+				<a class="cell" href="http://ibm.ascential.com/products/profilestage.html" TARGET>
+				ProfileStage</a> has been rebadged as part of the Websphere family.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.ascential.com/" TARGET=_NEW>
+				Ascential</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">
+				<a class="cell" href="http://ibm.ascential.com/products/qualitystage.html" TARGET>
+				QualityStage</a> - ditto, since IBM took over Ascentia.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.similaritysystems.com/athanorsuite.htm" TARGET=_NEW>
+				Athanor</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Offered by Similarity Systems.</td>
+                                </tr>
+
+<!---
+Rule/Data Assessment Tool you also may want to 
+check out WizRule. 
+
+Tools like Trillium, DataFlux and Vality are very 
+expensive.
+
+If your site uses SAS, or is considering SAS, 
+then I suggest you have a look at E-Scrub - a set 
+of fuzzy-matching routines developed by Chuck 
+Partridge.  You can caontact him at 
+ or have check it 
+out at www.sconsig.com
+--->
+
+      
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.centrus.com/" TARGET=_NEW>
+				Centrus</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">&nbsp</td>
+                                </tr>
+
+<!--- http://www.choicemaker.com/ --->
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.choicemaker.com/" TARGET=_NEW>
+				ChoiceMaker</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">
+				"... record matching, record linking, and deduplication software" - 
+				"Awarded a 2005 Readership Merit Award by DMReview"</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.dataflux.com/" TARGET=_NEW>
+				DataFlux</a></td>
+				<td class="cell" width="10%">"Expensive"</td>
+				<td class="cell" width="60%">Available from <A HREeF="http://www.dataflux.com/" TARGET=_NEW>DataFlux</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.dataqualitysuite.com/dqs.html" TARGET=_NEW>
+				Data Quality Suite</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Available from <A HREeF="http://www.dataflux.com/" TARGET=_NEW>Available only for IBM Mainframes</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.sconsig.com/e-scrub.htm" TARGET=_NEW>
+				E-Scrub</a></td>
+				<td class="cell" width="10%">"Affordable"</td>
+				<td class="cell" width="60%">Works with SAS, and is offered by <A HREF="http://www.sconsig.com/" TARGET=_NEW>Charles Patridge</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.innovativesystems.com/iLytics/quality.htm" TARGET=_NEW>
+				iLytics Data Quality</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Available from <A HREF="http://www.innovativesystems.com/" TARGET=_NEW>Innovative Systems</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.sas.com/technologies/dw/dataquality/index.html" TARGET=_NEW>
+				SAS</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Data Quality, Cleansing and Enrichment.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.similaritysystems.com/" TARGET=_NEW>
+				Similarity Systems</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Acquired Evoke and therefore a presence in Data Profiling,
+				and has itself since been acquired by Informatica.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.trilliumsoftware.com/site/content/product/product_main.asp" TARGET=_NEW>
+				Trillium Data Quality</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Available from <A HREF="http://www.trilliumsoftware.com/" TARGET=_NEW>Trillium Software</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.vality.com/" TARGET=_NEW>
+				Vality</a></td>
+				<td class="cell" width="10%">"Expensive"</td>
+				<td class="cell" width="60%">Available from <A HREF="http://www.ascential.com/" TARGET=_NEW>Ascential</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.winpure.com/" TARGET=_NEW>WinPure</a></td>
+				<td class="cell" width="10%">$65 or $149</td>
+				<td class="cell" width="60%">Evaluation available,(recommended by Gary Haidak).</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.wizsoft.com/rule.html" TARGET=_NEW>
+				WizRule</a></td>
+				<td class="cell" width="10%">$3,995</td>
+				<td class="cell" width="60%">Available from <A HREF="http://www.wizsoft.com/" TARGET=_NEW>WizSoft</A>.</td>
+                                </tr>
+
+<!---
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.axio.com/" TARGET=_NEW>
+				Axio</a></td>
+				<td class="cell" width="10%">N/A</td>
+				<td class="cell" width="60%">Offered by <A HREF="http://www.evoke.com/" TARGET=_NEW>Evoke</A>.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%">&nbsp</td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">&nbsp</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.premier-international.com/applaud.asp" TARGET=_NEW>
+				Applaud</a></td>
+				<td class="cell" width="10%">N/A</td>
+				<td class="cell" width="60%">
+				Data Quality is part of a Systems Development Toolkit from 
+				<A HREF="http://www.premier-international.com/" TARGET=_NEW>Premier International</A>.</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.data_junction.com" TARGET=_NEW>
+				Data Junction</a></td>
+				<td class="cell" width="10%">&nbsp</td>
+				<td class="cell" width="60%">Free Evaluation copy available.</td>
+                                </tr>
+
+   				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.qoppa.com/dmindex.html" TARGET=_NEW>
+				Data Morph</a></td>
+				<td class="cell" width="10%">$120</td>
+                            	<td class="cell" width="60%"><B>Recommended</B> - looks good and it's an affordable price, with a Free download Evaluation version.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.kapowtech.com/solutions_migrationprojects.htm" TARGET=_NEW>
+				RoboSuite</a></td>
+				<td class="cell" width="10%"><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</PRE></td>
+                            	<td class="cell" width="60%">Free Evaluation copy available.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                           	<td class="cell" width="30%"><img src="images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.visualscribe.com/" TARGET=_NEW>
+				Visual Scribe</a></td>
+				<td class="cell" width="10%"><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>$945 - $1,250</PRE></td>
+                            	<td class="cell" width="60%">Offers Data Quality ? as part of a powerful set of features 
+				for Scripting your own ETL functions, (which sounds great) - Free Evaluation copy available.</td>
+                                </tr>
+--->
+
+                             
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

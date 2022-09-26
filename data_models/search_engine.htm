@@ -1,0 +1,61 @@
+<HTML><HEAD><TITLE>Search Engine Database</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><IMG ALT="Database Answers Logo" BORDER=0 HEIGHT=58 WIDTH=400 SRC="../images/dba_400_home.jpg"></TD> 
+</TR>
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>A Database for a Search Engine</FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+THE METHOD :-
+<BR>The Search could be done by splitting up the Search into separate words ('tokens'), and
+<BR>then returning the results with the highest being the ones with the most matches.
+<BR><BR>The basic SQL would look something like this :-
+<BR>SELECT url_id,COUNT(*)
+<BR>FROM   url_key_word_matches
+<BR>WHERE  key_word LIKE 'Key Word in Search%'
+<BR>GROUP  BY url_id;
+
+<HR>
+<CENTER>
+<IMG ALT="A Database for a Search Engine (7K)" SRC="images/search_engine/search_engine.gif">
+ 
+
+</CENTER>
+
+<!---
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+--->
+
+
+
+</BODY>
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+</HTML>

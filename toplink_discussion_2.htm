@@ -1,0 +1,101 @@
+<HTML><HEAD><TITLE>TopLink Discussion 2</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jug" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+
+<TR>
+<TD ALIGN=left VALIGN=bottom><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+Toplink Discussion 2</B></FONT> 
+</TD>
+</TR>
+
+</TABLE>
+
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+<IMG ALIGN=right ALT="Montreux, Switzerland" BORDER=1 HEIGHT=268 WIDTH=275 SRC="images/switzerland/montreux.jpg">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<PRE><FONT SIZE=2>I use Toplink for Java. Toplink basically generates dynamic SQL for your 
+normal "queries" and may also turn that into a stored procedure on the 
+RDBMS side. The normal SQL mappings are one thing. Need to discuss? A 
+second thing is a Query object framework where you build up your query 
+using objects and the framework will generate the dynamic SQL. Here is an 
+example:
+
+public Vector getTests(Study study) {
+   ExpressionBuilder builder = new ExpressionBuilder();
+   Expression studyId = builder.get("study").get("oid").equal(study.getOid
+());
+   ReadAllQuery query = new ReadAllQuery();
+   query.setReferenceClass(Test.class);
+   query.setSelectionCriteria(studyId);
+   return new (Vector) getSession().executeQuery(query));
+}
+
+which gets all "Test" objects for a particular "Study" by performing a join 
+between the study and tests. IOW, return all Tests where aTest.study.oid == 
+aStudy.oid.
+
+You can think of this simply as some objects that can generate OO queries 
+into SQL strings and pass them along to the RDBMS, although Toplink handles 
+caching, converting to/from objects and so forth. Toplink could also 
+compile a query or sql string into a stored procedure if I wanted, e.g., I 
+would give this query a name, tell Toplink to convert it to a stored 
+procedure, then refer to it by name.
+
+Since it's inefficient to dynamically generate the sql string and have the 
+RDBMS recompile it every time, Toplink could tell the RDBMS to convert this 
+sql string to a stored procedure then use this stored procedure reference 
+via parametrized calls thereafter (for the lifetime of the Toplink object; 
+it would delete these temporary stored procedures when it shut down).
+
+Toplink also has an execute(aSQLString) method where you can just send a 
+SQL string directly to the database. This is a "backdoor" that bypasses the 
+unitOfWork (transaction in object terms) and caching. In general, this will 
+answer a Vector of "DatabaseRows" or ResultSets. Up to you what you want to 
+do with it.
+
+I apologize if I failed to answer your question. I wasn't quite sure what 
+you wanted so I scattershot-ed it. If your question was: "Does Toplink 
+really SP its queries then use parametrized calls to them going forward?", 
+to be honest I'd have to go back and look at Toplink's code to see. It 
+doesn't seem very difficult to do, so I assumed it would. But I'm not 100% 
+sure. Hmmm.
+
+Incidentally, I was just informed about a new open source OR Java tool 
+today at http://www.simpleorm.org/. I was planning on looking at it 
+tonight.
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask me a Question</A>  
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

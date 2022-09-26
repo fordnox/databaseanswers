@@ -1,0 +1,45 @@
+<HTML><HEAD><TITLE>Slide 9 - Tutorial on Database Schema</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Tutorial on Database Schema - Slide 9</B> -  Deliveries from Amazon.com 
+<BR><BR><A HREF="tutorial_slide_8.htm">Back</A>&nbsp;&nbsp;&nbsp;<A HREF="tutorial_slide_10.htm">Next Slide</A>
+
+<BR><BR>
+<!--- <IMG ALT="Customers and Products Data Model" SRC="images/customers_and_products_dezign.gif"> --->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<OL>
+<B><LI>Deliveries from Amazon.com</B>
+<BR>Deliveries go thru a series of progressive stages, such as (alphabetically) :-
+<UL><LI>Cleared Customs</UL>
+<UL><LI>Delivered</UL>
+<UL><LI>Left Warehouse</UL>
+</OL>
+
+<IMG ALT="Amazon Deliveries" SRC="images/amazon_deliveries.gif">
+
+<BR>
+<HR><B>Deliveries</B>
+<LI>Deliveries is a straightforword area to model.
+<LI>We have added just two Tables.
+<LI>The 'Customers_Orders_Delivery' Table keeps a history of the Stages in the delivery of the Order.
+<LI>The 'Ref_Delivery_Status_Codes' tells us what those Stages can be, and they can be displayed in a Drop-down list in an Application.
+<LI>As you can see, a series of records will be stored in the 'Customers_Orders_Delivery' Table.
+<LI>Each record has a different date and time and a different Stage. 
+<LI>This Table makes it possible to track the Order to final Delivery.
+</OL>
+  
+<HR>
+
+<BR><BR><BR><I> &#169 DataBaseAnswers.org 2006</I></FONT>
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,152 @@
+<HTML>
+<HEAD><TITLE>Business Rules for Maintenance Contracts</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2> 
+
+<A NAME="TOP">
+
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIGHT=58 WIDTH=400 SRC="../../images/dba_400.jpg"></TD> 
+<TD ALIGN=right ROWSPAN=2>
+<IMG ALT="Sunset at Dulles Airport, Washington" HEIGHT=94 WIDTH=255 SRC="../../images/dulles_airport_washington.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Maintenance" SRC="../../images/buttons/button_studio/maintenance.gif">
+<IMG ALT="Contracts" SRC="../../images/buttons/button_studio/rt_contracts.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A></TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" CELLPADDING=3 CELLSPACING=3 WIDTH=90%>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<IMG ALIGN=left ALT="Boschendal, South Africa" SRC="../../images/boschendal_vertical_sml.jpg">
+<BR>Design Notes :-
+<BR>I have shown the 'Third_Party_Companies' Entity as being either a Supplier or a Maintenance Contractor.
+<BR>This makes the Database more readable and easier to use, at the expense of generality. 
+<BR>In practice, a Supplier is also likely to provide Maintenance, and therefore be both a Supplier and
+a Maintenance Contractor.
+<BR>However, for an alternative design with more generality I have defined an Entity called 'Ref_Company_Types'.
+<BR>I have not used it and so it is not joined in a Relationship to any other Entity.
+<BR>If this Reference Data Entity were to be used it would be necessary, of course, to add a 'company_type_code' to the 'Third_Party_Companies' 
+Entity, and then you could either remove or leave the maintenance_contractor_yn and supplier_yn attributes. 
+
+<HR>
+
+<B>This Page defines the Requirements for a Database for Machine Maintenance.</B>
+<BR>It contains four Sections :
+<BR>1. Things of Interest
+<BR>2. How these Things are related
+<BR>3. Characteristics of these Things
+<BR>4. User Scenarios
+
+<BR><BR>
+
+<OL>
+<LI><B>The Things of Interest include :-</B>
+<UL>
+<LI>Component Machine Parts, (this is a List of all Component Parts in all Machines).
+<LI>Contracts
+<LI>Engineer Visits
+<LI>Faults, recorded in a Fault Log.
+<LI>Machines
+<LI>Machine Parts, (these are the specific Parts in a particular Machine).
+<LI>Maintenance Contracts
+<LI>Maintenance Engineers
+<LI>Parts
+<LI>Machine Parts, (these are the specific Parts in a particular Machine).
+<LI>Parts - these are the Component Parts.
+<LI>Part Faults, (these are the Faults that can occur with a specific Part).
+<LI>Skills 
+<LI>Staff
+<LI>Third Party Companies
+
+
+</UL>
+<P>
+<LI><B>How are these Things related :-</B>
+<UL>
+<LI>A Fault will always be associated with one Machine, and at least one Part of that Machine.
+<LI>A Machine can have one or many Parts.
+<LI>A Part can be associated with one or many Faults.
+<LI>A Part can be associated with one or many Faults.
+<LI>A Member can belong to one and only one Ministry.
+<LI>A Member can have zero, one or many Skills.
+<LI>A Ministry can arrange zero, one or many Activities. 
+<LI>Staff are associated with one or many Ministries.
+<LI>Staff can have zero, one or many Skills.
+</UL>
+<P>
+<LI><B>Characteristics of these Things :-</B>
+<UL><LI>A Contract has :-
+<LI>A Sart Date and an End Date.
+</UL>
+
+<P>
+<LI><B>User Scenarios :-</B>
+<OL>
+<LI>
+<LI>
+<LI>
+</OL>
+</UL>
+</OL>
+
+
+<P><B>Barry Williams</B>
+<BR>20th. December 2002
+<BR>Principal Consultant
+<BR>Database Answers
+
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question_rbw.php3">Ask Us a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 DataBase Answers.com 2002</I></FONT></CENTER>
+</TD></TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

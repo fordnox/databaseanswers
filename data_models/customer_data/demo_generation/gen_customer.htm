@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Customer Details</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  win1=window.open(theURL,winName,features);
+  win1.document.write("<html>\n<head>\n<title>Customer Table Definition</title>\n<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>\n</head>\n\n<body bgcolor='#FFFFFF' text='#000000'>\n\n");
+
+	win1.document.write("<FONT COLOR=blue FACE=Verdana SIZE=2> <BR>\n");
+	win1.document.write("CREATE TABLE customer (<BR>\n");
+	win1.document.write(" customer_id   integer NOT NULL<BR>\n");
+	win1.document.write(",customer_type char(3) <BR>\n");
+
+	if (this.form1.customer_name.checked)
+	{
+		win1.document.write(" ,customer_name      varchar(255)<BR>\n");
+	}
+
+	if (this.form1.customer_title.checked)
+	{
+		win1.document.write(" ,customer_title      char(10)<BR>\n");
+	}
+
+	if (this.form1.gender.checked)
+	{
+		win1.document.write(" ,gender      char(1)<BR>\n");
+	}
+
+	if (this.form1.date_of_birth.checked)
+	{
+		win1.document.write(" ,date_of_birth      date<BR>\n");
+	}
+
+ 	
+ 	if (this.form1.home_owner.checked)
+	{
+		win1.document.write(",home_owner_yn char(1)<BR>\n");
+	}
+
+ 	if (this.form1.crm_years_in_residence.checked)
+	{
+		win1.document.write(",crm_years_in_residence number(2) <BR>\n");
+	}
+	
+	if (this.form1.crm_years_as_customer.checked)
+	{
+		win1.document.write(",crm_years_as_customer number(2)<BR>\n");
+	}
+	win1.document.write(");");
+    win1.document.write("</body></html>");
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Customer Details</B>
+<BR>
+Use this Page to generate a Database Table to hold Customer Personal Details.
+<BR>
+Simply check the boxes you want and click 'Submit' when you have finished.
+<BR><A HREF="index.htm">Back to Home Page</A>
+<P>
+<form name="form1" method="post" action="">
+  <p> 
+    <input checked type="checkbox" name="customer_name" value="1">
+    Customer Name<br>
+  </p>
+  <p> 
+    <input checked type="checkbox" name="customer_title" value="1">
+    Customer Title<br>
+  </p>
+
+  <p> 
+    <input checked type="checkbox" name="gender" value="1">
+    Gender<br>
+  </p>
+
+  <p> 
+    <input type="checkbox" name="date_of_birth" value="1">
+    Date of Birth<br>
+  </p>
+
+  
+  <p> 
+    <input type="checkbox" name="home_owner" value="1">
+    Is this a Home Owner ? </p>
+
+  <p> 
+    <input type="checkbox" name="crm_years_in_residence" value="1">
+    CRM - Years in Residence ? 
+  </p>
+
+  <p> 
+    <input type="checkbox" name="crm_years_as_customer" value="1">
+    CRM - Years as a Customer<br>
+  </p>
+
+  <p>
+    <input type="submit" name="Submit" value="Submit" onClick="MM_openBrWindow('cre_customer.htm','Create_Customer_Script','status=yes,scrollbars=yes,resizable=yes,width=640,height=480')">
+  </p>
+</form>
+</body>
+</html>

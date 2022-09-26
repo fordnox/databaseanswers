@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Data Model for Customers and Car Parts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHiiiT=100 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.junkmail.co.za/trader-directory/legit-auto-parts" TARGET=_NEW>
+<IMG ALIGN=right ALT="Wide Variety of Car Parts and Accessories" BORDER=0 SRC="images/car_parts_header_med.jpg"></A>
+</td>
+</tr>
+
+
+</table>
+
+<!--  End of Table 1 --->
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Oracle Apex Account Details :-
+
+<BR><A HREF="http://apex.oracle.com/pls/apex/" TARGET=_NEW>Oracle Apex Service</A>
+
+
+<LI>Workspace DBA (in caps)
+<LI>Username is dba email address
+<LI>Pwd is m123
+
+<HR>Google for "EAV Design Patterns Oracle" (maybe add Apex)-
+<LI><A HREF="http://asktom.oracle.com/pls/apex/f?p=100:11:0::::P11_QUESTION_ID:26200054737635" TARGET=_NEW>Ask Tom (Oracle)</A>
+<LI><A HREF="http://karwin.blogspot.co.uk/2009/05/eav-fail.html" TARGET=NEW>Karwin's EAV Anti-Pattern !!!</A>
+<LI><A HREF="http://jeffkemponoracle.com/2010/02/03/why-eav-is-bad-mostly-and-why-it-is-used-so-often/" TARGET=_NEW>Oracle Apex specific</A> (and negative)
+<LI><a href="http://tonyandrews.blogspot.co.uk/2004/10/otlt-and-eav-two-big-design-mistakes.html" TARGET=_NEW>Tony Andrews Blog</A>
+<LI><A HREF="http://en.wikipedia.org/wiki/Entity-attribute-value_model" TARGET=_NEW>Wikipedia</A>
+
+<HR>
+<A HREF="http://www.phocassoftware.com/" TARGET=_NEW>Phocas</A> offers interesting BI software.
+<HR>
+
+<B>Test Data for Customers and Car Parts Database</B>
+
+<BR><BR>
+You can download a small Excel Spreadsheet file of <A HREF="Test_Data.xls" TARGET=_NEW>Test Data</A> here.
+<HR>
+Here is <A HREF="Tejpals_First_SS_oct06th.htm"><B>Tejpal's First Spreadsheet</B> (Oct 6th)</A>.
+<HR>
+Here is a <A HREF="http://www.databaseanswers.org/bmews/oracle_apex_demos.htm">Sample Report</A>
+
+<HR>
+<B>1. Car Manufacturers</B>
+
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=3>
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>Nr</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>NAME</B></TD></TR>
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>1</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>BMW</TD></TR>
+
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>2</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ford</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>3</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Vauxhall</TD></TR>
+</TABLE>
+
+<BR><BR>
+<B>2. Parts
+<BR><BR>
+
+<TABLE BORDER=1  CELLPADDING=3>
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>Nr</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>PART NAME</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>MAIN SUPPLIER</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>PRICE to US</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>PRICE to CUSTOMER</B></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>1</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Brake Lining</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>General Supplies Ltd.</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>100.00</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>200.00</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>2</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Off-Side Mirror</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>General Supplies Ltd.</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>150.00</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>250.00</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>2</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Rear-View Mirror</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>General Supplies Ltd.</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>200.00</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>30.00</TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+<B>3. Suppliers
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=3>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Nr</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>NAME</B></TD>
+<TD ALIGN=middle COLSPAN=1><FONT COLOR=blue FACE=Verdana SIZE=2><B>ADDRESS</B></TD>
+<TD ALIGN=middle COLSPAN=1><FONT COLOR=blue FACE=Verdana SIZE=2><B>TOWN</B></TD>
+<TD ALIGN=middle COLSPAN=1><FONT COLOR=blue FACE=Verdana SIZE=2><B>COUNTY</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>POSTCODE</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>PHONE</B></TD>
+</TR>
+
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>1</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>General Supplies Ltd.</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>1, High Street</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Any Town</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Any County</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>W1G 8TX</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>01234-56789</TD>
+</TR>
+</TABLE>
+
+
+
+<!---
+<TABLE BORDER=0 CELLPADDING=10>
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<IMG ALT="Data Model for  Customers and Car Parts"  SRC="images/data_model.gif"> 
+</TD>
+</TR>
+
+</TABLE>
+--->
+
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+
+<BR><I> &#169 DataBaseAnswers.org 2013</I></FONT>
+
+</BODY>
+
+</HTML>

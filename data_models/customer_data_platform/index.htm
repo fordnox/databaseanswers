@@ -1,0 +1,729 @@
+<html>
+<head>
+<title>Data Model for a Customer Data Platform</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<a href="https://internationalliving.com/countries/panama/panama-city/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Regatta House" hspace="0" vspace="4" SRC="../../images/customer_analytics_dashboard_sml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for a Customer Data Platform (for <A HREF="../digital_transformation/index.htm"><FONT COLOR=yellow>Digital Transformation</A>)&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+We would be glad to have 
+<A HREF='mailto:dba_requests@barryw.org?subject=Comments on a Customer Data Platform Data Model'>your comments</A>.
+
+<HR>Joined-up Data for Marketing with <A HREF="https://www.ibm.com/commerce/tools/ubx-demo/" TARGET=_NEW>
+<B>IBM</B>'s Universal Behaviour Exchange</A>
+
+<BR>CMI and SVOC are provided by <A HREF="http://www.oracle.com/us/products/applications/master-data-management/oracle-customer-hub-439838.pdf" TARGET=_NEW>
+<B>  Oracle's</B> Customer Hub</A>.
+
+<BR>Partner with Ensighten for their <A HREF="https://www.ensighten.com/products/customer-data-platform/" TARGET=NEW>Customer Data Platform</A>
+
+<HR>
+Today (November 8th) it was announced that <A HREF="https://www.salesforce.com/uk/?ir=1" TARGET=_NEW>Salesforce</A> integrated with 
+
+<A HREF="https://www.thunderhead.com/" TARGET=_NEW>Thunderhead's</A>
+    &nbsp;&nbsp;&nbsp;
+<A HREF="https://www.thunderhead.com/one-engagement-hub/" TARGET=_NEW>Customer Engagement Hub</A>
+
+<HR>We recommend that you join the  <A HREF="https://www.cdpinstitute.org/"TARGET=_NEW><B>Customer Data Platform Institute</B></A>
+<BR><BR>
+
+<TABLE BORDER=1>
+
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Conceptual Model for our Customer Data Platform</B>
+<BR>The purpose is to build a Profile of a Customer's Activities
+
+
+<BR><BR>
+<IMG ALIGN=left ALT="Customer Data Platform" BORDER=1 SRC="images/customer_data_platform.jpg">
+</TD>
+
+<TD ALIGN=left COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Architecture of our Customer Data Platform</B>
+<BR>Examples of CMI and SVOC are from <A HREF="http://www.oracle.com/us/products/applications/master-data-management/oracle-customer-hub-439838.pdf" TARGET=_NEW>
+Oracle's Customer Hub</A>.
+<BR>
+
+<BR><IMG BORDER=1 SRC="images/a.jpg">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>A Simplified view of Our Platform</B>
+<BR><BR>
+<IMG WIDTH=500 SRC="images/barrys_customer_data_platform.jpg">
+</TD>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>A Single View of the Customer from
+<A HREF="http://www.acxiom.co.uk/data-management-platform-dmp-single-customer-view-scv/" TARGET=_NEW>Acxiom</B>
+<BR>
+<IMG ALIGN=left ALT="Single Customer View" BORDER=0 SRC="images/single_customer_view.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Innometrics Data Sources</B>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>An interesting perspective <A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>'How it Works'</A>
+from <A HREF="http://www.innometrics.com/" TARGET=_NEW>Innometrics</A>
+<BR><BR>
+<IMG ALIGN=middle ALT="Innometrics Data Sources" BORDER=1 SRC="images/innometrics_data_sources.jpg">
+</TD>
+
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical Data Model</B>
+<BR><BR><BR>
+<IMG ALIGN=middle ALT="Logical Data Model" BORDER=1 SRC="images/logical_data_model.gif">
+</TD>
+
+</TR>
+
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Potential Partners</B> 
+<LI><A HREF="https://www.dreamfactory.com/" TARGET=_NEW>Dream Factory</A> (Architecture)
+<LI><A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>Innometrics</A> (see below - office in Regent street)
+
+<LI><A HREF="https://www.oracle.com/solutions/business-analytics/business-intelligence/real-time-decisions/index.html" TARGET=_NEW>Oracle BI Analytics</A>
+<LI><A HREF="http://www.redpoint.net/products/convergent-marketing-platform/" TARGET=_NEW>Redpoint</A> (Luton) - looks good
+<LI><A HREF="http://tealium.com/products/tealium-customer-data-platform/" TARGET=_NEW>Tealium</A> (Reading)
+<LI><A HREF="https://www.umbel.com/partners/" TARGET=_NEW>Umbel</A>
+<HR> 
+Here's a great Paper from 
+<A HREF="http://customerexperiencematrix.blogspot.co.uk/2013/04/ive-discovered-new-class-of-system.html" TARGET=_NEW>David Raab</A>
+dated April, 2013, about a new class of system called "the Customer Data Platform"
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Getting Started with Self-Service</B>
+
+<B><HR></B>
+<B>Approach to a Customer Data Platform</B>
+
+<BR>I am helping a number of Clients to undertake a digital transformation program, 
+with a strategic commitment to be more customer centric. 
+
+<BR><BR>The challenge is to evolve from being a product driven, B2B business into a 
+services and contractual business with an evolution to become a B2C business model.
+
+<BR><BR>To achieve these goals, a programme has been established to drive a Customer focused CRM initiative, involving the implementation of Oracle EBS, SAP  and Salesforce. 
+<BR><BR>A team consisting of internal stakeholders and SMEs is usually created and can be augmented with additional 
+ skills in CRM, Data Governance, Data Modelling and Architecture.
+
+<HR>
+I sometimes recommend 'Getting Started with <B>Self-Service</B>, by Gooogling for 
+<A HREF="https://www.google.co.uk/?gfe_rd=cr&ei=3kBmV764NNTU8gebyYGQCQ#q=getting+started+with+self-service+digital+transformation" TARGET=_NEW>
+'Self-Service a Customer Data Platform'</A>.
+<BR>This usually starts by building <A HREF="customer_data_platform.htm"><B>a Customer Data Platform</B></A>
+<BR>The UK Government has a good blog on 
+<A HREF="https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/" TARGET=_NEW>"Building a Platform"</A>
+
+<BR><BR>
+
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Functions of a CDP include :-</B>
+<BR><BR>
+<LI>Collect and reconcile customer data about identities, profiles, purchase history, preferences, and transactions
+<LI>Transform and augment this data into a 360° view of the customer with context, intentions, relationships, and interactions
+<LI>Turn data into insights, with segments, scores, forecasts and recommendations
+<LI>Connect in real time to the customer touch-points and turn those insights into increased conversion rates and customer loyalty
+</TD>
+</TR>
+<TR>
+
+<TD ALIGN=left ROWCAL = 2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Our Plans</B>
+<BR>The comments on the right will help you understand 
+<BR>our plans for our Customer Data Platform.
+<BR><BR>We will be adding Data Models for
+<LI>a 'Do-it-Yourself' Customer's Journey
+<LI>a Single Customer View
+<HR><B>Features include :-</B>
+<LI>Cross-device Profiles
+<LI>Customer Experience Management
+<LI>Customer Touchpoints, including Online, offline, Mobile and Internet
+<LI>Disparate Data Sources
+<LI>Internet of Things  
+<LI>Omnichanel Customer Segmentation
+<LI>Unified Customer View
+
+
+<HR>
+Interesting external links include :-
+<LI>Progress Software asks 
+<A HREF="https://www.progress.com/digital-transformation/the-digital-ultimatum-whats-your-plan" target=_NEW>What's your Plan ?</A>
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+We have included features from :-
+<LI><A HREF="../customer_experience_management/index.htm">Customer Experience Management</A>
+
+<LI><A HREF="../customer_journey_mapping/index.htm">Customer Journey Mapping (Basic)</A>
+and <A HREF="../customer_journey_mapping_complex/index.htm">(Complex)</A>.
+
+<LI><A HREF="../customer_lifetime_value/index.htm">Customer Lifetime Value</A>
+
+<LI><A HREF="../master_data_mgt/customer_master_index.htm">Customer Master Index</A>
+
+
+<LI><A HREF="../crm_customer_metrics/index.htm">CRM Customer Metrics</A>
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>
+
+<HR>
+Our Customer Experience Management Layer ensures a consistent User Interrface.
+
+<HR>
+<B>Proof-of-Concept (POC)</B>
+
+<BR><B>Priorities :-</B>
+<BR>1) Create Reference Data
+<BR>2) Create Master Data
+<BR>3) Create Transaction Data
+<BR>4) Create Generic (Data) Platform
+
+<HR>Development Environment :-
+<BR><A HREF="https://login.oracle.com/mysso/signon.jsp" TARGET=_new>Oracle Login</A>(dba/m3)
+<HR>Development Tools :-
+<BR>
+We will develop PoC Applications using Oracle with 
+<A HREF="http://www.oracle.com/technetwork/developer-tools/apex/overview/index.html" TARGET=_NEW>Apex</A><B>SQL</B>,   
+<A HREF="https://www.oracle.com/solutions/internet-of-things/index.html" TARGET=_NEW>IoT</A>
+
+and reviewed against (alphabetically) :-
+<LI><A HREF="https://www.domo.com/" TARGET=_NEW>Domo</A> 
+
+<LI><A HREF="https://www.ibm.com/cloud-computing/bluemix/garage/" TARGET=_NEW>IBM Bluemix Garage</A> 
+in  
+<A HREF="http://www-05.ibm.com/uk/FlashEverywhere2016/?S_TACT=BANNER_HOMEPAGE&iio=psys&cmp=c4540&ct=c45405lw&cr=ibm&cm=b&csot=-&ccy=uk-en&cpb=-&cd=-&csr=2016q1_flash_everywhere&cn=flashevent_banner_homepage" TARGET=_NEW>London</A>
+<LI>NetSuite
+<LI><A HREF="https://www.salesforce.com/" TARGET=_NEW>Salesforce</A>
+
+<HR>
+In the Conceptual Data Model on the left We have incorporated Data Models for :-
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>  
+<LI><A HREF="../customer_journey_mapping_complex/index.htm">Customer Journey Mapping</A>
+</TD>
+</TR>
+
+</TABLE>
+
+
+<!-------------------------------
+<BR><BR>
+<IMG ALIGN=left ALT="Customer Data Platform" BORDER=1 SRC="images/customer_data_platform.jpg">
+</TD>
+
+<TD ALIGN=left COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Architecture of our Customer Data Platform</B>
+<BR>Examples of CMI and SVOC are from <A HREF="http://www.oracle.com/us/products/applications/master-data-management/oracle-customer-hub-439838.pdf" TARGET=_NEW>
+Oracle's Customer Hub</A>.
+<BR>
+
+<BR><IMG BORDER=1 SRC="images/a.jpg">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>A Simplified view of Our Platform</B>
+<BR><BR>
+<IMG WIDTH=500 SRC="images/barrys_customer_data_platform.jpg">
+</TD>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>A Single View of the Customer from
+<A HREF="http://www.acxiom.co.uk/data-management-platform-dmp-single-customer-view-scv/" TARGET=_NEW>Acxiom</B>
+<BR>
+<IMG ALIGN=left ALT="Single Customer View" BORDER=0 SRC="images/single_customer_view.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Innometrics Data Sources</B>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>An interesting perspective <A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>'How it Works'</A>
+from <A HREF="http://www.innometrics.com/" TARGET=_NEW>Innometrics</A>
+<BR><BR>
+<IMG ALIGN=middle ALT="Innometrics Data Sources" BORDER=1 SRC="images/innometrics_data_sources.jpg">
+</TD>
+
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical Data Model</B>
+<BR><BR><BR>
+<IMG ALIGN=middle ALT="Logical Data Model" BORDER=1 SRC="images/logical_data_model.gif">
+</TD>
+
+</TR>
+
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Potential Partners</B> 
+<LI><A HREF="https://www.dreamfactory.com/" TARGET=_NEW>Dream Factory</A> (Architecture)
+<LI><A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>Innometrics</A> (see below - office in Regent street)
+
+<LI><A HREF="https://www.oracle.com/solutions/business-analytics/business-intelligence/real-time-decisions/index.html" TARGET=_NEW>Oracle BI Analytics</A>
+<LI><A HREF="http://www.redpoint.net/products/convergent-marketing-platform/" TARGET=_NEW>Redpoint</A> (Luton) - looks good
+<LI><A HREF="http://tealium.com/products/tealium-customer-data-platform/" TARGET=_NEW>Tealium</A> (Reading)
+<LI><A HREF="https://www.umbel.com/partners/" TARGET=_NEW>Umbel</A>
+<HR> 
+Here's a great Paper from 
+<A HREF="http://customerexperiencematrix.blogspot.co.uk/2013/04/ive-discovered-new-class-of-system.html" TARGET=_NEW>David Raab</A>
+dated April, 2013, about a new class of system called "the Customer Data Platform"
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Getting Started with Self-Service</B>
+
+<B><HR></B>
+<B>Approach to a Customer Data Platform</B>
+
+<BR>I am helping a number of Clients to undertake a digital transformation program, 
+with a strategic commitment to be more customer centric. 
+
+<BR><BR>The challenge is to evolve from being a product driven, B2B business into a 
+services and contractual business with an evolution to become a B2C business model.
+
+<BR><BR>To achieve these goals, a programme has been established to drive a Customer focused CRM initiative, involving the implementation of Oracle EBS, SAP  and Salesforce. 
+<BR><BR>A team consisting of internal stakeholders and SMEs is usually created and can be augmented with additional 
+ skills in CRM, Data Governance, Data Modelling and Architecture.
+
+<HR>
+I sometimes recommend 'Getting Started with <B>Self-Service</B>, by Gooogling for 
+<A HREF="https://www.google.co.uk/?gfe_rd=cr&ei=3kBmV764NNTU8gebyYGQCQ#q=getting+started+with+self-service+digital+transformation" TARGET=_NEW>
+'Self-Service a Customer Data Platform'</A>.
+<BR>This usually starts by building <A HREF="customer_data_platform.htm"><B>a Customer Data Platform</B></A>
+<BR>The UK Government has a good blog on 
+<A HREF="https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/" TARGET=_NEW>"Building a Platform"</A>
+
+<BR><BR>
+
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Functions of a CDP include :-</B>
+<BR><BR>
+<LI>Collect and reconcile customer data about identities, profiles, purchase history, preferences, and transactions
+<LI>Transform and augment this data into a 360° view of the customer with context, intentions, relationships, and interactions
+<LI>Turn data into insights, with segments, scores, forecasts and recommendations
+<LI>Connect in real time to the customer touch-points and turn those insights into increased conversion rates and customer loyalty
+</TD>
+</TR>
+
+<TR>
+
+
+
+
+
+<TD ALIGN=left ROWCAL = 2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Our Plans</B>
+<BR>The comments on the right will help you understand 
+<BR>our plans for our Customer Data Platform.
+<BR><BR>We will be adding Data Models for
+<LI>a 'Do-it-Yourself' Customer's Journey
+<LI>a Single Customer View
+<HR><B>Features include :-</B>
+<LI>Cross-device Profiles
+<LI>Customer Experience Management
+<LI>Customer Touchpoints, including Online, offline, Mobile and Internet
+<LI>Disparate Data Sources
+<LI>Internet of Things  
+<LI>Omnichanel Customer Segmentation
+<LI>Unified Customer View
+
+
+<HR>
+Interesting external links include :-
+<LI>Progress Software asks 
+<A HREF="https://www.progress.com/digital-transformation/the-digital-ultimatum-whats-your-plan" target=_NEW>What's your Plan ?</A>
+
+</TD>
+
+
+
+
+
+
+
+
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+We have included features from :-
+<LI><A HREF="../customer_experience_management/index.htm">Customer Experience Management</A>
+
+<LI><A HREF="../customer_journey_mapping/index.htm">Customer Journey Mapping (Basic)</A>
+and <A HREF="../customer_journey_mapping_complex/index.htm">(Complex)</A>.
+
+<LI><A HREF="../customer_lifetime_value/index.htm">Customer Lifetime Value</A>
+
+<LI><A HREF="../master_data_mgt/customer_master_index.htm">Customer Master Index</A>
+
+
+<LI><A HREF="../crm_customer_metrics/index.htm">CRM Customer Metrics</A>
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>
+
+<HR>
+Our Customer Experience Management Layer ensures a consistent User Interrface.
+
+<HR>
+<B>Proof-of-Concept (POC)</B>
+
+<BR><B>Priorities :-</B>
+<BR>1) Create Reference Data
+<BR>2) Create Master Data
+<BR>3) Create Transaction Data
+<BR>4) Create Generic (Data) Platform
+
+<HR>Development Environment :-
+<BR><A HREF="https://login.oracle.com/mysso/signon.jsp" TARGET=_new>Oracle Login</A>(dba/m3)
+<HR>Development Tools :-
+<BR>
+We will develop PoC Applications using Oracle with 
+<A HREF="http://www.oracle.com/technetwork/developer-tools/apex/overview/index.html" TARGET=_NEW>Apex</A><B>SQL</B>,   
+<A HREF="https://www.oracle.com/solutions/internet-of-things/index.html" TARGET=_NEW>IoT</A>
+
+and reviewed against (alphabetically) :-
+<LI><A HREF="https://www.domo.com/" TARGET=_NEW>Domo</A> 
+
+<LI><A HREF="https://www.ibm.com/cloud-computing/bluemix/garage/" TARGET=_NEW>IBM Bluemix Garage</A> 
+in  
+<A HREF="http://www-05.ibm.com/uk/FlashEverywhere2016/?S_TACT=BANNER_HOMEPAGE&iio=psys&cmp=c4540&ct=c45405lw&cr=ibm&cm=b&csot=-&ccy=uk-en&cpb=-&cd=-&csr=2016q1_flash_everywhere&cn=flashevent_banner_homepage" TARGET=_NEW>London</A>
+<LI>NetSuite
+<LI><A HREF="https://www.salesforce.com/" TARGET=_NEW>Salesforce</A>
+
+<HR>
+In the Conceptual Data Model on the left We have incorporated Data Models for :-
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>  
+<LI><A HREF="../customer_journey_mapping_complex/index.htm">Customer Journey Mapping</A>
+</TD>
+</TR>
+
+</TABLE>
+
+<BR><BR>
+
+<TABLE BORDER=1>
+
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Conceptual Model for our Customer Data Platform</B>
+<BR>The purpose is to build a Profile of a Customer's Activities
+
+
+<BR><BR>
+<IMG ALIGN=left ALT="Customer Data Platform" BORDER=1 SRC="images/customer_data_platform.jpg">
+</TD>
+
+<TD ALIGN=left COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Architecture of our Customer Data Platform</B>
+<BR>Examples of CMI and SVOC are from <A HREF="http://www.oracle.com/us/products/applications/master-data-management/oracle-customer-hub-439838.pdf" TARGET=_NEW>
+Oracle's Customer Hub</A>.
+<BR>
+
+<BR><IMG BORDER=1 SRC="images/a.jpg">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>A Simplified view of Our Platform</B>
+<BR><BR>
+<IMG WIDTH=500 SRC="images/barrys_customer_data_platform.jpg">
+</TD>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>A Single View of the Customer from
+<A HREF="http://www.acxiom.co.uk/data-management-platform-dmp-single-customer-view-scv/" TARGET=_NEW>Acxiom</B>
+<BR>
+<IMG ALIGN=left ALT="Single Customer View" BORDER=0 SRC="images/single_customer_view.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Innometrics Data Sources</B>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>An interesting perspective <A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>'How it Works'</A>
+from <A HREF="http://www.innometrics.com/" TARGET=_NEW>Innometrics</A>
+<BR><BR>
+<IMG ALIGN=middle ALT="Innometrics Data Sources" BORDER=1 SRC="images/innometrics_data_sources.jpg">
+</TD>
+
+<TD ALIGN=middle COLSPAN=1 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical Data Model</B>
+<BR><BR><BR>
+<IMG ALIGN=middle ALT="Logical Data Model" BORDER=1 SRC="images/logical_data_model.gif">
+</TD>
+
+</TR>
+
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Potential Partners</B> 
+<LI><A HREF="https://www.dreamfactory.com/" TARGET=_NEW>Dream Factory</A> (Architecture)
+<LI><A HREF="http://www.innometrics.com/how-it-works/" TARGET=_NEW>Innometrics</A> (see below - office in Regent street)
+
+<LI><A HREF="https://www.oracle.com/solutions/business-analytics/business-intelligence/real-time-decisions/index.html" TARGET=_NEW>Oracle BI Analytics</A>
+<LI><A HREF="http://www.redpoint.net/products/convergent-marketing-platform/" TARGET=_NEW>Redpoint</A> (Luton) - looks good
+<LI><A HREF="http://tealium.com/products/tealium-customer-data-platform/" TARGET=_NEW>Tealium</A> (Reading)
+<LI><A HREF="https://www.umbel.com/partners/" TARGET=_NEW>Umbel</A>
+<HR> 
+Here's a great Paper from 
+<A HREF="http://customerexperiencematrix.blogspot.co.uk/2013/04/ive-discovered-new-class-of-system.html" TARGET=_NEW>David Raab</A>
+dated April, 2013, about a new class of system called "the Customer Data Platform"
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<B><HR></B>
+<B>Approach to a Customer Data Platform</B>
+
+<BR>I am helping a number of Clients to undertake a digital transformation program, 
+with a strategic commitment to be more customer centric. 
+
+<BR><BR>The challenge is to evolve from being a product driven, B2B business into a 
+services and contractual business with an evolution to become a B2C business model.
+
+<BR><BR>To achieve these goals, a programme has been established to drive a Customer focused CRM initiative, involving the implementation of Oracle EBS, SAP  and Salesforce. 
+<BR><BR>A team consisting of internal stakeholders and SMEs is usually created and can be augmented with additional 
+ skills in CRM, Data Governance, Data Modelling and Architecture.
+
+<HR>
+I sometimes recommend 'Getting Started with <B>Self-Service</B>, by Gooogling for 
+<A HREF="https://www.google.co.uk/?gfe_rd=cr&ei=3kBmV764NNTU8gebyYGQCQ#q=getting+started+with+self-service+digital+transformation" TARGET=_NEW>
+'Self-Service a Customer Data Platform'</A>.
+<BR>This usually starts by building <A HREF="customer_data_platform.htm"><B>a Customer Data Platform</B></A>
+<BR>The UK Government has a good blog on 
+<A HREF="https://gds.blog.gov.uk/2015/09/08/building-a-platform-to-host-digital-services/" TARGET=_NEW>"Building a Platform"</A>
+
+<BR><BR>
+
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Functions of a CDP include :-</B>
+<BR><BR>
+<LI>Collect and reconcile customer data about identities, profiles, purchase history, preferences, and transactions
+<LI>Transform and augment this data into a 360° view of the customer with context, intentions, relationships, and interactions
+<LI>Turn data into insights, with segments, scores, forecasts and recommendations
+<LI>Connect in real time to the customer touch-points and turn those insights into increased conversion rates and customer loyalty
+</TD>
+</TR>
+<TR>
+
+<TD ALIGN=left ROWCAL = 2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Our Plans</B>
+<BR>The comments on the right will help you understand 
+<BR>our plans for our Customer Data Platform.
+<BR><BR>We will be adding Data Models for
+<LI>a 'Do-it-Yourself' Customer's Journey
+<LI>a Single Customer View
+<HR><B>Features include :-</B>
+<LI>Cross-device Profiles
+<LI>Customer Experience Management
+<LI>Customer Touchpoints, including Online, offline, Mobile and Internet
+<LI>Disparate Data Sources
+<LI>Internet of Things  
+<LI>Omnichanel Customer Segmentation
+<LI>Unified Customer View
+
+
+<HR>
+Interesting external links include :-
+<LI>Progress Software asks 
+<A HREF="https://www.progress.com/digital-transformation/the-digital-ultimatum-whats-your-plan" target=_NEW>What's your Plan ?</A>
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+We have included features from :-
+<LI><A HREF="../customer_experience_management/index.htm">Customer Experience Management</A>
+
+<LI><A HREF="../customer_journey_mapping/index.htm">Customer Journey Mapping (Basic)</A>
+and <A HREF="../customer_journey_mapping_complex/index.htm">(Complex)</A>.
+
+<LI><A HREF="../customer_lifetime_value/index.htm">Customer Lifetime Value</A>
+
+<LI><A HREF="../master_data_mgt/customer_master_index.htm">Customer Master Index</A>
+
+
+<LI><A HREF="../crm_customer_metrics/index.htm">CRM Customer Metrics</A>
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>
+
+<HR>
+Our Customer Experience Management Layer ensures a consistent User Interrface.
+
+<HR>
+<B>Proof-of-Concept (POC)</B>
+
+<BR><B>Priorities :-</B>
+<BR>1) Create Reference Data
+<BR>2) Create Master Data
+<BR>3) Create Transaction Data
+<BR>4) Create Generic (Data) Platform
+
+<HR>Development Environment :-
+<BR><A HREF="https://login.oracle.com/mysso/signon.jsp" TARGET=_new>Oracle Login</A>(dba/m3)
+<HR>Development Tools :-
+<BR>
+We will develop PoC Applications using Oracle with 
+<A HREF="http://www.oracle.com/technetwork/developer-tools/apex/overview/index.html" TARGET=_NEW>Apex</A><B>SQL</B>,   
+<A HREF="https://www.oracle.com/solutions/internet-of-things/index.html" TARGET=_NEW>IoT</A>
+
+and reviewed against (alphabetically) :-
+<LI><A HREF="https://www.domo.com/" TARGET=_NEW>Domo</A> 
+
+<LI><A HREF="https://www.ibm.com/cloud-computing/bluemix/garage/" TARGET=_NEW>IBM Bluemix Garage</A> 
+in  
+<A HREF="http://www-05.ibm.com/uk/FlashEverywhere2016/?S_TACT=BANNER_HOMEPAGE&iio=psys&cmp=c4540&ct=c45405lw&cr=ibm&cm=b&csot=-&ccy=uk-en&cpb=-&cd=-&csr=2016q1_flash_everywhere&cn=flashevent_banner_homepage" TARGET=_NEW>London</A>
+<LI>NetSuite
+<LI><A HREF="https://www.salesforce.com/" TARGET=_NEW>Salesforce</A>
+
+<HR>
+In the Conceptual Data Model on the left We have incorporated Data Models for :-
+<LI><A HREF="../know_your_customer/index.htm">Know your Customer</A>  
+<LI><A HREF="../customer_journey_mapping_complex/index.htm">Customer Journey Mapping</A>
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>July 27th. 2018
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2018</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

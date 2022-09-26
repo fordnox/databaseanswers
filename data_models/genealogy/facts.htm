@@ -1,0 +1,404 @@
+<HTML><HEAD><TITLE>Genealogy Family Tree</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALIGN=right ALT="A very happy Family in Fiji !!!" HEIiGHT=106 WIiDTH=180 SRC="../../images/vendors_vsml.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Genealogy" SRC="../../images/buttons/button_studio/genealogy.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Conceptual Data Model.</A>
+<FONT COLOR=red FACE="Comic Sans MS">
+<BR><B>FACTS for the Data Model for a Genealogy Family Tree</B></FONT> 
+
+<P>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The Approach :- 
+<B>Establish the Business Rules or FACTS</B>
+<LI>The Facts define what is known about the 'Things of Interest' in the area being studied. 
+<LI>They establish an English-language version of the relationships between the 'Things of Interest' 
+which can be understood and agreed to by the key people such as Users. 
+This is very useful when the 'Things' become Entities or Tables in the Database.
+
+The purpose of defining the Facts is to establish common understanding and agreement of the important 
+terms and concepts involved in Genealogy. 
+<HR>I added some additional Facts after discussions with Rory on December 14th. 2007.
+<B>1. Families</B>
+An individual can be in zero or one Family.
+In other words, an Individual may or may not be part of a Family, but cannot be in more 
+than one Family at one time.
+
+<B>2. Relationships</B>
+Two Individuals can be in one and only one Relationship at any point in time.
+In fact, my design allows for two people to be in more than one Relationship, but I can't think of 
+any examples right now !
+This is regardless of whether they are members of a Family.
+For example, a Parent will always have a Parent/Child Relationship with their Children, even if the 
+Parents get divorced.
+<HR>
+<B>A note on Families :-</B>
+The Model has to allow for the concept of a family. 
+In other words, to define one family from another so that an individual can be a member of 
+more than one family, for example, step parents. 
+
+<B>A. The Things of Interest are :-</B> 
+A.1 Individuals
+A.2 Relationships
+
+<B>B. Business Rules :-</B>
+B.1 Every INDIVIDUAL can be involved in zero or many RELATIONSHIPS.
+B.2 Each INDIVIDUAL plays a ROLE in a RELATIONSHIP.
+B.3 Every RELATIONSHIP involves two INDIVIDUALS.
+
+<B>C. Valid Relationships are :-</B>
+C.1 Families
+C.2 Marriages
+
+The Data Model supports an infinite number of RELATIONSHIPS, 
+which can be easily added to the RELATIONSHIPS Table as required.
+
+<B>D. Valid Roles are :-</B>
+C.1 Brother
+C.2 Daughter
+C.3 Father
+C.4 Husband
+C.5 Mother
+C.6 Partner
+C.7 Sister
+C.8 Son
+C.9 Wife
+
+The Data Model supports an infinite number of ROLES, 
+which can be easily added to the ROLES Table as required.
+</PRE>
+
+<!---
+All messages from thread 
+Message 1 in thread 
+ From: stormoen@rea-alp.com (stormoen@rea-alp.com)
+Subject: Creating a Genealogy 
+Newsgroups: comp.databases.ms-access
+View this article only 
+ Date: 1997/01/15 
+ 
+
+I'm trying to create a genealogy or "family tree" database.
+
+Here's how I currently have it set up (condensed the insignificant
+parts a lot):
+
+Person_ID, Parent_ID, Name, Etc,
+
+Here's an example tree:
+
+Grandpa--Dad--Son
+            \-Daughter--child1
+                       \child2
+Here's the data:
+1, 0, Origin of family tree, etc.
+2, 1, Grandpa, etc.
+3, 2, Dad, etc.
+4, 3, Son, etc.
+5, 3, Daughter, etc. 
+6, 5, child1, etc.
+7, 5, child2, etc.
+
+Basically everyone has an ID, and the Parent_ID field links the person
+their.  So if the son has a child, the new child gets the next
+available number as a Person_ID, and is linked to the son's ID (3)
+with the Parent_ID field.
+
+This all works fine and dandy and makes sense to me.  Now comes the
+challenge (for me anyhow :-)
+
+I would like to print a report showing the tree, and make it possible
+to start the report at any generation.  What I started with was a form
+for adding/editing the people.  Then made a button on the form that
+would take the current record and print it's genealogy (report).  To
+make the report, I tried making a query called "generation1" that
+would search for all Person_ID's whose Parent_ID matched the current
+record.  This worked fine.  If "Dad" was the current record, the query
+found "son" and "daughter" and it would be added to the report.  I
+liked that, so I went ahead and tried to make a query called
+"generation2" which was *supposed* to search the family database for
+all records whose Parent_ID matched the Person_ID in the Generation1
+query.  It seems that I can't query a query, or I'm formatting
+something wrong.
+
+If I simply set my criteria to match a field in query "Generation1" it
+asks me for a value (instead of getting it from the query).  If I add
+[query]![Generation1] and set a relationship up between Person_ID and
+try to run the query (same criteria) it gives me the error:
+'FamilyData.Parent_ID=[Generation1]![Person_ID]' is not part of
+aggregate function or grouping.
+
+I'm not sure what the error implies. I've tried several other things
+to no avail. 
+
+Anyone have a solution?  I haven't been able to find any sort of
+public domain template for setting up a genealogy database.  If you've
+seen one, please point the way so I might integrate it.  Hey!  Maybe
+I'm making something too complex here??
+
+I appreciate any help!  Email or Post.
+
+Thanks,
+
+Michael.
+Message 2 in thread 
+ From: stormoen@rea-alp.com (stormoen@rea-alp.com)
+Subject: Re: Creating a Genealogy 
+Newsgroups: comp.databases.ms-access
+View this article only 
+ Date: 1997/01/15 
+ 
+
+I hate following up my own message.  Ugh.
+Anyhow, I'm using Access7 if that makes a difference.  
+
+Since I posted, I also found a "Pedigree" example (thanks to
+abrowne@odyssey.apana.org.au (webpage)) that uses self-joins.  It has
+the possibility of working, but in his example, the third generation
+has eight copies of the table.  I'm looking at ten generations in my
+"family tree" so it will require 1024 copies on the tenth generation.
+It seems that this is going to be a bit messy going this route :-)
+
+Thanks again!
+
+Michael.
+Message 3 in thread 
+ From: stormoen@rea-alp.com (stormoen@rea-alp.com)
+Subject: Re: Creating a Genealogy 
+Newsgroups: comp.databases.ms-access
+View this article only 
+ Date: 1997/01/16 
+ 
+
+On Wed, 15 Jan 1997 20:27:23 GMT, stormoen@rea-alp.com wrote:
+>I hate following up my own message.  Ugh.
+
+Well, I'm doing it again.  Maybe I should just type a post, not send
+it, and the answer will come to me.  Seems to be happening this way.
+
+I have now set up a method that works pretty well, but it's awfully
+slow to get a report.  I set up a query that has 5 copies (for 5
+generations in this exapmle) and link the Person_ID to the Parent_ID
+from one table to the next.  When I run the query, I get the following
+output (commas added as a seperator only, not actualy in output :-)
+
+Grandpa, Dad, Son, <blank>
+Grandpa, Dad, Daughter, Child1
+Grandpa, Dad, Daughter, Child2
+Grandpa, Uncle, Son
+Grandpa, Uncle, UDaughter
+
+Then I made a query called Gen1 which Basically selects the unique
+records from each generation, thus stripping out the duplicates. When
+I run Gen1, I get the following output:
+
+Grandpa
+
+I did the same for the four other generations, so I get:
+
+Gen2: Dad, Uncle
+Gen3: Daughter, Son, UDaughter
+Gen4: Child1, Child2
+
+Then I made each of the five queries into a report.  I made my main
+report with each of the five query reports as subreports.  So I
+finally get a report like:
+
+Generation 1:  Parent
+Grandpa        Unknown
+
+Generation 2:  Parent
+Dad            Grandpa
+Uncle          Grandpa
+
+Generation 3:  Parent
+Son            Dad
+Daughter       Dad
+UDaughter      Uncle
+
+Generation 4:  Parent
+Child1         Daughter
+Child2         Daughter
+
+Why am I telling you all this??  I guess so that someone might learn
+from it themselves or possibly spot an area where I can speed up the
+process and get the same result :-)
+
+Thanks for any tips!
+
+Michael.
+Message 4 in thread 
+ From: Robert Ruder (robr@iea.com)
+Subject: Re: Creating a Genealogy 
+Newsgroups: comp.databases.ms-access
+View this article only 
+ Date: 1997/01/15 
+ 
+
+In article <32dd2b77.2977340@news.polaristel.net>, stormoen@rea-alp.com
+wrote:
+
+> 
+> I'm trying to create a genealogy or "family tree" database.
+> 
+> Here's how I currently have it set up (condensed the insignificant
+> parts a lot):
+> 
+> Person_ID, Parent_ID, Name, Etc,
+> 
+> Here's an example tree:
+> 
+> Grandpa--Dad--Son
+>             \-Daughter--child1
+>                        \child2
+> Here's the data:
+> 1, 0, Origin of family tree, etc.
+> 2, 1, Grandpa, etc.
+> 3, 2, Dad, etc.
+> 4, 3, Son, etc.
+> 5, 3, Daughter, etc. 
+> 6, 5, child1, etc.
+> 7, 5, child2, etc.
+> 
+> Basically everyone has an ID, and the Parent_ID field links the person
+> their.  So if the son has a child, the new child gets the next
+> available number as a Person_ID, and is linked to the son's ID (3)
+> with the Parent_ID field.
+>  <-Snip-> 
+> Anyone have a solution?  I haven't been able to find any sort of
+> public domain template for setting up a genealogy database.  If you've
+> seen one, please point the way so I might integrate it.  Hey!  Maybe
+> I'm making something too complex here??
+> 
+> Michael.
+
+Michael,
+
+Interestingly enough, about two months ago I offered a solution to a local
+research and development outfit who needed to do this with performing a
+geneology on grass hybrids so they could track traits back to origin.
+
+My memory is a bit rusty, so if you need me to reproduce an exact detail of
+the solution it will take me a day or two... but in short, the solution is
+to not use criteria but use multiple copies of the same table in the query
+and then link each copy to the one before it... each copy represents a link
+to a child from one of its immediate parents. So a 'grandchild' would need a
+link to its mother and father, and then the father would need a link to his
+mother and father... and you would generate different queries to come up
+with different geneology depths.
+
+As I mentioned, this is very general, but I'm sure that it would resolve the
+data you would need to build your final tree. If you want me to fill in more
+detail or attach a demo or anything... drop me an e-mail and give me a few
+days.
+
+rob ruder
+robr@iea.com
+Message 5 in thread 
+ From: David Daily (david.daily@genesisnet.net)
+Subject: Re: Creating a Genealogy 
+Newsgroups: comp.databases.ms-access
+View this article only 
+ Date: 1997/01/19 
+ 
+
+stormoen@rea-alp.com wrote in article
+<32dd2b77.2977340@news.polaristel.net>...
+> 
+> I'm trying to create a genealogy or "family tree" database.
+> 
+> 
+> Anyone have a solution?  I haven't been able to find any sort of
+> public domain template for setting up a genealogy database.  If you've
+> seen one, please point the way so I might integrate it.  Hey!  Maybe
+> I'm making something too complex here??
+> 
+> I appreciate any help!  Email or Post.
+> 
+> Thanks,
+> 
+> Michael.
+> 
+
+Probably ought to just keep my mouth shut on this as I can appreciate the
+challenge you're taking on setting this up in Access.  But is there some
+reason it needs to be in Access when there are so many other genealogy
+programs out there.  I considered it several years ago, but instead got
+Family Tree Maker and it does a wonderful job of doing this simple task
+plus so much more, especially the current version which came out a few
+months ago.
+--->
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 DatabaseAnswers.org 2007</I></FONT></CENTER>
+
+</HTML>

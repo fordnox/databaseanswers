@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>Data Model for Invoicing B2B</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.einvoicingbasics.co.uk/what-is-e-invoicing/" TARGET=_NEW> 
+<IMG ALIGN=right ALT="Data Model for Invoicing B2B (Click for Web Site)" BORDER=0 hspace="0" vspace="4" SRC="images/invoicing_b2b_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=2>Print Version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Invoicing B2B&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for the Database for Invoicing B2B'>An Access Database</A> is available. 
+
+
+<BR><BR>We might also design <A HREeeeF="data_mart.htm">a Data Mart</A> which is very useful for providing data for Reports and Business Intelligence.
+
+
+<BR><BR>We would be glad to have 
+<A HREF='mailto:dba_requests@barryw.org?subject=Comments on the Data Model for Invoicing B2B'>your comments</A>.
+
+<BR><BR>If you are new to Data Models, this page of my new Tutorial will help you <A HREF="../../tutorial4_db_schema/tutorial_slide_5.htm"><B>understand the Data Model</B></A>.
+
+<BR><A HREF="facts.htm"><B>Click here</B></A> for Specifiocations provided by Paul in Colorado. 
+
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=center VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+<BR><BR>
+<B>Conceptual Data Model</B>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model for Invoicing B2B" BORDER=0 SRC="images/conceptual_data_model.jpg"> 
+<HR>
+<BR><BR>
+<B>Conceptual Data Model - Stage 2</B>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model for Invoicing B2B - Stage 2" BORDER=0 SRC="images/conceptual_data_model_stage_2.jpg"> 
+<HR>
+
+
+</TD>
+
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOr=blue FACE=Verdana SIZE=2>Orders come from companies with only one location, or from
+<BR>companies with many locations – where invoices go to “HQ”.
+
+Hi Barry
+
+I’m thinking of creating a table BillTo that stores the address etc for the 
+headquarters location, and including a foreign key (BillToID) in my Customer table. 
+
+When an order comes in, if the BillToID is NULL (in Customer table) I would use the info 
+in the Customer table. 
+
+If it contained a value, I look up the info from the correct record in the BillTo table.
+
+I also thought about setting up parent HQ / child LOCATIONS tables for customers as well. 
+I thought this may complicate my (limited) ability to combine both tables to query.
+
+90% of the time, the HQ or BillTo locations also belong in the Customer table. 
+I would end up with half of my customers in the HQ table and half in the LOCATIONS table. 
+Given your reply, it appears that you would prefer the HQ / LOCATIONS tables – am I correct? 
+
+I want to do this structurally correct. You’re probably realizing that I’m NO database pro, 
+and I certainly appreciate your time and input. I hope my ramblings make sense.
+
+Thank You Very Much Barry!
+Paul</PRE>
+
+<!---------
+<BR><B>Logical Data Model</B> 
+<BR><BR><IMG ALIGN=center ALT="ERD Data Model for Invoicing B2B" BORDER=0 SRC="images/logical_data_model.jpg"> 
+------->
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=center VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+<BR><BR>
+<B>Conceptual Data Model - Stage 3</B>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model for Invoicing B2B - Stage 3" BORDER=0 SRC="images/conceptual_data_model_stage_3.jpg"> 
+</TD>
+
+<TD ALIGNnnn=left VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+A. Here we define the 'Things of Interest' :-
+<BR>1. Commissions
+<BR>2. Contacts
+<BR>3. Customers 
+<BR>4. Invoices
+<BR>5. Inventory
+<BR>6. Orders
+<BR>7. Products
+<BR>8. Purchase Order (PO)
+<BR>9. Quotes
+<BR>10. Manufacturers (Vendors)
+<BR>11. Payments
+<BR>12. Wholesalers (Companies)
+<BR>
+<BR> How are these 'Things' related ?
+<BR>1. A Customer can operate from a number of Locations
+<BR>2. Invoices 
+<BR>3. Any Location can generate Orders
+<BR>4. Every Order is associated with a Location.
+<BR>5. Payments are made to Customers.
+<BR>6. Products are sold by the Manufacturer's Representative (Paul)
+</TD>
+</TR>
+
+
+
+<TR>
+<TD ALIGN=center VALIGN=top><FONT COLOr=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Conceptual Data Model - Stage 4</B>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model for Invoicing B2B - Stage 4" BORDER=0 SRC="images/conceptual_data_model_stage_4.jpg"> 
+</TD>
+
+<TD ALIGNnnn=left VALIGN=top>
+<PRE><FONT COLOr=blue FACE=Verdana SIZE=2><B>A.The Approach</B>
+There are three Steps in our Approach :-
+1.	Identify the ‘Things  of Interest’ in the scope of the Data Model
+          We aim to clarify any ambiguities at this stage.
+2.	Determine how they are related.
+3.	Establish what else we know about them.
+
+B. The ‘Things  of Interest’  (in alphabetical order) :-
+1.	Addresses
+2.	Address Types
+3.	Companies
+4.	Company Type can be either a Wholesaler, a Contractor, an Engineer, 
+        an Architect, School, Retail Store, 
+5.	Contacts
+6.	Contractors
+7.	Customers
+8.	Invoices
+9.	Locations
+10.	Orders
+11.	Quotes
+12.	Wholesalers
+
+C. How these  ‘Things’  are related :-
+1.	A Contact works for one Company
+2.	Correspondence is sent to Contacts
+3.	A Customer can be either a Company or an Individual (a Contractor).
+4.	A Customer is a Company or Individual that has purchased or wants to purchase something.
+5.	Invoices are sent to Companies  (Customers ?)
+6.	Quotes are sent to Contacts
+
+Questions to be resolved :-
+1.	Should 5 say ‘Invoices are sent to Customers’.
+
+
+D. What else do we know about them ? :-
+1.	Address Types can be either Billing, Mailing (for example PO Box), Physical or Shipping
+2.	A Contact has a first, middle and last name
+3.	A Company has a name
+</PRE>
+
+</TD>
+</TR>
+
+</TABLE>
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>June 26th. 2016
+<BR>Database Answers Ltd.
+<BR>London, England
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2016</I></FONT></CENTER>
+<BR>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>
