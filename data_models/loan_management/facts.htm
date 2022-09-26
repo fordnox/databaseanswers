@@ -1,0 +1,200 @@
+<HTML><HEAD><TITLE>Loan Management System</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/japan/kiyomizu-dera_lge.jpg">
+<IMG ALT="Kyomizu Dera, Japan" BORDEeeR=1 SRC="../../images/philg/japan/kiyomizu-dera_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>FACTS for the Data Model for a Loan Management System</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+<A HREF="index.htm">Back to the Conceptual Data Model.</A>
+<BR><B>Original Requirements from the User :-</B>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>A database for a Loan Management system ...
+The database collects informartion about Customers who borrow money from a company. 
+Every month the customer must pay at least the capital or the interest rate.
+
+Customers :-
+customer information includes contact details and balance fields, 
+which will tell you how much the customer owes. 
+
+collector :-
+collector is the person who gives the money to the customers and 
+collects it later point of time.
+
+loangiven :-
+loan given is actually the loan given by the company to the customers.
+
+payment :-
+payment received by the company. 
+The database will keep track of payments made by customers. 
+Payments can be either the interest or/and capital.
+
+
+Customer  (TABLE)
+Customer_No (primary)
+Customer_Name
+Address
+Balance
+
+Collector (TABLE)
+CollectorID (Primary)
+CollectorName
+
+LoanGiven (TABLE)
+TransactionID (AutoIncrement id & primary)
+Customer_No
+DateLoanGiven
+AmountGiven
+InterestRate
+CollectorID (foreign key - from collector table)
+
+
+Payment (TABLE)
+ReturnID (AutoIncrement id & primary)
+Customer_No
+PaymentDate
+PAymentMonth
+CapitalPaid
+InterestPaid
+Remarks
+
+
+
+-----------------------------------
+
+Report Requirements :-
+Produce a list of those who never pay for a duration. 
+The criteria is balance should be greater than zero.
+
+now, i have a sql statement to find those who didn't pay. but, it actually working when the customer paid at least paid once.   
+Suppose, the customer didn't pay at all, that particular record is NOT coming. 
+
+Also a list of those who never pay a single payment. 
+Currently, I am using Data Report and Data Environment to do all the reports from Visual Basic.
+
+So, the output of the report should be  single record for each customer as follows : 
+customer_no
+Customer_Name
+Address
+Balance
+CollectorID
+CollectorName
+PaymentDate (the last payment record - if any)
+PAymentMonth (the last payment record - if any)
+CapitalPaid (the last payment record - if any)
+InterestPaid (the last payment record - if any)
+</PRE>
+
+<LI><B>Things of Interest in the Scope of the Data Mode :-</B>
+<OL>
+<LI>Collectors
+<LI>Customers
+<LI>Loans
+<LI>Payments
+</OL>
+
+<LI><B>What are the relationships between these Things of Interest :-</B>
+<OL>
+<LI>A CUSTOMER receives a LOAN -  Customer agrees to a 'LoanContract' for a Loan with a Collector.
+<BR>This Contract then generates the need for a series of 'LoanPayments'.
+<LI>A variable number of Payments with different amounts would be shown as a series of
+'PaymentsDue' record in a new table.
+<LI>To get the total of Capital Paid and Interest Paid, these fields would be added to the LoanContract table. 
+</OL>
+
+
+<LI><B>What are the characteristics of these Things of Interest :-</B>
+<OL>
+<LI>A LOAN has an Amount.
+</OL>
+
+
+<HR>
+<B>Here's some notes from www.dbforums.com ...</B>
+
+<BR><BR>I have a long loan application that I am modeling.
+<BR>The form has a collateral section that I know I should break out into a seperate table. 
+<BR>Each record will have Property Description, Model Number, and value for example.
+<BR>But what about Phone numbers. 
+<BR>Is it OK to have homephone, workphone, cellphone or should you have another table. PhoneNumber, PhoneLocation? 
+<BR>Of course then you probably should add an AllowedPhoneLocation table.
+<BR>What about MothersName, MothersPhone, FathersName, FathersPhone. Or should I have a Relatives Table with Name, Relationship.
+<BR>Does either of these solutions break any of the 5 laws?
+<BR>If not how do you choose which way to go?
+
+<BR>On a related topic.
+<BR>Should Pick tables be created for even simple values or coded into the combo box select option? 
+<BR>For example: Sex: Male, Female. 
+<BR>Relationship: Mother, Father, Friend, Other. 
+<BR>Or Marital Status: Married, Single, Divorced.
+
+<BR><BR>What are the advantages or disadvantages of each of these options? On what criteria do you base your choice.
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers 2001</I></FONT></CENTER>
+
+</HTML>

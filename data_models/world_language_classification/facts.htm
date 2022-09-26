@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>Business Rules for the World Language Classification Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<IMG ALIGN=right ALT="City Temple." HEIiGHT=88 WIiDTH=206 hspace="0" vspace="4" SRC="../../images/city_temple_xsml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+</p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<!--- <img alt="Musicians in Articles" src="../../images/data_model_names/musicians_in_articles.gif" height=24 width="449" alt="Proposals Database">  --->
+
+&nbsp;&nbsp;
+<img alt="World Language" src="../../images/buttons/button_studio/world_language.gif" heiIIIght=24 wiIIIdth="449"> 
+<img alt="Classification" src="../../images/buttons/button_studio/rt_classification.gif" heiIIIght=24 wiIIIdth="449"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+<BR>Here's a discussion of <A HREF="oracle_hierarchies_handling.htm">the way Oracle handles Hierarchies</A>. 
+
+<!---
+was produced by exporting data from Foxpro via CSV to a Mac where Quark produced the pdf files for Oxford. 
+Since then, the Foxpro tables have found their way into Access for 'cleaning up' after the massive publication task. 
+
+Our team of four people has now linked up with a local software engineering company who have enabled many of the 
+core tables, now in SQL Server, to be accessed online www.worldchristiandatabase.com . 
+
+At this point then we have the opportunity of correcting past mistakes and laying a platform for the next edition. 
+
+
+Thanks very much for your consideration of this. 
+Cheerio, Peter Crossing World Christian Database Dapto, NSW, Australia crossing@pastornet.net.au 
+---->
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>Requirements :-</B>
+A Data Model for a World Language Classification System, (an example of hierarchies in general).
+
+<B>Background</B>
+Definitions have been taken from Table 9-13 in the definitive Paper on 'Demographics, ministries, 
+and scriptures via 13,500 language profiles'.
+
+This summarises the schema worked out by linguist David Dalby in his 2000 publication :-
+"The Linguasphere:register of the World's languages"
+
+<B>B. Things of Interest :-</B>
+B.1 Geographic Areas and Zones
+B.2 Languages and Zones
+
+<B>C. How are they related ?</B>
+C.1 Geo-Linguistic Zones
+Each dialect is in only one language, each language in only one cluster, 
+each cluster in only one net, chain, set, zone and so on up to macrozone. 
+
+The LangID identifies which cluster, net, chain, set, zone and macrozone 
+the language is in. 
+
+So, each language is in only one 'geographic area' where the term 
+'geographic area' is used to cover zones and so on.  
+
+C.2 Languages 
+Languages are defined within Language Groups, and different Languages can be 
+used within different Geographic Areas.
+Therefore a hierarchy of Languages in Groups is established.
+There are ten Language Macrozones :-
+0 African
+1 Afro-Asian
+2 Australasian
+3 Austronesian
+4 Eurasian
+5 Indo-European
+6 North American
+7 Sino_Tibetan
+8 South American
+9 TransAfrican
+
+Each MacroZone is divided up into 10 GlossoZones.
+For example, Indo-European (number 5) consists of these GlossoZones :-
+50 Celtic
+51 Romanic
+52 Germanic
+53 Slavonic
+54 Baltic
+55 Albanic
+56 Hellenic
+57 Armenic
+58 Iranic
+69 Indic
+
+
+C.3 Geographic Areas
+A hierarchy of Geographic Areas is established, and every language appears at 
+the appropriate level for every Area where it is used around the world.
+
+<I>Start of the User's Verbatim Statement of Requirements.</I>
+<B>The Background</B>
+I'm searching for advice on Database design for components of the World Christian Database. 
+
+The second printed edition of the publication, 'The World Christian Encyclopedia', appeared in 2001 and
+it is now appropriate to review the design in the light of accepted Best Practice for database design.
+ 
+<B>Sample Data</B>
+The language component of the work (not online yet) is the primary area of interest. 
+There is a single table called WLC (World Language Classification) with about 33,000 records describing the 
+world's languages, and more importantly classifying them into different levels, the last two of which are 
+language (9) and dialect (10). 
+
+<BR>The LangID is the primary key and is linked to other tables including a listing of 13,000 people groups. 
+The LangID is a unique linguistic feature developed over 20 years which indicates linguistic relationships and 
+the proximity between languages. 
+
+<B>World Language Classification</B>
+
+<B>LangID    LenLangID	RefName		Population (2000)</B> 
+ 0             	1       	AFRICA macrozone   	68,968,350 
+ 00            	2       	MANDIC zone            	23,007,660 
+ 00-A          	4       	WEST MANDE set         	17,549,981 
+ 00-AA         	5       	NORTHWEST MANDE chain  	14,771,168 
+ 00-AAA        	6       	MANDING net            	13,474,770 
+ 00-AAAA       	7       	WEST MANDING cluster   	 5,497,738 
+ 00-AAAA-a     	9       	mandinka-kango         	 1,364,391 
+ 00-AAAA-aa   	10       	mandinka-'gambia' 
+ 00-AAAA-ab   	10       	mandinka-'casamance' 
+ 00-AAAA-ac   	10       	woyinko 
+ 00-AAAA-ad   	10       	bilaso 
+etc. 
+
+<B><I>The SQL is shown below to create, populate and query a tailored table for the data just above.</I></B>
+
+<B>The question :-</B> 
+Should this type of hierarchy be modeled in a separate table for each level ? 
+While the splitting into tables is easy, putting it all back together is much more complex than the 
+single table method. 
+
+The hope is that for multi-user read-only access the single table may still be appropriate. 
+e.g having the single Ref_Languages table in your 'World Health Organization STD' to link to Publications is 
+easier than linking to the result of several joins or union queries to see the context of the langage. 
+
+<I>End of User's Verbatim Statement of Requirements.</I>
+
+<B>B. Things of Interest :-</B>
+B.1 Geographic Zones for all part os the World.
+B.2 Languages spoken in every Geographic Zone.
+
+<B>C. How are they related ?</B>
+C.1 Many levels of Language can be defined.
+C.2 Each Level has one Parent and zero, one or many Chidlren,(lower levels of Language).
+C.3 The lowest Levels are called Language,(level 9) and Dialect,(level 10).
+
+The example uses a Language Table that looks like this ...
+
+<IMG ALIGN=left SRC="images/languages.gif">
+<B>Oracle Scripts :-</B>
+CREATE TABLE languages
+(LangID char(10) primary key
+,parent_langID char(10)
+,lang_sequence integer
+,LenLangID integer
+,RefName varchar(25)
+,population_2000 integer)
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID, RefName          ,population_2000)
+VALUES 
+( '0'  ,     null    ,    1   ,   1     ,'AFRICA macrozone',    68968350   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+( '00' ,      '0'    ,    1   ,   2     ,'MANDIC zone'     ,    23007660   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-A',      '00'   ,    1   ,   4     ,'WEST MANDE set'  ,    17549981   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AA',   '00-A'   ,    1   ,   5     ,'NORTHWEST MANDE chain',14771168   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAA',   '00-AA'   ,    1   ,   6     ,'MANDING net',13474770   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA',   '00-AAA'   ,    1   ,   7     ,'WEST MANDING cluster',5497738   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA-a','00-AAAA'   ,    1   ,   9     ,'mandinka-kango',1364391   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA-aa','00-AAAA-a',    1   ,   10     ,'mandinka-gambia',null   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA-ab','00-AAAA-aa',    2   ,   10     ,'mandinka-casamance',null   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA-ac','00-AAAA-a',    3   ,   10     ,'woyinko',null   )
+/
+
+INSERT INTO languages
+(LangID,parent_langID,lang_sequence,LenLangID,RefName           ,population_2000)
+VALUES 
+('00-AAAA-ad','00-AAAA-a',    4   ,   10     ,'bilaso',null   )
+/
+
+SELECT  LangID, refname, population_2000
+FROM    languages
+START   WITH parent_langID is null
+CONNECT BY PRIOR LangID = parent_langID
+/
+
+-- Produces this output ...
+
+LANGID     REFNAME                      POPULATION_2000
+---------- ---------- ----------------- ---------------
+0                AFRICA macrozone                 68968350
+00              MANDIC zone                        23007660
+00-A           WEST MANDE set                   23007660
+00-AA          NORTHWEST MANDE chain      14771168
+00-AAA         MANDING net                       13474770
+00-AAAA       WEST MANDING cluster           5497738
+00-AAAA-a    mandinka-kango                     1364391
+00-AAAA-aa  mandinka-gambia
+00-AAAA-ab  mandinka-casamance
+00-AAAA-ac  woyinko
+00-AAAA-ad  bilaso
+
+11 rows selected.
+</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>14th. February 2004
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

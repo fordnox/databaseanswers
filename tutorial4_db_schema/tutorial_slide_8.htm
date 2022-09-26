@@ -1,0 +1,64 @@
+<HTML><HEAD><TITLE>Slide 8 - Tutorial on Database Schema</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Tutorial on Database Schema - Slide 8</B> -  Products at Amazon.com or Starbucks
+<BR><BR><A HREF="tutorial_slide_7.htm">Back</A>&nbsp;&nbsp;&nbsp;<A HREF="tutorial_slide_9.htm">Next Slide</A>
+
+<BR><BR>
+<!--- <IMG ALT="Customers and Products Data Model" SRC="images/customers_and_products_dezign.gif"> --->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<OL>
+<B><LI>Products at Amazon.com or Starbucks</B>
+<UL><LI>Coffee</UL>
+<UL><LI>Books</UL>
+<UL><LI>Product Types (Inheritance and Recursion).
+</OL>
+
+<IMG ALT="Amazon and Starbucks Customers" SRC="images/amazon_and_starbucks_products.gif">
+
+<BR>
+<HR><B>Products</B>
+<BR>Let's move on to the topic of Products. As you might imagine, this can be a complex area.
+<BR>Two important aspects are Inheritance and Product Hierarchies. 
+<BR><BR><B>Inheritance</B>
+<LI>This diagram shows a 'Products' table that holds details that are common to all Products.
+<LI>It shows an 'Amazon_Books' table that holds details that are specific to Books from Amazon.
+<LI>It also shows a 'Starbucks_Products' table that holds details that are specific to Products from Starbucks.
+<LI>These two are Children of the Parent 'Products' Table.
+<LI>Therefore, this concept is referred to as Inheritance and is very powerful in the real world.
+<LI>On the diagram, it is shown  by the circle with two short horizontal lines underneath it. 
+<LI>Data Modellers define these as 'Sub-Types' of a 'Super-Type'.
+<LI>This diagram shows the Logical level of the Schema. 
+<LI>At the physical level, this can be implemented in one of three ways :-
+<OL>
+<LI>Three tables - exactly like the Logical level.
+<LI>Two tables - one for Amazon and one for Starbucks, with the common data items copied down from the Parent Table.
+<LI>One table - at the higher level, with common data items and those for Amazon and Starbucks all in one large table.
+</OL>
+  
+<B>Recursive Product Hierarchy</B>
+<LI>The line that comes out of the Ref_Product_Types Table and then goes back in again is informally called a 'Rabbits Ear', 
+<BR>or more formally a 'Recursive Relationship'.  It defines a Product Hierarchy.
+<LI>It means that any Product can be part of a higher grouping of Products, such as Categories, Types and so on.
+<LI>This is a very neat and powerful way to implement this concept.
+<LI>In our example, the 'parent_product_type_code' is a reference to the next highest level in the hierarchy.
+
+<BR><BR><B>Suppliers</B>
+<LI>I introduce Suppliers at this point because Starbucks and Amazon.com are both Suppliers of Products within our Schema.
+<LI>This would be the starting-point for Schema involving a more detailed analysis of Suppliers. 
+
+<HR>
+
+<BR><BR><BR><I> &#169 DataBaseAnswers.org 2006</I></FONT>
+
+</BODY>
+
+</HTML>
+

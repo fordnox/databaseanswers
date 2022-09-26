@@ -1,0 +1,151 @@
+<HTML><HEAD><TITLE>Request Customer Data</TITLE></HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080">
+
+<TABLE BGCOLOR="#000099" BORDER=0 WIDTH=90%>
+<TR>
+<TD VALIGN=top><IMG ALT="Top Logo" SRC="../images/toplogo_alt.gif"></TD>
+<TD ALIGN=middle VALIGN=middle><FONT COLOR=white FACE="Verdana" SIZE=4 COLOR="#008000">
+<H1>Request Customer Data</H1></FONT></TD>
+<TD ALIGN=right VALIGN=top><IMG ALT="A Library full of Data at Yale University" SRC="../images/tutorials.jpg">
+</TD>
+</TR>
+</TABLE>
+
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WiIDTH=561 WIDTH=90%>
+<TR><TD WIDTH="7%" VALIGN="TOP" BGCOLOR="#0000ff">
+<P><A HREF="../index_2.htm"><B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff">Home 2</B></FONT></A></TD>
+
+<!---
+<TD WIDTH="18%" VALIGN="TOP" BGCOLOR="#0000ff">
+<B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff"><P>Ask a Question</B></FONT></TD>
+--->
+
+<TD ALIGN=left BGCOLOR="#0000ff" VALIGN=top WIDTH=20%>
+<A HREeF="lnk_cdf.htm"><FONT COLOR=white FACE=Verdana SIZE=1><B>Common Data Formats</A></TD>
+
+<!---
+<TD WIDTH="15%" VALIGN="TOP" BGCOLOR="#0000ff">
+<B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff"><P>Data Models</B></FONT></TD>
+--->
+
+<TD WIDTH="11%" VALIGN="TOP" BGCOLOR="#0000ff">
+<P><A HREF="mailto:barry.williams@theaa.com"><B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff">Email Us</B></FONT></A></TD>
+<TD WIDTH="9%" VALIGN="TOP" BGCOLOR="#0000ff"><A HREeF="faqs.htm">
+<B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff"><P>FAQs</B></FONT></TD>
+<TD WIDTH="11%" VALIGN="TOP" BGCOLOR="#0000ff"><A HREeF="scenarios/index.htm">
+<B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff"><P>Scenarios</B></FONT></TD>
+<TD WIDTH="20%" VALIGN="TOP" BGCOLOR="#0000ff"><A HREF="../site_map.htm">
+<B><FONT FACE="Verdana" SIZE=1 COLOR="#ffffff">Site Map</B></FONT></A></TD>
+<TD VALIGN="MIDDLE" BGCOLOR="#0000ff">
+<FONT FACE="Verdana" SIZE=1 COLOR="#008000"><P>&nbsp;</FONT></TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="#98CDEF" BORDER=3 CELLPADDING=3 WIDTH=90%>
+
+<TR><TD>
+<P><FONT COLOR=blue FACE=Verdana SIZE=2>
+You are logged in as : <FONT COLOR=red SIZE=1>John Smith</FONT>
+<BR>Request Name : <FONT COLOR=red SIZE=1>CARS_1</FONT>
+<HR>
+The default options shown by the Checked Boxes represent a Request for Customers who can be grouped by Gender,
+County and Make of Car.
+For example, all Female owners of Ford Cars who live in Hampshire.
+<P>
+
+<FORM NAME="customer_data_request" METHOD="post" ACTION="">
+  
+<TABLE BGCOLOR="#98CDEF" BORDER=3 CELLPADDING=3 WIDTH=90%>
+
+<TR>
+
+<TD ALIGN=middle COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2><B>CUSTOMER DATA</B></TD>
+<TD ALIGN=middle COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2><B>ADDRESS DATA</B></TD>
+<TD ALIGN=middle COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2><B>VEHICLE DATA</B></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customer Name</TD>
+<TD><input type="checkbox" name="customer_name" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Line 1</TD>
+<TD><input unchecked type="checkbox" name="line_1" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Make</TD>
+<TD><input checked type="checkbox" name="vehicle_make" value="1"></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customer Title</TD>
+<TD><input type="checkbox" name="customer_title" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Line 2</TD>
+<TD><input unchecked type="checkbox" name="line_2" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Model</TD>
+<TD><input unchecked type="checkbox" name="vehicle_model" value="1"></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Gender</TD>
+<TD><input checked type="checkbox" name="gender" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Line 3</TD>
+<TD><input unchecked type="checkbox" name="line_3" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Year of Manufacture</TD>
+<TD><input unchecked type="checkbox" name="year_of_manufacture" value="1"></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Date of Birth</TD>
+<TD><input type="checkbox" name="date_of_birth" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Town</TD>
+<TD><input unchecked type="checkbox" name="town" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Years of Ownership</TD>
+<TD><input unchecked type="checkbox" name="years_of_ownership" value="1"></TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Home Owner</TD>
+<TD><input type="checkbox" name="home_owner" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>PostCode</TD>
+<TD><input unchecked type="checkbox" name="postcode" value="1"></TD>
+<TD>&nbsp</TD>
+<TD>&nbsp</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Years in Residence (CRM)</TD>
+<TD><input type="checkbox" name="years_in_residence" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>County</TD>
+<TD><input checked type="checkbox" name="county" value="1"></TD>
+<TD>&nbsp</TD>
+<TD>&nbsp</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Years as a Customer (CRM)</TD>
+<TD><input type="checkbox" name="years_as_customer" value="1"></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Country</TD>
+<TD><input unchecked type="checkbox" name="country" value="1"></TD>
+<TD>&nbsp</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+<CENTER>
+<P><A HREF="index.htm" HREeeF="req_customer_data_step_2.htm">Click to proceed.</A>
+
+<P><input type="submit" name="Submit" value="Click to Proceed" 
+onClick="MM_openBrWindow('result.htm','Create_Customer_Request','status=yes,scrollbars=yes,resizable=yes,width=1280,height=480')"></P>
+
+</FORM>
+
+<P>
+<HR>
+<P>
+
+</TD></TR>
+</TABLE>
+
+    
+</body>
+</html>

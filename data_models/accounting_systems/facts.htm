@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>Data Model for Accounting Systems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height=100 valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.tjx.com" TARGET=_NEW>
+<IMG ALIGN=right ALT="Looking Glass" BORDER=0 hspace="0" vspace="4" SRC="images/looking_glass_sml.jpg">
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Accounting Systems</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Back to the <A HREF="index.htm">Data Model</A>.
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Area being Modelled is :-</B>
+<B>Subject: Accounting Systems</B>
+
+Question: I Would like to develop a small accouting system which records the expenses and income details. 
+I need database design for the above requirement 
+<HR>
+The material below this line was added in an interesting question from <B>Dave Cantrell</B> on November 23rd. 2012
+
+Hi Barry,
+
+I was just looking at your accounting data model and noticed: How does it handle double-entry accounting? 
+
+Your General Ledger entity only has one FK for Account_Number, but double-entry accounting requires entry 
+into *two* accounts for every transaction, and debits and credits must equal each other for each transaction. 
+
+As given, I only see the ability to post an amount to one account. 
+
+Plus, "double-entry" is really somewhat of a loose term, because a transaction must happen to *at least* two accounts; 
+
+entries can be made to an infinite number of accounts, as long as the debits and credits of the entire transaction are equal.
+
+I started to recommend you add an entity between General_Ledger and Chart_of_Accounts called Accounts_in_Transaction 
+(to keep the naming convention you used in Parties_*) but you already have Financial_Transactions -- which also apparently 
+only models single-entry accounting. 
+
+How do you balance the accounting equation, i.e. Assets = Liabilities + Equity? (this is the equation that must balance after 
+every transaction) 
+
+Do you model credits as negative numbers ? 
+I've seen other comments to the effect that these are fundamentally different numbers, not opposite sides of the number line, 
+and I tend to agree on this point.
+
+Here is a worthwhile discussion on the <A HREF="http://stackoverflow.com/questions/5079506/accounting-and-database-design-storing-debit-and-credit-amount">Stackover Web Site</A> on database design [for] storing debit and credit amounts.
+<BBR><BR>
+Comments from Nitin Dixit on December 8th (with Barry's responses in <FONT COLOR=red>red</FONT> :-
+
+<FONT COLOR=red>I have added a recursive relationship for the Chart of Accounts Table in the <A HREF=" http://www.databaseanswers.org/data_models/accounting_systems/index.htm">Data Model</A>, although we need to be sure about the implications.
+It seems to mean that there can be multiple entries updard in a hierarchy and finally at the top-level, where there would be an Account Group, 
+<BR>such as Asset or Laibility Accounts.
+Is your thinking consistent with this ?</FONT>
+ 
+You say - 
+"General Ledger has column called "Amount" but has no reference to the Transaction table so how will the amount come there."
+ 
+<FONT COLOR=red>I have added the Foreign Key.
+<BR>The Data Model is not concerned with the 'how' of data transfer, but only with the data that remains in all the tables 
+after every transfer has been completed.</FONT>
+
+<BR>I think we don't need a recursive relationship to Chart of Accounts but a Child table called "Sub Chart of Accounts".
+<BR><FONT COLOR=red>What you suggest is not Best Practice</FONT>
+Secondly the General Ledger table should have a reference to Account_In_Transaction table as the data of amount will come from that table.
+<FONT COLOR=red>I have added the Foreign Key</FONT>
+
+<HR><B>George James sent me this questions in an email on May 25th. :-</B>
+“I looked at your accounting model at http://www.databaseanswers.org/data_models/accounting_systems/index.htm over the night yesterday, and I 
+noticed that the financial_transaction table and general_ledger table contain amounts field.
+
+I do not think this is necessary for the sake of normalization. 
+
+I think only the general ledger should contain an amount field, and when a user requires total amount  for a particular transaction he can group by 
+transaction id and sum up.”
+
+<B>Barry responds :-</B>
+Hi
+Thanks for your question.
+I have a page on my Web Site dedicated to <A HREF="http://www.databaseanswers.org/codds_page.htm">Ted Codd</A> which is relevant 
+
+Codd’s rules of normalisation are usually informally stated as including “data should depend on the Key, the whole key and nothing but the key - so help me Codd”.
+
+This means that data should not be duplicated.
+
+However, my thinking is that the Transaction Amount is the total Amount. which is allocated to a number of GL Codes.
+
+Does this make sense to you ? 
+
+I would appreciate your thoughts.
+
+Regards
+
+Barry</PRE>
+
+
+<CENTER><FONT SIZE=1>
+
+<BR><BR><I> &#169 DataBase Answers Ltd. 2014</I></FONT></CENTER></PRE>
+<BR>
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

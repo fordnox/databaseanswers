@@ -1,0 +1,105 @@
+<HTML><HEAD><TITLE>Distribution Channels</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Database for Product Distribution</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Train on a Viaduct in Switzerland" BORDER=1 HEIGHT=91 WIDTH=205
+SRC="../../images/switzerland/train_on_viaduct_vsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+Distribution Channels for Products
+
+<HR>from user ...
+The Entities are
+   1.Company - represents the company which makes the product
+   2.Product - represents the product
+   3.Channel - represents the distibutor, stockist etc....
+
+4.Territory - represents the area or location
+
+the product starts moving from the company through various channels and gets to the
+retailer, which is the last item in the chain. 
+The need is that the channel should be flexible i.e, any channel can come in between the 
+existing channels and even an existing channel can be moved/deleted from the existing system.
+
+So it should not affect the system. 
+
+Territory represents the area. 
+So channels (distribution centers) will be grouped based on the territory.
+
+the first requirement is to how to generalize the channel and design a flexible design.
+<HR>
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Channel
+B.2 Company
+B.3 Product
+B.4 Territory
+
+C. These THINGS_OF_INTEREST are Related as follows :-
+***
+the product starts moving from the company through various channels and gets to the 
+retailer, which is the last item in the chain. 
+The need is that the channel should be flexible i.e, any channel can come in between the 
+existing channels and even an existing channel can be moved/deleted from the existing system.
+***
+
+C.1 The COMPANY produces a PRODUCT.
+C.2 A PRODUCT goes through one or more CHANNELS until it reaches a RETAILER.
+
+D. Other Characteristics of these THINGS_OF_INTEREST include
+D.1 A PRODUCT has a STATUS. 
+
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 To be determined.
+
+G. DESIGN NOTE :
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+1st. Febuary 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

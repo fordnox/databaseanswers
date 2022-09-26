@@ -1,0 +1,829 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> > Data Analyst Role</font></td>
+		</tr>
+	</table>
+
+	<p>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr valign=bottom>
+		<td valign=top></td>
+		</tr>
+		<tr valign=bottom>
+		<td><a href="compose.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a></td>
+		</tr>
+	</table>
+
+		
+	
+	<p><table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="boards.asp"><img src="/dba/images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<a href="boards.asp"><font color="#0000FF">Up to board list</font></a> | <a href="search.asp?board=21&board_name=Data+Analyst+Role"><font color="#0000FF">Search</font></a></font></td>
+		<td align=right>
+		<font face="Verdana, Arial, Helvetica, sans-serif" size=1>
+		<a href="index.asp?page=4&mode=expand&board=21&board_name=Data+Analyst+Role">back</a>&nbsp;page&nbsp;5 of 56&nbsp;<a href="index.asp?page=6&mode=expand&board=21&board_name=Data+Analyst+Role">next</a>
+		</font>
+		</td>
+		</tr>
+	</table>
+		<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+			<tr bgcolor="#333399">
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+			</tr>
+	
+	
+	
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49631&board=21&board_name=Data+Analyst+Role">Prscription Drugs For Lews </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24179" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">opissiori</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/17/2010 7:32 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49689&board=21&board_name=Data+Analyst+Role">Southernization Of Medicine </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/17/2010 3:16 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49712&board=21&board_name=Data+Analyst+Role">First Drug </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/17/2010 6:25 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49788&board=21&board_name=Data+Analyst+Role">Fatima College Of Medicine </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 3:09 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49789&board=21&board_name=Data+Analyst+Role">Canine Urine Pass Drug Tests </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 3:10 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49792&board=21&board_name=Data+Analyst+Role">Antiaging Medicine Cons </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 3:35 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49793&board=21&board_name=Data+Analyst+Role">Yellow Norco Pills </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24092" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Elittycachace</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 3:50 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49851&board=21&board_name=Data+Analyst+Role">Desert Family Medicine Gold Canyon </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 12:03 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49874&board=21&board_name=Data+Analyst+Role">Stacker Diet Pills </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 1:46 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50244&board=21&board_name=Data+Analyst+Role">Buy tramadol</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24906" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">tramadol</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/20/2010 1:57 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50303&board=21&board_name=Data+Analyst+Role">nowe produkty bankowe</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24652" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Gooxishdiosse</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/20/2010 12:20 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50478&board=21&board_name=Data+Analyst+Role">The Last Legal Drug </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 3:37 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50479&board=21&board_name=Data+Analyst+Role">Drug Reference Information </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 3:41 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50480&board=21&board_name=Data+Analyst+Role">Tapeworms In Diet Pills </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 4:07 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50508&board=21&board_name=Data+Analyst+Role">University Of Pittsburgh Sports Medicine </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 8:00 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50528&board=21&board_name=Data+Analyst+Role">Chinese Medicine Emotion </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 8:26 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50613&board=21&board_name=Data+Analyst+Role">free flv player</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25068" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Stevenpos</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/22/2010 8:42 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50672&board=21&board_name=Data+Analyst+Role">bet</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25085" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">bet</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/22/2010 1:51 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50924&board=21&board_name=Data+Analyst+Role">Bu School Of Dental Medicine </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/23/2010 5:34 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50944&board=21&board_name=Data+Analyst+Role">24 Month Drug Treatment Program </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/23/2010 7:17 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50967&board=21&board_name=Data+Analyst+Role">Nida 5 Drug Test </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24179" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">opissiori</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/23/2010 7:57 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50968&board=21&board_name=Data+Analyst+Role">Symptoms Of Depression Medicine Withdrawl </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24179" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">opissiori</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/23/2010 7:58 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51225&board=21&board_name=Data+Analyst+Role">Medicare Drug Donut Hole </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/24/2010 7:25 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51228&board=21&board_name=Data+Analyst+Role">Target 4.00 Dolla Drug List </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24179" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">opissiori</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/24/2010 8:04 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51229&board=21&board_name=Data+Analyst+Role">Prerscription Drug Guide </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24179" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">opissiori</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/24/2010 8:05 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51758&board=21&board_name=Data+Analyst+Role">bet</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25400" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">betting</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 1:11 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51965&board=21&board_name=Data+Analyst+Role">Employee Prescriptions Drug Benefits Rxgrp </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 5:15 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51967&board=21&board_name=Data+Analyst+Role">Medicine Chart To Print </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 5:18 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51970&board=21&board_name=Data+Analyst+Role">Medication Used For Urinary Retention </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 5:42 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51997&board=21&board_name=Data+Analyst+Role">Coreg Heart Medication </a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=24004" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Cheshooro</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 7:55 PM</font></td>
+			</tr>
+			
+
+	</table>
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td align=right>
+		<font face="Verdana, Arial, Helvetica, sans-serif" size=1>
+		<a href="index.asp?page=4&mode=expand&board=21&board_name=Data+Analyst+Role">back</a>&nbsp;page&nbsp;5 of 56&nbsp;<a href="index.asp?page=6&mode=expand&board=21&board_name=Data+Analyst+Role">next</a>
+		</font>
+		</td>
+		</tr>
+	</table>
+	
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

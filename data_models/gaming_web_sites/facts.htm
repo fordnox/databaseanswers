@@ -1,0 +1,216 @@
+<html>
+<head>
+<title>Facts for a Gaming Web Site Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.midship.com/services.htm" TARGET=_NEW>
+<IMG ALIGN=right ALT="Online Gaming" BORDER=0 hspace="0" vspace="4" SRC="images/gaming_web_sites_sml.jpg"></A>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for a Gaming Web Site</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>A. The requirement is to design a Database to support a Gaming Web Site.</B>
+
+<PRE><FONT COLOR=blue FONT=Verdana SIZE=2>From: admin at corkenglishmarket.com
+Sent: 13 January 2011 09:29
+To: dba_requests@barryw.org
+Subject: Database Schema please Help
+
+Good Morning,
+ 
+I came across your website and hands up its one of best for people like myself trying to learn 
+about databases and designing them, so thanks for all your info.
+ 
+I am trying to create a DB that will hold info for a gaming site, I believe its simple enough but 
+have tried and failed. 
+
+I understand the concept the PK and FK's and well to a point about the relationships.
+ 
+So a little about the schema I am trying to create. Its for a group of members who play an 
+online game called <B>Lord Of Ultima</B>, 
+
+its free and its just to hold the info of our cities with troops etc.
+ 
+The information is as follows.
+ 
+Its top level is World  which has 50 different Continents and on each Continent there is lots of 
+different cities that belong to many players in many different alliances. 
+
+An Alliance is just a group of members.
+ 
+So each member in our alliance has got cities on different continents which have different amounts of 
+troops and resources ( wood, stone, iron and food). 
+
+The troops can increase or decrease if killed and the resources are generated depending on what level 
+and number of resource buildings.
+ 
+The information is supplied in csv format which is exported as per the attached excel file, 
+this includes city related information for the resources and troops and the other cities nearby. 
+
+We insert this into a form and upload this. 
+
+It in turn is then saved in a table. With just the export all in one field.
+ 
+For me to try and create simple information views for us I would like if possible to have a correct 
+schema which I hope you will show me how to do. 
+ 
+Each city can also be upgraded to a castle and then have a Palace built in it with levels from 1 to 10 
+and can have 1 of 8 types, 
+listed as follows Compassion, Honesty, Honor, Humility, Justice, Sacrifice, Spirtuality or Valour.  
+
+There can only be 1 castle/palace and 1 type per city if the palace is built in it.
+ 
+I would really love to have this as a schema that I can then use php / mysql to present the views.
+ 
+I have included an excel file with the fields etc.
+ 
+This is only being used for a few of us to have an overview if you know what I mean and any help that 
+you can give would be so helpful to us.
+ 
+I am trying to learn but its not easy.
+ 
+If you have any further questions then please get in touch with me.
+ 
+Best regards 
+Johnny 
+
+
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>A. The Things of Interest are :-</B>
+   A.1 Resources
+   A.2 Others, to be determined
+
+<B>B. How are they related ?</B>
+   B.1 To be determined
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>January 15th. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Travel Company Complaints Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.flickr.com/photos/waltergueroult/favorites/page420/?view=md" TARGET=_NEW>
+<IMG ALIGN=right ALT="A Baby making a Complaint" BORDER=0 hspace="0" vspace="4" SRC="images/baby_crying_on_cushion_sml.jpg"></A>
+</td>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Travel Company Complaints</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>A. The requirement is to design a Database to record Compaints to a Travel Company</B>
+
+Subject: produce a ER Diagram and a Data Dictionary
+Question: A travel company that specialises in organising holidays for people on Britain's offshore islands. 
+They sell all sorts of packages, some of which include activities such as water skiing or deep-sea fishing. 
+They also sell their own holiday insurance. 
+Like any company they have in the past received various complaints about the products (holidays, insurance packages etc.) 
+that they have sold. 
+
+In order to be a more effective company, one that responds to customer needs, they want to develop a system to handle 
+customer complaints. 
+
+A customer makes a purchase for one or more products. 
+A product can be any of the things the company sells such as a holiday package, rental of a vehicle, travel insurance or 
+hire of fishing equipment. 
+
+Examples of product types and particular products are shown in this assignment. 
+
+A complaint relates to a particular purchase; for example, a customer books a holiday on the island of St Kilda and hires 
+some fishing equipment and this would count as two separate purchases. 
+
+If there is a problem with the fishing equipment then the complaint is associated with that purchase. 
+
+If a complaint cannot be resolved within the company then the customer is advised that they can take the matter further with 
+the Association of British Travel Agents (ABTA). 
+
+If it is known that the complaint has gone to ABTA then this is noted as the outcome of the complaint. 
+
+When ABTA make a decision this is noted as an outcome also and tagged that the source is ABTA e.g. 'Refund ABTA' as distinct 
+from an in-house decision e.g. 'Refund'. 
+
+<B>Barry says the Things of Interest are :-</B>
+   A.1 Compaints
+   A.2 Customers
+   A.3 Travel Agents
+   A.4 Others, to be determined
+
+<B>B. How are they related ?</B>
+   B.1 A Customer can make many Complaints.
+   B.3 Others to be determined.</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>February 16th. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

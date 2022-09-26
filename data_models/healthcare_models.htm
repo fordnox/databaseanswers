@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>Healthcare Data Models</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img ALT="Lightning Bolt" src="../images/lightning_bolt.jpg" hspace="0" vspace="4" wiIIIdth=251 heiIIIght=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF DEC 5th. Menu  Bar --->
+<!---
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+--->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="../images/spacer.gif" width="90"></p></td>
+<!--- BARRY changed width to 0 from 10 in the next line --->
+	<td valign="top"><img src="../images/spacer.gif" width="0" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">Healthcare Data Models<img src="../images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"> 
+                        <p class="small">I have created sets of my Data Models aimed at Healthcare Applications.
+			<BR>These would be of interest to developers or software houses targetting the Healthcare Industries.
+
+<HR>
+
+<A HREF=" https://en.wikipedia.org/wiki/Health_care" TARGET=NEW>Wikipedia</A><FONT COLOR=blue FACE=Verdana SIZE=2>
+ defines Health care (or healthcare) as :-
+"the diagnosis, treatment, and prevention of disease, illness, injury, and other physical and mental impairments in human beings. Health care is delivered by practitioners in allied health, dentistry, midwifery (obstetrics), medicine, nursing, optometry, pharmacy, psychology and other health professions. It refers to the work done in providing primary care, secondary care, and tertiary care, as well as in public health."
+
+<HR>
+<!------
+The only <B>free</B> Data Models I am aware of the ones currently on this Web Site ;-2222222222222220)
+<BR>This page has links to other pages where we have grouped a number of Data Models under specific industry headings.
+------>
+
+
+We also have a range of <A HREF="enterprise_data_models.htm">Enterprise Data Models</A> that offer a top-Level Model 
+supported by Subject Area Models.
+			</p>  
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">Here is our current list of Healthcare Data Models
+<img src="../images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="../images/spacer.gif" height=1 width="1"> 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<OL>
+<LI><A HREF="blood_banks/index.htm">Blood Banks</A> 
+<LI><A HREF="cancer_screening/index.htm">Cancer Screening</A>
+<LI><A HREF="community_medical_centers/index.htm">Community Medical Centers</A>   
+<LI><A HREF="development_disabilities_services/index.htm">Development Disabilities Services</A> 
+<LI><A HREF="dietician/index.htm">Dietician Practice</A>
+<LI><A HREF="doctors_practice/index.htm">Doctor's Practice</A>
+<LI><A HREF="ebola_victims/index.htm">Ebola Victims</A> 
+<LI><A HREF="electronic_medical_records/index.htm">Electronic Medical Records</A> 
+<LI><A HREF="health_centres/index.htm">Health Centers</A>
+<LI><A HREF="health_insurance_claims/index.htm">Health Insurance Claims</A>
+<LI><A HREF="health_topics_and_educational_material/index.htm">Health Topics and Educational Material</A> 
+<LI><A HREF="hospice_patient_care/index.htm">Hospice Patient Care</A>
+
+<LI><A HREF="hospital_admissions/index.htm">Hospital Admissions</A>
+<LI><A HREF="hospitals_clinics_and_orders/index.htm">Hospitals Clinics and Orders</A> 
+<LI><A HREF="hospital_outpatients/index.htm">Hospital Outpatients</A>
+<LI><A HREF="hospital_patients/index.htm">Hospital Patients</A>
+<LI><A HREF="hospital_staff/index.htm">Hospital Staff</a>
+<LI><A HREF="hospital_supplies/index.htm">Hospital Supplies</A>
+
+<LI><A HREF="hospice_patient_care/index.htm">Hospice Patient Care</A>
+<LI><A HREF="hospital_admissions/index.htm">Hospital Admissions</A>
+<LI><A HREF="hospital_operating_theaters/index.htm">Hospital Operating Theaters</A> 
+<LI><A HREF="hospital_outpatients/index.htm">Hospital Outpatients</A> 
+<LI><A HREF="hospitals_and_patients/index.htm">Hospitals and Patients</A> 
+
+<LI><A HREF="lifecycle_of_a_patient/index.htm">Lifecycle of a Patient</A> <IMG SRC="images/new.gif">
+
+<LI><A HREF="community_medical_centers/index.htm">Medical Centers (Community)</A>  
+<LI><A HREF="medical_clinics_and_pharmacies/index.htm">Medical Clinics and Pharmacies</A> 
+<LI><A HREF="medical_laboratories/index.htm">Medical Laboratories</A> 
+<LI><A HREF="medical_laboratories_with_payments/index.htm">Medical Laboratories with Payments</A> 
+<LI><A HREF="medicines_and_authorisations/index.htm">Medicines and Authorisations</A> 
+<LI><A HREF="mortuaries/index.htm">Mortuaries</A> 
+<LI><A HREF="natural_disease_treatments/index.htm">Natural Disease Treatments</A> 
+<LI><A HREF="nurses_roster/index.htm">Nurses Roster</A> 
+<LI><A HREF="nursing_home/index.htm">Nursing Home</A>
+<LI><A HREF="occupational_health/index.htm"> Occupational Health</A> 
+<LI><A HREF="outpatients_medical_center/index.htm">Outpatients Medical Center</A>   
+<LI><A HREF="pathology_tests/index.htm">Pathology Tests</A> 
+<LI><A HREF="patient_care/index.htm">Patient Care</A> 
+<LI><A HREF="patient_data_warehouse/index.htm">Patient Data Warehouse</A> 
+<LI><A HREF="patient_tests/index.htm">Patient Tests</A>  
+<LI><A HREF="patients_visits_to_the_doctor/index.htm">Patients Visits to the Doctor</A>
+<LI><A HREF="pharma_and_biotechnology_information/index.htm">Pharma and Biotechnology Information</A> 
+<LI><A HREF="pharmacies_and_generics/index.htm">Pharmacies and Generics</A> 
+<LI><A HREF="pharmacies_and_prescriptions/index.htm">Pharmacies and Prescriptions</A> 
+<LI><A HREF="pharmaceuticals_dw/index.htm">Pharmaceuticals Data Warehouse</A> 
+<LI><A HREF="pharmaceutical_companies/index.htm">Pharmaceutical Companies</A> 
+<LI><A HREF="pharmaceutical_supplies/index.htm">Pharmaceutical Supplies</A> 
+<LI><A HREF="podiatry_clinics/index.htm">Podiatry Clinics</A>   
+<LI><A HREF="prescriptions_database/index.htm">Prescriptions Database</A>  
+<LI><A HREF="stop_smoking_services/index.htm">Stop Smoking Services</A> 
+<LI><A HREF="symptoms_and_diseases/index.htm">Symptoms and Diseases</A>
+<LI><A HREF="tracking_results_of_treatment/index.htm">Tracking Results of Treatment</A> 
+
+</OL>
+<BR>
+
+<!----- BARRY LOOK AT THIS CODE 
+                        <table width="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="../images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="../images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center"><FONT COLOR=blue FACE=Verdana SIZE=2><B>Kick-Start Database Collections for hEALTHCARE Applications</B></div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="../images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+------>
+
+
+<!-----
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models.htm">The Top Ten Global Favorites</A>
+				</td>
+                             	<td class="cell"  ><FONT COLOR=blue FACE=Verdana SIZE=2> 
+				Taken from those <A HREF="../databases_in_demand.htm">most in demand around the world</A>.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >1</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="advertising_data_models.htm">Advertising</A>
+				</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >2</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_crm_and_customers.htm">CRM and Customers</A>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >3</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_e_commerce.htm">e-Commerce</A>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >4</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_education.htm">Education</A>
+				</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >5</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_entertainment.htm">Entertainment</A>
+				</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell">1</td>
+                               	<td class="cell"><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_health_and_fitness.htm">Health and Fitness</A>
+				</td>
+                                </tr>
+-------->
+
+
+
+<!-----
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >7</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="investment_banking/index.htm">Investment Banking</A>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >8</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_law_enforcement.htm">Law Enforcement</A>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >9</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_students.htm">Students</A>
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                            	<td class="cell"  >10</td>
+                               	<td class="cell"  ><img src="../../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="top_ten_data_models_transport_and_travel.htm">Transport and Travel</A>
+				</td>
+                                </tr>
+--------->
+
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="../images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="../images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+        </TD>
+      </TR></TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+    	<td width="9%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!---
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="../ask_a_question.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+---->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

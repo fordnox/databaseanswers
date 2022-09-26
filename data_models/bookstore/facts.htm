@@ -1,0 +1,94 @@
+<HTML><HEAD><TITLE>Specialist Bookseller</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Database for a Specialist Bookseller</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Bienecke Rare Manuscripts Libray, Yale University" BORDER=1 HEIGHT=106 WIDTH=180 SRC="../../images/bienecke_vsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+An e-Commerce Web Site for a specialist Bookseller.
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Books
+B.2 Book Categories
+B.3 Contacts
+B.3 Customers
+B.4 Orders
+B.5 Order Items
+B.6 Suppliers
+
+C. These THINGS are Related as follows :-
+C.1 A CUSTOMER can place zero or many ORDERS.
+    This provides flexibility where a CUSTOMER calls to register an interest,
+    or places an ORDER which is subsequenlty cancelled.
+C.2 An ORDER is always associated with one and only one CUSTOMER.
+C.3 An ORDER always has one or more ORDER_ITEMS.
+C.4 A SUPPLIER can supply one or more BOOKS.
+C.5 C.6 A BOOK can be in one or many BOOK_CATEGORIES.
+C.6 A BOOK_CATEGORY can have zero or many BOOK_SUB_CATEGORIES.
+C.7 A BOOK_SUB_CATEGORY can belong to one and only one BOOK_CATEGORY.
+
+D. Other Characteristics of these THINGS include
+D.1 A BOOK has a PRICE 
+D.2 A BOOK has a PUBLICATION_DATE.
+
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 What BOOKS do we have about RAILWAYS ?
+F.2 Do we have any BOOKS by Williams Faulkner ?
+
+G. NOTE :
+G.1 The proposed design can easily be extended to selling things 
+other than Books by replacing the BOOKS Table by an 'ITEMS_FOR_SALE' Table.
+
+However, a BOOKS Table will still be useful because many data items are specific
+to BOOKS, such as ISBN number, and it's better to avoid a coding scheme which
+is designed to provide generality at the expense of ease of understanding.
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+20th. January 2001
+</PRE>
+
+</BODY>
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../history.htm">History of Databases</A> 
+        | <A HREF="../../links.htm">Useful Links</A> ]
+<!--    | <A HREF="../../scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

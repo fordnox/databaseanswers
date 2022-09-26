@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Data Model for Conference Proceedings Management</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height=100 valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.tjx.com" TARGET=_NEW>
+<IMG ALIGN=right ALT="Looking Glass" BORDER=0 hspace="0" vspace="4" SRC="images/looking_glass_sml.jpg">
+</td>
+</tr>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Conference Proceedings Management</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Back to the <A HREF="index.htm">Data Model</A>.
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+<B>Subject: Conference Proceedings Management</B>
+
+pls need help in ERD scenario
+
+We have been asked to analyze the data requirements and develop a conference management system to 
+keep information about all the conferences and papers presented in the conferences. 
+
+Conferences are conducted in different parts of the world. 
+
+Each conference is identified by its name and year of the conference. The conference has a starting and ending dates, 
+fields, and conference location (country, venue where that conference is held, and country international telephone code). 
+
+The conference may also organize some social activities. 
+
+For each activity, the system stores the name of the place to be visited, date, duration and the price of visiting that specific place. 
+
+A conference would receive lots of paper to be submitted to the conference, but only selected number of these papers will be accepted. 
+
+Each paper is identified by its main author and title. 
+
+The paper also has number of pages and secondary authors (if any). 
+
+In addition, each paper is given a type (e.g. S: Survey, B: Brief, F: Full, P: Poster). 
+
+A paper can be submitted in only one conference and many papers may be submitted to the same conference. 
+
+Once a paper is submitted in a conference, the system sends a message to the author acknowledging the paper submission. 
+
+For each submitted paper, the system stores whether this paper is accepted or not. 
+
+If a paper is accepted, at least one author should attend the conference to present the paper. 
+
+We want to keep information about the author who presented the paper in the conference. 
+
+Each author is identified by a unique AID, has a name, address, affiliation and contact telephone number of this affiliation. 
+
+An author can write one or more research papers and a paper have one main author and one or more secondary authors. 
+
+Furthermore, an author may attend many conferences, for each attendance we need to store the attendance type (presenting a paper, 
+visitor, student,..) and if the attendee has any disability needs. 
+
+The system should also store the number of papers submitted and accepted for each conference, in addition to number of attendees. 
+
+Authors attending the conference may register for one more of the activities offered by the conference. 
+
+For each registration, the system store number of persons accompanying the author. 
+
+
+<B>Task to be .:</B> 
+
+You are required to do the following tasks: 
+
+1. Use the above information to build an E-R diagram. 
+   Note that there is some missing information in the scenario. 
+   To complete the task, you can make reasonable assumptions about the missing information. 
+   All the assumption made by you must clearly be mentioned in the report before making the ER diagram. 
+
+2. Map the ERD to relations. Identify the primary key for each entity. 
+
+3. For each of the relations created, indicate its normal form. 
+   If the relation is not in the 3NF, decompose it into 3NF relations.</PRE>
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2011</I></FONT></CENTER></PRE>
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<HTML><HEAD><TITLE>Technical PC Support</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Database for Technical PC Support</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Bienecke Rare Manuscripts Libray, Yale University" BORDER=1 HEIGHT=106 WIDTH=180 SRC="../../images/bienecke_vsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Statement of User Requirements :-</B>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>Purpose :</B> Track Technical Support for PCs in an organization. 
+Keep track of the licensing, kinds of software, hardware and so on.
+The organization has an IT department who will do the maintanence on the PCs which 
+should also be tracked. 
+
+PCs and IT department as the entities. 
+For the PCs it is necessary to record details of hardware, software, mouse, keyboard, monitor, user. 
+The IT Department must record who does repairs and records the work done, monitor 
+licensing, report upgrades, record software problems, hardware replacements, keep 
+record of users who report problems, keep record of PC locations. 
+</PRE>
+
+<HR>
+<B>WHY DO WE DEFINE THE FACTS :-</B>
+<BR>These FACTS establish business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>AREA BEING MODELLED :-</B>
+Maintenance Activities by the IT Department.
+PC Inventory.
+
+<B>A. PURPOSE :-</B>
+A.1 To maintain an Inventory of PCs in an organization. 
+A.2 Keep track of the licensing, kinds of software, hardware and so on.
+A.3 The IT department is responsible for PC Maintenance and this should also be tracked. 
+A.4 Track repairs and record the work done.
+A.5 Monitor licensing
+A.6 Report upgrades
+A.7 Record software problems, hardware replacements.
+A.8 Keep record of users who report problems, keep record of PC locations. 
+A.9 Records of the work done
+A.10 Monitor licensing
+A.11 Report upgrades
+A.12 Record software problems, hardware replacements, 
+A.13 Keep record of users who report problems
+A.14 Keep record of PC locations. 
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 PCs
+B.2 hardware, software, mouse, keyboard, monitor, user. 
+B.3 IT Department
+B.4 Repairs 
+B.5 Users
+B.6 Calls
+B.7 IT Support staff
+
+<B>C. These THINGS are Related to each other as follows :-</B>
+C.1 A PC has LOCATION
+C.2 Each PC can be assigned to zero or one USER at one time
+C.3 Each PC has a number of items of INSTALLED_SOFTWARE.
+C.4 Each item of INSTALLED_SOFTWARE has a MAINTENANCE_AGREEMENT, which has a Termination Date.
+C.5 The PC_INVENTORY consists of all PCs, and different Types if equipment held in Inventory.
+C.6 A USER can place a SUPPORT_CALL which relates to a Problem requiring Support Assistance.
+C.7 Each SUPPORT_CALL will have a specific CALL_STATUS,(stored in a Reference Table).
+    This CALL_STATUS can be Open, Closed, and so on.
+C.8 Each member of the SUPPORT_STAFF is also a member of ALL_STAFF within the organization.
+    The SUPPORT_STAFF Table is used to store only details related to Support work.All other
+    Staff details are held in the ALL_STAFF table.
+C.9 Each member of the SUPPORT_STAFF has a number of SKILLS which allow them tp be assigned
+    to specific SUPPORT_CALLS which require those SKILLS.
+C.10 A SUPPORT_VISIT is always associated with one and only one USER.
+C.11 A SUPPORT_VISIT is always associated with one and only one SUPPORT_PERSON.
+C.12 A USER always has one or more ASSIGNED_PCS.
+C.13 A USER can place a SUPPORT_CALL for one PC.
+C.14 The SUPPORT_CALL is allocated to one SUPPORT_STAFF member, and may be passed on 
+     to other SUPPORT_STAFF members. 
+C.15 The same PC can be assign to different USERS over a period of time.
+
+
+<B>D. Other Characteristics of these THINGS include</B>
+D.1 A Software License can have zero or one EXPIRY_DATE
+D.2 A PC is identified by an EQUIPMENT_NUMBER	
+
+<B>E. Sample Data includes :-</B>
+   To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 How many call do we get to support Windows 2000 ?
+F.2 What is the average number of Calls per day for all Support Staff ?
+
+Barry Williams
+Principal Consultant
+Database Answers
+28th. January 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

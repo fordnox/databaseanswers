@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>The Data Model for the Great Wall of China
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="https://en.wikipedia.org/wiki/American_Pickers" TARGET=_NEW>
+<IMG ALT="Wallof China" BORDER=0 HEIGHT=108 SRC="images/Wall_Photo_sml.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%">
+	<PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>The Data Model for the Great Wall of China</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for Database for the Great Wall of China'>An Access Database</A> is available. 
+<HR>This is an example of a 
+<A HREF="../bom/index.htm">Bill of Materials</A> Design Pattern and shows how we use the Pattern in practice.
+
+<HR> This material is laid out as a Tutorial and supplements  <A HREF="../../tutorials.htm">our page of Tutorials</A>.
+<BR>It will help you understand the thinking behind the construction of a simple Data Model.
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TD ALIGN=left VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>My Approach</B>
+<BR>My purpose is to design a simple Datababase for a Toilet, then I will use the Database to create 
+<BR>lists of equipment in each final Product, with partial and total costs.
+
+
+<BR>My first Step is to establish a top-level view from the Head Office.
+<BR> Then Step 2 defines a Business Data Model which shows how the things we are interested in can be integrated with the Head Office.
+<BR>Then for Step 3 I obtain a photo that helps me understand a visual perspective of the database functionality,   
+
+
+<BR>Then in Step 4 I design A Conceptual Data Model
+<BR>which is very useful for discussion with business users.
+<BR>Then I design the Logical Data Model 
+<BR>Finally I create the Physical Model which I use to create the Database.
+
+
+<BR>
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 2 - Review the Business Data Model
+<BR><BR>
+<IMG ALT="Toilet Simple" BORDER=1 SRC="images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 3 - I start with a Photograph of the Great Wall
+<BR><BR>
+<IMG BORDER=1 SRC="images/wall_photo_sml.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 4 - Then I find a Drawing of the Great Wall</B>
+<BR>and helps me to identify the separate parts that I use in my Data Model. 
+<BR><BR>
+<IMG BORDER=1  SRC="images/wall_drawing_lge.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 1 - View from Top
+<BR><BR>
+<IMG BORDER=1 SRC="images/view_from_the_top.jpg"> 
+</TD>
+</TR>
+
+
+
+<!-------
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 3333 - This helps to identify parts in my simple Toilet</B>
+<BR>that correspond to parts in the American Standard Toilets Parts Diagram.
+<BR><BR>
+<IMG ALT="Img 3 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-toilets-parts-diagram_med.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 5 - Then I design a Conceptual Data Model</B> 
+<BR>for the Diagram in Step 2.
+<BR>I have added the Toilet Lid and Seat because 
+<br>they don't appear in the American Standards Diagram.
+ 
+<BR><BR>
+<IMG ALT="Img 4 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-diagram.jpg">
+</TD>
+</TR>
+----------->
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 6 - I simplify the Conceptual Data Model</B> 
+<BR>I generalise the Model by replacing specific Components by generic Components.
+<BR>In this case, it means replacing Lid and Seat, Tank and Bowl by 'Assemblies',
+<BR> and Trip Lever by 'Components'. 
+<BR><BR>
+<IMG ALT="Simple Conceptual Data Model"  BORDER=1 HEIGHT=250 SRC="images/hierarchy_123.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 7 - Then I create a Realistic Logical Model
+<BR><BR>
+<IMG ALT="Img 2 - Parts Diagram"  BORDER=1  SRC="images/logical_model_option_1.gif">
+</TD>
+</TR>
+
+
+
+<!-------------
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Step 8 - Then I create the Physical Model to generate the Database.</B>
+<BR>
+<BR>
+<IMG ALT="Physical Data Model"  BORDER=1 SRC="images/physical_data_model.gif"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Step 9 - Finally, we produce Templates to create CSV Files.</B>
+<BR>
+<BR>
+<IMG ALT="Physical Data Model"  BORDER=1 SRC="images/business_rules.gif"> 
+</TD>
+</TR>
+---------->
+
+</TABLE>
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>January 22nd. 2019
+
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2019</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+
+
+
+</body>
+
+</html>

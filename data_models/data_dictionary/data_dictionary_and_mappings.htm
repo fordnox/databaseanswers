@@ -1,0 +1,136 @@
+<HTML><HEAD><TITLE>Data Dictionary and Mappings</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/fishing_boat_in_fog_lge.jpg">
+<IMG ALT="Fishing Boat in Fog, Alaska" BORDEeeR=1 SRC="../../images/philg/fishing_boat_in_fog_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Data Model for Data Dictionary and Mappings</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<A HREF="index.htm">Back to the Conceptual Data Model</A>, and an
+<A HREF="mailto:db4_dd_users@databaseanswers.com" HREeeeF="data_dictionary_access_db.htm">Access Database</A> is available on demand.
+
+<!---
+and <A HREF="facts.htm">the Business Rules</A> are available for review.
+This Model shows a Glossary of Enterprise Business Terms.how items from Source Systems are mapped onto Items in the Target System(s).
+<BR>These Items would be stored in some sort of Data Dictionary.
+<BR>Typically Microsoft Access or in the Migration Tool, and
+<BR>would then be used to drive the data validation, clean-up and conversion.
+--->
+
+<P>
+<CENTER>
+<IMG ALT="Data Model for a Data Dictionary and and Mappings" HEIiGHT=543 WIiDTH=664 SRC="images/data_dictionary_and_mappings.gif" border="0"> 
+
+</CENTER>
+
+<!---
+<BR>Here's the Script to create the Tables in Oracle ...
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=1> 
+CREATE TABLE DD_Users(
+ user_id         INTEGER PRIMARY KEY,
+ user_login_name VARCHAR2(30),
+ user_category   CHAR(15),
+ user_registration_date DATE,
+ user_email      VARCHAR2(80),
+ user_country    VARCHAR2(80),
+ user_language   VARCHAR2(80))
+/
+
+CREATE VIEW VW_Users AS
+SELECT
+user_login_name ,
+user_category   ,
+user_registration_date,
+user_country    ,
+user_language   ,
+user_email 
+FROM  table_name -- eg dd_users
+/
+
+
+INSERT INTO dd_Users
+(user_id,user_login_name,user_category,user_registration_date,user_email,user_country,user_language) 
+VALUES (1,'JoeB','BASIC','01-Jan-2003','joebloggs@ukmail.com','UK','English')
+/
+
+INSERT INTO dd_Users
+(user_id,user_login_name,user_category,user_registration_date,user_email,user_country,user_language) 
+VALUES (2,'JohnD','Q-BASIC','03-Jan-2003','john.doe@usmail.com','USA','English')
+/
+--->
+
+
+
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR>
+
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../index.htm">Home Page</A>
+        | <A HREF="../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../faqs.htm">FAQs</A> 
+        | <A HREF="../site_map.htm">Site Map</A> ]
+</CENTER>
+
+<P>
+
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 DatabaseAnswers.com 2004</I></FONT></CENTER>
+
+</HTML>

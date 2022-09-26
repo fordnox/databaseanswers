@@ -1,0 +1,152 @@
+<HTML><HEAD><TITLE>JRun Setup</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALT="Bienecke Library of Rare Document, Yale" SRC="../../images/bienecke_xsml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>How to set-up JRun for Oracle</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>    
+1) Your sub domain has been configured for the use of Tomcat for java
+
+2) Connection from .jsp to oracle:
+"jdbc:oracle:thin:@orca.scorpions.net:1521:ORA8","userid","password"
+
+i.e. ...
+"jdbc:oracle:thin:@orca.scorpions.net:1521:ORA8","bw","m3"
+
+2) Add all necessary drivers for JDBC connection pool in our Java Engine.
+
+3) Refer to this document for implementation for your JDBC connections:
+   http://developer.java.sun.com/developer/onlineTraining/Programming/JDCBook/conpool.html#pool
+
+4) Tomcat Configuration:
+   /home/barryw/public_html/answers- your tomcat virtual directory, 
+   any .jsp files placed here will automatically reload.
+<B>I have done this.</B>
+
+5) You can call jsp page using :-
+   <http://barryw.scorpions.net/answers/jsp_file.jsp>
+<B>This is on the GMI Systems Home Page</B> :-
+http://barryw.scorpions.net/answers/ShowBook.jsp for Dmitry's ShowBook.
+<A HREF="http://barryw.scorpions.net/answers/ShowBook.jsp">Dmitry's ShowBook</A>
+
+6) Location of your web.xml file 
+   (this is the main configuration file for servlets) :-
+      /home/barryw/public_html/answers/WEB-INF 
+<B>Copied web.xml</B>
+
+7) We made sample configuration for one servlet follow the same 
+   pattern as this entry to map your servlets
+
+8) You must request us by email to restart tomcat whenever you update your
+      web.xml file (send email to support@scorpions.net  subject: "restart tomcat on doit")
+<B>Not done yet.</B>
+
+9) The location of your class files is :-
+      /home/barryw/public_html/answers/WEB-INF/classes 
+<B>Copied Dmitry's class files.</B>
+
+10) You may call a servlet in the 
+   /home/barryw/public_html/answers/WEB-INF/classes directory 
+   the following way <http://barryw.scorpions.net/answers/classfilename>
+   or <http://barryw.scorpions.net/answers/> how ever you map it in web.xml
+<B>Barry doesn't know what to do here !!!</B>
+
+11) Your taglibs goes here :-
+    /home/barryw/public_html/answers/META-INF   
+<B>Barry doesn't know what to do here either !!!</B>
+
+
+from :-
+   Scorpions Communications, Inc.
+   http://www.valudeal.com http://www.scorpions.net
+   Customer Service: info@scorpions.net
+   Support: support@scorpions.net 
+</PRE>
+
+
+
+
+<!---
+<P>A Physical Data Model is shown on this page, and <A HREF="index.htm">a Conceptual Model</A> is also available.
+
+<P>The FACTS define the Business Rules ...
+<P>Each Document is of a particular Type, such as Manual, Standard Operating Procedures, Tutorials, etc..
+<BR>Each Document is made up of a number of Components :-
+<OL>
+<B><LI>Chapters</B>
+<UL><LI>Each Chapter contains a number of Sections</UL>
+<B><LI>Sections</B>
+<UL><LI>Each Section contains a number of Paragraph.</UL>
+<B><LI>Paragraphs</B>
+<UL><LI>Each Paragraph can contain a number of Lines.</UL>
+<UL><LI>Each Paragraph can contain a number of Images.</UL>
+<P>
+<B><LI>Images</B>
+<UL><LI>Each Image can be associated with a number of Paragraphs.</UL>
+</OL>
+--->
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2002</I></FONT></CENTER>
+
+</HTML>

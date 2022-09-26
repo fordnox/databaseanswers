@@ -1,0 +1,213 @@
+<html>
+<head>
+<title>Specifications for the Data Model for a Healthcare Database</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.seidor.us/content/seidor-us/en/customers/chemicals--.html#.V-RFIVXrvIU" TARGET=_NEW>
+<IMG ALT=Lab_technicians" BORDER=0 SRC="../../images/da_vinci_man_sml.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Specifications for the Data Model for a Healthcare Database</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Back to the <A HREF="index.htm">the Home Page<A>
+
+
+<BR><BR>
+
+<!----------
+<HR>I have put in <B>Bold</B> the things that become Entities and 'Things of Interest' in the Data Model.
+<BR>My Approach has been to combine flexibility and a stable framework. 
+<HR> 
+----->
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>This pic is awful, but here are what I would group as tables and examples: 
+
+   Organizations (hospital, clinic name);
+   Providers (dr Smith, dr Johnson); 
+   Patients (insuranceid#, prob list, pcp); 
+   Payers (insurance)(coverage, region, policy)
+   Procedure (mri) Proc Code (cpt: 72148)
+   Associated diagnosis (ICD code: M51.36) 
+   Vendor (evicore)--third party claims-- different between payers.
+   Fax#(xxx-xxx-xxxx) aka claim submission route
+   Input: everything other than fax and vendor
+   Output: vendor and fax
+
+Also, every single cpt code has several possible diagnosis codes that 'qualify' as in showing 
+medical necessity. 
+
+For example, if my orthodontist recommends braces, my insurance company will want to know 'why'. 
+
+Whether my insurance pays or not is totally dependent on proving it's medically necessary. 
+
+The diagnosis code my provider chooses makes all the difference. 
+
+If I need braces because my bite doesn't line up, and will continue to cause jaw problems and pain as time 
+progresses, then that is considered necessary. And a predetermined alpha numeric code is submitted to the 
+insurance company for approval.
+
+However, if my provider recommended braces because I have an over bite and am embarrassed about it, this is 
+considered cosmetic, and my insurance company will likely not pay.
+
+The guidelines are set by doctors and made nationally available. As are the codes.  
+
+I need to be able to plug in my payer, procedure, and diagnosis and output the vendor, fax and likelihood of 
+codes qualifying for necessity. Having it all in a central location will help organize me. 
+
+As currently i must go to every payer website individually to locate policies, vendors, fax numbers, and accepted codes.
+
+If I made a table of each of these independently i could then input the info one time and use it 
+over and over (until things change, and then I can update in one location and see changes throughout.)
+
+I'm sure it's confusing because I don't explain well and I'm unsure of your medical field knowledge. 
+
+I know it's possible. But then again, I don't believe anything is beyond our realm to accomplish--
+its just a matter of time. Questions? Comments? Concerns?
+<HR>
+Absolutely need a tutorial. 
+
+Thanks again!</PRE>
+
+<HR>
+<FONT COLOr=blue FACE=Verdana SIZE=2>
+Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>September 28th. 2016
+
+
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2016</I></FONT>
+<BR>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+
+
+
+</body>
+
+</html>

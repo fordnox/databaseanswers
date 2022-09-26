@@ -1,0 +1,399 @@
+<html>
+<head>
+<title>Designing OLAP Cubes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		Discussion of designing OLAP Cubes <img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+          	<td width="100%"> 
+          	<p class="small"><FONT SIZE=2>Before we get started, here's a <A HREF="http://en.wikipedia.org/wiki/OLAP_cube" TARGET=_NEW>Wikiedia entry for OLAP Cubes</A>.
+
+<BR><BR>
+<!---
+<B>This is an extract of a Microsoft Paper on SQL Server 2000, called 
+<A HREF="http://www.microsoft.com/technet/prodtechnol/sql/reskit/sql2000/part6/c2261.asp" TARGET=_NEW>'Cubes in the Real World'</A>.</B></p>
+--->
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Method :-</B><!--- The Principles : - --->
+<LI>Aim for an iterative Approach with substantial User involvement.
+<LI>Review results after each major Iteration.
+
+<!--- <B>Step 1 :</B> ---><B>Choose between a Star Schema or a Snowflake Schema?</B>
+Star Schemas give better performance, and are therefore recommended when volumes are high.
+
+<B>Should dimensions be shared or private ?</B>
+Usually choose shared to ensure widest usage later. Only choose private to protect
+restricted or secure data.
+
+<B>What is “Dimensional Reporting ?</B>
+Dimensional modeling utilizes "measures" and "dimensions".  
+Measures include a variety of <B>key performance indicators</B>, and may 
+include "simple" measures (amounts paid to providers, patient days, etc.) as well as 
+computed measures or ratios, such as cost per member per month.  
+Measures can be presented at various levels of summarization or drilldown, depending on 
+how the dimensions of the analysis are displayed.  
+
+For example, a calculation of a cost PMPM ratio for a specific primary care physician for 
+a specific month would automatically limit the cost numerator and the member-months denominator 
+to the specified PCP and time period.  
+
+Dimensions represent the variables by which measurement is performed, such as date, location, 
+product code, etc.  
+
+Dimensions can be arranged in hierarchies, allowing users to drill down through the data.  
+For example, the “service date” dimension contains the hierarchy of YEARS drilling down to QUARTERS, 
+and then to MONTHS.  
+
+Careful design of the hierarchy in a dimension facilitates drill-down reporting by designing the hierarchies to be 
+intuitive and to follow the thought process of the analyst.  
+
+A dimensional design model allows the user to view the measures in any reasonable combination of the dimensions.  
+In Microsoft Excel pivot tables this is done by “dragging” a dimension name to a row or column heading in a table, 
+which will automatically arrange the measures in the table according to the dimensions displayed.  
+This provides a practically limitless set of "reports".  
+Users are not limited by predetermined capabilities of the system, since each dimension can be used as a row or a 
+column in a report, or as a "filter” to select certain data to appear in that report.
+
+Dimensional reporting is not only useful in designing interactive tools, but also in design of static reports.  
+
+By designing Reports using <B>common definitions</B> for these headings, such confusion can be avoided.  
+In addition, using dimensional design for static reports greatly facilitates the ability to drill down to 
+those reports using the reporting tools described below.
+
+<B>What is an OLAP cube ?</B>
+An OLAP cube is a specially designed database that is optimized for reporting. 
+
+While most databases designed for online transaction processing such as those used in claims processing are 
+designed for efficiency in data storage, 
+OLAP cubes are designed for efficiency in data retrieval.  
+
+This means that the data is stored in such a way as to make it easy and efficient for reporting.  
+
+Regular “relational” databases treat all data into the database similarly, however 
+OLAP cubes categorize data into "dimensions" and "measures".  
+
+Measures represent items that are counted, summarized or aggregated, such as costs or units of service.  
+
+Dimensions are variables by which measures are summarized, such as hospitals, physicians, or dates of service.  
+This organization of data greatly facilitates the ability to formulate data requests based on real-life situations.  
+In addition, many of queries that could be posed to the data are "pre-aggregated" in the database such that 
+the answers have already been precalculated and can be reported without delay.
+
+The term "cube" comes from the geometric object that has three dimensions.  
+OLAP cubes can have many more dimensions than 3, but the term continues to apply.
+
+<B>What is a pivot table ?</B>
+A pivot table is a Microsoft Excel feature that allows access to data that is organized into dimensions and measures.  
+It acts as an "OLAP client" to allow users to interact with data stored in OLAP cubes using the familiar Excel 
+spreadsheet format.
+
+<B>Can I use other programs to access OLAP cubes ?</B>
+
+Many other programs can be used as OLAP clients.  
+Microsoft Data Analyzer allows arranging dimensions and measures in a highly graphical format, while 
+Crystal Analysis capitalizes on its ability to create Web-based templates.  
+
+Any of these clients can be used with any OLAP cube, including those designed by DGA Partners.  
+We've found that Excel generally provides the best blend of free-form analysis with exceptional functionality.
+
+<B>Why are OLAP cubes important ?</B>
+Before OLAP technology was well developed, data had to be extracted from databases using "queries".  
+
+This meant that the analyst had to structure a request to the database for the information desired, and then 
+submitted this query to the database server.  
+That server would processing query and return the results.  
+Depending on the size of the database and the data requested, this query could take minutes or hours to complete.  
+In this sense, the "online" aspect of this type of reporting is questionable.
+
+OLAP cubes are fundamentally different in that they "pre-aggregate" the data used to answer many of queries that 
+are anticipated.  
+
+This pre-aggregation occurs when the cube is built, which means that this process is already completed when the 
+user queries the data.  
+
+In addition, the size of an OLAP cube depends on the number of measures and dimensions and contains -- 
+it may have no relationship to the side of the initial data set.  
+
+Therefore, a claims data set having millions of members can be consolidated into a relatively small OLAP cube 
+that can return data almost instantaneously.
+
+OLAP technology has been around since the mid-1990s, but has developed significantly over the last two to three years.  
+Prior to that, the need for efficient storage of data took priority over the need for efficient reporting, simply because 
+disk space was so expensive.  
+
+In addition, the availability of faster CPUs has made it possible to compute aggregations on huge data sets within a 
+reasonable period of time.  
+
+Finally, the tools necessary to design OLAP cubes have become much more powerful over last few years
+
+Analytical products designed more than two years ago are likely to be based on the older query-based reporting technology.  
+They can never be as fast or as user-friendly as those based on OLAP data sources.
+
+Does an OLAP cube allow me to <B>"drill down"</B> into my data?
+
+Yes, this is a unique feature that is part of the OLAP database structure.  
+When designing an OLAP database, dimensions are structured into "hierarchies".  
+For example, service dates can be arranged in a hierarchy of days, months, quarters, and years.  
+Similarly, diagnoses can be arranged by major and minor categories, drilling down to the individual diagnosis code.  
+The OLAP cube "knows" the hierarchy, so if the analyst issues the command to "drill down", the cube knows the 
+next level of data to be presented.
+
+Our claims data is already contained in a data warehouse.  Why do you have to create another one?
+
+The term "data warehouse" has been used to describe many different types of databases.  
+Frequently, it is used to describe a collection of tables containing claims data in a highly normalized form, meaning that 
+the data is organized for maximum storage efficiency.  
+
+While reports can be generated from such a database, 
+it is often cumbersome to do so because of the organization of the data.  
+
+In addition, to meet reporting needs it is often necessary to include information that is not contained in the 
+Claims data warehouse, such as IBNR factors, administrative adjustments, or other similar data that is found in 
+spreadsheets or desktop databases.  
+
+Before efficient reporting can be done, this data must all be brought together, relationships built, data integrity 
+verified, dimensions and measures identified and made consistent, and the whole structure optimized for use in 
+developing OLAP cubes. 
+
+How can we can access OLAP cubes without servers on our site ?
+
+Several alternatives are available.  
+First, we can make the data available to you over the Internet using a standard Internet Explorer interface.  
+In this system, you can connect to one of our servers and open a "terminal server session".  
+
+From the point on, you'll be working on our server, even though the desktop appears on your computer.  
+
+You can use Excel, or any other OLAP clients, and print reports and analyses to your local printers.  
+
+You can also copy cells from the server’s desktop into a spreadsheet located on your own desktop; 
+however the local spreadsheet will not have OLAP functionality.  
+
+This approach is especially useful for clients whose computers may be several years old, and might be 
+too slow for effective OLAP analysis.  
+
+This allows you to utilize our state-of-the-art servers without upgrading your own hardware.  
+It also avoids the need for you to install or set up any software -- we can create a desktop for you 
+that contains everything you need.
+
+This alternative offers the advantage of "instant updating", in that data that we have process 
+is immediately available for your use, without having transfer it from our site to yours.  
+
+It also require a full-time connection from your computers to the Internet.  
+For more information about this service, see Using the DGA Partners Secure Data Server below.
+
+Is there a way that we can bring the OLAP cubes "in-house", so that we don't need constant Internet access?
+
+Yes, we can install the OLAP cubes on servers located your site.  Actually, a "server" is unnecessary -- 
+most computers built within the last year, and populated with sufficient memory, are sufficiently powerful 
+to maintain an OLAP server and client.  
+
+In cases where portability is necessary, we have utilized laptop computers to provide both the OLAP server 
+and Excel client functions.  
+
+This allows the user to take the databases "on the road" to meet with physicians, payors, or others.  
+
+This solution requires you to obtain and install Microsoft SQL Server 2000 on each computer to be used as a server.
+
+Where can I find more information about OLAP and pivot tables?
+
+See the DGA Partners OLAP and Data Analytics Resource page here 
+
+<B>How does DGA Partners approach a data reporting project ?</B>
+
+DGA Partners structures data reporting engagements into two major phases.  
+
+In the first phase, we transfer, edit, and load data from its original source into an "analytical data warehouse", 
+located on our data servers.  
+
+The second phase is tailored to the needs of the client, and can involve 
+(a) the preparation of tabular reports, 
+(b) development of OLAP cubes that the client can use either on their own computers or through the Internet to 
+DGA Partners servers, 
+(c) the transfer of the analytical data warehouse to the client servers, 
+or (d) additional consulting services, including financial and clinical analysis of client data.
+
+<B>What types of standard reports do you produce ?</B>
+DGA Partners has a library of standard report formats that other clients have found useful.  
+However, it is important to realize that the ad hoc reporting capability of an OLAP-based reporting system allows 
+users to access any information that is available in the database.  
+
+By carefully structuring the dimensions and measures in an OLAP cube, we can allow users to access any possible data.  
+Thus, the concept of "standard reports" becomes less meaningful.
+
+Barry Williams
+August 14th. 2004
+Principal Consultant
+Database Answers Ltd.
+London
+England
+</p></PRE>
+		</p>
+		</td>
+	</tr>
+	</table>
+	
+	</td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+
+      
+    </td>
+  </tr>
+</table>
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

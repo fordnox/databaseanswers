@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Facts about the Data Model for Church Donations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.hollischurch.org/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Congregational Church of Hollis, New Hampshire (Click for Hollis Church Web Site)" hspace="0" vspace="4" SRC="images/church_sml.jpg">
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+<img alt="Church"    src="images/lft_church.bmp"> 
+<img alt="Donations" src="images/rt_donations.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+
+<BR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Specifications have been defined by Scott in the following terms :-</B>
+
+Greetings,
+
+I am trying to create a schema for a church donation database project I am working on.  
+
+If you could help - jumpstart me in the right direction - I would appreciate it.  
+
+I've read several, and am reading more of your tutorials and find them to be very informative.  
+
+I just might be making this a lot more complicated than is needed.  
+
+Here are the entities as I see it, please fill in the spaces..........
+ 
+The project will be web based where "users" can create an account and log in to make donations to 
+one-to-many churches in our association(which is actually a world wide organization).  
+
+The churches are arranged in regions, and within the region the churches are grouped in conferences.  
+
+So - a conference will contain 2 or more individual churches.
+ 
+A "user" can donate money to one or more churches.  
+
+The donation can be designated to one-to-many funds sponsored by the church.
+ 
+I will have to store data about the donation (and possible split) a give an accounting statement 
+quarterly and yearly.
+ 
+Any help and guidance you can give will be greatly appreciated.
+ 
+Thanks in advance,
+Scott Smith
+
+<HR>
+<B>From these Specifications, we can see that the Things of Interest</B> are :-
+<UL>
+<LI> Accounts
+<LI> Churches
+<LI> Conferences
+<LI> Donations
+<LI> Funds
+<LI> Users
+</UL>
+
+How are these Things related ? :-
+<UL>
+<LI> An Account is associated with one and only one User.
+<LI> A User can have one or many Accounts.
+<LI> A User can make zero, one or many Donations.
+<LI> A Donation can be plits between several Funds.
+</UL>
+
+Barry Williams
+Principal Consultant
+May 27th. 2009
+Database Answers Ltd.
+London, England
+</PRE>
+
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

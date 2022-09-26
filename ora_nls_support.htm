@@ -1,0 +1,277 @@
+<HTML><HEAD><TITLE>Ask a Question</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1>
+<IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>Oracle National Language Support</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Lake and Reflection in Mirror, Switzerland" BORDER=1 HEIGHT=94 WIDTH=142 
+SRC="images/switzerland/swiss_mirror_lake.jpg">
+</TD>
+</TR>
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>This section of the discussion starts with the assumption that the
+Oracle database is set up with US7ASCII character set.
+
+Character sets are used to actually STORE locale-dependant data.
+When clients from different locales connect to the database, automatic
+conversion of character sets takes place in the background to
+display the data properly (based on the NLS_LANG setting on the client).
+When a client in a different locale sends
+data back to Oracle, same conversion takes place before data is actually
+stored. Data is ALWAYS stored in the character set specified in the
+CREATE DATABASE statement (or default, if not explicitly specified).
+
+During these character set conversions back-and-forth, any characters that
+cannot be mapped are replaced with "replacement characters". 
+The following is an excerpt from the Oracle8i National Language Support Guide,
+Release 8.1.5 --
+<quote>
+If, for example, a server used US7ASCII and a German client WE8ISO8859P1,
+the German character ß would be replaced with "?" and the character ä would
+be replaced with "a".
+
+Replacement characters may be defined for specific characters as part of a
+character set definition. Where a specific replacement character is not defined,
+a default replacement character is used. To avoid the use of replacement characters
+when converting from client to database character set, the server character set
+should be a superset (or equivalent) of all the client character sets. In the above
+example, the server's character set was not chosen wisely. If German data is expected
+to be stored on the server, a character set which supports German letters is needed,
+for example, WE8ISO8859P1 for both the server and the client. 
+</quote>
+
+If a character got STORED as a "?" (or some other incorrect conversion), there is
+nothing you can do through init.ora to fix it. 
+Parameters from init.ora do not touch the structure and/or contents of data. 
+The only way to fix this issue would be to change the database character set. 
+Init.ora will allow you to modify the language and the territory but not the character set.
+</PRE>
+
+<HR>
+
+    NLS often defaults to American which can cause problems in a European or Global context.
+<BR>During conversion from one language to another, 
+<BR>any character which has no equivalent is replaced by 
+<BR>a character which is character-set dependent.
+<HR>The Oracle Parameter to change is NLS_CHARACTERSET,(equivalent to NLS_LANGUAGE).
+<HR>This can be done in a number of ways, all of which are discussed below.
+<HR><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+There are four ways to specify NLS parameters in general --
+1. As initialization parameters on the server. 
+   Parameters can be included in the initialization file (INIT.ORA) to specify a default server NLS environment.
+   These settings have no effect on the client side; they control only the server's behavior.
+   For example:  NLS_TERRITORY = "CZECH REPUBLIC"
+2. As environment variables on the client. NLS parameters can be used to specify
+   locale-dependent behavior for the client, overriding the defaults set for the server
+   in the initialization file.For example: on a UNIX system: 
+   % setenv NLS_SORT FRENCH
+3. As ALTER SESSION parameters. NLS parameters set in an ALTER SESSION statement can be used
+   to override the defaults set for the server in the initialization file,
+   or set by the client with environment variables. For example:
+   SVRMGR> ALTER SESSION SET NLS_SORT = FRENCH
+4. As an SQL function parameter. NLS parameters can be used explicitly to hardcode
+   NLS behavior within a SQL function. Doing so will override the defaults set for the
+   server in the initialization file, the client with environment variables, or
+   ALTER SESSION on the client.For example: 
+  TO_CHAR(hiredate, 'DD/MON/YYYY', 'nls_date_language = FRENCH')
+
+* The following NLS parameters can be initialization parameters, environment variables,
+  and ALTER SESSION parameters: NLS_CURRENCY NLS_DATE_FORMAT NLS_DATE_ LANGUAGE 
+  NLS_ISO_CURRENCY NLS_NUMERIC_CHARACTERS NLS_SORT 
+* The following parameters can be specified as initialization parameters and
+  ALTER SESSION parameters, but not as environment variables: NLS_LANGUAGE  
+  NLS_TERRITORY 
+* The following NLS parameters can be set only as environment variables: 
+  NLS_CREDIT NLS_DEBIT NLS_LANG NLS_LIST_SEPARATOR NLS_MONETARY_CHARACTERS 
+  NLS_NCHAR 
+
+The above is a good overview about the NLS environment in Oracle.
+
+Now turning to the problem on hand,
+I am assuming that your analysis that you need to change the character set
+is correct (there are a few issues with Microsoft's DTS and OLEDB and ODBC drivers
+for Oracle,  which you can find on MSDN, if you don't hit the proverbial
+nail on the head with character sets). 
+
+Changing Character Sets cannot be done through init.ora :-(
+NLS_LANG is about the only thing that will allow you to use a different
+character set for a session.
+IDEALLY, the server's character set should be a superset of all client locales.
+Since it sounds like your server is currently set up with US7ASCII, and US7ASCII
+is actually a SUBSET of WE8ISO8859P1.
+It is better to change the server's character set instead of using NLS_LANG
+for a client session. It is possible to change character sets if the new
+character set is a STRICT SUPERSET of the old character set, without recreating
+the database. 
+In this case, WE8ISO8859P1 is a strict superset of US7ASCII.
+With that in mind, try the following -- CHANGE ON THE SERVER
+====================
+The syntax to do this is through the ALTER DATABASE statement --
+ALTER DATABASE [<db_name>] CHARACTER SET <new_character_set>;
+ALTER DATABASE [<db_name>] NATIONAL CHARACTER SET <new_NCHAR_character_set>;
+To change the database character set, perform the following steps. Not all of them are absolutely necessary,
+but they are recommended: SQL> SHUTDOWN IMMEDIATE;   -- or NORMAL
+    <do a full backup>SQL> STARTUP MOUNT;
+SQL> ALTER SYSTEM ENABLE RESTRICED SESSION;
+SQL> ALTER SYSTEM SET JOB_QUEUE_PROCESSES=0;SQL> ALTER DATABASE OPEN;
+SQL> ALTER DATABASE CHARACTER SET WE8ISO8859P1;
+SQL> SHUTDOWN IMMEDIATE;   -- or NORMALSQL> STARTUP;
+If you want to try using NLS_LANG on the client --CHANGE ON THE CLIENT
+====================
+To change NLS_LANG for clients only, for example, using MS SQL Server,
+this discusses how to do this for Windows :-
+Use REGEDIT to modify the registry setting of NLS_LANG
+(probably, HKEY_LOCAL_MACHINE\Software\Oracle). Do a "Find" through RegEdit on NLS_LANG
+to make sure.)
+The recommendation would be to use ALTER DATABASE since for the character
+sets involved, it is a SAFE operation. 
+</PRE>
+
+<HR>
+<BR><BR>There are five approaches :-
+<BR><BR><B>1)</B> Edit init.ora by changing :-
+<BR>from NLS_CHARACTERSET=USASCII7
+<BR>to NLS_CHARACTERSET=WE8ISO8859P1 
+<BR><BR>Then Shutdown Oracle ...
+<BR>svrmgrl>connect internal as sysdba 
+<BR>svrmgrl>shutdown immediate
+<BR>Start-up Oracle ...
+<BR>svrmgrl>connect internal as sysdba 
+<BR>svrmgrl>startup open DatabaseName
+
+
+<BR><BR>Check that this solves the problem, and if not, it may be necessary to re-Import the Database.
+
+<BR><BR><B>2)</B>
+<BR>svrmgrl>Connect as sys
+<BR>svrmgrl>update props$
+<BR>        set value$='WE8ISO8859P1'
+<BR>       where name in ('NLS_CHARACTERSET', 'NLS_NCHAR_CHARACTERSET');
+ 
+<BR><BR>Be sure to take a cold backup of the database before this change, because
+if you set it to a Non-existing Character Set, the database will not start after 
+shutdown.
+
+<BR><BR><B>3)</B> Specify the Character Set as part of the Create Database
+<BR>US7ASCII is the default 'character set' at database creation.
+<BR>To change this add the line CHARACTER SET WE8ISO8859PI to the CREATE DATABASE command.  
+<BR>In fact, it is good practice to include this line in every create database.
+<BR>After a Database has been created, it may be necessary to export, 
+recreate the database and re-import it.
+<BR>In which case, change the NLKS_CHARACTERSET,(equivalent to NLS_LANGUAGE),
+parameter values in the init.ora file before recreating the database. 
+
+
+<BR><BR><B>4)</B> Since we8iso8859p1 is a strict superset with us7ascii it is possible
+to alter the Character Set for a Database without recreating it.
+<BR>This facility is undocumented in Oracle 8.0.5 but try looking on MetaLink for 
+Technical Note :66320.1 
+<BR>(V8: Changing the database or national character set).
+
+<BR>This is the command that is required :-
+<BR>alter database character set we8iso8859p1;
+<BR>Then do the shutdown and startup again.
+
+
+<BR><BR><B>5)</B> Alternatively, ALTER SESSION to alter the Character Set for the Session.
+<BR>Check settings at any time at different levels as follows :-
+<BR>SELECT * FROM NLS_SESSION_PARAMETERS, NLS_INSTANCE_PARAMETERS and NLS_DATABASE_PARAMETERS.
+
+<BR><BR> 
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>6)</B> Use this Character Set:
+
+AMERICAN_AMERICA.WE8ISO8859P1
+
+As per Oracle Documentation for Specifying Character Sets :
+
+The character encoding scheme used by the database is defined at database creation as 
+part of the CREATE DATABASE statement. 
+
+All data columns of type CHAR, VARCHAR2, and LONG, including columns in the data dictionary, 
+have their data stored in the database character set.
+
+In addition, the choice of character set determines which characters can name objects in the database. 
+Once the database is created, the database character set cannot be changed without re-creating the database. 
+Hence, it is important to consider carefully which character set to use. 
+
+The database character set should always be a superset or equivalent of the operating system’s 
+native character set. 
+
+The character sets used by client applications that access the database will usually determine 
+which superset is the best choice.
+
+If all client applications use the same character set, then this is the normal choice for 
+the database character set. 
+
+When client applications use different character sets, the database character set should be a
+superset (or equivalent) of all the client character sets. 
+This will ensure that every character is represented when converting from a client character set 
+to the database character set.
+
+When a client application operates with a terminal that uses a different character set, 
+then the client application’s characters must be converted to the database character set, and vice versa. 
+
+This conversion is performed automatically, and is transparent to the client application.
+
+The character set used by the client application is defined by the NLS_LANG parameter.
+
+WE8ISO8859P1 ISO 8859 - 1 West European
+EE8ISO8859P2 ISO 8859 - 2 East European
+SE8ISO8859P3 ISO 8859 - 3 South European
+NEE8ISO8859P4 ISO 8859 - 4 North and North-East European
+
+Most NLS parameters can be used in three ways:
+
+- As initialization parameters to specify language-dependent
+behavior defaults for the server.
+For example, in your INIT.ORA file, include
+NLS_TERRITORY = FRANCE
+
+- As environment variables on client machines to specify
+language-dependant behavior defaults for a session. These
+defaults override the defaults set for the server.
+For example, on a UNIX system
+setenv NLS_TERRITORY FRANCE
+
+- As ALTER SESSION parameters to change the
+language-dependent behavior of a session. 
+These parameters override the defaults set for the session or for the server.
+For example:
+ALTER SESSION SET NLS_TERRITORY = FRANCE
+</PRE>
+
+<BR><BR>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>
+

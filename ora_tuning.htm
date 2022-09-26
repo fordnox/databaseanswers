@@ -1,0 +1,130 @@
+<HTML>
+
+<HEAD><TITLE>Oracle Tuning</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jug" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+Also Check for 
+<A HREF="http://www.techrepublic.com/article.jhtml?id=r00220010228brl01.htm&page=2" TARGET=_NEW>
+Books on Oracle Tuning.</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Oracle tuning: Start by looking at the big picture</B>
+
+Oracle tuning has always been the most difficult area of Oracle database management. 
+In fact, some database administrators say that tuning an Oracle database is like trying to 
+work on a car while it's flying down the highway at 60 mph! Because of Oracle's flexibility, 
+the internal software is phenomenally complex, and there are hundreds of variables that can 
+cause performance problems. 
+
+The complexity leaves many shops unable to keep their database properly tuned.
+
+An Oracle database is constantly changing, and the dynamic nature of tuning and of the Oracle 
+environment makes it difficult for the Oracle database administrator to get a handle on what's 
+going on inside the database. 
+
+Most Oracle experts generally use <B>a top-down approach for tuning</B>. 
+This means that you start at a very high level, taking a look at the overall Oracle environment, 
+and then successively drill down into more detail as you begin to tune the individual components 
+within the database engine.
+
+The goal of this series of articles is to give you the general tools required to ensure that 
+your Oracle database is performing at an optimal level. 
+
+Although the articles won't make you an expert, they'll give you a solid understanding of all 
+the important Oracle tuning issues. 
+You'll find more detailed information in my book <I>High-performance Oracle</I>8<I> Tuning</I>.
+
+<SPAN CLASS="subhead1">A note about database design and performance</SPAN>
+The initial design of the Oracle tables and indexes is the single most critical factor in 
+overall performance&#151;and unfortunately, the design can rarely be changed once the system is 
+placed into production use. 
+
+So while the tuning techniques we'll be discussing can help you maximize the efficiency of your 
+database engine, bear in mind that the initial design is the most important performance factor.
+
+<B>Evolution of database design.</B>
+
+When a database is initially analyzed, the designer will often apply the normalization rules 
+developed by E. F. Codd and C. J. Date. 
+Their normalization study resulted in a set of table definitions that made it easier to design 
+tables with controlled redundancy.
+In the 1970s, database redundancy was difficult and expensive. 
+As a result, database designers were taught to create databases in Third Normal Form (3NF), 
+which prevented data duplication in multiple tables. 
+But although a 3NF database was totally free of redundancy, the database queries could run 
+very slowly because of the extra navigation required to access information. 
+Over the 1980s and 1990s, database designers became more liberal with the introduction of 
+redundant data to speed database queries.
+
+<B>The overall tuning approach</B>
+
+While there is no silver bullet for tuning Oracle databases, a comprehensive approach can 
+help ensure that all of the bases are covered and that no important tuning facts have been overlooked. 
+When tuning Oracle databases, you have to start by taking a broad look at the overall environment and 
+successively drilling down for more details. 
+
+<B>Figure A</B> illustrates this top-down approach.
+
+
+<CENTER>
+<IMG SRC="images/ora_tuning_fig_1.gif">
+The Oracle database tuning hierarchy
+</CENTER>
+
+
+We begin by looking carefully at the database server for any problems that might exist within the CPU, RAM, or disk configurations. No amount of tuning is going to help an Oracle database when the server it is running on is short on resources.
+
+Once we've completed the tuning of the Oracle server, we can look at the global parameters that affect the Oracle database (the Oracle instance). When looking at the Oracle database, we take a look at the database as a whole, paying careful attention to the Oracle initialization parameters that govern the configuration of the System Global Area (SGA) and the overall behavior of the database.
+
+Once the database server and the Oracle instance have been tuned, we can begin the work of examining the individual Oracle tables and indexes within the database. At this phase, we look at the settings that can govern the behavior of a table and determine how well the settings accommodate the needs of the individual database.
+
+When the Oracle objects are tuned, we proceed with tuning the individual SQL queries that are issued against the Oracle database. This is often one of the most challenging areas of Oracle turning because there can be many thousands of SQL statements issued against a highly active Oracle database. The person tuning the Oracle SQL has to identify the most frequently used SQL statements and apply the tools necessary to tune each statement for the optimal execution plan.
+
+A four-part tuning approach
+Oracle tuning involves the following steps, with each step getting more specific and targeted:
+
+Server & network tuning—If there is a problem with the Oracle server, such as an overloaded CPU, excessive memory swapping, or a disk I/O bottleneck, no amount of tuning within the Oracle database is going to improve your performance. Hence, the first thing the Oracle professional examines is the server and network environment.
+Instance tuning—Tuning the Oracle SGA is the next step, and all of the Oracle initialization parameters must be reviewed to ensure that the database has been properly configured. This phase of Oracle tuning is directed at looking for resources shortages in the db_block_buffers, shared_pool_size, and sort_area_size. We also investigate important default parameters for Oracle, such as optimizer_mode.
+Object tuning—This phase of tuning looks at the setting for Oracle tables and indexes. Settings such as PCTFREE, PCTUSED, and FREELISTS can have a dramatic impact on Oracle performance.
+SQL tuning—This is the most time-consuming tuning operation because there can be many thousands of individual SQL statements that access the Oracle database. At a high level, we identify the most common SQL statements, tune each one by carefully reviewing the execution plan for the SQL, and adjust the execution plan using Oracle hints.
+
+The success of your Oracle tuning requires you to follow the steps in their proper order. Many neophyte Oracle DBAs will immediately begin to tune SQL statements without considering the environment in which the SQL is running—which can be a waste of time and cause new problems. Looking at the overall tuning methodology first can enable you to see some of the larger and broader tuning issues that need to be addressed first.
+
+Over the next four articles, we'll examine each of these main techniques and explore some of the details involved in tuning your Oracle database system. In the next article, we'll cover hardware server tuning in more detail and show you how you can determine whether the server is the cause of your performance problems.
+
+</PRE>
+                     
+<a href="/utils/redirect.jhtml?URL=http%3A%2F%2Fwww1.fatbrain.com%2Fasp%2Fbookinfo%2Fbookinfo.asp%3Ftheisbn%3D0078824060%26from%3DJHU543" target="Related Books">
+                                    
+Oracle8 : DBA Handbook, Second Edition
+                                 </a> &#151; Loney, Kevin
+                             
+<br><img src="http://a1800.g.akamai.net/7/1800/259/e10bd8aac13b38/www.techrepublic.com/images/spacer.gif" height="9" width="1"><br>
+                          
+<a href="/utils/redirect.jhtml?URL=http%3A%2F%2Fwww1.fatbrain.com%2Fasp%2Fbookinfo%2Fbookinfo.asp%3Ftheisbn%3D0078823897%26from%3DJHU543" target="Related Books">
+
+Oracle8 : Backup And Recovery Handbook</a> &#151; Velpuri, Rama / Adkoli, Anand
+
+<br><img src="http://a1800.g.akamai.net/7/1800/259/e10bd8aac13b38/www.techrepublic.com/images/spacer.gif" height="9" width="1"><br>
+
+                                 <a href="/utils/redirect.jhtml?URL=http%3A%2F%2Fwww1.fatbrain.com%2Fasp%2Fbookinfo%2Fbookinfo.asp%3Ftheisbn%3D0078825490%26from%3DJHU543" target="Related Books">
+                                    
+                                    Oracle Certified Professional DBA Certification Exam Guide
+                                 </a> &#151; Couchman, Jason S.
+                        
+
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+</HTML>

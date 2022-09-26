@@ -1,0 +1,553 @@
+<html>
+<head>
+<title>Horse Racing and Betfair Data Model - User Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="images/ascot_race_course_lge.jpg" TARGET=_NEW>
+<IMG ALIGN=right ALT="Ascot Race Course (Click for large picture)" hspace="0" vspace="4" SRC="images/ascot_race_course_sml.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<img alt="Horse Racing" SRC="images/lft_horse_racing.bmp"> 
+<img alt="and Betfair"  SRC="images/rt_and_betfair.bmp"> 
+ 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>This is the Start of the User specification of the Requirements :-</B>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>A Database is required for a System to monitor Horse Racing.
+
+<B>We can identify the following 'Things of Interest' :-</B>
+<LI>Horses
+<LI>Jockeys
+<LI>Races
+<LI>Trainers
+
+<HR><FONT COLOR=blue FACE=Verdana SIZE=2>
+I need to be able to filter any field for example I might want the results for:
+
+Race Type                           All Weather races
+
+Country                                GB only
+
+Handicap or Nursery       Handicap only
+
+Distance                               5 to 7 furlongs
+
+Runners                               0 to 10
+
+Date                                      FROM 01.09.08 to 30.11.08
+
+Conditions                          Novice and Maiden only
+
+MARKET # [OM]               1 to 10
+
+ 
+
+BP SST - 10.0 MINS
+
+SST BP
+
+1st IP BP
+
+
+
+
+
+
+<HR>
+Here are the requirements.
+
+Here is a list of the data that will be collected from the new software.
+
+DATABASE NAME: KNIGHTTRADER
+
+
+The Race (MARKET) information.
+
+MARKET_ID
+ Number
+ Unique Number given by Betfair
+ 
+MARKET NAME
+ Text
+  
+SCHEDULED START TIME [SST]
+ hh:mm
+  
+ACTUAL START TIME [OFF]
+ hh:mm:ss
+  
+COUNTRY
+ Text
+  
+COURSE NAME
+ Text
+  
+DATE
+ dd/mm/yy
+  
+DAY
+ Text
+  
+DISTANCE [Furlongs]
+ Number
+  
+GOING
+ Text
+  
+HANDICAP or NURSERY
+ Text
+  
+MARKET COMMISSION AMOUNT
+ Percentage
+  
+MONTH
+ Text
+  
+RACE CONDITIONS
+ Text
+  
+RACE GRADE
+ Number
+  
+RACE TYPE
+ Text
+  
+RUNNERS #
+ Number
+  
+WEEK #
+ Number
+  
+YEAR
+ yyyy
+  
+AMOUNT TRADED at 10 MIN
+ £ 0,000,000
+  
+AMOUNT TRADED at SST
+ £ 0,000,000
+  
+AMOUNT TRADED at FINISH
+ £ 0,000,000
+  
+
+The Horse information
+
+SELECTION_ ID
+ Number
+ Unique Number that applies to all future races
+ 
+HORSE NAME
+ Text
+  
+MARKET # [OM]
+ Number
+  
+STALL DRAW
+ Number
+  
+DAYS SINCE LAST RUN
+ Number
+  
+FORM
+ Text
+  
+WEIGHT
+ Text
+  
+AGE
+ Number
+  
+RACE RESULT
+ Text
+  
+
+ 
+
+The Jockey Information
+
+JOCKEY NAME
+ Any Jockey can ride any horse
+ 
+JOCKEY CLAIM
+  
+  
+  
+
+The Trainer Information
+
+TRAINER NAME
+ Any Trainer can train any horse</PRE>
+ 
+
+<HR>
+Email from Neil December 11th. 2008
+Hi Barry
+
+Please note one additional field that I forgot to include.
+
+BET TYPE:              BACK or LAY
+
+Also, I don't think I was clear that I need:
+
+Profit & Loss HORSE
+
+Profit & Loss MARKET
+
+I thought I would start by giving you more detail about what I am doing.
+
+I first got interested in Betfair about 5 years ago. 
+Before then I had no interest in Horse racing or Gambling and no real knowledge of either. 
+But I got involved because I could see and easy way to make a second income by Trading the markets. 
+
+With the advent of Betfair it is possible to BACK a horse to win and LAY the same horse to lose, and 
+if you BACK the horse at a higher price than you LAY it you are guaranteed a profit whether it wins or losses. 
+
+For example if I BACK a horse at 1.70 and LAY it at 1.60 I have a profit of £6.25 win or lose.
+
+
+ Liability
+ Price
+ Profit
+ 
+ WIN
+ 
+ LOSE
+ 
+
+
+ 
+Back
+ £100.00
+ 1.70 
+ £70.00
+ 
+ £70.00
+ 
+ -£100.00
+ 
+Lay
+ £63.75
+ 1.60 
+ £106.25
+ 
+ -£63.75
+ 
+ £106.25
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ £6.25
+ 
+ £6.25
+ 
+
+ 
+
+Sounds easy but sometimes the market goes against you so you might have to make many BACK/LAY trades until a profitable position is made.  
+
+There are many markets on Betfair, but I concentrate on the Horse racing because there is racing 363 days a year and 
+approx 10,000 races every year and it doesn't take a genius to work out that even a small profit of £1 each race means a tax free income of £10,000+
+
+However, my passion in life is Travel and Scuba Diving, and I would rather be doing that than spending all day in front of a PC ! 
+Unfortunately a Diving Instructor gets paid a very low salary and often I work for free. 
+So for the past few years I have spent 3 months a year trading, which gives me enough money to live on for the other 9. 
+
+I use http://www.betangel.com/ to trade with and in June this year I discovered that it's possible to have Bots to fully automate betting. 
+
+So since that day I have been recording the results of as many races as possible, so that I can come up with an automated strategy. 
+There are already automated systems out there but I don't trust any of them! 
+
+I'm sure some work very well but I would rather have a system based on my own knowledge/experience that I can test and re-test. 
+
+I can't automate the way I trade manually yet, but with the information I have collected I have come up with a way of trading that is as good if not better. 
+
+I have also identified many other strategies that are very profitable. 
+
+I figure I can achieve the same income or better if I auto bet every day, rather than trade solidly for 3 months. 
+
+The information I have collected is very, very important and I need to get it every day. 
+I monitor results by analysing them at the end of every week. 
+That way I can make improvements as I go. 
+
+The information I have collected so far has been limited because of the restrictions of using Excel linked to Bet Angel. 
+
+There is a lot more information I would like have every day which will help improve the current systems and develop new ones for the future. 
+
+For example I haven't been able to collect the pre-race prices which I need to formulate trading strategies. 
+
+Since June, I (with help from a friend) have had to sit and watch every race to record the data because I need to change over to each new race manually, 
+but I have recently commissioned a Betfair developer to create an automated Bot linked directly to Betfair, 
+that will record the data from each race and also make the bets/trades based on preset conditions.  
+
+
+He is setting it up to record the data into text files which can be imported to Access or Excel. 
+
+So now I need to tell him how to set out the data in the text files so that it can be imported into Access correctly. 
+
+Here are the answers to your questions.
+
+
+It would be very helpful if you wrote a short description of each set of data so that I can understand how it fits together.
+
+>>> There are many different types of race with many different conditions and distances and every race has many runners and each runner has the following prices recorded.
+
+  I want to record the price movements for each horse from 10 mins before the start of the race:
+
+There are three key periods of trading 
+
+1.       Pre Race 
+
+
+BP SST - x MINS = The BACK to win PRICE x mins before the Scheduled Start Time
+
+
+
+2.       Start Time
+
+
+SCHEDULED START TIME [SST] = The BACK to win PRICE at the Scheduled Start Time
+
+
+
+
+
+
+3.       In Play
+
+
+
+STARTING PRICE = The BACK to win PRICE given by Betfair at the time the market goes IN-PLAY.
+1st IP BP = The market suspends trading for a few seconds at the start of the race. This is The 1st BACK to win PRICE available when the market re-opens (goes IN-PLAY)
+IP 2 to IP 200 = The price changes during the race (when IP-PLAY).
+
+
+
+I also need to know the 
+
+MINIMUM BACK PRICE and MAXIMUM BACK PRICE available from 10 mins to the end of the race.
+
+MINIMUM BACK PRICE and MAXIMUM BACK PRICE available from 10 mins to the SST.
+
+MINIMUM BACK PRICE and MAXIMUM BACK PRICE available from SST to the end of the race
+
+
+Now, what I do is filter the results until I find a set of results that are consistent and then apply the appropriate strategy.
+
+E.g. If you were to bet on all favorites priced at 3.00 (2/1) you will likely lose money or at best break even, because the price is weighted against you. 
+
+However, if you were to narrow down the race type/conditions/runners etc you might find that 3.00 (2/1) favorites are more profitable in some races than in others. 
+
+Also, one benefit of recording the prices when a market is In-Play is that you can possibly improve on the 3.00 price by waiting until the race starts. 
+
+If you have the bets for all Favorites priced at 3.00 at the SST matched at 3.20 In-play, you will make a profit. 
+Now you can't do that with all races as a 3 mile Chase will trade differently In-play to a 5 furlong sprint but by breaking down the race type/condition etc 
+you can identify the races where it's possible to wait and get matched at a higher price.
+
+I may need to look at the first 3 horses in the betting, 
+I may need to look at the horse ranked 8 to 16 in the betting, 
+I may need to ignore all prices over 200 or below 15.00. The variables are endless.
+
+I hope that makes sense and helps, but if you need more information please let me know.
+
+
+I'd also like to understand what your objective is and what you want to do with the Database.
+
+>>> I can see a massive benefit of using Access instead of Excel; however I am a complete novice when it comes to databases. 
+At the moment I use Pivot Tables and linked spreadsheets to create the necessary reports and calculate the profitability of a given strategy. 
+
+So because my knowledge of Access is so limited my plan is to filter the data in Access then import the data to Excel for analysis.
+
+Would it be right to say that you want to load Betfair data into an Access Database for further analysis?
+>>> Yes. 
+
+In which case, what you need is a Database that will help you formulate Reports and Enquiries.
+
+>>> Yes. 
+I need to be able to filter any field for example I might want the results for:
+
+Race Type                           All Weather races
+
+Country                                GB only
+
+Handicap or Nursery       Handicap only
+
+Distance                               5 to 7 furlongs
+
+Runners                               0 to 10
+
+Date                                      FROM 01.09.08 to 30.11.08
+
+Conditions                          Novice and Maiden only
+
+MARKET # [OM]               1 to 10
+
+ 
+
+BP SST - 10.0 MINS
+
+SST BP
+
+1st IP BP</PRE>
+
+
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>4th. December 2008
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

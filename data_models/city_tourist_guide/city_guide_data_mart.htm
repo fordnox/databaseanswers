@@ -1,0 +1,144 @@
+<HTML><HEAD><TITLE>Data Model for City Guide Data Mart</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=middle><A HREF="../../images/hotels/kasbah_du_toubkal.jpg">
+<IMG ALT="Kasbah du Toubkal Hotel, Morocco" BORDER=1 SRC="../../images/hotels/kasbah_du_toubkal_sml_home.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="City Tourist" SRC="../../images/buttons/button_studio/city_tourist.gif">
+<IMG ALT="Guides" SRC="../../images/buttons/button_studio/rt_guides.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR>
+<TR>
+
+<!---
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=100>
+<A HREF="../../images/boschendal_pool.jpg"><IMG ALIGN=left ALT="Boschendahl Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/boschendal_vertical_sml.jpg"></A>
+</TD>
+--->
+
+<TD VALIGN=top>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<A HREF="index.htm">Back to the version with Inheritance</A>.
+<BR>This page shows a <B>Data Mart</B> to support a generalised Ad-Hoc Enquiry facility.
+</FONT>
+
+<BR><BR>
+
+<CENTER>
+<IMG ALT="Data Mart for a City Guide" SRC="images/city_guide_data_mart_model.gif"> 
+</CENTER>
+
+<!---
+- A Cleaning company is responsible for cleaning the streets in the City and produces a Schedule of their daily planned cleaning activiities.
+- Individuals, called Inspectors, use PDAs to inspect streets in areas in the city.
+- They are following a Schedule published by the Cleaning company to check how well the Streets have been cleaned.
+- They decide whether they are very clean (Grade A) or very dirty (Grade D), with Grades B and C in between.
+- They transmit  the results of their Inspections to a SQL Server Database.
+--->
+
+
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Background :-</B>
+Many Cities around the world have Tourist Attractions.
+A survey is being made of the popularity of these Attractions.
+For example, San Francisco has the Golden Gate Bridge,
+New York has the Empire State Building, Ground Zero and the Guggenheim Museum.
+London has Buckingham Palace, Windsor Castle and the London Eye
+Paris has the Eiffel Tower.
+
+- Individuals, called Survey Takers, ask Visitors if they find the Attractions interesting.
+- They have a daily quota, such as 300, of the number of Visitors they should include in their Survey.
+- The Visitors are asked if they find the Attraction very interesting (Grade A) or very disppointing (Grade D), with Grades B and C in between.
+- The results of the Survey are transmitted from the PDAs of to a SQL Server 2005 Database.
+
+This populates the Data Mart with the following fields :-
+- Date and time of a Visit
+- Survey Taker Name
+- City
+- Name of Tourist Attraction
+- Country of origin of the Visitor
+- Grade given by the Visitor(A,B,C or D)
+
+The requirement is to provide a facility to ask general questions that include any combination of field for any period of time.
+Examples are :-
+1) What percentage of Quota of Checks did a particular Inspector check last week ?
+2) How many Grade D's were given for a specific Attraction ?
+3) What was the percentage of A,B,C and D Grades last month ?
+4) What was the total number and percentage of Attractions Inspected in June ?
+5) What are the Top 5 Countries in any given period ?
+
+I see this as a Table in the Data Mart with the ability to use Dynamic SQL to interpret the run-tine fields that the User specifies.
+
+Is this feasible ?
+
+So far, I have developed Template reports in in MS Report Services which provide flexibility in predefined limits but the Users really want complete flexibility.  
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=1> 
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT COLOR=blue FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question_rbw.php3">Ask Us a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+<FONT COLOR=blue FACE="Verdana" SIZE=1> 
+<CENTER><I> &#169 DataBaseAnswers.org 2007</I></FONT></CENTER>
+<TD>
+</TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>Migration Tools Features Analysis</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+<TD ROWSPAN=2>
+<IMG ALIGN=right ALT="Bridge for Migration" BORDER=1 HEIiGHT=102 WIiDTH=187 SRC="images/covered_bridge_sml.jpg">
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>Data Migration Tools - Features Analysis</FONT></TD>
+</TR>
+</TABLE>
+
+<HR>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+All of these Tools can perform Extraction, Validation, Conversion and Loading into a Target Data Destination,(usually a Database).
+
+<BR>The Analysis shown here is in the context of the <A HREeeF="general_approach.htm">General Approach to Data Architecture</A> described elsewhere on this Site.
+<P>The Analysis is intended to help identify products which meet the requirements of the Architecture.
+<BR>The key component of the Architecture is a Data Dictionary which can be used to
+generate executable code for Data Migration.
+ 
+<P><B>Real-Time</B> means that changes to Data Sources can be automatically monitored 
+and rippled through to the Target Data Destinations.
+<BR>Most of these products can be set to run automatically at short intervals, such as 1 minute, 
+so that any changes can be rippled through at that frequency.
+<BR>This is not Real-Time, but for many requirements, this will be adequate, technically simpler and cheaper.
+<HR><B>The Oracle WebHouse Builder :-</B>
+<LI>Integrates data from OLTP,mainframe-based, ERP and e-Business systems.
+<LI>A Design Tool and an ETT Tool, offering powerful graphical schema design facilities specifically for
+Data Warehousing,(e.g. <A HREeeeF="images/ora_star_dimension_editor.gif">Star Schemas).</A>
+<LI>Source-to-Target Mappings defined graphically.
+<LI>Code is generated and can be optimized, enhanced or tuned.
+<LI>Compatible with the Common Warehouse Model.
+<HR>
+<P>
+
+<CENTER>
+<CENTER><TABLE BORDER=1 CELLPADDING=5>
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>VENDOR</TD>
+<TD ALIGN=middle COLSPAN=4 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.datamirror.com" TARGET=_NEW>DataMirror</A></TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Comment</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>PRODUCT</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.constellar.com/products.html" TARGET=_NEW>iDeliver</A></TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.constellar.com/products.html" TARGET=_NEW>Transform Server</A></TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.constellar.com/products.html" TARGET=_NEW>Constellar HUB</A></TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.constellar.com/products.html" TARGET=_NEW>Web Integrator</A></TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Price</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$70,000</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$70,000</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$250,000</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Approach</TD>
+<TD ALIGN=middle COLSPAN=4 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=1>Uses a Data Dictionary to store Mappings defined in a
+ Transformation Definition Language.</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Entry Level</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Data Dictionary</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Job Scheduler</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Publish & Subscribe</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Real-Time</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Within 5 seconds acceptable</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>UML</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Planned</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=1><B>Validation of Source Data</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Required</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>XML</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+
+<HR>
+
+<P>
+
+<CENTER><TABLE BORDER=1 CELLPADDING=5>
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>VENDOR</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.dataflux.com" TARGET=_NEW>DataFlux</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.datajunction.com" TARGET=_NEW>DataJunction</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.eti.com" TARGET=_NEW>ETI Corporation</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.metagon.com" TARGET=_NEW>Metagon</A></TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.sagent.com" TARGET=_NEW>Sagent</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.seebeyond.com" TARGET=_NEW>seeBeyond</A></TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>PRODUCT</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.dataflux.com" TARGET=_NEW>DataFlux</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.datajunction.com" TARGET=_NEW>Data Junction</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.eti.com/" TARGET=_NEW>ETI*Extractor</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.metagon.com/" TARGET=_NEW>DQ Broker</A></TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.sagent.com" TARGET=_NEW>Sagent</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://www.seebeyond.com" TARGET=_NEW>e*Gate</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Price Range</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$350 - $1,000</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$25,000 - $250,000</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>$250,000</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Approach</TD>
+<TD ALIGN=middle COLSPAN=6 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=1>All Products Use a Data Dictionary to store Mappings defined in a
+ Transformation Definition Language.</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Consistent Award Winner</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Industrial-Strength</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>A Serious Competitor</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Well-Established</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Data Dictionary</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Job Scheduler</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Publish & Subscribe</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Real-Time</B>
+           <BR><FONT SIZE=1>Within 5 seconds acceptable</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>No ?</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes ?</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Replication</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>No ?</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes ?</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>UML</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=1><B>Validation of Source Data</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>XML</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+
+</CENTER>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

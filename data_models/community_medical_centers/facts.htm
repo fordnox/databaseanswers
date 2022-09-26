@@ -1,0 +1,214 @@
+<HTML><HEAD><TITLE>Community Medical Centers Data Model</TITLE></HEAD> 
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=2 HEIGHT=100 VALIGN=middle>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+</TD>
+
+<td ALIGN=right ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.galleriadental.com.au/" TARGET=_NEW>
+<IMG ALT="Dental Center in Morley, Western Australia (Click for Web Site)" BORDER=0 SRC="images/dental_center_western_australia_sml.jpg"> 
+</td>
+</TR>
+
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<!--- Barry's changes on Monday, Dec 7th means that the total is less than 100% - but it looks OK --->
+<table width="100%" border=0 cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+          <td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+          <td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+          <td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
+	</td>
+          <td width="9%">
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiIIIdth="30%" wiIIIdth="37%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color=WHITE FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu Bar --->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+<!---   <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> --->
+	<td ALIGN=left width="10%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Community Medical Centers</font></td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+
+
+<TR>
+<TD ROWSPAN=3 VALIGN=top WIDTH=80>&nbsp;
+<!---
+<IMG ALIGN=left  ALT="Scuba Diving in Fiji (where I met my beautiful Malaysian wife) is a great solution to Stress" SRC="images/advertising_systems.jpg">
+--->
+
+</TD>
+
+<TD>
+<FONT COLOR=blue FACE="Verdana" SIZE=2><A HREF="index.htm">Back to the Data Model.</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements</B> have been defined as follows by Leon :-
+Brief: A Community Medical Centre has an outreach staff of 5+ assorted medical professionals that often attend appointments with 
+senior citizens in their homes.
+
+1) They have decided that only one appointment per day per patient in their home is feasible and that ..
+
+
+2) When patients visit the Medical Centre they should be attended by various discipline (psychology,social worker,physio',podiatrist etc)
+during the one appointment wherever possible. This would cut down on time wastage and minimize the need for patients to make multiple trips. 
+
+
+3) In addition they wish all patient information to be housed in one shared medical record on a central server at the medical centre.
+
+
+<BR><BR>
+<LI><B>Barry says The Things of Interest are :-</B>
+<LI> Appointments
+<LI> Community Medical Centers
+<LI> Patients
+<LI> Professional Staff
+
+
+
+
+
+
+<!---
+<BR><BR>This Page shows small examples of a Glossary of Terms and Business Rules, which are important supporting documentation for a Data Model :-
+<LI>A Glossary of Terms which is recommended so that everyone adopts common jargon.
+<BR>Terms shown in <B>Bold</B> also appear as entries in the Glossary.
+<LI>Business Rules 
+
+
+<BR><BR>
+
+<TABLE BORDER=1 WIDTH=90%>
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>TERM</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>ALSO CALLED</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>EXAMPLES</B></TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>MEANING</B></TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Channel</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Format, Media</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Internet, Print, TV</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>A Channel for delivering Advertisements to the market.
+</TD>
+</TR>
+
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Format</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Channel, Media</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Internet, Print, TV</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>The Format in which Advertisements are delivered to the market.
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Media</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Channel, Format</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Internet, Print, TV</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>The Media defines the mode in which Advertisements are delivered to the market.
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Reference Data</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Channel Types</TD>
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>This is data that never changes. 
+<BR>It is used to define the range of values which is valid for other Transaction-related data.
+<BR>The names of Tables that hold Reference Data begin 'Ref_'.
+</TD>
+</TR>
+
+
+</TABLE>
+--->
+
+
+<!---
+<BR>These Rules define the relationships between the 'Things of Interest' in the Scope of the Data Model.
+<BR>For example :- 
+<LI> An Agency can place zero, one or many Adverts.
+<LI>A Channel must be of one and only one Channel Type
+<LI> A Marketing Campaign can involve one or many Advertisements.
+--->
+
+</TD>
+
+<!-- Start of Standard Footer -->
+<TR>
+<TD>
+<BR>
+<CENTER><FONT SIZE=1><I><FONT COLOR=blue FACE="Verdana" SIZE=1>&#169 DatabaseAnswers.org 2010</I></FONT></CENTER></CENTER>
+<BR> 
+</TD>
+</TR>
+
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+</TD></TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+

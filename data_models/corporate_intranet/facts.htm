@@ -1,0 +1,103 @@
+<HTML><HEAD><TITLE>Intranet Data Model</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALIGN=right ALT="Map of Fiji and the South Pacific" BORDER=1 HEIGHT=92 WIDTH=248 SRC="../../images/site_map_vsml.gif">
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Data Model for a Corporate Intranet</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=middle WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<!-- begin body Text -->
+
+This Page shows the General Approach would be applied to define the FACTS or Business rules for the Corporate Intranet.</B>
+
+<PRE><FONT COLOR=blue SIZE=2><B>The Area being Modelled is :-</B>
+A corporate intranet to display the standards and policies of the company on the intranet.
+The intranet is a secure intranet with different registered users having only select access rights to the data.
+
+<B>Things of Interest in this Area :-</B>
+1.USERS             - Different registered users with different <B>ACCESS RIGHTS</B> to Files which are 
+                      identified by <B>FILE REFERENCES</B>
+2.FILE_REFERENCES   - Reference to each and every data (HTM and other) files stored in the intranet.
+3.FUNCTIONAL_AREAS  - The different functions areas in <B>THE COMPANY</B>, such as Technical, Marketing, Management, etc.
+                      Each USER belongs to one and only one FUNCTIONAL_AREA.
+4.ROLES             - Roles played by the users in the company, such as Project manager, marketing representative, etc.
+                      USERS have ROLES but a USER can have only one ROLE at a time.
+5.KEY PROCESS AREAS - The Key Process Areas of the company, such as Application development, sub contracting, 
+                      Value added products, etc.
+                      Each ROLE is assigned one or more KPA.
+6.PROCEDURES        - Different procedures to be followed while executing a particular project.
+                      For example, a Procedure for effort estimation
+                      These PROCEDURES are grouped under one or more KPAs.
+
+In a later phase, a channelling system will be incorporated wherein different PROPOSALS 
+submitted by the USERS will go to appropriate higher level AUTHORITIES.
+For example, a PROPOSAL submitted by a SOFTWARE DEVELOPER goes to the PROJECT MANAGER.
+Then the manager either accepts or rejects the proposal.
+</PRE>
+
+<P>
+<!-- Start of Standard Footer -->
+<P>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</BODY>
+
+</HTML>

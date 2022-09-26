@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>Facts about the Data Model for Debt Collection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<IMG ALIGN=right ALT="Being in Debt can make you very Unhappy !!!" BORDER=0 hspace="0" vspace="4" SRC="../../images/actors_masks.gif"></td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="debt_collection_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version.</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<img alt="Debt Collection" src="images/lft_debt_collection.bmp"> 
+<!--- <img alt="Diary"        src="images/rt_diary.bmp"> --->
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model.</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B><LI>Statement of User Requirements</B> 
+A Database is needed to support a Debt Collection business.
+
+The focus is entirely on the debtors.
+Our Clients have the Derbtors and we provide services to our Clients to manage the Debtors.
+ 
+As soon an process is open we start collect all kind of information about the Debtors :-
+<LI>Confirmation of their location
+<LI>if they have more business
+<LI>have more debts etc.
+ 
+<B>This focus on the Debtors</B> reflects the way the business processes are organized.
+ 
+A client which contracts our services receives a contract number -
+  - like 2170001 - 21 is telephone code of Lisbon, 7 from 2007 and 0001 is the number of the contract.
+
+ 
+<LI>After the contract been approved by our Office... what happens?
+ 
+<LI>Each Debt has its own Contract.
+
+but one Contract can be associated with 10 debts or 50 debts.
+
+So each debt of the same contract is identified by the 21-7-0001-0901 keeping the same 0001 for the 10 or 50 debts,
+only the last four or five digits grows - identify the debt from others debts we have:
+21700010901
+21700010902
+21700010903
+21700010904
+21700010905 and so on
+ 
+So if the tables has information regarding the Debtors how to get info to give to client ?
+ 
+We have this number (21700010900) to assure an simple query identifies all the processes regarding the same client: 
+217-0001 the middle number is always the same for the same client.
+If the client is other then the middle's change to 0002...
+ 
+So an Query can get all the processes registred with the same contract number,
+and produced in a report to send quickly to the client...
+ 
+This is how we organize the processes and i hope this explanation simplifies what we want and the DB Design.
+ 
+We suggest also that it is important to pay close attention to how the Factoring Institutions organize their Database.
+Ours will probably be quite similar except we don't do credit but our clients which factoring does.
+<HR>
+<B>Frontoffice :</B> for clients and debtors information 
+ 
+<B>Backoffice :</B> for internal use
+
+<B>The Database</B> will have Tables for : 
+- <B>Contract management for clients</B> with their own account control for comission control 
+  according to the debtors payments.
+  The proper form must have personal data with a subform with the accounts payments.
+
+- <B>Personal data</B> with payments control from the debtor with individual accounts for their 
+  own web information 
+  The proper form must have personal data with a subform with the accounts payments.
+
+- Debtors payments will be . by Visa or Paypal.
+  Once payment is confirmed their account should be able to deliver an receipt
+ 
+ 
+<LI><B>'Use Cases'</B> might also be considered.  
+  A <B>Use Case</B> is a specific situation or task to accomplish a specific Task.
+  For example, 'Make a collections call', 'Start a new client record', 'Invoice clients' and so on.
+
+<B><LI>What are the Things of Interest ?</B> 
+<UL>
+<LI>Accounts
+<LI>Clients
+<LI>Collection Calls
+<LI>Contracts
+<LI>Invoices
+<LI>Debts
+<LI>Payments
+<LI>Etc.</UL>
+
+<B>How are these Things of Interest related ?</B>
+<LI>A Client can have one or many Accounts.
+</PRE>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

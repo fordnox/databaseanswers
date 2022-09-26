@@ -1,0 +1,228 @@
+<HTML><HEAD><TITLE>BMEWS BI on the Beach POC Specs</TITLE></HEAD> 
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=2 VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../images/dba_400_home.jpg">
+</TD>
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. TOP MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td WIDTH=4%><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=white FACE=Verdana SIZE=2>Home</font></td>
+	<td align=LEFT WIDTH=5%><A STYLE="text-decoration:none" HREF="../first_timers.htm"><font color=white FACE=Verdana SIZE=2>First Timers</font></A>
+	</td>
+	<td WIDTH=8% wiIIIdth="10%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+    	<td width="7%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="7%"><A STYLE="text-decoration:none" HREF="../clients.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Clients</font></A>
+	</td>
+	<td width="10%"><A STYLE="text-decoration:none" HREF="http://databaseanswers.ning.com/" TARGET=_NEW><font color="#FFFFFF" FACE=Verdana SIZE=2>Community</font></A></td>
+	<td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+	<td WIDTH=10%><A STYLE="text-decoration:none" HREF="../tutorials.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Tutorials</font></A></td>
+        <td WIDTH=10%><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21ST. TOP MENU BAR --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcoloUUUr="#B0D8FF" BGCOLOR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../images/nav_bg.jpg" valign=top width="1%"><img src="../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../images/nav_bg.jpg" height="32" width="10%">
+<PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Specs for the BMEWS BI on the Beach Proof-of-Concept</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<table BGCOLOR=white NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="200" background="../images/v3/px-left.gif" valign=middle align="center" bgcolor="#3399CC">
+	<BR><BR><BR><BR>
+<!---
+	<CENTER><img ALT="Framework for Data Management" SRC="../images/ref_data_arch_4_layers.jpg" vspace="5">
+--->
+	<p><img src="../images/spacer.gif" width="90"></p></td>
+
+<!--- END OF ARCHITECTURE IMAGE --->
+
+    <td valign="top"><img src="images/spacer.gif" width="3" height="239"></td>
+    <td width="100%" BGCOLOR=white bgcoloUUUr="#B0D8FF" valign="top">
+
+<FONT COLOR=blue FONT=Verdana SIZE=2>
+
+<!--- This table shows Specs for BMEWS BI on the Beach POC. --->
+
+<BR>
+
+
+<TABLE BGCOLOR=white BORDER=1>
+<TR>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2><B>GRC</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2><B>Visitors</FONT></TD>
+	<TD ALIGN=middle COLSPAN=2><FONT COLOR=blue FONT=Verdana SIZE=2><B>Customer-Services</FONT></TD>
+<!---	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</FONT></TD> --->
+</TR>
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2><B>BI Layer Data</B></FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Failed Logins</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Visitors</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Revenue, Location etc.</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Feedback - Daily Complaints, etc.</FONT></TD>
+</TR>
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2>BI Layer Format</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Line on Graph</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Pie Chart</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Line on Graph</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FONT=Verdana SIZE=2>Line on Graph</FONT></TD>
+</TR>
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2>BI Layer Example</FONT></TD>
+	<TD ALIGN=middle VALIGN=top><IMG ALT="Line and Graph" SRC="../images/line_and_graph_sml.jpg"></TD>
+	<TD ALIGN=middle><IMG ALT="Pie Chart" SRC="../images/pie_chart_sml.jpg"></TD>
+	<TD ALIGN=middle VALIGN=top><IMG ALT="Line and Graph" SRC="../images/line_and_graph_sml.jpg"></TD>
+	<TD ALIGN=middle VALIGN=top><IMG ALT="Line and Graph" SRC="../images/line_and_graph_sml.jpg"></TD>
+</TR>
+
+<!--- <TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR> --->
+
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2><B>Data Mart contents</B></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Failed Logins</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Visitors</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>
+	<A HREF="../best_practice_road_map/customer_services_Data_Mart.htm">Time Period, Location, Product, Revenue</A></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Time Period, Feedback Count</FONT></TD>
+</TR>
+
+<!---
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+--->
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2><B>Data Warehouse</B></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Events and Outcomes</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Visitors and Web Sites</FONT></TD>
+	<TD ALIGN=middle COLSPAN=2><FONT COLOR=blue FONT=Verdana SIZE=2>Customer Sales and Feedback</FONT></TD>
+</TR>
+
+<!---
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+--->
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2><B>Integrated Data Layer</B></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Transform to 3NF</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Transform to 3NF</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Sales and Master Data</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>&nbsp</FONT></TD>
+</TR>
+
+<!---
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+<TR>	<TD ALIGN=middle COLSPAN=5><FONT COLOR=blue FONT=Verdana SIZE=2><B>&nbsp</B></FONT></TD></TR>
+--->
+
+
+<TR>
+	<TD ALIGN=left><FONT COLOR=blue FONT=Verdana SIZE=2><B>Data Sources</B></FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>System Log File</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Google Analytics Visitor Log</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>POS Log</FONT></TD>
+	<TD ALIGN=middle><FONT COLOR=blue FONT=Verdana SIZE=2>Comments Forms<BR>and Social Networks</FONT></TD>
+</TR>
+
+</TABLE>
+
+<BR>
+
+<FONT COLOR=blue FONT=Verdana SIZE=2>
+
+</TD>
+</TR>
+
+</TR>
+
+</TABLE>
+<TR><TD>
+<BR>
+<CENTER><FONT COLOR=blue FACE="Verdana" SIZE=1><I>&#169 DatabaseAnswers.org 2013</I></FONT></CENTER></CENTER>
+<BR>
+</TD>
+<TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+	</td>
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+
+</TD></TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+

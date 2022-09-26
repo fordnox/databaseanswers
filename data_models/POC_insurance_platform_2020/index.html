@@ -1,0 +1,629 @@
+<html>
+<head>
+<title>Data Model for an Insurance Platform 2020</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="https://www.efma.com/article/detail/22175" TARGET=_NEW>
+<IMG ALT=DBA Insurance Platform" BORDER=0 SRC="images/twitter_insurance_platform_sml.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Models for an Insurance Platform</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for Database for an Insurance Platform'>An Access Database</A> is available on demand. 
+
+Here's a link to a very interesting  Web Site called the <A HREF="https://itlinnovatorsedge.com/" TARGET=_NEW><B>Innovator's Edge</B></A>
+
+
+
+
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>0) KPIs</B> will go here, for example, Total Sales by Policy Type.
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>1a) Conceptual Data Model - Overview
+<BR><BR>
+<IMG ALT="Conceptual Data Model"  BORDER=0  SRC="images/conceptual_data_model_feb07th.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 1b) Insurance FNOL Platform Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Insurance FNOL Data Model"  BORDER=0  SRC="../insurance_fnol/images/conceptual_data_model.jpg"> 
+</TD>
+
+
+<TD ALIGN=middle >
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1c) Self-Service Insurance Platform Data Model (Conceptual)   
+<BR><BR>
+<IMG ALT="Platform"  BORDER=0  SRC="images/insurance_self_service_platform.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>2b) Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>2c) Apex Customer Data Model</B></B>  
+<BR>Created on Tuesday, July 25th. 2017
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/apex_customer_data_model.gif"> 
+
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>3a) Insurance Logical Model (POC)   
+<BR><BR>
+<IMG ALT="Logical Data Model"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><BR><B>3b) Apex Events Data Model</B></B>  
+<BR>Created on Wednesday, July 26th. 2017
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/apex_events_data_model.gif"> 
+</TD>
+
+
+
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>4) Insurance Dimensional Model   
+<BR><BR>
+<IMG ALT="Dimensional Data Model"  BORDER=0  SRC="../insurance_data_warehouses/images/insurance_dimensional_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>5) Logical Data Model (Jan 22nd)
+<BR><BR>
+<IMG ALT="Logical Data Model - Jan 22nd"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>6) Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>8) Physical Data Model (Physical - Phase 1 -Attributes) 
+<BR><BR>
+<IMG ALT="Physical Data Model"  BORDER=0  SRC="images/physical_data_model_phase_1_attributes.gif"> 
+</TD>
+</TR>
+
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>10 Canonical Data Model for Insurance (Entities) 
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="images/physical_data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 11) Canonical Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+<!------------------------
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) KPIs</B> will go here, for example, Total Sales by Policy Type.
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle >
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>2) Self-Service Insurance Platform   
+<BR><BR>
+<IMG ALT="Platform"  BORDER=0  SRC="images/insurance_self_service_platform.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>2b) Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>2c) Apex Customer Data Model</B></B>  
+<BR>Created on Tuesday, July 25th. 2017
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/apex_customer_data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>3) Insurance Logical Model (POC)   
+<BR><BR>
+<IMG ALT="Logical Data Model"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>3b) Apex Events Data Model</B></B>  
+<BR>Created on Tuesday, July 25th. 2017
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/apex_events_data_model.gif"> 
+</TD>
+
+
+
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>4) Insurance Dimensional Model   
+<BR><BR>
+<IMG ALT="Dimensional Data Model"  BORDER=0  SRC="../insurance_data_warehouses/images/insurance_dimensional_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>5) Logical Data Model (Jan 22nd)
+<BR><BR>
+<IMG ALT="Logical Data Model - Jan 22nd"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>6) Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 7) Insurance FNOL Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Insurance FNOL Data Model"  BORDER=0  SRC="../insurance_fnol/images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>8) Physical Data Model (Physical - Phase 1 -Attributes) 
+<BR><BR>
+<IMG ALT="Physical Data Model"  BORDER=0  SRC="images/physical_data_model_phase_1_attributes.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>9) Conceptual Data Model - Overview
+<BR><BR>
+<IMG ALT="Conceptual Data Model"  BORDER=0  SRC="images/conceptual_data_model_dec28th.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>10 Canonical Data Model for Insurance (Entities) 
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="images/physical_data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 11) Canonical Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+</TABLE>
+
+<HR>
+
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+
+<TR>
+<TD ALIGN=middle COLSPAN=2 VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Four Self-Service Insurance Events   
+<BR><BR>
+<IMG ALT="4 Events"  BORDER=0  SRC="images/4_events.jpg"> 
+</TD>
+
+</TR>
+
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) KPIs</B> will go here, for example, Total Sales by Policy Type.
+
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) Self-Service Insurance Platform   
+<BR><BR>
+<IMG ALT="Platform"  BORDER=0  SRC="images/insurance_self_service_platform.jpg"> 
+</TD>
+<TD VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>1a) Insurance Logical Model (POC)   
+<BR><BR>
+<IMG ALT="Logical Data Model"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>2) Insurance Dimensional Model   
+<BR><BR>
+<IMG ALT="Dimensional Data Model"  BORDER=0  SRC="../insurance_data_warehouses/images/insurance_dimensional_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>3) Logical Data Model (Jan 22nd)
+<BR><BR>
+<IMG ALT="Logical Data Model - Jan 22nd"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 4) Insurance FNOL Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Insurance FNOL Data Model"  BORDER=0  SRC="../insurance_fnol/images/conceptual_data_model.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Physical Data Model (Physical - Phase 1 -Attributes) 
+<BR><BR>
+<IMG ALT="Physical Data Model"  BORDER=0  SRC="images/physical_data_model_phase_1_attributes.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>5) Conceptual Data Model - Overview
+<BR><BR>
+<IMG ALT="Conceptual Data Model"  BORDER=0  SRC="images/conceptual_data_model_dec28th.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Canonical Data Model for Insurance (Entities) 
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="images/physical_data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 6) Canonical Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+</TABLE>
+-------------->
+
+
+
+<!----------------------------
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) KPIs</B> will go here, for example, Total Sales by Policy Type.
+
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) Self-Service Insurance Platform   
+<BR><BR>
+<IMG ALT="Platform"  BORDER=0  SRC="images/insurance_self_service_platform.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>2) Insurance Dimensional Model   
+<BR><BR>
+<IMG ALT="Dimensional Data Model"  BORDER=0  SRC="../insurance_data_warehouses/images/insurance_dimensional_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>3) Logical Data Model (Jan 22nd)
+<BR><BR>
+<IMG ALT="Logical Data Model - Jan 22nd"  BORDER=0  SRC="images/a.gif"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical Data Model - Phase 1 
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="images/physical_data_model_phase_1.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 4) Insurance FNOL Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Insurance FNOL Data Model"  BORDER=0  SRC="../insurance_fnol/images/conceptual_data_model.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Physical Data Model (Physical - Phase 1 -Attributes) 
+<BR><BR>
+<IMG ALT="Physical Data Model"  BORDER=0  SRC="images/physical_data_model_phase_1_attributes.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>5) Conceptual Data Model - Overview
+<BR><BR>
+<IMG ALT="Conceptual Data Model"  BORDER=0  SRC="images/conceptual_data_model_dec28th.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Canonical Data Model for Insurance (Entities) 
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="images/physical_data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> 6) Canonical Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+</TABLE>
+
+<hr>
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+KPIs will go here, for example, Total Sales by Policy Type.
+<HR>
+<BR><B>Insurance Dimensional Model  
+<BR><BR>
+<IMG ALT="Dimensional Data Model"  BORDER=0  SRC="../insurance_data_warehouses/images/insurance_dimensional_model.gif"> 
+</TD>
+
+
+</TR>
+
+<TR>
+
+
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Logical 3NF Data Warehouse Model  
+<BR><BR>
+<IMG ALT="Logical Data Model - detailed"  BORDER=0  SRC="../insurance_data_warehouses/images/data_model.gif"> 
+</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B> Canonical Data Model (Conceptual)
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/conceptual_data_model.jpg"> 
+</TD>
+
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Canonical Data Model (Logical) 
+<BR><BR>
+<IMG ALT="Canonical Data Model"  BORDER=0  SRC="../canonical_data_models/images/data_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Conceptual Data Model - Overview
+<BR><BR>
+<IMG ALT="Conceptual Data Model"  BORDER=0  SRC="images/conceptual_data_model_dec28th.jpg"> 
+</TD>
+</TR>
+</TABLE>
+----------------->
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>February 7th. 2018
+
+
+
+
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2018</I></FONT>
+<BR>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+
+
+
+</body>
+
+</html>

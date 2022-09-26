@@ -1,0 +1,122 @@
+<HTML><HEAD><TITLE>User Interface for My Life Project</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<CENTER><B>THE USER INTERFACE   FOR   MY   LIFE   DEVELOPMENT   PROJECT</B></CENTER>
+
+<BR><BR>
+<IMG ALT="User Interface for My Life Project" SRC="images/my_life_dev_project_model.gif"> 
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+<HR>DDL to Create Tables 
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+/* ------------------------------------------------------------ */
+/* Project name	: My Life                      			*/
+/* Author	: Barry Williams    				*/
+/* Created on	: August 17th. 2008				*/
+/* ------------------------------------------------------------ */
+
+CREATE TABLE [Digital_Assets] (
+    [asset_id] UNIQUEIDENTIFIER NOT NULL,
+    [activity_id] INTEGER NOT NULL,
+    [format_type_code] CHAR(10) NOT NULL,
+    [title] VARCHAR(40),
+    [url] VARCHAR(255),
+    [other_details] VARCHAR(255),
+    CONSTRAINT [PK_Digital_Assets] PRIMARY KEY ([asset_id])
+)
+Go
+
+CREATE TABLE [Format_Types] (
+    [format_type_code] CHAR(10) NOT NULL,
+    [format_type_description] VARCHAR(80),
+    CONSTRAINT [PK_Format_Types] PRIMARY KEY ([format_type_code])
+)
+Go
+
+/*     [eg jpg, url] CHAR(1), */
+
+CREATE TABLE [MyActivities] (
+    [activity_id] UNIQUEIDENTIFIER NOT NULL,
+    [calendar_entry_id] INTEGER,
+    [my_id] INTEGER NOT NULL,
+    [topic_code] CHAR(10) NOT NULL,
+    [activity_date] DATETIME,
+    [name] VARCHAR(40),
+    [description] VARCHAR(255),
+    [activity_url] VARCHAR(255),
+    [other_details] VARCHAR(255),  
+    CONSTRAINT [PK_MyActivities] PRIMARY KEY ([activity_id])
+)
+Go
+
+/*   [eg Report an Item on My Life and PDAs] VARCHAR(1), */
+
+CREATE TABLE [MyLife] (
+    [my_id] UNIQUEIDENTIFIER NOT NULL,
+    [first_name] VARCHAR(40),
+    [last_name] VARCHAR(40),
+    [nickname] VARCHAR(40),
+    [email_address] VARCHAR(255),
+    [gender] CHAR(1),
+    [city] VARCHAR(40),
+    [preferred_language] VARCHAR(40),
+    [role] CHAR(10),
+    [login_name] VARCHAR(40),
+    [password] VARCHAR(40),
+    [other_details] VARCHAR(255),
+    CONSTRAINT [PK_MyLife] PRIMARY KEY ([my_id])
+)
+Go
+
+CREATE TABLE [Topics] (
+    [topic_code] CHAR(10) NOT NULL,
+    [topic_description] VARCHAR(80) NOT NULL,
+    CONSTRAINT [PK_Topics] PRIMARY KEY ([topic_code])
+)
+Go
+
+
+/*     [eg Gym, Wine] CHAR(1), */
+
+/* ---------------------------------------------------------------------- */
+/* Foreign key constraints                                                */
+/* ---------------------------------------------------------------------- */
+
+ALTER TABLE [Digital_Assets] ADD CONSTRAINT [Format_Types_Digital_Assets] 
+    FOREIGN KEY ([format_type_code]) REFERENCES [Format_Types] ([format_type_code])
+GO
+
+ALTER TABLE [Digital_Assets] ADD CONSTRAINT [MyActivities_Digital_Assets] 
+    FOREIGN KEY ([activity_id]) REFERENCES [MyActivities] ([activity_id])
+GO
+
+ALTER TABLE [MyActivities] ADD CONSTRAINT [MyLife_MyActivities] 
+    FOREIGN KEY ([my_id]) REFERENCES [MyLife] ([my_id])
+GO
+
+ALTER TABLE [MyActivities] ADD CONSTRAINT [Topics_MyActivities] 
+    FOREIGN KEY ([topic_code]) REFERENCES [Topics] ([topic_code])
+GO</FONT></PRE>
+<HR>
+
+
+
+
+<FONT SIZE=2>
+<P><B>Barry Williams</B>
+<BR>August 18th. 2008
+<BR>Principal Consultant
+<BR>Database Answers.org
+
+<CENTER>
+<BR><BR><FONT SIZE=1><I> &#169 DataBaseAnswers.com 2008</I></FONT>
+</CENTER>
+
+</BODY>
+
+</HTML>

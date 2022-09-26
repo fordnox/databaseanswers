@@ -1,0 +1,154 @@
+<HTML><HEAD><TITLE>Consultant Search Web Site</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/japan/kiyomizu-dera_lge.jpg">
+<IMG ALT="Kyomizu Dera, Japan" BORDEeeR=1 SRC="../../images/philg/japan/kiyomizu-dera_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>FACTS for the Data Model for a Consultant Search Web Site</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P>
+<A HREF="index.htm">Back to the Conceptual Data Model.</A>
+<BR><B>Original Requirements from the User :-</B><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>We are acting as an administrator that have database of consultants from thoudands of sites across the web. 
+Our model is simple:-
+<LI> Organization (in this case acts as a partner) with an interest in helping their employees and associates to sell 
+their consulting sevices (consultant), pay a modest listing fee for each individual consultant to be included in our 
+(administrator) database. 
+
+<LI>Administrator's partner provides seach links from their web site to our (administrator) database as a benefit to 
+those who visit the partner sites. 
+ 
+We need these entities: 
+ 
+1. Administrator 2. Partner 3. Consultant 4. Seacher/User 
+ 
+The things of interest are: 
+ 
+1. Administrator 
+2. Partner 
+3. Partner Web sites 
+4. Seach links 
+5. Profile 
+6. Searcher/User 
+7. Consultant 
+8. Slot 
+ 
+Business rules: 
+ 
+1. Partner register to administrator in order to get how many slot they want. 
+ 
+2. Partner has one or many consultants. 
+ 
+3. Each consultant only has one slot. 
+ 
+4. Slot is contained for consultant's profile. 
+ 
+5. Partner has to pay to the administrator according to how may slots they ask. 
+ 
+6. Consultant has to pay to partner. 
+ 
+7. User can search in administrator's website at the advanced search listing of 
+   all consultants within preferences. 
+ 
+8. Partner also has a contract with the administrator regarding to what the 
+   expiration date to log in to the administrator's web site. 
+   They get the account number and the username and password by the time they pay to admnistrator. 
+ 
+9. The administrator needs to know the results of seach according to the hit count, 
+   how many users go to the consultants web site and how many is failed. 
+</PRE> 
+
+
+<HR>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>We need a Data Model for a proposed Web Site for Consultant Search.
+
+The proposed Web Site will provide access to the worldwide Database of Consultants from 
+thousands of Partner Web Sites across the Web. 
+These Partners Web Site will use the proposed Web Site to sell their consulting services, 
+and will pay a modest listing fee for each individual consultant to be included in the 
+Consultant Database.
+
+The Partners will provide search links from their Web Sites to the my database, as a 
+benefit to those who visit the partner sites. 
+
+The Things of Interest are :-
+1) Consultants
+2) Partners
+3) Partners Web Sites
+4) Search Links
+5) Skills
+
+Business Rules :-
+1) Consultants can be listed on one or more Partner Web Sites.
+2) A Partner provides one or many Search Links.
+3) A Partner pays a Fee for each Search Link displayed on the Web Site.
+</PRE>
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

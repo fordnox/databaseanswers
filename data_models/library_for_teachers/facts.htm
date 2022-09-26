@@ -1,0 +1,117 @@
+<HTML><HEAD><TITLE>Library for Teachers</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Database for a Library</FONT>
+</TD>
+<TD ALIGN=right>
+<IMG ALIGN=right ALT="Bienecke Rare Manuscripts Libray, Yale University" BORDER=0 HEIGHT=106 WIDTH=180 SRC="../../images/bienecke_vsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define the functional requirements which the Database must meet.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+A Teachers Resource Library.
+Dennis says :-
+Hi Barry 
+Thanks for the info. 
+As I have only done a partial course in Access and not likely to complete it I am 
+not fully conversant with all aspects yet. I am planning to educate myself in this 
+very interesting topic so all the help I can get would be appreciated. 
+I have been going over my old lecture notes to get a grasp on your postings. 
+Looking at your FACTS sheet I stay with the entities I need. 
+What I need to see in the form that will be used by the borrowers is the Teachers(Borrower) ID 
+I have got this as a text file which I import to the Borrower Table. 
+This includes Borrower Name in one column and ID number in another. 
+I've attached the text files for the staff and the books if you want to get a better picture of what I need. 
+I need to be able to have the book titles brought up with the find element. 
+I am having trouble importing the books text file into the table in the model you sent me, keep getting error messages.Possible queries could be how many books taken out by individuals and which are overdue. I don't know what your position is with your company as to supplying info before charging so I must tell you that I am on a disability pension and do not have a credit card. I work only part-time at our school feeding the farm animals. I have a book that I used in my course called 'Nene Guide to Access 2000'. This is an Australian publication and there are download files at 
+www.nenepress.com.au  
+It is quite a useful publication but I can't imagine that it would be available where you are. 
+Trust I am not asking too much of you. 
+Regards 
+Dennis 
+
+<HR>
+The database is for a teachers resource library.
+Fields needed are :-
+   <LI>Book Title 
+   <LI>Borrower ID (number) 
+   <LI>Borrower Name 
+   <LI>Date Out (default) 
+   <LI>Date returned. 
+
+I need a form that allows me to have the Title put in by selection from the book table, maybe a list box? 
+And the Borrower id + Borrower name the same. 
+I don't know if you can understand my explanations so I'll leave it in your obviously capable hands. 
+
+<HR>
+<B>The Facts from here need to be reviewed ...</B>
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Authors
+B.2 Books
+B.3 Book Categories
+B.4 Books Out on Loan 
+B.5 Users
+B.6 User Borrowings
+
+
+C. These THINGS_OF_INTEREST are Related as follows :-
+C.1 An AUTHOR can write many BOOKS.
+c.2 A BOOK can have many AUTHORS.
+C.3 A BOOK can be in many CATEGORIES.
+C.4 A USER can be associated with zero or many BOOKS_OUT_ON_LOAN.
+C.5 A BOOK_OUT_ON_LOAN must always be associated with one and only one USER.
+
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 How many BOOKS are overdue ?
+F.2 Do we have any BOOKS by Charles Dickens ?
+
+
+<!---
+However, it's often better to avoid an approach which is designed to provide 
+generality at the expense of ease of understanding.
+--->
+
+Barry Williams
+Principal Consultant
+Database Answers
+14th. June 2003
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

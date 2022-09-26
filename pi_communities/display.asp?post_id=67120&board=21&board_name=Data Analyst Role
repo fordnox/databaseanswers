@@ -1,0 +1,198 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> > <a href="index.asp?board=21&board_name=Data+Analyst+Role">Data Analyst Role</a></font></td>
+		</tr>
+	</table>
+
+<p><table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td valign=top></td>
+	</tr>
+	<tr valign=bottom>
+	<td><a href="compose.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a><img src="../images/spacer.gif" width=10 height=1><a href="compose.asp?post_action=reply&parent_id=67120&board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></a></td>
+	</tr>
+</table>
+
+<p><table border=0 cellpadding=1 cellspacing=0 width=100%>
+	<tr>
+	<td><a href="index.asp?board=21&board_name=Data+Analyst+Role"><img src="../images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="index.asp?board=21&board_name=Data+Analyst+Role">Up to topic list</a> | <a href="search.asp?board=21&board_name=Data+Analyst+Role">Search</a></font></td>
+	</tr>
+</table>
+
+
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td width=25%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td width=75%><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Message</b></font></td>
+		</tr>
+		<tr bgcolor="#CCCCCC" valign=top>
+		<td>
+		
+			<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+			<b><a href="profile.asp?id=26674"><font color="#990000">urgedaxardlar</font></a></b><br>
+			<font size=1">Posts: 10</font>
+			<p>
+			
+			
+		</font>
+		</td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">
+		<table border=0 cellpadding=0 cellspacing=0 width=100%>
+			<form action="compose.asp" method="post">
+			<tr valign=top>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><b>My Super Webtip: Schnell diskret serioes und sehr preiswert</b><br><font size=1>1/29/2011 8:29 AM</font></font></td>
+			
+				<input type="hidden" name="post_action" value="reply">
+				<input type="hidden" name="parent_id" value="67120">
+				<input type="hidden" name="board" value="21">
+				<input type="hidden" name="board_name" value="Data Analyst Role">
+				<td align=right><input type="image" src="/dba/images/messageforum/btn_reply.gif" width=76 height=15 border=0 alt="Reply to this message"></td>
+			
+			</tr>
+			</form>
+		</table>
+		<hr>
+		http://kamagrapharma.blogspot.com/2011/01/kamagra-oral-jelly-vom-kamagra-shop.html     <br>           <br>Bewahren Sie die Medizin in dem Badezimmer nicht.Diese Medizin sollte nicht von den Frauen und von den Kindern genommen werden, sowie von den Patienten mit einer bekannten Überempfindlichkeit zu irgendeinem Bestandteil der Pille.Die ernste allergische Reaktion auf diese Medizin kann sehr selten auftreten und in diesem Fall brauchen Sie sofortige medizinische Hilfe.Schützen vor Feuchte und Tageslicht!Kamagra Mundgelee enthält Sildenafil Zitrat und wird in der Behandlung der aufrichtbaren Funktionsstörung in den Männern verwendet.Lagerung Lagern bei einer Zimmertemperatur zwischen 68-77 G (20 und 25 Grad Celsius).Die Information, die auf dieser Seite ausgestellt ist kann nicht für die Selbstbehandlung oder für die Eigendiagnostik verwendet werden.Produktbeschreibung Allgemeine Anwendung Sildenafil ist der Hauptbestandteil von Viagra Oral Jelly www.Kontraindikationen Viagra Oral Jelly ist für jene Patienten nicht angezeigt, die eine andere Medizin gegen Impotenz einnehmen oder Nitrate haltige Arzneien gegen Brustschmerzen oder Herzprobleme verwenden.Es vor direkter Belastung durch Licht, Hitze und Feuchtigkeit schützen.Eine fettreiche Mahlzeit kann die Zeit des Effektes dieser Medizin verzögern.Verpasste Dosis Sie müssen diese Medizin nur bei der Notwendigkeit einnehmen, und brauchen keinen Plan für die Einnahme.Sildenafil kann für andere Zwecke auch verwendet werden, die nicht oben verzeichnet wurden.Dosierung und Anwendungsgebiet: Viagra Oral Jelly muss bei der Notwendigkeit genommen werden, ungefähr 1 Stunde vor dem Geschlechtsverkehr.Lagerung Kamagra Munddes gelee-15 und 30 Grad c-(59 und 86 Grade Fahrenheit) bei Zimmertemperatur speichern.Sie müssen mit Ihrem Doktor sofort in Verbindung treten oder mit einem emergency Gesundheitszentrum in Verbindung treten, wenn Sie eine Überdosis vermuten.     <br>     <br>Nehmen Sie Viagra Oral Jelly nicht öfter als einmal täglich.Vorsichtsmaßnahmen bevor Sie anfangen, Sildenafil zu nehmen, informieren Sie Ihren Doktor oder Apotheker, wenn Sie dazu allergisch sind; oder wenn Sie irgendwelche anderen Allergien haben.Viele Menschen benutzen diese Medizin ohne ernste Nebenwirkungen.Mögliche Nebenwirkung die möglichst oft auftretenden Nebenwirkungen sind Kopfschmerzen, Flushing , Übelkeit oder Magenverstimmung, verstopfte oder laufende Nase , Gedankenlosigkeit, Diarrhöe.Sildenafil beeinflusst die Reaktion zur sexuellen Anregung.Diese Entspannung erlaubt erhöhten Blutfluss in die bestimmten Bereiche von Penis, und das führt zur Aufrichtung.Gealterte Leute können für die Nebenwirkungen der Medizin empfindlicher sein.Versuchen Sie, Grapefruit nicht zu essen oder Grapefruitsaft nicht zu trinken, während Sie mit Sildenafil behandelt werden.Treten Sie mit Ihrem Doktor oder Apotheker für mehr Details in Verbindung.Alle Anweisungen für einen bestimmten Patienten sollen mit Ihrem Gesundheitspflegeberater oder Doktor, der für den Fall verantwortlich ist, übereingestimmt werden.Das wirkt auf die Entspannung der glatten Muskeln mit der Benutzung von Stickstoffoxid, einer Chemikalie, die normalerweise die Reaktion für sexuelle Anregung befreit.Außer Reichweite von Kindern und Haustiere!Diese Aufzählung kann unvollständig sein.Wenn Sie denken, Sie haben zu viel Medizin eingenommen, treten sofort mit Ihrem Arzt in Verbindung!Es sollte einen Tag nicht mehrmals genommen werden.Wir sind nicht für direkte, indirekte, spezielle oder andere indirekte Beschädigung irgendwelcher Art, sowie auch für Folgen Ihrer möglichen Selbstbehandlung nicht verantwortlich.Wechselwirkung diese Medizin soll nicht mit den Nitraten und entspannenden Arzneimitteln verwendet werden, die ?Symptome für die Überdosierung können wie folgt sein: Brustschmerzen, Übelkeit, unregelmäßiger Herzschlag, Ohnmacht.Treten Sie mit Ihrem Doktor oder mit dem Apotheker in Verbindung.Haftung Wir stellen Ihnen nur die allgemeine Information über die Medizin zur Verfügung vor, die nicht alle Anweisungen, möglichen Wechselwirkungen oder Vorsichtmaßnahmen umfasst.Kamagra Mundgelee wird direkt in den Blutstrom aufgesogen und folglich erfordert es unterere Dosen, ähnliche Ergebnisse als das jeder möglicher anderen Medizin zu erzielen.Weg von Kindern und Haustieren halten.Wir müssen jede Haftung für Schäden ablehnen, die aus einer missbräuchlichen Nutzung von den Informationen auf dieser Seite entstehen kann.Amyl- oder Butylnitrit enthalten; sowie Alphablockierer Arzneimitteln; andere Medikationen gegen Impotenz; Bestimmte Medikamente gegen Bluthochdruck, etc.Sildenafil verwendet man für die Behandlung der Funktionsstörung (Machtlosigkeit) bei den Männern, sowie bei dem arteriellen Lungenbluthochdruck.     <br>     <br>Verbrauch-Details Kamagra Mundgelee wird mündlich 15 bis 20 Minuten vor jeder möglicher sexuellen Aktivität verbraucht.      <br>     <br>http://kamagrapharma.blogspot.com/2011/01/kamagra-shop-wwwkamagraplanetcom-serios.html       <br>    <br>    <br>   <br><YOUTUBE>MeUHkpVgFLk</YOUTUBE>   <br><YOUTUBE>HAbLhVuqaC8</YOUTUBE>   <br><YOUTUBE>"MeUHkpVgFLk"]internet kasino</YOUTUBE>   <br><YOUTUBE>"HAbLhVuqaC8"]internet kasinoh</YOUTUBE>   <br><YOUTUBE>aWIOBTUZ0cM </YOUTUBE>   <br><YOUTUBE>yK9zGb5WPn8</YOUTUBE>   <br><YOUTUBE>"aWIOBTUZ0cM "]internet kasino</YOUTUBE>   <br><YOUTUBE>"yK9zGb5WPn8"]internet kasinoh</YOUTUBE>   <br>            <br><a href=http://www.unlockplanet.net>Jailbreak iphone</a>           <br>           <br><a href=http://www.singlesucht.com> single single</a>          <br>       <br><a href=http://www.monkredit.com>Kredit ohne Schufa</a>  <br>  <br>http://www.beeplog.de/175640_752075.htm
+		</font>
+		
+		
+		</td>
+		</tr>
+	</table>
+
+	<p>
+	<!-- 
+	
+	The lines below activate the ability to expand the thread
+	to read all of the messages in the order they were written -->
+	
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#000000"><a href="display.asp?post_id=67120&mode=expand&thread=67120&board=21&board_name=Data+Analyst+Role">Expand and read all posts in this thread</a></font></td>
+		</tr>
+	</table>
+	
+	<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+		<tr bgcolor="#333399">
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+		</tr>
+	
+		
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=16 height=13 border=0>
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=67120&board=21&board_name=Data+Analyst+Role">My Super Webtip: Schnell diskret serioes und sehr preiswert</a></font>&nbsp;<img src="/dba/images/messageforum/message_marker.gif" width=8 height=8 alt="Your are currently viewing this message">
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">urgedaxardlar</font></td>
+
+			
+			
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">1/29/2011 8:29 AM</font></td>
+			</tr>
+			
+	</table>
+	
+
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

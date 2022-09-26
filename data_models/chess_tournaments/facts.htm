@@ -1,0 +1,111 @@
+<HTML><HEAD><TITLE>Dezign Data Model for Chess Tournaments</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=middle>
+<A HREF="http://games.brothersoft.com/grand-master-chess-tournament.html">
+<IMG ALT="Grand Master Chess Tournament Game (Click for Web Site)" BORDER=0 SRC="images/grand_master_chess_tournament_game_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Chess" SRC="../../images/buttons/button_studio/chess.gif">
+<IMG ALT="Tournaments" SRC="../../images/buttons/button_studio/rt_tournaments.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<TABLE BGCOLOR="98CEDF" WIDTH=100%>
+<TR>
+<TR>
+
+<!---
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=100>
+<A HREF="../../images/boschendal_pool.jpg"><IMG ALIGN=left ALT="Boschendahl Estate, South Africa" BORDER=0 HEIGHT=128 WIDTH=85 SRC="../../images/boschendal_vertical_sml.jpg"></A>
+</TD>
+--->
+
+<TD VALIGN=top>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<P><B>The FACTS define the Business Rules ...</B>
+<P><B>1. What are the 'Things of Interest' in the Scope to be modelled ...</B>
+<LI>Chess Clubs
+<LI>Players
+<LI>Members
+<LI>Tournaments
+<LI>Tournament Matches.
+</OL>
+
+<P><B>2. How are these 'Things of Interest' related ? ...</B>
+<LI>CHESS CLUBS can have many MEMBERS.
+<LI>A PLAYER can have one and only one RANKING.
+<LI>CHESS CLUBS can host many TOURNAMENTS.
+<LI>TOURNAMENTS can also be sponsored by organisations,(such as Newspapers or Federations), 
+<BR>which are not CHESS CLUBS.
+<LI>Many TOURNAMENTS occur every year.
+<LI>PLAYERS can participate in zero or many TOURNAMENTS.
+<LI>A PLAYER can be a MEMBER in only one CHESS CLUBS at any one time.
+<LI>A TOURNAMENT can have many PLAYERS.
+<LI>A TOURNAMENT can have zero or many MATCHES between two participating PLAYERS.
+</OL>
+
+<P><B>3. What do we know about the 'Things of Interest' ? ...</B>
+<LI>A CHESS CLUB is identified by a unique ID, and has a Name, Address and Other Details.
+<LI>A PLAYER is identified by a unique ID, and has a Name, Address and Other Details.
+<LI>A TOURNAMENT is identified by a unique Code, and has a Name, Sponsor, Start Date and End Date.
+<LI>A TOURNAMENT can have zero, one or many SPONSORS.
+</OL>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Me a Question</A>  
+        | <A HREF="mailto:info@databaseanswers.com">Email Me</A> 
+        | <A HREF="../../search.htm">Search</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<P>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers.org 2003</I></FONT></CENTER>
+
+</HTML>

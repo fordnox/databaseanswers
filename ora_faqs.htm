@@ -1,0 +1,148 @@
+<HTML><HEAD><TITLE>Oracle FAQs - Frequently Asked Questions</TITLE></HEAD>
+
+<BODY BGCOLOR="98CEDF" TEXT="#202020">
+
+<TABLE BGCOLOR=blue WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=67 WIDTH=417 SRC="images/ivans_dba_logo_alt.jpg" SouRCe="images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top><IMG ALT="Sunset at Kings Canyon" BORDER=1 HEIiGHT=106 WIiDTH=180 SRC="images/philg/kings-canyon-sunset_sml_2.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Oracle Page" SRC="images/buttons/button_studio/oracle_faqs_on.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="#0000FF" WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="images/buttons/button_studio/home.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100><A HREF="ask_a_question_rbw.php3">
+<IMG ALT="Ask a Question" BORDER=0 SRC="images/buttons/button_studio/ask_a_question.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=85><A HREF="data_models/index.htm">
+<IMG ALT="Data Models" BORDER=0 SRC="images/buttons/button_studio/data_models.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="images/buttons/button_studio/faqs.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="search.htm"><IMG ALT="Search" BORDER=0 SRC="images/buttons/button_studio/search.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="images/buttons/button_studio/site_map.gif"></A></TD>
+<TD ALIGN=right VALIGN=top><FONT COLOR=white face="Verdana" size="1">&nbsp</TD>
+</TR>
+</TABLE>
+
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="#98CEFD" BGCOLOuuuR="003088" CELLPADDING=5 CELLSPACING=5 WIDTH=90%>
+
+<TR>
+<TD VALIGN=top>
+
+<TABLE BGCOLOR="003088" BORDER=1 CELLPADDING=5 CELLSPACING=5 WIDTH=100%> 
+<TD BGCOLOR="003088" COLSPAN=2 VALIGN=top>
+<FONT COLOR=white FACE="Verdana" SIZE=2><B>
+<FONT COLOR=red>QUESTION :</FONT> How do I reduce the size of installed 9i ?</B>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="#004098" COLSPAN=2><FONT COLOR=white FACE=Verdana SIZE=1>
+<FONT COLOR=red>BACKGROUND :</FONT> Oracle weighs in at 1.7 Gigabytes, which is a substantial amount of disk space,
+especially if you just want to check out the Personal Edition.
+Here are some suggestions for reducing the size of the installation :-
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=white FACE=Verdana SIZE=2>
+<LI>From Connor McDonald
+</TD>
+<TD><FONT COLOR=white FACE=Verdana SIZE=1>
+A massive chunk of the space is the "database templates" that now come with the distribution.  
+An easy way to work around this is to start the install - when the installer gets upset because 
+you are running out of space, search for file larger than (say) 50M.  
+The ".DFJ" files will stick out like a sore thumb - you can delete and/or move them if you
+don't intend using them
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="#004098" VALIGN=top WIDTH=200><FONT COLOR=white SIZE=2>
+<LI>From Daniel Morgan</TD>
+<TD BGCOLOR="#004098"><FONT COLOR=white SIZE=2>Here's how to substantially reduce the footprint.</FONT>
+<FONT COLOR=white SIZE=1>
+<BR>While 9i is installing keep an eye open for every file with the following file extensions:.avi.mov.pdf.html.doc.ico and delete them. 
+<BR>This monster contains almost 1GB of help files and documentation that has nothing to do with actually running the Oraclesoftware.
+<BR>Though you must temporarily dump some stuff so that the installer will move forward.
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=white FACE=Verdana SIZE=2>
+<LI>From Jimmy Collins
+</TD>
+<TD VALIGN=top><FONT COLOR=white FACE=Verdana SIZE=2>
+In addition you need some space (maybe 500MB) for your database files.
+</OL>
+</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=white FACE=Verdana SIZE=2>
+<LI>From Justin John 
+</TD>
+<TD><FONT COLOR=white FACE=Verdana SIZE=1>
+I just installed 9i Enterprise on my computer, the installation size is 1.7G, and
+after playing with it for a few days, it grew to 3.9G. 
+This was no problem to me, I have 2 disks with 95G capacity, I got it over a year ago. 
+Nowadays hard drive is so much cheaper, just get yourself a 40G HD
+for about $200, you're doing yourself a big favour.
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=2 VALIGN=top WIiDTH=50%>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<FONT SIZE=1><I> &#169  <A HREF="http://www.icebreakersystems.com">IceBreaker WebDesigns 2002</I></A></FONT></CENTER>
+
+</HTML>
+

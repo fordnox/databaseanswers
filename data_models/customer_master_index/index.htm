@@ -1,0 +1,192 @@
+<html>
+<head>
+<title>Data Model for a Customer Master Index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="dummy_url.com" TARGET=_NEW>
+<IMG ALIGN=right ALT="MDM Layer" hspace="0" vspace="4" SRC="../../images/mdm_layer.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for a Customer Master Index&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+We would be glad to have 
+<A HREF='mailto:dba_requests@barryw.org?subject=Comments on the Customer Master Index Data Model'>your comments</A>.
+
+<BR><BR>
+
+I show two designs here for my post November-27 work which shows my first thoughts on combining Customer IDs and Tags.
+<BR>Number 1 is a Conceptual Data Model and number 2 is a Logical Data Model.
+
+<!--------
+<HR>In November, 2017 David Rabb was instrumental in founding the Customer Data Platform Institute (CDPI) to work on the specifications of a Customer Data Platform(CDP).
+<BR>One of the core benefits of a CDP was defined as a 'Unified Customer View' which corresponds to my 'CMI' 
+<BR>Another of the benefits was 'Enhanced cross-channel analytics' which was defined as 'analysis of the <B>customer journey across any channel</B>'. 
+
+<BR>One of the components was 'to collect as much customer interaction data as possible </B>'. 
+------------------->
+
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 1 - Conceptual Data Model. 
+<BR><BR>
+<IMG SRC="images/conceptual_data_model.JPG"></TD>
+</TD>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 2 - Logical Data Model.</B>
+<BR><BR>
+<IMG ALIGN=middle ALT="Conceptual Data Model" BORDER=0 SRC="images/logical_data_model.gif">
+</TD>
+</TR>
+
+<!----------
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 3 - Generic CMI Logical Data Model. 
+<BR><BR>
+<IMG SRC="../customer_data_platform_for_kpis/images/logical_data_model.gif"></TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 4 - for Local Government.</B>
+<BR><BR>
+<IMG ALIGN=middle ALT="Conceptual Data Model" BORDER=0 SRC="images/master_data_mgt_customers_model.gif">
+</TD>
+</TR>
+
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 1 - Generic CMI Logical Data Model. 
+<BR><BR>
+<IMG SRC="../customer_data_platform_for_kpis/images/logical_data_model.gif">
+</TD>
+
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Design number 2 - for Local Government.</B>
+<BR><BR>
+<IMG ALIGN=middle ALT="Conceptual Data Model" BORDER=0 SRC="images/master_data_mgt_customers_model.gif">
+</TD>
+</TR>
+--------------------->
+
+</TABLE>
+
+<BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>November 28th. 2017
+<BR>
+
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2017</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

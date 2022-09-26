@@ -1,0 +1,243 @@
+<html>
+<head>
+<title>Requirements for NewEgg Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.yale.edu/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Colourful Crockery for Hire" BORDER=0 hspace="0" vspace="4" SRC="images/colourful_crockery.jpg"> </A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="newegg_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version.</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<img alt="Newegg.com" src="images/lft_newegg_com.bmp"> 
+<!--- <img alt="Hire"         src="images/rt_hire.bmp">  --->
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+<BR>
+<!--- <B><BR>The Business Rules</B> have been defined and are shown below. --->
+
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>Hello, Barry! 
+
+First, I would like to thank and congratulate you for all the helpful information made available to the public of your website - FOR FREE!
+
+I live in Brazil, a country with a special need for accessible education (not much available to the general public), so I recognize a treasure when I see one. 
+
+Your knowledge, put at our disposal for free is a true treasure for me and many others that will certainly visit your website from now on - after I tell friends about your job.
+
+Not being a DBA, I have been trying to develop a flexible database for 5 or 6 years - without much success. 
+Aware of my limitations I have requested quotations from professionals who I thought would be able to do what I failed to, 
+but I could not afford to pay for the work of any of those top level professionals.
+
+I would appreciate if you could give me advice on how to design a schema for a database which would allow me to make a website as flexible as the one used by <B>www.newegg.com</B>.
+Please take a look at the site and you will see how many products are listed in hundreds of categories, and yet you will see how easily these products can be searched using their "Advanced Search". 
+Each attribute - which is different for every product category - can be filtered. 
+Looking at the huge quantity of items stored in their database, with different details needed, 
+
+I don't think they create a table for each product category - the database must be flexible to accommodate the different 
+product categories (and their special needs) without forcing anyone to re-design the database or increase the number of tables 
+on every time a new category is added. Clearly, the filters are automatically generated based on the categories presented. 
+
+The database must be made in a such way to allow it to be done.
+
+Can you help me??? 
+
+Thank you so much for any additional help you can give me. 
+
+Best regards, 
+
+Henrique Schroeder 
+Brazil
+
+
+
+
+
+
+
+
+<HR>
+
+<B>B. The Things of Interest, ('THINGS'), which will become Tables in the Database, include :-</B>
+B.1 Customers
+B.2 Products
+B.3 Refunds
+B.4 Etc.
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 A <B>Customer</B> can buy zero, one or many <B>Products</B>.
+C.2 A <B>Product</B> can be purchased by zero or one <B>Customers</B>.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 To be determined
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined
+
+<B>F. Typical Enquiries include :-</B>
+F.1 To be Determined</PRE>
+
+That is the end of the <B>Statement of Business Rules</B>.
+
+<BR><BR>Barry Williams
+<BR>4th. October 2008
+<BR>Principal Consultant
+<BR>Database Answers</PRE>
+
+
+<!---
+<B>A. DESIGN NOTES :</B>
+A.1 <B>The Detail</B> reflects the Requirements.
+For example, Drivers have been included, but if this level of detail is not in the Requirmenet,
+then Drivers can be removed, which will simplify the Model.
+--->
+
+
+</TD></TR>
+
+<TR>
+<TD>&nbsp</TD>
+<TD COLSPAN=1>
+
+<!--- <FONT COLOR=blue FACE=Verdana SIZE=2>A GLOSSARY OF TERMS WOULD GO HERE AS A TABLE ... --->
+
+
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>Job Costing and profitability Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.principlesofaccounting.com/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Job Costing from the Principles of Accounting (Click for Web Site)" BORDER=1  hspace="0" vspace="4" SRC="images/job_cost_sheet_sml.jpg"></A> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="job_costing_and_profitability_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<img alt="Job Costing"       src="images/lft_job_costing.bmp"> 
+<img alt="and_profitability" src="images/rt_and_profitability.bmp">                   
+ 
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+<B><BR>The Draft Business Rules have been defined and are listed below.</B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is Job Costing and Profitability:-</B>
+<B>A. This is a Statement of the Requirements.</B>
+<HR>
+<B>The requirement</B>
+To track the material and labour costs of a Job so profit can be calculated from this.
+To track who did what in the course of getting that Job done.
+
+<B>Conceptually</B>
+A Job is requested by a Client.
+Each Job is completed after a series of Subjobs are done.
+Each Subjob is done by a Worker.
+Each Subjob has an associated Material cost.
+Each Worker has an associated Labour rate cost.
+
+<B>Practically</B>
+Each Job is registered to a Client for a Job Type and given a Job number. The Payment amount 
+for the Job is also recorded.
+The Worker registers the Subjob for that particular Job putting in details of who did it, what 
+type of subjob was done, when it was started and when it was finished.
+
+
+<B>Problems with reporting history</B>
+There are two derived data values in what is required of this system: 
+
+Subjob labour cost: subjob hours times worker's labour rate cost
+Profit: Job payment minus total Job cost (material plus labour cost).
+Since material and labour costs will change with time, I believe there would be problems with 
+historically comparing Subjob labour cost and Profit from one year to another with the current schema 
+since there is only a single field to record the values from which the data in question is derived? 
+
+That being the case, is this where the the "date from" field comes in as shown in <A HREF="http://www.databaseanswers.org/tutorial4_db_schema/tutorial_slide_7.htm" TARGET=_NEW>your Tutorial</A>  ?
+
+Thanks!
+
+Kevin
+<HR>
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 Clients
+B.2 Jobs
+B.3 Sub Jobs
+B.4 Workers
+B.5 Others to be determined.
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 To be determined.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 To be determined.
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined.
+
+<B>F. Typical Enquiries include :-</B>
+F.1 </PRE>
+</TD></TR>
+
+<TR>
+<TD>&nbsp</TD>
+<TD COLSPAN=1><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Barry Williams
+January 29th. 2010
+Principal Consultant
+Database Answers</PRE>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

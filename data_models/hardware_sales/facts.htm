@@ -1,0 +1,150 @@
+<HTML><HEAD><TITLE>Hardware Sales</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=67 WIDTH=417 SRC="../../images/ivans_dba_logo_alt.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=1><A HREF="../../images/cars/1936cord_lge.jpg">
+<IMG ALIGN=right ALT="1936 Cord " BORDER=0 SRC="../../images/cars/1936cord_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Hardware Sales" SRC="../../images/buttons/button_studio/hardware_sales_on.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+
+<TABLE BGCOLOR="#0000FF" WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=63>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/button_studio/home.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=120>
+<A HREF="../../ask_a_question_rbw.php3">
+<IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/button_studio/ask_a_question.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm">
+<IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/button_studio/data_models_on.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=72>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/button_studio/faqs.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=74>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/button_studio/search.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIiDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/button_studio/site_map.gif"></A></TD>
+<TD ALIGN=right VALIGN=top><FONT COLOR=white face="Verdana" size="1">&nbsp</TD>
+</TR>
+
+</TABLE>
+
+
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<TABLE BGCOLOR="#98CEFD" BORDER=0 WIDTH=90%>
+
+<TR>
+<TD VALIGN=top>
+<IMG ALIGN=left ALT="Underwater in Fiji" BORDER=1 HEIGHT=122 WIDTH=95 SRC="../../images/fiji_underwater_1.jpg"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF="index.htm">Back to the Conceptual Data Model.</A>
+
+<!-- begin body Text -->
+<P><B>PURPOSE OF THESE FACTS :-</B>
+
+<BR>These FACTS define the functional requirements which the Database must meet.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. The Area being Modelled is :-</B> Hardware Items Purchased
+<!--- from <A HREF="mailto:nonkel@pandora.be">Nonkel Sue</A> --->
+<B>User Requirements :-</B> 
+I have the following relations:
+
+Clients (client-id, client-name, client-address)
+Item-status (item-code, item-name, item-quantity available)
+Item-client (client-code, item-code, data of purchase, quantity purchased)
+Item-staff member (item-code, staff-member-code, staff-member-name)	
+
+Create the following queries using SQL :
+
+i)  Find the clients who have purchased any of the items named "Central Processor"
+    , "Memory", "Hard Disk" and have purchased a total quantity of all these items 
+    above 1000.
+ii) Find out the staff-member-code and names of those members who have been dealing 
+    with the times which has been sold the maximum quantity.
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Clients
+B.2 Purchases
+B.2 Sale Items 
+B.3 Staff Members  
+
+C. These THINGS_OF_INTEREST are Related as follows :-
+C.1 Each Client purchases zero, one or many Sale Items.
+C.2 Each Client can deal with zero, one or many Staff Members.
+C.3 Each Staff Members can deal with zero, one or many Clients.
+ 
+D. What else do we know about the THINGS_OF_INTEREST :-
+D.1 To be determined.
+ 
+E. Sample Data includes :-
+E.1 To be determined
+
+F. Typical Enquiries include :-
+F.1 To be determined.
+
+<!---
+G.Miscellaneous Facts :-
+G.1 Each Product can be found on a particular (Suppliers) website 
+G.2 Each Supplier has his products shown on a certain website 
+--->
+
+<!---
+However, it's often better to avoid an approach which is designed to provide 
+generality at the expense of ease of understanding.
+--->
+
+Barry Williams
+Principal Consultant
+Database Answers
+13th. March 2002
+</PRE>
+
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2002</I></FONT></CENTER>
+
+</TD></TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

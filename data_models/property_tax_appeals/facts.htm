@@ -1,0 +1,203 @@
+<html>
+<head>
+<title>Facts for a Property Tax Appeal Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.livinginplainfield.com/?p=181" TARGET=_NEW>
+<IMG ALIGN=right ALT="Property Tax Appeals (Click for Web Site)" BORDER=0 hspace="0" vspace="4" SRC="images/property_tax_bill_sml.jpg"></A>
+</td>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Property Tax Appeals</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>A. The requirement is to design a Database to keep track of Property Tax Appeals.</B>
+
+<PRE><FONT COLOR=blue FONT=Verdana SIZE=2>Email on Janary 26th. 2011
+Hey Barry,
+
+Thanks! I really appreciate the quick response! 
+The primary purpose of the database is to keep track of the necessary filing dates and
+filings for each parcel for each year, while keeping it simple enough that the lawyers
+(or their assistants) can add new data without too much trouble.
+
+I apologize if I'm getting the nomenclature wrong, but it appears that this assumes a
+unique ID for each PK. 
+
+In actuality, while some tables would lend themselves to using natural keys 
+(e.g., client number, parcel number), others do not (e.g., county ID, matter ID, 
+attorney ID- all of which would be repeated). Would it be appropriate to use 
+surrogate keys for all the PK's or is that some sort of database design faux pas?
+
+Any chance I could get a snippet or two of sample SQL for creating the tables?
+
+Again thanks!
+<HR>
+January 20th. 2011
+I have been asked by a colleague to design "a user-friendly multi-user database" that would allow him to 
+ditch the unwieldy excel spreadsheet he are currently using to track property tax appeals.
+ 
+I accepted the challenge, despite the fact that I am neither a database designer nor programmer, 
+but am finding myself stumped at the normalization phase. The details are as follows:
+
+Each "Client" has one or more "Matters" associated with it.
+Each "Matter" has one or more "Parcels" associated with it.
+Each "Parcel" has one or more "Years" associated with it.
+Each "Appeal" is for a particular "Parcel" for a particular "Year" (which is related to a 
+particular "Matter" that is related to a particular "Client").
+
+Each category has a variety of other information associated with it (e.g. Client_Name, 
+Matter_Attorney, Parcel_County, Year_AssessedValue, etc.).
+
+For example, a particular Client could have two Matters, each Matter could have ten Parcels, and 
+each Parcel could have 3 Years. This results in 60 distinct Appeals that need to be tracked.
+
+The purpose of all of this is to be able to generate reports, by Year, by Parcel, by Matter and 
+by Client not only for internal use (e.g., calendering purposes) but also to provide to the various clients.
+
+I've spent a decent amount of time trying to educate myself about database design and normalization 
+and have taken several stabs at designing the database, but none of them feel "right" to me, so I'm
+finally giving in and asking for help. 
+
+I would appreciate any and all thoughts and suggestions
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>A. The Things of Interest are :-</B>
+   A.1 Appeals
+   A.2 Others, to be determined
+
+<B>B. How are they related ?</B>
+   B.1 Each "Client" has one or more "Matters" associated with it.
+   B.2 Each "Matter" has one or more "Parcels" associated with it.
+   B.3 Each "Parcel" has one or more "Years" associated with it.
+   B.4 Each "Appeal" is for a particular "Parcel" for a particular "Year"
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>January 22nd. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

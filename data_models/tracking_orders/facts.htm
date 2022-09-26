@@ -1,0 +1,146 @@
+<HTML><HEAD><TITLE>Bus Rules for Tracking Orders</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/fishing_boat_in_fog_lge.jpg">
+<IMG ALT="Fishing Boat in Fog, Alaska" BORDEeeR=1 SRC="../../images/philg/fishing_boat_in_fog_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Order Tracking" SRC="../../images/buttons/button_studio/Order_tracking.gif">
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="index.htm">Back to the Physical Data Model.</A>
+
+<B>Things of Interest :-</B>
+1. Customers
+2. Invoices
+3. Orders
+4. Products
+5. Shipments
+
+<B>DISCUSSION OF ORDER TRACKING AND BACK ORDERS</B>
+The Problem :-
+<P>We have an e-commerce system that we developed in house that we need 
+to modify to accomodate back-orders. 
+
+Currently when an order is completed it is marked as processed. 
+But if we have a couple of back ordered items come into inventory we need to send them to 
+the person who ordered them but include a new tracking number to and invoice for 
+the remaining products. 
+
+So need to store the new tracking number and invoice info too.
+
+<P>The suggestion is :-
+"To add one column to our Order table called ParentOrderID and any back ordered items 
+gets transferred to this new order and the ParentOrderID column filled in with the 
+original order's unique identifier (OrderID).
+
+This way it is possible to treat each part order that is fullfilled and shipped as a 
+unique order but still have it exist under one parent order."
+
+A more appropriate solution is a general version of the approach outlined above,
+based on Shipments.
+
+1) It would seem confusing to have Orders and ParentOrders.
+   Therefore, introduce the concept of 'Shipments'.
+2) Normally, each all Items in one Order would go as one Shipment.
+   But an Order could be associated with zero, one or many Shipments.
+3) Each Item can appear on zero,one or many Shipments.
+4) Each Shipment has its own Invoice number. 
+5) The Status of each Order is recorded, for example, 'Processed', 'Part Processed'.
+6) The Status of each Item in an Order is recorded, for example, 'Item Shipped', 'Item Not Shipped'.
+</PRE>
+
+
+<!---
+Thanks and keep up the great work.
+Justin
+
+Ekkon Global
+Justin Tilson
+
+Senior Solution Developer
+Ekkon Global
+1102-475 Howe St.
+Vancouver, BC
+V6C 2B3
+
+Web: <A href="http://www.ekkon.com/">www.ekkon.com</A>
+Email: <A href="mailto:justin@ekkon.com">justin@ekkon.com</A></FONT>
+Tel: 604.408.8078
+Fax: 604.408.8079
+Cell: 604.671.6370
+--->
+
+</TD>
+</TR>
+</TABLE>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+ 
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT COLOR=blue FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A>  
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2002</I></FONT></CENTER>
+
+</HTML>
+

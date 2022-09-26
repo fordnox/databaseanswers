@@ -1,0 +1,91 @@
+<HTML><HEAD><TITLE>Product Servicing</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=475 SRC="../../images/dba_banner_and_btn.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for a Data Model for Product Servicing</FONT>
+</TD>
+<TD ALIGN=right ROWSPAN=1>
+<IMG ALIGN=right ALT="Train on a Viaduct in Swiss Train Delivering Products" BORDER=1 HEIGHT=91 WIDTH=205
+SRC="../../images/switzerland/train_on_viaduct_vsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed below.
+<HR><PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. The Area being Modelled is :-</B>
+Product Manufacture and Servicing.
+
+<B><I>Business Rules ...</I></B>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>A. Scope :-</B>  
+A company that sells, distributes and services a single product line of machines.  
+
+<B>B. Things of Interest :-</B>
+1. Companies
+2. Customers
+3. Distributors
+4. End-Users
+5. Machines
+6. Services
+                     
+<B>C. What do we know about the Things of Interest :-</B>
+1. A Machine is sold to a Customer by a Distributor.
+2. Customers include Parent Corporations (such as Starbucks), end-users (individual companies or store locations, distributors, or individuals.
+3. There are several types of Service (warranty, non-warranty, service, upgrade/recall).
+4. Services are performed on a Machine by a Service Vendor.
+5. A Service Vendor may also be a Distributor or vice-versa.  Either one could also be a Customer.
+6. A Company has both a Billing and Shipping address for each Company. 
+7. A Machine will have an installation location.
+
+
+<B>D. Questions :-</B>
+1. One company can serve multiple roles, so should there be a Supertype "Company" to avoid multiple billing & shipping addresses for each company?
+2. How should this supertype be implemented ? 
+3. Since a single valued discriminator won't work, can we use attributes like 'Is_Customer', 'Is_Vendor', 'Is_Distributor',  'Parent_CorpID' ?
+
+
+<B>E. Sample Data includes :-</B>
+1. To be determined
+
+<B>F. Typical Enquiries include :-</B>
+1. To be determined.
+</PRE>
+
+
+Barry Williams
+Principal Consultant
+Database Answers
+1st. Febuary 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

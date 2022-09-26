@@ -1,0 +1,131 @@
+<HTML><HEAD><TITLE>FACTs for Golf Tournaments</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<IMG ALT="The 18th. Hole at Pebble Beach" BORDER=1 SRC="../../images/pebble_beach_18th_sml.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Data Model for Golf Tournaments</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../search.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<P><B>The FACTS define the Business Rules ...</B>
+<P><B>1. What are the 'Things of Interest' in the Scope to be modelled ...</B>
+<LI>Golf Clubs
+<LI>Players
+<LI>Members
+<LI>Tournaments
+<LI>Tournament Contests.
+</OL>
+
+<P><B>2. How are these 'Things of Interest' related ? ...</B>
+<LI>GOLF CLUBS can have many MEMBERS.
+<LI>A GOLF CLUB can have one or many MEMBERSHIP LEVELS.
+<LI>GOLF CLUBS can host many TOURNAMENTS.
+<LI>Many TOURNAMENTS occur every year.
+<LI>PLAYERS can participate in zero or many TOURNAMENTS.
+<LI>A PLAYER can be a MEMBER in one or many GOLF CLUBS, between specific Dates.
+<LI>TOURNAMENT can have many PARTICIPANTS.
+<LI>A TOURNAMENT can have zero or many CONTESTS, such as Longest Drive, Nearest Hole, etc..
+<LI>A PARTICIPANT can achieve zero or many CONTESTS in a TOURNAMENT. 
+</OL>
+
+<P><B>3. What do we know about the 'Things of Interest' ? ...</B>
+<LI>A GOLF CLUB is identified by a unique Code, and has a Name, Address and Other Details.
+<LI>A PLAYER is identified by a unique ID, and has a Name, Address and Other Details.
+<LI>A TOURNAMENT is identified by a unique Code, and has a Name, Sponsor, Start Date and End Date.
+</OL>
+
+
+
+<!---
+Here are the Business Rules:- 
+1) There are 4 Contest Types : Longest drive men, Longest drive Women,Nearest hole men, nearest hole woman.
+2) A tournaments can be an individual or a teams tournaments
+
+3) A Team consists of one or many golfers.
+ 
+3. A Tournament can have different Starting Times :-
+	Shotgun, delayed times, etc..
+ 
+>         Now here the way i defined:> 
+>             Tournaments Contest:                        Contests:
+>                 TournamentID (fk)                              ContestID(pk)
+>                 CourseID> ContestTitle>                 ContestID> Description
+>                 GolferID                                            Comments> 
+>             TeamsTournaments:                            Teams Details
+>                 TournamentID (fk)                              TeamID (pk)
+>                 CourseID                                           GolferID
+>                 TeamID                                             TeamClass
+>                 Score> Comments>                 Comments> 
+>             Starting Times                                    Starting Types
+>                 TournamentID (fk)> StartingTypeID(pk)
+>                 CourseID                                           Title
+>                 StartingTypeID                                   Description
+>                 StartingID                                          Comments> 
+>          Starting Times>                 StartingID (pk)
+>                 GolferID>                 StartingHole
+>                 StartingTime> 
+
+--->
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../search.htm">Search</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<P>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

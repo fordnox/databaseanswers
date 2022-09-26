@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Facts for the Data Model for an Outpatient Medical Center</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://tabrizis.blogspot.com/2008/01/people-who-make-it-happen.html" TARGET=_NEW>
+<IMG ALT="Ballet Dancers, Boise, Idaho." BORDER=0 SRC="images/ballet_dancers.jpg"></A> 
+</A>
+</td>
+
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="7%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Data Model for an Outpatient Medical Center&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>.
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>Subject: Data Model for an Outpatients Medical Center</B>
+
+<BR>Note that we have marked Entries in bold to help us create the Data Model.
+ 
+Subject: Outpatient GI Center
+Question: I need your help in putting together a Data Model. 
+
+Here is the scenario: The Physicians’ GI Center (PGIC) is an outpatient facility in which participating 
+<B>physicians</B> can perform colonoscopies, sigmoidoscopies, endoscopies and similar <B>procedures</B>. 
+
+Participating physicians are independent practitioners who schedule and perform their <B>patients’ procedures</B> 
+using the PGIC staff and facilities. 
+
+Gastroenterologists who wish to use deep anesthesia for a procedure may also arrange for an outside 
+anesthesiologist to be present. 
+
+PGIC <B>staff</B> include administrative personnel, prep nurses, OR nurses, recovery nurses and facilities 
+maintenance staff. 
+
+PGIC has no physicians on staff. 
+
+Patients are scheduled for <B>appointments</B> with appointment lengths set by the number and types of procedures 
+to be performed with the appointment broken into check-in, preparation, procedure, and recovery <B>phases</B>. 
+
+Procedures are performed in a limited number of <B>procedure rooms</B> while prep and recovery take placed in 
+curtained areas of <B>two large rooms</B> (one each for prep and recovery). 
+
+Sufficient space is available in each of these large rooms that scheduling individual beds is not needed 
+though patients are tracked by which <B>bed</B> they actually use for each phase. 
+
+Procedure rooms are scheduled in advance. 
+
+All <B>transitions</B> are logged. 
+
+Transitions are arrival/check-in, beginning prep, move to procedure room, procedure completion/move to recovery, 
+and discharge. 
+
+<B>Temperature, pulse and blood pressure are recorded multiple times during the patient’s stay</B>. 
+
+<B>Medical records</B> of the procedures are kept by the gastroenterologist (MD) and are not the business of PGIC. 
+
+PGIC <B>schedules staff</B> for prep and recovery and one <B>nurse</B> for each <B>room</B> in use on a particular day. 
+
+Most patients have <B>insurance</B> and PGIC collects <B>payments</B> from patients for copays at <B>check-in</B> and receives payments 
+from insurers following procedures.</PRE>
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2012</I></FONT></CENTER>
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

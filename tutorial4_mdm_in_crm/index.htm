@@ -1,0 +1,1230 @@
+<html>
+<head><title>Tutorial on Master Data Management for CRM</title>
+
+<META Name="description" 
+Content="We provide a Library of Data Models and free Databases.">
+<META Name="keywords" 
+Content="free access databases, access databases, access data models, data models,database designs, free databases, generic data models">
+
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!--  Start of Table 1 --->
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+<tr>
+<td ROWSPANnnn=1 VALIGN=middle><img alt="Database Answers" SRC="../images/dba_400_home.jpg" width=400 height=58></td>
+<td align=right ROWSPAN=2 valign=middle nowrap>
+<A HREF="images/father_of_all_data_models.gif" TARGET=_NEW>
+<img ALT="The Father of all Data Models" BORDER=0 SRC="images/father_of_all_data_models_sml.gif"></A>
+</td>
+</tr>
+
+</table>
+<!--  End of Table 1 --->
+
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=white FACE=Verdana SIZE=2>Data Models</font></A></td>
+         <td WIDTH=10%><A STYLE="text-decoration:none" HREF="../tutorials.htm"><font color=yellow FACE=Verdana SIZE=2>Tutorials</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+
+<!--  Start of Table 2 --->
+<!---
+<table border=0 NAME="TOP NAVBAR" width=100% cellpadding=0 cellspacing=0 backgrond="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-active.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.asp"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../pi_best_practice_display/index.asp"><img src="../images/v3/nav_bestpractice.gif" alt="Best Practice" border=0></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td> 
+	<td><a href="../pi_communities/boards.asp"><img src="../images/v3/nav_communities.gif" alt="Communities" border=0></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td> 
+	
+<td><a href="../pi_information_catalog/browse.asp"><img src="../images/nav_infocatalog.gif" alt="Information Catalog" border=0></a></td>              
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td> 
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+--->
+<!--  End of Table 2 --->
+
+<!--  Start of Table 3 --->
+<table NAME="GRAY NAVBAR" border=0 cellpadding=0 cellspacing=0 width=100%>
+<TR>
+<td wiIIIdth=80% bgcolor="#CCCCFF" align=center>
+
+<!--  Start of Table 5 --->
+
+	<table border=0 cellpadding=0 cellspacing=0 VALIGN=top width=100%>
+	<tr>
+	<td> <!-- Body Starts -->
+<!--- HERE'S AN EMBEDDDED TABLE --->      
+<!--  Start of Table 6 --->
+
+	<table BORDER=0 WIDTH=100% WIiiiDTH=580 cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="61">&nbsp;</td> 
+	<td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td> 
+	<td colspan="3" width="100%" align="right" class="header1"><B>Welcome to our Tutorial on Master Data Management for CRM</B>
+	<img src="images/spacer.gif" width="5" height="1"></td>
+	<td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width=1 height="20"></td> 
+        </tr>
+
+        <tr> 
+	<td rowspan="3" valign="top" width="61">&nbsp;</td>
+     	<td colspan="4" height=0 rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height=0>
+            <tr bgcolor="#FF9900"> 
+            <td><img src="images/px-orange.gif" width="1" height=3></td>
+            </tr>
+            </table>
+
+<!--  End of Table 6   --->
+<!--  Start of Table 7 --->
+
+            <table BGCOLOR=white width="100%" border=0 cellspacing="0" cellpadding="0">
+            <tr>
+            <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td> 
+
+	    <td align=left bgcoloUUUr="#CCCCFF" WIiiiDTH=15% wiIIIdth="90" backgroundDDD="images/px-left.guf" valign="top" bgcoloUUUr="#3399CC"> 
+	    <FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<!---	<BR> --->
+	<TABLE BORDER=2>
+
+	<TR>
+	<TD COLSPAN=2 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>INTRODUCTION :</B>
+	<BR>This Tutorial is on <B>Master Data Management</B> for CRM (Customer Relationship Management).
+	<BR>It presents the Steps involved as Best Practice.
+	<BR><BR>
+	Topics covered in this Tutorial include Data Sources and Targets, mapping between them, Data Quality, Data Governance and Reference Data
+
+	<BR><BR>I hope you find this Tutorial interesting and helpful.
+	<BR>Please 
+	<A HREF='mailto:databaseanswers&#64;gmail.com?subject=Comments on Tutorial on Master Data Management'>email me</A> and let me know.
+
+	<BR><BR>These are the Steps in the Tutorial :-
+	<OL>
+	<LI>Agree the Scope of the Project
+	<LI>Identify the Data Sources
+	<LI>Determine the Target
+	<LI>Specificy the Mapping between Sources and Target.
+	<LI>Review Guidelines for managing Reference Data
+	<LI>Address the Issue of Data Quality
+	<LI>Ensure comliance with Data Governance
+	<LI>Check that the MDM Data Model can provide data for <A HREeeeF="../data_models/police_information_reports/index.htm">Perforcement Reports</A> as specified by the Users.
+
+	</OL>
+
+	My starting-point is a list of 
+	<A HREF="../data_models/top_ten_data_models_law_enforcement.htm">
+	<B>relevant Data Models for Law Enforcement</B></A>.
+	<BR>
+	</TD>
+	</TR>
+
+
+<!--- Start of 1) Target MDM Generic Data Model --->
+<!---
+<TR>
+<TD VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>1) POLICE MDM DATA MODEL</B>
+<BR>This shows hows data from a number of sources is integrated into one Generic Master Data Management Model.
+<BR><BR><BR>
+<CENTER>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Police Generalised Data Model</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Reference Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Incidents</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Locations</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Organisations</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Persons</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Physical Objects</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Police Equipment</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Vehicles</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Address_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Physical_Object_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Incident_Outcomes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Incident_Status</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Incident_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ranks</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Roles</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+</TABLE>
+</CENTER>
+
+</TD>
+<TD><IMG ALIGN=left ALT="MDM CRM Top-Level Data Model" SRC="images/mdm_for_crm_top_level_data_model.gif">
+<BR>
+</TD>
+</TR>
+--->
+<!--- end of 1) --->
+
+
+<!---
+
+	<TR>
+	<TD>
+	<IMG ALIGN=right ALT="Police Information Reports Data Model" SRC="images/police_information_reports_model.gif">
+	<BR>
+	</TD>
+
+	<TD VALIGN=top>
+	<FONT COLOR=blue FACE=Verdana SIZE=2>
+	<B>1) POLICE INFORMATION  REPORTS :</B>
+	<BR>This is not a Data Source except that we need to be sure that the basic Entities are included in the Target
+MDM Data Model so that we can produce the required Reports.
+	<OL>
+	<LI> At this Stage, we show only the Entities with no Relationships and minimum Attributes.
+	and specify only the Primary Key and one 'details' field that will be replaced later on..
+
+<BR><BR><BR>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Police Information reports</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Reference Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Associates</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Crimes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Locations</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Persons</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Vehicles</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Address_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Crime_Categories</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+</TABLE>
+
+	</TD>
+	</TR>
+--->
+
+
+	<TR>
+	<TD VALIGN=top>
+	
+	<FONT COLOR=blue FACE=Verdana SIZE=2><B>This is the MDM CRM Data Model which is the Target</B>
+	<BR>This shows hows data from a number of sources is integrated into one Generic Master Data Management Model.
+	<BR><BR>
+	<IMG ALIGN=left ALT="MDM CRM Top-Level Data Model" SRC="images/mdm_for_crm_top_level_data_model.gif">
+	<BR>
+	</TD>
+
+	<TD VALIGN=top>
+	<FONT COLOR=blue FACE=Verdana SIZE=2>
+	<B>1) ENTITY MAPPING SPECIFICATIONS :</B>
+
+<BR><BR>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Area</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Entity</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Target Entity</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Ref Data</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK_PAF_File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Commercial_Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Products</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Products</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Commercial_Product_Categories</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movies</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Products</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video_Rental_Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movie_Format_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movie_Genre_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+</TR>
+
+
+
+
+</TABLE>
+</TR>
+<!--- Endof Target Model --->
+
+
+
+
+<!-- Start of Reference Data --->
+<TR>
+<TD VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>2) REFERENCE DATA :</B>
+<OL>
+<B>Each Data Source will have its own sets of Reference Data.</B>
+<BR>These have to be mapped to a common set of Data, which in turn is subject to corporate Data Governance.
+</TD>
+<TD><IMG ALIGN=left ALT="MDM for CRM Reference Data Model" SRC="images/MDM_for_crm_ref_data_model.gif">
+<BR>
+</TD>
+</TR>
+
+
+
+	<TR>
+	<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>3) CLIENTS AND FEES :</B>
+
+<BR>This is a list of Tables that are candidates for mapping to the MDM Tables.
+
+
+<BR><BR>
+<CENTER>
+<TABLE BORDER=1>
+
+
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Clients and Fees Model</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Reference Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Client_Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Projects</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Staff</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Staff_Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Staff_on_Projects</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Calendar</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Invoice_Status</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Job_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Roles</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Skills</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Skill_Levels</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+</TABLE>
+</CENTER>
+
+
+
+
+
+
+	</TD>
+
+	<TD>
+	<IMG ALIGN=left ALT="Clients and Fees Data Model" SRC="images/clients_and_fees_model.gif">
+	<BR>
+	</TD>
+	</TR>
+
+<TR>
+<TD><IMG ALIGN=right ALT="Customers and Invoices Data Model" SRC="images/customers_and_invoices_model.gif">
+<BR>
+</TD>
+
+<TD VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>4) CUSTOMERS AND INVOICES DATA MODEL</B>
+<BR>This is a list of Tables that are candidates for mapping to the MDM Tables.
+
+<BR><BR>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Customers and Invoices Model</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Reference Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Accounts</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Financial_Transactions</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Invoice Line Items</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Orders</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Order_Items</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Product_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Transaction_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+</TD>
+</TR>
+
+
+
+
+
+
+
+<TR>
+<TD VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>5) VIDEO RENTAL STORES :</B>
+<BR>This is a list of Tables that are candidates for mapping to the MDM Tables.
+
+
+<BR><BR><BR>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Video Rental Stores Model</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Reference Data</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Comment</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Accounts</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Actors</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customer_Rentals</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Financial_Transactions</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movies</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movie_Cast</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Condition_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Format_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Genre_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Payment_Methods</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Rental_Status_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Transaction_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+
+</TABLE>
+
+</TD>
+
+<TD VALIGN=top><IMG ALIGN=left ALT="Video Rental Store Data Model" SRC="images/video_rental_store_model.gif">
+<BR>
+</TD>
+
+</TR
+
+	</TD>
+
+
+	</TR>
+
+<HR>
+<!-- Start of text to copy --->
+
+
+<!-- Start of 9) Reference Data --->
+
+
+<TR>
+<TD COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>8) DRAFT FIELD LEVEL MAPPING SPECIFICATIONS TO THE MDM DATA MODEL</B>
+<BR>These Specifications have been partially completed to provide guidelines.
+
+<BR><BR>
+<TABLE BORDER=1>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Area</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Entity</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Field</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Field Validation</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Field Transformation</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Target Entity</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Target Field</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>line_1_building</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>line_2_street</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>line_3_area</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>city</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>zip_postcode</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>state_county</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Addresses</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>country</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Valid ISO standard</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>ISO Country Codes</B></TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>client_id</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Created in CMI</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Customer_Index</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<!---
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Cases_Trials</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>trial_status_code</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Map to Target Ref Data</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Events</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Cases_Trials</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>trial_start_date</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>> Jan 1/2000</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Copy </TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Events</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>event_start_date</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Cases_Trials</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>trial_end_date</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Not Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Copy </TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Events</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>event_end_date</TD>
+</TR>
+
+
+--->
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>address details</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>customer_id</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Created in CMI</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Customer_Master_Index</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Products</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>product_id</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Created in PMI</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Product_Master_Index</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>customer_address</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Match record</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Translate to National Standard</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>USPS DPV or UK PAF File</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Movies</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>movie_id</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Mandatory</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Created in PMI</TD>
+
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>MDM_Product_Master_Index</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD ALIGN=middle COLSPAN=3><FONT COLOR=blue FACE=Verdana SIZE=2><B><I>REFERENCE DATA ...</I></B></TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Area</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Source Field</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2><B>Target Field</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Calendar</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Invoice_Status</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Job_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Roles</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Skills</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Clients and Fees</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Skill_Levels</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Product_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Customers and Invoices</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Transaction_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Condition_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Format_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Genre_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Payment_Methods</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Rental_Status_Codes</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+
+<TR>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Video Rental Stores</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Transaction_Types</TD>
+	<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Ref_Data</TD>
+</TR>
+
+
+</TABLE>
+
+
+
+</TD>
+
+<TR>
+
+
+
+<TR>
+<TD COLSPAN=2><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>PLEASE EMAIL ME</B>
+
+<UL>
+<B><LI>During this short Tutorial,we have covered the following Topics :-</B>
+	<OL><LI>An Approach to MDM
+	<LI>Creating a Data Dictionary
+	<LI>Mapping from Sources to the Target MDM Data Model.
+	<LI>Reference Data
+	</OL>
+</OL>
+
+<LI>I hope you have found this Tutorial interesting and useful.
+<LI>I would be pleased to have 
+<A HREF='mailto:dba_requests&#64;barryw.org?subject=Comments on MDM for CRM Tutorial'>your comments</A> with your questions or suggestions.
+
+<BR><BR>Good luck with your first MDM Project !
+
+<BR><BR><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+
+</OL>
+</TD>
+
+<TR>
+
+</TABLE>
+
+
+
+
+
+
+          </td>
+        </tr>
+      </table>
+
+<!--  End of Table ?? --->
+
+<!--- barry extract ends here --->
+
+<BR>
+
+
+	<!-- Sample Section Ends -->
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color=white FACE=Verdana SIZE=2>Data Models</font></A></td>
+
+         <td WIDTH=10%><A STYLE="text-decoration:none" HREF="../tutorials.htm"><font color=yellow FACE=Verdana SIZE=2>Tutorials</font></A></td>
+
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<FONT COLOR=black FACE="Verdana" SIZE=1>
+
+<BR><CENTER><FONT COLOR=blue><I> &#169 DatabaseAnswers.org 2010</I></FONT></CENTER>
+
+</body>
+</html>
+

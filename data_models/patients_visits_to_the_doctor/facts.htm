@@ -1,0 +1,138 @@
+<HTML><HEAD><TITLE>Reqmts for the Patient Visits to the Doctor Data Model</TITLE></HEAD> 
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=2 HEIGHT=100 VALIGN=middle>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+</TD>
+
+<td ALIGN=right ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.galleriadental.com.au/" TARGET=_NEW>
+<IMG ALT="Dental Center in Morley, Western Australia (Click for Web Site)" BORDER=0 SRC="images/dental_center_western_australia_sml.jpg"> 
+</td>
+</TR>
+
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<!--- Barry's changes on Monday, Dec 7th means that the total is less than 100% - but it looks OK --->
+<table width="100%" border=0 cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+          <td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+          <td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+          <td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
+	</td>
+          <td width="9%">
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiIIIdth="30%" wiIIIdth="37%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color=WHITE FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu Bar --->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+<!---   <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> --->
+	<td ALIGN=left width="10%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Patient Visits to the Doctor</FONT></td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+
+
+<TR>
+<TD ROWSPAN=3 VALIGN=top WIDTH=80>&nbsp;</TD>
+
+<TD>
+<FONT COLOR=blue FACE="Verdana" SIZE=2><A HREF="index.htm">Back to the Data Model.</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements</B> have been defined as follows by Claudette Harrington :-
+Well I'm stuck again. 
+
+I have searched your site for this information and I found several health care designs but 
+none of them had all the tables I needed , so again I am humbly asking for your help. 
+
+I need an example of a star schema data warehouse that helps me answer questions like these :-
+"What fraction of patients tends to go to doctors in their hometown ?"
+"What are the top 10 diseases by cost of treatment ?"
+"What are the most effective treatments for each disease ?"
+"What are the treatments with the highest /lowest side effects ?" 
+
+The analysis should take the age of the patients into account.
+
+<LI><B>Barry says the Business Rules are :-</B>
+<LI> Patients make Visits to Doctors located in Medical Centers.
+<LI> Patients and Medical Centers have Addresses that are stored in an 'Addresses' Table for easy validation.
+<LI> Medical Procedures such as X-Rays are carried out on Patients.
+<LI> Each Procedure has a Cost and the total Cost of Procedures for each Visit is Derived and stored.
+<LI> During a Visit, the Doctor might prescribe Medication for the Patient.
+<LI> Each Medication has a Cost and the total Cost is derived and stored.</PRE>
+
+</TD>
+
+<!-- Start of Standard Footer -->
+<TR>
+<TD>
+<CENTER><FONT SIZE=1><I><FONT COLOR=blue FACE="Verdana" SIZE=1>&#169 DatabaseAnswers.org 2010</I></FONT></CENTER></CENTER>
+</TD>
+</TR>
+
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+</TD></TR>
+
+</TABLE>
+
+</TD>
+
+</TR>
+
+</TABLE>
+
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,106 @@
+<HTML><HEAD><TITLE>Images in Access</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Storing Images in Access</FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF="images/philg/cows-in-costa-rica_med.jpg">
+<IMG ALIGN=right ALT="Cows in Costa Rica" BORDER=2 WIDTH=216 HEIGHT=98 SRC="images/philg/cows-in-costa-rica.jpg">
+</A>
+<FONT COLOR=blue SIZE=4><B>QUESTION :</B>How do I store Images in an Access Database ?</FONT>
+
+<HR>
+<FONT COLOR=blue SIZE=4><B>ANSWER :</B>Use ADO and ASP</FONT>
+<BR><FONT SIZE=1>This answer is provided courtesy of David Mccarter who has an excellent Web Site for
+<A HREF="http://www.vbtt.com/online/"> Visual Basic Tips and Tricks.</A></FONT>
+
+<PRE>
+<FONT COLOR=blue SIZE=2>
+Using an Access database called db1.mdb with a table Table1 and 
+a field Field1 of the OLE type. 
+<B>This is the Visual Basic code for storing an image :-</B>
+
+Dim a() As Byte, b As String, c, i, l, r 
+
+    Open "image.gif" For Binary As 1 
+    l = LOF(1) 
+    b = Space(l) 
+    Get #1, , b 
+    Close 1 
+    ReDim a(l) 
+    For i = 0 To l - 1 
+        a(i) = CByte(Asc(Mid(b, i + 1, 1))) 
+    Next i 
+    Set c = CreateObject("ADODB.Connection") 
+    c.Open "driver={Microsoft Access Driver (*.mdb)};dbq=db1.mdb" 
+    Set r = CreateObject("ADODB.RecordSet") 
+    r.Open "SELECT * FROM Table1", c, 2, 2 
+    If r.EOF Then 
+        r.addnew 
+    End If 
+    r(0) = a 
+    r.Update 
+    r.Close
+
+<B>This is the ASP code for retrieving the image :-</B>
+
+    &lt;% 
+    Response.Buffer = true 
+    Response.Clear 
+    Response.Expires = 0 
+    Response.ContentType = "image/gif" 
+    Set c = Server.CreateObject("ADODB.Connection") 
+    c.Open "driver={Microsoft Access Driver *.mdb)};dbq=\inetpub\wwwroot\db1.mdb" 
+    Set r = CreateObject("ADODB.RecordSet") 
+    r.Open "SELECT * FROM Table1", c, 2, 2 
+    Response.BinaryWrite r(0) 
+    r.close 
+    Response.End 
+    %>
+
+The only assumption is that the length of the image is not longer than the maximum variable size. 
+Otherwise the chunk-method should be used.
+</PRE>
+
+
+</OL>
+
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

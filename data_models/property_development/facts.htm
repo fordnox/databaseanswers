@@ -1,0 +1,244 @@
+<html>
+<head>
+<title>Requirements for the Property Development Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="../../images/switzerland/villars/valley_1.jpg""> 
+<IMG ALT="City Hall" BORDER=0 SRC="../../images/city_temple_xsml.jpg"></A> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<img ALT="Property"    src="images/lft_property.bmp">
+<img ALT="Development" src="images/rt_development.bmp">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements have been established as follows.</B>
+The Project is to produce a complete Enhanced Entity Relationship (EER) Diagram, including a 
+complete list of all entities, their attributes including all primary/foreign keys.
+
+<B>The Things of Interest</B>
+<LI>Auctions
+<LI>Buyers
+<LI>Properties
+<LI>Repairs
+<LI>Sales Adverts
+<LI>Sales Contract
+<LI>Surveyors
+<LI>Work Completion Certificate
+<LI>Workers
+
+
+<B>The Client</B>
+The Client is PDL Property Developers Ltd, who buy, renovate and re-sell properties. 
+All of PDL’s <B>properties</B> are either houses, bungalows, flats or maisonettes in and around the London area. 
+
+PDL has a strict policy of only buying properties from licensed <B>auctions</B> where they know properties are 
+available at low prices.
+
+PDL does not rent its properties, it only buys repairs and resells them. 
+
+PDL may purchase as many as six or seven properties at a single auction.
+
+
+Once purchased, each property is fully <B>inspected</B> by PDL and a list of <B>repairs</B> required for that 
+property is made by an PDL surveyor. 
+
+So as to minimise costs PDL has a list of standard repairs that it can perform, each with an approximate cost 
+and time constraint. 
+
+A given property may need no repairs whereas another property may need several repairs. With this information, once 
+a property has been assessed for repairs, the cost and time needed to complete all necessary work can be estimated.
+
+PDL works with several <B>people</B> in the renovation process: They keep a list of <B>skilled Workers</B> who may
+
+be called upon to come in and perform specific repairs on each property. However it has a strict policy of
+
+assigning only one skilled worker to perform each specific repair on a particular property. In this way the
+
+PDL surveyor can accurately monitor which workers are performing which repairs, and assess whether
+
+the job is done within time, budget and quality requirements. 
+
+The re-sale value of a property is calculated by adding the repair costs to the price paid at auction, then a <B>commission</B> 
+of between 5% and 20% is added to ensure that a reasonable profit is made when selling the property.
+
+On completion of all required repairs each property is re-inspected by a <B>surveyor</B> and if all work is
+done to the required standard, a certificate of work completion is issued for the property. 
+
+If not, the worker hired for any sub-standard repair will be recalled to complete the work to PDL’s 
+satisfaction at no extra cost. 
+
+The surveyor is gaining a reputation for being a source of regular work for skilled locals in the
+building trade and competition to obtain work from them is becoming quite intense. 
+
+When a repair is completed and inspected as being satisfactory a fixed rate single cash <B>payment</B> is made to the 
+skilled worker for the repair job.
+
+
+Having received a work completion certificate each property is then advertised for sale on PDL’s web site. 
+
+Initially one and possibly more web <B>Adverts</B> are placed for each property. In circumstances where PDL has 
+properties that are on the same street or sometimes within the same housing development/estate a single web advert 
+may be placed advertising multiple properties.
+
+PDL only sells its properties via its own web site (run by a small team of PDL <B>Salespeople</B>) and does
+not use external estate agents. When a <B>Buyer</B> is found who wants to purchase an PDL property a <B>Sales Contract</B> 
+is made by an PDL salesperson (between the Buyer and PDL) specifically for a given
+property. 
+On the day the contract is drawn up the buyer must provide PDL with a bankers draft for 10%
+of the property re-sale value. 
+
+The remaining 90% balance must be paid by one or more electronic money
+transfers to PDL within 28 days of the contract date. If this is done successfully the buyer takes
+possession of the property with a copy of the <B>Work Completion Certificate</B>, the property’s web <B>Advert</B> is
+then taken offline.
+
+If the buyer does not complete the sale within 28 days PDL keeps the deposit paid, the sale contract is
+void, and the property remains on sale for any prospective buyers. If a buyer fails to complete on 3
+occasions (on separate properties) PDL makes a note on the buyers record and in future such buyers
+would have to pay the full amount due on the day the sale contract is drawn up.</PRE>
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>2nd. December 2007
+<br>Principal Consultant
+<br>Database Answers.org</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

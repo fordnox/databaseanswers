@@ -1,0 +1,79 @@
+<HTML><HEAD><TITLE>Print Version of the Data Model for Lotteries</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Data Model for Lotteries</B>
+
+
+<!----
+<BR><BR>
+<TABLE BORDER=0>
+<TR><TD VALIGN=top>
+<IMG ALIGN=left ALT="Data Model for Lotteries" BORDER=0 SRC="images/data_model.gif"></A> 
+</TD>
+</TR>
+</TABLE>
+----->
+
+
+
+<BR><BR>
+<TABLE BORDER=1>
+<TR>
+
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>1) First Draft</B>
+<BR>At first, I was thinking about the process of issuing winning tickets
+<BR>This led me to think about storing a list of winning tickets for each draw.
+
+<BR><BR>
+<IMG SRC="images/data_model_first_draft.gif">
+<BR>
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>2) Final Version</B>
+<BR>Then I realised that I was thinking about the solution and not the
+<BR>business specification. So I decided I could simply have just one 'Tickets_Final' Entity.
+<BR>Performance issues can easily be addressed by creating an index on the Winning_Tickect_YN field, although
+we are not concerned with
+<BR>performance at this stage when we are creating a Logical Data Model.
+
+
+
+<BR><BR>
+<IMG SRC="images/data_model.gif">
+<BR>
+</TD>
+
+</TR>
+</TABLE>
+
+
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>February 25th. 2014
+<BR>
+
+
+<!----
+</td>
+</tr>
+</table>
+--->
+
+
+
+
+<FONT SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2014</I></FONT>
+
+</BODY>
+
+</HTML>

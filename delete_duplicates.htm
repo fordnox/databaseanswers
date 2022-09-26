@@ -1,0 +1,79 @@
+<HTML><HEAD><TITLE>Delete Duplicates</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jpg" BGCOLOR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="5" WIDTH=80%>
+
+<TR>
+<TD><IMG ALT="Moon and Dish" HEIiGHT=32 WIiDTH=32 SRC="images/moon_and_dish.jpg" BORDER=0>
+</TD>
+<TD><H1><FONT COLOR=blue><B>Frequently Asked Questions (FAQs)</B></H1></TD> 
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="images/philg/zarcero-costa-rica_lge.jpg">
+<IMG ALIGN=right ALT="Zarcero, Costa Rica - Click for large Photo" BORDER=0 HEIGHT=138 WIDTH=377 SRC="images/philg/zarcero-costa-rica.jpg"></A>
+<FONT COLOR=blue SIZE=4><B>QUESTION :</B></FONT>
+How do I delete duplicate entries from a table ?
+
+<HR>
+<FONT COLOR=blue SIZE=4><B>ANSWER :</B></FONT>
+</FONT>
+
+
+<PRE><FONT COLOR=blue SIZE=2>
+<B><FONT COLOR=red>Option 1) The simplest and most elegant Method</FONT></B>
+CREATE TABLE table_without_duplicates AS
+SELECT DISTINCT *
+FROM   table_with_duplicates ;
+COMMIT;
+
+DROP TABLE table_with_duplicates ;
+COMMIT;
+RENAME TABLE table_without_duplicates table_with_duplicates;
+
+<B><FONT COLOR=red>Option 2) An Oracle-specific Method</FONT></B>
+For Oracle, this solution utilizes the unique rowid of each row in a table,
+and removes all duplicate rows in a table:
+ 
+DELETE  FROM my_table t
+WHERE EXISTS (
+        SELECT *
+        FROM my_table tt
+        WHERE t.rowid      > tt.rowid 
+        AND   tt.<value-1> = t.<value-1> 
+        AND ... tt.value-n = t.value-n)
+
+</PRE>
+
+</FONT>
+
+
+</BODY>
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

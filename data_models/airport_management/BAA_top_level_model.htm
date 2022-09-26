@@ -1,0 +1,103 @@
+<HTML><HEAD><TITLE>BAA Top-Level Data Model</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>BAA Top-Level Data Model</B>
+
+<BR><BR>
+<B>Summary :-</B>
+<BR>Data Sources ----> Mapping Specifications ----> Subject Area Models ----> Top-Level Conceptual Model
+<HR>
+<B>Steps in using this Model</B> :-
+<BR>1.Discuss this Model with business stakeholders and all interested parties.
+<BR>2.Create Subject Area Models
+<BR>3.Use Subject Area Models as the target for mapping source data from 'Line of Business' Systems.
+<BR>4.Create Models for Data Sources - perhaps by Reverse Enginering from existing Databases.
+<BR>5.Produce Mapping specifications for each item of data to be migrated from Data Source to Subject Area Target.
+<BR>6.Carry out Mapping until completed to satisfaction  of Stakeholders.
+<HR><B>Top-Level Conceptual Model</B>
+<BR>The specifications haved been derived from our professional experience and a review of 
+<A HREF="http://www.heathrowairport.com/about-us" TARGET=NEW>the BAA Web Site</A> (renamed to Heathrow).
+<HR>
+The Data Migration is done in the context of this <A HREF="../../reference_data_architecture.htm">Reference Data Architecture</A>.
+<HR>
+<TABLE BORDER=0>
+
+<TR>
+<TD>
+<IMG ALT="BAA Top-Level Data Model" SRC="images/BAA_top_level_model.gif"> 
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+Subject Areas can be created for each Entity, and here are three examples :-
+<LI><A HREF="../airline_operations/index.htm">Airlines</A> 
+<LI><A HREF="../employees/index.htm">Employees</A>
+<LI><A HREF="../travel_routes/index.htm">Schedules</A>
+
+<HR>
+Airbus is developing a ‘smart' Bag2o that can be rented and comes with an RFID Tag that allows bags to be tracked during their journey
+by an iPhone ‘Find My Bag’ app
+
+<BR>The Taq can also be recognised by automated baggage systems that connect the bag with a passenger’s specific <B>flight</B>.
+
+<BR><B>Reports</B> by :-
+<LI><A HREF="http://www.futuretravelexperience.com/2013/06/airbus-unveils-rfid-bag2go-that-can-be-tracked-from-an-iphone-app/#" TARGET=_NEW>
+Future Travel Experience</A>  (June 13th. 2013)
+
+<LI><A HREF="http://www.gadgetreview.com/2013/06/airbus-bag2go-uses-gps-and-rfid-to-get-your-bags-where-they-belong.html" TARGET=_NEW>
+Gadget Review</A> (June 10th. 2013)
+
+<LI><A HREF="http://www.theregister.co.uk/2013/06/11/airbus_imagines_the_smart_suitcase/" TARGET=_NEW>The Register</A> (June 11th. 2013)
+
+
+<BR><BR><B>A Video</B> from <A HREF="http://vimeo.com/67801379" TARGET=_NEDW>Vimeo</A>
+
+
+
+<HR>Follow this link to 
+<A HREF="http://www.futuretravelexperience.com/fte2013/conference/up-in-the-air/" TARGET=_NEW>Future Travel Experience 'Up in the Air' Conference<A>
+<HR>
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=2 VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!---
+<B>Here is a Useful Link for </B>
+<BR>1. <A HREF="http://en.wikipedia.org/wiki/Baggage_handling_system" TARGET=_NEDW>Baggage Handling Systems (Wikipedia)</A>
+<HR>
+--->
+</TD>
+</TR>
+</TABLE>
+<HR>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>Business Rules</B>
+1. The BAA provides Services for Airlines to run their Scheduled Flights.
+2. Scheduled Flights establish which Flights travel between which Locations.
+3. Passengers make Reservations on Flights and can (optionally) print Tickets.
+4. A Passenger checks-in on a Flights and will always print a Boarding Pass.
+5. When a Passenger checks-in he or she might also check in Baggage and a Baggage Tag is printed.
+6. During a Flight, Staff are involved flying the plane and attending to the Passengers.
+7. Before and after a Flight, personnel employed by Third Party organisations may be involved 
+   in support activities, such as loading and unloading Baggage.
+
+<B>Questions</B>
+1. Is Baggage or Passenger Check-In in scope ?
+2. Are Employees in scope ?
+3. Are Passenger Reservations Systems in scope ?
+4. Is Security in scope ?
+</PRE>
+
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+
+<BR><I> &#169 DataBaseAnswers.org 2013</I></FONT>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,132 @@
+<HTML><HEAD><TITLE>Data Integrity in e-Business</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right VALIGN=top>
+<IMG ALT="Cruising Underwater in Hawaii" SRC="images/philg/hawaii_underwater_sml.jpg">
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="index.htm"><IMG ALT="Home" BORDER=0 SRC="images/buttons/home_alt.gif"></A>
+</TD>
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="images/buttons/ask_a_question_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=85>
+<A HREF="data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="site_map.htm"><IMG ALT="Search" BORDER=0 SRC="images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Data Integrity in eBusiness</B></FONT> 
+<P>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+
+<TABLE BORDER=0 WIDTH=80%>
+<TR>
+<TR>
+<TD BGCOLOR=white VALIGN=top WIDTH=80>
+<IMG ALIGN=left ALT="Underwater in Fiji" BORDER=1 HEIGHT=122 WIDTH=81 SRC="images/fiji_underwater_1.jpg"></A>
+</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2>Data Integrity has assumed a new importance with the advent of e-Business.
+<BR><BR><B>Traditional Approaches</B>
+Data Integrity through Transaction management is a well-established feature provided by all RDBMSs,
+where several database updates need to occur “as a unit of work.” 
+
+<LI>Once a user or application issues this command, all database records accessed are locked so that others cannot read them until a “commit transaction” has been issued. If some error is encountered during one of the updates, the user/application can issue a “rollback” command that causes the data manager to reverse the previous updates. The classic illustration of this problem involves the two updates required to transfer money from a savings account to a checking account. If another application were able to access these records between the debit to the savings account and the deposit to the checking account, it would get a total that was less than the amount of money the individual actually had at the institution. Maintaining transaction-level integrity is relatively simple when a single database is involved — all affected records are locked until they’re successfully updated or the entire transaction is backed out. 
+
+<LI>Maintaining transaction-level integrity is relatively simple when a single database is involved. A great deal of research in the ’70s and ’80s looked into building heterogeneous DBMSes and how to efficiently handle distributed transactions. For example, when the savings account information appears on one system and the checking account information on another, solutions such as “two-phase commit” were proposed. A few of these systems were brought to market and used in production, but they were not widely adopted because of the cost of implementation and maintenance.
+
+<LI>In the absence of heterogeneous database management systems, companies fell back on writing interface programs and functions to keep related data consistent across data storage environments. Over the years, however, this approach has become prohibitively expensive to maintain and is a barrier to adopting new technology. Many of these interfaces contain logic that hides database schema changes (changes in how some data values are represented) from the user. Because the metadata describing the schema changes and the effects these changes have on the interfaces were typically not captured in a centralized repository, a significant discovery process is required when IT organizations implement strategic applications such as data warehouses. To get some idea of the size of the problem, consider a statistic from Forrester Research. It estimates that more than $10 billion was spent hand-coding batch interfaces in 1999.
+
+<LI>Nevertheless, database systems and the interfaces between them enforce data integrity because they exert control over the data being manipulated, which is exactly the opposite of the situation found in e-business. Here, much of the data a company is dependent upon resides in other organizations’ databases, which it has no means of “locking” or “synchronizing” since e-business depends on an event-driven architecture where agents only initiate or respond. As a result, when building e-business applications, a company must devise strategies for minimizing the impact of inaccurate data on the bottom line. The organization must also attempt to reduce the effect of data inconsistency on its partners, whether they are customers or other vendors. 
+
+<BR><BR><B>Data Integrity in B2C</B>
+<LI>Looking at some of the e-catalogs supported by various portals — where the picture doesn’t match the product description — one can see that data consistency is an increasingly important implementation and management issue. Of course, inadequate presentation may ultimately turn customers off of a particular site, but it won’t raise their ire the way a bungled purchase will. People who buy items over the Web do so for various reasons, chief among them convenience. They want accurate information about products, their availability and pricing, as well as a smooth purchase process. What they don’t want is to be informed that some item is no longer available or — worse — for the item not to be delivered in a timely fashion, as was the case with several toysrus.com customers last Christmas. The actual manufacturing or delivery processes rarely cause these foul-ups. Rather, they are the result of the information delivery process.
+
+<LI>Consider the kind of problem encountered by an e-tailer such as garden.com or HarryandDavid.com. Both sell products produced by various manufacturers. Often, more than one manufacturer produces the same item. Ideally, e-tailers would keep little or no inventory. Most find they need to keep their most popular items in stock to assure their customers timely delivery. So much of the data they need regarding availability and ship date belongs to someone else. 
+<BR>e-Tailers can take one of three basic approaches when they get an order for one of these products:
+<BR>1. Assume the best and take the order
+<BR>2. Attempt to access the pertinent information from the manufacturer in real-time
+<BR>3. Create a data cache that contains timely but possibly inaccurate information.
+
+<BR><LI>Let’s analyze these options:
+<BR>1. Assume the best and take the order. 
+<BR>The e-tailer can take an order for any item in the e-catalog and let shipping raise a flag via note, voice mail, e-mail, or facsimilie if an item is unavailable. This obviously is the least preferable approach from a customer satisfaction perspective. Let’s assume a customer believes she has completed a transaction and ordered everything she’ll need for a dinner party. Then, two hours (or 24 hours) later, she learns that HarryandDavid.com is out of Kobe beef. She may want to cancel the order (and may not be able to) and re-plan the menu. In either case, the sweet satisfaction of efficient time management is gone, replaced by a case of indigestion.
+
+<BR>2. Access the data in real-time. 
+<BR>Another alternative is to attempt to obtain the necessary information by direct query during the user’s session. In this case, for each item chosen, the application must first check to see if it is available in the e-tailer’s inventory. If it’s not, the application must send a message to the vendor or vendors providing the item in question. In the latter case, a protocol must be available to determine which vendor to use if more than one vendor responds. For example, in the case of perishables (plants, for example, or fruits), the e-tailer might prefer the vendor closest geographically, or the vendor providing the greatest discounts, etc. The problem with this approach is performance. Despite improvements in supply chain integration, the likelihood of obtaining information from other vendors within the near real-time requirements of a Web session is slim. If a company chooses to implement a direct access architecture, another question that should be considered is when to place the order to the vendor. Should it be placed at the point of inquiry about availability (assume the sale), only to issue a cancel if the transaction is not completed? Or, should it be placed only after the customer concludes his transaction?
+
+<BR>3. Cache the necessary information. Probably the best way to assure a satisfactory Web experience with an e-customer is to create and maintain a data cache containing the information needed to provide timely and as-accurate-as-possible information to the user. To the extent that this cache contains data consolidated from multiple sources and must be refreshed frequently, it is a form of data warehouse. This is not surprising. Data warehouses are commonly seen as the foundation for Customer Relationship Management (CRM) systems. However, the kind of data warehouse used to support Web transactions (an e-warehouse for lack of a better term) differs from traditional data warehouses in several ways:
+
+- e-Warehouses are used to represent the current state of affairs, such as the availability of different models or a current line of credit, for the purpose of supporting the ability to deliver on some transaction. e-Warehousing should not be confused with the term Webhousing, which is generally used to refer to products that gather information about clickstreams, etc. Decision Support System (DSS) warehouses contain information about historical facts. As a result, the amount of data stored in e-warehouses will be a fraction of that stored in DSS warehouses.
+
+- The queries run against e-warehouses are relatively simple, involve small amounts of current data, and must complete in near-real-time; for example, a query might regard the availability or price of some item, a summary of purchases, etc. In contrast, queries against DSS warehouses typically run against large volumes of data or consist of aggregated values computed from large volumes of atomic data that is kept for a longer period of time for historical perspective.
+
+- e-Warehouses are more likely to use external sources of data; for example, information from vendors regarding stock, prices, or ship dates. As such, they are more likely to require some form of middleware to ensure that refreshes, many of which come from remote sites, complete successfully.
+
+- The rules for updating e-warehouses are more complex. For example, while decision support data warehouses may be updated upon a scheduled or event-driven basis, the refresh rules are relatively simple. In supporting an e-warehouse, a company may want to enforce rules such as “query external source B regarding the availability of product X only if source A returns a quantity of less than 100 or a price greater than $30 per unit.”
+
+With an e-warehouse, the e-tailer has greater assurance that the Web-session with the customer will be a satisfactory experience. Nevertheless, depending upon the refresh strategy, some risk remains of allowing a customer to order an item that is not available. On the other hand, the creation and maintenance of an e-warehouse requires significant investment.
+
+<BR><BR><B>Data Integrity and B2B</B>
+<LI>From a data flow perspective, B2B is significantly more complex than B2C. B2C requires bi-directional communication in that the e-tailer must both obtain information from its vendors’ databases and send update information when placing an order. However, in B2B, one finds the potential for cascading transactions, where one transaction might trigger another transaction down the supply chain, which triggers another transaction, and so on. 
+
+For example, consider the case where company A orders a fleet of 1,000 vans from automobile manufacturer B, which uses B2B to streamline its supply chain. Automobile manufacturer B may use an e-broker to get the best price on steel, parts, etc. Or, it may be part of a buying group like those recently formed in the automotive and computer industries. In either case, manufacturer B issues bids for the components needed to support company A’s order via the Web. The low bid given by winning vendor C is based in part on the volume ordered and in part on C’s assumption that it can obtain the necessary supplies from its vendor, D, in some particular price range. If vendor C is also using B2B, should it complete all its transactions prior to making the bid to ensure its costs and ability to deliver? Or, should it make the bid and take its chances? If vendor D fails to deliver, what happens to company A, all the way back up the chain? 
+
+<LI>What happens if, within days of the order, company A is acquired by company X and announces that all major capital equipment purchases have been cancelled? If company A is purchasing as a stand-alone entity, the vendor takes the hit. If company A is part of a consortium, presumably the excess inventory is absorbed by the group or company A is stuck with the purchase (if dictated by the terms of the group). 
+
+<LI>Of course, this kind of problem can happen in B2B transactions that do not involve the Internet — except for two things. First, in most cases, suppliers have a relationship with their customers and can use their history with and information about the customers to anticipate or judge risk. If the vision of B2B is realized, a supplier’s number of customers grows exponentially while its products or services become more and more a commodity. Ironically, the technology geared at bringing personalized service to the consumer is likely to create greater anonymity between organizations in the supply chain. 
+<BR>With the increased rate of speed and lower inventories, these failures in execution — and failures in maintaining relationships — could be critical. 
+<BR>It would become more difficult for companies employing B2B to predict revenue. 
+</PRE>
+
+</TABLE>
+
+</BODY>
+
+</B>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

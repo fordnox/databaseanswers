@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>Business Rules for the NewCo Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.thesharpener.net/postal-services-brace-up-to-tackle-shrinking-demand-in-the-electronic-age/" TARGET=_NEW>
+<IMG ALIGN=right ALT="professional_services_graphic" hspace="0" vspace="4" SRC="images/professional_services_graphic_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Business Rules for the NewCo Services Data Model</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>
+<!------------
+Hi Barry
+Unfortunately to share lower level details we would need to execute a NDA.  
+----------------->
+
+<HR>
+Note that Barry has highlighted some important 'Things of Interest', such as Members.
+<HR>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>Hi Barry,
+We can get started with some concepts however please consider this discussion confidential.  
+And I’ll use NewCo for the name of our startup business entity.
+
+•Similar to US health insurance company, but greatly simplified
+•Operating in the dental space to start, no medical.  
+Our coding will be using CDTs for procedures
+•NewCo will offer a set of <B>plans</B> (3 to 5) which are tailored for various scenarios, basic, complete, periodontics, etc. 
+where each plan will offer certain <B>procedures</B> for free, the remaining procedures will be charged at an agreed upon discount, call this a fee schedule.
+
+•Will have providers (dentists) and practices (one or more providers).  
+We are also calling these Practice Group or Group.  
+
+Providers can work at multiple practices and we need to verify the credentials of each provider and the practice.
+•A practice will offer one or more plans that we white label and manage.  
+Each plan offers procedures at an agreed upon cost based on the geolocation of the practice (zip code prefix)
+
+•NewCo has a proprietary database that has <B>procedure pricing data</B> for the US
+•There will be members, <B>members</B> can have <B>dependents</B>
+•Members will subscribe to a plan that is offered by practice.  
+There is a monthly subscription fee based on the type of plan which NewCo processes and pays the practice less a processing fee
+•Members will visit a practice to get something done.  
+This results in a claim generated by the practice and sent to NewCo.  
+NewCo will process the claim and charge the member’s credit card for the amount, then pay the provider.  
+
+As part of this practice will preauthorize the procedures being done, usually done at the practice front-desk prior to the encounter.  
+This results in a hold being placed on the member’s credit card
+•NewCo will charge an additional fee for major procedures (determined by price, think $300 and up).  
+This is part of processing the claim from the provider
+•We will need to adhere to HIPAA regs, this means encryption in the database but at this point we want to get the DB model down first
+•Using MySQL and there will be an API
+
+I’ve browsed several of your posted models, the person master index for example, as well as the insurance-oriented ones.  
+I think there’s a lot of cross over but we are combining a few of these.  
+In any case it’s my hunch that you are very comfortable with this sort of model.
+
+Please take a look and let’s discuss further, note that we are well funded and are in requirements and design phase now.
+
+Regards, Mark</PRE>
+
+
+
+
+<!--------
+<HR>
+<B>B. Barry says the Things of Interest are :-</B>
+1. Customers
+2. Deliverables
+3. Deliveries
+4. Payments
+5. Schedules
+6. Services
+7. Staff
+8. Vehicles
+
+<B>Step 5. Define the Business Rules</B>
+Now that we have defined the 'Things of Interest' we can establish how they are related.
+We call these the 'Business Data Rules' and then we review the with our Steering Group and modify them as required.
+ 
+1. A Customer always signs one or more Contracts for Services.
+2. Customers can post Deliverables in line with the terms of a Contract. 
+3. The Postal Company provides Services that deliver Deliverables according to the terms of a Contract.
+
+
+<B>Step 6. Identify the Reference Data</B>
+The Reference Data is important because it provides the Foundation for all the other Data.
+------>
+
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2014</I></FONT></CENTER></PRE>
+
+<!---
+<BR>There is also a version <A HREF="rt_retail_customers_data_with_attributes.htm"><B>showing all attributes</B></A>.
+--->
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

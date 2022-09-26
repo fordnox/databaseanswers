@@ -1,0 +1,131 @@
+<HTML><HEAD><TITLE>Print Version of the Toilets Data Models</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>The  Toilets Data Model</B>
+<BR>Back to the <A HREF="index.htm">Home Page</A>
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>My Approach</B>
+<BR>My plan to design a simple Datababase for a Toilet.
+
+<!---------
+<BR>I start by identifying the Requirements. 
+<BR>Then design the Conceptual Data Model,
+<BR>which is very useful for discussion with business users.
+<BR>Then I design the Logical Data Model 
+<BR>Finally I create the Physical Model which I use to create the Database.
+<BR>
+------------>
+
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 1 - Review the View from Head Office
+<BR><BR>
+<IMG ALT="Toilet Simple" BORDER=1 SRC="images/view_from_ho.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 2 - Review the Conceptual Data Model
+<BR><BR>
+<IMG ALT="Toilet Simple" BORDER=1 SRC="images/conceptual_data_model.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 3 - I start with a Photograph of the Toilet
+<BR><BR>
+<IMG ALT="Toilet Simple" BORDER=1 SRC="images/img_1_toilet_simple.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 4 - Then I find a Drawing of a Standard Toilet</B>
+<BR>This is based on the American Standard Toilets Parts Diagram
+<BR>and helps me to identify the separate parts that I use in my Data Model. 
+<BR><BR>
+<IMG ALT="Img 2 - Parts Diagram"  BORDER=1  SRC="images/img_2_american-standard-toilets-parts-diagram_med.jpg">
+</TD>
+</TR>
+
+<!------------
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 3 - This helps to identify parts in my simple Toilet</B>
+<BR>that correspond to parts in the American Standard Toilets Parts Diagram.
+<BR><BR>
+<IMG ALT="Img 3 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-toilets-parts-diagram_med.jpg">
+</TD>
+</TR>
+------>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 5 - Then I design a Conceptual Data Model</B> 
+<BR>for the Diagram in Step 2.
+<BR>I have added the Toilet Lid and Seat because 
+<br>they don't appear in the American Standards Diagram.
+ 
+<BR><BR>
+<IMG ALT="Img 4 - Parts Diagram"  BORDER=1  SRC="images/img_4_american-standard-diagram.jpg">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 6 - Simplify the Conceptual Data Model</B> 
+<BR>I generalise the Model by replacing specific Components by generic Components.
+<BR>In this case, it means replacing Lid and Seat, Tank and Bowl by 'Assemblies',
+<BR> and Trip Lever by 'Components'. 
+<BR><BR>
+<IMG ALT="Simple Conceptual Data Model"  BORDER=1 HEIiiiGHT=250 SRC="images/hierarchy_123.jpg"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top>
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Step 7 - Create a Logical Data Model
+<BR><BR>
+<IMG ALT="Img 2 - Parts Diagram"  BORDER=1  SRC="images/logical_data_model.gif">
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Step 8 - Then I create the Physical Model to generate the Database.</B>
+<BR>
+<BR>
+<IMG ALT="Physical Data Model"  BORDER=1 SRC="images/physical_data_model.gif"> 
+</TD>
+
+
+<!-------------
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Step 9 - Finally, we produce Templates to create CSV Files.</B>
+<BR>
+<BR>
+<IMG ALT="Physical Data Model"  BORDER=1 SRC="images/business_rules.gif"> 
+</TD>
+------------>
+
+</TR>
+
+</TABLE>
+
+<FONT SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2018</I></FONT>
+</FONT>
+</BODY>
+
+</HTML>

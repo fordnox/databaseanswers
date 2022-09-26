@@ -1,0 +1,829 @@
+
+<html>
+<head>
+	<title>Database Answers - Communities</title>
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="../index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg"></td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="../index.asp">Home</a> > <a href="boards.asp">Community</a> >  Orang Asli Indigenous Knowledge</font></td>
+		</tr>
+	</table>
+
+	<p>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr valign=bottom>
+		<td valign=top></td>
+		</tr>
+		<tr valign=bottom>
+		<td><a href="compose.asp?board=28&board_name=+Orang+Asli+Indigenous+Knowledge"><img src="../images/messageforum/btn_addtopic.gif" width=76 height=15 border=0 alt="Add A Topic"></a></td>
+		</tr>
+	</table>
+
+		
+	
+	<p><table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1><a href="boards.asp"><img src="/dba/images/messageforum/icon_folder_up.gif" width=16 height=9 border=0 alt="Click here to return to the topic list"></a>&nbsp;<a href="boards.asp"><font color="#0000FF">Up to board list</font></a> | <a href="search.asp?board=28&board_name=+Orang+Asli+Indigenous+Knowledge"><font color="#0000FF">Search</font></a></font></td>
+		<td align=right>
+		<font face="Verdana, Arial, Helvetica, sans-serif" size=1>
+		<a href="index.asp?page=15&mode=expand&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">back</a>&nbsp;page&nbsp;16 of 34&nbsp;<a href="index.asp?page=17&mode=expand&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">next</a>
+		</font>
+		</td>
+		</tr>
+	</table>
+		<table border=0 cellpadding=3 cellspacing=1 width=100% bgcolor="#FFFFFF">
+			<tr bgcolor="#333399">
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Replies</b></font></td>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Author</b></font></td>
+			<td><font face="Verdana, Arial, Helvetica, sans-serif" size=1 color="#FFFFFF"><b>Reply Date</b></font></td>
+			</tr>
+	
+	
+	
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=49845&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/18/2010 11:34 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50055&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">www.bin7.biz - компьютерная автодиагностика</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=19698" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">bidornab</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/19/2010 11:07 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50506&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/21/2010 7:53 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50576&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/22/2010 4:05 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50597&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/22/2010 5:48 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=50692&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Good locale, like the color</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25095" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Big Dog Clothes</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/22/2010 5:39 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51055&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/24/2010 4:07 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51071&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/24/2010 6:25 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51333&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/25/2010 6:57 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51388&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/25/2010 12:43 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51626&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Магазин кожаных курток - косуха, мотошлем - заказать в Одессе</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25361" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Scaxiakiftipt</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/26/2010 12:33 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51637&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/26/2010 2:20 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51661&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/26/2010 4:02 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51725&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/26/2010 6:14 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=51944&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">НУ в принципе обзор разных вещей</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25460" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">AccockakFloat</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/27/2010 3:24 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52124&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/28/2010 8:15 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52369&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 4:53 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52383&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 6:23 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52465&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">aged 65 and over to determine whether they respond differently from younger</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25619" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">LoferimedoLob</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 2:36 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52493&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 4:50 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52509&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 5:51 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52510&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Billige Viagra Zurich</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25632" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Greebypeern</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 5:56 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52592&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">declines over a period of approximately 15 days. Barbiturate-dependent</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25650" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">fupeinofinc</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/29/2010 11:29 PM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52617&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">BUY CITALOPRAM SALE CITALOPRAM IN GB WITH NO PRESCRIPTION</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25659" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Rullysicsib</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 2:12 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52637&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">less than 10 grams, or fatalities with less than 15 grams. If repeated</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25668" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">bogegreadvare</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 4:46 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52650&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 5:28 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52705&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Rabatt Viagra Jena</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25687" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Bymnfeeme</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 9:40 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52711&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 10:10 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52724&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Ru topik in google</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=22076" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Clettyrephege</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 11:41 AM</font></td>
+			</tr>
+			
+			<tr valign=top>
+			<td bgcolor="#CCCCCC">
+			<table border=0 cellpadding=0 cellspacing=0 width=100%>
+				<tr valign=top>
+				
+					<td width=16 align=right>
+					
+					<img src="/dba/images/messageforum/icon_folder_open.gif" width=15 height=12 border=0>
+					
+					</td>
+				
+				<td width=3><img src="/dba/images/messageforum/spacer.gif" width=3 height=1></td>
+				<td width=100%>
+				<font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000"><a href="display.asp?post_id=52740&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">Новые концерты в музкомедии</a></font>
+				</td>
+				</tr>
+			</table>
+			</td>
+			<td bgcolor="#E2E2E2" nowrap>
+			<a href="profile.asp?id=25700" title="View this user's profile"><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#990000">Unparptag</font></a></td>
+			<td bgcolor="#CCCCCC" nowrap><font face="Verdana, Arial, Helvetica, sans-serif" size=2 color="#000000">11/30/2010 2:23 PM</font></td>
+			</tr>
+			
+
+	</table>
+	<table border=0 cellpadding=2 cellspacing=0 width=100%>
+		<tr>
+		<td align=right>
+		<font face="Verdana, Arial, Helvetica, sans-serif" size=1>
+		<a href="index.asp?page=15&mode=expand&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">back</a>&nbsp;page&nbsp;16 of 34&nbsp;<a href="index.asp?page=17&mode=expand&board=28&board_name=+Orang+Asli+Indigenous+Knowledge">next</a>
+		</font>
+		</td>
+		</tr>
+	</table>
+	
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#CCCCCC"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#3366CC"><a href="/index.asp"><img src="/images/nav_home_b.gif" alt="Home" border=0></a><a href="/pi_best_practice_display/index.asp"><img src="/images/nav_bestpractice.gif" alt="Best Practice" border=0></a><a href="/pi_communities/boards.asp"><img src="/images/nav_communities_o.gif" alt="Communities" border=0></a><a href="/first_timers.asp"><img src="/images/nav_firsttimers.gif" alt="First Timers" border=0></a><a href="/pi_information_catalog/browse.asp"><img src="/images/nav_infocatalog.gif" alt="Information Catalog" border=0></a><a href="/performance.asp"><img src="/images/nav_performance.gif" alt="Performance" border=0></a><a href="/users.asp"><img src="/images/nav_users.gif" alt="Users" border=0></a><a href="/search.asp"><img src="/images/nav_search.gif" alt="Search" border=0></a><a href="/site_map.asp"><img src="/images/nav_sitemap.gif" alt="Site Map" border=0></a></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=10 height=3></td>
+	</tr>
+	<tr>
+	<td colspan=2 bgcolor="#FFFFFF"><img src="../images/shim.gif" width=10 height=2></td>
+	</tr>
+</table>
+
+</body>
+</html>

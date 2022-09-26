@@ -1,0 +1,367 @@
+<HTML><HEAD><TITLE>Sample User Requirements for Data Dictionary</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/fishing_boat_in_fog_lge.jpg">
+<IMG ALT="Fishing Boat in Fog, Alaska" BORDEeeR=1 SRC="../../images/philg/fishing_boat_in_fog_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Sample User Requirements for a Data Dictionary</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=100%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<A HREF="index.htm">Back to the Conceptual Data Model</A>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Here is a sample of a range of User Requirements ...
+<OL><LI><B>From John Doe :-</B>
+I'd like a data dictionary to be a common-ground repository of business and technical knowledge.
+What I would like is seldom on offer...... but I keep trying.
+
+Imagine a resource that links to describe business terminology as well as loading history, 
+as well as "process impact" (where the item is created and used ).
+
+Lengths, formats, informats, labels, indexing, sorting integrity constraints and 
+business constraints should co-exist with some description of the data item's owner, 
+maintainer and significance to the business.
+
+The surface for this might need some hardworking-html or xml. 
+But I think the payback could be very high.
+
+Such a resource on an intranet could provide a backbone of documentation that both 
+business analysts and infrequent query writers could find answers that satisfy what they need 
+without trying to imagine appropriate keywords for a limited indexed online help.
+
+Just how far documentation is becoming important seems to be crystalized by some of the 
+"proof of validated code must be retained for n years" issues.
+
+In the banking world a "new" set of <B>"Basel II"</B> rules are making some serious change impact.
+
+I think this is more than just "a good idea". 
+As data warehouses and datamarts become more complex and versions overlap, only clear, 
+quickly accessible description will provide any chance of "keeping up".
+(I shouldn't forget that it has to be maintained !)
+
+All that is going to need more than "dictionary tables" !
+
+It probably needs documentation warehouses.
+..add
+...version control to prepare for future change.
+... audit history to explain accounting data over the last n years
+...
+Despite all that sophistication, I also need simple ways to populate a list of date variables or 
+currency values, or rates , or percentage values...... each needing its own formatting rules. 
+URL access is available, but well structured xml might be better for simple data access to this 
+Data Dictionary.
+
+I don't expect it to reside on my desktop or lan, but replicates of my subset of interest might. The
+important thing is that any changes to this magic dictionary must be centralised to ensure we all have
+the same "big-picture" available.
+
+<B>Is it just a pipe-dream ?</B>
+
+Yours in hope.
+
+John.
+
+
+<LI><B>From Joe Bloggs</B>
+
+I, too, will be interested in looking at other's responses to your question.
+
+The answer, I think, will have to correspond to how it is going to be used.
+
+When I hear the term "data dictionary" I expect to find the various variable names, 
+their formats (and informats), how data may have been recoded, the different values that 
+can appear for categorical variables and what those values mean, whether the values for a 
+particular variable serve as an index for other files (and, of course, how they have to be sorted), 
+where each data element comes from, and the designed purpose of each data element.
+
+Some of the above can be included in a SAS format statement, the form in which I (personally) like to 
+see data dictionaries, so that others can analyze a dataset without having to search for the meaning of 
+it's contents.
+
+<LI><B>From Fabienne PASCALE</B>
+The data dictionary is an absolutely essential document.
+It follows from the data collection form from which one can deduce what exactly the 
+questionners were trying to prompt the questionnees to respond.
+
+Here is my outline for a data dictionary:
+
+<B>* Description of Project:</B>
+  date, time,
+  people: interested parties,
+          who to contact when meltdown occurs
+  contract
+
+<I>* Abbreviations</I>
+
+<I>* Editing Instructions:</I>
+  how to wedge what was written on the form
+  into the confines of the variable definitions
+  * "place a zero in front of a decimal number
+     i.e. change '.618' to '0.618'"
+
+<I>* Formats</I>
+  which are written so they can be cut&pasted
+  into aFormat.sas,
+  the one and only program which contains formats
+  remember to define initialization values
+  and EverythingElse:
+value $YesNo
+      '0' = 'No'
+      '1' = 'Yes'
+     ' ','.'= "&BLANK." %*initialize;
+     other  = "&INVALID.";%*EverythingElse;
+
+<I>* Data Set:</I>
+  * variables that are identifiers
+  * notes on data structure
+  * variable descriptions:
+  * note on length of numeric variables:
+    *integer length=4, or 3, or 2
+             this is system dependent
+    *real    length=8
+    *be not confused by people saying
+     that you need more than 8 bytes
+     for numbers greater than 99,999,999
+
+          Type:
+Variable  Length  Format     Label
+--------  ------  ------     ------------
+IDNum      N:4    5.         ID-1 Number
+BatchNo    C:8    $char8.    Batch Number
+
+** see Stevens's Measurement System, below .sig
+
+<I>* Date Sets</I>
+  Naming conventions
+  Names of deliverables
+
+Bon chance et Bon Courage
+
+<LI><B>From Hobo DBA</B>
+The dataset/study that brought up the need for a data dictionary is the same one I 
+posted questions about earlier on how to clean up really messy data.  
+In fact the client was supposed to provide a data dictionary to me but it was next to 
+worthless because it simply listed the fields in each <B>Microsoft Access</B> table along with 
+the data type and a lable which for the most part was simply a restatement of the variable name.  
+
+Most of thefields in the tables were free form fields.  
+As a result the data dictionary they provided was even more useless.
+
+All of the data is from responses to medical questionnaires with quite a few yes/no responses.  
+So I've had to ask what does -1 mean and 0 mean or in some cases what does 1 or 2 or 3 mean 
+(even with the questionnaire in had you can't really tell the value they will decide to represent 
+'yes' or 'no' in the database).
+
+
+<LI><B>From Greg, a Clinical Trials Data Manager</B>
+
+Hi,
+I work on a clinical trial, where we use more than 180 datasets, collected over nearly 20 years of research.
+We have a system of data dictionaries.
+
+This includes:
+1.  The forms that were used for data collection, showing the library,
+    dataset and variable name for each variable.  
+    Each form is assigned a unique identifier ('formcode') that shows not only which form, 
+    but the version of the form.  
+    Over the years we've changed some forms many times.
+    This is a problem for normalization affecionados, since there are many
+    null values and datasets contain fields that are not applicable for
+    certain formcodes (i.e., we've stopped asking about bone fractures, though
+    we had asked and retain the data from 5 years previous), though these
+    records are still in the same table becasue of the formcode.
+2.  Each variable from above is assigned a format using the same name as
+    the variable, when possible.  When this is not possible, the format name
+    is written into the form source.  All formats are contained in one
+    document, so that all formats load (from sasv8.cfg, for example) at SAS boot.  
+    When possible (when the programmer remembers), the format is
+    assigned in the datastep, as well as the label, so that the variable
+    retains the format.
+3.  A flow chart documents the database update process (its a three day process).  
+    This is quite useful for the summary tables that are used.
+    Since these summary tables contain data not directly matched against a
+    form, tracing the origin and source of the data can be difficult when I
+    only have to modify somehting every few years.  Flowcharts help me and I
+    consider them part of the data dictionary.
+4.  Proc Contents is run to provide all the labels, lengths, etc.
+
+5.  General rules related to the variables, such as standard formats and
+    lengths for dates, how formcodes are assigned, how batchid (the key-entry/
+    datascan batch source) etc are all pooled into one document.
+6.  The key, or composite key, is identified for each dataset in a text file.  
+    Additionally each record in the text file (which is read in every database 
+    by the programs creating and managing the data) contains:
+       DATASET   SORT1     SORT2     SORT3...     (we are set up to 15, but only
+                 a few use up to 6, most sort on 2 vars.)
+       COMPRESS  flag indicates whether or not dataset should normally be stored
+                 with the SAS compress option set.
+       DATABASE  Library identifier.  Tells the directory and whether or not
+                 there are suffix digits after the dataset
+       CREATOR   Name of update program that creates the file.
+       REJECT    Process rejected records from the central database update:
+       FORM1     Form number of primary association.  FORM2     Form number of
+                 secondary association. etc.
+       UPDT      Update by program or by copying previous VERP
+       ORDER     Runing order of programs in BATCH1.CMD
+
+7.  Last, I maintain a document of the reports, both routine (yearly,
+    monthly, weekly) and ad-hoc.  These reports have numbers that identify
+    them, and list the datasets that are used to generate the report.  
+    So when I modify a dataset I can quickly view what effect it will have on the
+    reporting of the study.
+
+FWIW
+Greg
+
+<LI><B>From Quentin, Another Interested Party</B>
+
+I think you need to start by thinking about what information you want to
+have in the dictionary, what organization you want it to have, and what
+format(s) you want (ASCII? PDF? html?).
+
+These questions take a lot of thought, and it's nice to have them answered
+before starting to code.  When I think data dictionary, 
+I think descriptive information on each variable (what could that mean? perhaps 
+frequencies, perhaps mean/sd/min/max, perhaps UNIVARIATE... ).  
+But I think in terms of a data dictionary that I would give to an analyst.  
+If I were making data dictonaries for programmers, I would want to include 
+information on the type of each variable, length, format, etc.  
+
+In any case, <I>a good Data Dictionary</I> is a great asset to a project/division/company.  
+It's worth spending time thinking about who the users of the data dictionary will be, and 
+what their needs are.
+
+Once you have designed the layout and content for the dictionary, coding should flow from that.  
+I'd think in terms of FREQ, MEANS, and UNIVARIATE to get summary statistics for each variable.  
+And plenty of use of dictionary tables (esp dictionary.tables and dictionary.columns).  
+And then ODS gives you plenty of options is terms of file formats.
+
+There are lots of fun challenges, for example, assuming you want to give FREQs on character variables, 
+what do you want to do when a character variable has 200 different levels?  
+What's a good way to summarize a SAS date variable (probably don't want to summarize BirthDate as 
+average number of days since 1/1/1960)?
+
+If I were I to start working on a %MakeDictionary macro, I think I would approach
+it as a structured-programming exercise.  There are lots of little tasks, and each one would get 
+it's own little macro (%FindVarType, %DescribeNumVar, %DescribeCharVar, %DescribeDateVar... ) 
+[My thanks to Ed Heaton for introducing me to such organization.]  
+Without that, I'd fear the entire macro would get out-of-hand.
+
+I hope this hasn't been so general as to be unhelpful.  I'll look forward to
+seeing other people's thoughts, and perhaps references to existing macros???
+
+Kind Regards,
+--Quentin
+
+<B>From Kisaburo Watanabe</B>
+I've been dreaming of a system that's kind of like an old BBS, but with 
+a few minor differences.  Basically, I want a central place to easily 
+store and retrieve reams of files and data that I have spread out all 
+over the place.
+
+Idea/Need: A server that one can log into (possibly via modem) that has 
+the following features:
+ - Use requires nothing more than a terminal emulator
+ - Multiuser capability
+ - Allows user to upload/download files of arbitrary size up to 1 Gb each
+ - Allows user to create "forms" with fields of the user's choosing, 
+   which can then used to create records..  The fields could contain text 
+   the the user enters, data copied from a field in another record, a link 
+   to another record, or a link to a file
+ - Files, forms, and records are accessed via a hierarchical menu system 
+   that <I>the user can modify on-the-fly as needed</I>.
+
+Now, before I spend god-knows-how-much time writing such a thing, does anybody know if 
+such a thing already exists?  What I've described sounds a lot like a CUI BBS, but is 
+missing certain features (like mail and chat) and includes things that a BBS wouldn't have 
+(add forms and records, ability to change the menus around as needed).
+<HR>
+WeBSET 2.01  
+  by Don Keeler (http://freshmeat.net/~dkeeler/)
+  Wednesday, July 2nd 2003 05:07 
+
+About:
+WeBSET is a special education management system  that operates within
+EzEnterprise, a cross  platform middleware environment. It is a 
+full-featured IEP reporting system and screening  and evaluation system,
+and provides applications  that automate all aspects of the IEP process 
+using a forms builder, report builder, and data  dictionary. It provides
+solutions specifically  designed for teachers, administrators, and 
+special education staff, can be accessed over  the Web, and meets federal,
+state, and local  reporting needs.  
+
+Changes:
+   http://freshmeat.net/projects/webset/
+</PRE>
+
+<P><B>Barry Williams</B>
+<BR>July 2nd. 2003
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR>
+
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../index.htm">Home Page</A>
+        | <A HREF="../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../faqs.htm">FAQs</A> 
+        | <A HREF="../site_map.htm">Site Map</A> ]
+</CENTER>
+
+<P>
+
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers Ltd. 2001</I></FONT></CENTER>
+
+</HTML>

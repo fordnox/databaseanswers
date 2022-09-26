@@ -1,0 +1,166 @@
+<HTML><HEAD><TITLE>PL/SQL Template Data Model Print Version</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PL/SQL   TEMPLATE  DATA   MODEL</B>
+
+<BR><BR>
+<IMG ALT="PL/SQL Template Data Model" BORDER=0 SRC="images/plsql_template.gif"> 
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+
+<BR><BR><B>Here is the PL/SQL Code ...</B>
+<PRE><FONT SIZE=1>-- A) Data Feeds and Files
+-- 10.50 pm Wednesday, 5th. August 2004
+Declare
+v_feed_id      Data_Feeds.feed_id%TYPE;
+v_feed_name    Data_Feeds.feed_name%TYPE;
+v_file_id      Extract_Files.file_id%TYPE;
+v_file_ETA_GMT Extract_Files.file_ETA_GMT%TYPE;
+v_file_name    Extract_Files.file_name%TYPE;
+count_feeds    number;
+count_files    number;
+loop_counter   number;
+x_txt_No_Files varchar2(32000);
+-- Declare First Cursor (Data Feeds) ...
+Cursor c_Feeds is
+SELECT feed_id,location_code,feed_name
+FROM   scott.Data_Feeds
+ORDER  BY feed_id;
+-- Declare Second Cursor (Extract Files) ...
+Cursor c_files is
+SELECT file_id,feed_id,file_ETA_GMT,file_name
+FROM   scott.Extract_Files
+WHERE  feed_id = v_feed_id
+ORDER  BY file_id;
+--
+-- Outer Loop for Data Feeds begin here ...
+BEGIN
+count_files := 0;
+count_feeds := 0;
+loop_counter := 0;
+x_txt_No_Files := 'No Files for this Feed';
+--
+dbms_output.put_line('FEED ...');
+dbms_output.put_line('ID  LOCATION          FEED NAME ');
+--
+For cFeeds in c_feeds LOOP
+count_feeds := count_feeds + 1;
+v_feed_id := cFeeds.feed_id;
+v_feed_name := cFeeds.feed_name;
+dbms_output.put_line(to_char(v_feed_id) || '   ' || cFeeds.location_code || '   ' || v_feed_name);
+--
+dbms_output.put_line('FILES FOR THIS FEED ...');
+dbms_output.put_line('ID  ETA_GMT      FILE NAME ');
+--
+For cFiles in c_Files LOOP
+count_files := count_files + 1;
+v_file_id := cFiles.file_id;
+v_file_name := cFiles.file_name;
+dbms_output.put_line(to_char(v_file_id) || '   ' || CfILES.FILE_eta_gmt || '   ' || v_file_name || '   ' || v_file_ETA_GMT);
+--
+end LOOP;
+--
+end LOOP;
+dbms_output.put_line('   ');
+dbms_output.put_line('Total Data Feed    Count = ' || to_char(count_feeds));
+dbms_output.put_line('Total Extract File Count = ' || to_char(count_files));
+dbms_output.put_line('This Completes the Job');
+--
+end;
+/
+
+
+
+-- B) Parents and Children ...
+Prompt Displaying Parents and Children 
+-- 9.00 pm Wednesday, 4th. August 2004
+
+set long 30000
+set serveroutput on size 3000
+--
+Declare 
+v_parent_id    Parents.parent_id%TYPE;
+v_parent_name  Parents.parent_name%TYPE;
+v_child_id     Children.child_id%TYPE;
+v_child_gender Children.gender%TYPE;
+v_child_name   Children.child_name%TYPE;
+count_parents  number;
+count_children number;
+loop_counter number;
+x_txt_No_Children varchar2(32000);
+-- Declare First Cursor (Parents) ...
+Cursor c_Parents is
+SELECT parent_id,parent_name
+FROM   scott.Parents
+ORDER  BY parent_id;
+-- Declare Second Cursor (Children) ...
+Cursor c_Children is
+SELECT parent_id,child_id,gender,child_name
+FROM   scott.Children
+WHERE  parent_id = v_parent_id
+ORDER  BY child_id;
+-- Outer Loop for Parents begin here ...
+BEGIN
+count_children := 0;
+count_parents := 0;
+loop_counter := 0;
+x_txt_No_Children := 'No Children';
+--
+dbms_output.put_line('ID  PARENT NAME ');
+--
+For cParents in c_parents LOOP
+count_parents := count_parents + 1;
+v_parent_id := cParents.parent_id;
+v_parent_name := cParents.parent_name;
+dbms_output.put_line(to_char(v_parent_id) || '   ' || v_parent_name);
+-- dbms_output.put_line('Parent Name = ' || to_char(v_parent_name));
+--
+dbms_output.put_line('ID  CHILD NAME ');
+--
+For cChildren in c_children LOOP
+count_children := count_children + 1;
+v_child_id := cChildren.child_id;
+v_child_name := cChildren.child_name;
+dbms_output.put_line(to_char(v_child_id) || '   ' || v_child_gender || '   ' || v_child_name);
+-- dbms_output.put_line('Parent Name = ' || to_char(v_parent_name));
+--
+end LOOP;
+--
+end LOOP;
+dbms_output.put_line('Total Parent   Count = ' || to_char(count_parents));
+dbms_output.put_line('Total Children Count = ' || to_char(count_children));
+dbms_output.put_line('This Completes the Job');
+--
+end;
+/
+
+--
+INSERT INTO parents (gender,parent_name )
+VALUES              ('M'   ,'Ray Charles')
+/
+INSERT INTO parents (gender,parent_name )
+VALUES              ('M'   ,'Bobby Hebb')
+/
+INSERT INTO children (parent_id,gender, child_name     )
+VALUES               (      1  , 'M'  ,'Ray Charles Jr.')
+/
+INSERT INTO children (parent_id,gender, child_name     )
+VALUES               (      2  , 'M'  ,'Bobby Hebb Jr.')
+/
+INSERT INTO children (parent_id,gender, child_name  )
+VALUES               (      2  , 'F'  ,'Louise Hebb')
+/
+</PRE>
+<BR>Barry Williams
+
+<BR><I> &#169 DatabaseBaseAnswers.com 2004</I>
+</FONT>
+
+</BODY>
+
+</HTML>

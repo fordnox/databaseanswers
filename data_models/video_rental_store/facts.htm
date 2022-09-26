@@ -1,0 +1,168 @@
+<HTML><HEAD><TITLE>FACTS for Video Rental Store</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=middle>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_400_home.jpg">
+</TD>
+<TD ALIGN=right ROWSPAN=2 VALIGN=middle>
+<IMG ALT="Pier at Cannes" BORDER=1 HEIGHT=99 WIDTH=211 SRC="../../images/philg/cannespier_xsml.jpg">
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=90%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Video Rental Stores Data Model</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define business requirements which the Database must support.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+An e-Commerce Web Site for a specialist Bookseller.
+
+B. The Things of Interest, ('THINGS'), include :-
+B.1 Customers
+B.2 Customer Orders
+B.3 Customer Rentals
+B.4 Games
+B.5 Other Rental Items
+B.6 Rental Items
+B.7 Videos
+
+C. These THINGS_OF_INTEREST are Related as follows :-
+C.1 A CUSTOMER can be associated with zero or many VIDEO_RENTALS.
+    The 'zero' option provides flexibility where a CUSTOMER calls 
+    to place an ORDER for a RENTAL_ITEM, which is subsequently cancelled.
+C.2 A CUSTOMER can place zero or many ORDERS for RENTAL_ITEMS.
+C.3 A CUSTOMER_ORDER must always be associated with one and only one CUSTOMER.
+C.4 A CUSTOMER_RENTAL must always be associated with one and only one CUSTOMER.
+C.5 All RENTAL_ITEMS have many attributes in common, and (maybe) some which are not common.
+    This is shown in the Conceptual Model by an Inheritance relationship between Rental Items 
+    and Videos,Games and 'Other Rental Items'.
+
+D. Other Characteristics of these THINGS_OF_INTEREST include
+D.1 A VIDEO_RENTAL has a PRICE for the rent of a Video for a specified period. 
+
+E. Sample Data includes :-
+To be determined
+
+F. Typical Enquiries include :-
+F.1 How many VIDEO_RENTALS are overdue ?
+F.2 Do we have any VIDEOS featuring Cher in a Movie ?
+
+G. NOTE :
+G.1 The proposed design can easily be implemented with either one Rental Item Table
+or separate Tables for Videos, Games, etc.. 
+
+However, a VIDEOS Table will be preferred if there are many data items are specific
+to VIDEOS, and it's often better to avoid an approach which is designed to provide 
+generality at the expense of ease of understanding.
+
+
+Barry Williams
+Principal Consultant
+Database Answers Ltd.
+London, England
+
+31st. January 2001
+</PRE>
+
+
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers Ltd. 2001</I></FONT></CENTER>
+
+</TD></TR>
+
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+</BODY>
+
+</HTML>

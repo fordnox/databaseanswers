@@ -1,0 +1,82 @@
+<HTML><HEAD><TITLE>Facts 2 - Airline Booking</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+<TABLE BGCOLOuuR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<H1><IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+<BR><FONT COLOR=red FACE="Comic Sans MS" SIZE=4><B>FACTS for Airline Booking - Version 2</FONT>
+</TD>
+<TD ALIGN=right>
+<IMG ALT="Sunset at Dulles Airport, Washington" HEIGHT=94 WIDTH=255 SRC="../../images/dulles_airport_washington.jpg">
+</TD>
+</TR>
+
+</TABLE>
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+Back to the <A HREF="index.htm">Conceptual Data Model</A>.
+<!-- begin body Text -->
+<P>
+<B>PURPOSE OF THESE FACTS :-</B>
+<BR>These FACTS define the functional requirements which the Database must meet.
+<BR>They form the basis for agreement between the User and the Database Designer and are 
+<BR>written in a form of structured English which is clear and unambiguous.
+<BR>The Draft FACTS</A> have been defined and are detailed here ...
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2>A. The Area being Modelled is :-
+<LI>An Airline Booking System.
+
+B. The THINGS OF INTEREST include :-
+B.1 Aircraft
+B.2 Destination Airports
+B.3 Flights
+B.4 Itineraries
+B.5 Origin Airports
+B.6 Passengers
+B.7 Passenger Bookings
+B.8 Seats
+B.9 Tickets
+B.10 Ticket Types
+B.11 Travel Class
+
+C. These THINGS OF INTEREST are Related as follows :-
+C.1 A PASSENGER can make one or many BOOKINGS.
+C.2 A BOOKING can be for one or many PASSENGERS.
+C.3 A BOOKING is always in a STATE,(e.g. Provisional, Confirmed or Cancelled).
+C.4 A GROUP_BOOKING can be for one or many PASSENGERS.
+C.5 A BOOKING can be for only one ITINERARY.
+C.6 A PASSENGER makes zero or many PAYMENTS for BOOKINGS.
+C.7 Each PAYMENT can be for one or many BOOKINGS.
+C.8 A BOOKING can be paid for by one or many PAYMENTS.
+C.9 An ITINERARY consists of one or many LEGS.
+C.0 A LEG is one aircraft taking off once and landing once
+    at different given airports at a given date and time with a particular
+    flight number.
+
+Barry Williams
+Principal Consultant
+Database Answers
+5th. November 2001
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

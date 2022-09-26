@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>African Airlines Data Model - User Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="images/ascot_race_course_lge.jpg" TARGET=_NEW>
+<IMG ALIGN=right ALT="African Airways Flights" hspace="0" vspace="4" SRC="images/african_airlines_flights.jpg">
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+ 
+<img alt="Airline Bookings" SRC="images/lft_airline_bookings.bmp">
+<img alt="Scheduling"       SRC="images/rt_in_africa.bmp">  
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>This is the Start of the User specification of the Requirements :-</B>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>A Database is required for a System to manage Bookings on an Airline in Africa.
+
+<B>We can identify the following 'Things of Interest' :-</B>
+<LI>Aicraft
+<LI>Customers
+<LI>Flights
+<LI>Legs
+
+Here are the requirements.
+We need a database design that would meet our requirements by ensuring that at any point, 
+we don't end up with more passengers than the bus or plane can handle. 
+
+We appreciate that some checks may be done by a program outside the db design but we need 
+the database design to be correct.
+
+
+A local (fictional) <B>Airline</B> called African Airways operates some <B>Flights</B> as follows:
+<LI> Monday  : NAIROBI – LONDON – AMSTERDAM
+<LI> Tuesday :  AMSTERDAM – LONDON  - NAIROBI
+
+It is possible for this airline to add an additional destination after Amsterdam (so no limit to how far they can fly).
+The airline is operating a 10 seater aircraft.
+The aircraft can change any time so this seat capacity depends on the aircraft any time.
+
+Usually, airlines have different fares for each journey due to CLASSES so that should also be taken care of. SO we assume 2 classes :-
+1. BUSINESS (USD 200) 
+2. ECONOMY (USD 150). (NAIROBI - AMSTERDAM and vice versa). 
+
+We can take any amount for the shorter distances.
+
+<B>SEATING CAPACITY</B>
+The database needs to ensure that we can be able to manage the seating capacity as bookings happen for different sectors. 
+
+Of course people can book
+NAIROBI – AMSTERDAM or 
+NAIRBO-LONDON or
+LONDON – AMSTERDAM
+
+Any of these combinations should be taken care to ensure that we do not get passengers <b>overbooked</b> at any segment.
+
+e.g if we have 8 people booked LONDON – AMSTERDAM, then we cannot have more than 2 people booked on NAIROBI – AMSTERDAM. 
+Although we can have 10 people booked on NAIROBI – LONDON !
+ 
+We are designing an airline reservation system that needs to take care of a multi city seat capacity/booking. 
+This would probably also apply for a bus reservation.
+
+Basically, a plane/bus starts from point A to go to point D via B and C.
+
+Each of these are sectors that can be booked independently. i.e a passenger can book any of the following;
+1.       A to B
+2.       A to C via B
+3.       B to C
+4.       C to D
+5.       A to D
+6.       Etc
+
+<LI>Update on December 13th.
+TERMINOLOGY - 
+The word LEG will be used to refer to a segment, sector or leg, such as Nairobi to London is a LEG.
+NAIROBI-LONDON-AMSTERDAM is a trip which has 2 LEGs
+ 
+Bernard says he is "concerned about storing 'total booked' and capacity remaining in a field value. 
+It means when a passenger (aka PAX) books AND then cancels the booking, we have to go updating 
+various tables instead of just doing  a simple select sum to find out total booked and then do 
+a deduction of capacity less total booked. Is that correct ?
+
+A normal flight can have as many as 12 fares from my small research usually classified between Business and Economy. 
+Hard coding the fares will give you headache."
+
+<B>DRAFT SQL</B>
+
+Draft SQL for the View to calculate the total bookings and seats remaining on any Flight and any Date :-
+The figure of 10, for aircraft seating capacity, could be a parameter strored in a Table.
+
+CREATE VIEW Total_Bookings_VW View
+AS
+SELECT leg_name,actual_departure_time
+     ,SUM(*) AS total_booked_head_count
+     ,10 - SUM(*) AS capacity_remaining
+from Bookings
+        ,Journey_Legs
+        ,Legs
+WHERE Bookings.booking_id = Journey_legs.booking_id
+AND     Legs.leg_id               = Journey_Legs.leg_id
+GROUP BY leg_name,actual_departure_time</PRE>
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Barry Williams</B> 
+15th. December 2008
+Principal Consultant
+Database Answers
+London, England</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

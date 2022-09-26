@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Facts for Service Calls Tracking Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeF="http://www.wired.com/dangerroom/tag/biometrics/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Service Vehicles making Calls" BORDER=0 hspace="0" vspace="4" SRC="images/globe_and_vehicles_cartoon_style_sml.jpg"></A> 
+ </td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Service Calls Tracking</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+Service Call Tracking
+
+<HR>
+<B>A. Barry says the Things of Interest are :-</B>
+<LI>Contacts
+<LI>Customers
+<LI>Local Telephone Carriers (LECs)
+<LI>Parts
+<LI>Service Calls
+<LI>Teams
+<LI>Techs (Technical personnel)
+<LI>Tickets
+<LI>Trips
+<LI>Work Orders
+
+<B>B. The Business Rules are as follows :-</B>
+1. Customers can have one or many Contacts, <FONT COLOR=red>whose role will be clarified by Milton</FONT>
+2. Customers have one or many Service Locations.
+3. Service Calls are made from Service Locations.
+4. A Service Call can involve only one Possible Problem, (which can be unknown initially).
+5. Work Orders are raised in response to Service Calls.
+6. Each Work Order can result in one or many Service Trips.
+7. Each Service Trip is made to the Service Location that raised the Call.
+8. One or many Technicians is involved in a Service Trip.
+9. A Service Trip has one Outcome.
+10. A Service Trip can involve one Possible Action.
+<HR>
+<B>C. Milton says ...</B>
+I was hoping for (I KNOW I KNOW it’s a curse word) free. 
+
+I just need some help getting started in the right direction. 
+
+Over the next few days I will put together all my thoughts into a somewhat organized 
+description so it will make some sense. 
+
+That way you can see what it is and do what you can and maybe help steer me in the right direction. 
+
+You may even already have something that will work as is. In a readers digest version …
+
+Service calls come from basically 5 sources with multiple teams each. 
+Most tickets are done in one trip but occasionally you have multiple days on the same workorder. 
+So you have the source info (contacts type info) then customer info (again contacts info) service 
+location (address fields plus business name and or LEC information(Local telephone carrier) circuit 
+id’s dmark etc.
+
+I wasn’t going to track LEC info just yet but maybe in the future) then the work order info like the 
+number, date put in, by who, Tech or techs assigned, attachments, due date,price or rate info. 
+
+Then the work order’s work done and by whom, dates and times, mileage to and from (we only pay the inbound 
+leg unless it’s the last ticket then it get inbound and the return to the office. Parts info. 
+
+This was primarily for return tracking. 
+
+So you get the idea I am sure or is this going to be too much for this old man to figure out?
+
+
+Thanks for your time and energies,
+
+Milton
+
+A good man never gets kicked down, he just pauses to closely inspect where he is.
+</PRE>
+
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2010</I></FONT></CENTER></PRE>
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

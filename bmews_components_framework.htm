@@ -1,0 +1,404 @@
+<html>
+<head>
+<title>Framework for BMEWS Components</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%><img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		Framework for Components in the BMEWS System<img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"> 
+<p class="small"><FONT COLOR=blue FACE=Verdana SIZE=2>We are defining a Framework for Planning and Reporting CSR Activities,
+which will be supplemented by Best Practice Guidelines and Case Studies for different areas and industries.
+<BR><B>The analysis on this page</B> shows how the Components in the 
+BMEWS family can be combined to meet the requirements of different applications in the BMEWS Family. 
+<BR>Here's <A HREF="bmews_components_priorities.htm">a table showing priorities</A> and how successive Components can be built on previous ones.
+<BR><B>The Development Approach</B> is characterised by a User-Extensible Data Dictionary and Templates. 
+
+
+<!--- 
+<B>BMEWS combines three separate functions</B>
+Each function could be sold and used separately, and the combination is uniquely powerful.
+The Functions are :- 
+<B><I>1) Best Practice.</I></B>
+   This could start with HR Recruitment procedures and lead to Knowledge Management,
+   where HR Managers could share their experiences. 
+<B><I>2) Performance Monitoring</I></B> 
+   This is based on Key Performance Indicators,(KPIs).
+   The KPI values should be achieved if Best Practice is followed. 
+<B><I>3) Communities</I></B>
+   Users can join Communities, which can be related to their Roles and Job Descriptions.
+   These, in turn, can be linked to Best Practice. 
+   Therefore if an individual does his/her job correctly the appropriate KPIs should be achieved. 
+
+   For instance,an HR Manager can linked to Recruitment Procedures, checking References, and so on. 
+   This means, that for an HR Manager, if references are checked, then new Employees should be of good quality.   
+   This can translate into KPIs of the number of new Employees who are stay for more than one year.
+
+An <B>Information Catalog</B> is used to define all sources of Data and Information available within the organisation.
+For instance, the Catalog could have an entry for HR Recruitment Procedures, or Governmenet Regulations, with 
+links to the detailed documents.
+
+<B>TYPICAL APPLICATIONS OF BMEWS</B>
+<B>Application 1. Compliance with Government Regulations</B> 
+A typical use could be a Local Council Sports Centre with a Swimming Pool. 
+The UK Health and Safety Executive defines standards for the water in swimming pools, (eg levels of chlorine). 
+
+These levels must be measured and reported on a daily basis. 
+
+If they fall outside the required Threshold levels then the nominated responsible individual 
+must be notified so that the appropriate action could be taken. 
+This would be implemented using BMEWS as follows :- 
+1) The Health and Safety Executive regulations would be stored as 
+   Best Practice,(and then available for all Sports Centres in the area). 
+2) The Swimming Pool attendant job description would 
+   specify 'Measuring water quality every day' and entering the 
+   results into the computer. 
+3) The KPIs Performance monitoring would calculate the KPIs from 
+   the raw data and then compare them against required Threshold 
+   values, and alert the Operations Manager. 
+
+<B>Application 2. Evaluation of e-Learning</B>
+1) The learning material would be set up as Best Practice or Tutorials. 
+2) Students would register as Users. 
+3) They would take a Course and then take a test to determine whether they pass or fail. 
+   The percentage passing or failing would be the KPI for the course. 
+   If the actual percentage was outside the threshold values, then the Course 
+   Director could be advised.</PRE> 
+</p>
+
+<p class="small">
+<B>Application 2. Evaluation of e-Learning</B>
+1) The learning material would be set up as Best Practice or Tutorials. 
+2) Students would register as Users. 
+3) They would take a Course and then take a test to determine whether they pass or fail. 
+   The percentage passing or failing would be the KPI for the course. 
+   If the actual percentage was significantly outside the threshold values, then the Course 
+   Director could be advised. 
+</p>
+
+<p class="small">Second</p>
+<p class="small"><b>Third ...</b>.</p>
+--->
+
+
+		</td>
+          	</tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">
+		Here are Links to current Components of BMEWS<img src="images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="images/spacer.gif" height=1 width="1"> 
+			<br>
+                        <table width="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">
+				This is an analysis of the utilisation of the BMEWS Components.</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+<!---
+				<tr bgcolor="#B0D8FF"> 
+                            	<td COLSPAN=2 class="cell" wiiiidth="30%"><img src="images/white-point.gif" width="17" height="8">
+				<B><I>The Facilities in the BMEWS Approach :-</I></B></td>
+                                </tr>
+				<tr bgcolor="#B0D8FF"> 
+                            	<td claAAss="cell" wiIIdth="30%"><img src="images/white-point.gif" width="17" height="8">
+				<a  href="http://www.databaseanswers.org/pi_best_practice_display/index.asp">Best Practice</a></td>
+--->
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>Seq</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>Component</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>ICT <!--- <BR>(eg Education) ---></td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>UNGC</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>CSR</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>Compliance</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>BMEWS</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>1</td>
+				<td><A HREF="data_models/gci_global_consulting_infrastructure/user_procedures/chk_registered_users.htm">
+				<FONT COLOR=blue FACE=Verdana SIZE=2>Users</FONT></A></td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Maybe</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>2</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>Communities</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>3</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>Best Practice</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes (Regs)</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>4</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>Case Studies</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Optional</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>5</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>KPIs/Performance</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Optional</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>6</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>Single Truth</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>7</td>
+				<td><FONT COLOR=blue FACE=Verdana SIZE=2>Reporting Stds</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                          	<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+				<td ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2>Yes</td>
+                                </tr>
+
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                            </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0"
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

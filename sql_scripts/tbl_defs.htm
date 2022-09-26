@@ -1,0 +1,377 @@
+<HTML>
+<HEAD><TITLE>SQL Script to print Table Definitions</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jpg" BGCOLOR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP"></A>
+
+<TABLE BGCOLOR="FFFF66" BORDER="1" COLS="1" WIDTH="100%" CLASS="navbar">
+<TR>
+ <TD><font FACE="Verdana, Lucida Sans, Arial, Helvetica, Geneva, sans-serif" SIZE=2>
+   <B><small><a Title="Home" href="index.htm">Home</a> </small>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" WIDTH="13" HEIGHT="9">
+ 
+    <B><small><a Title="Home" href="index.htm">SQL Scripts</a> </small>
+    <img src="images/rt_arrow.gif" alt="Rt_Arrow.gif" WIDTH="13" HEIGHT="9">
+   </strong>
+    <small>table_definitions</small></font>
+ </TD>
+</TR>
+</TABLE>
+
+<! Start of Standard Header -->
+<CENTER><B><I>SQL to Print Table Definitions for a Database</I></B></CENTER>
+<HR>
+<! End of Standard Header -->
+
+There are 5 Steps involved and a <A HREF="#DO_ALL_STEPS">VMS Command File</A> is 
+used to do all 5 Steps.
+<LI><A HREF="#STEP0">Step 0 - Create View  of Owners and Table Counts</A>
+<LI><A HREF="#STEP1">Step 1 - Create Table of Primary Indexes</A>
+<LI><A HREF="#STEP2">Step 2 - Create Table of all required Fields</A>
+<LI><A HREF="#STEP3">Step 3 - Update second Table with details of Primary Indexes</A>
+<LI><A HREF="#STEP4">Step 4 - Produce Report</A> of Database Table Definitions, and 
+<A HREF="#TABLE_DEFS_OUTPUT">an Extract from a Sample Report</A>
+
+<A NAME="DO_ALL_STEPS"></A>
+<HR><FONT COLOR=red>A VMS Command File to do all 5 Steps ...</FONT>
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+<PRE>
+HOSTNAME::ORACLE $ cat print_db_report.com
+$! Filename : print_db_report.com
+$! NOTE     : num_rows must be previously populated 
+$ set def DISK$APPL01:[ORACLE.BARRYS.RICHARD_P]
+$ write sys$output "Starting Step0.sql ..."
+$ define/user sys$output table_defs_steps_0.log
+$ sqlplus / @TABLE_DEFS_STEP0.SQL
+$ write sys$output "Starting Step1.sql ..."
+$ define/user sys$output table_defs_steps_1.log
+$ sqlplus / @TABLE_DEFS_STEP1.SQL
+$ write sys$output "Starting Step2.sql ..."
+$ define/user sys$output table_defs_steps_2.log
+$ sqlplus / @TABLE_DEFS_STEP2.SQL
+$ write sys$output "Starting Step3.sql ..."
+$ define/user sys$output table_defs_steps_3.log
+$ sqlplus / @TABLE_DEFS_STEP3.SQL
+$ write sys$output "Starting Step4.sql ..."
+$ define/user sys$output table_defs_steps_4.log
+$ sqlplus / @TABLE_DEFS_STEP4.SQL
+$ ren table_defs_step4.op db_report.op
+$ dir/date/size db_tables.op
+$ show time
+$ write sys$output "Finished Step4.sql."
+$ write sys$output "The Database Report is in the File called db_report.op"
+$ write sys$output "This completes the Job."
+HOSTNAME::ORACLE $ 
+</PRE>
+
+<A NAME="STEP0"></A>
+<HR><FONT COLOR=red>Step 0 - Create View of Owners and Table Counts</FONT>
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<PRE>
+HOSTNAME::ORACLE $ cat table_defs_step0.sql
+rem Filename : table_defs_step0.sql 
+rem Function : Create Table of Indexes
+rem Date     : 16th. July 1999
+set echo on;
+SELECT name FROM V$DATABASE;
+SHOW USER; 
+spool table_defs_step0.op 
+select TO_CHAR(SysDate,'DD/Mon/YYYY HH:MI P.M.') from dual; 
+rem
+rem set heading off;
+DROP   VIEW barrys_dd0;
+rem
+CREATE VIEW barrys_dd0 AS
+SELECT owner,COUNT(table_name) table_count
+FROM   all_tables
+WHERE  owner NOT LIKE 'SYS%'
+GROUP  BY owner ;
+rem
+desc barrys_dd0;
+SELECT * FROM barrys_dd0;
+rem
+SELECT owner 
+FROM   barrys_dd0
+WHERE  table_count IN(SELECT MAX(table_count)
+                      FROM   barrys_dd0 ) ;
+rem
+spool off;
+quit;
+HOSTNAME::ORACLE $ 
+</PRE>
+
+
+<A NAME="STEP1"></A>
+<HR><FONT COLOR=red>Step 1 - Create Table of Primary Indexes</FONT>
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<PRE>
+HOSTNAME::ORACLE $ cat table_defs_step1.sql
+rem Filename : table_defs_step1.sql 
+rem Function : Create Table of Indexes
+rem Note     : ASSUMES THAT PRIMARY INDEX IS UNIQUE AND CALLED '%_PK'
+rem Date     : 18th. May 1999
+SELECT name FROM V$DATABASE;
+SHOW USER; 
+spool table_defs_step1.op 
+select TO_CHAR(SysDate,'DD/Mon/YYYY HH:MI P.M.') from dual; 
+rem
+rem set heading off;
+DROP   TABLE barrys_dd1;
+rem
+CREATE TABLE barrys_dd1 AS
+SELECT col.TABLE_NAME                          Table_name
+      ,col.column_position                     key_seq 
+      ,tab.column_id                           column_id
+      ,lower(tab.COLUMN_NAME)                  Column_name
+      ,lower(tab.DATA_TYPE)                    Data_type
+      ,NVL(tab.DATA_PRECISION,tab.DATA_LENGTH) Length
+      ,lower(tab.DATA_SCALE)                   Data_scale
+      ,tab.NULLABLE                            nullable
+FROM    all_ind_columns col, all_indexes ind,all_tab_columns tab
+WHERE   ind.uniqueness  = 'UNIQUE'
+AND     ind.table_name  =  col.table_name 
+AND     ind.table_name  =  tab.table_name 
+AND     col.column_name =  tab.column_name 
+AND     ind.index_name  =  col.index_name 
+AND     ind.index_name  LIKE '%_PK%'     
+AND     col.index_name  LIKE '%_PK%'  
+AND     ind.table_owner IN (SELECT owner
+                            FROM   barrys_dd0
+                            WHERE  table_count IN(SELECT MAX(table_count)
+                                                  FROM   barrys_dd0 )) ;
+rem
+SELECT COUNT(*) FROM barrys_dd1;
+desc barrys_dd1;
+spool off;
+quit;
+HOSTNAME::ORACLE $ 
+</PRE>
+
+
+
+<A NAME="STEP2"></A>
+<HR><FONT COLOR=red>Step 2 - Create Table of all required Fields.</FONT>
+
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<PRE>
+HOSTNAME::ORACLE $ cat table_defs_step2.sql
+rem Filename : table_defs_step2.sql 
+rem Function : Create Table of all Table and Field Definitions
+rem Date     : 18th. May 1999
+SELECT name FROM V$DATABASE;
+SHOW USER; 
+spool table_defs_step2.op 
+select TO_CHAR(SysDate,'DD/Mon/YYYY HH:MI P.M.') from dual; 
+rem
+rem set heading off;
+DROP   TABLE BARRYS_DD2 ;
+rem
+CREATE TABLE BARRYS_DD2 
+(TABLE_NAME  VARCHAR2(30) NOT NULL ENABLE
+,NUM_ROWS    NUMBER
+,KEY_SEQ     NUMBER 
+,COLUMN_ID   NUMBER NOT NULL ENABLE
+,COLUMN_NAME VARCHAR2(30)
+,DATA_TYPE   VARCHAR2(30)
+,LENGTH      NUMBER
+,DATA_SCALE  VARCHAR2(40)
+,NULLABLE    VARCHAR2(1))  
+PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 LOGGING 
+STORAGE(INITIAL 491520 NEXT 65536 MINEXTENTS 1 MAXEXTENTS 
+505 PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT) 
+TABLESPACE USER01 ;
+rem
+INSERT INTO barrys_dd2 
+SELECT tab.TABLE_NAME                          TABLE_NAME
+      ,all_tabs.num_rows                       num_rows
+      ,tab.column_id                           key_seq  
+      ,tab.column_id                           column_id
+      ,lower(tab.COLUMN_NAME)                  Column_name
+      ,lower(tab.DATA_TYPE)                    Data_type
+      ,NVL(tab.DATA_PRECISION,tab.DATA_LENGTH) Length
+      ,lower(tab.DATA_SCALE)                   Data_scale
+      ,tab.NULLABLE                            nullable
+FROM     all_tab_columns tab   
+        ,all_tables      all_tabs
+WHERE   tab.table_name = all_tabs.table_name 
+AND     all_tabs.owner IN (SELECT owner
+                            FROM   barrys_dd0
+                            WHERE  table_count IN(SELECT MAX(table_count)
+                                                  FROM   barrys_dd0 )) ;
+rem
+SELECT COUNT(DISTINCT table_name) FROM barrys_dd1;
+SELECT COUNT(DISTINCT table_name) FROM barrys_dd2;
+desc barrys_dd1;
+desc barrys_dd2;
+spool off;
+quit;
+</PRE>
+
+
+<A NAME="STEP3"><FONT COLOR=red>Step 3 - Update second Table with details of Primary Indexes.</FONT>
+
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<PRE>
+TRA002::ORACLE $ cat table_defs_step3.sql
+rem Filename : table_defs_step3.sql 
+rem Function : Update Index Key values
+rem Date     : 5th. May 1999
+SELECT name FROM V$DATABASE;
+SHOW USER; 
+spool table_defs_step3.op 
+select TO_CHAR(SysDate,'DD/Mon/YYYY HH:MI P.M.') from dual; 
+rem
+rem set heading off;
+SELECT key_seq,COUNT(*) FROM barrys_dd2
+GROUP BY key_seq;
+rem
+UPDATE barrys_dd2
+SET    key_seq = (SELECT key_seq 
+                  FROM   barrys_dd1 
+                  WHERE  barrys_dd1.table_name  = barrys_dd2.table_name 
+                  AND    barrys_dd1.column_name = barrys_dd2.column_name)  ;
+rem
+SELECT key_seq,COUNT(*) FROM barrys_dd2
+GROUP BY key_seq ;
+rem
+spool off;
+quit;
+TRA002::ORACLE $ 
+</PRE>
+
+<A NAME="STEP4"></A>
+<HR><FONT COLOR=red>Step 4. Produce Report of Table Definitions, (i.e. Database Definition) ...</FONT>
+
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<PRE>
+HOSTNAME::ORACLE $ cat table_defs_step4.sql
+rem Filename : table_defs_step4.sql 
+rem Function : Print Table Definitions for a Database
+rem Note     : The Date is hard-coded because in a Test Environment
+rem          : the System Date is often set to the future. 
+rem Date     : 16th. July 1999
+rem
+SELECT name FROM V$DATABASE;
+SHOW USER; 
+spool table_defs_step4.op 
+select TO_CHAR(SysDate,'DD/Mon/YYYY HH:MI P.M.') from dual; 
+rem
+rem set heading off;
+rem
+set termout  on
+set feedback OFF
+set verify off
+set pagesize 50
+set linesize 132
+set newpage  0
+set space    1
+set recsep off
+set arraysize 5
+rem
+rem column COL_COMMENT format a40  word_wrap
+column TABLE_NAME  format a30      HEADING  'TABLE NAME'
+column num_rows    format 99999999 heading  'RCD COUNT'
+column KEY_SEQ     format 99       heading  'KEY'
+column COLUMN_ID   format 999      heading  'ID'
+column COLUMN_NAME format a30      heading  'FIELD NAME'
+column TYPE_LENGTH format a15      heading  'DATA TYPE'
+rem Put back to a9 later 
+rem column CODED_TYPE  format a8 heading 'LENGTH'
+rem column DATA_SCALE  format 9  heading 'DEC'                      
+column LENGTH      format 9999     heading  'LENGTH'
+column NULLABLE    format a5       heading  'NULL?'                 
+rem
+column TODAY       noprint         new_value   date_var
+column USER        noprint         new_value   user_var               
+rem break on num_rows SKIP 2  
+break on table_name on rcd_count  SKIP 2
+rem
+ttitle left 'Date: ' 16-July-1999 -
+center 'Tables in the WARM  Database' -
+  skip 2
+rem  right  'Page ' format 99  SQL.PNO -
+rem  skip 2  
+rem
+SELECT   table_name,TO_CHAR(num_rows,'99,999,999')  Rcd_Count
+        ,key_seq
+        ,column_id,column_name
+        ,data_type || '(' || TO_CHAR(length) || ')'  type_length
+/*      ,data_scale */
+        ,nullable
+FROM     barrys_dd2
+WHERE    table_name NOT LIKE 'BARRY%'
+ORDER BY table_name, key_seq,column_id;
+rem
+DROP VIEW  barrys_dd0;
+DROP TABLE barrys_dd1;
+DROP TABLE barrys_dd2;
+set termout on
+rem
+spool off;
+quit;
+HOSTNAME::ORACLE $ 
+</PRE>
+
+<A NAME="TABLE_DEFS_OUTPUT">
+
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+<HR><FONT COLOR=red>Step 4 (Output) - Sample Output for a Customer Billing Database ...</FONT>
+
+<PRE>
+Date: 16-July-2000             Tables in the CUSTOMER  Database                                                  
+                                                                                                                                    
+TABLE NAME      RCD_COUNT   KEY   ID FIELD NAME                  DATA TYPE       NULL?                            
+--------------- ----------- --- ---- --------------------------- --------------- -----                            
+BILLING_HDR            13   1      1 id                          number(10)      N                                
+                                   2 calendar_no                 varchar2(20)    N                                
+                                   3 notes                       varchar2(200)   Y                                
+                                   4 calendar_type               varchar2(25)    Y                                
+                                   5 statement_line_frequency    varchar2(25)    Y                                
+                                   6 day_start_time              varchar2(2)     Y                                
+                                                                                                                                    
+                                                                                                                                    
+BILLING_PERIODS       927   1      1 id                          number(10)      N                                
+                                   2 bhd_id                      number(10)      N                                
+                                   3 start_date                  date(7)         Y                                
+                                   4 end_date                    date(7)         Y                                
+                                   5 run_date                    date(7)         Y                           
+                                   6 run_no                      number(6)       Y                                                                    
+                                   7 locked_by                   varchar2(40)    Y                                
+</PRE>
+
+<BR><BR><A HREF="#TOP"><IMG BORDER=0 SRC="images/top.gif">Back to the Top</A>
+
+
+<Start of Standard Footer>
+
+<TABLE BORDER=0 WIDTH=80%>
+<TR>
+<TD ALIGN=middle>
+<FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../index.htm">Home Page</A>
+        | <A HREF="../ask_a_question.htm">Ask me a Question</A> 
+        | <A HREF="../contact_us.htm">Contact Us</A> 
+        | <A HREF="../a_day_in_the_life.htm">The Life of a DBA</A> 
+	| <A HREF="mailto:info@databaseanswers.org">Email</A> 
+        | <A HREF="../search.htm">Search</A>
+        | <A HREF="../site_map.htm">Site Map</A> ]
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1><I> &#169  Database Answers 2001</I></FONT></CENTER>
+
+</BODY>
+
+</HTML>
+

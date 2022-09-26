@@ -1,0 +1,583 @@
+<html>
+<head>
+<title>Oracle PL/SQL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table border=0 NAME="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ROWSPAN=2 width="100%" align="right" VALIGN=middle><img src="images/maldives_sml.jpg" hspace="0" vspace="4"></td>
+</tr>
+
+<TR>
+<TD ALIGN=left COLSPAN=2 VALIGN=middle>
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p>
+<!---
+<IMG ALT="Oracle to DB2" SRC="images/buttons/button_studio/oracle_to_db2.gif">
+<IMG ALT="Mapping" SRC="images/buttons/button_studio/rt_mapping.gif">
+--->
+</TD>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/illya/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<td><img src="images/illya/spacer.gif" width=5 height=24></td>
+<td><a href="index.htm"> <img name="menu_home" src="images/illya/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+<td><img src="images/illya/curve-top-blue.gif" width=28 height=24></td>
+<td><a href="ask_a_question"><img name="menu_question" src="images/illya/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+<td><a href="careers.htm"> <img name="menu_careers" src="images/illya/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+<td><a href="contact_us.htm"><img name="menu_contact" src="images/illya/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+<td><a href="data_models/index.htm"><img name="menu_models" src="images/illya/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<td><a href="first_timers.htm"><img name="menu_timers" src="images/illya/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+<td><a href="search.htm"><img name="menu_search" src="images/illya/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/illya/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table BORDER=0 NAME="MAIN CONTENT" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<!---
+<td width="90" background="images/illya/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> <p><img src="images/illya/spacer.gif" width="90"></p></td>
+--->
+
+<td valign="top"><img src="images/illya/spacer.gif" width="3" height="239"></td> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"><img src="images/illya/spacer.gif" height=20> 
+<!--- CHECK BORDER IN NEXT TABLE ... --->
+
+	<table BORDER=0 WIDTH=90% wiIIIdth="590" cellspacing="0" cellpadding="0">
+	<tr> 
+      		<td rowspan="4" valign="top" width="30"><img src="images/illya/spacer.gif" width="21" height="1"></td>
+          	<td width="61">&nbsp;</td>
+          	<td rowspan="4" width="6"><img src="images/illya/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1"><FONT COLOR=blue FACE=Verdana SIZE=2>
+		Oracle PL/SQL<img src="images/illya/spacer.gif" width="5" height="1"></td>
+          	<td width="3" bgcolor="#FF9900"><img src="images/illya/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+        	<td rowspan="3" valign="top" width="1">&nbsp;</td>
+          	<td colspan="4" height="3" rowspan="3" valign="top">
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              	<tr bgcolor="#FF9900"> 
+                <td><img src="images/illya/px-orange.gif" width="1" height="3"></td>
+	</tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>  
+        	<td bgcolor="#FF9900"><img src="images/illya/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/illya/spacer.gif" width="8" height="1"></td>
+          	<td width="100%"><p class="small"><FONT COLOR=blue FACE=Verdana SIZE=2>
+		<B>PL/SQL is Oracle's proprietary extension to SQL.</B>
+		<BR>It is a very powerful Tool and essential skill for anyone who is a Oracle professional.
+		<BR>This Page contains a number of useful and relevant links.
+
+		<BR>Here's a <A HREF="http://www.orafaq.com/tools/index.htm" TARGET=_NEW><FONT COLOR=blue SIZE=2>
+		<B>Product Review</B></A> from <FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.orafaqs.com/" TARGET=_NEW>
+		from OraFAQs</A> which provides a useful comparison of some leading Products,
+		<BR>and here's 
+		<A HREF="http://dmoz.org/Computers/Programming/Languages/PL-SQL/Developer_Tools/" TARGET=_NEW>
+		<FONT COLOR=blue SIZE=2>a listing about 35 products</A> provided by Bill Pribyl, author of O'Reilly's excellent 
+		<A HREF="http://www.oreilly.com/catalog/learnoracle/" TARGET=_NEW><FONT COLOR=blue SIZE=2>'Learning Oracle PL/SQL".</A>
+		<BR><BR>We have a separate page devoted to <A HREF="ora_pl_sql_development.htm"><B>PL/SQL Development</B></A>.
+		<BR><BR>If you have any suggestions for PL/SQL-related links 
+		<A HREF="mailto:plsql_links@databaseanswers.com">please let me know</A>.  
+           	</td>
+	</tr>
+	</table>
+	</td>
+        </tr>
+        <!--- <tr>AAA </tr> --->
+        <!--- <tr>BBB </tr> --->
+	</table>
+	<br>
+	<table WIDTH=100% wiIIIdth="590" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+      		<td width="25"><img src="images/illya/spacer.gif" border="0" width="31"></td>
+                <td>
+                  <table width="90%" border="0" cellspacing="3" cellpadding="3" bgcolor="#FF9900" name="change me">
+                    <tr> 
+                      <td class="header2" colspan=5><FONT COLOR=blue FACE=Verdana SIZE=2>
+                        <div align="center"><B>USEFUL   LINKS   FOR   PL/SQL</div>
+                      </td>
+                    </tr>
+
+	<tr> 
+	<td ALIGN=middle class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>CATEGORY</td>
+	<td ALIGN=middle class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>
+	<img src="images/illya/white-point.gif" width="17" height="8">NAME</td>
+	<td ALIGN=middle class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>
+	<img src="images/illya/white-point.gif" width="17" height="8">PRICE</td>
+	<td ALIGN=middle class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>SOURCE</td>
+	<td ALIGN=middle class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>COMMENTS</td>
+	</tr>
+
+
+	<tr> 
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>9i</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://download-uk.oracle.com/docs/cd/A91202_01/901_doc/appdev.901/a89856/whatsnew.htm" TARGET=_NEW><FONT COLOR=blue SIZE=1>
+	New PL/SQL Features</A></td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.oracle.com/" TARGET=_NEW>Oracle</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Some interesting new capabilities.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Bulletin Board</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF">
+	<A HREF="http://pipetalk.quest-pipelines.com/~plsql/guests" TARGET=_NEW><FONT COLOR=blue FACE=Verdana SIZE=2>
+	Ask Questions</A></td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.questsoftware.com/" TARGET=_NEW>Quest</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Provided by Quest, who sell TOAD.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Certification</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF">
+	<A HREF="http://www.cramsession.com/certifications/exams/sql-and-plsql.asp" TARGET=_NEW><FONT COLOR=blue FACE=Verdana SIZE=2>
+	SQL & PL/SQL</A></td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.cramsession.com/" TARGET=_NEW>CramSession</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Offers Study Guides and Self-Test</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Debugger</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.materialdreams.com/oracle/products.html" TARGET=_NEW>PL/SQL Trace</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$20</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.materialdreams.com/" TARGET=_NEW>Material Dreams</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>"Overcomes the limitations of DBMS_OUTPUT."</td>
+	</tr>
+
+<!---
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.mentattech.com/modules.php?op=modload&name=PagEd&file=index&page_id=12" TARGET=_NEW>
+	DreamCoder</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$105</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.mentattech.com/index.php" TARGET=_NEW>Mentat</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>An IDE for PL/SQL.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.dynamicpsp.com/dpsp/prod/!go?ln=nproducts" TARGET=_NEW>Dynamic PSP</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$99.95</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.shareit.com/product.html?productid=149728&languageid=1" TARGET=_NEW>Share*It</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Automates the production of PL/SQL Server Pages,(PSPs)</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://otn.oracle.com/products/jdev/index.html" TARGET=_NEW>HTMLDB</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://otn.oracle.com/" TARGET=_NEW>From Oracle Technology Network</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>An interesting approach to building Internet Applications with MetaData stored in an Oracle Database. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://otn.oracle.com/products/jdev/index.html" TARGET=_NEW>JDeveloper</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://otn.oracle.com/" TARGET=_NEW>Oracle Technology Network</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Requires (free) Registration. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.jedit.org" TARGET=_NEW>JEdit</A> & SQL*Plus</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeeeF="http://otn.oracle.com/" TARGET=_NEW>Open Source and Oracle !</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>An interesting combination which comes higly recommended. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.keeptool.com/" TARGET=_NEW>KeepTool</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$560</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.keeptool.com/" TARGET=_NEW>KeepTool</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.allroundautomations.com/plsqldev.html" TARGET=_NEW>
+	PL/SQL Developer</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$150</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeF="http://www.allroundautomations.com/" TARGET=_NEW>AllroundAutomation</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>Recommended</B></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.embarcadero.com/products/rapidsql/index.asp" TARGET=_NEW>Rapid SQL</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$895.00</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.embarcadero.com/index.php" TARGET=_NEW>Embarcadero</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.quest.com/sql_navigator/" TARGET=_NEW>SQL Navigator</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$795</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.quest.com/" TARGET=_NEW>Quest</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Looks good but expensive unless someone else is paying the bill. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>SQL*Plus and <A HREF="http://www.jedit.org" TARGET=_NEW>JEdit</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeeeF="http://otn.oracle.com/" TARGET=_NEW>Open Source and Oracle !</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>An interesting combination which comes higly recommended. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://ca.com/products/manageit/trial.htm" TARGET=_NEW>SQL Station</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.cai.com/" TARGET=_NEW>Computer Associates (CA)</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free download available.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.quest.com/toad/" TARGET=_NEW>Toad</A> </td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$670</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.quest.com/" TARGET=_NEW>Quest</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Product of choice for corporates. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Development</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.globecom.se/tora/" TARGET=_NEW>Tora</A> </td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.globecom.se/" TARGET=_NEW>GlobeCom (Sweden)</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>"Better than TOAD" - Open Source for Linux/UNIX. <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Documentation</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://pldoc.sourceforge.net/" TARGET=_NEW>PL DOC</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free !!!</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://sourceforge.net/projects/pldoc/" TARGET=_NEW>SourceForge</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	"Open Source Utility for generating PL/SQL code documentation, analagous to JavaDoc for Java". <IMG SRC="images/new.gif"></td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.totalshareware.com/asp/detail_view.asp?application=9484" TARGET=_NEW>PL/SQL Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free !!!</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.allroundautomations.nl/" TARGET=_NEW>Alchemy</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Download file is only 157Kb so functionality may be limited.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.allroundautomations.nl/plseditor.html" TARGET=_NEW>PL/SQL Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$150</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.allroundautomations.nl/" TARGET=_NEW>AllRoundAutomations</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free download evaluation copy available.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.benthicsoftware.com/products.html" TARGET=_NEW>PLEdit</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>$35</B></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.benthicsoftware.com/" TARGET=_NEW>Benthic</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free download evaluation copy available.</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+        <td class="cell" VALIGN=top width=100 bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.dkgas.com/oraeditpro.htm" TARGET=_NEW>OraEdit Pro</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$99</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.dkgas.com/" TARGET=_NEW>DKG</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Looks good (includes a Table Browser !) and is very affordable.</td>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.inthink.com/products/plsql/plseditor.asp" TARGET=_NEW>PL/SQL Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$150</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.inthink.com/" TARGET=_NEW>InThink</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free download evaluation copy available<BR>Offers an interesting range of other products - especially for Delphi.</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Editor</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://technet.oracle.com/products/reports/htdocs/d2k/rb/rbpl.htm" TARGET=_NEW>PL/SQL Editor</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://technet.oracle.com/" TARGET=_NEW>Oracle Technet</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free if you are an Oracle customer.</TD>
+	</TR>
+--->
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Inheritance</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://download-uk.oracle.com/docs/cd/A91202_01/901_doc/appdev.901/a89856/10_objs.htm" TARGET=_NEW>
+	PL/SQL Objects</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Oracle</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Discussion of 
+	<A HREF="http://download-uk.oracle.com/docs/cd/A91202_01/901_doc/appdev.901/a89856/10_objs.htm#14904" TARGET=_NEW>
+	<B>Inheritance</B></a> and Object Types</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Knowledge Base</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+        <A HREF="http://www.quest.com/kxpert_plsql/index.asp" TARGET=_NEW>
+	Knowledge XPert</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><A HREF="http://www.quest.com/" TARGET=_NEW><FONT COLOR=blue FACE=Verdana SIZE=2>
+	Quest </td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Looks useful - 
+	<B>Best Practice</B> and Expertise.</a></TD>
+	</TR>
+
+<!---
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Library</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+        <A HREF="http://www.semantica.nl/en/products/plcrypt/about.html" TARGET=_NEW>
+	PL/Crypt</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.semantica.com/" TARGET=_NEW>Semantica</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	"Provides Encryption facilities."<IMG SRC="images/new.gif"></TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Library</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+        <A HREF="http://www.semantica.com/" TARGET=_NEW>
+	PL/File</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.semantica.nl/en/products/plfile/about.html" TARGET=_NEW>Semantica</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	"Offers advanced remote file functionality." <IMG SRC="images/new.gif"></TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Library</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+        <A HREF="http://www.semantica.nl/en/products/plrun/about.html" TARGET=_NEW>
+	PL/Run</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.semantica.com/" TARGET=_NEW>Semantica</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	"Advanced Process and Job Functionality" <IMG SRC="images/new.gif"></TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Library</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+        <A HREF="http://www.revealnet.com/pipelines/dba/PLVision/plvision.htm" TARGET=_NEW>
+	PL Vision</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.revealnet.com/" TARGET=_NEW>RevealNet</A></td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Looks very useful. 
+	and developed by <A HREF="http://www.stevenfeuerstein.com/" TARGET=_NEW>Steve Feuerstein</A>. <IMG SRC="images/new.gif"></TD>
+	</TR>
+--->
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><B>Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF" COLSPAN=4><FONT COLOR=blue FACE=Verdana SIZE=1><B>A wide range of Online Tutorials is available, simply go to 
+	<A HREF="http://www.google.com" TARGET=_NEW>Google</A>, and search for 'pl/sql online tutorials'.</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.learningoracle.com/developers_webapps.htm" TARGET=_NEW>PL/SQL Tutorial</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.learningoracle.com/" TARGET=_NEW>
+	Learning Oracle</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>A wide range of Oracle courses</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://saturn.cs.unp.ac.za/~michaelm/oracledocs/www.spnc.demon.co.uk/ora_sql/sqlmain2.htm" TARGET=_NEW>PL/SQL Tutorial and Reference</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Free</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.cs.unp.ac.za/" TARGET=_NEW>
+	University of Natal, South Africa</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Some strange redirection going on, but the end-result looks ike a good Free tutorial on PL/SQL.</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.tutorgig.com/showurls.jsp?group=6126&index=0" TARGET=_NEW>TutorGig</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.tutorgig.com/" TARGET=_NEW>TutorGig</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>TutorGig provides information on a range of courses from other sources, some free, and some SQL only.</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://training.skillspride.com/portal/id/396" TARGET=_NEW>Oracle 8 : Introduction</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>$145 or £99/year</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.skillspride.com/" TARGET=_NEW>SkillsPride</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Very Affordable.</TD>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.weblearningnetwork.com/CourseContents.htm#sqlfun" TARGET=_NEW>PL/SQL Fundamentals</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>£1/day</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.weblearningnetwork.com/" TARGET=_NEW>WebLearningNetwork</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Very Affordable.</TD>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Online Tutorials</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.weblearningnetwork.com/CourseContents.htm#plsql" TARGET=_NEW>PL/SQL Cursors and Exceptions</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>£1/day</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://www.weblearningnetwork.com/" TARGET=_NEW>WebLearningNetwork</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Very Affordable.</TD>
+	</tr>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>PSP</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://otn.oracle.com/docs/products/oracle9i/doc_library/release2/appdev.920/a96590/adgweb.htm#1003096" TARGET=_NEW>PL/SQL Pages</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeeeF="http://www.tutorgig.com/" TARGET=_NEW>Oracle documentation</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>Examples of PL/SQL Server Pages,(requires OTN Login).</TD>
+	</TR>
+
+	<tr> 
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>PSP</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>
+	<A HREF="http://otn.oracle.com/docs/products/oracle9i/doc_library/release2/appdev.920/a96590/adgweb.htm" TARGET=_NEW>PL/SQL Pages</td>
+	<td class="cell" ALIGN=middle VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>-</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeeeF="http://www.tutorgig.com/" TARGET=_NEW>Oracle documentation</td>
+	<td class="cell" VALIGN=top wiidth="50%" bgcolor="#B0D8FF"><FONT COLOR=blue FACE=Verdana SIZE=2>See Chapter 18 for how to embed PL/SQL in Web Pages.</TD>
+	</TR>
+
+	</table>
+
+                </td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></TD>
+      	</TR>
+	</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/illya/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td>
+</tr>
+</table>
+
+<table NAME="bottom NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/illya/px-blue.gif" bgcolor="#3366CC">
+<tr>
+<td><img src="images/illya/spacer.gif" width=5 height=24></td>
+<td><a href="index.htm"> <img name="menu_home" src="images/illya/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+<td><img src="images/illya/curve-bottom-blue-dark.gif" width=28 height=24></td>
+<td><a href="ask_a_question.htm"><img name="menu_question" src="images/illya/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+<td><a href="careers.htm"> <img name="menu_careers" src="images/illya/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+<td><a href="contact_us.htm"><img name="menu_contact" src="images/illya/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+<td><a href="data_models/index.htm"><img name="menu_models" src="images/illya/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+<td><a href="first_timers.htm"><img name="menu_timers" src="images/illya/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+<td><a href="search.htm"><img name="menu_search" src="images/illya/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/illya/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/illya/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/illya/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

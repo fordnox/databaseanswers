@@ -1,0 +1,209 @@
+<html>
+<head>
+<title> Local Government UK Residents Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.guardian.co.uk/society/2011/jan/13/manchester-council-job-cuts" TARGET=_NEW>
+<IMG ALT="Manchester City Centre at night, England (Click for Guardian Web Site)" BORDER=0 SRC="../../images/manchester_city_centre_at_night_sml.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Local Government Residents</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for Database for Local Government Top-Level'>An Access Database</A> is available on demand. 
+
+This Model is based on our <A HREF="../canonical_data_models/index.htm">Canonical Data Model</A>.
+
+<BR><BR>There might also be a design for a <A HREeeeF="data_mart.htm">Data Mart</A> which is an excellent start for Enquiries and producing Reports.
+
+<BR><BR>If you are new to Data Models, this page of my new Tutorial will help you <A HREF="../../tutorial4_db_schema/tutorial_slide_5.htm"><B>understand the Data Model</B></A>.
+<BR><BR>
+
+<!---
+<BR>There is also a design for <A HREF="retail_customers_data_mart.htm">a Data Mart</A>, which is very useful for providng data for Reports and Business Intelligence.
+--->
+
+This Model is Resident-Centric and provides a good starting-point, and 
+<A HREF="local_govt_uk_many_to_many_print_version.htm">a Many-to-Many Model</A> has also been created in <B>ERwin</B>.
+
+<BR><BR><IMG ALIGN=left ALT="Data Model for Local Government Top-Level" BORDER=0 SRC="images/data_model.gif"> 
+
+<A HREF="data_model_entity_names.htm">Model showing Entity Names only.</A> <IMG SRC="../images/new.gif">
+
+<!---
+<BR><BR>This is the Top-Level Data Model and separate Models have been created for these Subject Areas :-
+
+<LI><A HREF="customers_and_services_subject_area.htm">Top-Level Customers and Services Subject Area</A>
+<LI><A HREF="police_mdm_subject_area.htm">Top-Level Customers and Services Payments Area</A>
+<BR><BR>A Transaction Model has been created, to provide a more general version of the Payment Model.
+It allows for Refunds, Adjustments and so on.
+
+<BR><LI><A HREF="customers_and_transactions_subject_area.htm">Top-Level Customers and Transactions Subject Area</A>
+<LI><A HREF="police_mdm_ref_data_subject_area.htm">Reference Data Subject Area</A>
+--->
+
+<!--- <LI><A HREF="customers_and_services_subject_area.htm">Top-Level Customers and Services Subject Area</A> --->
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>February 14th. 2013
+
+
+<!---
+We have also created Data Models for :-
+<LI><A HREF="customers_area_model.htm">Customers Area</A>
+
+<LI><A HREF="customers_and_orders_model.htm">Customers and Orders</A>
+<LI><A HREF="in_store_shopping_area_model.htm">In-Store Shopping</A>
+<LI><A HREF="online_shopping_area_model.htm">Online Shopping</A>
+
+<BR><BR>
+Here are two Generic Retail Data Models that are worth a look :-
+<BR>1) <B>ARTS</B> (The American Association for Retail Technology Standards Division) has published the 
+<A HREF="http://www.infoadvisors.com/Services/ARTSDataModel/tabid/148/Default.aspx?gclid=CL7y15nCipwCFZ4A4wodRxzNYg" TARGET=_NEW>ARTS Retail Data Model</A>.
+<BR>This is an industry standard Data Model that addresses retail best practices in the areas of Customers, Products, etc.
+which is supported by InfoAdvisors. 
+
+<BR><BR>2) <B>Oracle</B> also offers <A HREF="http://www.oracle.com/database/retail-data-model.html" TARGET=_NEW>a Generic Retail Model</A>
+ 
+<LI>Customer Master Data 
+<LI>Inventory Management 
+<LI>Product Items Master Data
+<LI>Organizational Management
+<LI>POS Transactions
+<LI>Pricing and Promotions
+<LI>Taxation 
+<LI>Tender Control 
+--->
+
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2010</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

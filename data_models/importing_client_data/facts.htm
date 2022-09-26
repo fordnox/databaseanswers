@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>Facts for Importing Client Data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="images/south_china_mall_7_million_sq_ft.jpg">
+<IMG ALIGN=right ALT="Importing Customer Data can a lot like Russian Dolls" BORDER=0 hspace="0" vspace="4"  SRC="images/russian_dolls_sml.jpg"></td>
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Importing Client Data</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+Back to the <A HREF="index.htm">Data Model</A>
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+Importing Client Data
+
+hey folks,
+
+I've spent weeks even months trying to learn DB design to aid my business process.
+
+Certainly a novice, don't pretend to know or fully comprehend best practice at all.
+
+No matter how far I get the same problem keeps stalling me:
+
+how to design/structure DB that is a master data repository for all my business data and 
+also serves as a "staging" point for disparate data (fields, naming conventions, etc) 
+that is imported daily from multiple clients and needs to conform to a single convention 
+to be used in business process.  
+
+I am using ms access.
+
+I took all fields from all various imports and attempted to normalize them by separating 
+into unique categories and setting up relationships.. which could easily be a mess already.
+
+the daily imports come in .xls or .csv form and present the following problems to integrate:
+
+1. the import data is not normalized, and would have to be updated across multiple tables. 
+it is a mind bender trying to do this, access does not seem to allow update/append to from one source to multiple tables
+
+2. resolving naming conventions/etc... on import I need to perform comparisons of data to 
+transform it into my "conformed" structure.  
+
+I tried setting up many-many/lookup tables with all known possible data from client and it's 
+"conformed" equivalant so that the transformation could be automated on import... 
+but the mechanism to accomplish this completely eludes me.
+
+I've probably already said enough to lose anyone's interest in trying to help :)  so I'll leave it at that.  
+
+I am a "do it myselfer" with a decent amount of IT competence but no expert at this.  
+
+It is worth it to learn b/c only I can design exactly what will serve my purpose.  
+
+I've tried hiring consults and they want me to defer to their idea of what I need which is an 
+unacceptible compromise in my book.
+
+Anyone interested in guidance/assistance?  
+
+I don't mind to pay but I'm not looking for someone to do the work for me, I am looking for a mentor/tutor.
+
+thanks!
+<HR>
+<B>B. Barry says the Things of Interest are :-</B>
+1. Clients
+2. Data
+3. Data Staging
+4. Others to be determined
+
+<B>C. The Business Rules are as follows :-</B>
+1. To be determined.
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2011</I></FONT></CENTER></PRE>
+
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

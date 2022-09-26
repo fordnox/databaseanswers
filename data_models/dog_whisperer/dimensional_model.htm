@@ -1,0 +1,60 @@
+<HTML><HEAD><TITLE>Dimensional Model for the Dog Whisperer</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>Dimensional Model for the Dog Whisperer</B>
+<BR>Back to <A HREF="index.htm">main Model</A>
+
+<BR><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Tutorial :-
+Step 1 : Identify the Facts Table or Tables.
+Step 2 : Identify the Dimensions
+Step 3 : Look for any Conformed Dimensions
+Step 4 : Dwetemine any potential 'Snowflakes' 
+Step 5 : Review the results
+Step 6 : Walk through some sample enquiries to validate your design</PRE>
+
+<HR>
+In this Model we have followed the same design as the Model for 
+<A HREF="../dog_the_bounty_hunter/index.htm">Dog the Bounty Hunter</A>
+ with two Data Marts, sharing Conformed Dimensions.
+
+
+<!--------------
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+Dimensional Model
+<BR>
+<IMG ALT="Dimensional Model for Boy Scouts" SRC="images/dimensional_model.gif"> 
+
+</TD>
+</TR>
+</TABLE>
+----->
+
+<!----------
+<B>This is our final Model :-</B>
+<BR>You will see that we have created two Data Marts - one for Catching Fugitives and one for TV Sales.
+<BR>These two Data Marts share <B>Conformed Dimensions</B>.
+<BR>The Conformed Dimensions have common values in the two Data Marts.
+<BR>This is esential so that SQL Joins work correctly and provide consistent results in Analytics and Reports.
+
+<BR><BR>You will see that the Model is wider than usual but if you print it in Landscape mode it will be fine.
+---->
+
+
+<BR><BR>
+<IMG ALT="Dimensional Model for the Dog Whisperer" SRC="images/dimensional_model.gif"> 
+
+<FONT COLOR=blue FACE=Verdana SIZE=1>
+
+<BR><I> &#169 DataBaseAnswers.org 2014</I></FONT>
+
+</BODY>
+
+</HTML>

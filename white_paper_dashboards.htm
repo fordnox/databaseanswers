@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>White Paper on Dashboards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=top><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%>
+<!--- <img src="images/maldives_sml.jpg" hspace="0" vspace="4" width=251 height=94> 							--->
+<IMG ALT="Bluebell Wood, Prestayn, North Wales" SRC="images/bluebell_wood_sml.jpg" hspace="0" vspace="4"> 
+<!--- <IMG ALT="Lighthouse and Sea" SRC="images/lighthouse_and_sea_sml.jpg" hspace="0" vspace="4"> 					--->
+<!--- <IMG ALT="Petanqe at Mangapapa Resort, new Zealand." BORDER=0 SRC="images/petanque_at_mangapapa_nz_sml.jpg" hspace="0" vspace="4"> --->
+</TD>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact-active.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<img ALT="Our Sponsor, Barry Williams" src="images/barryw_sml.jpg" width="81" heiIIIght="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">
+		White Paper on Dashboards<img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>90-Day Action Plan</B> 
+Enterprise Architecture (EA) programmes help create and enforce company technology standards that 
+guide the selection of hardware and software throughout the organisation. 
+Organisations who already have an EA framework in place will need to validate the Business Intelligence 
+Domain against the other components of the EA. 
+
+<B>First month: Articulate mission</B> 
+A. State the mission of the BI domain (why it exists and what it seeks to achieve). 
+This will bring clarity as to why the domain will provide value to the organisation. 
+—Note that this BI space is traditionally part of an overall data or data warehousing 
+domain area in most Enterprise Technical Architectures (ETAs). 
+
+B. Ascertain the participants in the BI domain. 
+—This domain must include IT managers with experience setting corporate-wide standards, 
+guided and facilitated by members of the EA team familiar with domain development work. 
+—Members should also be drawn from pre-existing BI groups and data warehouse projects. 
+In addition, representatives from key end-user departments should also be included, as 
+business expertise is critically important. 
+
+<B>Second month: Define domain</B> 
+A. Definition of the BI domain. 
+—This should cover the BI domain architecture as well as related domain architectures, 
+for example, sub-domains such as data management, data warehouse, data mart. 
+In addition, the following sub-domains would apply to this domain:-
+   analytic dashboards, enterprise reporting and structured information delivery, 
+   ad-hoc query and analysis suites, and OLAP servers. 
+—Organisations should standardise on products from these sub-domains. 
+
+B. Define the BI standards within the BI domain. 
+
+<B>Third month: Enforce compliance</B> 
+A. Enforce compliance with BI standards in terms of investment decision making on 
+BI tools through EA governance and IT Portfolio Management processes. 
+</PRE>
+
+
+
+<HR>
+Now more than ever, businesses realise that timely business intelligence in today’s fast-moving environment is a key factor for long-term success. <br>
+<br>
+For most organisations, Business Intelligence (BI) tools represent a major investment that significantly enhances their business decision-making processes. <br>
+<br>
+Being clear as to what tools to use for which purposes minimises redundancy and conflicts of business analytics.<br>
+<br>
+During 2003, many progressive enterprises pursued BI standards—such as enterprise reporting, ad-hoc query and analysis, online analytical processing, and analytical dashboard— to increase consistency, promote reuse, and reduce costs. <br>
+<br>
+However, these initiatives have been mainly haphazard, leading to non-standardised platforms. Delivery through portals also remains some distance away for most organisations.<br>
+<br>
+But by 2005, we expect organisations to incorporate BI platforms into <B>comprehensive information delivery infrastructures</B> —which are still lacking in most organisations now. <br>
+<br>
+<b>Steering in the right direction</b><br>
+Analytic dashboards have become more high profile in recent times. This is because although BI vendors can supply the required technology, most organisations lack a clear understanding of how analytic dashboards will alter the way business performance is measured.<br>
+<br>
+There have been a few dashboard success stories, but most enterprises have struggled to achieve a big payback. <br>
+<br>
+To succeed, analytic dashboards should be deployed within a portal framework as part of an overall information delivery strategy. <br>
+<br>
+The key to BI success will still lie within the organisation having an overall information delivery strategy, as opposed to disparate piecemeal efforts addressing different aspects of the information delivery chain.<br>
+<br>
+<b>Measuring for success</b><br>
+Although the motivation to manage the enterprise with Key Performance Indicators (KPIs) must come from executive leadership, the KPIs themselves need to be defined from the bottom up. <br>
+<br>
+Instead of creating a massive project to define KPIs throughout each business unit, enterprises should embed the KPI creation process within the portal framework deployment.<br>
+<br>
+Take for example a hospital that wants to integrate BI into their systems. One KPI might revolve around profitability. <br>
+<br>
+By gauging its success from the profitability of each patient per visit, a hospital may take actions that subsequently result in cases of staff trying to get patients to stay for longer periods and using hard-selling methods to get them to spend more per visit. <br>
+<br>
+With BI tools, the hospital may discover that it may be getting higher profitability per patient.<br>
+<br>
+However, what may not be immediately apparent is why revenues of the hospital continue to shrink and patients seem to get increasingly annoyed. <br>
+<br>
+In that case, one solution could be setting a KPI which is aligned with Balanced Scorecard metrics.<br>
+<br>
+In most cases, end-user communities will not even distinguish between structured and unstructured content—they just outline the information they want. <br>
+<br>
+Within the requirements analysis phase, the BI and portal teams can work to turn information requirements into KPI formulas.<br>
+<br>
+Doing these tasks in parallel creates significant leverage to reduce costs and ensures that the work actually gets done. <br>
+<br>
+<b>Have a clear vision</b><br>
+Although we believe this bottom-up process for community-driven KPIs is crucial, it is also critical  simultaneously to have top-down leadership that expresses a clear vision  to ensure the success of an analytic dashboard strategy. <br>
+<br>
+Without the clear vision and executive commitment to a performance metric-driven strategy, analytic dashboard technology will be limited to modest deployment throughout the enterprise. <br>
+<br>
+The reasoning is simple: If you don’t know what to measure in order to drive business success, why bother to measure? <br>
+<br>
+Worse still, measuring the wrong things will likely motivate the wrong behavior, leading to potentially undesirable results. <br>
+<br>
+Take the simple example of measuring the productivity of Customer Service Representatives (CSRs) in Call Centres. <br>
+<br>
+If the KPI adopted is the number of inbound calls each CSR takes, CSRs may not be focused on customer interaction.  Instead, the CSRs’ motivation to generate more calls may result in unacceptable service, which could result in customers calling back for additional service requests or complaints. <br>
+<br>
+In that case, measuring that KPI may show that the call rates for CSRs have gone up, but it will not explain why customer attrition is on the rise at the same time. <br>
+<br>
+Thus, BI is only as useful as how its users apply it.<br>
+<br>
+<b>Real-time BI constraints</b><br>
+As a result of the bottom-up KPI creation process, IT organisations should adopt dashboard tools that provide distributed security structures, which will in turn enable distributed KPI monitoring and creation. <br>
+<br>
+This activity goes beyond personalising dashboards by picking from a predefined list of existing KPIs. <br>
+<br>
+However, empowering business users to create their own KPIs will be limited for organisations accessing real-time information from operational data systems. <br>
+<br>
+In these cases, custom development will be required to access the native data source, extract the information, and transform the data according to a KPI formula. <br>
+<br>
+Because we recommend using enterprise information integration techniques for low-volume queries, IT organisations are required to carry out significant testing and IT control to prevent overtaxing operational systems.<br>
+<br>
+Although leveraging analytic dashboards within a portal framework deployment is a more efficient approach in terms of resource usage, not every organisation is ready to deploy a comprehensive portal framework yet. <br>
+<br>
+Alternatively, the dashboard need not be rendered to a browser interface; it could simply be built into any application interface, for example, Microsoft Excel. <br>
+<br>
+In such cases, analytic dashboards will be even more dependent on executive leadership to embrace a strategy of managing by KPIs. <br>
+<br>
+The significant systems integration costs to deploy an analytic dashboard must be justified on their own merits. <br>
+<br>
+However, there is no need to deploy analytic dashboards enterprise-wide simultaneously. Systems integration costs can be managed by incrementally deploying dashboards by business units. <br>
+<br>
+In some cases, the KPIs could be built without a data warehouse since data can be pulled from operational data stores. <br>
+<br>
+<b>Data warehouse preferred</b><br>
+However, pulling information from a data warehouse is an enormous benefit to populate a dashboard, since data transformation can be done in batch mode before distributing it to different dashboards that have similar KPIs. <br>
+<br>
+Thus, data transformations can be performed once for several usages.<br>
+<br>
+Today, most organisations recognise the value and need for BI within their organisations. <br>
+<br>
+They know the strengths to capitalise on and weaknesses to mitigate and BI can only help to make them more adaptive.<br>
+<br>
+And being responsive to change will make the difference between the good companies and the great, lasting ones.<br>
+<br>
+
+
+<BR>
+<B>Barry Williams</B> 
+<BR>Founder and Principal Consultant
+<BR>Database Answers</PRE>
+</p>
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+      <br>
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"><img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact-active.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>Data Model for the Domo Business Mgt Platform</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="https://www.domo.com/learn/data-never-sleeps-3-0" TARGET=_NEW>
+<IMG ALIGN=right ALT="DOMO_data-never-sleeps" BORDER=0 hspace="0" vspace="4" SRC="images/DOMO_data-never-sleeps_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<!---
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+--->
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for the Domo Business Mgt Platform&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+We would be glad to have 
+<A HREF='mailto:dba_requests@barryw.org?subject=Comments on the Domo Business Mgt Platform'>your comments</A>.
+
+
+
+<!-------------
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 2 : Define the Things of Interest</B>
+<BR><BR><IMG ALIGN=middle ALT="Things of Interest" BORDER=0 SRC="images/things_of_interest.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 3 : Draft the Conceptual Model
+<BR>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model" BORDER=0 SRC="images/conceptual_data_model.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 4 222: Draft the Business Data Platform</B>
+<BR><BR><BR>
+<IMG ALIGN=left ALT="Business Data Platform" BORDER=0 SRC="images/business_data_platform.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Migration Strategy
+<BR><BR><BR>
+<IMG ALIGN=left ALT="Migration Strategy" BORDER=0 SRC="images/migration_strategy.jpg">
+</TD>
+</TR>
+</TABLE>
+------->
+
+
+<BR><BR><A HREF="getting_started_with_domo.htm"><B>Click here</B></A> for some thoughts on 'Getting started with Domo'.
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=left COLCOUNT=3 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 1 : Identify the Requirements</B> 
+<BR><BR>1) The  
+<A HREF="https://en.wikipedia.org/wiki/Domo_(company)" TARGET=_NEW>Wikipedia Entry for Domo</A></B>
+states
+"Domo, Inc is a form of business intelligence (BI) that is a business management platform, delivered as a service, to CEOs 
+<BR>and executives. 
+<BR>The service is designed to provide direct, simplified, real time access to business data without any IT involvement."
+<BR>
+We can summarise this as 'a business management platform designed to provide direct access to business data without any IT involvement.'
+
+
+<HR>2) <B>Jerome Tillotson</B> states :-
+<BR>"What we are focussing on the area is best practices around Data Conbfigurartionb and Strategy, Cards & Pages, Datasets and Users/Roles.
+<BR>And then how to approach a strategy that always focuses top-down on the business prHere is oblem.
+<BR>
+"What we’re focusing on in the area is best practices around Data Configuration and Strategy, Cards & Pages, Datasets, and Users/Roles.  
+<BR>And then how to develop a roadmap for the business and data, how to audit, naming conventions around datasets, and 
+<BR>how to approach a strategy that always focuses top-down on the business problem.
+<BR>This is a key for us as we strive to provide solutions to help make people’s businesses better and that does not revolve around the technology, it revolves 
+<BR>around answering real and useful business questions.
+ 
+<!----- Hope that make sense and happy to discus it more.
+ Warm Regards,
+----->
+
+<HR><B>Step 3) Draft the Conceptual Model</B>
+
+<HR><B>Step 4) Review with Drew and Jerome.</B>
+<BR><BR>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 2 : Define the Things of Interest</B>
+<BR><BR><BR><IMG ALIGN=middle ALT="Things of Interest" BORDER=0 SRC="images/things_of_interest.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 3 : Draft the Conceptual Model
+<BR>
+<BR><BR><IMG ALIGN=middle ALT="Conceptual Data Model" BORDER=0 SRC="images/conceptual_data_model.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Step 4 : Draft the Business Data Platform</B>
+<BR><BR><BR>
+<IMG ALIGN=left ALT="Business Data Platform" BORDER=0 SRC="images/business_data_platform.jpg">
+</TD>
+
+
+</TR>
+</TABLE>
+
+<BR><BR>
+
+<TABLE BORDER=1>
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Products and Stages</B>
+<BR>Users can select Products at each Stage.
+<BR><BR>
+<IMG ALIGN=left ALT="Products and Stages" BORDER=0 SRC="images/products_and_stages_lge.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Cards and Pages</B>
+<BR>Users can retrieve and visualise Data.
+<BR><BR>
+<IMG ALIGN=left ALT="Cards and Pages" BORDER=0 SRC="images/cards_and_pages.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Domo Five Steps</B>
+<BR><BR>
+<IMG ALIGN=middle ALT="Domo Steps" BORDER=0 SRC="images/five_steps.jpg">
+</TD>
+</TR>
+
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Migration Strategy
+<BR><BR><BR>
+<IMG ALIGN=left ALT="Migration Strategy" BORDER=0 SRC="images/migration_strategy.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Traditional Data Architecture</B>
+<BR><BR>
+<IMG ALIGN=middle ALT="Traditional Data Architecture" BORDER=0 SRC="images/traditional_data_architecture.jpg">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+<B>Roadmap</B>
+<BR>
+The Roadmap helps to plan for the future.
+<BR><BR>
+<IMG ALIGN=middle ALT="Roadmap" BORDER=0 SRC="images/roadmap.jpg">
+</TD>
+
+
+</TR>
+
+</TABLE>
+
+
+
+<BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>May 29th. 2016
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2016</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

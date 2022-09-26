@@ -1,0 +1,94 @@
+<HTML><HEAD><TITLE>Components</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIGHT=66 WIDTH=457 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Frequently Asked Questions</FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+<!-- end Standard Header - Version 3-->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<IMG ALIGN=right ALT="More Cooperating Components" BORDER=0 HEIGHT=70 WIDTH=93 SRC="images/components.gif"">
+<IMG ALIGN=right ALT="Cooperating Components" BORDER=0 HEIGHT=70 WIDTH=93 SRC="images/components.gif"">
+<FONT COLOR=blue SIZE=4><B>QUESTION :</B></FONT>What are the major <B>Components</B> in an RDBMS ?
+
+<HR>
+<FONT COLOR=blue SIZE=4><B>ANSWER :</B></FONT>
+This describes the three major Components which make up the run-time processes.
+</FONT>
+<PRE><FONT COLOR=blue SIZE=2>
+<B><FONT COLOR=red>1) The Database Server.</FONT></B>
+   This takes the SQL, decides how to execute it, with a 
+   <FONT COLOR=red>sub-Component</FONT></B> called the Query Optimiser, and produces a 
+   Query Execution Plan.
+   It is possible to have many Database Server processes running
+   simultaneously, with each one tailored to a particular
+   kind of "SQL Query". I used to work as a DBA for Salomon, Smith Barney
+   supporting databases for Florida,England and Germany running on the
+   same UNIX box. I always had three Servers running, one for each location,
+   so that I could provide high-priority,high-CPU percentage,high-memory allocation
+   for the very demanding real-time applications,and lower-priority
+   for background batch jobs. It also allowed me to handle each database
+   independently, and bring down the server for England without affecting the 
+   Servers and the Databases for Florida and Germany.
+
+<B><FONT COLOR=red>2) An Archive Process.</FONT></B>
+   This writes completed Transactions onto a Journal or History File and 
+   deletes them from the Log File. This is done to avoid the Log File getting
+   filled up because then everything fails and the Servers have to be brought
+   down to recover. This is an embarrassing process. The worst part is that
+   as the DBA, you often do not know that the Archive process is not running 
+   until the Log File fills up, no more transactions can start, everybody's program
+   hangs and the phone rings off the hook. I also worked as a DBA at J.P.Morgan
+   where the user were just as demanding as Salomon, Smith Barney, so I created
+   some UNIX daemons which ran all the time and would notify me automatically
+   if the Archive process was not running. This was in the situation where the
+   normal messages from starting up the Database Server would not make it clear
+   whether the Archive process had started correctly.
+
+<B><FONT COLOR=red>3) A Recovery Process.</FONT></B>
+   The Recovery Process handles the situations where is there is a Database crash 
+   and it recovers to the last known point at which the Database was running OK and 
+   had 'integrity'. In other words, all the data representing a consistent set of 
+   related records had been written to the Database at the end of a committed Transaction, 
+   with no open Transactions.
+</PRE>
+
+</FONT>
+
+
+</BODY>
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A> 
+        | <A HREF="history.htm">History of Databases</A> 
+        | <A HREF="links.htm">Useful Links</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

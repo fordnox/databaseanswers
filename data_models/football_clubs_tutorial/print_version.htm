@@ -1,0 +1,157 @@
+<HTML><HEAD><TITLE>Print Version of the Data Model for the Football Clubs Tutorial</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<!-- begin body Text -->
+<B>A Data Model for the Football Clubs Tutorial</B>
+
+<BR><BR>
+
+<!--- <BBR><BR><IMG BORDER=0 ALT="Data Model for rthe Football Clubs Tutorial" SRC="images/data_model.gif"> --->
+
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>There are three simple rules we will follow :-
+1. Identify the things we are Interested in
+2. Decide how they are related
+3. Establish what else we know about them.
+</PRE>
+</TD>
+
+<TD>&nbsp;</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Rule number 1. Identify the things we are Interested in
+1) We decide these are</B>
+Clubs, Players and Games
+
+<!---
+2. Decide how they are related
+3. Establish what else we know about them.---> </PRE>
+
+<!--- <BR><BR><IMG ALIGN=left ALT="Data Model for Football Clubs Tutorial" BORDER=0 SRC="images/data_model.gif"> --->
+</TD>
+
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>1) The things we are Interested are</B>
+Clubs, Players and Games.<IMG ALIGN=left ALT="Things of Interest" BORDER=0 SRC="images/toi_v1_model.gif"></PRE> 
+</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>2a. Decide how they are related 
+Clubs employ Players and play Games against other Clubs.
+</PRE>
+
+<!--- <BR><BR><IMG ALIGN=left ALT="Data Model for Football Clubs Tutorial" BORDER=0 SRC="images/data_model.gif"> --->
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="How Related (V.1)" BORDER=0 SRC="images/how_related_v1_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>2b. Decide how they are related (continued) 
+So far so good - except that when we think about how this works in practice, we realise 
+that not all Players play in every Game.
+Therefore we have to add a Teams 'Thing of Interest' to cope with this requirement.
+A Player will usually play in the same position.
+But changes are possible and to provide for these chamges, our design must provide for 
+Teams to be drawn up for each Game.
+
+So our Business Rules become :-
+Clubs employ Players who play in Teams in Games against other Clubs.
+The specific Players in each Team are decided in time for the Game.</PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="Things of Interest (V.2)" SRC="images/toi_v2_model.gif">
+<BR><BR>
+<!--- bbbb --->
+
+<IMG ALIGN=left ALT="How Related (V.2)"        SRC="images/how_related_v2_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>One-to-Many Relationships
+The line between </PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="How Related (V.2)"        SRC="images/how_related_v2_model.gif"> 
+</TD>
+</TR>
+
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Primary Keys
+Text goes here</PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="Primary Keys"        SRC="images/primary_keys_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>3NF Model
+Showing all Attributes</PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="3NF Model"        SRC="images/3NF_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Dimensional Model
+Provides data for BI </PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="Dimensional Model"        SRC="images/dimensional_model.gif"> 
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>Data Marts with Conformed Dimensions
+This is an alternative to the Dimensional Model shown above.
+In this approach we sewpatate the data in the Dimensional into Games and Playeers and each has its own Data Mart.
+THen we identify the Dimensions that they share and show them between the two Data Marts.
+We cal these 'Conformed Dimensions' because the values have to conform to the same values in each Data Mart.
+If they do not, then the values cannot be used to join Data Sets and the results obtained would be complete nonsense.
+Putting it differently, if the shared dimensions are not Conformed then our work as Data Warehouse designers and 
+BI specialists would be completely wasted and we should take up a different line of work.
+The best and simplest example of a Conformed Dimension is dates, which we show in a Calendar. 
+In passing, I call my Calendar entity 'Ref_Calendar' to emphasise the fact that it is Reference Data.
+
+Dates in a calendar are an example of Master Data, and by definition, Master Data will always be Conformed Dimensions 
+because they represent one consistent value across an organisation.
+
+In our case, w can use the Games Data Mart to obtain statistics about the Club and its standing in the League.
+
+The Players Data Mart, of course, would be used to obtain individual statistics about our favourite players and to 
+identify, for example, who is the most prolific scorer.</PRE>
+</TD>
+
+<TD ALIGN=left VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<IMG ALIGN=left ALT="Dimensional Model" SRC="images/dimensional_model.gif"> 
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT SIZE=1>
+<BR><BR><I> &#169 Database Answers Ltd. 2013</I></FONT>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>Facts for Multi-Resource Scheduling Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH --->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeF="http://www.wired.com/dangerroom/tag/biometrics/" TARGET=_NEW>
+<IMG ALIGN=right ALT="Components must work together" BORDER=0 hspace="0" vspace="4" SRC="../../images/components.gif"></A> 
+</td>
+
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Multi-Resource Scheduling</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>
+Back to the <A HREF="index.htm">Data Model</A>.
+
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+A Database to support the Tracking of Printer Cartridges.
+
+Specifications have been provided by <B>JVM</B> in the following terms :-
+
+I'm looking for a database design for booking appointments that require multiple resources (people, rooms, machines). 
+I've found the below description elsewhere that defines the problem, but I've been unable to find a nice solution online.
+
+The closest I could find would be the doctor's practice diagram. Appointments would require n resources.
+
+http://www.databaseanswers.org/data_models/doctors_practice/index.htm
+
+Thanks,
+
+JVM
+
+<B>Problem description:</B>
+
+A service provider has different services and a service may need to have many resources available for a 
+certain time range for it to be booked with a client. 
+
+Some of the services can share resources and are thus not independent of other service providers that also
+occupy the facility. Here is an example. 
+
+Say you have two doctors A & B in one office and each has their own exam & treatment room. 
+Also, they both share a doctors assistant M and some of the treatment equipment X. 
+
+To keep it simple, both doctors have three services that they offer:
+
+s1: Exam (1 hour)
+s2: Treatment visit (15 minutes)
+s3: Extended treatment visit (30 minutes)
+
+The extended treatment is made up of two intervals. 
+
+The first half (15 min) is done by the doctors assistant M with equipment X and in the second
+half (another 15 min) the assistant and equipment aren't needed and become available. 
+
+The doctor comes in to finish treating the patient.
+
+So the doctor was available while the assistant was seeing the patient.
+
+So when an extended treatment is scheduled the "smart scheduler" should update time availabilities for the 
+various services offered by the two doctors. 
+
+Maybe there are other ways of doing this part??
+
+Obviously, this a simple scenario and it becomes more complex if some service types require more shared resources. 
+
+Also, some of the shared resources can be set with upper limits as to how many times the can be multiple booked for 
+the same time period. 
+
+Say shared equipment Y can be double booked but not triple booked in a three doctor office.
+
+Anyway, here are other issues that can be ignored for now if you prefer. 
+There maybe other rules put on services like certain services (exams) being done only at certain times 
+(in the mornings of certain days). 
+
+Another maybe that available time slots are not allowed for booking any service until some percentage of other 
+time slots are filled. For instance, don't allowing bookings in the afternoon for any service until 50% of
+that mornings time slots are filled. 
+
+This is one way to avoid having a patient self-schedule anywhere on an open day thus forcing in-office
+scheduling to occur around that patients appointment.
+
+Very similar scenarios happen in non-health care fields like beauty salons, day spas, scuba diving lesson 
+(almost 10 shared and non-shared resources), etc.
+</PRE>
+
+<CENTER><FONT SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2010</I></FONT></CENTER>
+</TD></TR>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

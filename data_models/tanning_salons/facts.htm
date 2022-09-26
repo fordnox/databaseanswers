@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>Tanning Salons Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://en.wikipedia.org/wiki/Student_information_system" TARGET=_NEW>
+<IMG ALIGN=right ALT="Tanning Salons is Required !!!" BORDER=1 HEIiGHT=88 hspace="0" vspace="4" SRC="images/tanning_salons.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="tanning_salons_print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<!--- Barry's changes on Monday, Dec 7th means that the total is less than 100% - but it looks OK --->
+<table width="100%" border=0 cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+          <td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+          <td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+          <td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A>
+	</td>
+          <td width="9%">
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiIIIdth="30%" wiIIIdth="37%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color=WHITE FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  </tr>
+
+
+</table>
+<!--- END OF DEC 5th. Menu Bar --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+
+<TABLE BGCOLOR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+<!---   <td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> --->
+	<td ALIGN=left width="10%"><PRE><FONT COLOR=yellow FACE=Verdana SIZE=2>Tanning Salons</font></td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+
+
+<TR>
+<TD ROWSPAN=3 VALIGN=top WIDTH=80>&nbsp;
+<!---
+<IMG ALIGN=left  ALT="Scuba Diving in Fiji (where I met my beautiful Malaysian wife) is a great solution to Stress" SRC="images/tanning_salons.jpg">
+--->
+
+</TD>
+
+<TD>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<PRE><FONT COLOR=blue FACE="Verdana" SIZE=2><B>The Area being Modelled is :-</B>
+Tanning Salons
+
+<B>A. This is a Statement of the User Specifications.</B>
+<HR><PRE><FONT COLOR=blue FACE=Verdana SIZE=2>
+Hello, 
+
+I am new to access, I was referred to your web site can you help me or make a database for my business ?  
+Here’s what it needs it to do if possible. If it cant be done would you please let me know?  
+
+Thank you, have a great day!
+
+Mary 
+ 
+<B>This is the start of Mary's Specifications</B>
+
+Access Database:
+
+1. Customers:
+
+ <LI>1.1 personal information 
+ <LI>1.2 tanning packages 
+ <LI>1.3 sessions 
+         i. expiration (packages have 3 months)
+        ii. 1 month unlimited
+       iii. 2 week unlimited  
+
+which bed they used and how long was their session.
+
+
+<B>Sales History</B> 
+ 
+
+2. Daily Sales (each day with date)
+
+<LI>packages 
+<LI>single sessions 
+<LI>purchases 
+<LI>lotion 
+        i.      bottle 
+                1. name of lotion
+                2. price
+                3.     cost
+
+       ii.      package or shot of lotion
+                1. name of lotion
+                2. price
+                3. cost
+
+<B>Miscellaneous Items</B> 
+        i. what it is 
+       ii. price 
+      iii. cost 
+
+which employee sold it to them 
+Total for day 
+Tanning packages or single session sales 
+Lotion or product sales 
+Total of cash, credit card, check 
+ 
+<B>Bulb hours</B> 
+Bulb hours (different bulbs has different total hour usage) 
+        i. Used time Per bed
+       ii. Time left Per bed
+
+Inventory 
+Name 
+Price 
+Quantity 
+payment type 
+cash 
+check 
+credit card 
+employees 
+name 
+     i.      info
+    ii.      days worked
+
+3. Monthly  sales  reports
+
+Tanning packages or single session sales 
+Lotion or product sales 
+Total of cash, credit card, check 
+<B>This is the end of Mary's Specifications</B>
+
+<HR>
+
+<B>B. The Things of Interest, ('THINGS'), include :-</B>
+B.1 To be determined.
+
+<B>C. These THINGS are Related as follows :-</B>
+C.1 To be determined.
+
+<B>D. Other Characteristics of these THINGS include :-</B>
+D.1 To be determined.
+
+<B>E. Sample Data includes :-</B>
+E.1 To be determined.
+
+<B>F. Typical Enquiries include :-</B>
+F.1 To be determined.
+
+Barry Williams
+March 6th. 2010
+Principal Consultant
+Database Answers Ltd.
+London, England</PRE>
+</TD>
+</TR>
+
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

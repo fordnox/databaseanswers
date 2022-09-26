@@ -1,0 +1,455 @@
+<html>
+<head>
+<title>Types of Data Models</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="../canonical_data_models/index.htm" TARGET=_NEW>
+<IMG ALIGN=right ALT="Canonical Data Model (Click for details)" BORDER=0 hspace="0" vspace="4" SRC="images/canonical_data_model_sml.jpg">
+</td>
+</td>
+</td>
+</tr>
+
+<!---
+<TR>
+<td width="100%" align="LEFT">
+
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT> 
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+--->
+
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Types of Data Models&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+We would be glad to have 
+<A HREF='mailto:dba_requests@barryw.org?subject=Comments on Types of Data Models'>your comments</A>.
+
+<BR><BR>If you are new to Data Models, this page of my Tutorial will help you <A HREF="../../tutorial4_db_schema/tutorial_slide_5.htm"><B>understand the Data Model</B></A>.
+<HR>There are no generally agreed definitions of the different types of Data Models that are in common usage.
+<A HREF="../../types_of_data_models.htm"><B>Click here</B></A> to see our current Definitions.
+
+<HR>We summarise here the current consensus among Data Modelling practitioners.
+<HR><B>Semantic Models</B> combine meaning (Semantics) and Graphic Presentation to add value to other types of Data Models.
+<HR><B>Conceptual Models</B> are used to establish agreement with business users about 
+<BR>the most important 'Things of Interest' and Subject Areas in the business.
+
+I use them when it is important to describe the areas of a business are being affected. 
+<!---
+The COTS did not have a data model readable by the business. Ir was important to convey the business impact that is exposed through our traditional data analysis and design. 
+--->
+
+<BR>This helps the user community to understand an Enterprise Data Model.
+<BR>A <B>Semantic Layer</B> helps to translate terms like 'Party' to user-friendly equivalent, such as 'Customer' or 'Supplier'. 
+<BR>It is valuable if the Semantic Layer is to be agreed with the business community.
+<HR>
+<B>Wikipedia</B> has a definition of <A HREF="http://en.wikipedia.org/wiki/Semantic_data_model" TARGET=_NEW>Semantic Data Model</A> which is a more general usage of ours.
+
+<!---
+<HR>
+<LI>Semantic Models333 have a lot in common with <B>Conceptual Models</B> which are used to establish agreement with business users about the 
+most important 'Things of Interest' and Subject Areas in the business.
+<BR>It shows Entity names and Relationships, but does not usually show key fields. 
+<BR>Our <A HREF="../enterprise_data_models.htm">Enterprise Data Models</A> are good examples of Conceptual Models.
+<BR>Subject Areas might not have details at this level.
+--->
+
+<BR>and also has an interesting definition of <A HREF="http://en.wikipedia.org/wiki/Conceptual_schema" TARGET=_NEW>Conceptual Schema</A> which is worth a look.
+
+
+<HR><B>Conceptual Models</B><BR>
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+A Conceptual Model for Participants and 
+<BR>Inheritance created in Microsoft Word
+<BR><BR><IMG SRC="images/participants_and_inheritance.gif">
+<BR><BR>
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>Shown as an ERD
+<BR>(Entity-Relationship-Diagram|)
+<BR><BR><IMG SRC="images/participants_and_inheritance_erd.gif">
+<BR>
+</TD>
+
+
+<!------------
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;&nbsp;Requirements (proposed by Madani BASHA)&nbsp;&nbsp;
+<BR><BR>Text goes here
+<BR>
+</TD>
+--------->
+
+
+
+</TR>
+</TABLE>
+
+<HR>
+
+
+Here is our example of a Conceptual Model for <A HREF="../airport_management/index.htm">Airport Management</A> :-
+
+<BR><BR>
+<IMG SRC="../airport_management/images/conceptual_data_model.gif">
+
+<HR>
+<LI><B>Logical Model (LDM)</B> is where Data Modellers come into their own and add significant value.
+<BR><A HREF="../subject_area_data_models.htm">Subject Areas</A> 
+are LDMs for specific functiomal areas, such as 
+<A HREF="../subject_area_reservations/index.htm">Reservations</A>
+and User Workshops will be held to obtain User Buy-in.
+
+<BR><BR>Here is our LDM for <A HREF="../airport_management/index.htm">Airport Management</A> :-
+<BR><BR>
+<IMG SRC="../airport_management/images/data_model.gif">
+
+
+
+<HR>
+<LI>A <B>Physical Model (PDM)</B> is usually generated in one of two ways - either by 'reverse engineering' from a physical Database or automatically by the Modelling Tool, such as 
+<A HREF="http://www.erwin.com" TARGET=_NEW>ERwin</A> or 
+<A HREF="http://www.datanamic.com" TARGET=_NEW>Dezign</A>, that was used to design the Logical Data Models.
+<BR>The design of the PDM will usually change to reflect the denormalization of the original LDM to achieve improved performance.
+<BR>The LDM is then preserved as a record of the Requirements and the PDM becomes the solution to the Requirements.
+ 
+
+<HR>
+The rest of this page discusses the different Types of <B>Logical Data Models</B> that commonly occur :-
+<LI>BI Layer
+<LI>Semantic Layer
+<LI>Data Marts / Dimensional Models (Star and Snowflake)
+<LI>3NF Data Warehouse
+<LI>Staging Area/ODS Models
+<BR><BR>
+Examples are shown below.
+<BR><FONT COLOR=red>This list can be used as a Template to carry out an Assessment of a specific Modelling situation in an organisation.</FONT>
+<HR>
+
+		<table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              	<tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../../images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="../../images/spacer.gif" width="6" height="1"></td>
+                
+              	<td colspan="3" width="100%" align="right" class="header1">Here 
+                is our current draft list of the different Types of Data Models<img src="../../images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="../../images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="../../images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="../../images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="../../images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="../../images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border="0" cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="../../images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="../../images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center"><!--- PUT TEXT HERE FOR TOP OF TABLE --->&nbsp;</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="../../images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+
+                          <tr> 
+                            <td width="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" width="50%"><a class="cell" hreEEEf="what_is_a_dba.htm"><B>BI Layer</B></a></td>
+                                  <td class="cell" width="50%">
+				Presents the data required for BI Analysis and Reports.The Model generally looks like the Semantic Data Model, in the next level.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell" width="50%">
+				A BI Dashboard monitoring the Environment in Local Government ...
+				<BR><BR><IMG ALIGN=middle ALT="BI in Local Govt" BORDER=0 VALIGN=top SRC="images/bmews_in_ealing_sml.jpg"> 
+				</td>
+                             	<td class="cell" VALIGN=top width="50%"> <!--- <FONT COLOR=blue FACE=Verdana SIZE=2> --->
+				Data Model for the Dashboard on the left ...
+				<BR><BR><IMG ALIGN=middle ALT="Data Model for BI in Local Govt" BORDER=0 SRC="images/bmews_in_ealing_model.gif"> 
+				</td>
+                                </tr>
+
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td ALIGN=middle class="cell" width="50%" VALIGN=top>
+				A BI Dashboard monitoring the OnTime Delivery (OTD) Performance of individual Stores is shown here ...
+				<BR><BR><IMG ALIGN=middle ALT="BI Dashboard for Monitoring Stores Performance" BORDER=0 VALIGN=top SRC="images/dashboard_OTD_sml.jpg"> 
+				</td>
+                             	<td class="cell" width="50%">
+				Data Model for the Dashboard on the left ...
+				<BR><BR><IMG ALIGN=middle ALT="Data Model for Stores OTD Performance Monitoring" BORDER=0 SRC="images/stores_OTD_performance_model.gif"> 
+				</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+<!---                           <td class="cell" width="50%"><img src="../../images/white-point.gif" width="17" height="8"><a class="cell" hreEEEf="what_is_a_dba.htm">BI Layer</a></td>
+--->
+                                <td class="cell" COLSPAN=2 width="50%">
+				<B>Semantic Models</B> present a 'Business User Friendly' view of the the data.
+				For example, talking about 'Customers' instead of 'Parties'. 
+				<BR>These two examples help to explain.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell" width="50%">
+				Semantic Data Model for  Customers, Orders and Products ...
+				<BR><BR><IMG ALIGN=middle ALT="Data Model for Customers Sales" BORDER=0 VALIGN=top SRC="images/customers_sales_model.gif"> 
+				</td>
+                             	<td class="cell" VALIGN=top width="50%">
+				Semantic Data Model for Suppliers, Deliveries and Products ...
+				<BR><BR><IMG ALIGN=middle ALT="Supplier's Deliveries" BORDER=0 SRC="images/supplier_deliveries_model.gif"> 
+				</td>
+                                </tr>
+
+
+                                <tr bgcolor="#B0D8FF"> 
+                          	<td class="cell" COLSPAN=2 width="50%"><B>Data Marts</B> Present the restricted sets of data required for specific Report families.
+				They usually have the same Dimensions and Facts structure that we find in Dimensional Models.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell" width="50%">
+				Data Mart for  Customers, Orders and Products ...
+				<BR><BR><IMG ALIGN=middle ALT="Data Mart for Customers Sales" BORDER=0 VALIGN=top SRC="images/customers_sales_mart.gif"> 
+				</td>
+                             	<td class="cell" VALIGN=top width="50%">
+				Data Mart for Suppliers, Deliveries and Products ...
+				<BR><BR><IMG ALIGN=middle ALT="Data Mart for Deliveries" BORDER=0 SRC="images/deliveries_mart.gif"> 
+				</td>
+                                </tr>
+
+
+
+                                <tr bgcolor="#B0D8FF"> 
+                           	<td ALIGN=middle class="cell" COLSPAN=2 VALIGN=top width="50%">
+				Dimensional Models
+				<BR>Here is an example of a Generic Data Mart :-
+				<BR><BR><IMG ALT="Generic Data Mart" SRC="../../images/generic_data_mart.gif">
+				</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" VALIGN=top width="50%">A <B>Data Warehouse</B> in Third Normal Form helps to ensure a Single View of the Truth.
+				<BR>It can be a subset of the more comprehensive Enterprise Data Model.
+				</td>
+                              	<td class="cell" width="50%">
+				This is an example of a 3NF Data Warehouse for the Canonical Data Model  :-
+
+				<BR><BR><IMG ALT="Third Normal Form for the Canonical Data Model" SRC="images/Canonical_Data_Model_in_ERwin.gif">
+
+				</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                             	<td class="cell" VALIGN=top width="50%">
+				<A HREF="../enterprise_data_models.htm"><B>Enterprise Data Model (EDM)</B></A>
+				<BR>EDMs can be one of two types - 
+				a very large Model with perhaps hundreds of Entities or a smaller Model with details in Subject Area Models.
+				</td>
+                           	<td class="cell" width="50%" bgcolor="#B0D8FF">Here is an example of an EDM for a Retail business ...
+				<BR><BR><IMG ALT="Retail EDM" SRC="images/retail_edm_model.gif">
+				</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                                  <td class="cell" VALIGN=top width="50%">
+				<a class="cell" hreEEEf="careers_in_data_warehousing.htm">
+				<B>Subject Area Data Models</B></a></td>
+                                  <td class="cell" width="50%">Pretty much essential - in other words, if you don't find one, then there is something wrong.</td>
+                                </tr>
+
+
+
+                                <tr bgcolor="#B0D8FF"> 
+                             	<td class="cell" VALIGN=top width="50%">
+				We also designed this Data Model for Deliveries.
+				<BR>This will support our Deliveries Data Mart</td>
+                              	<td class="cell" width="50%">
+				<BR><IMG ALT="Deliveries Data Model" SRC="images/deliveries_model.gif">
+				</td>
+                                </tr>
+
+                                <tr bgcolor="#B0D8FF"> 
+                             	<td class="cell" VALIGN=top width="50%">
+				From the ODS, we have derived the design of a 3NF Data Model for the Customer Sales <B>Subject Area</B>.
+				</td>
+                            	<td class="cell" width="50%">
+				<BR><IMG ALT="Customer Sales Data Model" SRC="images/customers_sales_model.gif">
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                            	<td class="cell" VALIGN=top width="50%">
+				Operational Data Stores can be in a range of formats - from a simple CSV file, to an ODBC connection, to a bespoke SAP or Salesforce interface.
+
+				<BR>Here are my wife and myself on a recent holiday in Malaysia riding on an Elephant, with the "ticket to ride" (ie the ODS) and the ODS Entity :-
+
+				<BR><BR><IMG ALT="Elephant Ride" SRC="../../images/Elephant_Ride_sml.jpg">
+				<IMG ALT="Ticket for the Elephant Ride" SRC="../../images/Elephant_Ride_ticket_sml.jpg">
+				</td>
+
+                                <td class="cell" VALIGN=top>
+				Here is the Data Model for the Malaysian Generic Sales Receipt ...
+				<BR><BR><IMG ALT="Generic Sales Receipt for Malaysia" SRC="../../images/generic_sales_receipt_for_malaysia.gif">
+				</td>
+                                </tr>
+ 
+                              </table>
+
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="../../images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="../../images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+<BR><BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>March 4th. 2013
+<BR>
+</td>
+</tr>
+</table>
+
+<CENTER><FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR><BR><I> &#169 DataBase Answers Ltd. 2013</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

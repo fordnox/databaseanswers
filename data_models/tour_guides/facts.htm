@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>Data Model for Gaming Leagues</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td>
+<A HREF="images/UN_Tour_Guides_2007_lge.jpg" TARGET=_NEW>
+<IMG ALT="United Nations Tour Guides, 2007 (Click for larger picture)" BORDER=0 HEIiiGHT=108 SRC="images/UN_Tour_Guides_2007.jpg"></A>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<img ALT="Tour Guides"  src="images/lft_tour_guides.bmp">
+<!--- <img ALT="Leagues" src="images/rt_leagues.bmp"> --->
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>Here is the Statement of User Requirements</B>
+An email from Steve Riddiough. Member #1234 defines the Requirements in the follwoing terms.
+<B>The Data Model I require needs to cover</B> -
+<LI> Guides and expertise
+<LI> Agency clients and clients’ customers
+<LI> Tour Bookings, durations and guide diary
+<LI> Locations
+
+<B>Detailed info -</B>
+A tourist guide <B>agency</B> requires a database to manage its guides. 
+
+A <B>guide</B> is a person with detailed knowledge of sites of interest and provides navigation and 
+added value to groups of people visiting those sites. 
+
+The agency has many guides that can be hired by various tourism, leisure, heritage and conservation 
+<B>organisations</B>, e.g. travel agencies, hotels, museums, heritage site management companies, wildlife organisations. 
+
+The guides are contracted by the agency (not employed) to provide guidance and knowledge to customers of hiring 
+organisations at specific sites on specific dates and times.
+
+For example, a company may ask the agency to provide a guide to an art gallery during a social event organised 
+in Athens for some prospective customers of the company who are visiting the city to inspect the company manufacturing 
+facilities.
+
+The agency keeps records of the knowledge and levels of expertise of the guides it uses. 
+
+This information is required in the database.
+
+For example-
+Tour guide John Smith is an expert on World War Two military operations on the island of Crete. 
+He has a Ph.D. in modern history. He is contracted on a regular basis by the guide agency to 
+provide guided tours to sites of military history on the island. In the past the agency has 
+booked him to provide tours for travel companies that have package holidays to Crete, 
+private companies providing corporate entertainment to their clients, and private individuals 
+organising their own holidays on the island.
+
+A tour at a location can involve a number of different customers/customer groups.(customers of the organisations 
+requesting guides)
+
+The ‘guides’ may themselves be agencies. For example, an agency called ‘Gallipo-History’ provides expert tour guides 
+for the First World War sites in Gallipoli. The agency described in this scenario books tours from guides employed by 
+‘Gallipo-History’. Contact details for those guides will be the contact details of ‘Gallipo-History’. 
+The agency uses guides from a number of these other agencies.
+
+The database should hold data on
+Tour guides (contact details and list of other employers-guides may have several occupations apart from working for 
+the agency). 
+
+Guides have identifiers that have the form ‘a12-003-2008’ where a12 identifies the agency (a00 indicating not from another agency 
+i.e. operating as an individual guide), 003 identifies the guide, and 2008 the year the guide commenced providing services.
+
+The knowledge and expertise of the guides (subjects and indication of depth of expertise e.g. amateur historian, professor of 
+history,  scholar, professional biologist, etc..) .
+
+Customers of the agency i.e. the organisation or individual hiring the guide (contact details, and type of customer 
+e.g.private individual, company, charity etc.)
+
+Locations covered by the guides (site name, nearest town/city),
+the duration of tours (hours and fractions of hours), and subject title e.g.’Roman versus Greek Classical Architecture’, 
+‘Development of Perspective in Renaissance painting’, ’Basic seashore ecology’, ‘Early Victorian railways’.
+
+A diary of  activities of the guides (past, present and future), including date/time of appointment, location, title of 
+tour or event, customer.
+
+No data on costs or payments is required.
+
+Customers of the agency are of different types e.g. private individual, company, charity etc.
+
+
+From these Requirements we can identify the '<B>Things of Interest</B>' as :-
+1. Agencies
+2. Guides
+3. Qualifications
+4. Tourist Atractions
+5. Tours</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Barry Williams</B> 
+<BR>24th. January 2009
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

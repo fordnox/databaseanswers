@@ -1,0 +1,545 @@
+<html>
+<head>
+<title>Microsoft POC for BMEWS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing=0 cellpadding=0 bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=middle><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%>
+<A HREF="the_vision.htm" HREeeeF="images/info_in_the_future.jpg">
+<img ALIGN=right ALTernate ="Information in the Future" ALT="Click for vision of Databases everywhere"  SRC="images/info_in_the_future_sml.jpg" hspace="0" vspace="4"></A>
+</td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+
+<!--- START OF DEC 27th_v2. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=white FACE=Verdana SIZE=2>Home</font></td>
+	<td width="10%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../best_practice.htm" HREeeeF="pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+    	<td width="7%">
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="7%"><A STYLE="text-decoration:none" HREF="../clients.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Clients</font></A>
+	</td>
+<!---
+	<td width="7%"><A STYLE="text-decoration:none" HREF="http://databaseanswers.ning.com/" TARGET=_NEW><font color="#FFFFFF" FACE=Verdana SIZE=2>Community</font></A>
+	</td>
+--->
+
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td> 
+          <td WIDTH=10%><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+
+	<td align=LEFT width="10%"><A STYLE="text-decoration:none" HREF="../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+	</td>
+
+	<td align=LEFT width="18%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF DEC 27th_v2. Menu  Bar --->
+
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../images/nav_bg.jpg" valign=top width="1%"><img src="../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>The Proof-of-Concept for BMEWS with Microsoft  Tools</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<!--- <img src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> BARRY COMMENTED THIS OUT ON MAY 24th 2007
+     	<p><img src="../images/spacer.gif" width="90"></p> --->
+	</td>
+	<td valign="top"><img src="../images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1"><FONT COLOR=blue>Specifications for the Proof-of-Concept using the Microsoft Toolset</FONT>
+		<img src="../images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+<!---           <td><img src="../images/spacer.gif" width="8" height="1">BBB</td> --->
+        	<td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+
+
+<TABLE BORDER=1>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+This is our Vision of the Future
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Ubiquitous Generic Data Platform with Events, XML Messages, Msg Broker and RSS Feeds
+
+<BR><BR>
+<IMG ALIGN=left ALT="Our Vision of the Future" WIDTH=458 SRC="images/info_in_the_future_med.jpg">
+
+</TD>
+
+
+<TD ROWSPAN=01 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+ 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+Our Vision presents some very interesting challenges, and this Proof-of-Concept explores them with the aim of building a State-of-the-Art demonstration to show what can be achieved in late 2010.
+<BR><BR>
+<B>Microsoft Software Tools</B>
+<BR>Microsoft might provides some useful facilities :-
+<LI><A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW>A Mashup Center</A>
+<LI><A HREeeeF="http://www-01.ibm.com/software/data/spatial/" TARGET=_NEW>A Spatial extention</A> to SQL Server.
+
+
+
+
+<!----
+<BR>3. <A HREF="http://www.microsoft.com/industry/government/solutions/Single_View_Platform/default.aspx" TARGET=_NEW>Microsoft's Single View Government Platform</A>
+<BR>4. <A HREF="http://www.microsoft.com/industry/government/rss/MicrosoftGovernmentNewsRSS.aspx" TARGET=_NEW>Microsoft's RSS Feed</A>
+--->
+
+<HR><B>The UK Government</B> has started an <A HREF="http://www.data.gov.uk/" TARGET=_NEW>Open Data Initiative</A> 
+<BR>(with the help of <B>Tim Berners-Lee</B>), which includes Mashups from <A HREF="http://www.talis.com/" TARGET=_NEW><B>Talis</B></A>.
+
+<!---
+<BR><LI>One of the prominant market leaders in the Mashup area is <A HREF="http://www.jackbe.com/" TARGET=_NEW>Jackbe</A> 
+with <A HREF="http://www.jackbe.com/enterprise-mashup/forum" TARGET=_NEW>Presto </A>
+--->
+
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+
+<BR><BR>
+
+<BR>Microsoft has developed two interesting facilities :-
+<LI><A HREF="http://www.microsoft.com/silverlight/pivotviewer/" TARGET=_NEW>PivotViewer Data Visualisation Tool</A>
+<LI><A HREF=""http://www.microsoft.com/industry/government/solutions/single_view_platform/" TARGET=_NEW>Single View of the Government</A>
+
+
+<BR><BR>
+
+<B><FONT COLOR=red>Status :-</FONT></B>
+<BR>1. About to get started.
+</TD>
+</TR>
+
+
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+This is our Vision of the Data Architecture for the Future
+
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Dashboards, Widgets, Messages,Web Services, Object Formats, Publication Methods and RSS Feeds
+<BR><BR>
+<IMG ALIGN=left ALT="Data Architecture of the Future" WIiiiDTH=458 SRC="../images/future_of_databases_model.gif">
+</TD>
+
+
+<TD ROWSPAN=01 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+ 
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+This Architecture provides a wide range of Digital Assets of different formats with an indication of how the different Media can be processed.
+<BR><BR>
+
+<!----
+<BR>3. <A HREF="http://www.microsoft.com/industry/government/solutions/Single_View_Platform/default.aspx" TARGET=_NEW>Microsoft's Single View Government Platform</A>
+<BR>4. <A HREF="http://www.microsoft.com/industry/government/rss/MicrosoftGovernmentNewsRSS.aspx" TARGET=_NEW>Microsoft's RSS Feed</A>
+
+<HR><B>The UK Government</B> has started an <A HREF="http://www.data.gov.uk/" TARGET=_NEW>Open Data Initiative</A> 
+<BR>(with the help of <B>Tim Berners-Lee</B>), which includes Mashups from <A HREF="http://www.talis.com/" TARGET=_NEW><B>Talis</B></A>.
+
+<BR><LI>One of the prominant market leaders in the Mashup area is <A HREF="http://www.jackbe.com/" TARGET=_NEW>Jackbe</A> 
+with <A HREF="http://www.jackbe.com/enterprise-mashup/forum" TARGET=_NEW>Presto </A>
+--->
+
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+
+<BR><BR>
+
+
+<!---
+<BR>Microsoft has developed two interesting facilities :-
+<LI><A HREF="http://www.microsoft.com/silverlight/pivotviewer/" TARGET=_NEW>PivotViewer Data Visualisation Tool</A>
+<LI><A HREF=""http://www.microsoft.com/industry/government/solutions/single_view_platform/" TARGET=_NEW>Single View of the Government</A>
+--->
+
+
+<BR><BR>
+
+<B><FONT COLOR=red>Status :-</FONT></B>
+<BR>1. Definition of the Data Architecture is in progress.
+</TD>
+</TR>
+
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+This is the kind of data that a <B>typical Family</B> will be interested in.
+
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Widgets, Web Services, Publish and Subscribe Facilities and RSS Feeds
+
+<BR><BR>
+<IMG ALIGN=left ALT="3-D Streets" SRC="../images/3d_streets.jpg">
+</TD>
+
+
+<TD ROWSPAN=01 VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>User Scenarios</B>
+<BR>User Scenarios are a very powerful technique.
+
+<BR>In this case, let's imagine a typical Family planning to  move to London.England.
+<BR><BR>They would like to find good schools, compare crime statistics, hospitals, the price of houses and so on.
+ 
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!---
+<B>Software Tools</B>
+<BR>Microsoft has developed this interesting facility :-
+<BR>2. <A HREF="http://ibm.com/engines/energy/uk" TARGET=_NEW>Microsoft's Smarter Planet</A>.
+
+<BR>3. <A HREF="http://www.microsoft.com/industry/government/solutions/Single_View_Platform/default.aspx" TARGET=_NEW>Microsoft's Single View Government Platform</A>
+<BR>4. <A HREF="http://www.microsoft.com/industry/government/rss/MicrosoftGovernmentNewsRSS.aspx" TARGET=_NEW>Microsoft's RSS Feed</A>
+
+<HR><B>The UK Government</B> has started an 
+<BR>5. <A HREF="http://www.data.gov.uk/" TARGET=_NEW>Open Data Initiative</A> 
+<BR>(with the help of <B>Tim Berners-Lee</B>), which includes Mashups from <A HREF="http://www.talis.com/" TARGET=_NEW><B>Talis</B></A>.
+
+<BR><LI>One of the prominant market leaders in the Mashup area is <A HREF="http://www.jackbe.com/" TARGET=_NEW>Jackbe</A> 
+with <A HREF="http://www.jackbe.com/enterprise-mashup/forum" TARGET=_NEW>Presto </A>
+--->
+
+
+<A HREF="../data_models/future_of_databases/index.htm">The underlying Data Model</A> is shown on another page.
+<BR><BR>Here is a Vision of <A HREF="the_vision.htm"><B>the Future of Databases</B></A>, and you can check out our <A HREF="presentations.htm">Presentations</A>.
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+
+
+<BR><BR>
+This Vision brings up some very interesting challenges, and this Proof-of-Concept explores them with the aim of building a State-of-the-Art demo.
+
+<!---
+<BR>Microsoft has developed two interesting facilities :-
+<LI><A HREF="http://www.microsoft.com/silverlight/pivotviewer/" TARGET=_NEW>PivotViewer Data Visualisation Tool</A>
+<LI><A HREF=""http://www.microsoft.com/industry/government/solutions/single_view_platform/" TARGET=_NEW>Single View of the Government</A>
+
+<HR>
+<FONT COLOR=red FACE=Verdana SIZE=2>
+<B>Microsoft Software Tools used here :-</B>
+<BR>1. <A HREF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=red>Microsoft Mashup Center</FONT></A>
+--->
+
+<BR><BR>
+
+<FONT COLOR=red>
+<B>Status :-</B></FONT>
+<BR>1. Microsoft Products to be determined, eg SQL Server GeoSpatial extensions.
+
+
+<!---
+<BR><BR><B>Mashup</B> Tools are very important and here's a useful 
+<A HREF="http://www.zdnet.com/blog/hinchcliffe/assembling-great-software-a-round-up-of-eight-mashup-tools/63" TARGET=_NEW>
+Review from ZDNet</A>.
+
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=5 CELLSPACING=5>
+<TR>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>CATEGORY</TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>SOURCE</TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>DESCRIPTION</TD>
+<TD ALIGN=middle><FONT COLOR=blue FACE=Verdana SIZE=2><B>DATA RETRIEVAL</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Crime</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://rds.homeoffice.gov.uk/rds/soti.html" TARGET=_NEW>
+UK Crime Statistics</A></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="http://rds.homeoffice.gov.uk/rds/ia/atlas.html" TARGET=_NEW>
+Local Authority data</A></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://data.gov.uk/apps" TARGET=_NEW>Crime Mapping Tool</A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>News</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.guardian.co.uk/open-platform" TARGET=_NEW>
+Guardian Newspaper</A></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Current Affairs, News and so on</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.guardian.co.uk/data-store" TARGET=_NEW>
+Data Store</A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>Social</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://data.gov.uk" TARGET=_NEW>data.gov.uk</A></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>A wide range of useful data</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://data.gov.uk/apps" TARGET=_NEW>Applications</A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREeeeF="http://data.gov.uk" TARGET=_NEW>&nbsp;</A></TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;</TD>
+<TD><FONT COLOR=blue FACE=Verdana SIZE=2><A HREF="http://www.jackbe.com/enterprise-mashup/forum" TARGET=_NEW>
+<B>Presto Mashups</B></A>
+</TD>
+</TR>
+
+</TABLE>
+--->
+
+</TD>
+</TR>
+
+<TR>
+<TD>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+This shows a BI approach, with <B>Traffic Lights</B> showing Red, Amber or Green depending on the situation for three types of data - Cleanliness, Vandalsim and Ethnic Origin.
+
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Data Marts, Generic Design with Data Wrappers, KPIs, Dashboards and Web Services
+<BR><br>
+<IMG ALIiiiGN=left ALT="Traffic Lights (Red-Amber-Green)" WIiiiDTH=458 SRC="../images/ealing_rag_plus_three_data_types.jpg">
+</TD>
+
+<TD VALIGN=top>
+<BR><BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Microsoft Software Tools used here :-</B>
+<BR>1. <A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=blue>SSIS</FONT></A>
+
+<BR><BR><FONT COLOR=red>
+<B>Status :-</B></FONT>
+<BR>1. About to get started.
+</TD>
+</TR>
+
+
+
+<TR>
+<TD>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+This is the underlying <B>Data Platform</B> 
+
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Global Data Platform, MDM and Web Services
+
+
+<BR><BR><A HREF="index.htm">
+<img ALIiiiGN=right ALT="Data Platform (Click for large image)"  SRC="images/data_platform.jpg" hspace="0" vspace="4"></A>
+<BR><BR>
+</TD>
+
+<TD VALIGN=top>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;&nbsp;&nbsp;
+<BR><BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Microsoft Software Tools used here :-</B>
+<BR>1. <A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=blue>Single View Platform</FONT></A>
+
+<BR><BR>
+<B>Status :-</B>
+<BR>1. About to get started.
+<BR>
+
+
+</TD>
+</TR>
+
+
+<TR>
+<TD>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+This shows the POC <B>SOA Middleware Layer</B> with an Enterprise Service Bus and so on.
+
+<BR><FONT COLOR=green>
+<B>Implementation Options</B>
+<BR>Generic Data Marts, MDM, Common Data Model, Enterprise Svc Bus and Web Services
+<BR><BR>
+<A HREF="../poc_soa_architecture.htm"><IMG ALIiiiGN=left ALT="POC SOA Architecture (Click for separate Page)" SRC="../images/poc_soa_architecture.jpg">
+</A>
+</TD>
+
+<TD VALIGN=top>
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;&nbsp;&nbsp;
+<BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>&nbsp;&nbsp;&nbsp;
+<BR><BR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<B>Microsoft Software Tools used here :-</B>
+<BR>1. <A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=blue>SSIS</FONT></A>
+<BR>2. <A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=blue>Master Data Management (MDM)
+<BR>3. SQL 
+<BR>4. <A HREeeeF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW><FONT COLOR=blue>Enterprise Service Bus</FONT></A>
+
+
+<BR><BR>
+<B>Status :-</B>
+<BR>1. About to get started.
+</TD>
+</TD>
+
+</TR>
+
+
+<!---
+<TR>
+<TD>&nbsp
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>2. Commercial Activities</B>
+<BR>Here is a number of relevant activities :-
+<BR>1. <A HREF="http://www-01.ibm.com/software/info/mashup-center/" TARGET=_NEW>Microsoft Mashup Center</A>
+<BR>2. <A HREF="http://ibm.com/engines/energy/uk" TARGET=_NEW>Microsoft's Smarter Planet</A>.
+<BR>3. <A HREF="http://www.microsoft.com/industry/government/solutions/Single_View_Platform/default.aspx" TARGET=_NEW>Microsoft's Single View Government Platform</A>
+<BR>4. <A HREF="http://www.microsoft.com/industry/government/rss/MicrosoftGovernmentNewsRSS.aspx" TARGET=_NEW>Microsoft's RSS Feed</A>
+<BR>5. <A HREF="http://www.data.gov.uk/" TARGET=_NEW>UK Government Open Data Initiative</A> 
+<BR>(with the help of <B>Tim Berners-Lee</B>), includes Mashups.
+<BR>6. <A HREF="http://www.jackbe.com/enterprise-mashup/forum" TARGET=_NEW>Jackbe Presto Mashups</A>
+</TD>
+
+<TD VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="../data_models/future_of_databases/index.htm">The underlying Data Model</A> is shown on another page.
+<BR><BR>Here is a Vision of <A HREF="the_vision.htm"><B>the Future of Databases</B></A>, and you can check out our <A HREF="presentations.htm">Presentations</A>.
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR>
+This Vision brings up some very interesting challenges, and this Proof-of-Concept explores them with the aim of building a State-of-the-Art demo.
+</TD>
+</TR>
+---->
+
+</TABLE>
+
+
+
+
+
+
+		</td>
+              	</tr>
+            </table>
+          </td>
+        </tr>
+   <tr> </tr> 
+   <tr> </tr> 
+      </table>
+
+      <br> 
+
+
+
+
+
+
+ </TD>
+      	</TR>
+
+ 	</TD></TR> 
+	</TABLE>
+
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

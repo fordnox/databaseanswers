@@ -1,0 +1,472 @@
+<html>
+<head>
+<title>Tools to Build a Generalised Application Framework</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing=0 cellpadding=0 bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=middle><img src="images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%>
+<A HREeeeF="http://msdn.microsoft.com/sql/express/" 
+A HREF="http://msdn2.microsoft.com/en-us/sql/aa336346.aspx" TARGET=_NEW>
+<img ALIGN=right ALT="Lightning Bolt, click for link to Microsoft Application Development Frameworks Page"
+SRC="images/lightning_bolt.jpg" hspace="0" vspace="4" wiIIIdth=244 heiIIIght=80></A></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="pi_ask_a_question/index.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+	<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC"><img src="images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="images/spacer.gif" width="90"></p></td>
+	<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="images/spacer.gif" height=20> 
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">A Generalized Application Framework<img src="images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+        	<td width="100%"> 
+<FONT COLOR=blue FACE=Verdana SIZE=2>A Generalised Application Framework provides a target for an Integrated Development Environment.
+<OL>There are four alternative approaches for a Generalised Application Framework :-
+	<LI>3-Tier Architecture :- 
+	<UL><LI>Presentation Layer
+	<LI>Business / Application Layer
+	<LI>Data Acess Layer
+	</UL>
+<BR>
+	<LI>Agile Development :-
+	<UL>
+	<LI>Incremental Development
+	<LI>User Involvement
+	</UL>
+<BR>
+	<LI>Database-Driven Development :-
+	<UL>
+	<LI>Data Dictionary
+	<LI>Data-driven Generators 
+	<LI>Patterns
+	</UL> 
+<BR>
+	<LI>Model-Based Development :-
+	<UL><LI>Model with Tools based on an Architecture
+	<LI>Following Agile Developemnt Principles
+	</UL> 
+<BR>
+	<LI>Model-Viewer-Controller :-
+	<UL><LI>Model= Data Model
+	<LI>Viewer=User Interface 
+	<LI>Controller=Control that links Front-end User Interface to Back-end Data Model
+	</UL> 
+<BR>
+	<LI>Service-Oriented-Architecture :-
+	<UL><LI>User Interface
+	<LI>Enterprise Service Bus (Middleware Layer) 
+	<LI>Back-End Services
+	<LI>Web Services
+	</UL> 
+
+</OL>
+	<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR>Microsoft has done some interesting work on 
+<A HREF="http://msdn.microsoft.com/practices/" TARGET=_NEW>Patterns</A> and on a 
+<A HREF="http://msdn.microsoft.com/library/en-us/dnpag2/html/servicefactory.asp?frame=true" TARGET=_NEW>Web Service Factory</A>.
+<BR>We like Database-driven techniques, such as 
+
+<A HREF="oussama/patterns_and_generators.htm"></B>Patterns</B></A>, 
+
+Generators and Translators.
+<BR>This is based on a Data Dictionary, for example in driving a Forms Designer.
+<BR><BR>The first release is to establish credentials as Best Practice evangelists.
+<BR>The second release will be Kick-Start Applications made available comemrcially.
+<BR><BR>The objective is to smart small with an underlying Architecture that will grow 
+with you as your needs and your Application grows.</PRE>
+		</td>
+              	</tr>
+            </table>
+          </td>
+        </tr>
+<!---   <tr>AAA </tr> --->
+<!---   <tr>BBB </tr> --->
+      </table>
+
+<!---      <br> --->
+
+
+            <table WIDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">Here are links to some commercially-available Products<img src="images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">&nbsp;</div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td wiIIIdth="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+				<TR bgcolor="#B0D8FF"> 
+                         	<TD ALIGN=middle class="cell" wiIIIdth=25%><B>PRODUCT</B></TD>
+				<TD ALIGN=middle class="cell" wiIIIdth=25%><B>VENDOR</B></TD>
+				<TD ALIGN=middle class="cell" wiIIIdth=25%><B>PRICE</B></TD>
+                           	<TD ALIGN=middle class="cell" wiIIIdth="50%"><B>COMMENTS</B></TD>
+                                </TR>
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A HREF="http://www.asp.net/sandbox/app_blinq.aspx?tabid=62" TARGET=_NEW>
+Blinq</A> </TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.microsoft.com/" TARGET=_NEW>Microsoft</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$299</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+"Blinq is a tool for generating ASP.NET websites for displaying, creating and manipulating data in SQL Databases", and has 
+<A HREF="http://forums.asp.net/thread/1314098.aspx" TARGET=_NEW>a Discussion Forum</A>.</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"href="http://www.carettasoftware.com/ddj" TARGET=_NEW>Caretta</A>  </TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"  href="http://www.carettasoftware.com" TARGET=_NEW>Caretta Software</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$500</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<B>GUI User Interface Prototyping - advertised in Dr.Dobbs Journal.</TD>
+                                </TR>
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"href="http://www.microsoft.com/products/expression/en/Expression-Web/default.mspx" TARGET=_NEW>
+Expression Web</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.microsoft.com/" TARGET=_NEW>Microsoft</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$299</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Microsoft recommendation as Front Page replacement, but Amazon customers don't agree.</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"href="http://www.infragistics.com/ajax" TARGET=_NEW>Infragistics</A> </TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"  href="http://www.infragistics.com" TARGET=_NEW>Infragistics</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">&nbsp</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<B>AJAX</B> Components - "The World-leader in AJAX-based ASP.NET User Interface Components".</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"href="http://www.ironspeed.com/" TARGET=_NEW>Iron Speed</A></TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"  href="http://www.ironspeed.com" TARGET=_NEW>Iron Speed</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$595 upwards</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Approach with caution - Iron Speed implements a variation of the <FONT COLOR=red>3-Tier Architecture</FONT> which is shown in the diagram at the bottom of this page. 
+<A HREF="http://www.ironspeed.com/products/DownloadNow.aspx?" TARGET=_NEW>A Download</A> is available for evaluation.
+<BR>It looks very good, and has a wide range of enthusiastic Testimonials from users around the world.
+However, it did not meet my expectations and I was unable to get it to work so I gave up trying after 
+<A HREF="iron_speed_problems/index.htm">four frustrating days</A>.</TD>
+                                </TR>
+
+
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"href="http://msdn2.microsoft.com/en-us/practices/default.aspx" TARGET=_NEW>Microsoft Patterns & Practices</A> 
+				</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"  href="http://www.microsoft.com" TARGET=_NEW>Microsoft</TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">Free</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Worth checking out - represents the result of a lot of thought based on reality.</TD>
+                                </TR>
+
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"href="http://www.momocs.org/" TARGET=_NEW>MOMOCS</A></TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+<A class="cell"  href="http://ec.europa.eu/dgs/information_society/index_en.htm" TARGET=_NEW>European Information Society</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">N/A</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">MOMOCS is a $1M European Research project, based on RUP,O-O and IBM's Eclipse initiative.</TD>
+                                </TR>
+
+                            	<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.infragistics.com/" TARGET=_NEW>Net.Advantage for ASP.Net</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.infragistics.com/" TARGET=_NEW>Infragistics</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$795 upwards</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Supports <B>AJAX</B> and "Provides a Presentation Layer".</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.nevron.com/UserInterface.aspx?nav=UINav&content=UI" TARGET=_NEW>Nevron Diagram</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.nevron.com/" TARGET=_NEW>Nevron</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$600-$1,200</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">"Build on top of the solid <FONT COLOR=red>Model-Viewer-Controller</FONT> Architecture."
+				<BR>Can be used to produce <A HREF="http://www.nevron.com/Diagramming.aspx?nav=DiagramGalleryNav&content=DiagramWebSite" TARGET=_NEW>Web Site diagrams</A>
+				</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.nevron.com/UserInterface.aspx?nav=UINav&content=UI" TARGET=_NEW>Nevron User Interface</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.nevron.com/" TARGET=_NEW>Nevron</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$300-$1,000</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Evaluation Download available.</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://msdn.strataframe.NET" TARGET=_NEW>StrataFrame</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://msdn.strataframe.NET" TARGET=_NEW>StrataFrame</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">Links for prices don't work</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				Implements the <FONT COLOR=red>3-Tier Architecture</FONT> listed above.
+				<BR>Supports <B>Data-Centric Applications Development</B> and <A href="http://www.syncfusion.com/ajax" TARGET=_NEW><B>AJAX</B></A>.
+				<BR>"Optimised for Microsoft Visual Studio"
+				<BR>provides "Reduced .NET learning curve and new Application Development Time",
+				<BR>and "Automated parent-child relationships".</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.componentone.com/enterprise" TARGET=_NEW>Studio Enterprise</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.componentone.com/" TARGET=_NEW>ComponentOne</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$1,000</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Free Trial available</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.tibco.com/" TARGET=_NEW>Tibco</TD>
+                         	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A class="cell"  href="http://www.tibco.com/" TARGET=_NEW>Tibco</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$N00,000</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">An Enterprise-level solution</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://msdn.microsoft.com/difference" TARGET=_NEW>Visual Studio</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.microsoft.com/" TARGET=_NEW>Microsoft</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">&nbsp</TD>
+                       		<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				Offers "400 features that streamline coding"</TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://msdn.microsoft.com/vstudio/express/vwd/" TARGET=_NEW>Visual Web Developer</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.microsoft.com/" TARGET=_NEW>Microsoft</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">Free</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				"An ideal environment for new Web Developers", with tailored facilities for 
+				<A HREF="http://msdn.microsoft.com/vstudio/express/vwd/features/data/" TARGET=_NEW>
+				Visual Data Designers"</A></TD>
+                                </TR>
+
+				<TR bgcolor="#B0D8FF"> 
+                          	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.syncfusion.com/ajax" TARGET=_NEW>Windows Forms Builder</A></TD>
+                          	<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">
+				<A href="http://www.syncfusion.com/" TARGET=_NEW>Syncfusion</A></TD>
+				<TD class="cell" wiIIIdth=25%><img src="images/white-point.gif" width="17" height="8">$1,295</TD>
+                           	<TD class="cell" wiIIIdth="50%"><img src="images/white-point.gif" width="17" height="8">Supports ASP.Net and 
+				<A href="http://www.syncfusion.com/ajax" TARGET=_NEW><B>AJAX</B></A>.</TD>
+                                </TR>
+
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+	<IMG ALIGN=left SRC="images/Iron_Speed_N_Tier_Architecture.gif" SouRCe="images/StrataFrame_DataAccessLayer_Anatomy.jpg" NEW=_TARGET>
+	<FONT COLOR=blue FACE=Verdana SIZE=2>Here's a diagram from <A HREF="http://www.ironspeed.com" TARGET=_NEW>Iron Speed</A> showing their N-Tier Architecture.
+	<BR>THey have added a Web Pages Layer and a Database Layer to the conventional 3 Tiers.
+        </TD>
+      	</TR>
+	</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+	<td><a href="ask_a_question.htm"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"> <img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

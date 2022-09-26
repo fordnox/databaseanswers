@@ -1,0 +1,223 @@
+<html>
+<head>
+<title>Oracle User Groups Data Model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREeeeF="http://www.cs.bris.ac.uk/maintain/OracleDocs/java.816/a81358/05_dev1.htm" TARGET=_NEW>
+<IMG ALIGN=right ALT="A Light Bulb goes on !!!" BORDER=1 hspace="0" vspace="4" SRC="images/best_practice_light_bulb_med.jpg"></A>
+</td>
+</td>
+</tr>
+
+</table>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for Oracle User Groups</font>&nbsp;</td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>A. The requirement is to design a Database to support the activities of Oracle User Groups</B>
+
+Subject: Oracle ERD
+
+Question: Below is the problem ..
+
+I have the ERD started just looking for some guidance Our regional Oracle User's Group has grown to include over 200 members. 
+
+We are an all-volunteer organization of working adults and secondary-school students, and our records are a mess. 
+
+We need an information system to help us keep track of our business. 
+
+We definitely need to automate our membership records. For each member, we need to keep the member's name, title, mailing address, 
+office or home phone number, type of membership (individual or corporate), and whether or not the member is has paid the dues 
+(is the member current ?). 
+
+We collect dues on a yearly basis, and they are due in January. 
+
+We also like to know which company a member works for but keeping this information current is difficult because our members are 
+always changing companies. 
+
+We try to track only a single current employer for each member. 
+
+Our members come from many different companies, including Sony, EG&G, and Storage Tech.s. 
+
+A few of our members are unemployed. For each company, we keep the company name, address, and type of business.
+
+We have a standard set business codes. 
+
+We keep only the main company address for each company. 
+
+We hold various events during the year, and we'd like to track information about each event. 
+
+Some of our annual events include the September Meeting, the November Meeting, the annual Training Day in January, and our April Meeting. 
+
+We also hold special events each year. 
+
+For example, we held a special CASE (Computer Aided Systems Engineering) day last May, and Richard Barker from Oracle U.K. came and spoke. 
+
+We hold our events at several different locations around town, including AT&T, Redrocks Community College, and Skyline University. 
+
+We'd like to track each event's date, optional description of the event, number of attendees, where it was held, how much money we spent on it, 
+and any comments on the event. 
+
+We treat all comments as if they came from an anonymous submitter. A set of comments is a free-form text statement of any length. 
+
+We number each set of comments, and we frequently get multiple sets of comments for an event. 
+
+We also track which members attended which events. 
+
+Some of our members are really active, and others attend very infrequently or just enjoy receiving our newsletter. 
+
+We also need to track what type of computer platforms our members are using. 
+
+We have a unique, three-digit system identification tag for each type of platform. 
+
+For example, 001 is for UNIX; 002 is for RAC & HA; 003 is for Oracle on Windows; 020 is for Oracle Spatial; 030 is for Oracle & .NET; 
+050 is for DBMS; and 080 is for Business Intelligence & Reporting Tools. 
+
+We also like to track which application areas each member is interested in. 
+
+Sample application areas include accounting, human resources, entertainment, oil and gas, pharmaceuticals and health systems. 
+
+The applications should be portable, so we don't need to know which platforms they run on.
+</PRE>
+
+<B>Barry says the Things of Interest are :-</B>
+   A.1 Applications
+   A.2 Application Areas
+   A.3 Comments
+   A.4 Dues
+   A.5 Employer Companies
+   A.6 Events
+   A.7 Events Attendees
+   A.8 Events Speakers
+   A.9 Members
+   A.10 newsletters
+   A.11 Platforms
+   A.12 User Groups
+
+<B>B. How are they related ?</B>
+   B.1 An Event can be a Birth, Death or Marriage.
+   B.2 A Parent can register one or many Events.
+   B.3 Others to be determined.</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>May 27th. 2011
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

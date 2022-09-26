@@ -1,0 +1,301 @@
+
+<html>
+<head>
+	<title>Best Practice Manual Viewer</title>
+	
+<script type="text/javascript">
+
+/**********************************************
+* Switch Content script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice must stay intact for legal use. Last updated Mar 23rd, 2004.
+* Visit http://www.dynamicdrive.com/ for full source code
+**********************************************/
+
+var enablepersist="on" //Enable saving state of content structure using session cookies? (on/off)
+var collapseprevious="no" //Collapse previously open content when opening present? (yes/no)
+
+var contractsymbol='<img BORDER=1 src="/images/icon_folder_open.gif" width=15 height=12>' //HTML for contract symbol. For image, use: <img src="whatever.gif">
+var expandsymbol='<img BORDER=1 src="/images/icon_folder.gif" width=14 height=12>' //HTML for expand symbol.
+
+
+if (document.getElementById){
+document.write('<style type="text/css">')
+document.write('.switchcontent{display:none;}')
+document.write('</style>')
+}
+
+function getElementbyClass(rootobj, classname){
+var temparray=new Array()
+var inc=0
+for (i=0; i<rootobj.length; i++){
+if (rootobj[i].className==classname)
+temparray[inc++]=rootobj[i]
+}
+return temparray
+}
+
+
+function contractcontent(omit){
+var inc=0
+while (ccollect[inc]){
+if (ccollect[inc].id!=omit)
+ccollect[inc].style.display="none"
+inc++
+}
+}
+
+function expandcontent(curobj, cid){
+var spantags=curobj.getElementsByTagName("SPAN")
+var showstateobj=getElementbyClass(spantags, "showstate")
+if (ccollect.length>0){
+if (collapseprevious=="yes")
+contractcontent(cid)
+document.getElementById(cid).style.display=(document.getElementById(cid).style.display!="block")? "block" : "none"
+if (showstateobj.length>0){ //if "showstate" span exists in header
+if (collapseprevious=="no")
+showstateobj[0].innerHTML=(document.getElementById(cid).style.display=="block")? contractsymbol : expandsymbol
+else
+revivestatus()
+}
+}
+}
+
+function revivecontent(){
+contractcontent("omitnothing")
+selectedItem=getselectedItem()
+selectedComponents=selectedItem.split("|")
+for (i=0; i<selectedComponents.length-1; i++)
+document.getElementById(selectedComponents[i]).style.display="block"
+}
+
+function revivestatus(){
+var inc=0
+while (statecollect[inc]){
+if (ccollect[inc].style.display=="block")
+statecollect[inc].innerHTML=contractsymbol
+else
+statecollect[inc].innerHTML=expandsymbol
+inc++
+}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function getselectedItem(){
+if (get_cookie(window.location.pathname) != ""){
+selectedItem=get_cookie(window.location.pathname)
+return selectedItem
+}
+else
+return ""
+}
+
+function saveswitchstate(){
+var inc=0, selectedItem=""
+while (ccollect[inc]){
+if (ccollect[inc].style.display=="block")
+selectedItem+=ccollect[inc].id+"|"
+inc++
+}
+
+document.cookie=window.location.pathname+"="+selectedItem
+}
+
+function do_onload(){
+uniqueidn=window.location.pathname+"firsttimeload"
+var alltags=document.all? document.all : document.getElementsByTagName("*")
+ccollect=getElementbyClass(alltags, "switchcontent")
+statecollect=getElementbyClass(alltags, "showstate")
+if (enablepersist=="on" && ccollect.length>0){
+document.cookie=(get_cookie(uniqueidn)=="")? uniqueidn+"=1" : uniqueidn+"=0" 
+firsttimeload=(get_cookie(uniqueidn)==1)? 1 : 0 //check if this is 1st page load
+if (!firsttimeload)
+revivecontent()
+}
+if (ccollect.length>0 && statecollect.length>0)
+revivestatus()
+}
+
+if (window.addEventListener)
+window.addEventListener("load", do_onload, false)
+else if (window.attachEvent)
+window.attachEvent("onload", do_onload)
+else if (document.getElementById)
+window.onload=do_onload
+
+if (enablepersist=="on" && document.getElementById)
+window.onunload=saveswitchstate
+
+</script>
+
+
+	
+</head>
+
+<body marginwidth=2 marginheight=2 leftmargin=2 topmargin=2>
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=middle>
+	<td><a href="/index.asp"><img src="../images/logo.gif" alt="Database Answers" border=0></a><br><font face="Verdana" size=1 color="blue"><b>&nbsp;&nbsp;You are not logged in</b> | <a href="/pi_user_registration/login.asp">login</a></font></td>
+	<td align=right><img src="../images/graphics/bienecke_xsml.jpg"></td>
+	</tr>
+<TR>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+</TR>
+
+</table>
+
+
+
+
+
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top>
+	<td width=90 background="../images/bg_side.gif">
+	<table border=0 cellpadding=0 cellspacing=0 width=90>
+		<tr><td>
+		<table border=0 cellpadding=0 cellspacing=0 width=90>
+			<tr>
+			<td align=center><img src="../images/graphics/gazebo.jpg">
+			<BR><A HREF="bp_feedback.asp"><FONT COLOR=blue FACE=Verdana SIZE=1>Feedback</A>
+			</td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+	</td>
+	<td width=100% bgcolor="#CCCCFF" align=center>
+	<table border=0 cellpadding=10 cellspacing=0 width=100%>
+	<tr>
+	<td>
+	<!-- Body Starts -->
+	
+	<!-- Sample Section Starts -->
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td align=right><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2><b>Best Practice Manuals</b>&nbsp;&nbsp;</font></td>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		</tr>
+		<tr>
+		<td colspan=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=20 height=2></td>
+		</tr>
+	</table>
+	<table border=0 cellpadding=0 cellspacing=0 width=100%>
+		<tr>
+		<td width=2 bgcolor="#FF9900"><img src="../images/shim.gif" width=2 height=4></td>
+		<td width=2><img src="../images/shim.gif" width=2 height=4></td>
+		<td><font COLOR=blue face="Verdana, Tahoma, sans-serif" size=2>Below is the Best Practice Manual you selected.</font></td>
+		</tr>
+	</table>
+	<!-- Sample Section Ends -->
+	
+	<p>
+
+<font face="Verdana" size=2 color="blue">
+<b><font COLOR=blue size=+1>Sarbanes-Oxley Act, 2002 for Financial Governance.</font></b><br>This is a short extract showing representative entries relating to Governance in Accountability.<p><p><font color="red" onClick="expandcontent(this, 'chap0')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Section 104: Inspections of Registered Public Accounting Firms</b></font><p><div id="chap0" class="switchcontent">Annual quality reviews (inspections) must be conducted for firms that audit more than 100 issues, all others must be conducted every 3 years. The SEC and/or the Board may order a special inspection of any firm at any time.</div><p><font color="red" onClick="expandcontent(this, 'chap1')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Section 106: Foreign Public Accounting Firms.</b></font><p><div id="chap1" class="switchcontent">The bill would subject foreign accounting firms who audit a U.S. company to registrations with the Board. This would include foreign firms that perform some audit work, such as in a foreign subsidiary of a U.S. company, that is relied on by the primary auditor.</div><p><font color="red" onClick="expandcontent(this, 'chap2')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Section 108: Accounting Standards.</b></font><p><div id="chap2" class="switchcontent">The SEC is authorized to "recognize, as 'generally accepted'... any accounting principles" that are established by a standard-setting body that meets the bill's criteria, which include requirements that the body: 
+<BR>(1) be a private entity; 
+<BR>(2) be governed by a board of trustees (or equivalent body), the majority of whom are not or have not been associated persons with a public accounting firm for the past 2 years; 
+<BR>(3) be funded in a manner similar to the Board; 
+<BR>(4) have adopted procedures to ensure prompt consideration of changes to accounting principles by a majority vote; 
+<BR>(5) consider, when adopting standards, the need to keep them current and the extent to which international convergence of standards is necessary or appropriate.
+</div><p><font color="red" onClick="expandcontent(this, 'chap3')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Section 404: Management Assessment Of Internal Controls.</b></font><p><div id="chap3" class="switchcontent">Requires each annual report of an issuer to contain an "internal control report", which shall:
+<BR>(1) state the responsibility of management for establishing and maintaining an adequate internal control structure and procedures for financial reporting; and
+<BR>(2) contain an assessment, as of the end of the issuer's fiscal year, of the effectiveness of the internal control structure and procedures of the issuer for financial reporting.
+
+<BR><BR>Each issuer's auditor shall attest to, and report on, the assessment made by the management of the issuer. 
+<BR>An attestation made under this section shall be in accordance with standards for attestation engagements issued or adopted by the Board. 
+<BR>An attestation engagement shall not be the subject of a separate engagement.
+</div><p><font color="red" onClick="expandcontent(this, 'chap4')" style="cursor:hand; cursor:pointer"><span class="showstate"></span><b>&nbsp;Section 409: Real Time Disclosure.</b></font><p><div id="chap4" class="switchcontent">Issuers must disclose information on material changes in the financial condition or operations of the issuer on a rapid and current basis.</div>
+</font>
+	
+	<!-- Body Ends -->	
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+
+<!--- START OF DEC 5th. --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+       	<td width="1%"><img src="../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../index.htm"><font COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Home</font></td>
+      	<td width="11%"><A STYLE="text-decoration:none" HREF="../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A> 
+	</td>
+
+	<td width="9%">
+<!---	<A STYLE="text-decoration:none" HREF="pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+          <td width="10%"><A STYLE="text-decoration:none" HREF="../data_models/index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% wiiiidth="37%"><A STYLE="text-decoration:none" HREF="../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. --->
+
+
+
+
+
+
+</body>
+</html>

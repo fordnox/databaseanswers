@@ -1,0 +1,114 @@
+<HTML><HEAD><TITLE>Codd's 12 Rules</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jag" BGCOLOuuuR="#FFFFCC" TEXT="#202020">
+
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIiDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=bottom><H1><IMG ALT="Database Answers Header" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="images/dba_banner_and_btn.jpg"></TD> 
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>Ted Codd and his Rules for Relational Databases</FONT> 
+</TD>
+</TR>
+</TABLE>
+<HR>
+
+<!-- end Standard Header - Version 3-->
+
+<FONT FACE="Verdana" SIZE=2>
+
+<!-- begin body Text -->
+<IMG ALIGN=right ALT="Water thru the Trees" BORDER=1 SRC="images/philg/keyhole.jpg">
+<FONT COLOR=blue SIZE=4><B>THE RULES :</B></FONT>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>This is C.J Date's version of the 12 Rules from AN INTRODUCTION TO DATABASE SYSTEMS 
+(5th edition) as set forth in pages 389 - 393
+ 
+0. (Yes, there is a Rule 0!)
+For a system to qualify as a RELATIONAL, DATABASE, MANAGEMENT system, that system must 
+use its RELATIONAL facilities (exclusively) to MANAGE the DATABASE.
+ 
+1. The information rule
+The information rule simply requires all information in the database to be represented 
+in one and only one way, Namely by values in column positions within rows of tables.
+ 
+2. The guaranteed access rule
+This rule is essentially a restatement of the fundamental requirement for primary keys. 
+It says that every individual scalar value in the database must be logically addressable 
+by specifying the mane of the containing table, the name of the containing column and the
+primary key value of the containing row.
+ 
+3. Systematic treatment of null values
+The DBMS is required to support a representation of "missing information and inapplicable
+information" that is systematic, distinct from all regular values 
+(for example, "distinct from zero or any other number," in the case of numeric values), 
+and independent of data type.
+It is also implied that such representations must be manipulated by the DBMS in a 
+systematic way.
+ 
+4. Active online catalog based on the relational model
+The system is required to support an online, inline, relational catalog that is 
+accessible to authorized users by means of their regular query language.
+ 
+5. The comprehensive data sublanguage rule
+The system must support a least one relational language that 
+    (a) has a linear syntax, 
+    (b) can be used both interactively and within application programs, 
+and (c) supports data definition operations (including view definitions), 
+        data manipulation operations (update as well as retrieval), 
+        security and integrity constraints, and transaction management 
+        operations (begin, commit, and rollback).
+ 
+<IMG ALIGN=left ALT="Grand Canyon" SRC="images/philg/grand-canyon-9.2.jpg">
+
+6. The view updating rule
+All views that are theoretically updatable must be updatable by the system.
+ 
+7. High-level insert, update, and delete
+The system must support set-at-a-time INSERT, UPDATE, and DELETE operators.
+ 
+8. Physical data independence
+Self-explanatory.
+ 
+9. Logical data independence
+Self-explanatory
+ 
+10. Integrity independence
+Integrity constraints must be specified separately from application programs and 
+stored in the catalog. It must be possible to change such constraints as and when 
+appropriate without unnecessarily affecting existing applications.
+ 
+11. Distribution independence
+Existing applications should continue to operate successfully 
+(a) when a distributed version of the DBMS is first introduced; 
+(b) when existing distributed data is redistributed around the system.
+ 
+12. The nonsubversion rule
+If the system provides a low-level (record-at-a-time) interface, then that 
+interface cannot be used to subvert the system (e.g.) bypassing a relational 
+security or integrity constraint.
+</FONT>
+</PRE>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="index.htm">Home Page</A>
+        | <A HREF="ask_a_question.htm">Ask me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email</A> 
+        | <A HREF="faqs.htm">FAQs</A>  
+        | <A HREF="site_map.htm">Site Map</A> ]
+<!--    | <A HREF="scripts.htm">DBA Scripts</A> --->
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

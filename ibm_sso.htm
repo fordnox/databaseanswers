@@ -1,0 +1,701 @@
+<HTML>
+<head>
+  <title>Single Sign On - A Contrarian View</title>
+</head>
+  <!-- INCLUDE HEAD SECTION --><!-- INCLUDE HEAD SECTION --><!-- INCLUDE HEAD SECTION -->
+    <!-- BEGIN head.ssi INCLUDE FILE -->
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.ibm.com/data/dtd/v11/ibmxhtml1-transitional.dtd">
+  <!-- Comment out head tag as experiment to test its necessity
+  <head>
+  //-->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  <meta name="SECURITY" content="Public"/>
+  <meta name="SOURCE" content="v11 Template Generator, Template 11.1.3"/>
+  <meta name="COPYRIGHT" content="Copyright (c) 2001 by IBM Corporation"/>
+  <meta name="ROBOTS" content="index,follow"/>
+  <meta name="DC.LANGUAGE" scheme="rfc1766" content="en-us"/>
+  <meta name="CHARSET" content="iso88591"/>
+  <meta name="IBM.COUNTRY" content="us"/>
+  <meta name="TITLE" content="WebSphere Developer Domain"/>  
+  <meta name="DC.DATE" scheme="iso8601" content="2001-02-26"/>
+  <meta name="OWNER" content="Davide Vieira/Santa Teresa/IBM@IBMUS"/>
+  <meta http-equiv="PICS-Label" content='(PICS-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://www.ibm.com" r (cz 1 lz 1 nz 1 oz 1 vz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.ibm.com" r (n 0 s 0 v 0 l 0))'/> 
+  
+  <link rel="stylesheet" href="/wsdd/css/dd.css" type="text/css"/>
+  <LINK REL="SHORTCUT ICON" HREF="/wsdd/favicon.ico">
+  <!--doc created by template generator-->
+  <!--
+  <?xml version="1.0"?>
+  <!DOCTYPE Brand SYSTEM "http://www.ibm.com/data/xml/ProdNav.dtd">
+  <PageSet cc="us" language="en">
+  	<URI name="WebSphere Developer Domain" href="/wsdd/"/>
+  	<URI name="Products" href="/wsdd/products/"/>
+  	<URI name="How to buy" href="http://www2.software.ibm.com/prodindex/prodindex.nsf/H2BPages/TDUN-49EQEF?opendocument"/>
+  	<URI name="Support" href="http://www.ibm.com/software/webservers/support.html"/>
+  	<URI name="Downloads" href="/wsdd/downloads/"/>
+  	<URI name="News" href="http://www.ibm.com/software/info/websphere/r/nav-news"/>
+  	<URI name="Library" href="/wsdd/library/"/>
+  	<URI name="Services" href="/wsdd/services/"/>
+  	<URI name="Events" href="/wsdd/events/"/>
+  	<URI name="Education" href="/wsdd/education/"/>
+  
+  </PageSet>
+  //s-->
+
+  <SCRIPT LANGUAGE="JavaScript">
+  <!--
+  function redirect(select) {
+  var page = select.options[select.selectedIndex].value
+    if (page!="#") document.location.href = page
+  }
+  // -->
+  </SCRIPT>
+  
+  <SCRIPT LANGUAGE="JavaScript">
+  <!--
+  function nsResize() {
+    if (navigator.appName.indexOf("Netscape") != -1) {
+    	if ( (parseFloat(navigator.appVersion) < 4.05) ||
+    	     (parseFloat(navigator.appVersion) > 4.08) )
+  		location.reload(true);
+    }
+  }
+  // -->
+  </SCRIPT>
+
+  <!-- Comment out head tag as experiment to test its necessity
+  </head>
+  //-->
+  <!-- END head.ssi INCLUDE FILE -->
+
+<BODY bgcolor="#ffffff" text="#000000" topmargin="2" leftmargin="2" marginwidth="2" marginheight="2" onResize=nsResize()>
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+<!-- Start hiding from other browsers
+// Delete all variables except the one to which this page belongs
+  var thisPage='library';
+// Stop hiding from other browsers  -->
+</SCRIPT>
+
+<!-- INCLUDE MASTHEAD --><!-- INCLUDE MASTHEAD --><!-- INCLUDE MASTHEAD -->
+<!-- BEGIN masthead.ssi INCLUDE FILE -->
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR bgcolor="#006699">
+    <TD>
+      <TABLE width="460" border="0" cellspacing="0" cellpadding="0">
+        <TR>
+          <TD width="150" class="tbgc"><a href="http://www.ibm.com/"><IMG src="http://www.ibm.com/i/v10/m/en/mast_logo.gif" border="0" alt="IBM" width="150" height="47"></a></TD>
+          <TD width="310" class="tbg"><a href="#main"><img src="//www.ibm.com/i/c.gif" border="0" width="1" height="1" alt="Skip to main content"/></a></TD>
+        </TR>
+      </TABLE>
+    </TD>
+    <TD class="tbgc" align="right" valign="top">
+      <TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+        <FORM method="get" action="http://www.ibm.com/Search"><INPUT type="hidden" name="v" value="10"/><INPUT type="hidden" name="lang" value="en"/><INPUT type="hidden" name="cc" value="us"/>
+        <TR>
+          <TD colspan="4"><IMG src="//www.ibm.com/i/c.gif" border="0" width="1" height="12" alt="" /></TD>
+        </TR>
+        <TR valign="middle">
+          <TD align="right"><FONT face="Verdana, sans-serif" size="-1"><INPUT type="text" value="" name="q" size="15" class="input" maxlength="100"/></FONT></TD>
+          <TD><IMG src="//www.ibm.com/i/c.gif" border="0" width="5" height="1" alt="" /></TD>
+          <TD width="64"><INPUT type="image" src="images/ibm_search.gif" width="64" height="23" border="0" value="Search" name="Search" alt="Search button"/></TD>
+          <TD valign="top"><IMG src="//www.ibm.com/i/c.gif" border="0" width="40" height="1" alt="" /></TD>
+        </TR>
+        </FORM>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR bgcolor="#000000">
+    <TD>
+      <TABLE border="0" cellspacing="0" cellpadding="0">
+        <TR>
+          <TD width="150" height="21" class="hbg"><img src="//www.ibm.com/i/c.gif" border="0" width="1" height="1" alt="" /></TD>
+          <TD>
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="0" height="21">
+              <TR>
+		<TD width="100%" height="21" valign="top" class="bbg">&nbsp;&nbsp;&nbsp;<A class="mainlink"  href="http://www.ibm.com/">Home</A><SPAN class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class="mainlink" href="http://www.ibm.com/products/">Products &amp; services</A><SPAN class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class="mainlink" href="http://www.ibm.com/support/">Support &amp; downloads</A><SPAN class="divider">&nbsp;&nbsp;|&nbsp;&nbsp;</SPAN><A class="mainlink" href="http://www.ibm.com/account/">My account</A></TD>
+              </TR>
+            </TABLE>
+          </TD>
+        </TR>
+      </TABLE>
+    </TD>
+  </TR>
+</TABLE>
+<!-- END masthead.ssi INCLUDE FILE -->
+
+<!-- BEGIN MASTER TABLE --><!-- BEGIN MASTER TABLE --><!-- BEGIN MASTER TABLE -->
+<table width="100%" valign="top" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <!-- GUTTER BETWEEN LEFT BORDER AND CONTENT AREA --><!-- GUTTER BETWEEN LEFT BORDER AND CONTENT AREA --><!-- GUTTER BETWEEN LEFT BORDER AND CONTENT AREA -->
+    <td width="8" height="1" bgcolor="#ffffff"><IMG src="http://www.ibm.com/i/c.gif" width="8" height="1" alt=""></td>
+    
+	<!-- CONTENT AREA --><!-- CONTENT AREA --><!-- CONTENT AREA -->
+	<!-- You may find it helpful to view this template in your browser while creating your document -->
+    <!-- http://lindsey.boulder.ibm.com/wsdd/templates/techarticle_template_simple.html -->
+	<td width="100%" valign="top">
+      
+ 
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr> 
+		    <!-- INCLUDE BREADCRUMB TRAIL --><!-- INCLUDE BREADCRUMB TRAIL --><!-- INCLUDE BREADCRUMB TRAIL --> 
+            	        <!-- BEGIN bct.ssi INCLUDE FILE -->
+		<TD height="21" valign="middle">
+		<A class="bctl" href="http://www.ibm.com/software/info/websphere/r/link-ws">WebSphere software platform</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN><A class="bctl" href="/wsdd/">WebSphere Developer Domain</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;</SPAN>
+		<SCRIPT LANGUAGE="JavaScript">
+	    	<!--
+	    	if (thisPage=='frontpage')
+		document.write("</TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+	
+		if (thisPage=='products') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/products/'>Products</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='howtobuy') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='http://www2.software.ibm.com/prodindex/prodindex.nsf/H2BPages/TDUN-49EQEF?opendocument'>How to buy</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='support') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='http://www.ibm.com/software/webservers/support.html'>Support</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='downloads') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/downloads/'>Downloads</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='news') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/news/'>News</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='library') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/library/'>Library</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='/cgi-bin/wsdd/printerfriendly.cgi'><img src='/wsdd/images/common/friendly.gif' alt='printer-friendly version' border='0' height='16' width='135'></A> <A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='presentations') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/library/'>Library</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN><A class='bctl' href='/wsdd/library/presents'>Presentations</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='/cgi-bin/wsdd/printerfriendly.cgi'><img src='/wsdd/images/common/friendly.gif' alt='printer-friendly version' border='0' height='16' width='135'></A> <A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='services') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/services/'>Services</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='events') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/events/'>Events</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='education') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/education/'>Education</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+	    	if (thisPage=='seaezone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/was_se_ae/'>Application Server, Standard/Advanced Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+                if (thisPage=='eezone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/was_ee/'>Application Server, Enterprise Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+  		} }
+	    	if (thisPage=='buscomps') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/wsbc/'>Business Components Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='usergroups') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/usergroups/'>User Groups</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='highvolume') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/hvws/'>High Volume Web Sites Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+                if (thisPage=='lotuszone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/lotus/'>Lotus Domino Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='studioworkbenchzone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/studio_workbench/'>WebSphere Studio Workbench Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+                if (thisPage=='studiozone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/studio/'>WebSphere Studio Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='bestpracticeszone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/bp/'>WebSphere Best Practices Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+                if (thisPage=='bizone') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/zones/bi/'>WebSphere Business Integrator Zone</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		if (thisPage=='techjournal') { if (!(location.pathname.lastIndexOf('/') == location.pathname.length - 1)) {
+		document.write("<A class='bctl' href='/wsdd/techjournal/'>WebSphere Developer Technical Journal</A><SPAN class='bct'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</SPAN></TD><TD valign='middle' align='right'><A class='bctl' href='/cgi-bin/wsdd/printerfriendly.cgi'><img src='/wsdd/images/common/friendly.gif' alt='printer-friendly version' border='0' height='16' width='135'></A> <A class='bctl' href='http://www7b.boulder.ibm.com/cgi-bin/vadd/recommend.cgi'><img src='/wsdd/images/common/recommend.gif' alt='e-mail this page to a friend' border='0' height='16' width='149'></A></TD>");
+		} }
+		// -->
+	    	</SCRIPT>
+		<!-- END bct.ssi INCLUDE FILE -->
+		<!-- BEGIN_PRINTER_FRIENDLY_VERSION --> 
+		  </tr>
+          <tr> 
+            <td colspan="2"><br>
+
+<A name="_top"></A>
+<P><B><FONT face="Arial, Helvetica, Geneva" size="3" color="0033cc">Single Sign On – A Contrarian View</FONT></B></P>
+
+<font face="Arial, Helvetica, Geneva" size="2"> 
+<p><a href="#author">Keys Botzum</a><br>
+  Senior Consulting I/T Specialist<br>
+  IBM Software Services for WebSphere<br>
+  August 2001</p>
+<p><font face="Arial, Helvetica, Geneva" size="1">© 2001 International Business Machines Corporation. All rights reserved.</font></p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>Summary</b></font></p>
+<p>This document outlines some of the issues associated with Single Sign On (SSO) 
+  in an enterprise environment. Many organizations embark on these efforts without 
+  thoroughly considering the issues, costs and benefits involved. This article 
+  will help you make an informed decision about deploying SSO.</p>
+<p>The views expressed in this document are those of the author and do not represent 
+  any official IBM position.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>Introduction</b></font></p>
+<p>SSO is the holy grail of many organizations. With SSO, users will log in once 
+  to an SSO domain and then are never challenged again while accessing secured 
+  resources within that domain. The Open Group defines SSO as:</p>
+<blockquote><i>a mechanism whereby a single action of user authentication and 
+  authorization can permit a user to access all computers and systems where that 
+  user has access permission, without the need to enter multiple passwords</i>.<a href="#FOOTNOTE"><sup>1</sup></a><a name="FOOTNOTE 1"></a> 
+</blockquote>
+<p>Originally, SSO was to be achieved by developing all applications and tools 
+  to use a common security infrastructure with a common format for authentication 
+  information, avoiding the current situation of heterogeneous security infrastructures. 
+  This approach has a number of valuable benefits.</p>
+
+<p><b>For end users</b></p>
+<ul>
+  <li>Only one authentication mechanism to remember. For password-based authentication, 
+    this means only one password to remember and update, and one set of password 
+    rules.</li>
+  <li>A single sign-on for each user into the SSO domain, typically once per day. 
+  </li>
+</ul>
+
+<p><b>For operations</b><a href="#FOOTNOTE"><sup>2</sup></a><a name="FOOTNOTE 2"></a></p>
+<ul>
+  <li>A single common registry of user information (possibly replicated).</li>
+  <li>A single common way to manage user information.</li>
+  <li>A single common security infrastructure.</li>
+</ul>
+
+<p><b>Security advantages</b></p>
+<ul>
+  <li>A common secure infrastructure leveraged enterprise-wide, that can be carefully 
+    managed and secured.</li>
+  <li>Depending on the security approach, secure delegation of credentials is 
+    possible. This enables end-to-end security, possibly across application and 
+    system boundaries.</li>
+  <li>Easier to manage and protect common registry.</li>
+  <li>Easier to verify user security information and update when necessary rather 
+    than tracking down all operational systems. This is particularly valuable 
+    when users move to new roles with different access levels.</li>
+  <li>Common enterprise-wide password and security policies.</li>
+  <li>Users less likely to write down passwords since they only have to remember 
+    one.</li>
+</ul>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>The problem</b></font></p>
+<p>Creating a common enterprise security infrastructure to replace a heterogeneous 
+  infrastructure is without question the best technical approach. This is being 
+  attempted with technologies like the OSF Distributed Computing Environment (DCE), 
+  Kerberos, and with PKI-based systems, but few, if any, enterprises have actually 
+  achieved this.</p>
+            <p>Unfortunately, the task of changing all existing applications to 
+              use a common security infrastructure is very difficult. This has 
+              been further hampered by the lack of consensus on a common security 
+              infrastructure. Today we have many proprietary security systems 
+              as well as several competing security standards and pseudo-standards: 
+              Kerberos, DCE, Microsoft&reg; ActiveDirectory and related technologies, 
+              PKI, etc. Of course, these technologies do not interoperate seamlessly. 
+              As a result, these proprietary and standards-based solutions, while 
+              very appropriate, cannot be applied to every system. For example, 
+              until recently,<a href="#FOOTNOTE"><sup>3</sup></a><a name="FOOTNOTE 3"></a> 
+              WebSphere Application Server could not recognize authentication 
+              information from other servers. Problems like these occur over and 
+              over again across an enterprise as organizations buy products without 
+              fully considering the implications.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>The proxy-SSO "solution"</b></font></p>
+<p>Since moving all applications to a single security infrastructure is extraordinarily 
+  difficult, many enterprises attempt to create the illusion of one for end users 
+  by using SSO products that authenticate to existing legacy systems without user 
+  intervention. I refer to this as proxy-SSO to distinguish it from "true" SSO 
+  achieved by creating a common security infrastructure. These products typically 
+  use some proprietary authentication mechanism and then reauthenticate transparently 
+  to multiple underlying systems via the user interfaces to those systems. This 
+  involves a scripting engine that drives the interaction with each underlying 
+  system's authentication challenge. The scripting engine simulates a user logging 
+  in, so the underlying systems do not need to be changed. A proxy-SSO database 
+  stores all combinations of user names, passwords, and systems.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>The solution is difficult, 
+  expensive, and incomplete</b></font></p>
+<p>The task of configuring a proxy-SSO system for a large enterprise with numerous 
+  existing systems is staggering, as custom scripts must be developed for every 
+  possible user authentication interaction. Just considering UNIX&reg; utilities, 
+  we have: ftp, telnet, rsh, and rlogin. Add to this list the utilities for other 
+  operating systems, custom applications, and Web sites, and the number is enormous. 
+  In addition, once the scripts are created, they must be maintained. As the underlying 
+  systems change their interfaces, the scripts require changes. This results in 
+  an ongoing maintenance cost that is rarely considered. The scripting also hides 
+  the "front-door" to applications from the end users and thus might bypass important 
+  information on the login page such as security warnings.</p>
+            <p>A central proxy-SSO database of username and password mappings must also be 
+              created and maintained. This database must follow all password rules 
+              for all enterprise systems. It must be updated whenever underlying 
+              passwords are changed, or it must be the only system that changes 
+              passwords (creating yet another scripting task for each enterprise 
+              system). This doesn't even address systems that use other authentication 
+              mechanisms such as certificates, challenge-response, SecureID cards, 
+              etc.</p>
+
+<p>Here is a summary of the costs of proxy-SSO:</p>
+<ul>
+  <li>Initial costs 
+    <ul>
+      <li>Product purchase</li>
+      <li>Customization of product for existing systems. This usually involves 
+        creating custom scripts to drive the legacy systems. This is a large work 
+        effort.</li>
+      <li>Loading existing user information into the proxy-SSO solution and deploying 
+        to users.</li>
+    </ul>
+  </li>
+  <li>Ongoing costs 
+    <ul>
+      <li>The usual software upgrade costs</li>
+      <li>Another registry to maintain. This system must be highly available. 
+      </li>
+      <li>Password management by users. When passwords expire in the various legacy 
+        systems, users must update the legacy system and the SSO system. Since 
+        users are no longer familiar with the login procedure for the legacy systems, 
+        they may not even know their passwords<a href="#FOOTNOTE"><sup>4</sup></a><a name="FOOTNOTE 4"></a>. 
+        This may make it impossible for users to change their own passwords without 
+        assistance.</li>
+      <li>Script maintenance. As the legacy system user interfaces change, the 
+        scripts have to change. A significant work effort.</li>
+    </ul>
+  </li>
+</ul>
+<ol>
+</ol>
+
+<p>Many of these costs can be controlled by carefully designing the underlying 
+  applications to work with a script-based proxy-SSO solution, but this largely 
+  negates the main advantage of these proxy-SSO solutions: no need to modify legacy 
+  systems.</p>
+<p>On the benefit side, the proxy-SSO solution saves users the trouble of typing 
+  in their user name and password to several different systems several times per 
+  day and remembering all of these username and password combinations. While this 
+  is certainly an issue, it is not clear how much real benefit this provides to 
+  the organization. The most troublesome aspect of multiple authentication systems 
+  is probably remembering the number of passwords, not the actual authentication 
+  effort. This point will be revisited later. Of course, in high-cost situations, 
+  such as call centers, these benefits are significant and can probably justify 
+  the cost of a SSO solution. In other, more routine environments, the benefit 
+  is far less clear.</p>
+<p>From a security perspective, the results are mixed. The enterprise still has 
+  multiple incompatible security infrastructures and now has one more security 
+  product and one more user registry (another point of attack). On the positive 
+  side, if the proxy-SSO solution can manage the changing of user passwords in 
+  all legacy systems transparently, then users will no longer have difficulty 
+  remembering passwords and will no longer write them down.</p>
+<p>In summary, proxy-SSO solutions provide limited benefit to end users, do not 
+  address most of the operational and security costs of a heterogeneous security 
+  infrastructure, and introduce new operational costs.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>The Web</b></font></p>
+<p>Recently, efforts to achieve full SSO have largely died out. A newer form of 
+  limited SSO is becoming popular: Web-based SSO, in which products authenticate 
+  users using some mechanism and then create credentials that can be used by downstream 
+  Web applications for authorization<a href="#FOOTNOTE"><sup>5</sup></a><a name="FOOTNOTE 5"></a>. 
+  Unfortunately, as in the non-Web space, changing all existing Web systems is 
+  difficult. Thus, people are again embarking on proxy<a href="#FOOTNOTE"><sup>6</sup></a><a name="FOOTNOTE 6"></a>-SSO 
+  solutions for the Web. This is considered simpler because Web applications have 
+  just one interface: the Web browser. However, while a single user interface 
+  simplifies the problem, it does not mean that all Web applications authenticate 
+  the same way. There are many different ways of asking a user to authenticate. 
+  Even in a simple Web based application, the proxy-SSO scripting engine must 
+  be able to traverse an arbitrary Web application and enter input just as if 
+  the user had done so. This problem, while significantly simpler than enterprise 
+  proxy-SSO is still difficult.</p>
+
+<p>To script a Web interaction around a password-based authentication system, 
+  the following issues must be considered:</p>
+<ul>
+  <li>The initial request to the target site must be rerouted to the proxy-SSO 
+    server that will then retarget the request appropriately.<br>
+    <br>
+  </li>
+  <li>Basic authentication is trivial because the challenge protocol is well-defined 
+    and easy to intercept.<br>
+    <br>
+  </li>
+  <li>Form-based authentication presents the following unique problems: 
+    <ul>
+      <li>The login page must be loaded and parsed in order to extract the hidden 
+        fields and find the action and target servlet</li>
+      <li>Forms may ask additional questions beyond user name and password.</li>
+      <li>There may be more than one action on the form.</li>
+      <li>Sites may use elaborate JavaScript to challenge the user and/or encrypt 
+        the user's authentication information before sending it back to the server. 
+      </li>
+      <li>Browsers are notoriously lenient in their presentation of illegal HTML. 
+        The proxy-SSO solution needs to work with illegal but displayable HTML 
+        to avoid forcing changes to existing sites.<br>
+        <br>
+      </li>
+    </ul>
+  </li>
+  <li>Traversing a Web site to simulate a user login interaction requires addressing 
+    these issues: 
+    <ul>
+      <li>Some sites present informative messages to users before the login process 
+        starts. Bypassing these messages, particularly if they are security warnings, 
+        is problematic.</li>
+      <li>Cookies sent before the post-login welcome page of the target application 
+        must be preserved.</li>
+      <li>Sites that detect the browser type and make decisions before or during 
+        the login process must be handled. This information must be passed through 
+        from the browser by the proxy-SSO solution.</li>
+      <li>Sites may create dynamic URL strings during and before the login process 
+        with encoded information in the URL (for example, http://www.abc.com/index.html?session=12345). 
+      </li>
+      <li>Sites may pop up additional browser windows during the login process.<br>
+        <br>
+      </li>
+    </ul>
+  </li>
+  <li>Proxy server (in the Web proxy server sense) solutions must address these 
+    additional issues: 
+    <ul>
+      <li>URLs embedded in the responses must be rewritten to point to the proxy. 
+        Embedded URLs may be absolute (for example, http://www.abc.com/app/page.html), 
+        server root relative (for example, /app/page.html), or page relative (for 
+        example, page.html).</li>
+      <li>URLs embedded in JavaScript must be rewritten. For some systems, this 
+        may be impossible if the URLs are computed on the client. Even if not, 
+        this requires parsing the entire response stream looking for particular 
+        characters. This will affect performance.</li>
+      <li>Cookies sent back by the site must have the domain and path values rewritten 
+        to point to the proxy so the browser will not discard them.</li>
+      <li>Multiple sites, when combined under a single proxy, may reference resources 
+        that conflict with each other. URLs and cookie names may no longer be 
+        unique.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Some applications that appear to be Web applications are sufficiently complex 
+  that they are really full-fledged applications. Many Web applications use plug-ins, 
+  extensive JavaScript, and Java&#153; applets to create a fuller user experience. 
+  These types of applications may not be addressable via the techniques described 
+  above.</p>
+<p>Web application user interfaces change rapidly and this will affect scripts 
+  that depend on the existing interface. While the Web solution simplifies the 
+  client interaction problems, it is hardly trivial. Finally, the other operational 
+  issues (including heterogeneous infrastructure, multiple, registries, and password 
+  maintenance) associated with a proxy-SSO solution remain.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>An alternative approach</b></font></p>
+<p>We've discussed the weaknesses of the proxy-SSO approaches. Now it is time 
+  to try to determine an approach with as many of the benefits of "true" SSO as 
+  possible without new operational problems.</p>
+<p>Looking back at the benefits of SSO from section I, we can see that most of 
+  the benefits derive from the single registry. Here is the list again, this time 
+  with items highlighted in bold that are the direct result of a common registry.</p>
+
+<p><b>For end users</b></p>
+<ul>
+  <li>Only one authentication mechanism to remember<b>. For password-based authentication, 
+    this means only one password to remember and update, and one set of password 
+    rules.</b></li>
+  <li>A single sign-on for each user into the SSO domain, typically once per day. 
+  </li>
+</ul>
+
+<p><b>For operations</b></p>
+<ul>
+  <li><b>A single common registry of user information (possibly replicated)</b>. 
+  </li>
+  <li><b>A single common way to manage user information</b>.</li>
+  <li>A single common security infrastructure.</li>
+</ul>
+
+<p><b>Security advantages</b></p>
+<ul>
+  <li>A common secure infrastructure leveraged enterprise wide that can be carefully 
+    managed and secured.</li>
+              <li>Depending on the security approach, secure delegation of credentials is 
+                possible. This enables end-to-end security, possibly across application 
+                and system boundaries.</li>
+  <li><b>Easier to manage and protect common registry</b>.</li>
+  <li><b>Easier to verify user security information and update when necessary 
+    rather than tracking down all operational systems. This is particularly valuable 
+    when users move to new roles with different access levels.</b></li>
+  <li><b>Common enterprise-wide password</b> and security <b>policies</b>.</li>
+  <li><b>Users less likely to write down passwords since they only have to remember 
+    one</b>.</li>
+</ul>
+
+<p>From a business perspective, the items in bold are the ones with the greatest 
+  benefit. While a complete solution is most desirable, this comes remarkably 
+  close. While end users get most of the benefits of SSO with a single registry, 
+  an organization can also significantly reduce the cost of registry maintenance 
+  simply by consolidating to single registry. End users must authenticate multiple 
+  times per day using the same username and password, which, while irritating, 
+  is not a significant cost.<a href="#FOOTNOTE"><sup>7</sup></a><a name="FOOTNOTE 7"></a></p>
+<p>It's worth nothing that a proxy-SSO solution can be built on top of a common 
+  registry solution. This will greatly simplify the proxy-SSO problem and result 
+  in a better overall infrastructure. However, it is not clear if this is worth 
+  the additional cost given the limited benefit.</p>
+<p>Of course, there is no panacea. Using a common registry requires that all existing 
+  applications be migrated to use this new registry and that some organization 
+  must manage this critical business system. While not trivial, this cost will 
+  be leveraged across numerous applications that no longer have to manage a user 
+  registry.</p>
+<p>The best registry to choose is one that supports Lightweight Directory Access 
+  Protocol (LDAP). There are a number of LDAP server products,<a href="#FOOTNOTE"><sup>8</sup></a><a name="FOOTNOTE 8"></a> 
+  and most security and middleware products that support secure access can use 
+  an LDAP directory for authentication. Once an enterprise embarks on this effort, 
+  they may find that many applications can switch easily to LDAP simply by reconfiguring 
+  the middleware that they use. For example, Netscape Enterprise Server, Apache, 
+  IBM HTTP Server, AIX&reg;, Solaris, and WebSphere Application Server already 
+  support LDAP out of the box. Additionally, Microsoft ActiveDirectory can provide 
+  LDAP services to other clients.</p>
+<p>How to select an LDAP directory product is beyond the scope of this article. 
+  As with any enterprise product, you should examine vendor support, scalability, 
+  performance, replication, fault tolerance, extensibility, security, tools, and 
+  features. In particular, consider password management features, such as account 
+  lockout and strength rules. These are not part of the LDAP standard, so they 
+  will be vendor-specific.</p>
+<p>For applications that use custom security registries,<a href="#FOOTNOTE"><sup>9</sup></a><a name="FOOTNOTE 9"></a> 
+  change will be required. Fortunately, LDAP APIs are available for many programming 
+  languages, including C/C++, Java, and Perl. The APIs are quite simple so conversion 
+  of existing applications is feasible. While it is not realistic convert all 
+  existing applications, it is reasonable to expect new applications to use a 
+  common registry. Additionally, most PKI-based systems require a registry for 
+  user information, and LDAP is widely supported. Since many organizations are 
+  moving toward PKI anyway, this can be viewed as a stepping-stone toward a full 
+  PKI-based security infrastructure. Existing applications can be converted to 
+  use the LDAP registry as appropriate based on cost and benefit. Over time, this 
+  will greatly improve the situation without introducing a large and complex system 
+  that requires ongoing maintenance without significantly improving the situation. 
+  For those considering an SSO solution now is the time to act. With each passing 
+  day, more and more incompatible systems are being deployed in your enterprise.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>Conclusion</b></font></p>
+<p>The paper has discussed the costs and benefits of two approaches to SSO: a 
+  homogenous infrastructure and proxy-SSO. A practical alternative to SSO involving 
+  a common registry has also been discussed. The "true" SSO approach via a homogenous 
+  infrastructure and the alternative common registry approach are superior to 
+  the proxy-SSO approach in most situations.</p>
+<p>You should now more fully understand the issues, costs, and benefits surrounding 
+  SSO solutions. Analyzing the costs and benefits for your own organization requires 
+  careful analysis and experimentation by highly skilled people. Should you then 
+  decide to go forward with a proxy-SSO solution, you will at least understand 
+  the task that lies before you.</p>
+
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>To learn more</b></font></p>
+<p>Below is a list of SSO products ("true" SSO and proxy-SSO) as well as some 
+  other views on SSO.</p>
+<ol>
+  <li>&quot;<a href="http://www.infoworld.com/articles/es/xml/00/10/02/001002esnsso.xml">Single 
+    Sign-on dangles prospect of lower help desk costs</a>,&quot; an InfoWorld 
+    article that claims that proxy-SSO is just great.</li>
+  <li><a href="http://www.opengroup.org/security/topics.htm">Open Group security 
+    Web site</a> that includes discussions of SSO.</li>
+  <li><a href="http://www.tivoli.com/products/index/secureway_policy_dir/index.html">IBM 
+    Policy Director</a>, a product that supports SSO and a variety of other security 
+    features.</li>
+</ol>
+
+<p>Additional Information:</p>
+<ol>
+  <li>Reader unfamiliar with the terminology in this paper may wish to read "<a href="http://www.pittsburgh.ibm.com/~keys">Enterprise 
+    Application Security</a>" by Keys Botzum. It is in the documents section.</li>
+  <li><i>Understanding and Deploying LDAP Directory Services</i>, Howes, Smith, 
+    and Good, Macmillan Technical Publishing, ISBN 1-57870-070-1.</li>
+  <li>The HTTP Cookie specification, RFC #2965, available at the <a href="http://www.ietf.org">Internet 
+    Engineering Task Force (IETF) Web site</a>.</li>
+  <li><a href="http://www.ibm.com/software/network/directory/">IBM SecureWay LDAP 
+    Directory</a>.</li>
+  <li><a href="http://www.iplanet.com/products/iplanet_directory">Iplanet LDAP 
+    Directory</a>.</li>
+  <li><i>Understanding LDAP</i> (SG24-4986-00), available at the <a href="http://www.redbooks.ibm.com">IBM 
+    Redbooks Web site</a>, International Technical Support Organization.</li>
+</ol>
+
+<a name="FOOTNOTE"></a>
+<p><font face="Arial, Helvetica, Geneva" size="3"><b>Footnotes</b></font></p>
+<blockquote> <a href="#FOOTNOTE 1"><sup>1</sup></a> Taken from the <a href="http://www.opengroup.org/security/topics.htm">Open 
+  Group Web site</a> from the security section.<br>
+  <a href="#FOOTNOTE 2"><sup>2</sup></a> This amorphous group is the set of people 
+  that run the computer systems in this organization on a day-to-day basis.<br>
+  <a href="#FOOTNOTE 3"><sup>3</sup></a> WebSphere Application Server 3.5.3 or 
+  later supports a feature known as Trusted Associations that allows its security 
+  infrastructure to recognize (via custom coding) credentials from other security 
+  systems when provided to Web-based applications.<br>
+              <a href="#FOOTNOTE 4"><sup>4</sup></a> This can be alleviated by 
+              two approaches: 1) the proxy-SSO product can change passwords automatically 
+              although this will require still more scripting and a more complex 
+              product that understands the password rules for each underlying 
+              system, can detect when passwords are no longer valid, and can script 
+              the changing of passwords; 2) the proxied systems can move to fixed, 
+              never changing passwords. This 2nd approach is only feasible if 
+              the proxy is the only way to access the existing systems. Ensuring 
+              that raises a set of issues that are beyond the scope of this article.<br>
+  <a href="#FOOTNOTE 5"><sup>5</sup></a> IBM's SecureWay Policy Director is an 
+  example of a product that does provides Web-based SSO, although Policy Director 
+  provides far more than just that.<br>
+  <a href="#FOOTNOTE 6"><sup>6</sup></a> In this context the word proxy has nothing 
+  to do with a Web proxy server.<br>
+  <a href="#FOOTNOTE 7"><sup>7</sup></a> As before, in certain situations, such 
+  as call center applications, the cost of signing in repeatedly is significant.<br>
+  <a href="#FOOTNOTE 8"><sup>8</sup></a> IBM bundles our SecureWay LDAP Directory 
+  with many of our products, including WAS.<br>
+  <a href="#FOOTNOTE 9"><sup>9</sup></a> This alone should raise concerns. If 
+  an application team develops the registry, how does the enterprise security 
+  team know that the registry is well designed and well managed?<br>
+</blockquote>
+
+<p><a href="#top">Top of page</a></p>
+<p><a name="author"></a><font face="Arial, Helvetica, Geneva" size="3"><b>About the author</b></font></p>
+<p><b>Keys Botzum</b> is a consultant in the IBM Software Services for WebSphere 
+  group. Consultants like Keys help customers deploy IBM products into their organizations. 
+  If you are interested in engaging these consultants, please contact us at <a href="mailto:swsvcs@us.ibm.com">swsvcs@us.ibm.com</a>.</p>
+</font>
+<!-- Trademark area --> 
+<font face="Arial, Helvetica, Geneva" size="1"> 
+<hr>
+<p>AIX, IBM, and WebSphere are trademarks or registered trademarks of IBM Corporation 
+  in the United States, other countries, or both.</p>
+<p>Microsoft, Windows, Windows NT, and the Windows logo are trademarks or registered 
+  trademarks of Microsoft Corporation in the United States, other countries, or 
+  both.</p>
+<p>Java and all Java-based trademarks and logos are trademarks or registered trademarks 
+  of Sun Microsystems, Inc. in the United States, other countries, or both.</p>
+<p>Other company, product, and service names may be trademarks or service marks 
+  of others.</p>
+<p><a href="http://www.ibm.com/legal/copytrade.phtml">IBM copyright and trademark 
+  information</a></p>
+<p>&nbsp;</p>
+</font> 
+<!-- Tradmark area ends -->
+ 
+
+                              
+	   </td>
+          </tr>
+            
+          </table>
+	   </td>
+    <!-- END CONTENT AREA --><!-- END CONTENT AREA --><!-- END CONTENT AREA -->
+   </tr>
+</table>
+<!-- END MASTER TABLE --><!-- END MASTER TABLE --><!-- END MASTER TABLE -->
+<!-- INCLUDE FOOTER --><!-- INCLUDE FOOTER --><!-- INCLUDE FOOTER -->
+<!-- END_PRINTER_FRIENDLY_VERSION -->
+<!-- BEGIN footer.ssi INCLUDE FILE -->
+<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+<TR>
+<TD><IMG src="//www.ibm.com/i/c.gif" width="1" height="1" alt=""/></TD>
+</TR>
+<TR valign="top">
+<TD height="21" class="bbg">&nbsp;&nbsp;<A href="http://www.ibm.com/ibm/" class="mainlink">About IBM</A><SPAN class="divider">  |  </SPAN><A href="http://www.ibm.com/privacy/" class="mainlink">Privacy</A><SPAN class="divider">  |  </SPAN><A href="http://www.ibm.com/legal/" class="mainlink">Legal</A><SPAN class="divider">  |  </SPAN><A href="http://www.ibm.com/contact/" class="mainlink">Contact</A></TD>
+</TR>
+</TABLE>
+<!-- END footer.ssi INCLUDE FILE -->
+</BODY>
+</HTML>
+

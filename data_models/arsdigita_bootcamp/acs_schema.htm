@@ -1,0 +1,142 @@
+<HTML><HEAD><TITLE>ACS Schema</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/philg/japan/kiyomizu-dera_lge.jpg">
+<IMG ALT="Kyomizu Dera, Japan" BORDEeeR=1 SRC="../../images/philg/japan/kiyomizu-dera_sml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT COLOR=red FACE="Comic Sans MS" SIZE=4>
+<B>ACS Database Schema</B></FONT> 
+</TD>
+</TR>
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The tutorial example has 4 distinct objects: 
+  a Publication, a Magazine, an Article, and a Paragraph. 
+
+A Publication can be a magazine, a book, a journal, or something of a similar nature. 
+This example will use a Magazine, which is simply a collection of Articles. 
+The final element type is Paragraph. 
+Each paragraph belongs to an article and does not have any meaning outside the given 
+article (it is a composite relationship). 
+
+Finally, this example will assume that each author only has content in a single publication. 
+
+It will use the following schema: 
+
+create table publications (    
+			publication_id     integer 
+                       constraint publications_pub_id_nn
+                       not null 
+                       constraint publications_pub_id_pk
+                       primary key,    name               varchar(400)
+                       constraint publications_pub_id_nn
+                       not null    );
+
+create table magazines (
+		      magazine_id       integer
+                      constraint magazines_magazine_id_fk
+                      references publications
+                      constraint magazines_magazine_id_pk
+                      primary key,    issue_number      varchar(30));
+
+create table articles (    article_id        integer 
+                      constraint articles_article_id_pk
+                      primary key
+                      constraint articles_article_id_nn
+                      not null    title             varchar(700)
+                      constraint articles_title);
+
+create table magazine_article_map (    
+			magazine_id       integer
+                      constraint mag_article_map_mag_id_nn
+                      not null
+                      constraint mag_article_map_mag_id_fk     references magazines,    article_id        integer
+                      constraint mag_article_map_article_id_fk references articles
+                      constraint mag_article_map_article_id_nn not null);
+
+create table paragraphs (
+  		      paragraph_id      integer 
+                      constraint paragraphs_paragraph_id_pk primary key
+                      constraint paragraphs_paragraph_id_nn not null,    
+                      text              clob,
+                      article_id        integer
+                      constraint paragraphs_article_id_fk references articles
+                      constraint paragraphs_article_id_nn not null);
+
+create table authors (author_id         integer
+                      constraint authors_author_id_nn not null
+                      constraint authors_author_id_pk primary key,    
+			name              varchar(700)
+                      constraint authors_name_nn not null,
+		      publication_id    integer
+                      constraint authors_publication_id_fk
+                      references publications);
+
+
+</PRE>
+<HR>
+
+<P><B>Barry Williams</B>
+<BR>Principal Consultant
+<BR>Database Answers
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask Us a Question</A> 
+        | <A HREF="../../a_day_in_the_life.htm">Day in the Life</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2001</I></FONT></CENTER>
+
+</HTML>

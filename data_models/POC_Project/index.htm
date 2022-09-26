@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>Data Model for the POC Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script>#</script>
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="100%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="100" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=middle HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<A HREF="http://www.bulletpoint.com.au/animation-proof-of-concept/" TARGET=_NEW>
+<IMG ALIGN=middle ALT="Old Locks and Keys (Click for Web Site)" BORDER=0 hspace="0" vspace="4" SRC="images/proof_of_concept_sml.jpg">
+</td>
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="LEFT">
+<IMG ALT="Printer" SRC="../../images/printer_icon.gif">
+<A HREF="print_version.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Printer-friendly version</FONT></A>
+<nobr></p>
+</td>
+</TR>
+</table>
+
+<!--- START OF DEC 5th. Menu Bar --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td>
+	<td width="6%"><A STYLE="text-decoration:none" HREF="../../index.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Home</font></A></td>
+	<td width="11%"><A STYLE="text-decoration:none" HREF="../../pi_ask_a_question/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>
+	Ask a Question</font></A></td>
+	<td width="10%">
+	<A STYLE="text-decoration:none" HREF="../../pi_best_practice_display/index.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Best Practice</font></A></td>
+
+    	<td width="9%">
+<!--- <A STYLE="text-decoration:none" HREF="../../pi_communities/boards.asp"><font color="#FFFFFF" FACE=Verdana SIZE=2>Communities</font></A> --->
+	<A STYLE="text-decoration:none" HREF="../../careers.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Careers</font></A>
+	</td>
+	<td width="9%"><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+         <td width="10%"><A STYLE="text-decoration:none" HREF="../../data_models/index.htm"><font color=yellow FACE=Verdana SIZE=2>Data Models</font></A></td>
+          <td width="7%"><A STYLE="text-decoration:none" HREF="../../search.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Search</font></td>
+          <td WIDTH=20% WIiiiDTH=10% wiIIIdth="30%"><A STYLE="text-decoration:none" HREF="../../site_map.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Site Map</font></A></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--- END OF DEC 5th. Menu  Bar --->
+
+<!--- START OF PAGE NAME --->
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<TABLE bgcolor="#B0D8FF" BGCOLOuuuR="#98CEFD" BORDER=0 CELLPADDING=5 CELLSPACING=5 WIDTH=100%>
+  <tr>
+    <td height="32" background="../../images/nav_bg.jUg" align="left" valign=top>
+      <table width="10%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+   	<td  background="../../images/nav_bg.jpg" valign=top width="1%"><img src="../../images/spacer.gif" width="15" height="15"></td> 
+	<td ALIGN=left background="../../images/nav_bg.jpg" height="32" width="10%"><PRE><FONT COLOR=yellow coloUUUr="#FFFFFF" FACE=Verdana SIZE=2>Data Model for the POC Projects&nbsp;&nbsp;&nbsp;</font></td>
+	</tr>
+      </table>
+
+    </td>
+  </tr>
+</TABLE>
+<!--- END OF PAGE NAME --->
+
+
+<!--------------
+<A HREF='mailto:dba_requests@barryw.org?subject=Request for Database for the POC Project'>An Access Database</A> is available. 
+-------------------->
+
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+<td><FONT COLOR=blue FACE=Verdana SIZE=2>
+Possible Partners :-
+<LI><A HREF="http://www.agilesolutions.co.uk/case-studies/" TARGET=_NEW><B>Agile</B> Solutions</A>
+<LI><A HREF="https://solutions.appsheet.com/hubfs/AppSheet_Design_and_Architecture.pdf" TARGET=_NEW>App Sheet Design and Arch</A>
+<LI><A HREF="https://www.appsheet.com/how_to_make_an_app" TARGET=NEW>Appsheet 'Make an App'</A>
+<LI><A HREF="https://www.collibra.com/contact-us/" TARGET=_NEW>Collibra</A> (London EC2)
+<LI>GCP
+<LI>Google MySQL
+
+<LI><B>Informatica (Claire Platform)</B>
+<LI><A HREF="http://prologika.com/consulting/organizational-bi/" TARGET=_NEW>Prologika (Atlanta)</A>
+
+</td>
+</tr>
+
+<tr> 
+<td width="100%" bgcolor="#B0D8FF" valign="top"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<HR>
+<FONT COLOR=red>
+<B>My new stripped-down POC has these simple Steps :- 
+<BR>1.Create a Login
+<BR>2.Use a CSV file to create a Customer table (see below) and load one record into your new Customer table (Name='Bobby Caldwell', MFU='U') 
+<BR>3.Apply a simple change to the Customer Gender from 'U' to 'M'
+<BR>4.Use a CSV file to create an Events table and load one record into it. 
+</B></FONT>
+<HR>
+
+
+<FONT COLOR=red>CSV files have been created to design these tables and load them with data.</FONT>
+
+<BR><B>Load Spreadsheet data</B> for these two tables.
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/POC_Test_Data_April02nd.gif">
+</TD>
+</TR>
+</TABLE>
+
+
+<HR>
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><A HREF="facts.htm"><B>Click here</B></A> for the Specifications for POC Demo and all Events for each Platform</A>.
+<BR>I signed up for the Google Cloud Platform 12-month Free Trial (plus $300 voucher) on January 14th 2018.
+
+<BR><BR>On March 30th. I finalised my <B>Proof-of-Concept Services</B> to support User Scenarios like these shown below.
+
+<HR><B><FONT COLOR=blue>In Scenario A)</B><FONT COLOR=blue> The User records a (<A HREeeeeF="../inventory_reconciliation/index.htm">Reconciliation</A>) 
+
+<A HREF="../asset_management_self_service/index.htm">Self Service</A> Inventory</A> of the 
+<A HREeeeF="../asset_management/index.htm">Assets</A> (the furniture) that he puts into storage.
+
+<HR><B><FONT COLOR=blue>In Scenario B) </B><FONT COLOR=blue> the User goes to a Retail Store where he uses his mobile to <A HREF="../mobile_payments_services/index.htm"> pay</A> for a paper.
+
+<HR><B><FONT COLOR=blue>In Scenario C) </B><FONT COLOR=blue> the User signs up with 
+<A HREF="../agents_generic/index.htm">an Agent</A> for Entertainment and Recruitment
+
+<HR><B><FONT COLOR=blue>POC Services are</B> 
+1) <A HREF="../financial_services_platform/index.htm">Financial Svcs</A>
+, 2) <A HREF="../enterprise_data_model_for_logistics/index.htm">Logistics</A>
+, 3) <A HREF="../retail_sales/index.htm">Retail Sales</A>
+
+<HR>
+Backups are -
+<A HREF="../agents_generic/index.htm">1) Agents</A>, 2) <A HREF="../Assets_and_insurance/index.htm">Assets</A> 
+4) <A HREF="../hotels_platform2020/index.htm">Hotel Bookings</A>
+
+, 6) <A HREF="../payments_platform/index.htm">Payments</A>
+, 7 <A HREF="../removals_cloud_service/index.htm">Removals Cloud Services</A>
+, 9) <A HREF="../student_registration/index.htm"> Student Registration</A>
+,10) <A HREF="../supply_chains/index.htm"><B>Supply Chains</B></A> .
+<HR>
+<BR><BR>
+</B>
+</table>
+
+
+<TABLE>
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>Phase 1 and 2 Start here.
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/phase_1_and_2.jpg">
+</TD>
+</TR>
+<TABLE>
+<BR><BR>
+
+<CENTER>
+
+<TABLE BORDER=1>
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<FONT COLOR=red>CSV files have been created to create 
+<BR>these tables and load them with data.</FONT>
+<BR><B>Load Spreadsheet data</B>
+<BR> for these two tables.
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/POC_Test_Data_April02nd.gif">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Users and Services Logo</B><BR>
+<BR>
+<IMG SRC="images/Users_and_Services_logo.jpg">
+</TD>>
+</TR>
+
+<TR>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>Phase 1 and 2 Start here.
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/phase_1_and_2.jpg">
+</TD>
+
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>Print Weekly Report</B>
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/POC_Weekly_Report.gif">
+</TD>
+
+</TR>
+</TABLE>
+
+
+
+
+
+<TABLE BORDER=1>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>Phase 1 - Create Tables
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/phase_1_and_2.jpg">
+</TD>
+
+
+
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<FONT COLOR=red>CSV files have been created to create 
+<BR>these tables and load them with data.</FONT>
+
+<BR><B>Load Spreadsheet data</B>
+<BR> for these two tables.
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/POC_Test_Data_April02nd.gif">
+</TD>
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><BR><B>Print Weekly Report</B>
+<BR><BR>
+<IMG ALIGN=middle BORDER=1 SRC="images/POC_Weekly_Report.gif">
+</TD>
+</TR>
+</TABLE>
+
+<BR><BR>
+
+<TABLE BORDER=1>
+
+
+
+<TR>
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Phase 4 Proof of Concept
+<BR><br>
+<IMG ALIGN=middle BORDER=1 WIiiiDTH=1200 SRC="images/Phase_1_POC.jpg">
+</TD>
+
+
+<TD ALIGN=middle VALIGN=top><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><B>Complete Proof of Concept
+<BR><BR><IMG ALIGN=LEFT BORDER=1 WIiiiDTH=1200 SRC="images/layers.jpg">
+
+
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+</B>
+
+<FONT COLOr=blue FACE=Verdana SIZE=1>
+<BR>Barry Williams
+<BR>Principal Consultant
+<BR>Database Answers Ltd.
+<BR>London, England
+<BR>March 28th. 2018
+<BR>
+
+</FONT>
+<FONT COLOr=blue FACE=Verdana SIZE=1>
+<CENTER>
+<BR><I> &#169 Database Answers Ltd. 2018</I></FONT>
+</CENTER>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--- START OF MAY 21ST. BOTTOM MENU BAR --->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="32" background="../../images/nav_bg.jpg" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+	<td width="80%"><img src="../../images/spacer.gif" width="80" height="15"></td>
+	<td align=LEFT WIDTH=10%><A STYLE="text-decoration:none" HREF="../../about_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>About Us</font></A>
+</td>
+
+	<td align=LEFT WIDTH=15%><A STYLE="text-decoration:none" HREF="../../contact_us.htm"><font color="#FFFFFF" FACE=Verdana SIZE=2>Contact Us</font></A>
+	</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!--- END OF MAY 21st. BOTTOM MENU BAR --->
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

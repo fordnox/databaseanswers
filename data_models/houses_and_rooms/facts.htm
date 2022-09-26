@@ -1,0 +1,126 @@
+<HTML><HEAD><TITLE>Houses and Rooms</TITLE></HEAD>
+
+<BODY TEXT="#202020">
+
+<TABLE BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Database Answers Header" HEIGHT=58 WIDTH=400 SRC="../../images/dba_banner_and_btn_400.jpg">
+</TD>
+
+<TD ALIGN=right ROWSPAN=2 VALIGN=top>
+<A HREF="../../images/bienecke.jpg">
+<IMG ALT="The Bienecke Library, Yale which is one very large Room with translucent Green Marble Walls" BORDER=0 SRC="../../images/bienecke_xsml.jpg"></A>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=left VALIGN=top>
+<IMG ALT="Houses & Rooms" SRC="../../images/buttons/button_studio/houses_and_rooms.gif">
+<!--- <IMG ALT="Reservations" SRC="../../images/buttons/button_studio/rt_reservations.gif"> --->
+</TD>
+</TR>
+
+</TABLE>
+
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<!-- end Standard Header - Version 3-->
+
+<TABLE BGCOLOR=blue BORDER=0 WIDTH=90%>
+<TR>
+<TD ALIGN=left COLSPAN=1 VALIGN=TOP WIDTH=40>
+<A HREF="../../index.htm"><IMG ALT="Home" BORDER=0 SRC="../../images/buttons/home_alt.gif"></A>
+</TD>
+
+<TD ALIGN=left VALIGN=top WIDTH=100>
+<A HREF="../../ask_a_question.htm"><IMG ALT="Ask a Question" BORDER=0 SRC="../../images/buttons/ask_a_question_alt.gif"></A>
+</TD>
+<TD ALIGN=middle VALIGN=top WIDTH=60>
+<A HREF="../../careers.htm"><IMG ALT="Careers" BORDER=0 SRC="../../images/buttons/careers_alt.jpg"></A>
+</TD>
+<TD ALIGN=left BGCOLOR=white VALIGN=top WIDTH=85>
+<A HREF="../../data_models/index.htm"><IMG ALT="Data Models" BORDER=0 SRC="../../images/buttons/data_models_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../faqs.htm"><IMG ALT="FAQs" BORDER=0 SRC="../../images/buttons/faqs_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=75>
+<A HREF="../../sql_scripts/index.htm"><IMG ALT="SQL Scripts" BORDER=0 SRC="../../images/buttons/sql_scripts_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=50>
+<A HREF="../../site_map.htm"><IMG ALT="Search" BORDER=0 SRC="../../images/buttons/search_alt.gif"></A>
+</TD><TD ALIGN=left VALIGN=top WIDTH=62>
+<A HREF="../../site_map.htm"><IMG ALT="Site Map" BORDER=0 SRC="../../images/buttons/site_map_alt.gif"></A>
+</TD>
+<TD>&nbsp</TD>
+</TR>
+
+</TABLE>
+
+<TABLE BGCOLOR="98CEDF" WIDTH=90%>
+<TR><TD><FONT COLOR=blue FACE=Verdana SIZE=2>
+
+<A HREF="index.htm">The Data Model</A> is available.
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Purpose of the Data Model :-</B>
+The purpose is to be determined.
+
+<B>Scope of the Data Model :-</B>
+The Scope includes House, Rooms and Cabinets.
+
+<B>Things of Interest :-</B>
+1. Builders
+2. Cabinets
+3. Divisions
+4. External Areas,(eg Patios or Pools).
+5. Houses
+6. Owners
+7. Rooms
+8. Room Features, such as a Prefinish Color or an Entertainment Center
+9. Sub-Divisions
+
+<B>Facts about the Things of Interest :-</B>
+1. The same kind of Cabinet can appear more than once in the same Room.
+2. The same kind of Cabinet can appear more than once in the same External Area.
+3. The Features Table will hold one record for every possible Feature.
+4. Features in the Features Table can apply to either Rooms or External Areas,
+   (or perhaps both).
+5. Every Feature will not appear in every Room.
+6. The same Feature,(eg Prefinish Color or Entertainment Center) can only 
+   appear once in the same Room (Ray - is this correct ?).
+7. A House can have one and only one Builder.
+8. A House may or may not be on a Division.
+9. A House may or may not be on a Sub-Division.
+10. A House can have one or many Owners.
+11. A House can have one or many Rooms.
+12. A House always has one Name and one Owner.
+13. A Room can have zero, one or many Cabinets.
+12. A Room may be an Exterior Room.
+13. A Room may be an Interior Room.
+14. A Room may have a number of optional Room Features, such as Sink Cutout.
+   These Features are stores in the Reference Table caled 'Ref_Features'.
+   Records are created as required for specific Features 
+   in Specific Rooms in the Room_Features Table.
+15. An Entertainment Center is a type of Room Feature.
+</PRE>
+
+<P><B>Barry Williams</B>
+<BR>January 14th. 2003
+<BR>Principal Consultant
+<BR>Database Answers
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+<CENTER><FONT COLOR=blue FACE=Verdana SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question_rbw.php3">Ask Me a Question</A> 
+        | <A HREF="mailto:info@databaseanswers.com">Email Us</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+<!-- End of  Standard Footer -->
+
+<CENTER><FONT SIZE=1><I> &#169 Database Answers.com 2003</I></FONT></CENTER>
+</TD></TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

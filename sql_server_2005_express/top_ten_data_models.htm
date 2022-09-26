@@ -1,0 +1,504 @@
+<html>
+<head>
+<title>Draft Data Models Page for Mark at Microsoft</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing=5 cellpadding=5 bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 VALIGN=middle><img src="../images/dba_400_home.jpg" width=400 height=58 alt="Database Answers"></TD>
+<TD ALIGN=right ROWSPAN=2 WIDTH=100%>
+<A HREF="http://www.coding4fun.net" TARGET=_NEW>
+<img ALT="Coding4Fun Poster Tattoo Dude"
+src="../images/mark_at_microsoft/c4f-poster-tattoodude_vsml.jpg" hspace="0" vspace="4" wiIIIdth=244 heiIIIght=80></A></td>
+</tr>
+<TR><TD><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></td></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../pi_ask_a_question/index.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr>
+
+<!---
+	<td width="90" background="../images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+	<img src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+     	<p><img src="../images/spacer.gif" width="90"></p></td>
+--->
+
+	<td valign="top"><img src="../images/spacer.gif" width="3" height="239"></td> 
+	<td width="100%" bgcolor="#B0D8FF" valign="top">
+		<img src="../images/spacer.gif" height=20> 
+
+            <table width=95% WIiiiDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                <td colspan="3" width="100%" align="right" class="header1">Welcome to the SS5EE/Coding4Fun Data Models Page<img src="../images/spacer.gif" width="5" height="1"> 
+                </td>
+          <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="../images/spacer.gif" width="8" height="1"></td>
+        	<td width="100%"> 
+
+<img ALIGN=left src="../images/boschendal_vertical_sml.jpg" width="81" height="122" vspace="5"> 
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>These Data Models have been contributed by <A HREF="mailto:ssx_enquiries@barryw.org" TARGET=_NEW><B>Barry Williams</B></A>, Principal Consultant with <A HREF="http://www.databaseanswers.org/data_models/index.htm" TARGET=_NEW>Database Answers</A>.
+
+1) This Page is designed to help you get started with designing a Database to support your work using SS5EE and/or in Coding4Fun.
+The Data Models on this page are taken from the Top 20 of the <A HREF="../databases_in_demand.htm">Most Popular Models</A> around the world.
+
+If you are a Beginner, then we suggest you choose one of the first five Data Models.
+If you are an Enthusiastic, then the second five are for you.
+
+You can download the SQL Script to create the Tables in SQL Server 2005 Express Edition,(SS5EE).
+You can also take a look at a diagram for each Data Model.
+<!--- Here's a Data Model for <A HREF="../data_models/coding4fun/index.htm">a typical Coding4Fun Project</A> for discussion purposes. --->
+2) We are producing <B>Tutorials</B> around the Data Models.  <!---   See for example the video tutorials at http://msdn.microsoft.com/vstudio/express/sql/learning/default.aspx --->
+3) We also publish <B>monthly articles</B> on database topics, targeted to the beginner or enthusiast developer.</PRE>
+
+<!--- Here's an <A HREF="top_ten_data_models_alt.htm"><B>alternative</B></A> list of Data Models that support Chapters in a forthcoming Tutorial.</PRE>  --->
+                        </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+<!---        <tr> </tr>
+        <tr> </tr>
+--->      </table>
+<!---      <br> --->
+            <table WIDTH=95% WIiiiDTH=90% wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+              <tr> 
+                <td rowspan="4" valign="top" width="30"><img src="../images/spacer.gif" width="21" height="1"></td>
+                <td width="61">&nbsp;</td>
+                <td rowspan="4" width="6"><img src="../images/spacer.gif" width="6" height="1"></td>
+                
+              <td colspan="3" width="100%" align="right" class="header1">Here is a set of 10 Useful Data Models Designs to Help you get Started<img src="../images/spacer.gif" width="5" height="1"> 
+              </td>
+                <td width="3" bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="20"></td>
+              </tr>
+              <tr> 
+                <td rowspan="3" valign="top" width="1">&nbsp;</td>
+                <td colspan="4" height="3" rowspan="3" valign="top"> 
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+                    <tr bgcolor="#FF9900"> 
+                      <td><img src="../images/px-orange.gif" width="1" height="3"></td>
+                    </tr>
+                  </table>
+                  <table width="100%" border=0 cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td bgcolor="#FF9900"><img src="../images/px-orange.gif" width="3" height="1"></td>
+                      <td><img src="../images/spacer.gif" width="8" height="1"></td>
+                      
+                    <td width="100%" valign="top"> <img src="../images/spacer.gif" height=1 width="1"> 
+<br>
+                        <table wiIIIdth="590" border=0 cellspacing="0" cellpadding="0">
+                          <tr> 
+                            <td width="25"><img src="../images/spacer.gif" width="25" height="1"></td>
+                            <td bgcolor="#3399CC" width="20"><img src="../images/circle1.gif" width="20" height="20"> 
+                            </td>
+                            <td bgcolor="#3399CC" class="header2" width="100%"> 
+                              <div align="center">A set of Ten Data Model Designs to be made available in the Launch, taken from the 
+				<A HREF="../databases_in_demand.htm"><B>most popular around the world</B></A></div>
+                            </td>
+                            <td bgcolor="#3399CC" width="20" valign="top" align="right"><img src="../images/circle2.gif" width="20" height="20"></td>
+                          </tr>
+                          <tr> 
+                            <td wiIIIdth="25">&nbsp;</td>
+                            <td colspan="3"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="3" bgcolor="#3399CC">
+
+<!---				<tr bgcolor="#B0D8FF"> 
+                          	<td ALIGN=middle class="cell" COLSPAN=3 wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<B><I>&nbsp</I></td>
+                                </tr>
+--->
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><B>Nr.</B></TD>
+                               	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8"><B>Title</B></td>
+                             	<td ALIGN=middle class="cell" wiIIIdth="50%"><B>Tables in the Data Model</B></td>
+				<td ALIGN=middle class="cell" wiIIIdth="50%"><B>Level</B></td>
+                            	<td ALIGN=middle class="cell" wiIIIdth="50%"><B>Download</B></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">1</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" HREF="../data_models/cd_collection/index.htm">CD Collections</a></td>
+			
+                             	<td class="cell" wiIIIdth="50%">Includes Artists, CDs, Tracks and Record Companies.
+<!---				<A HREF="sql_scripts/cre_cd_collections_tables.zip">download SQL Script</A>. --->  
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beginner</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A HREF="sql_scripts/cre_cd_collections_tables.zip">SQL</A></TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">2</TD> 
+                               	<td class="cell" width="20%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/apartment_rentals/index.htm">Apartment Rentals</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Apartments, Guests and Bookings.</td>
+
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beginner</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">3</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/hotels/index.htm">
+				Hotel Reservations</A></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Hotels, Guests, Rooms and Bookings.</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beginner</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">4</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/video_rental_store/index.htm">Video Rentals</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Customers, Inventory and Rentals.
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beginner</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">5</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/inventory_control_for_retail/index.htm">
+				Inventory Control</A></td>
+                             	<td class="cell" wiIIIdth="50%">For Retail Stores, and includes Vendors, Product Items, and Stock Levels.
+				</td>
+
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Beginner</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">6</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" HREF="../data_models/school_management_system/index.htm">School Management</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Students, Teachers and Parents.</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Enthusiast</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">7</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" HREF="../data_models/clients_and_fees/index.htm">Clients and Fees</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Clients and Fees.  
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Enthusiast</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">8</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" HREF="../data_models/health_clubs/index.htm">Health and Fitness Clubs</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Classes, Members and Staff.  
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Enthusiast</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">9</TD> 
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/customers_and_invoices/index.htm">
+				Customers and Invoices</A></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Accounts, Customers, Invoices, Products and Transactions.
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Enthusiast</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF">
+                              	<td ALIGN=middle class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">10</TD> 
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/libraries_and_books/index.htm">Libraries and Books</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Authors, Books and Members, (for the Enthusiast).
+				</td>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">Enthusiast</TD>
+				<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                                </tr>
+
+<!---				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">10</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/school_management_system/index.htm">School Management</a></td>
+                             	<td class="cell" wiIIIdth="50%">Includes Students, Parents, Teachers and Homework. Also shows the concept of <B>Inheritance</B> (for the Enthusiastic).
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">10</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="../data_models/star_physical.htm">Data Warehouse</a></td>
+                             	<td class="cell" wiIIIdth="50%">Star Schema for a Data Warehouse of Financial Transactions, (for the Enthusiast).
+				</td>
+--->
+
+<!--- Try a <A HREF="c4f_user_home_page.htm">rough approximation of the C4F version</A>. --->
+<!---				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">-</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" HREeeeF="../data_models/coding4fun/index.htm">Coding4Fun Baby</a></td>
+                             	<td class="cell" wiIIIdth="50%">Shows life through the eyes of the Coding4Fun Baby (shown at the top of this page), (for the Beginner).  
+				<BR><FONT COLOR=red>Mark</FONT>, I have included this because it corresponds to my idea of creating a series of Models reflecting the
+				'Passages' in a person's life.
+				But we can exclude this from the initial list if you prefer.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">-</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="../data_models/coding4fun/index.htm">Coding4Fun Projects</a></td>
+                             	<td class="cell" wiIIIdth="50%">A draft Model to help plan and manage Projects.  
+				</td>
+                                </tr>
+--->
+
+
+<!---
+				<tr bgcolor="#B0D8FF"> 
+                          	<td ALIGN=middle class="cell" COLSPAN=3 wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<B><I>Tutorials on Designing Databases</B> ...</I></td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">&nbsp</TD>
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<A class="cell" HREF="tutorials.htm" HREF="../tutorial_on_data_modelling.htm">Tutorials</a></td>
+                             	<td class="cell" wiIIIdth="50%">Gets you started with Data Modelling in the Real World, (for the Beginner).
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                          	<td ALIGN=middle class="cell" COLSPAN=2 wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<B><I>Links for SQL Server 2005 Express Edition</B> ...</I></td>
+                                </tr>
+
+                            	<tr bgcolor="#B0D8FF"> 
+                         	<td class="cell" width=25%><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="http://www.microsoft.com/sql/express" TARGET=_NEW>SQL Server Express Edition</a></td>
+                           	<td class="cell" wiIIIdth="50%">
+				SQL Server 2005 Express Edition is the next version of MSDE and is a free, easy-to-use, lightweight, and embeddable version of SQL Server 2005. 
+				Free to download, free to redistribute, free to embed, and easy for new developers to use immediately. 
+				<BR>SQL Server Express includes powerful features such as SQL Server 2005 Reporting Services, a server-based 
+				platform for creating and delivering traditional and interactive reports, and a graphical management tool.
+				<BR>SQL Server 2005 Management Studio Express, for easily managing your database. Best of all, as your needs grow, your applications will 
+				<BR>seamlessly work with the rest of the SQL Server product family.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="http://www.coding4fun.net" TARGET=_NEW>Coding4Fun Site</a></td>
+                             	<td class="cell" wiIIIdth="50%">Fire up your code editor, open an article, and start coding for fun.  
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                               	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="8">
+				<a class="cell" href="http://msdn.microsoft.com/coding4fun/whoweare/default.aspx" TARGET=_NEW>Coding4Fun Mission</a></td>
+                             	<td class="cell" wiIIIdth="50%">Mission Statement.
+				</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://msdn.microsoft.com/coding4fun/coolapplications/KPL/default.aspx" TARGET=_NEW>
+				Kid's Progamming Language</A>
+				</td>
+                            	<td class="cell" wiIIIdth="50%">Progammimg can be <B>fun for Kids</B> !.</td>
+                                </tr>
+  
+                                <tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.microsoft.com/downloads/details.aspx?familyid=D842F8B4-C914-4AC7-B2F3-D25FFF4E24FB&displaylang=en" TARGET=_NEW>
+				Migration from Access</a>
+				</td>
+                            	<td class="cell" wiIIIdth="50%">SQL Server Migration Assistant for Access.</td>
+                                </tr>
+  
+ 				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://www.microsoft.com/sql/solutions/migration/default.mspx" TARGET=_NEW>
+				Migration from Access</a>
+				</td>
+                            	<td class="cell" wiIIIdth="50%">You will find <B>Documentation</B> half-way down the page.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://msdn.microsoft.com/vstudio/express/sql/learning/default.aspx" TARGET=_NEW>
+				Tutorials</a>
+				</td>
+                            	<td class="cell" wiIIIdth="50%">Getting started with Visual Studio Express.</td>
+                                </tr>
+
+				<tr bgcolor="#B0D8FF"> 
+                              	<td class="cell" wiIIIdth="50%"><img src="../images/white-point.gif" width="17" height="7">
+				<a class="cell" href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnsse/html/VWD_SSE.asp" TARGET=_NEW>
+				Web Development</a>
+				</td>
+                            	<td class="cell" wiIIIdth="50%">Using Visual Web developer.</td>
+                                </tr>
+--->
+                              </table>
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399CC">
+                                <tr>
+                                  <td><img src="../images/circle4.gif" width="20" height="20"></td>
+                                  <td width="100%">&nbsp;</td>
+                                  <td align="right"><img src="../images/circle3.gif" width="20" height="20"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                </td>
+              </tr>
+              <tr> </tr>
+              <tr> </tr>
+            </table>
+            <br>
+    </td>
+  </tr>
+</table>
+
+
+
+
+        </TD>
+      </TR></TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<!--- START OF TOP MENU BAR --->
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../images/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../index.htm"> <img name="menu_home" src="../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><a href="../ask_a_question.htm"><img name="menu_question" src="../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../careers.htm"> <img name="menu_careers" src="../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../contact_us.htm"><img name="menu_contact" src="../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../data_models/index.htm"><img name="menu_models" src="../images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../first_timers.htm"><img name="menu_timers" src="../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../search.htm"><img name="menu_search" src="../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../site_map.htm"><img name="menu_map" src="../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+	</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/spacer.gif" width="663" height="3"></td></tr>
+</table>
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

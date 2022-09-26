@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD><TITLE>Mapping UML to ERD</TITLE></HEAD>
+
+<BODY BACKGROUND="images/gmi_bk.jug" BGCOLOuR="#FFFFCC" TEXT="#202020">
+
+<A NAME="TOP">
+
+<TABLE BGCOLOoooR="#FFFFCC" BORDER=0 CELLPADDING="0" WIDTH=80%>
+<TR>
+<TD ALIGN=left VALIGN=top><H1><IMG ALT="Database Answers Logo" BORDER=0 HEIiGHT=66 WIiDTH=494 SRC="../../images/dba_banner_and_btn_400.jpg"></TD> 
+<TD ROWSPAN=2>
+<A HREF="../../images/philg/hawaii-captain-cook-monument-fish-55_3.jpg">
+<IMG ALIGN=right ALT="Monument Fish, Hawaii, Click for large picture (80K)" BORDER=0 WIDTH=196 HEIGHT=134 
+SRC="../../images/philg/hawaii-captain-cook-monument-fish-55_1.jpg">
+</A>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=bottom><FONT COLOR=red FACE="Comic Sans MS" SIZE=4> 
+<B>Translating a UML Model to an Entity-Relationship Diagram</B>
+</FONT> </TD>
+</TR>
+</TABLE>
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<HR>
+<!-- end Standard Header - Version 4 26th.Nov 2000 --->
+
+<A NAME="TOP">
+
+<!-- begin body Text -->
+<FONT COLOR=blue FACE=Verdana SIZE=2><B>Some Background</B>
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2>The Relational model is very well-established.
+Object databases, by comparison, are very immature and making progress very slowly. 
+One of the best features of Relational Databases is that they are supported by a very 
+well-known and proven underlying mathematical theory.
+This is a simple set theory that has many benefits, including schema generation from high-level models. 
+
+The pure Object Databases will never reach these capabilities of Relational Databases. 
+The Object paradigm is already proven for application design and development, but it may 
+simply not be an adequate paradigm for the data store. 
+
+Hybrid Object-Relational databases will probably be the long term trend for the industry.</PRE>
+
+<HR>
+<B>Translating a UML Model to an Entity-Relationship Diagram</B>
+<BR> A series of simple rules can be followed to translate an Entity-Relationshion Diagram,("ERD"), into a Database design.
+<BR>Translating a UML Model into a Database design can follow similar rules, with some additional rules to account for 
+<BR>some of the expanded features of UML Models.
+<BR>This table defines a suitable sequence of steps to translate a UML Model into an ERD :-
+
+<BR><BR>
+
+<CENTER>
+<TABLE BORDER=3>
+<TR>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><B>Nr.</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><B>TASK</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>1</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Every UML Class becomes a Table</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>2</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Every UML Attribute in Class becomes a Column in a Table</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>3</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Every UML Attribute Type becomes a Column Type using a Type Transformation Table</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>4</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Every NULLable UML Attribute becomes a NULLable Column, otherwise NOT NULL constraint</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>5</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+If UML Attribute has Initializer, add DEFAULT value to Colum</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right><FONT COLOR=blue FACE="Verdana" SIZE=2><B>6</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+For Classes with no generalization and implicit identity, create primary key</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>7</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+For Sub-Classes, add the key of each parent class to the Primary Key of the Table and to a 
+<BR>Foreign Key constraint</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>8</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+For Association Classes, add the primary key from each role-playing table to PRIMARY KEY
+<BR>constraint and FOREIGN KEY constraint</TD>
+</TR>
+
+<TR>
+<TD ALIGN=right VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>9</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Add FOREIGN KEYs for each 0..1, 1..1 for each Role in an Association</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>10</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Create PRIMARY KEY for composite aggregations with FOREIGN KEY to 
+<BR>aggregating tables and add additional column for PRIMARY KEY</TD>
+</TR>
+
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>11</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Create Tables for many-to-many associations with no association classes</TD>
+</TR>
+
+<TR>
+<TD VALIGN=top><FONT COLOR=blue FACE="Verdana" SIZE=2><B>12</TD>
+<TD><FONT COLOR=blue FACE="Verdana" SIZE=2><A HREeeF="1_uml_class_becomes_table.htm">
+Create PRIMARY KEY, FOREIGN KEY constraints from keys of role-playing tables in 
+<BR>many-to-many associations.
+</TD>
+</TR>
+
+</TABLE>
+
+</CENTER>
+
+<BR>
+
+</BODY>
+
+<!-- Start of Standard Footer -->
+<HR SIZE=3>
+
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">Home Page</A>
+        | <A HREF="../../ask_a_question.htm">Ask me a Question</A> 
+        | <A HREF="../../sql_scripts/index.htm">SQL Scripts</A>
+        | <A HREF="mailto:dba@kpisystems.com">Email</A> 
+        | <A HREF="../../faqs.htm">FAQs</A> 
+        | <A HREF="../../site_map.htm">Search & Site Map</A> ]
+</CENTER>
+
+
+<!-- Start of Standard Footer -->
+<!---
+<HR SIZE=3>
+<CENTER><FONT FACE="Verdana" SIZE=1>        
+        [ <A HREF="../../index.htm">DBA Home Page</A>
+        | <A HREF="../index.htm">Collaboration Home Page</A>
+        | <A HREF="../collab_data_models/index.htm">Collaboration Data Models</A> 
+        | <A HREF="mailto:collaboration@databaseanswers.com">Email Us</A>  
+        | <A HREF="../../sql_scripts.htm">SQL Scripts</A> 
+        | <A HREF="../../site_map.htm">Site Map</A> ]
+</CENTER>
+<HR SIZE=3>
+--->
+
+<!-- End of Collaboration Footer -->
+
+<BR><BR>
+<CENTER><FONT SIZE=1><I> &#169 IceBreaker WebDesigns 2000</I></FONT></CENTER>
+
+
+</HTML>

@@ -1,0 +1,314 @@
+<html>
+<head>
+<title>Dance School User Requirements</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="../../styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border=0 cellspacing=0 cellpadding=0><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" border=0 cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<td height="68" valign="middle"><img src="../../images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<td ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" valign=middle>
+<IMG ALT="Ballet Dancers, Boise, Idaho." BORDER=0 SRC="images/ballet_dancers.jpg"> 
+</td>
+</tr>
+
+<TR>
+<td width="100%" align="right">
+<p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT>
+
+</td>
+</TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-top-blue.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="100%" BGCOLOuuuR="0099FF" bgcolor="#B0D8FF" valign="top"> 
+<!--- <img alt="Health Insurance Claims" src="../../images/data_model_names/health_insurance_claims.gif" height=24 width="449"> --->
+<img alt="Dance School" height=24 width="449" src="images/dance_school_logo.gif"> 
+
+<table width="90%" border=0 cellspacing="0" cellpadding="0">
+<tr> 
+<td width="21"><img src="../../images/spacer.gif" width="31" height="1"></td>
+<td width="100%">
+<FONT COLOR=blue FACE=Verdana SIZE=2>
+<A HREF="index.htm">Back to the Data Model</A> 
+
+<PRE><FONT COLOR=blue FACE=Verdana SIZE=2><B>The Requirements have been defined as follows :-</B>
+A Database for a Dance School, covering Students, Teachers, Classes, Exams and Billing.
+<HR>
+The current situation is characterised by a complete lack of Management Information.
+The people who run the school have no idea who is where, when, . what, in what, who owes what etc....
+
+Here is a kind of detailed spec broken into sections. 
+I've tried to think of everything but there's probably more - so here it is :-
+
+<B>STUDENT</B>
+Name
+Date of Birth
+Current Age (report only)
+Gender
+Mobile No.
+Email Address
+Address
+Home Phone Number
+Mothers Name
+Contact Number
+Skills
+Fathers Name
+Contact Number
+Skills
+Medical Conditions / Allergies
+Date Started
+Date Finished
+Emergency Contact
+Emergency Contact Number
+Emergency Contact Relationship
+Start Date/Restart Date
+Finish Date
+Option of pictures
+
+
+<B>TEACHERS</B>
+Name
+Address
+DOB
+Available Cover (multiple selection of classes)
+Contact Details
+Emergency Contact
+Teaching schedule (which class on which day)
+NB some teachers are also students (could possibly even be a parent)
+
+
+<B>CLASSES</B>
+Register
+Attendance
+Time
+Day
+Grade (some classes have multiple grades)
+Subject
+Fee
+
+
+<B>EXAMINANTIONS</B>
+Student
+Grade (mainly same grades as classes plus some extras)
+Subject
+Result
+Pass/Fail
+Fee
+Payment Date
+Payment type
+Auto Update every pass to next grade lesson on class register for same day
+
+
+<B>BILLING</B>
+Class Fees
+Student / Student Family expected fees for calendar month
+Date payment due (1st occurring lesson of calendar month)
+Actual payment
+Actual payment date
+Payment Type (cash/cheque option to include card payment at a future date)
+New starters pay weekly (maximum 6 weeks) to first date next calendar month.
+6 weeks in case start in last 2 weeks of month.
+Pop up to state who not paid and how much they owe.
+Non-attendance & non-payment for 4 consecutive weeks - auto finish pupil -
+not including holidays. Option to restart.
+Option to manually wipe/adjust unpaid fees.
+
+Rehearsal Fees
+Student / Student Family
+Actual payment
+Actual payment date
+Payment Type (cash/cheque option to include card payment at a future date)
+Event Name
+Event Type - Show/Exam
+Grade - Show Grade/Examination grade
+
+<B>SHOWS/PERFORMANCES</B>
+Show/Performance Name
+Organisation
+Address
+Contact Person
+Contact Number
+Contact Email
+Dance Name
+Dance Type (same as class subject)
+Show Grade (different to class grade)
+Student
+Student Contact Number
+Accompanied By: (generally name of parent/guardian option to add other
+person name)
+Date of Performance
+Time of Performance
+Costume Description
+Costume Maker & contact details (generally parents & emergency contacts)
+Prop Description
+Prop Maker & contact details (generally parents & emergency contacts)
+
+<B>Rehearsals/Mock Exams/Dress Rehearsal</B>
+
+For which event - exam / show
+Location
+Student
+Grade
+Subject / Dance Name
+Date
+Time
+Type (as per title)
+Fee
+
+<B>REPORTS & FORMS</B>
+Class registers - view / amend electronically & printable
+Registration form filled electronically and printed off for parent/guardian
+signature & filing.
+Event Register - sign in and out form / list of students due to attend with
+space for payment received - view electronically / print off
+Fees owed / people in arrears - view electronically / print off
+Payments - lists fees due per student/family fees and can enter in payment
+made & method
+Fees Paid - available per class, grade, day, and any other you can think
+of - view electronically / print off.
+Forecast against actual - view electronically / print off
+Attendance per class - view electronically / print off
+Examination Results per Exam - Overall/Class/Grade/Pupil/Subject - view
+electronically / print off
+Students Examination Register (to print off and send to examination board to
+advise who is taking which exam - Name of student, age of student, Date of
+Birth (either report date or exam date), which subject and grade).
+List of Classes
+List of people in a particular show dance with contact numbers
+Data Protection button - askes if ?10 admin fee received, if yes allows
+selection of a person and prints off all info to do with that person.
+<HR>
+<B>A. What are the Things of Interest :-</B>
+A.1 Billing
+A.2 Classes
+A.2 Exams
+A.3 Students
+A.4 Teachers
+
+<B>C. How are these Things of Interest related ?</B>
+C.1 A Student can take one or many Classes.
+C.2 A Class can have zero, one or many Students.</PRE>
+
+<p class="cell"><FONT COLOR=blue FACE=Verdana SIZE=2>
+<BR><b>Barry Williams</b> 
+<BR>10th. October 2004
+<br>Principal Consultant
+<br>Database Answers</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+
+</TD>
+</TR>
+</TABLE>
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="../images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="../images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="../../images/v3/px-blue.gif" bgcolor="#3366CC">
+<tr>
+	<td><img src="../../images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="../../index.htm"><img name="menu_home" src="../../images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="../../images/v3/curve-bottom-blue-dark.gif" width=28 height=24></td>
+	<td><a href="../../ask_a_question.htm"><img name="menu_question" src="../../images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="../../careers.htm"> <img name="menu_careers" src="../../images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="../../contact_us.htm"><img name="menu_contact" src="../../images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="../../data_models/index.htm"><img name="menu_models" src="../../images/v3/menu-models-active.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="../../first_timers.htm"><img name="menu_timers" src="../../images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="../../search.htm"><img name="menu_search" src="../../images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="../../site_map.htm"><img name="menu_map" src="../../images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="../../images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="../../images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

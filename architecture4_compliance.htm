@@ -1,0 +1,645 @@
+<html>
+<head>
+<title>Architecture for Compliance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="styles/style.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--Hide from old browsers
+
+function theDate() {
+
+var days = new Array(8);
+days[1] = "Sunday";
+days[2] = "Monday";
+days[3] = "Tuesday";
+days[4] = "Wednesday";
+days[5] = "Thursday";
+days[6] = "Friday";
+days[7] = "Saturday";
+
+var months = new Array(13);
+months[1] = "January";
+months[2] = "February";
+months[3] = "March";
+months[4] = "April";
+months[5] = "May";
+months[6] = "June";
+months[7] = "July";
+months[8] = "August";
+months[9] = "September";
+months[10] = "October";
+months[11] = "November";
+months[12] = "December";
+
+var dateObj = new Date()
+var wday = days[dateObj.getDay() + 1]
+var lmonth = months[dateObj.getMonth() + 1]
+var date = dateObj.getDate()
+var fyear = dateObj.getYear()
+document.write(wday + " " + lmonth + " " + date + ", " + fyear)
+}
+		
+//-->
+</SCRIPT>
+
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+
+<TABLE NAME="CHANGE MY WIDTH" WIDTH="90%" border="0" cellspacing="0" cellpadding="0"><TR><TD>
+<!-- CHANGING THE WIDTH ABOVE WILL CHANGE ALL PAGE WIDTH -->
+
+<table NAME="HEADER" width="100%" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+<tr> 
+<TD HEIGHT=68 valign=middle><img src="images/dba_400_home.jpg" width="400" height="58" alt="Database Answers"></td>
+<TD ALIGN=right HEIGHT=95 ROWSPAN=2 width="100%" VALIGN=middle>
+<A HREF="images/switzerland/villars/valley_1.jpg""> 
+<IMG ALT="Our favourite European Ski Resort is Villars, Switzerland." BORDER=0 HEIiiGHT=108 SRC="images/switzerland/villars/valley_1_sml.jpg"></A> 
+
+<!--- <A HREF="images/north_wales/penygarreg_reservoir_north_wales.jpg""> 
+<IMG ALT="Penygarreg Lake, North Wales." BORDER=0 HEIGHT=108 SRC="images/north_wales/penygarreg_reservoir_north_wales_sml.jpg"></A> --->
+<!--- <IMG ALT="Zannos Hotel, Santorini, Greece." BORDER=0 SRC="images/santorini_zannos_hotel_sml.jpg" hspace="0" vspace="4"> --->
+<!--- <IMG ALT="Eel Pie Island, London, England." BORDER=0 SRC="images/eel_pie_island_london_sml.jpg" hspace="0" vspace="4">  --->
+<!--- <IMG ALT="Bluebell Wood, Prestayn, North Wales" SRC="images/bluebell_wood_sml.jpg" hspace="0" vspace="4">               --->
+<!--- <IMG ALT="Lighthouse and Sea" SRC="images/lighthouse_and_sea_sml.jpg" hspace="0" vspace="4">                            --->
+<!--- <IMG ALT="Petanqe at Mangapapa Resort, new Zealand." BORDER=0 SRC="images/petanque_at_mangapapa_nz_sml.jpg" hspace="0" vspace="4"> --->
+
+</td></tr>
+<TR><TD ALIGN=left COLSPAN=2 VALIGN=middle><p class="time"><nobr><SCRIPT LANGUAGE="JavaScript">theDate();</SCRIPT></nobr></p></TD></TR>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="TOP NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>	
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>	
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>
+</tr>
+</table>
+
+<table NAME="GRAY NAVBAR" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="MAIN CONTENT" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td width="90" background="images/px-left.gif" valign="top" align="center" bgcolor="#3399CC">
+<!---
+<IMG ALT="Underwater in Fiji" SRC="images/fiji_100.jpg" width="81" height="122" vspace="5">
+<p><img src="images/spacer.gif" width="90"></p>
+--->
+
+
+</td>
+
+<td valign="top"><img src="images/spacer.gif" width="3" height="239"></td>
+<td width="100%" bgcolor="#B0D8FF" valign="top">
+<!--- HERE'S AN EMBEDDDED TABLE --->
+<table width="100%" border=0 cellspacing="0" cellpadding="3">
+
+<TR>
+<TD ALIGN=right>
+&nbsp
+
+<FONT COLOR=blue FACE="Verdana" SIZE=2>
+<!-- begin body Text -->
+
+</TD>
+</TR>
+
+</table>
+
+<!--- Welcome statement begins here --->
+<!--- <table BORDER=3 width="570" border="0" cellspacing="0" cellpadding="0"></table> --->
+
+<!--- WHAT'S NEW --->
+
+      <table width="570" border=0 cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1"><FONT COLOR=red>
+	Compliance is increasingly important<img src="images/spacer.gif" width="5" height="1"> 
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+          <td rowspan="3" valign="top" width="65">
+		<img src="images/content3.gif" width="65" height="61">
+<A HREF="ask_a_question.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Advice</FONT></A>
+<BR><A HREF="new_look_bmews.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>BMEWS</FONT></A>
+<BR><A HREF="architecture4_compliance.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Compliance</FONT></A>
+<A HREF="new_look_csr.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>CSR</FONT></A>
+<BR><A HREF="products/index.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Products</FONT></A>
+<BR><A HREF="bmews_templates.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>Templates</FONT></A>
+<A HREF="new_look_ungc.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>UNGC</FONT></A>
+<BR><A HREF="new_look_xref.htm"><FONT COLOR=blue FACE=Verdana SIZE=1>X-Ref</FONT></A>
+</td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+ 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+	<tr bgcolor="#FF9900"><td><img src="images/px-orange.gif" width="1" height="3"></td></tr>
+	</table>
+	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+	<tr> 
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                <td width="100%"><FONT COLOR=blue FACE=Verdana SIZE=2>
+We have changed our Web Site to reflect a change in our interests.
+<BR>The area of Compliance and the need for <B>an Integrated Compliance Framework</B> 
+has become more apparent and we have therefore decided to focus our energies on that
+challege and opportunity.
+
+<BR><BR><CENTER>
+
+<IMG SRC="images/new_look_dba.gif">
+
+</CENTER>
+<!---
+		<p><img src="images/arrow.gif" width="13" height="15">MetaTorial offers a 
+		<A HREF="www.metatorial.com/planner.asp" TARGET=_NEW><FONT COLOR=blue FACE=Verdana>Content Management Planner</A> with Templates.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Tom Kyte discusses 
+		<A HREF="http://asktom.oracle.com/pls/ask/f?p=4950:8:896384566289689159::::F4950_P8_DISPLAYID:14039738984108" TARGET=_NEW><FONT COLOR=blue FACE=Verdana>the future for <B>Oracle</B> DBAs</A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<A HREF="siebel_accenture_integration.pdf" TARGET=_NEW><FONT COLOR=blue FACE=Verdana><B>Siebel and Accenture</B> look at Integration.</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		Monitor <A HREF="http://otn.oracle.com/deploy/security/alerts.htm" TARGET=_NEW><B>Oracle's</B> Security Alerts Page.</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		A Look at <a href="http://www.asp101.com/articles/john/webdataadmin/default.asp" TARGET=_NEW>
+		<B>Microsoft's Web Data Adminstrator</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www3.ca.com/Press/pressrelease.asp?CID=53663" TARGET=_NEW>
+		<B>US Customs Homeland Security</B></A> uses <a href="http://www.cai.com/" TARGET=_NEW>
+		CA</A> Datacom Database.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://portal1.legato.com/products/replistor/" TARGET=_NEW>
+		<B>Replication</B> for Disaster Recovery from Legato.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://oln.oracle.com/test/ou_courses/Oracle9ias_concepts.html" TARGET=_NEW>
+		Oracle Online Tutorial from Oracle University on 9i Application Server.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.oracle.com/webapps/dialogue/dlgpage.jsp?p_ext=Y&p_dlg_id=2451873&src=1643765&Act=424/" TARGET=_NEW>
+		Oracle/EIU report on <B>Enterprise Data Integration</B> with Case Studies.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.iemagazine.com/register/ebook/sarbanesoxley/" TARGET=_NEW>
+		An eBook on <B>Sarbanes-Oxley</B> from Intelligent Enterprise magazine.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.intelligenteai.com/" TARGET=_NEW>
+		<B>Intelligent EAI</B> focusses on Enterprise Integration.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.intelligentkm.com/" TARGET=_NEW>
+		Intelligent Knowledge Management looks at <B>Portals</B>.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.it-director.com/article.php?articleid=11008" TARGET=_NEW>
+		IBM, Oracle and Microsoft compete in <B>Collaboration</B>.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.it-director.com/article.php?articleid=11515" TARGET=_NEW>
+		Standard ways to <B>categorise Content</B>.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.intranetjournal.com/articles/200306/ij_06_06_03a.html" TARGET=_NEW>
+		Measuring the success of <B>e-Learning</B>.</A></p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.intranetjournal.com/articles/200312/ij_12_10_03a.html" TARGET=_NEW>
+                <B>Content Management</B> and <B>Collaboration</B> converge on <B>e-Learning</B>.</A></p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.oraknowledge.com" TARGET=_NEW>
+		<B>OraKnowledge</B></A> offers live, Online Instructor-led Oracle Training.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.interwise.com" TARGET=_NEW>
+		<B>Interwise</B></A> provides Global eLearning and Collaboration solutions.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.compositesoftware.com" TARGET=_NEW>
+		<B>Composite Software</B></A> introduce Enterprise Data Integration.</A>.</p>		
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		Training for meeting
+		<a href="http://www.adm02.com/vpdownloads/HTMLDownload.asp?cid=11269&mid=1348&qid=4950998" TARGET=_NEW>
+		<B> Compliance</B></A> Standards.</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<A HREF="http://www.fldcu.org/irm/DataDict/" TARGET=_NEW><B>A Data Dictionary</B></A> from the Florida Dept. of Education.</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<A HREF="http://www.canberra.edu.au/~sam/whp/datadict.html/" TARGET=_NEW><B>Data Dictionary</B></A> definition from University of Canberra in Australia.</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<A HREF="http://www.canberra.edu.au/~sam/whp/dba.html/" TARGET=_NEW><B>Duties of a DBA</B></A>, also from University of Canberra in Australia.</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<A HREF="http://www.verisign.com/corporate/news/2003/pr_20031029.html" TARGET=_NEW><B>An Integrated Compliance Framework</B></A> from Verisign.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<A HREF="http://www.irmuk.co.uk/49.htm" TARGET=_NEW><B>A Generic Data Architecture</B></A> from 
+		<A HREF="http://members.aol.com/mhbrackett/Biography.html" TARGET=_NEW>Mike Brackett</A>.</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://otn.oracle.com/products/warehouse/htdocs/enterprise_metadata.htm" TARGET=_NEW>
+		<B>MetaData Management</B></A> in 
+		<A HREF="http://otn.oracle.com/products/warehouse/htdocs/enterprise_integration.htm" TARGET=_NEW>
+		Oracle's Warehouse Builder</A>.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">ZD Net discusses 
+		<a href="http://zdnet.com.com/2100-1104-5070256.html" TARGET=_NEW><B>IBM's Information Integrator</B>.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"><A HREF="contact_us.htm"><FONT COLOR=green><B>Barry Williams</B></FONT></A> will speak on  
+		<a href="http://www.wilshireconferences.com/EDF2003/glance.htm" TARGET=_NEW><B>'Global Terrorism & Data Management'</B></A></p>
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<IMG SRC="images/left_arrow.gif">
+		<IMG SRC="images/left_arrow.gif">
+		<IMG SRC="images/left_arrow.gif">
+		<A HREF="mailto:comments_on_data_feed@databaseanswers.com" TARGET=_NEW><B>Do you like</B></A> the 
+		<B>new Data Feed</B> on the left ?
+		</p>
+		<p><img src="images/arrow.gif" width="13" height="15">
+		"The world's only online <a href="http://www.testdata.com/" TARGET=_NEW>
+		<B>Test Data</B></A> generation tool" at $9.95</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.ITtoolbox.com/i/rd.asp?i=97" TARGET=_NEW>
+		<B>A Weblog</B></A> by a CRM Siebel Data Integration Project Manager</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Automating financial controls for 
+		<a href="http://www.adtmag.com/article.asp?id=8054" TARGET=_NEW><B>Sarbanes-Oxley</B> compliance.</A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.britgo.org" TARGET=_NEW><B>British Go Association</B></A>, (apropros of nothing).</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.britgo.org" TARGET=_NEW><B>British Go Association</B></A>, (apropros of nothing).</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.uclaextension.edu/unex/online_comp_is/index.cfm?" TARGET=_NEW>UCLA Extension</A> online Training in Modelling, SQL, etc..</p>
+	
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://his.cohums.ohio-state.edu/help/database/terms.cfm" TARGET=_NEW>A Data Dictionary</A> from 
+		<A HREF="http://www.ohio-state.edu/index.php" TARGET=_NEW>Ohio State</A> (Go Buckeyes !!!)</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.bernama.com.my/bernama/v3/news_business.php?id=12593" TARGET=_NEW>Oracle Malaysia</A>  
+		offers Certification Training in Malaysia</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">A new  
+		<a href="http://www.databaseassociation.com/" TARGET=_NEW><B>Association of Database Developers</B></A>
+		has been formed.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://searchoracle.techtarget.com/bestWebLinks/0,289521,sid41_tax294497,00.html" TARGET=_NEW>Free Oracle PL/SQL Scripts and Best Practice</A></p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://searchoracle.com/" TARGET=_NEW><B>SearchOracle.com</B></A> - "The new voice of the Oracle Community."</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Excellent Page of links on 
+		<a href="http://searchoracle.techtarget.com/bestWebLinks/0,289521,sid41_tax294514,00.html" TARGET=_NEW><B>Oracle Certification</B></A> from SearchOracle.com</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://techrepublic.com.com/5100-6262-5055174.html" TARGET=_NEW><B>Avoid these 6 IT Interview Mistakes</B></A> from TechRepublic.com</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Test Drive 
+		<a href="http://www.animatedlearning.com/testdrv.htm" TARGET=_NEW>Oracle Training</A> - <B>Free</B> - from DB Domain.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">I have added a page on 
+		<a href="data_quality_tools.htm"><B>Data Quality Tools</B></A> </p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">I have added a page on 
+		<a href="data_conversion_tools.htm"><B>Data Conversion Tools</B></A> </p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www-3.ibm.com/services/learning/conf/us/dm/" TARGET=_NEW><B>IBM Data Management Conference</B></A> October, Las vegas, Nevada.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.builder.com/" TARGET=_NEW><B>Builder.com</B></A> - Covers a wide range of DB and Development Topics.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Get Oracle 
+		<a href="http://www.databasejournal.com/news/article.php/2245601" TARGET=_NEW><B>9i Schema syntax the easy way.</B></A> from DatabaseJournal.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.superiorsql.com/" TARGET=_NEW><B>Build Complex SQL visually</B></A> ($199) from Superior SQL.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">New Software for 
+		<a href="http://www-3.ibm.com/software/integration/wbiconnect/announce/?ca=dnp-231" TARGET=_NEW><B>Community Integration from IBM</B></A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Article on
+		<a href="http://www.tdan.com/i025fe03.htm" TARGET=_NEW><B>MetaData Management</B></A> from <B>T</B>he <B>D</B>ata <B>A</B>dmin <B>N</B>ewsletter.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Good article on
+		<a href="http://dbasupport.com/oracle/ora9i/ETL01.shtml" TARGET=_NEW><B>Oracle Data Warehouse Builder</B></A> from DBA Support.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.remedy.com/advantage/" TARGET=_NEW><B>Out-of-the-Box Best Practice for Service Management</B></A> from Remedy.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Workflow-based 
+		<a href="http://www.learningcircuits.org/2003/aug2003/adkins.htm" TARGET=_NEW><B>e-Learning</B></A> based on Web Services</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.adtmag.com/article.asp?id=8049" TARGET=_NEW><B>IBM</B> makes Information Integrator central to 'on-demand'.</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">
+		<a href="http://www.databasejournal.com/features/oracle/article.php/2237661" TARGET=_NEW><B>Insulate Oracle Applications</B></A> against Database changes</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15">Enhanced 
+		<a href="http://km.ittoolbox.com/news/dispnews.asp?i=98037" TARGET=_NEW><B>Oracle Collaboration Suite.</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.yourlms.com/" TARGET=_NEW><B>eLearning</B> - 'Build Your own Learning Management System'.</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.globalwebarch.com/" TARGET=_NEW><B>The Global Web Architecture Group</B></A> looks interesting.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.agpw.com/" TARGET=_NEW><B>Learn Data Modelling</B></A> at your desk for $3,000.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		Article on <a href="http://www.dmreview.com/master.cfm?NavID=198&EdID=5339" TARGET=_NEW><B>Universal Financial Data Models</B></A>
+		from the <A HREF="http://www.dmreview.com" TARGET=_NEW>DM Review</A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.csam.iit.edu/~cs561/algebra/home.html" TARGET=_NEW><B>Relation Algebra Tutorial</B></A>
+		from the <A HREF="http://www.csam.iit.edu" TARGET=_NEW>Illinois Institute of technology</A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/modcore/html/deoridigitaldashboardreference.asp" TARGET=_NEW><B>Microsoft's Digital Dashboard</B></A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		Forthcoming Book on <a href="http://www.ambysoft.com/agileDatabaseTechniques.html" TARGET=_NEW><B>Agile Database Techniques</B></A> by the respected 
+		Scott Ambler, (pity it's Object-Oriented).</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		Documentum launches <a href="http://km.ittoolbox.com/news/dispnews.asp?i=97633" TARGET=_NEW><B>Collaboration Tools</B></A>.</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.techrepublic.com/article.jhtml?id=r00320030204jed01.htm&fromtm=e014" TARGET=_NEW><B>Does your CV</B></A> stand out from the others in the pile ?</p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.databasejournal.com/features/db2/article.php/2233931" TARGET=_NEW><B>IBM's Self-Help Web Support</B> for DB2</A></p>
+
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		Download <a href="http://www.oracle.com/start/ublmanage/intro_rauch.html?src=1746961&Act=144" TARGET=_NEW><B>a Report</B></A> saying Oracle is cheaper to maintain than DB2.</p>
+		
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+		<a href="http://www.dbazine.com/burleson13.shtml" TARGET=_NEW>
+		<B>"What type of DBA are you ?"</B></A>, asks the respected Don Burleson</p>
+--->
+
+		</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+<BR>
+
+<!--- MISSION STATEMENT ... --->
+<!---
+      <table BORDER=0 width="570" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">Mission Statement<img src="images/spacer.gif" width="5" height="1"> 
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+          <td rowspan="3" valign="top" width="61"><img src="images/content1.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+              <tr bgcolor="#FF9900"> 
+                <td><img src="images/px-orange.gif" width="1" height="3"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                <td width="100%"> 
+                  <p><img src="images/arrow.gif" width="13" height="15">
+		We aim to be a 'One-Stop' Point of Reference for a wide range of advice and assistance 
+		on Databases, including <A HREF="careers.htm"><B>Career Advice</B></A>;</p>
+<BR>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+<BR>
+--->
+
+<!--- PRODUCTS and SERVICES --->
+<!---
+<table width="570" border=0 cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	Products and Services<img src="images/spacer.gif" width="5" height="1"> 
+          </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+          <td rowspan="3" valign="top" width="61"><img src="images/content2.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top">
+ 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+	<tr bgcolor="#FF9900"><td><img src="images/px-orange.gif" width="1" height="3"></td></tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                <td><img src="images/spacer.gif" width="8" height="1"></td>
+                <td width="100%">
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+           	<B>The Products</B> we offer include <a href="data_models/index.htm">over 100 Free Kick-Start Databases</a>.</p>
+		<p><img src="images/arrow.gif" width="13" height="15"> 
+           	<B>Our Services</B> include <a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp">free answers to Database Questions</a>,
+		Database Audit, Migration Strategies, and so on.</p>
+		<BR>              
+		</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+--->
+
+<BR>
+
+<!--- GET THE MOST OUT OF THIS SITE --->
+<!---
+      <table BORDER=0 width="570" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	How to get the most out of this Site<img src="images/spacer.gif" width="5" height="1"> </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+        <tr> 
+          <td rowspan="3" valign="top" width="61"><img src="images/content1.gif" width="61" height="61"></td>
+          <td colspan="4" height="3" rowspan="3" valign="top"> 
+
+            	<table width="100%" border="0" cellspacing="0" cellpadding="0" height="3">
+   		<tr bgcolor="#FF9900"><td><img src="images/px-orange.gif" width="1" height="3"></td></tr>
+            	</table>
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+              	<tr> 
+                	<td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                	<td><img src="images/spacer.gif" width="8" height="1"></td>
+                	<td width="100%"><p><img src="images/arrow.gif" width="13" height="15"> 
+                  	There is a great deal of material on this Site.</p>
+                        <p><img src="images/arrow.gif" width="13" height="15">
+		We recommend that <A HREF="first_timers.htm">first-time visitors</A> check out our <a href="site_map.htm"><b>
+		Site Map</b></a> which covers a wide range of topics from <A HREF="careers.htm">Careers</A> to <A HREF="web_services.htm">
+		Web Services</A>.</p>
+               		</td>
+              	</tr>
+            	</table>
+	</td>
+	</tr>
+      </table>
+--->
+
+<!---
+	<table BORDER=1 width="570" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="4" valign="top" width="30"><img src="images/spacer.gif" width="33" height="1"></td>
+          <td width="61">&nbsp;</td>
+          <td rowspan="4" width="6"><img src="images/spacer.gif" width="6" height="1"></td>
+          <td colspan="3" width="100%" align="right" class="header1">
+	Welcome to our new Design for this Site<img src="images/spacer.gif" width="5" height="1"> </td>
+          <td width="3" bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="20"></td>
+        </tr>
+
+        <tr> 
+	<td rowspan="3" valign="top" width="61"><img src="images/content2.gif" width="61" height="61"></td> 
+	<td colspan="4" height="3" rowspan="3" valign="top"> 
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0" height="3">
+   		<tr bgcolor="#FF9900"><td><img src="images/px-orange.gif" width="1" height="3"></td></tr>
+            	</table>
+
+            	<table width="100%" border=0 cellspacing="0" cellpadding="0">
+              	<tr> 
+                	<td bgcolor="#FF9900"><img src="images/px-orange.gif" width="3" height="1"></td>
+                	<td><img src="images/spacer.gif" width="8" height="1"></td>
+                	<td width="100%"><p><img src="images/arrow.gif" width="13" height="15"> 
+                  	This is our third Design since we started three years ago. 
+			<BR>
+			<FONT SIZE=1>
+			<img src="images/arrow.gif" width="13" height="15">It will take quite a while to change all the Pages to the latest Design, 
+			so please be patient if you find yourself looking at an early Page. 
+			Our core competence is Databases,and we don't have much time to spend on HTML.
+			</FONT>
+               		</td>
+              	</tr>
+            	</table>
+          	</td>
+        	</tr>
+        	<tr>&nbsp</tr>
+        	<tr>&nbsp</tr>
+      </table>
+--->
+
+<!--- welcome statement ends here --->
+
+<!--- barry end here ... --->
+<BR>
+    </td>
+  </tr>
+</table>
+
+
+<table name="GRAY BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#999999"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+</table>
+
+<table NAME="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="2"><img src="images/spacer.gif" width="663" height="2"></td>
+  </tr>
+  <tr>
+    <td height="3" bgcolor="#FF9900"><img src="images/spacer.gif" width="663" height="3"></td>
+  </tr>
+</table>
+
+<table NAME="BOTTOM NAVBAR" width=100% border=0 cellpadding=0 cellspacing=0 background="images/px-blue.gif" bgcolor="#3366CC">
+<tr>	
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-bottom-blue.gif" width=28 height=24></td>
+
+	<td><img src="images/v3/spacer.gif" width=5 height=24></td>
+	<td><a href="index.htm"> <img name="menu_home" src="images/v3/menu-home-blue.gif" width=85 height=24 border=0 alt="Home"></a></td>
+ 	<td><img src="images/v3/curve-top-blue.gif" width=28 height=24></td>
+
+	<td><a href="http://www.barryw.org/dba/pi_ask_a_question/index.asp"><img name="menu_question" src="images/v3/menu-question.gif" width=109 height=24 border=0 alt="Ask a Question"></a></td>
+	<td><a href="careers.htm"><img name="menu_careers" src="images/v3/menu-careers.gif" sOUrcE="images/v3/menu-careers-active.gif" width=59 height=24 border=0 alt="Careers"></a></td>
+	<td><a href="contact_us.htm"><img name="menu_contact" src="images/v3/menu-contact.gif" width=76 border=0 height=24 alt="Contact us"></a></td>
+	<td><a href="data_models/index.htm"><img name="menu_models" src="images/v3/menu-models.gif" width=83 height=24 border=0 alt="Data Models"></a></td>
+	<td><a href="first_timers.htm"><img name="menu_timers" src="images/v3/menu-timers.gif" width=82 height=24 border=0 alt="First Timers"></a></td>
+	<td><a href="search.htm"><img name="menu_search" src="images/v3/menu-search.gif" width=53 height=24 border=0 alt="Search"></a></td>
+	<td width="100%"><a href="site_map.htm"><img name="menu_map" src="images/v3/menu-map.gif" width=62 height=24 border=0 alt="Site Map"></a></td>		
+</tr>
+</table>
+
+<table name="ORANGE BAND" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="2"><img src="images/v3/spacer.gif" width="663" height="2"></td></tr>
+<tr><td height="3" bgcolor="#FF9900"><img src="images/v3/spacer.gif" width="663" height="3"></td></tr>
+</table>
+    <!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS --> 
+</td>
+</tr>
+</table>
+
+<!-- HERE BASE TABLE CLOSES, INSIDE WHICH ALL PAGE IS PLACED, AND WHICH WIDTH IS 90 PERCENTS -->
+</TD>
+</TR>
+</TABLE>
+
+</body>
+
+</html>
